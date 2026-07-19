@@ -1,7 +1,9 @@
 node_modules/
 docs/.vitepress/dist
 docs/.vitepress/cache
-docs/vanilla/
-docs/mods/
+docs/vanilla/**/*.md
+!docs/vanilla/**/index.md
+docs/mods/**/*.md
+!docs/mods/**/index.md
 docs/.vitepress/sidebar.generated.ts
 .superpowers/
