@@ -9,6 +9,8 @@
 - [技能](/vanilla/skills/) — Perk 技能树
 - [僵尸](/vanilla/zombies/) — 僵尸图鉴
 
+---
+
 ## 数据来源
 
 - 原版数据来自游戏 XML 文件
