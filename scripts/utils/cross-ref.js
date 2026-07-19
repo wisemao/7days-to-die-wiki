@@ -1,6 +1,3 @@
-import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync } from 'fs';
-import { join, dirname } from 'path';
-
 export function buildCrossReferences(datasets) {
   const { items, recipes, skills, zombies } = datasets;
 
