@@ -1,0 +1,195 @@
+items:
+  - id: stone-axe
+    name: 石斧
+    category: tool
+    tier: 1
+    stack_size: 1
+    description: 简易的石制斧头，可砍树和战斗
+    stats:
+      damage: 15
+      attacks_per_min: 63
+      durability: 300
+      resource_harvest:
+        wood: 1.0
+        stone: 0.8
+    mod_slots: 0
+    craft:
+      station: 背包合成
+      recipe:
+        - { item_id: small-stone, count: 2 }
+        - { item_id: plant-fiber, count: 5 }
+        - { item_id: wood, count: 3 }
+    scrappable_into:
+      - { item_id: small-stone, count: 1 }
+
+  - id: iron-pickaxe
+    name: 铁镐
+    category: tool
+    tier: 2
+    stack_size: 1
+    stats:
+      damage: 27.5
+      attacks_per_min: 59
+      durability: 900
+      resource_harvest:
+        iron: 2.0
+        stone: 1.8
+        coal: 2.0
+    mod_slots: 2
+    craft:
+      station: 工作台
+      craft_time: 10
+      recipe:
+        - { item_id: forged-iron, count: 20 }
+        - { item_id: wood, count: 15 }
+        - { item_id: leather, count: 8 }
+
+  - id: hunting-rifle
+    name: 狩猎步枪
+    category: ranged_weapon
+    tier: 3
+    stack_size: 1
+    stats:
+      damage: 85
+      range: 80
+      fire_rate: 0.5
+      magazine_size: 5
+      reload_time: 2.5
+      ammo_type: 7.62mm
+      penetration: 2
+    mod_slots: 3
+    craft:
+      station: 工作台
+      craft_time: 25
+      recipe:
+        - { item_id: forged-steel, count: 15 }
+        - { item_id: mechanical-parts, count: 8 }
+        - { item_id: spring, count: 5 }
+    recipes_locked_by:
+      book_id: gunsmith-vol3
+
+  - id: baseball-bat
+    name: 棒球棍
+    category: melee_weapon
+    tier: 2
+    stack_size: 1
+    stats:
+      damage: 21
+      attacks_per_min: 45
+      durability: 400
+      knockback: 2.5
+      power_attack_damage: 52.5
+      power_attack_stamina: 18
+    mod_slots: 2
+
+  - id: steel-chest
+    name: 钢制胸甲
+    category: armor
+    tier: 6
+    slot: chest
+    stack_size: 1
+    stats:
+      armor: 12.2
+      damage_reduction: 62.5
+      movement_speed: -8%
+      stamina_regen: -1
+      cold_resistance: 5
+      heat_resistance: 5
+    mod_slots: 2
+
+  - id: grilled-meat
+    name: 烤肉
+    category: food
+    stack_size: 20
+    stats:
+      hunger: 30
+      health: 5
+      stamina: 10
+      max_health_bonus: 0
+      wellness: 0
+
+  - id: first-aid-bandage
+    name: 急救绷带
+    category: medical
+    stack_size: 10
+    stats:
+      health: 20
+      bleeding_stop: true
+      infection_chance: -50%
+
+  - id: forged-iron
+    name: 锻铁
+    category: material
+    stack_size: 600
+    craft:
+      station: 熔炉
+      craft_time: 30
+      recipe:
+        - { item_id: iron, count: 6 }
+        - { item_id: clay, count: 10 }
+
+  - id: ammo-762
+    name: 7.62mm 子弹
+    category: ammo
+    stack_size: 500
+    stats:
+      damage: 58
+      penetration: 1
+      range: 80
+
+  - id: sex-tex-vol1
+    name: 《性暴龙》第1卷
+    category: book
+    tier: 1
+    stack_size: 1
+    max_level: 5
+    skill_name: 性暴龙
+    effect: 使用工具时 +10% 伤害
+
+  - id: minibike
+    name: 迷你自行车
+    category: vehicle
+    tier: 2
+    stack_size: 1
+    stats:
+      hp: 2500
+      speed: 12
+      storage_slots: 18
+      fuel_type: 汽油
+      fuel_capacity: 8000
+      fuel_consumption: 5
+
+  - id: blade-trap
+    name: 刀片陷阱
+    category: trap
+    tier: 3
+    stack_size: 1
+    stats:
+      damage: 15
+      attacks_per_min: 120
+      hp: 3000
+      power_usage: 20
+      trigger_range: 2
+
+  - id: mining-glasses
+    name: 矿工护目镜
+    category: accessory
+    slot: head
+    stack_size: 1
+    stats:
+      light_intensity: 3
+    mod_slots: 0
+
+  - id: repair-kit
+    name: 修理包
+    category: consumable
+    stack_size: 10
+    stats:
+      repair_amount: 200
+      repair_type: tool
+
+  - id: t5-keycard
+    name: T5 钥匙卡
+    category: quest_item
+    stack_size: 1
+    quest: 秘密基地

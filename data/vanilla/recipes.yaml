@@ -1,0 +1,22 @@
+recipes:
+  - id: forged-iron
+    name: 锻铁
+    station: 熔炉
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - { item_id: iron, count: 6 }
+      - { item_id: clay, count: 10 }
+      - { item_id: oil-shale, count: 5 }
+    scrappable_into:
+      - { item_id: iron, count: 3 }
+
+  - id: iron-pickaxe
+    name: 铁镐
+    station: 工作台
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - { item_id: forged-iron, count: 20 }
+      - { item_id: wood, count: 15 }
+      - { item_id: leather, count: 8 }

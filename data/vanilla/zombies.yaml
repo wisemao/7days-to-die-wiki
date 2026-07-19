@@ -1,0 +1,50 @@
+zombies:
+  - id: zombie-biker
+    name: 飞车党僵尸
+    category: humanoid
+    tier: 2
+    hp: 250
+    speed:
+      walk: 1.2
+      run: 2.5
+      crawl: 0.5
+    damage:
+      melee: 15
+      bleeding_chance: 10%
+    armor:
+      head: 1.5
+      body: 1.2
+    loot:
+      - { item_id: rotten-flesh, count: 1, chance: 80% }
+      - { item_id: cloth-fragment, count: 2, chance: 60% }
+    experience: 400
+    weakness:
+      - head: 1.5
+    spawn:
+      biomes: [森林, 沙漠]
+      time: 全天
+      groups: [城市, 公路]
+    radiant: false
+
+  - id: zombie-bear
+    name: 僵尸熊
+    category: animal
+    tier: 5
+    hp: 1500
+    speed:
+      walk: 1.5
+      run: 3.5
+    damage:
+      melee: 45
+      armor_penetration: 3.0
+    loot:
+      - { item_id: animal-fat, count: 4, chance: 100% }
+      - { item_id: rotten-flesh, count: 6, chance: 100% }
+    experience: 2800
+    weakness:
+      - head: 1.5
+      - fire: 1.2
+    special:
+      - 冲刺击倒玩家
+      - 破坏方块
+    radiant: true
