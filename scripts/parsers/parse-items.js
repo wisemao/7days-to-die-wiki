@@ -7,19 +7,20 @@ const ITEM_CATEGORY_LABELS = {
   accessory: '配件', consumable: '消耗品', quest_item: '任务物品',
 };
 
-export function parseItem(item, refs, template, resolveItemName) {
+export function parseItem(item, refs, template, resolveItemName, sanitizeId = (id) => id) {
   const statsTable = buildStatsTable(item);
   const categoryLabel = ITEM_CATEGORY_LABELS[item.category] || item.category;
 
   const usedRecipes = refs.itemRecipes.get(item.id) || [];
   const usedInRecipes = {
-    rows: usedRecipes.map(r => ({ id: r.id, name: r.name, station: r.station })),
+    rows: usedRecipes.map(r => ({ id: r.id, linkId: sanitizeId(r.id), name: r.name, station: r.station })),
   };
 
   const droppedZombies = refs.zombieLoot.get(item.id) || [];
   const droppedBy = droppedZombies.length > 0 ? {
     rows: droppedZombies.map(z => ({
       id: z.id,
+      linkId: sanitizeId(z.id),
       name: z.name,
       chance: z.loot?.find(l => l.item_id === item.id)?.chance || '',
     })),

@@ -1,6 +1,6 @@
 import { renderTemplate } from './renderer.js';
 
-export function parseSkill(skill, refs, template, resolveItemName = (id) => id) {
+export function parseSkill(skill, refs, template, resolveItemName = (id) => id, sanitizeId = (id) => id) {
   const levels = skill.levels?.map(l => ({
     level: l.level,
     effect: l.effect,

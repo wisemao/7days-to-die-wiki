@@ -28,6 +28,10 @@ function ensureDir(dir) {
   if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
 }
 
+function sanitizeId(id) {
+  return id.replace(/[<>:"\/\\|?*]/g, '_').replace(/\s+/g, '-');
+}
+
 function generate() {
   console.log('📖 读取数据...');
 
@@ -86,8 +90,8 @@ function generate() {
   const itemsDir = join(DOCS_DIR, 'vanilla/items');
   ensureDir(itemsDir);
   for (const item of items) {
-    const md = parseItem(item, refs, itemTemplate, resolveItemName);
-    writeFileSync(join(itemsDir, `${item.id}.md`), md, 'utf-8');
+    const md = parseItem(item, refs, itemTemplate, resolveItemName, sanitizeId);
+    writeFileSync(join(itemsDir, `${sanitizeId(item.id)}.md`), md, 'utf-8');
   }
 
   // Generate recipe pages
@@ -95,8 +99,8 @@ function generate() {
   const recipesDir = join(DOCS_DIR, 'vanilla/recipes');
   ensureDir(recipesDir);
   for (const recipe of recipes) {
-    const md = parseRecipe(recipe, refs, recipeTemplate, resolveItemName);
-    writeFileSync(join(recipesDir, `${recipe.id}.md`), md, 'utf-8');
+    const md = parseRecipe(recipe, refs, recipeTemplate, resolveItemName, sanitizeId);
+    writeFileSync(join(recipesDir, `${sanitizeId(recipe.id)}.md`), md, 'utf-8');
   }
 
   // Generate skill pages
@@ -104,8 +108,8 @@ function generate() {
   const skillsDir = join(DOCS_DIR, 'vanilla/skills');
   ensureDir(skillsDir);
   for (const skill of skills) {
-    const md = parseSkill(skill, refs, skillTemplate, resolveItemName);
-    writeFileSync(join(skillsDir, `${skill.id}.md`), md, 'utf-8');
+    const md = parseSkill(skill, refs, skillTemplate, resolveItemName, sanitizeId);
+    writeFileSync(join(skillsDir, `${sanitizeId(skill.id)}.md`), md, 'utf-8');
   }
 
   // Generate zombie pages
@@ -113,13 +117,13 @@ function generate() {
   const zombiesDir = join(DOCS_DIR, 'vanilla/zombies');
   ensureDir(zombiesDir);
   for (const zombie of zombies) {
-    const md = parseZombie(zombie, refs, zombieTemplate, resolveItemName);
-    writeFileSync(join(zombiesDir, `${zombie.id}.md`), md, 'utf-8');
+    const md = parseZombie(zombie, refs, zombieTemplate, resolveItemName, sanitizeId);
+    writeFileSync(join(zombiesDir, `${sanitizeId(zombie.id)}.md`), md, 'utf-8');
   }
 
   // Generate sidebar
   console.log('📑 生成侧边栏...');
-  const sidebarCode = generateSidebar(items, recipes, skills, zombies);
+  const sidebarCode = generateSidebar(items, recipes, skills, zombies, sanitizeId);
   const vitepressDir = join(DOCS_DIR, '.vitepress');
   ensureDir(vitepressDir);
   writeFileSync(join(vitepressDir, 'sidebar.generated.ts'), sidebarCode, 'utf-8');

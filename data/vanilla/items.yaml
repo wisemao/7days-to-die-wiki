@@ -1,288 +1,6610 @@
 items:
-  - id: stone-axe
-    name: 石斧
+  - id: meleeToolRepairT0StoneAxe
+    name: meleeToolRepairT0StoneAxe
     category: tool
-    tier: 1
     stack_size: 1
-    description: 简易的石制斧头，可砍树和战斗
+    tier: 200
     stats:
-      damage: 15
-      attacks_per_min: 63
+      attacks_per_min: 105
+      durability: 250
+      damage: 0.1
+      block_damage: 0.15
+  - id: meleeToolRepairT0TazasStoneAxe
+    name: meleeToolRepairT0TazasStoneAxe
+    category: tool
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 105
       durability: 300
-      resource_harvest:
-        wood: 1.0
-        stone: 0.8
-    mod_slots: 0
-    craft:
-      station: 背包合成
-      recipe:
-        - { item_id: small-stone, count: 2 }
-        - { item_id: plant-fiber, count: 5 }
-        - { item_id: wood, count: 3 }
-    scrappable_into:
-      - { item_id: small-stone, count: 1 }
-
-  - id: iron-pickaxe
-    name: 铁镐
+      damage: 0.1
+      block_damage: 0.15
+  - id: meleeToolRepairT1ClawHammer
+    name: meleeToolRepairT1ClawHammer
     category: tool
-    tier: 2
     stack_size: 1
+    tier: 500
     stats:
-      damage: 27.5
-      attacks_per_min: 59
-      durability: 900
-      resource_harvest:
-        iron: 2.0
-        stone: 1.8
-        coal: 2.0
-    mod_slots: 2
-    craft:
-      station: 工作台
-      craft_time: 10
-      recipe:
-        - { item_id: forged-iron, count: 20 }
-        - { item_id: wood, count: 15 }
-        - { item_id: leather, count: 8 }
-
-  - id: hunting-rifle
-    name: 狩猎步枪
+      attacks_per_min: 70
+      durability: 300
+      damage: 0.1
+      block_damage: 0.1
+  - id: meleeToolRepairT3Nailgun
+    name: meleeToolRepairT3Nailgun
+    category: tool
+    stack_size: 1
+    tier: 1100
+    stats:
+      durability: 1000
+      damage: 0.1
+  - id: meleeToolAxeT1IronFireaxe
+    name: meleeToolAxeT1IronFireaxe
+    category: tool
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 65
+      durability: 500
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolAxeT2SteelAxe
+    name: meleeToolAxeT2SteelAxe
+    category: tool
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 55
+      durability: 1000
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolPickT1IronPickaxe
+    name: meleeToolPickT1IronPickaxe
+    category: tool
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 65
+      durability: 500
+      damage: 1
+      block_damage: 1
+  - id: meleeToolPickT2SteelPickaxe
+    name: meleeToolPickT2SteelPickaxe
+    category: tool
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 55
+      durability: 1000
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolShovelT0StoneShovel
+    name: meleeToolShovelT0StoneShovel
+    category: tool
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 50
+      durability: 250
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolShovelT1IronShovel
+    name: meleeToolShovelT1IronShovel
+    category: tool
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 50
+      durability: 500
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolShovelT2SteelShovel
+    name: meleeToolShovelT2SteelShovel
+    category: tool
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 50
+      durability: 1000
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeToolAxeT3Chainsaw
+    name: meleeToolAxeT3Chainsaw
+    category: tool
+    stack_size: 1
+    tier: 2300
+    stats:
+      durability: 2000
+      damage: 0.1
+      block_damage: 0.15
+  - id: meleeToolPickT3Auger
+    name: meleeToolPickT3Auger
+    category: tool
+    stack_size: 1
+    tier: 2300
+    stats:
+      durability: 2000
+      damage: 0.1
+      block_damage: 0.15
+  - id: meleeToolSalvageT1Wrench
+    name: meleeToolSalvageT1Wrench
+    category: tool
+    stack_size: 1
+    tier: 400
+    stats:
+      attacks_per_min: 50
+      durability: 200
+      damage: 1
+      block_damage: 1
+  - id: meleeToolSalvageT2Ratchet
+    name: meleeToolSalvageT2Ratchet
+    category: tool
+    stack_size: 1
+    tier: 900
+    stats:
+      attacks_per_min: 50
+      durability: 700
+      damage: 1
+      block_damage: 1
+  - id: meleeToolSalvageT3ImpactDriver
+    name: meleeToolSalvageT3ImpactDriver
+    category: tool
+    stack_size: 1
+    tier: 2000
+    stats:
+      attacks_per_min: 50
+      durability: 1450
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnBladeT0BoneKnife
+    name: 骨刀
     category: ranged_weapon
-    tier: 3
     stack_size: 1
+    tier: 200
     stats:
-      damage: 85
-      range: 80
-      fire_rate: 0.5
-      magazine_size: 5
-      reload_time: 2.5
-      ammo_type: 7.62mm
-      penetration: 2
-    mod_slots: 3
-    craft:
-      station: 工作台
-      craft_time: 25
-      recipe:
-        - { item_id: forged-steel, count: 15 }
-        - { item_id: mechanical-parts, count: 8 }
-        - { item_id: spring, count: 5 }
-    recipes_locked_by:
-      book_id: gunsmith-vol3
-
-  - id: baseball-bat
-    name: 棒球棍
-    category: melee_weapon
-    tier: 2
+      attacks_per_min: -60
+      durability: 250
+      damage: 4
+      block_damage: 1
+  - id: meleeWpnBladeT1HuntingKnife
+    name: 猎刀
+    category: ranged_weapon
     stack_size: 1
+    tier: 500
     stats:
-      damage: 21
-      attacks_per_min: 45
+      attacks_per_min: -60
+      durability: 500
+      damage: 4
+      block_damage: 1
+  - id: meleeWpnBladeT1CandyKnife
+    name: 拐杖糖刀
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: -60
+      durability: 500
+      damage: 4
+      block_damage: 1
+  - id: meleeWpnBladeT3Machete
+    name: 砍刀
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 65
+      durability: 1000
+      damage: 4
+      block_damage: 1
+  - id: meleeWpnClubT0WoodenClub
+    name: 木棒
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 55
+      durability: 100
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnClubT1BaseballBat
+    name: 球棒
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 52
+      durability: 200
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnClubT1CandyClub
+    name: 拐杖糖棍棒
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 52
+      durability: 200
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnClubT3SteelClub
+    name: 钢棍
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 52
+      durability: 500
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnBatonT0PipeBaton
+    name: 铁管棒
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 60
+      durability: 100
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnBatonT2StunBaton
+    name: 电击棒
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 70
+      durability: 300
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnBatonT3PlasmaBaton
+    name: Plasma Baton
+    category: material
+    stack_size: 1
+  - id: meleeWpnSpearT0StoneSpear
+    name: 石矛
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 55
+      durability: 100
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnSpearT1IronSpear
+    name: 铁矛
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 55
+      durability: 200
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnSpearT3SteelSpear
+    name: 钢矛
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 55
       durability: 400
-      knockback: 2.5
-      power_attack_damage: 52.5
-      power_attack_stamina: 18
-    mod_slots: 2
-
-  - id: steel-chest
-    name: 钢制胸甲
-    category: armor
-    tier: 6
-    slot: chest
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnSledgeT0StoneSledgehammer
+    name: 石质大锤
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 50
+      durability: 100
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeWpnSledgeT1IronSledgehammer
+    name: 铁质大锤
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 34
+      durability: 200
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeWpnSledgeT3SteelSledgehammer
+    name: 钢质大锤
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 34
+      durability: 400
+      damage: 1.25
+      block_damage: 1.25
+  - id: meleeWpnKnucklesT0LeatherKnuckles
+    name: 拳手绑带
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      attacks_per_min: 100
+      durability: 100
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnKnucklesT1IronKnuckles
+    name: 铁质拳套
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      attacks_per_min: 100
+      durability: 300
+      damage: 1
+      block_damage: 1
+  - id: meleeWpnKnucklesT3SteelKnuckles
+    name: 钢质拳套
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1100
+    stats:
+      attacks_per_min: 100
+      durability: 700
+      damage: 1
+      block_damage: 1
+  - id: meleeToolFlashlight02
+    name: meleeToolFlashlight02
+    category: tool
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 1
+      block_damage: 1
+      attacks_per_min: 65
+  - id: meleeToolTorch
+    name: meleeToolTorch
+    category: tool
+    stack_size: 50
+    tier: 10
+    stats:
+      damage: 10.2
+      block_damage: 7
+      attacks_per_min: 50
+  - id: meleeToolWireTool
+    name: meleeToolWireTool
+    category: tool
+    stack_size: 1
+    tier: 200
+  - id: meleeToolPaintTool
+    name: meleeToolPaintTool
+    category: tool
+    stack_size: 1
+    tier: 200
+  - id: gunHandgunT0PipePistol
+    name: gunHandgunT0PipePistol
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 100
+  - id: gunHandgunT1Pistol
+    name: gunHandgunT1Pistol
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 300
+  - id: gunHandgunT3SMG5
+    name: gunHandgunT3SMG5
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 500
+  - id: gunHandgunT2Magnum44
+    name: gunHandgunT2Magnum44
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 400
+  - id: gunHandgunT3DesertVulture
+    name: gunHandgunT3DesertVulture
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 500
+  - id: gunShotgunT0PipeShotgun
+    name: gunShotgunT0PipeShotgun
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 100
+  - id: gunShotgunT1DoubleBarrel
+    name: gunShotgunT1DoubleBarrel
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 200
+  - id: gunShotgunT2PumpShotgun
+    name: gunShotgunT2PumpShotgun
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 400
+  - id: gunShotgunT3AutoShotgun
+    name: gunShotgunT3AutoShotgun
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 700
+  - id: gunRifleT0PipeRifle
+    name: gunRifleT0PipeRifle
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 100
+  - id: gunRifleT1HuntingRifle
+    name: gunRifleT1HuntingRifle
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 200
+  - id: gunRifleT2LeverActionRifle
+    name: gunRifleT2LeverActionRifle
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 400
+  - id: gunRifleT3SniperRifle
+    name: gunRifleT3SniperRifle
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 700
+  - id: gunMGT0PipeMachineGun
+    name: gunMGT0PipeMachineGun
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 100
+  - id: gunMGT1AK47
+    name: gunMGT1AK47
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 200
+  - id: gunMGT2TacticalAR
+    name: gunMGT2TacticalAR
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 400
+  - id: gunMGT3M60
+    name: gunMGT3M60
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 0.05
+      block_damage: 0.15
+      durability: 700
+  - id: gunExplosivesT3RocketLauncher
+    name: gunExplosivesT3RocketLauncher
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.15
+      block_damage: 0.15
+      durability: 100
+  - id: gunBowT0PrimitiveBow
+    name: gunBowT0PrimitiveBow
+    category: ranged_weapon
+    stack_size: 1
+    tier: 200
+    stats:
+      damage: 2
+      block_damage: 0.15
+      attacks_per_min: 166
+      durability: 100
+  - id: gunBowT1WoodenBow
+    name: gunBowT1WoodenBow
+    category: ranged_weapon
+    stack_size: 1
+    tier: 500
+    stats:
+      damage: 2
+      block_damage: 0.15
+      attacks_per_min: 166
+      durability: 200
+  - id: gunBowT3CompoundBow
+    name: gunBowT3CompoundBow
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 2
+      block_damage: 0.15
+      durability: 350
+  - id: gunBowT1IronCrossbow
+    name: gunBowT1IronCrossbow
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 2
+      block_damage: 0.15
+      durability: 200
+  - id: gunBowT1DevCrossbow
+    name: gunBowT1DevCrossbow
+    category: material
+    stack_size: 1
+  - id: gunBowT3CompoundCrossbow
+    name: gunBowT3CompoundCrossbow
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      damage: 2
+      block_damage: 0.15
+      durability: 350
+  - id: gunBotT1JunkSledge
+    name: gunBotT1JunkSledge
+    category: ranged_weapon
+    stack_size: 1
+    tier: 1000
+    stats:
+      damage: 0.15
+      block_damage: 0.15
+      durability: 300
+  - id: gunBotT2JunkTurret
+    name: gunBotT2JunkTurret
+    category: ranged_weapon
+    stack_size: 1
+    tier: 2000
+    stats:
+      damage: 0.15
+      durability: 300
+  - id: gunBotT3JunkDrone
+    name: gunBotT3JunkDrone
+    category: ranged_weapon
+    stack_size: 1
+    tier: 5000
+    stats:
+      durability: -0.2
+      damage: 0.15
+  - id: meleeHandMaster
+    name: meleeHandMaster
+    category: melee_weapon
+    stack_size: 1
+  - id: meleeHandPlayer
+    name: meleeHandPlayer
+    category: melee_weapon
     stack_size: 1
     stats:
-      armor: 12.2
-      damage_reduction: 62.5
-      movement_speed: -8%
-      stamina_regen: -1
-      cold_resistance: 5
-      heat_resistance: 5
-    mod_slots: 2
-
-  - id: grilled-meat
-    name: 烤肉
-    category: food
-    stack_size: 20
+      damage: 1
+      block_damage: 1
+      attacks_per_min: -0.3
+  - id: meleeHandZombie01
+    name: meleeHandZombie01
+    category: material
+    stack_size: 1
     stats:
-      hunger: 30
-      health: 5
-      stamina: 10
-      max_health_bonus: 0
-      wellness: 0
-
-  - id: first-aid-bandage
-    name: 急救绷带
+      damage: 10
+      block_damage: 100
+  - id: meleeHandZombieTest
+    name: meleeHandZombieTest
+    category: material
+    stack_size: 1
+    stats:
+      damage: 0
+  - id: meleeHandZombieBalancingDummy
+    name: meleeHandZombieBalancingDummy
+    category: material
+    stack_size: 1
+  - id: meleeHandZombie02
+    name: meleeHandZombie02
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 30
+  - id: meleeHandZombieFeral
+    name: meleeHandZombieFeral
+    category: material
+    stack_size: 1
+  - id: meleeHandZombie02Feral
+    name: meleeHandZombie02Feral
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieCharged
+    name: meleeHandZombieCharged
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieInfernal
+    name: meleeHandZombieInfernal
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieShort
+    name: meleeHandZombieShort
+    category: material
+    stack_size: 1
+    stats:
+      damage: 10
+  - id: meleeHandZombieShortFeral
+    name: meleeHandZombieShortFeral
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieBurning
+    name: meleeHandZombieBurning
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieBurningFeral
+    name: meleeHandZombieBurningFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieBurningCharged
+    name: meleeHandZombieBurningCharged
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieBurningInfernal
+    name: meleeHandZombieBurningInfernal
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieBurningCrawler
+    name: meleeHandZombieBurningCrawler
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 30
+  - id: meleeHandZombieCop
+    name: meleeHandZombieCop
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: ammoProjectileZombieVomit
+    name: ammoProjectileZombieVomit
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieCopFeral
+    name: meleeHandZombieCopFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: ammoProjectileZombieVomitFeral
+    name: ammoProjectileZombieVomitFeral
+    category: material
+    stack_size: 1
+    stats:
+      block_damage: 105
+      damage: 1
+  - id: meleeHandZombieCopRadiated
+    name: meleeHandZombieCopRadiated
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: ammoProjectileZombieVomitRadiated
+    name: ammoProjectileZombieVomitRadiated
+    category: material
+    stack_size: 1
+    stats:
+      block_damage: 145
+      damage: 1
+  - id: meleeHandzombieMutated
+    name: meleeHandzombieMutated
+    category: material
+    stack_size: 1
+  - id: meleeHandzombieMutatedFeral
+    name: meleeHandzombieMutatedFeral
+    category: material
+    stack_size: 1
+  - id: meleeHandzombieMutatedRadiated
+    name: meleeHandzombieMutatedRadiated
+    category: material
+    stack_size: 1
+  - id: meleeHandzombieMutatedCharged
+    name: meleeHandzombieMutatedCharged
+    category: material
+    stack_size: 1
+  - id: meleeHandzombieMutatedInfernal
+    name: meleeHandzombieMutatedInfernal
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieMutated
+    name: ammoProjectileZombieMutated
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieMutatedFast
+    name: ammoProjectileZombieMutatedFast
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieRancher
+    name: meleeHandZombieRancher
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieRancherFeral
+    name: meleeHandZombieRancherFeral
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieRancherCharged
+    name: meleeHandZombieRancherCharged
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieRancherInfernal
+    name: meleeHandZombieRancherInfernal
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieChuck
+    name: meleeHandZombieChuck
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieChuckFeral
+    name: meleeHandZombieChuckFeral
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieChuckCharged
+    name: meleeHandZombieChuckCharged
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieChuckInfernal
+    name: meleeHandZombieChuckInfernal
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieBoulder
+    name: ammoProjectileZombieBoulder
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieBoulderFeral
+    name: ammoProjectileZombieBoulderFeral
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieBoulderCharged
+    name: ammoProjectileZombieBoulderCharged
+    category: material
+    stack_size: 1
+  - id: ammoProjectileZombieBoulderInfernal
+    name: ammoProjectileZombieBoulderInfernal
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalZombieDog
+    name: meleeHandAnimalZombieDog
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 85
+  - id: meleeHandZombieStrong
+    name: meleeHandZombieStrong
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieDemolition
+    name: meleeHandZombieDemolition
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieStrongFeral
+    name: meleeHandZombieStrongFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandAnimalBear
+    name: meleeHandAnimalBear
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 40
+  - id: meleeHandAnimalLittleBear
+    name: meleeHandAnimalLittleBear
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 40
+  - id: meleeHandAnimalZombieBear
+    name: meleeHandAnimalZombieBear
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 40
+  - id: meleeHandZombieHazMat
+    name: meleeHandZombieHazMat
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieHazMatFeral
+    name: meleeHandZombieHazMatFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieWorker
+    name: meleeHandZombieWorker
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombieWorkerFeral
+    name: meleeHandZombieWorkerFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombiePartyGirl
+    name: meleeHandZombiePartyGirl
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandZombiePartyGirlFeral
+    name: meleeHandZombiePartyGirlFeral
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandAnimalCoyote
+    name: meleeHandAnimalCoyote
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 85
+  - id: meleeHandAnimalInsectSwarm
+    name: meleeHandAnimalInsectSwarm
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalBeeSwarm
+    name: meleeHandAnimalBeeSwarm
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalZombieVulture
+    name: meleeHandAnimalZombieVulture
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalZombieVultureRadiated
+    name: meleeHandAnimalZombieVultureRadiated
+    category: material
+    stack_size: 1
+  - id: ammoProjectileVultureVomit
+    name: ammoProjectileVultureVomit
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalSnake
+    name: meleeHandAnimalSnake
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 75
+  - id: meleeHandAnimalWolf
+    name: meleeHandAnimalWolf
+    category: material
+    stack_size: 1
+    stats:
+      attacks_per_min: 85
+  - id: meleeHandAnimalDireWolf
+    name: meleeHandAnimalDireWolf
+    category: material
+    stack_size: 1
+  - id: meleeHandAnimalMountainLion
+    name: meleeHandAnimalMountainLion
+    category: material
+    stack_size: 1
+  - id: meleeHandZombieBoar
+    name: meleeHandZombieBoar
+    category: material
+    stack_size: 1
+  - id: meleeHandBossGrace
+    name: meleeHandBossGrace
+    category: material
+    stack_size: 1
+  - id: ammo9mmBulletBall
+    name: ammo9mmBulletBall
+    category: ammo
+    stack_size: 300
+    tier: 9
+    stats:
+      damage: 32
+      block_damage: 100
+  - id: ammo9mmBulletHP
+    name: ammo9mmBulletHP
+    category: ammo
+    stack_size: 1
+    tier: 14
+    stats:
+      damage: 35
+      block_damage: 100
+  - id: ammo9mmBulletAP
+    name: ammo9mmBulletAP
+    category: ammo
+    stack_size: 1
+    tier: 14
+    stats:
+      damage: 38
+      block_damage: 100
+  - id: ammo44MagnumBulletBall
+    name: ammo44MagnumBulletBall
+    category: ammo
+    stack_size: 1
+    tier: 10
+    stats:
+      damage: 0.5
+      block_damage: 100
+  - id: ammo44MagnumBulletHP
+    name: ammo44MagnumBulletHP
+    category: ammo
+    stack_size: 1
+    tier: 15
+    stats:
+      damage: 0.5
+      block_damage: 100
+  - id: ammo44MagnumBulletAP
+    name: ammo44MagnumBulletAP
+    category: ammo
+    stack_size: 1
+    tier: 15
+    stats:
+      damage: 0.5
+      block_damage: 100
+  - id: ammo762mmBulletBall
+    name: ammo762mmBulletBall
+    category: ammo
+    stack_size: 150
+    tier: 11
+    stats:
+      damage: 47
+      block_damage: 100
+  - id: ammo762mmBulletHP
+    name: ammo762mmBulletHP
+    category: ammo
+    stack_size: 1
+    tier: 16
+    stats:
+      damage: -1.5
+      block_damage: 100
+  - id: ammo762mmBulletAP
+    name: ammo762mmBulletAP
+    category: ammo
+    stack_size: 1
+    tier: 16
+    stats:
+      damage: -3
+      block_damage: 100
+  - id: ammoShotgunShell
+    name: ammoShotgunShell
+    category: ammo
+    stack_size: 150
+    tier: 11
+    stats:
+      damage: 10.1
+      block_damage: 100
+  - id: ammoShotgunSlug
+    name: ammoShotgunSlug
+    category: ammo
+    stack_size: 150
+    tier: 20
+    stats:
+      damage: 175
+      block_damage: 100
+  - id: ammoShotgunBreachingSlug
+    name: ammoShotgunBreachingSlug
+    category: ammo
+    stack_size: 150
+    tier: 20
+    stats:
+      damage: 96
+      block_damage: 1000
+  - id: ammoJunkTurretRegular
+    name: ammoJunkTurretRegular
+    category: ammo
+    stack_size: 1000
+    tier: 3
+    stats:
+      damage: 11.8
+      block_damage: 100
+  - id: ammoJunkTurretShell
+    name: ammoJunkTurretShell
+    category: material
+    stack_size: 1
+    tier: 2
+    stats:
+      damage: 2.1
+      block_damage: 100
+  - id: ammoJunkTurretAP
+    name: ammoJunkTurretAP
+    category: material
+    stack_size: 1
+    tier: 6
+    stats:
+      damage: 14.1
+      block_damage: 100
+  - id: ammoRocketHE
+    name: ammoRocketHE
+    category: ammo
+    stack_size: 20
+    tier: 250
+    stats:
+      block_damage: 100
+      damage: 20
+  - id: ammoRocketFrag
+    name: ammoRocketFrag
+    category: material
+    stack_size: 1
+    stats:
+      block_damage: 10
+      damage: 30
+  - id: ammoGasCan
+    name: 汽油罐
+    category: material
+    stack_size: 10000
+    tier: 30
+  - id: ammoArrowStone
+    name: ammoArrowStone
+    category: ammo
+    stack_size: 150
+    tier: 12
+    stats:
+      damage: 0.25
+      block_damage: 100
+  - id: ammoArrowIron
+    name: ammoArrowIron
+    category: ammo
+    stack_size: 1
+    tier: 25
+    stats:
+      damage: 0.25
+      block_damage: 100
+  - id: ammoArrowSteelAP
+    name: ammoArrowSteelAP
+    category: material
+    stack_size: 1
+    tier: 57
+    stats:
+      damage: 0.25
+      block_damage: 100
+  - id: ammoArrowFlaming
+    name: ammoArrowFlaming
+    category: material
+    stack_size: 1
+    tier: 44
+    stats:
+      damage: 0.25
+      block_damage: 100
+  - id: ammoArrowExploding
+    name: ammoArrowExploding
+    category: ammo
+    stack_size: 75
+    tier: 65
+    stats:
+      block_damage: 100
+      damage: 0.25
+  - id: ammoCrossbowBoltStone
+    name: ammoCrossbowBoltStone
+    category: ammo
+    stack_size: 150
+    tier: 12
+    stats:
+      damage: 50
+      block_damage: 100
+  - id: ammoCrossbowBoltIron
+    name: ammoCrossbowBoltIron
+    category: ammo
+    stack_size: 150
+    tier: 25
+    stats:
+      damage: 59
+      block_damage: 100
+  - id: ammoCrossbowBoltSteelAP
+    name: ammoCrossbowBoltSteelAP
+    category: material
+    stack_size: 1
+    tier: 57
+    stats:
+      damage: 63
+      block_damage: 100
+  - id: ammoCrossbowBoltFlaming
+    name: ammoCrossbowBoltFlaming
+    category: material
+    stack_size: 1
+    tier: 44
+    stats:
+      damage: 38
+      block_damage: 100
+  - id: ammoCrossbowBoltExploding
+    name: ammoCrossbowBoltExploding
+    category: ammo
+    stack_size: 75
+    tier: 80
+    stats:
+      block_damage: 100
+      damage: 250
+  - id: ammoBundleMaster
+    name: ammoBundleMaster
+    category: material
+    stack_size: 5
+    tier: 900
+  - id: ammoBundle9mmBulletBall
+    name: ammoBundle9mmBulletBall
+    category: material
+    stack_size: 10
+    tier: 900
+  - id: ammoBundle9mmBulletHP
+    name: ammoBundle9mmBulletHP
+    category: material
+    stack_size: 10
+    tier: 1400
+  - id: ammoBundle9mmBulletAP
+    name: ammoBundle9mmBulletAP
+    category: material
+    stack_size: 10
+    tier: 1400
+  - id: ammoBundle44MagnumBulletBall
+    name: ammoBundle44MagnumBulletBall
+    category: material
+    stack_size: 10
+    tier: 1000
+  - id: ammoBundle44MagnumBulletHP
+    name: ammoBundle44MagnumBulletHP
+    category: material
+    stack_size: 10
+    tier: 1500
+  - id: ammoBundle44MagnumBulletAP
+    name: ammoBundle44MagnumBulletAP
+    category: material
+    stack_size: 10
+    tier: 1500
+  - id: ammoBundle762mmBulletBall
+    name: ammoBundle762mmBulletBall
+    category: material
+    stack_size: 1
+    tier: 1100
+  - id: ammoBundle762mmBulletHP
+    name: ammoBundle762mmBulletHP
+    category: material
+    stack_size: 1
+    tier: 1600
+  - id: ammoBundle762mmBulletAP
+    name: ammoBundle762mmBulletAP
+    category: material
+    stack_size: 1
+    tier: 1600
+  - id: ammoBundleShotgunShell
+    name: ammoBundleShotgunShell
+    category: material
+    stack_size: 1
+    tier: 1100
+  - id: ammoBundleShotgunSlug
+    name: ammoBundleShotgunSlug
+    category: material
+    stack_size: 1
+    tier: 2000
+  - id: ammoBundleShotgunBreachingSlug
+    name: ammoBundleShotgunBreachingSlug
+    category: material
+    stack_size: 1
+    tier: 2000
+  - id: ammoBundleJunkTurretRegular
+    name: ammoBundleJunkTurretRegular
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: ammoBundleJunkTurretShell
+    name: ammoBundleJunkTurretShell
+    category: material
+    stack_size: 1
+  - id: ammoBundleJunkTurretAP
+    name: ammoBundleJunkTurretAP
+    category: material
+    stack_size: 1
+  - id: ammoBundleArrowStone
+    name: ammoBundleArrowStone
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: ammoBundleArrowIron
+    name: ammoBundleArrowIron
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: ammoBundleArrowSteelAP
+    name: ammoBundleArrowSteelAP
+    category: material
+    stack_size: 1
+    tier: 1140
+  - id: ammoBundleArrowFlaming
+    name: ammoBundleArrowFlaming
+    category: material
+    stack_size: 1
+    tier: 4400
+  - id: ammoBundleArrowExploding
+    name: ammoBundleArrowExploding
+    category: material
+    stack_size: 1
+    tier: 4125
+  - id: ammoBundleCrossbowBoltStone
+    name: ammoBundleCrossbowBoltStone
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: ammoBundleCrossbowBoltIron
+    name: ammoBundleCrossbowBoltIron
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: ammoBundleCrossbowBoltSteelAP
+    name: ammoBundleCrossbowBoltSteelAP
+    category: material
+    stack_size: 1
+    tier: 1140
+  - id: ammoBundleCrossbowBoltFlaming
+    name: ammoBundleCrossbowBoltFlaming
+    category: material
+    stack_size: 1
+    tier: 4400
+  - id: ammoBundleCrossbowBoltExploding
+    name: ammoBundleCrossbowBoltExploding
+    category: material
+    stack_size: 1
+    tier: 6000
+  - id: resourceRockSmallBundle
+    name: 一堆小石子（6000）
+    category: material
+    stack_size: 5
+    tier: 6000
+  - id: resourceWoodBundle
+    name: 一堆木头（6000）
+    category: material
+    stack_size: 1
+    tier: 3000
+  - id: resourceScrapIronBundle
+    name: 一堆铁（6000）
+    category: material
+    stack_size: 1
+  - id: resourcePotassiumNitratePowderBundle
+    name: 一堆硝酸盐粉（6000）
+    category: material
+    stack_size: 1
+  - id: resourceLeadBundle
+    name: 一堆铅（6000）
+    category: material
+    stack_size: 1
+  - id: resourceScrapBrassBundle
+    name: 一堆黄铜（6000）
+    category: material
+    stack_size: 1
+  - id: resourceCoalBundle
+    name: 一堆煤炭（6000）
+    category: material
+    stack_size: 1
+  - id: resourceOilShaleBundle
+    name: 一堆油页岩（6000）
+    category: material
+    stack_size: 1
+  - id: ammoGasCanBundle
+    name: 汽油罐堆（5000）
+    category: material
+    stack_size: 1
+    tier: 1500
+  - id: resourceGunPowderBundle
+    name: 一堆火药（1000）
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: thrownAmmoPipeBomb
+    name: thrownAmmoPipeBomb
+    category: ammo
+    stack_size: 20
+    tier: 50
+  - id: thrownGrenadeContact
+    name: thrownGrenadeContact
+    category: ammo
+    stack_size: 25
+    tier: 75
+  - id: thrownGrenade
+    name: thrownGrenade
+    category: ammo
+    stack_size: 1
+  - id: thrownTimedCharge
+    name: thrownTimedCharge
+    category: ammo
+    stack_size: 10
+    tier: 300
+  - id: thrownDynamite
+    name: thrownDynamite
+    category: ammo
+    stack_size: 10
+    tier: 100
+  - id: thrownAmmoMolotovCocktail
+    name: thrownAmmoMolotovCocktail
+    category: ammo
+    stack_size: 20
+    tier: 75
+  - id: ammoDartIron
+    name: ammoDartIron
+    category: material
+    stack_size: 500
+    tier: 34
+    stats:
+      damage: 45
+      block_damage: 2
+  - id: partsMaster
+    name: partsMaster
+    category: material
+    stack_size: 50
+    tier: 750
+  - id: gunMGT1AK47Parts
+    name: gunMGT1AK47Parts
+    category: material
+    stack_size: 50
+    tier: 150
+  - id: gunHandgunT1PistolParts
+    name: gunHandgunT1PistolParts
+    category: material
+    stack_size: 1
+  - id: gunRifleT1HuntingRifleParts
+    name: gunRifleT1HuntingRifleParts
+    category: material
+    stack_size: 1
+  - id: gunShotgunT1DoubleBarrelParts
+    name: gunShotgunT1DoubleBarrelParts
+    category: material
+    stack_size: 1
+  - id: gunBowT1WoodenBowParts
+    name: gunBowT1WoodenBowParts
+    category: material
+    stack_size: 1
+  - id: gunExplosivesT3RocketLauncherParts
+    name: gunExplosivesT3RocketLauncherParts
+    category: material
+    stack_size: 1
+    tier: 200
+  - id: gunBotRoboticsParts
+    name: gunBotRoboticsParts
+    category: melee_weapon
+    stack_size: 1
+  - id: meleeWpnBatonT2StunBatonParts
+    name: 眩晕棒零件
+    category: melee_weapon
+    stack_size: 1
+  - id: meleeWpnKnucklesT3SteelKnucklesParts
+    name: 钢质拳套零件
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: meleeWpnBladeT3MacheteParts
+    name: 砍刀零件
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: meleeWpnSpearT3SteelSpearParts
+    name: 钢矛零件
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: meleeWpnClubT3SteelClubParts
+    name: 钢棍零件
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: meleeWpnSledgeT3SteelSledgehammerParts
+    name: 钢质大锤零件
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: meleeToolAllSteelParts
+    name: meleeToolAllSteelParts
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: armorParts
+    name: 护甲部件
+    category: armor
+    stack_size: 1
+    tier: 200
+  - id: meleeToolAxeT3ChainsawParts
+    name: meleeToolAxeT3ChainsawParts
+    category: melee_weapon
+    stack_size: 1
+    tier: 200
+  - id: vehicleWheels
+    name: 车轮
+    category: vehicle
+    stack_size: 1
+    tier: 300
+  - id: vehicleMinibikeChassis
+    name: 小型机车底盘
+    category: vehicle
+    stack_size: 1
+    tier: 1800
+  - id: vehicleMinibikeHandlebars
+    name: 小型机车车把
+    category: vehicle
+    stack_size: 1
+    tier: 1800
+  - id: vehicleMinibikePlaceable
+    name: 小型机车
+    category: vehicle
+    stack_size: 1
+    tier: 6000
+    stats:
+      durability: 2000
+  - id: vehicleBicycleChassis
+    name: 自行车底盘
+    category: vehicle
+    stack_size: 1
+    tier: 750
+  - id: vehicleBicycleHandlebars
+    name: 自行车车把
+    category: vehicle
+    stack_size: 1
+    tier: 750
+  - id: vehicleBicyclePlaceable
+    name: 自行车
+    category: vehicle
+    stack_size: 1
+    tier: 2500
+    stats:
+      durability: 1500
+  - id: vehicleMotorcycleChassis
+    name: 摩托车底盘
+    category: vehicle
+    stack_size: 1
+    tier: 3000
+  - id: vehicleMotorcycleHandlebars
+    name: 摩托车车把
+    category: vehicle
+    stack_size: 1
+    tier: 3000
+  - id: vehicleMotorcyclePlaceable
+    name: 摩托车
+    category: armor
+    stack_size: 1
+    tier: 10000
+    stats:
+      durability: 4000
+  - id: vehicleTruck4x4Chassis
+    name: 4x4 卡车底盘
+    category: vehicle
+    stack_size: 1
+    tier: 9000
+  - id: vehicleTruck4x4Accessories
+    name: 4x4 卡车附件
+    category: vehicle
+    stack_size: 1
+    tier: 9000
+  - id: vehicleTruck4x4Placeable
+    name: 4x4 卡车
+    category: vehicle
+    stack_size: 1
+    tier: 30000
+    stats:
+      durability: 8000
+  - id: vehicleGyroCopterChassis
+    name: 旋翼机底盘
+    category: vehicle
+    stack_size: 1
+    tier: 15000
+  - id: vehicleGyroCopterAccessories
+    name: 旋翼机配件
+    category: vehicle
+    stack_size: 1
+    tier: 15000
+  - id: vehicleGyrocopterPlaceable
+    name: 旋翼机
+    category: armor
+    stack_size: 1
+    tier: 50000
+    stats:
+      durability: 3500
+  - id: vehicleHelicopterPlaceable
+    name: 直升飞机
+    category: vehicle
+    stack_size: 1
+    tier: 220000
+    stats:
+      durability: 4500
+  - id: armorPrimitiveMaster
+    name: armorPrimitiveMaster
+    category: material
+    stack_size: 1
+    tier: 200
+  - id: armorPrimitiveHelmet
+    name: 粗糙兜帽
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPrimitiveOutfit
+    name: 粗糙装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPrimitiveGloves
+    name: 粗糙手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPrimitiveBoots
+    name: 粗糙鞋子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorLightMaster
+    name: armorLightMaster
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: armorLumberjackHelmet
+    name: 伐木工帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorLumberjackOutfit
+    name: 伐木工装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorLumberjackGloves
+    name: 伐木工手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 2
+  - id: armorLumberjackBoots
+    name: 伐木工靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPreacherHelmet
+    name: 传道者帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPreacherOutfit
+    name: 传道者装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorPreacherGloves
+    name: 传道者手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.1
+  - id: armorPreacherBoots
+    name: 传道者靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRogueHelmet
+    name: 盗贼兜帽
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRogueOutfit
+    name: 盗贼装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRogueGloves
+    name: 盗贼手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRogueBoots
+    name: 盗贼靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAthleticHelmet
+    name: 运动员帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAthleticOutfit
+    name: 运动员装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAthleticGloves
+    name: 运动员手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAthleticBoots
+    name: 运动员鞋子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorEnforcerHelmet
+    name: 警官墨镜
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorEnforcerOutfit
+    name: 警官装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorEnforcerGloves
+    name: 警官手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorEnforcerBoots
+    name: 警官鞋子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorMediumMaster
+    name: armorMediumMaster
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: armorFarmerHelmet
+    name: 农夫帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorFarmerOutfit
+    name: 农夫装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorFarmerGloves
+    name: 农夫手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.02
+  - id: armorFarmerBoots
+    name: 农夫靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorBikerHelmet
+    name: 摩托车手头盔
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorBikerOutfit
+    name: 摩托车手装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorBikerGloves
+    name: 摩托车手手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.1
+  - id: armorBikerBoots
+    name: 摩托车手靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorScavengerHelmet
+    name: 拾荒者帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorScavengerOutfit
+    name: 拾荒者装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorScavengerGloves
+    name: 拾荒者手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorScavengerBoots
+    name: 拾荒者靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRangerHelmet
+    name: 护林员帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRangerOutfit
+    name: 护林员装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRangerGloves
+    name: 护林员手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.05
+  - id: armorRangerBoots
+    name: 护林员靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorCommandoHelmet
+    name: 指挥官头盔
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorCommandoOutfit
+    name: 指挥官装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorCommandoGloves
+    name: 指挥官手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.05
+  - id: armorCommandoBoots
+    name: 指挥官靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAssassinHelmet
+    name: 刺客兜帽
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.1
+  - id: armorAssassinOutfit
+    name: 刺客装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorAssassinGloves
+    name: 刺客手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      attacks_per_min: 0.02
+  - id: armorAssassinBoots
+    name: 刺客靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorHeavyMaster
+    name: armorHeavyMaster
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: armorMinerHelmet
+    name: 矿工头盔
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorMinerOutfit
+    name: 矿工装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorMinerGloves
+    name: 矿工手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      block_damage: 0.05
+  - id: armorMinerBoots
+    name: 矿工靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNomadHelmet
+    name: 游牧民头饰
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNomadOutfit
+    name: 游牧民装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNomadGloves
+    name: 游牧民手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.05
+  - id: armorNomadBoots
+    name: 游牧民靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNerdHelmet
+    name: 学霸护目镜
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNerdOutfit
+    name: 学霸装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorNerdGloves
+    name: 学霸手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.1
+  - id: armorNerdBoots
+    name: 学霸靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRaiderHelmet
+    name: 袭击者头盔
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRaiderOutfit
+    name: 袭击者装束
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorRaiderGloves
+    name: 袭击者手套
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+      damage: 0.1
+  - id: armorRaiderBoots
+    name: 袭击者靴子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorSantaHatHelmet
+    name: 圣诞帽
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: armorDLCMaster
+    name: armorDLCMaster
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: armorDesertHelmet
+    name: 沙漠帽子
+    category: armor
+    stack_size: 1
+  - id: armorDesertOutfit
+    name: 沙漠装束
+    category: armor
+    stack_size: 1
+  - id: armorDesertGloves
+    name: 沙漠手套
+    category: armor
+    stack_size: 1
+  - id: armorDesertBoots
+    name: 沙漠靴子
+    category: armor
+    stack_size: 1
+  - id: armorHoarderHelmet
+    name: 囤积者头盔
+    category: armor
+    stack_size: 1
+  - id: armorHoarderOutfit
+    name: 囤积者装束
+    category: armor
+    stack_size: 1
+  - id: armorHoarderGloves
+    name: 囤积者手套
+    category: armor
+    stack_size: 1
+  - id: armorHoarderBoots
+    name: 囤积者靴子
+    category: armor
+    stack_size: 1
+  - id: armorMarauderHelmet
+    name: 抢劫者头盔
+    category: armor
+    stack_size: 1
+  - id: armorMarauderOutfit
+    name: 抢劫者装束
+    category: armor
+    stack_size: 1
+  - id: armorMarauderGloves
+    name: 抢劫者手套
+    category: armor
+    stack_size: 1
+  - id: armorMarauderBoots
+    name: 抢劫者靴子
+    category: armor
+    stack_size: 1
+  - id: armorPirateHelmet
+    name: 海盗头盔
+    category: armor
+    stack_size: 1
+  - id: armorPirateOutfit
+    name: 海盗装束
+    category: armor
+    stack_size: 1
+  - id: armorPirateGloves
+    name: 海盗手套
+    category: armor
+    stack_size: 1
+  - id: armorPirateBoots
+    name: 海盗靴子
+    category: armor
+    stack_size: 1
+  - id: armorHellreaverHelmet
+    name: 地狱掠夺者头盔
+    category: armor
+    stack_size: 1
+  - id: armorHellreaverOutfit
+    name: 地狱掠夺者装束
+    category: armor
+    stack_size: 1
+  - id: armorHellreaverGloves
+    name: 地狱掠夺者手套
+    category: armor
+    stack_size: 1
+  - id: armorHellreaverBoots
+    name: 地狱掠夺者靴子
+    category: armor
+    stack_size: 1
+  - id: armorButcherHelmet
+    name: 屠夫头盔
+    category: armor
+    stack_size: 1
+  - id: armorButcherOutfit
+    name: 屠夫装束
+    category: armor
+    stack_size: 1
+  - id: armorButcherGloves
+    name: 屠夫手套
+    category: armor
+    stack_size: 1
+  - id: armorButcherBoots
+    name: 屠夫靴子
+    category: armor
+    stack_size: 1
+  - id: armorClassicSurvivorHelmet
+    name: 经典幸存者头盔
+    category: armor
+    stack_size: 1
+  - id: armorClassicSurvivorOutfit
+    name: 经典幸存者装束
+    category: armor
+    stack_size: 1
+  - id: armorClassicSurvivorBoots
+    name: 经典幸存者靴子
+    category: armor
+    stack_size: 1
+  - id: armorWinterHelmet
+    name: 冬季帽子
+    category: armor
+    stack_size: 1
+  - id: armorWinterOutfit
+    name: 冬季装束
+    category: armor
+    stack_size: 1
+  - id: armorWinterGloves
+    name: 冬季手套
+    category: armor
+    stack_size: 1
+  - id: armorWinterBoots
+    name: 冬季靴子
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffHelmet
+    name: 劳动度日头盔
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffOutfit
+    name: 劳动度日装束
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffGloves
+    name: 劳动度日手套
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffBoots
+    name: 劳动度日靴子
+    category: armor
+    stack_size: 1
+  - id: armorCasualOutfit
+    name: 休闲装束
+    category: armor
+    stack_size: 1
+  - id: armorCasualGloves
+    name: 休闲手套
+    category: armor
+    stack_size: 1
+  - id: armorCasualBoots
+    name: 休闲靴子
+    category: armor
+    stack_size: 1
+  - id: armorBeachHelmet
+    name: 沙滩遮阳帽
+    category: armor
+    stack_size: 1
+  - id: armorBeachHelmet02
+    name: 沙滩帽
+    category: armor
+    stack_size: 1
+  - id: armorBeachOutfit
+    name: 沙滩装
+    category: armor
+    stack_size: 1
+  - id: armorBeachGloves
+    name: 沙滩手套
+    category: armor
+    stack_size: 1
+  - id: armorBeachBoots
+    name: 沙滩凉鞋
+    category: armor
+    stack_size: 1
+  - id: armorElfHatHelmet
+    name: 小精灵帽子
+    category: armor
+    stack_size: 1
+  - id: armorReindeerHatHelmet
+    name: 驯鹿帽子
+    category: armor
+    stack_size: 1
+  - id: armorSnowmanHatHelmet
+    name: 雪人帽
+    category: armor
+    stack_size: 1
+  - id: armorTreeHatHelmet
+    name: 树帽
+    category: armor
+    stack_size: 1
+  - id: armorCrimsonWarlordHelmet
+    name: 绯红军阀头盔
+    category: armor
+    stack_size: 1
+  - id: armorCrimsonWarlordOutfit
+    name: 绯红军阀装束
+    category: armor
+    stack_size: 1
+  - id: armorCrimsonWarlordGloves
+    name: 绯红军阀手套
+    category: armor
+    stack_size: 1
+  - id: armorCrimsonWarlordBoots
+    name: 绯红军阀靴子
+    category: armor
+    stack_size: 1
+  - id: armorSamuraiHelmet
+    name: 武士头盔
+    category: armor
+    stack_size: 1
+  - id: armorSamuraiOutfit
+    name: 武士装束
+    category: armor
+    stack_size: 1
+  - id: armorSamuraiGloves
+    name: 武士手套
+    category: armor
+    stack_size: 1
+  - id: armorSamuraiBoots
+    name: 武士靴子
+    category: armor
+    stack_size: 1
+  - id: armorMonsterMaskHelmet
+    name: 怪物面具
+    category: armor
+    stack_size: 1
+  - id: armorVampireMaskHelmet
+    name: 吸血鬼面具
+    category: armor
+    stack_size: 1
+  - id: armorWerewolfMaskHelmet
+    name: 狼人面具
+    category: armor
+    stack_size: 1
+  - id: armorZombieMaskHelmet
+    name: 丧尸面具
+    category: armor
+    stack_size: 1
+  - id: armorInspectorMaskHelmet
+    name: 检验员面具
+    category: armor
+    stack_size: 1
+  - id: armorNobleThiefMaskHelmet
+    name: 高贵盗贼面具
+    category: armor
+    stack_size: 1
+  - id: armorPennyPincherMaskHelmet
+    name: 守财奴面具
+    category: armor
+    stack_size: 1
+  - id: armorTheHatterMaskHelmet
+    name: 帽匠面具
+    category: armor
+    stack_size: 1
+  - id: armorPimpHatBlueHelmet
+    name: armorPimpHatBlueHelmet
+    category: armor
+    stack_size: 1
+  - id: armorPimpHatPurpleHelmet
+    name: armorPimpHatPurpleHelmet
+    category: armor
+    stack_size: 1
+  - id: armorWatcherHelmet
+    name: 守望者头盔
+    category: armor
+    stack_size: 1
+  - id: armorWatcherOutfit
+    name: 守望者套装
+    category: armor
+    stack_size: 1
+  - id: armorWatcherGloves
+    name: 守望者手套
+    category: armor
+    stack_size: 1
+  - id: armorWatcherBoots
+    name: 守望者靴子
+    category: armor
+    stack_size: 1
+  - id: armorCrackABookHelmet
+    name: 勤奋好学帽子
+    category: armor
+    stack_size: 1
+  - id: armorCrackABookOutfit
+    name: 勤奋好学装束
+    category: armor
+    stack_size: 1
+  - id: armorMoPowerHelmet
+    name: Mo Power 帽子
+    category: armor
+    stack_size: 1
+  - id: armorMoPowerOutfit
+    name: Mo Power 装束
+    category: armor
+    stack_size: 1
+  - id: armorPassNGasHelmet
+    name: 洪荒之力帽子
+    category: armor
+    stack_size: 1
+  - id: armorPassNGasOutfit
+    name: 洪荒之力装束
+    category: armor
+    stack_size: 1
+  - id: armorPopNPillsHelmet
+    name: 药物狂欢帽子
+    category: armor
+    stack_size: 1
+  - id: armorPopNPillsOutfit
+    name: 药物狂欢装束
+    category: armor
+    stack_size: 1
+  - id: armorSavageCountryHelmet
+    name: Savage Country 帽子
+    category: armor
+    stack_size: 1
+  - id: armorSavageCountryOutfit
+    name: Savage Country 装束
+    category: armor
+    stack_size: 1
+  - id: armorShamwayHelmet
+    name: 山威帽子
+    category: armor
+    stack_size: 1
+  - id: armorShamwayOutfit
+    name: 山威装束
+    category: armor
+    stack_size: 1
+  - id: armorShotgunMessiahHelmet
+    name: 霰弹枪救星帽子
+    category: armor
+    stack_size: 1
+  - id: armorShotgunMessiahOutfit
+    name: 霰弹枪救星装束
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffsHelmet
+    name: 劳动度日帽子
+    category: armor
+    stack_size: 1
+  - id: armorWorkingStiffsOutfit
+    name: 劳动度日装束
+    category: armor
+    stack_size: 1
+  - id: clothingMaster
+    name: clothingMaster
+    category: material
+    stack_size: 1
+    tier: 100
+  - id: clothingHeadT1
+    name: 破旧帽衬
+    category: armor
+    stack_size: 1
+  - id: clothingOutfitT1
+    name: 破旧内衣
+    category: armor
+    stack_size: 1
+  - id: clothingHandsT1
+    name: 破旧手套衬
+    category: armor
+    stack_size: 1
+  - id: clothingFeetT1
+    name: 破旧袜子
+    category: armor
+    stack_size: 1
+  - id: clothingHeadT2
+    name: 拼布帽衬
+    category: armor
+    stack_size: 1
+  - id: clothingOutfitT2
+    name: 拼布长内衣
+    category: armor
+    stack_size: 1
+  - id: clothingHandsT2
+    name: 拼布手套衬
+    category: armor
+    stack_size: 1
+  - id: clothingFeetT2
+    name: 拼布袜子
+    category: armor
+    stack_size: 1
+  - id: clothingHeadT3
+    name: 热核帽衬
+    category: armor
+    stack_size: 1
+  - id: clothingOutfitT3
+    name: 热核战斗内层衣
+    category: armor
+    stack_size: 1
+  - id: clothingHandsT3
+    name: 热核手套衬
+    category: armor
+    stack_size: 1
+  - id: clothingFeetT3
+    name: 热核袜子
+    category: armor
+    stack_size: 1
+  - id: medicalAloeCream
+    name: 芦荟霜
+    category: medical
+    stack_size: 15
+    tier: 10
+  - id: medicalBandage
+    name: 绷带
     category: medical
     stack_size: 10
-    stats:
-      health: 20
-      bleeding_stop: true
-      infection_chance: -50%
-
-  - id: forged-iron
-    name: 锻铁
+    tier: 5
+  - id: medicalFirstAidBandage
+    name: 急救绷带
     category: material
-    stack_size: 600
-    craft:
-      station: 熔炉
-      craft_time: 30
-      recipe:
-        - { item_id: iron, count: 6 }
-        - { item_id: clay, count: 10 }
-        - { item_id: oil-shale, count: 5 }
-
-  - id: ammo-762
-    name: 7.62mm 子弹
-    category: ammo
-    stack_size: 500
-    stats:
-      damage: 58
-      penetration: 1
-      range: 80
-
-  - id: sex-tex-vol1
-    name: 《性暴龙》第1卷
-    category: book
-    tier: 1
+    stack_size: 5
+    tier: 15
+  - id: medicalFirstAidKit
+    name: 急救包
+    category: material
+    stack_size: 5
+    tier: 200
+  - id: medicalSplint
+    name: 夹板
+    category: medical
+    stack_size: 5
+    tier: 10
+  - id: medicalPlasterCast
+    name: 石膏绷带
+    category: medical
     stack_size: 1
-    max_level: 5
-    skill_name: 性暴龙
-    effect: 使用工具时 +10% 伤害
-
-  - id: minibike
-    name: 迷你自行车
-    category: vehicle
-    tier: 2
-    stack_size: 1
-    stats:
-      hp: 2500
-      speed: 12
-      storage_slots: 18
-      fuel_type: 汽油
-      fuel_capacity: 8000
-      fuel_consumption: 5
-
-  - id: blade-trap
-    name: 刀片陷阱
-    category: trap
-    tier: 3
-    stack_size: 1
-    stats:
-      damage: 15
-      attacks_per_min: 120
-      hp: 3000
-      power_usage: 20
-      trigger_range: 2
-
-  - id: mining-glasses
-    name: 矿工护目镜
-    category: accessory
-    slot: head
-    stack_size: 1
-    stats:
-      light_intensity: 3
-    mod_slots: 0
-
-  - id: repair-kit
-    name: 修理包
-    category: consumable
+  - id: medicalBloodBag
+    name: 血袋
+    category: medical
+    stack_size: 15
+    tier: 50
+  - id: drugVitamins
+    name: 维生素
+    category: medical
     stack_size: 10
-    stats:
-      repair_amount: 200
-      repair_type: tool
-
-  - id: t5-keycard
-    name: T5 钥匙卡
-    category: quest_item
-    stack_size: 1
-    quest: 秘密基地
-
-  # --- 被引用的基础材料 ---
-  - id: small-stone
-    name: 小石头
+    tier: 80
+  - id: drugPainkillers
+    name: 止痛药
+    category: medical
+    stack_size: 10
+    tier: 80
+  - id: drugHerbalAntibiotics
+    name: 草药抗生素
+    category: medical
+    stack_size: 10
+    tier: 120
+  - id: drugAntibiotics
+    name: 抗生素
+    category: medical
+    stack_size: 10
+    tier: 240
+  - id: drugSteroids
+    name: 类固醇
     category: material
-    stack_size: 600
-
-  - id: plant-fiber
+    stack_size: 1
+    tier: 250
+  - id: drugRecog
+    name: 雷克格
+    category: medical
+    stack_size: 10
+    tier: 250
+  - id: drugFortBites
+    name: 强健宝
+    category: material
+    stack_size: 1
+  - id: foodBurntSmoothie
+    name: foodBurntSmoothie
+    category: food
+    stack_size: 10
+    tier: 1000
+  - id: foodOasisSmoothie
+    name: 中暑补剂
+    category: food
+    stack_size: 10
+    tier: 1000
+  - id: foodFrostbiteSmoothie
+    name: foodFrostbiteSmoothie
+    category: food
+    stack_size: 10
+    tier: 1000
+  - id: foodAtomicSmoothie
+    name: foodAtomicSmoothie
+    category: food
+    stack_size: 10
+    tier: 1000
+  - id: drugAtomJunkies
+    name: 原子迷
+    category: medical
+    stack_size: 10
+    tier: 100
+  - id: drugCovertCats
+    name: 隐蔽的猫
+    category: material
+    stack_size: 1
+  - id: drugEyeKandy
+    name: 寻宝眼药水
+    category: material
+    stack_size: 1
+  - id: drugHackers
+    name: 黑客
+    category: material
+    stack_size: 1
+  - id: drugHealthBar
+    name: 能量棒
+    category: material
+    stack_size: 1
+  - id: drugJailBreakers
+    name: 越狱者
+    category: material
+    stack_size: 1
+  - id: drugNerdTats
+    name: 学霸刺青
+    category: material
+    stack_size: 1
+  - id: drugOhShitzDrops
+    name: 该死的坠落
+    category: material
+    stack_size: 1
+  - id: drugRockBusters
+    name: 岩石克星
+    category: material
+    stack_size: 1
+  - id: drugSkullCrushers
+    name: 头骨粉碎者
+    category: material
+    stack_size: 1
+  - id: drugSugarButts
+    name: 烟蒂糖
+    category: material
+    stack_size: 1
+  - id: foodHoney
+    name: foodHoney
+    category: food
+    stack_size: 10
+    tier: 80
+  - id: foodCanBeef
+    name: foodCanBeef
+    category: food
+    stack_size: 10
+    tier: 60
+  - id: foodCanChicken
+    name: foodCanChicken
+    category: material
+    stack_size: 1
+  - id: foodCanLamb
+    name: foodCanLamb
+    category: material
+    stack_size: 1
+  - id: foodCanCatfood
+    name: foodCanCatfood
+    category: material
+    stack_size: 1
+    tier: 40
+  - id: foodCanDogfood
+    name: foodCanDogfood
+    category: material
+    stack_size: 1
+    tier: 40
+  - id: foodCanChili
+    name: foodCanChili
+    category: material
+    stack_size: 1
+  - id: foodCanTuna
+    name: foodCanTuna
+    category: material
+    stack_size: 1
+    tier: 20
+  - id: foodCanSham
+    name: foodCanSham
+    category: material
+    stack_size: 1
+  - id: foodCanPasta
+    name: foodCanPasta
+    category: material
+    stack_size: 1
+  - id: foodCanSalmon
+    name: foodCanSalmon
+    category: material
+    stack_size: 1
+  - id: foodCanMiso
+    name: foodCanMiso
+    category: material
+    stack_size: 1
+    tier: 55
+  - id: foodCanPeas
+    name: foodCanPeas
+    category: material
+    stack_size: 1
+    tier: 50
+  - id: foodCanPears
+    name: foodCanPears
+    category: material
+    stack_size: 1
+    tier: 50
+  - id: foodCanSoup
+    name: foodCanSoup
+    category: material
+    stack_size: 1
+    tier: 55
+  - id: foodCanStock
+    name: foodCanStock
+    category: material
+    stack_size: 1
+    tier: 30
+  - id: foodCornOnTheCob
+    name: foodCornOnTheCob
+    category: food
+    stack_size: 10
+    tier: 30
+  - id: foodCornBread
+    name: foodCornBread
+    category: food
+    stack_size: 10
+    tier: 16
+  - id: foodShamSandwich
+    name: foodShamSandwich
+    category: food
+    stack_size: 10
+    tier: 5
+  - id: foodCharredMeat
+    name: foodCharredMeat
+    category: food
+    stack_size: 10
+    tier: 20
+  - id: foodGrilledMeat
+    name: foodGrilledMeat
+    category: food
+    stack_size: 10
+    tier: 24
+  - id: foodBoiledMeat
+    name: foodBoiledMeat
+    category: food
+    stack_size: 10
+    tier: 52
+  - id: foodMeatStew
+    name: foodMeatStew
+    category: food
+    stack_size: 10
+    tier: 134
+  - id: foodSteakAndPotato
+    name: foodSteakAndPotato
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: foodHoneyGlazedSham
+    name: 蜜汁山威
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: foodHoneyBrisket
+    name: 蜜汁牛腩
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: foodShamChowder
+    name: foodShamChowder
+    category: material
+    stack_size: 1
+    tier: 126
+  - id: foodHoboStew
+    name: foodHoboStew
+    category: food
+    stack_size: 10
+    tier: 134
+  - id: foodFishTacos
+    name: foodFishTacos
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: foodChiliDog
+    name: foodChiliDog
+    category: food
+    stack_size: 10
+    tier: 106
+  - id: foodBakedPotato
+    name: foodBakedPotato
+    category: food
+    stack_size: 10
+    tier: 16
+  - id: foodBlueberryPie
+    name: foodBlueberryPie
+    category: food
+    stack_size: 10
+    tier: 124
+  - id: foodPumpkinPie
+    name: foodPumpkinPie
+    category: food
+    stack_size: 10
+    tier: 124
+  - id: foodPumpkinCheesecake
+    name: foodPumpkinCheesecake
+    category: food
+    stack_size: 10
+    tier: 124
+  - id: foodPumpkinBread
+    name: foodPumpkinBread
+    category: food
+    stack_size: 10
+    tier: 124
+  - id: foodGumboStew
+    name: foodGumboStew
+    category: food
+    stack_size: 10
+    tier: 250
+  - id: foodShepardsPie
+    name: foodShepardsPie
+    category: food
+    stack_size: 10
+    tier: 250
+  - id: foodSpaghetti
+    name: foodSpaghetti
+    category: food
+    stack_size: 10
+    tier: 250
+  - id: foodTunaFishGravyToast
+    name: foodTunaFishGravyToast
+    category: food
+    stack_size: 10
+    tier: 250
+  - id: foodEggBoiled
+    name: foodEggBoiled
+    category: food
+    stack_size: 10
+    tier: 25
+  - id: foodBaconAndEggs
+    name: foodBaconAndEggs
+    category: food
+    stack_size: 10
+    tier: 72
+  - id: foodVegetableStew
+    name: foodVegetableStew
+    category: food
+    stack_size: 10
+    tier: 102
+  - id: foodRawMeat
+    name: foodRawMeat
+    category: food
+    stack_size: 125
+    tier: 20
+  - id: foodRawMeatBundle
+    name: 生肉捆
+    category: material
+    stack_size: 10
+    tier: 100
+  - id: foodRottingFlesh
+    name: foodRottingFlesh
+    category: food
+    stack_size: 125
+    tier: 5
+  - id: foodEgg
+    name: foodEgg
+    category: food
+    stack_size: 125
+    tier: 15
+  - id: foodCornMeal
+    name: foodCornMeal
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropBlueberries
+    name: foodCropBlueberries
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropCorn
+    name: foodCropCorn
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropGraceCorn
+    name: foodCropGraceCorn
+    category: food
+    stack_size: 125
+    tier: 200
+  - id: foodCropPotato
+    name: foodCropPotato
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropMushrooms
+    name: foodCropMushrooms
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropMushroomsRadiated
+    name: foodCropMushroomsRadiated
+    category: food
+    stack_size: 125
+    tier: 50
+  - id: foodCropYuccaFruit
+    name: foodCropYuccaFruit
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: foodCropPumpkin
+    name: foodCropPumpkin
+    category: food
+    stack_size: 125
+    tier: 10
+  - id: drinkCanEmpty
+    name: drinkCanEmpty
+    category: material
+    stack_size: 500
+    tier: 5
+  - id: drinkJarEmpty
+    name: drinkJarEmpty
+    category: material
+    stack_size: 10
+    tier: 20
+  - id: drinkJarRiverWater
+    name: drinkJarRiverWater
+    category: material
+    stack_size: 10
+    tier: 20
+  - id: drinkJarBoiledWater
+    name: drinkJarBoiledWater
+    category: material
+    stack_size: 10
+    tier: 40
+  - id: drinkJarPureMineralWater
+    name: drinkJarPureMineralWater
+    category: material
+    stack_size: 10
+    tier: 100
+  - id: drinkJarYuccaJuice
+    name: drinkJarYuccaJuice
+    category: food
+    stack_size: 10
+    tier: 68
+  - id: drinkJarGoldenRodTea
+    name: drinkJarGoldenRodTea
+    category: food
+    stack_size: 10
+    tier: 48
+  - id: drinkJarHoneyTea
+    name: 蜂蜜茶
+    category: food
+    stack_size: 10
+    tier: 128
+  - id: drinkJarRedTea
+    name: drinkJarRedTea
+    category: food
+    stack_size: 10
+    tier: 48
+  - id: drinkYuccaJuiceSmoothie
+    name: drinkYuccaJuiceSmoothie
+    category: food
+    stack_size: 10
+    tier: 156
+  - id: drinkCanMegaCrush
+    name: drinkCanMegaCrush
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: drinkJarCoffee
+    name: drinkJarCoffee
+    category: food
+    stack_size: 10
+    tier: 96
+  - id: drinkJarBlackStrapCoffee
+    name: drinkJarBlackStrapCoffee
+    category: material
+    stack_size: 1
+    tier: 200
+  - id: drinkJarBeer
+    name: drinkJarBeer
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: drinkJarGrandpasMoonshine
+    name: drinkJarGrandpasMoonshine
+    category: food
+    stack_size: 10
+    tier: 500
+  - id: drinkJarGrandpasAwesomeSauce
+    name: drinkJarGrandpasAwesomeSauce
+    category: food
+    stack_size: 10
+    tier: 100
+  - id: drinkJarGrandpasLearningElixir
+    name: drinkJarGrandpasLearningElixir
+    category: food
+    stack_size: 10
+    tier: 250
+  - id: drinkJarGrandpasForgettingElixir
+    name: drinkJarGrandpasForgettingElixir
+    category: material
+    stack_size: 10
+    tier: 2000
+  - id: bucketEmpty
+    name: 水桶
+    category: material
+    stack_size: 1
+    tier: 84
+  - id: bucketRiverWater
+    name: 一桶水
+    category: material
+    stack_size: 1
+    tier: 88
+  - id: schematicMaster
+    name: schematicMaster
+    category: material
+    stack_size: 5
+    tier: 800
+  - id: invisibleRecipesForRepairCost
+    name: invisibleRecipesForRepairCost
+    category: material
+    stack_size: 1
+  - id: schematicNoQualityMaster
+    name: schematicNoQualityMaster
+    category: material
+    stack_size: 1
+  - id: modGunBarrelExtenderSchematic
+    name: 枪管延伸模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunMuzzleBrakeSchematic
+    name: 枪口制动模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunSoundSuppressorSilencerSchematic
+    name: 消声器模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunLaserSightSchematic
+    name: 激光瞄准器模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunFlashlightSchematic
+    name: 武器照明模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunScopeSmallSchematic
+    name: 2倍镜模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunScopeMediumSchematic
+    name: 4倍镜模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunScopeLargeSchematic
+    name: 8倍镜模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunReflexSightSchematic
+    name: 反射式瞄准镜模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunTriggerGroupSemiSchematic
+    name: 触发器组：半自动模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunTriggerGroupBurst3Schematic
+    name: 触发器组：三发点放模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunTriggerGroupAutomaticSchematic
+    name: 触发器组：全自动模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunBipodSchematic
+    name: 双脚支架模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunForegripSchematic
+    name: 前握把模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunRetractingStockSchematic
+    name: 收缩枪托模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunDuckbillSchematic
+    name: 霰弹枪鸭嘴枪口模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunChokeSchematic
+    name: 霰弹枪喉缩模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunMagazineExtenderSchematic
+    name: 弹匣扩充模组设计图
+    category: material
+    stack_size: 1
+  - id: modShotgunSawedOffBarrelSchematic
+    name: 削短型霰弹枪模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunCrippleEmSchematic
+    name: 致残模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunBowPolymerStringSchematic
+    name: 聚合物弓弦模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunBowArrowRestSchematic
+    name: 箭托模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunMeleeTheHunterSchematic
+    name: 猎人模组设计图
+    category: material
+    stack_size: 1
+  - id: modGunMeleeRadRemoverSchematic
+    name: 辐射去除模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeTemperedBladeSchematic
+    name: 钢化刀片设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeSerratedBladeSchematic
+    name: 锯齿刀片模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeWeightedHeadSchematic
+    name: 重头模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeStructuralBraceSchematic
+    name: 结构支撑模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeErgonomicGripSchematic
+    name: 人体工学握把模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeFortifyingGripSchematic
+    name: 强化握把模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeClubBarbedWireSchematic
+    name: 铁丝网模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeClubMetalSpikesSchematic
+    name: 金属长钉模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeGraveDiggerSchematic
+    name: 掘墓者模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeBunkerBusterSchematic
+    name: 掩体炸弹模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeIronBreakerSchematic
+    name: 铁见愁模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeWoodSplitterSchematic
+    name: 劈木模组设计图
+    category: material
+    stack_size: 1
+  - id: modMeleeClubBurningShaftSchematic
+    name: 燃烧杆模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorInsulatedLinerSchematic
+    name: 隔冷内衬模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorCoolingMeshSchematic
+    name: 散热网模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorImprovedFittingsSchematic
+    name: 护甲配件模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorCustomizedFittingsSchematic
+    name: 高级护甲配件模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorPlatingBasicSchematic
+    name: 装甲板模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorPlatingReinforcedSchematic
+    name: 高级护甲镀层模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorStoragePocketSchematic
+    name: 护甲收纳口袋模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorDoubleStoragePocketSchematic
+    name: 护甲双收纳口袋模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorTripleStoragePocketSchematic
+    name: 护甲三收纳口袋模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorQuadStoragePocketSchematic
+    name: 护甲四收纳口袋模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorMuffledConnectorsSchematic
+    name: 消音连接器模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorAdvancedMuffledConnectorsSchematic
+    name: 高级消音连接器模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorImpactBracingSchematic
+    name: 冲击支撑模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorBandolierSchematic
+    name: 弹药带模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorWaterPurifierSchematic
+    name: 净水器模组设计图
+    category: material
+    stack_size: 1
+  - id: modArmorHelmetLightSchematic
+    name: 头盔灯模组设计图
+    category: material
+    stack_size: 1
+  - id: modFuelTankSmallSchematic
+    name: 电动工具小油箱模组设计图
+    category: material
+    stack_size: 1
+  - id: modFuelTankLargeSchematic
+    name: 电动工具大油箱模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneCargoModSchematic
+    name: 机器人无人机储物模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneMedicModSchematic
+    name: 机器人无人机医疗模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneHeadlampModSchematic
+    name: 机器人无人机头灯模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneArmorPlatingModSchematic
+    name: 机器人无人机装甲板模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneMoraleBoosterModSchematic
+    name: 机器人无人机鼓舞士气模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneStunWeaponModSchematic
+    name: 机器人无人机眩晕模组设计图
+    category: material
+    stack_size: 1
+  - id: modRoboticDroneWeaponModSchematic
+    name: 机器人无人机武器模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleFuelSaverSchematic
+    name: 载具节油器模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleOffRoadHeadlightsSchematic
+    name: 载具越野头灯模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleSuperChargerSchematic
+    name: 载具增压器模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleExpandedSeatSchematic
+    name: 载具扩展座椅模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleReserveFuelTankSchematic
+    name: 载具备用油箱模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehiclePlowSchematic
+    name: 载具犁模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleArmorSchematic
+    name: 载具护甲模组设计图
+    category: material
+    stack_size: 1
+  - id: modVehicleStorageSchematic
+    name: 载具储物模组设计图
+    category: material
+    stack_size: 1
+  - id: schematicNoQualityRecipeMaster
+    name: schematicNoQualityRecipeMaster
+    category: material
+    stack_size: 1
+  - id: foodCanShamSchematic
+    name: foodCanShamSchematic
+    category: material
+    stack_size: 1
+  - id: plantedGraceCorn1Schematic
+    name: plantedGraceCorn1Schematic
+    category: material
+    stack_size: 1
+  - id: skillBookMaster
+    name: skillBookMaster
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: blankNoteMaster
+    name: blankNoteMaster
+    category: material
+    stack_size: 50
+    tier: 1600
+  - id: noteDuke01
+    name: noteDuke01
+    category: material
+    stack_size: 1
+  - id: questMaster
+    name: questMaster
+    category: material
+    stack_size: 50
+    tier: 1600
+  - id: challengeQuestMaster
+    name: challengeQuestMaster
+    category: material
+    stack_size: 1
+    tier: 400
+  - id: treasureQuestMaster
+    name: treasureQuestMaster
+    category: material
+    stack_size: 1
+  - id: q_basicSurvival
+    name: q_basicSurvival
+    category: material
+    stack_size: 1
+  - id: qt_taylor
+    name: qt_taylor
+    category: material
+    stack_size: 1
+  - id: qt_nickole
+    name: qt_nickole
+    category: material
+    stack_size: 1
+  - id: qt_stephan
+    name: qt_stephan
+    category: material
+    stack_size: 1
+  - id: qt_jennifer
+    name: qt_jennifer
+    category: material
+    stack_size: 1
+  - id: qt_claude
+    name: qt_claude
+    category: material
+    stack_size: 1
+  - id: qt_sarah
+    name: qt_sarah
+    category: material
+    stack_size: 1
+  - id: qt_raphael
+    name: qt_raphael
+    category: material
+    stack_size: 1
+  - id: qtest_nextTraderAdmin
+    name: qtest_nextTraderAdmin
+    category: material
+    stack_size: 1
+  - id: adminQuestTicketMaster
+    name: adminQuestTicketMaster
+    category: material
+    stack_size: 10
+    tier: 1600
+  - id: adminT1QuestTicket
+    name: adminT1QuestTicket
+    category: material
+    stack_size: 1
+  - id: adminT2QuestTicket
+    name: adminT2QuestTicket
+    category: material
+    stack_size: 1
+  - id: adminT3QuestTicket
+    name: adminT3QuestTicket
+    category: material
+    stack_size: 1
+  - id: adminT4QuestTicket
+    name: adminT4QuestTicket
+    category: material
+    stack_size: 1
+  - id: adminT5QuestTicket
+    name: adminT5QuestTicket
+    category: material
+    stack_size: 1
+  - id: adminT6QuestTicket
+    name: adminT6QuestTicket
+    category: material
+    stack_size: 1
+  - id: resourceRockSmall
+    name: 小石子
+    category: material
+    stack_size: 6000
+    tier: 50
+  - id: resourceSnowBall
+    name: 雪球
+    category: material
+    stack_size: 6000
+    tier: 5
+  - id: resourceAcid
+    name: 一瓶酸液
+    category: material
+    stack_size: 100
+    tier: 140
+  - id: resourceYuccaFibers
     name: 植物纤维
     category: material
-    stack_size: 600
-
-  - id: wood
+    stack_size: 6000
+    tier: 5
+  - id: resourceWood
     name: 木头
     category: material
-    stack_size: 600
-
-  - id: leather
-    name: 皮革
+    stack_size: 6000
+    tier: 25
+  - id: resourceCrushedSand
+    name: 碎石砂
     category: material
-    stack_size: 200
-
-  - id: iron
+    stack_size: 6000
+    tier: 50
+  - id: resourceBrokenGlass
+    name: 碎玻璃
+    category: material
+    stack_size: 6000
+    tier: 5
+  - id: resourceScrapIron
     name: 铁
     category: material
-    stack_size: 600
-
-  - id: clay
-    name: 黏土
+    stack_size: 6000
+    tier: 10
+  - id: resourceForgedIron
+    name: 锻铁
     category: material
-    stack_size: 600
-
-  - id: oil-shale
-    name: 油页岩
+    stack_size: 500
+    tier: 12
+  - id: resourceMetalPipe
+    name: 短铁管
     category: material
-    stack_size: 600
-
-  - id: forged-steel
+    stack_size: 500
+    tier: 12
+  - id: resourceForgedSteel
     name: 锻钢
     category: material
-    stack_size: 600
-    craft:
-      station: 熔炉
-      craft_time: 45
-      recipe:
-        - { item_id: iron, count: 10 }
-        - { item_id: clay, count: 15 }
-        - { item_id: oil-shale, count: 8 }
-
-  - id: mechanical-parts
-    name: 机械零件
+    stack_size: 500
+    tier: 50
+  - id: resourceScrapPolymers
+    name: 废聚合物
     category: material
-    stack_size: 100
-
-  - id: spring
-    name: 弹簧
+    stack_size: 1000
+    tier: 16
+  - id: resourceScopeLens
+    name: resourceScopeLens
     category: material
-    stack_size: 100
-
-  - id: rotten-flesh
-    name: 腐肉
+    stack_size: 10
+    tier: 5
+  - id: resourceSewingKit
+    name: 针线包
+    category: medical
+    stack_size: 50
+    tier: 50
+  - id: resourceOilShale
+    name: 油页岩
     category: material
-    stack_size: 100
-
-  - id: cloth-fragment
-    name: 布碎片
+    stack_size: 6000
+    tier: 10
+  - id: resourceBone
+    name: 骨头
     category: material
-    stack_size: 300
-
-  - id: animal-fat
+    stack_size: 1200
+    tier: 5
+  - id: resourceLeather
+    name: 皮革
+    category: material
+    stack_size: 250
+    tier: 22
+  - id: resourceAnimalFat
     name: 动物脂肪
     category: material
-    stack_size: 100
-
-  # --- 被引用的书籍 ---
-  - id: sex-tex-vol2
-    name: 《性暴龙》第2卷
-    category: book
-    tier: 2
+    stack_size: 500
+    tier: 20
+  - id: resourceTestosteroneExtract
+    name: 睾丸素提取物
+    category: material
+    stack_size: 10
+    tier: 500
+  - id: resourceQueenBee
+    name: 蜂后
+    category: material
+    stack_size: 10
+    tier: 500
+  - id: resourceBeeswax
+    name: 蜂蜡
+    category: material
+    stack_size: 10
+    tier: 500
+  - id: resourceCropHopsFlower
+    name: resourceCropHopsFlower
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceCropAloeLeaf
+    name: resourceCropAloeLeaf
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceCropChrysanthemumPlant
+    name: resourceCropChrysanthemumPlant
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceCropCottonPlant
+    name: resourceCropCottonPlant
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceCropGoldenrodPlant
+    name: resourceCropGoldenrodPlant
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceCropCoffeeBeans
+    name: resourceCropCoffeeBeans
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceScrapBrass
+    name: 黄铜
+    category: material
+    stack_size: 6000
+    tier: 20
+  - id: resourceScrapLead
+    name: 铅
+    category: material
+    stack_size: 6000
+    tier: 10
+  - id: resourceClayLump
+    name: 粘土
+    category: material
+    stack_size: 6000
+    tier: 6
+  - id: resourceCobblestones
+    name: 鹅卵石
+    category: material
+    stack_size: 1000
+    tier: 10
+  - id: resourceCement
+    name: 水泥
+    category: material
+    stack_size: 1000
+    tier: 25
+  - id: resourceConcreteMix
+    name: 混凝土混合料
+    category: material
+    stack_size: 1000
+    tier: 125
+  - id: resourceCloth
+    name: 碎布
+    category: material
+    stack_size: 250
+    tier: 10
+  - id: resourcePaper
+    name: 纸
+    category: material
+    stack_size: 500
+    tier: 10
+  - id: resourceElectricParts
+    name: 电子零件
+    category: material
+    stack_size: 1000
+    tier: 32
+  - id: resourceHeadlight
+    name: 前照灯
+    category: material
+    stack_size: 50
+    tier: 150
+  - id: resourceMechanicalParts
+    name: 机械零件
+    category: material
+    stack_size: 1000
+    tier: 32
+  - id: resourceSpring
+    name: 弹簧
+    category: material
+    stack_size: 500
+    tier: 22
+  - id: resourceGlue
+    name: 胶水
+    category: material
+    stack_size: 500
+    tier: 20
+  - id: resourceDuctTape
+    name: 胶带
+    category: material
+    stack_size: 500
+    tier: 25
+  - id: resourceFeather
+    name: 羽毛
+    category: material
+    stack_size: 250
+    tier: 10
+  - id: resourceArrowHeadIron
+    name: 铁箭头
+    category: material
+    stack_size: 500
+    tier: 12
+  - id: resourceArrowHeadSteelAP
+    name: 钢箭头
+    category: material
+    stack_size: 500
+    tier: 40
+  - id: resourceCoal
+    name: 煤炭
+    category: material
+    stack_size: 6000
+    tier: 10
+  - id: resourcePotassiumNitratePowder
+    name: 硝酸盐粉
+    category: material
+    stack_size: 6000
+    tier: 10
+  - id: resourceGunPowder
+    name: 火药
+    category: material
+    stack_size: 1000
+    tier: 10
+  - id: resourceBuckshot
+    name: resourceBuckshot
+    category: material
+    stack_size: 1000
+    tier: 10
+  - id: resourceBulletCasing
+    name: 弹壳
+    category: material
+    stack_size: 1000
+    tier: 10
+  - id: resourceBulletTip
+    name: 弹尖
+    category: material
+    stack_size: 1000
+    tier: 10
+  - id: resourceNail
+    name: 钉子
+    category: ammo
+    stack_size: 1000
+    tier: 10
+    stats:
+      damage: 5
+      block_damage: 0.1
+  - id: resourceRocketTip
+    name: 火箭弹尖
+    category: material
+    stack_size: 500
+    tier: 50
+  - id: resourceRocketCasing
+    name: 火箭弹壳
+    category: material
+    stack_size: 50
+    tier: 77
+  - id: resourceWaterFilter
+    name: 滤水器
+    category: material
+    stack_size: 50
+    tier: 750
+  - id: resourceRepairKit
+    name: 维修工具
+    category: material
+    stack_size: 25
+    tier: 186
+  - id: resourceArmorCraftingKit
+    name: 护甲制作包
+    category: material
+    stack_size: 25
+    tier: 186
+  - id: resourceLegendaryParts
+    name: 传奇零件
+    category: armor
+    stack_size: 25
+    tier: 186
+  - id: resourceOil
+    name: 机油
+    category: material
+    stack_size: 50
+    tier: 100
+  - id: resourcePaint
+    name: 油漆
+    category: material
+    stack_size: 1000
+    tier: 12
+  - id: resourceDoorKnob
+    name: 黄铜门把手
+    category: material
+    stack_size: 250
+    tier: 40
+  - id: resourceCandleStick
+    name: 黄铜烛台
+    category: material
+    stack_size: 250
+    tier: 120
+  - id: resourceRadiator
+    name: 黄铜散热器
+    category: material
+    stack_size: 5
+    tier: 200
+  - id: resourceFishingWeight
+    name: 铅锤
+    category: material
+    stack_size: 500
+    tier: 25
+  - id: resourceTrophy1
+    name: 黄铜奖杯
+    category: material
+    stack_size: 250
+    tier: 40
+  - id: resourceTrophy2
+    name: 铅质奖杯
+    category: material
+    stack_size: 250
+    tier: 48
+  - id: resourceSilverNugget
+    name: 银块
+    category: material
+    stack_size: 250
+    tier: 250
+  - id: resourceGoldNugget
+    name: 金块
+    category: material
     stack_size: 1
-    max_level: 5
-    skill_name: 性暴龙
-    effect: 使用工具时 +20% 伤害
-
-  - id: gunsmith-vol3
-    name: 《枪械师》第3卷
-    category: book
-    tier: 3
+    tier: 700
+  - id: resourceRawDiamond
+    name: 钻石原石
+    category: material
     stack_size: 1
-    max_level: 5
-    skill_name: 枪械师
-    effect: 解锁高级枪械制作
+    tier: 1500
+  - id: candle
+    name: 蜡烛
+    category: material
+    stack_size: 50
+    tier: 24
+  - id: smallEngine
+    name: smallEngine
+    category: material
+    stack_size: 1
+    tier: 1000
+  - id: carBattery
+    name: 汽车铅蓄电池
+    category: material
+    stack_size: 1
+    tier: 500
+    stats:
+      durability: 5000
+  - id: casinoCoin
+    name: 公爵赌场币
+    category: material
+    stack_size: 20000
+    tier: 5
+  - id: oldCash
+    name: 旧钞票
+    category: material
+    stack_size: 10000
+    tier: 7
+  - id: solarCell
+    name: solarCell
+    category: material
+    stack_size: 1
+    tier: 12000
+    stats:
+      durability: 1000
+  - id: toolCookingGrill
+    name: 烤架
+    category: tool
+    stack_size: 1
+    tier: 200
+    stats:
+      durability: 10
+  - id: toolCookingPot
+    name: 烹饪锅
+    category: tool
+    stack_size: 1
+    tier: 200
+    stats:
+      durability: 10
+  - id: toolBeaker
+    name: 烧杯
+    category: material
+    stack_size: 10
+    tier: 500
+  - id: toolBellows
+    name: 高级风箱
+    category: material
+    stack_size: 1
+    tier: 1000
+    stats:
+      durability: 10
+  - id: toolAnvil
+    name: 铁砧
+    category: tool
+    stack_size: 1
+    tier: 500
+    stats:
+      durability: 10
+  - id: toolForgeCrucible
+    name: 坩埚
+    category: material
+    stack_size: 1
+    tier: 5000
+  - id: toolDewGatherer
+    name: 采集者
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: toolDewTarp
+    name: 油布
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: toolDewFilter
+    name: 滤水器
+    category: material
+    stack_size: 1
+    tier: 2500
+  - id: toolApiaryExtractor
+    name: 采蜜器
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: toolApiaryBroodBox
+    name: 育蜂箱
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: toolApiarySmoker
+    name: 烟熏器
+    category: material
+    stack_size: 1
+    tier: 2500
+  - id: unit_iron
+    name: unit_iron
+    category: material
+    stack_size: 30000
+  - id: unit_brass
+    name: unit_brass
+    category: material
+    stack_size: 1
+  - id: unit_lead
+    name: unit_lead
+    category: material
+    stack_size: 1
+  - id: unit_glass
+    name: unit_glass
+    category: material
+    stack_size: 1
+  - id: unit_stone
+    name: unit_stone
+    category: material
+    stack_size: 1
+  - id: unit_clay
+    name: unit_clay
+    category: material
+    stack_size: 1
+  - id: questItem
+    name: questItem
+    category: material
+    stack_size: 1
+  - id: resourceLockPick
+    name: 撬锁工具
+    category: material
+    stack_size: 50
+    tier: 100
+  - id: resourceLockPickBundle
+    name: 一堆撬锁工具（50）
+    category: material
+    stack_size: 5
+    tier: 5000
+  - id: bookFiremansAlmanacHeat
+    name: bookFiremansAlmanacHeat
+    category: material
+    stack_size: 20
+    tier: 500
+  - id: bookFiremansAlmanacAxes
+    name: bookFiremansAlmanacAxes
+    category: material
+    stack_size: 1
+  - id: bookFiremansAlmanacSpeed
+    name: bookFiremansAlmanacSpeed
+    category: material
+    stack_size: 1
+  - id: bookFiremansAlmanacMolotov
+    name: bookFiremansAlmanacMolotov
+    category: material
+    stack_size: 1
+  - id: bookFiremansAlmanacPrevention
+    name: bookFiremansAlmanacPrevention
+    category: material
+    stack_size: 1
+  - id: bookFiremansAlmanacHarvest
+    name: bookFiremansAlmanacHarvest
+    category: material
+    stack_size: 1
+  - id: bookFiremansAlmanacEquipment
+    name: bookFiremansAlmanacEquipment
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerStealthDamage
+    name: bookNightStalkerStealthDamage
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerSilentNight
+    name: bookNightStalkerSilentNight
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerBlades
+    name: bookNightStalkerBlades
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerThiefAdrenaline
+    name: bookNightStalkerThiefAdrenaline
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerArchery
+    name: bookNightStalkerArchery
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerTwilightThief
+    name: bookNightStalkerTwilightThief
+    category: material
+    stack_size: 1
+  - id: bookNightStalkerSlumberParty
+    name: bookNightStalkerSlumberParty
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterDukes
+    name: bookLuckyLooterDukes
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterAmmunition
+    name: bookLuckyLooterAmmunition
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterBrass
+    name: bookLuckyLooterBrass
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterLead
+    name: bookLuckyLooterLead
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterBooks
+    name: bookLuckyLooterBooks
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterFood
+    name: bookLuckyLooterFood
+    category: material
+    stack_size: 1
+  - id: bookLuckyLooterMedical
+    name: bookLuckyLooterMedical
+    category: material
+    stack_size: 1
+  - id: bookEnforcerDamage
+    name: bookEnforcerDamage
+    category: material
+    stack_size: 1
+  - id: bookEnforcerApparel
+    name: bookEnforcerApparel
+    category: material
+    stack_size: 1
+  - id: bookEnforcerPunks
+    name: bookEnforcerPunks
+    category: material
+    stack_size: 1
+  - id: bookEnforcerIntimidation
+    name: bookEnforcerIntimidation
+    category: material
+    stack_size: 1
+  - id: bookEnforcerAPAmmo
+    name: bookEnforcerAPAmmo
+    category: material
+    stack_size: 1
+  - id: bookEnforcerHPAmmo
+    name: bookEnforcerHPAmmo
+    category: material
+    stack_size: 1
+  - id: bookEnforcerCriminalPursuit
+    name: bookEnforcerCriminalPursuit
+    category: material
+    stack_size: 1
+  - id: bookBatterUpBigHits
+    name: bookBatterUpBigHits
+    category: material
+    stack_size: 1
+  - id: bookBatterUpStealingBases
+    name: bookBatterUpStealingBases
+    category: material
+    stack_size: 1
+  - id: bookBatterUpSlowPitch
+    name: bookBatterUpSlowPitch
+    category: material
+    stack_size: 1
+  - id: bookBatterUpKnockdown
+    name: bookBatterUpKnockdown
+    category: material
+    stack_size: 1
+  - id: bookBatterUpMaintenance
+    name: bookBatterUpMaintenance
+    category: material
+    stack_size: 1
+  - id: bookBatterUpFoulBalls
+    name: bookBatterUpFoulBalls
+    category: material
+    stack_size: 1
+  - id: bookBatterUpMetalChain
+    name: bookBatterUpMetalChain
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaKnockdown
+    name: bookSledgeSagaKnockdown
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaDegradation
+    name: bookSledgeSagaDegradation
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaCrippledMorale
+    name: bookSledgeSagaCrippledMorale
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaPulverizingFinishers
+    name: bookSledgeSagaPulverizingFinishers
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaSavageReaper
+    name: bookSledgeSagaSavageReaper
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaConcussiveStrike
+    name: bookSledgeSagaConcussiveStrike
+    category: material
+    stack_size: 1
+  - id: bookSledgeSagaArmorCrusher
+    name: bookSledgeSagaArmorCrusher
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistSafes
+    name: bookGreatHeistSafes
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistGems
+    name: bookGreatHeistGems
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistGoldRush
+    name: bookGreatHeistGoldRush
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistClaimed
+    name: bookGreatHeistClaimed
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistAdrenalineFall
+    name: bookGreatHeistAdrenalineFall
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistSprintSneak
+    name: bookGreatHeistSprintSneak
+    category: material
+    stack_size: 1
+  - id: bookGreatHeistMotionDetection
+    name: bookGreatHeistMotionDetection
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresHoney
+    name: bookWasteTreasuresHoney
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresCoffins
+    name: bookWasteTreasuresCoffins
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresAcid
+    name: bookWasteTreasuresAcid
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresWater
+    name: bookWasteTreasuresWater
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresDoors
+    name: bookWasteTreasuresDoors
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresCloth
+    name: bookWasteTreasuresCloth
+    category: material
+    stack_size: 1
+  - id: bookWasteTreasuresSinks
+    name: bookWasteTreasuresSinks
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalBears
+    name: bookHuntingJournalBears
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalWolves
+    name: bookHuntingJournalWolves
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalCoyotes
+    name: bookHuntingJournalCoyotes
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalMountainLions
+    name: bookHuntingJournalMountainLions
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalDeer
+    name: bookHuntingJournalDeer
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalVultures
+    name: bookHuntingJournalVultures
+    category: material
+    stack_size: 1
+  - id: bookHuntingJournalSelfDefense
+    name: bookHuntingJournalSelfDefense
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningLuckyStrike
+    name: bookArtOfMiningLuckyStrike
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningDiamondTools
+    name: bookArtOfMiningDiamondTools
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningCoffee
+    name: bookArtOfMiningCoffee
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningBlackStrap
+    name: bookArtOfMiningBlackStrap
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningPallets
+    name: bookArtOfMiningPallets
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningAvalanche
+    name: bookArtOfMiningAvalanche
+    category: material
+    stack_size: 1
+  - id: bookArtOfMiningDamage
+    name: bookArtOfMiningDamage
+    category: material
+    stack_size: 1
+  - id: bookRangersArrowRecovery
+    name: bookRangersArrowRecovery
+    category: material
+    stack_size: 1
+  - id: bookRangersExplodingBolts
+    name: bookRangersExplodingBolts
+    category: material
+    stack_size: 1
+  - id: bookRangersCripplingShot
+    name: bookRangersCripplingShot
+    category: material
+    stack_size: 1
+  - id: bookRangersAPAmmo
+    name: bookRangersAPAmmo
+    category: material
+    stack_size: 1
+  - id: bookRangersFlamingArrows
+    name: bookRangersFlamingArrows
+    category: material
+    stack_size: 1
+  - id: bookRangersForestGuide
+    name: bookRangersForestGuide
+    category: material
+    stack_size: 1
+  - id: bookRangersKnockdown
+    name: bookRangersKnockdown
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteTakeAim
+    name: bookPistolPeteTakeAim
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteSwissKnees
+    name: bookPistolPeteSwissKnees
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteSteadyHand
+    name: bookPistolPeteSteadyHand
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteMaintenance
+    name: bookPistolPeteMaintenance
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteHPAmmo
+    name: bookPistolPeteHPAmmo
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteAPAmmo
+    name: bookPistolPeteAPAmmo
+    category: material
+    stack_size: 1
+  - id: bookPistolPeteDamage
+    name: bookPistolPeteDamage
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahDamage
+    name: bookShotgunMessiahDamage
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahBreachingSlugs
+    name: bookShotgunMessiahBreachingSlugs
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahLimbShot
+    name: bookShotgunMessiahLimbShot
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahSlugs
+    name: bookShotgunMessiahSlugs
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahMaintenance
+    name: bookShotgunMessiahMaintenance
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahMagazine
+    name: bookShotgunMessiahMagazine
+    category: material
+    stack_size: 1
+  - id: bookShotgunMessiahPartyStarter
+    name: bookShotgunMessiahPartyStarter
+    category: material
+    stack_size: 1
+  - id: bookSniperDamage
+    name: bookSniperDamage
+    category: material
+    stack_size: 1
+  - id: bookSniperCripplingShot
+    name: bookSniperCripplingShot
+    category: material
+    stack_size: 1
+  - id: bookSniperHeadShot
+    name: bookSniperHeadShot
+    category: material
+    stack_size: 1
+  - id: bookSniperReload
+    name: bookSniperReload
+    category: material
+    stack_size: 1
+  - id: bookSniperControlledBreathing
+    name: bookSniperControlledBreathing
+    category: material
+    stack_size: 1
+  - id: bookSniperAPAmmo
+    name: bookSniperAPAmmo
+    category: material
+    stack_size: 1
+  - id: bookSniperHPAmmo
+    name: bookSniperHPAmmo
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsDamage
+    name: bookAutoWeaponsDamage
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsUncontrolledBurst
+    name: bookAutoWeaponsUncontrolledBurst
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsMaintenance
+    name: bookAutoWeaponsMaintenance
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsDrumMag
+    name: bookAutoWeaponsDrumMag
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsRecoil
+    name: bookAutoWeaponsRecoil
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsRagdoll
+    name: bookAutoWeaponsRagdoll
+    category: material
+    stack_size: 1
+  - id: bookAutoWeaponsMachineGuns
+    name: bookAutoWeaponsMachineGuns
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatLanding
+    name: bookUrbanCombatLanding
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatCigar
+    name: bookUrbanCombatCigar
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatSneaking
+    name: bookUrbanCombatSneaking
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatJumping
+    name: bookUrbanCombatJumping
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatLandMines
+    name: bookUrbanCombatLandMines
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatAdrenalineRush
+    name: bookUrbanCombatAdrenalineRush
+    category: material
+    stack_size: 1
+  - id: bookUrbanCombatRoomClearing
+    name: bookUrbanCombatRoomClearing
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie1Damage
+    name: bookTechJunkie1Damage
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie2Maintenance
+    name: bookTechJunkie2Maintenance
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie3APAmmo
+    name: bookTechJunkie3APAmmo
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie4Shells
+    name: bookTechJunkie4Shells
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie5Repulsor
+    name: bookTechJunkie5Repulsor
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie6BatonCharge
+    name: bookTechJunkie6BatonCharge
+    category: material
+    stack_size: 1
+  - id: bookTechJunkie7Hydraulics
+    name: bookTechJunkie7Hydraulics
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling1BasicMoves
+    name: bookBarBrawling1BasicMoves
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling2DropABomb
+    name: bookBarBrawling2DropABomb
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling3KillerInstinct
+    name: bookBarBrawling3KillerInstinct
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling4FinishingMoves
+    name: bookBarBrawling4FinishingMoves
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling5AdrenalineHealing
+    name: bookBarBrawling5AdrenalineHealing
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling6RageMode
+    name: bookBarBrawling6RageMode
+    category: material
+    stack_size: 1
+  - id: bookBarBrawling7BoozedUp
+    name: bookBarBrawling7BoozedUp
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter1Damage
+    name: bookSpearHunter1Damage
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter2Maintenance
+    name: bookSpearHunter2Maintenance
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter3Bleed
+    name: bookSpearHunter3Bleed
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter4KillMove
+    name: bookSpearHunter4KillMove
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter5RapidStrike
+    name: bookSpearHunter5RapidStrike
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter6PenetratingShaft
+    name: bookSpearHunter6PenetratingShaft
+    category: material
+    stack_size: 1
+  - id: bookSpearHunter7QuickStrike
+    name: bookSpearHunter7QuickStrike
+    category: material
+    stack_size: 1
+  - id: masterSkillMagazine
+    name: masterSkillMagazine
+    category: material
+    stack_size: 20
+    tier: 100
+  - id: harvestingToolsSkillMagazine
+    name: harvestingToolsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: repairToolsSkillMagazine
+    name: repairToolsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: salvageToolsSkillMagazine
+    name: salvageToolsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: knucklesSkillMagazine
+    name: 愤怒之拳
+    category: material
+    stack_size: 1
+  - id: bladesSkillMagazine
+    name: 刀剑客
+    category: material
+    stack_size: 1
+  - id: clubsSkillMagazine
+    name: 打击高手
+    category: material
+    stack_size: 1
+  - id: sledgehammersSkillMagazine
+    name: 锤行天下
+    category: material
+    stack_size: 1
+  - id: spearsSkillMagazine
+    name: 尖锐之棍
+    category: material
+    stack_size: 1
+  - id: bowsSkillMagazine
+    name: bowsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: handgunsSkillMagazine
+    name: handgunsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: shotgunsSkillMagazine
+    name: shotgunsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: riflesSkillMagazine
+    name: riflesSkillMagazine
+    category: material
+    stack_size: 1
+  - id: machineGunsSkillMagazine
+    name: machineGunsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: explosivesSkillMagazine
+    name: explosivesSkillMagazine
+    category: material
+    stack_size: 1
+  - id: roboticsSkillMagazine
+    name: roboticsSkillMagazine
+    category: material
+    stack_size: 1
+  - id: armorSkillMagazine
+    name: armorSkillMagazine
+    category: armor
+    stack_size: 1
+  - id: medicalSkillMagazine
+    name: 医学期刊
+    category: medical
+    stack_size: 1
+  - id: foodSkillMagazine
+    name: foodSkillMagazine
+    category: food
+    stack_size: 1
+  - id: seedSkillMagazine
+    name: seedSkillMagazine
+    category: material
+    stack_size: 1
+  - id: electricianSkillMagazine
+    name: electricianSkillMagazine
+    category: material
+    stack_size: 1
+  - id: trapsSkillMagazine
+    name: trapsSkillMagazine
+    category: trap
+    stack_size: 1
+  - id: workstationSkillMagazine
+    name: workstationSkillMagazine
+    category: material
+    stack_size: 1
+  - id: vehiclesSkillMagazine
+    name: vehiclesSkillMagazine
+    category: vehicle
+    stack_size: 1
+  - id: questRewardBundleMaster
+    name: questRewardBundleMaster
+    category: material
+    stack_size: 1
+  - id: questRewardPipePistolBundle
+    name: 铁管手枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardPipeShotgunBundle
+    name: 铁管霰弹枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardPipeRifleBundle
+    name: 铁管步枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardPipeMachineGunBundle
+    name: 铁管机枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardPipeBatonBundle
+    name: 铁管棒组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSteelKnuckleCraftingBundle
+    name: 钢质拳套制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardMacheteCraftingBundle
+    name: 砍刀制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSteelClubCraftingBundle
+    name: 钢棍制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSteelSledgehammerCraftingBundle
+    name: 钢质大锤制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardBowCraftingBundle
+    name: 弓制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSteelSpearCraftingBundle
+    name: 钢矛制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardHandgunCraftingBundle
+    name: 手枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardShotgunCraftingBundle
+    name: 霰弹枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardRifleCraftingBundle
+    name: 步枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardMachineGunCraftingBundle
+    name: 机枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardRocketLauncherCraftingBundle
+    name: 火箭发射器制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardBatonCraftingBundle
+    name: 短棒制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardRoboticsCraftingBundle
+    name: 机器人制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSteelToolsCraftingBundle
+    name: 钢制工具制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardMotorToolsCraftingBundle
+    name: 电动工具制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendarySteelKnuckleCraftingBundle
+    name: 传奇钢质拳套制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryMacheteCraftingBundle
+    name: 传奇砍刀制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendarySteelClubCraftingBundle
+    name: 传奇钢棍制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendarySteelSledgehammerCraftingBundle
+    name: 传奇钢质大锤制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryBowCraftingBundle
+    name: 传奇弓制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendarySteelSpearCraftingBundle
+    name: 传奇钢矛制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryHandgunCraftingBundle
+    name: 传奇手枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryShotgunCraftingBundle
+    name: 传奇霰弹枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryRifleCraftingBundle
+    name: 传奇步枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryMachineGunCraftingBundle
+    name: 传奇机枪制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryRocketLauncherCraftingBundle
+    name: 传奇火箭发射器制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryBatonCraftingBundle
+    name: 传奇短棒制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryRoboticsCraftingBundle
+    name: 传奇机器人制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendarySteelToolsCraftingBundle
+    name: 传奇钢制工具制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardLegendaryMotorToolsCraftingBundle
+    name: 传奇电动工具制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardAmmoCraftingBundle
+    name: 弹药制作组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT0HandgunBundle
+    name: 铁管手枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT0RifleBundle
+    name: 铁管步枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT0ShotgunBundle
+    name: 铁管霰弹枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT0MachineGunBundle
+    name: 铁管机枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1HandgunBundle
+    name: 手枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1ShotgunBundle
+    name: 双管霰弹枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1RifleBundle
+    name: 猎枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1MachineGunBundle
+    name: AK-47 组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT2HandgunBundle
+    name: .44马格南组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT2ShotgunBundle
+    name: 泵动式霰弹枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT2RifleBundle
+    name: 杠杆式步枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT2MachineGunBundle
+    name: 战术突击步枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3HandgunBundle
+    name: .44沙漠秃鹰组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3SMGBundle
+    name: SMG-5组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3ShotgunBundle
+    name: 自动霰弹枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3RifleBundle
+    name: 狙击步枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3MachineGunBundle
+    name: M60机枪组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3HandgunLegendaryBundle
+    name: .44沙漠秃鹰传奇组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3SMGLegendaryBundle
+    name: SMG-5传奇组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3ShotgunLegendaryBundle
+    name: 自动霰弹枪传奇组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3RifleLegendaryBundle
+    name: 狙击步枪传奇组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3MachineGunLegendaryBundle
+    name: M60机枪传奇组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1BookBundle
+    name: 3本书组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT2BookBundle
+    name: 4本书组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT3BookBundle
+    name: 5本书组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT4BookBundle
+    name: 6本书组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT5BookBundle
+    name: 7本书组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1SkillMagazineBundle
+    name: 制作技能杂志组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1TrapsBundle
+    name: 陷阱组合包01
+    category: material
+    stack_size: 1
+  - id: questRewardT2TrapsBundle
+    name: 陷阱组合包02
+    category: material
+    stack_size: 1
+  - id: questRewardDartTrapBundle
+    name: 飞镖陷阱组合包
+    category: material
+    stack_size: 1
+  - id: questRewardBladeTrapBundle
+    name: 刀片陷阱组合包
+    category: material
+    stack_size: 1
+  - id: questRewardShotgunTurretBundle
+    name: 霰弹炮塔组合包
+    category: material
+    stack_size: 1
+  - id: questRewardAutoTurretBundle
+    name: 自动炮塔组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSecuritySystemBundle
+    name: 安全摄像机组合包
+    category: material
+    stack_size: 1
+  - id: questRewardGeneratorBankBundle
+    name: 发电机组组合包
+    category: material
+    stack_size: 1
+  - id: questRewardBatteryBankBundle
+    name: 电池组组合包
+    category: material
+    stack_size: 1
+  - id: questRewardSolarBankBundle
+    name: 太阳能组组合包
+    category: material
+    stack_size: 1
+  - id: questRewardT1MeleeModsBundle
+    name: 近战模组组合包01
+    category: material
+    stack_size: 1
+  - id: questRewardT2MeleeModsBundle
+    name: 近战模组组合包02
+    category: material
+    stack_size: 1
+  - id: questRewardT3MeleeModsBundle
+    name: 近战模组组合包03
+    category: material
+    stack_size: 1
+  - id: questRewardT1RangedModsBundle
+    name: 远程模组组合包01
+    category: material
+    stack_size: 1
+  - id: questRewardT2RangedModsBundle
+    name: 远程模组组合包02
+    category: material
+    stack_size: 1
+  - id: questRewardT3RangedModsBundle
+    name: 远程模组组合包03
+    category: material
+    stack_size: 1
+  - id: questRewardT2FoodBundle
+    name: 食物组合包01
+    category: material
+    stack_size: 1
+  - id: questRewardT3FoodBundle
+    name: 食物组合包02
+    category: material
+    stack_size: 1
+  - id: questRewardT4FoodBundle
+    name: 食物组合包03
+    category: material
+    stack_size: 1
+  - id: questRewardFarmT1Bundle
+    name: 农场组合包01
+    category: material
+    stack_size: 1
+  - id: questRewardFarmT2Bundle
+    name: 农场组合包02
+    category: material
+    stack_size: 1
+  - id: questRewardFarmT3Bundle
+    name: 农场组合包03
+    category: material
+    stack_size: 1
+  - id: questRewardVehiclePartsBundle
+    name: 载具零件组合包
+    category: material
+    stack_size: 1
+  - id: questRewardMinibikePartsBundle
+    name: 小型机车零件组合包
+    category: material
+    stack_size: 1
+  - id: questRewardMotorcyclePartsBundle
+    name: 摩托车零件组合包
+    category: material
+    stack_size: 1
+  - id: questReward4x4PartsBundle
+    name: 4x4零件组合包
+    category: material
+    stack_size: 1
+  - id: questRewardGyrocopterPartsBundle
+    name: 旋翼机零件组合包
+    category: material
+    stack_size: 1
+  - id: twitchTurd
+    name: twitchTurd
+    category: material
+    stack_size: 1
+  - id: biomeBadge1
+    name: 生态环境徽章 1
+    category: material
+    stack_size: 1
+  - id: biomeBadge2
+    name: 生态环境徽章 2
+    category: material
+    stack_size: 1
+  - id: biomeBadge3
+    name: 生态环境徽章 3
+    category: material
+    stack_size: 1
+  - id: biomeBadge4
+    name: 生态环境徽章 4
+    category: material
+    stack_size: 1
+  - id: biomeWeatherItem1
+    name: 防烟装备
+    category: material
+    stack_size: 1
+  - id: biomeWeatherItem2
+    name: 沙漠装备
+    category: material
+    stack_size: 1
+  - id: biomeWeatherItem3
+    name: 雪地装备
+    category: material
+    stack_size: 1
+  - id: biomeWeatherItem4
+    name: 防辐射装备
+    category: material
+    stack_size: 1
+  - id: meleeToolPaintToolAdmin
+    name: meleeToolPaintToolAdmin
+    category: material
+    stack_size: 1
+  - id: meleeToolSalvageWrenchAdmin
+    name: meleeToolSalvageWrenchAdmin
+    category: tool
+    stack_size: 1
+    stats:
+      damage: 10000
+      block_damage: 10000
+      attacks_per_min: 50
+      durability: 9999
+  - id: meleeToolBlockReplaceTool
+    name: meleeToolBlockReplaceTool
+    category: tool
+    stack_size: 1
+    tier: 20
+  - id: gunToolDiggerAdmin
+    name: gunToolDiggerAdmin
+    category: ranged_weapon
+    stack_size: 1
+    stats:
+      damage: 0
+      block_damage: 20000
+      durability: 9999
+  - id: gunHandgunPistolAdmin
+    name: gunHandgunPistolAdmin
+    category: ranged_weapon
+    stack_size: 1
+    stats:
+      damage: 5000
+      block_damage: 0
+      durability: 9999
+  - id: meleeToolHammerOfGodAdmin
+    name: meleeToolHammerOfGodAdmin
+    category: tool
+    stack_size: 1
+    stats:
+      durability: 9999
+      damage: 5
+      block_damage: 5
+      attacks_per_min: 70
+  - id: coolLootShadesAdmin
+    name: coolLootShadesAdmin
+    category: armor
+    stack_size: 1
+  - id: coolLootShadesAdmin200
+    name: coolLootShadesAdmin200
+    category: armor
+    stack_size: 1
+  - id: craftingShadesAdmin
+    name: craftingShadesAdmin
+    category: armor
+    stack_size: 1
+  - id: pimpMiningHelmetAdmin
+    name: pimpMiningHelmetAdmin
+    category: armor
+    stack_size: 1
+    tier: 500
+    stats:
+      durability: 9999
+  - id: toughGuyShirtAdmin
+    name: toughGuyShirtAdmin
+    category: material
+    stack_size: 1
+  - id: ringOfFireAdmin
+    name: ringOfFireAdmin
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 9999
+  - id: staminaBootsAdmin
+    name: staminaBootsAdmin
+    category: material
+    stack_size: 1
+    stats:
+      durability: 9999
+  - id: staminaOnlyBootsAdmin
+    name: staminaOnlyBootsAdmin
+    category: material
+    stack_size: 1
+    stats:
+      durability: 9999
+  - id: rocketBootsAdmin
+    name: rocketBootsAdmin
+    category: material
+    stack_size: 1
+    stats:
+      durability: 9999
+  - id: drinkJarFullRespecAdmin
+    name: drinkJarFullRespecAdmin
+    category: material
+    stack_size: 1
+  - id: drinkJarFullRespecWithPointsAdmin
+    name: drinkJarFullRespecWithPointsAdmin
+    category: material
+    stack_size: 1
+  - id: noteTestersDelightAdmin
+    name: noteTestersDelightAdmin
+    category: material
+    stack_size: 1
+  - id: noteTestingAdmin
+    name: noteTestingAdmin
+    category: material
+    stack_size: 1
+  - id: noteAchievementAdmin
+    name: noteAchievementAdmin
+    category: material
+    stack_size: 1
+  - id: noteTestersElectricityAdmin
+    name: noteTestersElectricityAdmin
+    category: material
+    stack_size: 1
+  - id: upgradeResourcesPackAdmin
+    name: upgradeResourcesPackAdmin
+    category: material
+    stack_size: 1
+  - id: craftingResourcesPackAdmin
+    name: craftingResourcesPackAdmin
+    category: material
+    stack_size: 1
+  - id: workstationsPackAdmin
+    name: workstationsPackAdmin
+    category: material
+    stack_size: 1
+  - id: levelDesignToolsAdmin
+    name: levelDesignToolsAdmin
+    category: material
+    stack_size: 1
+  - id: toolTerrainModelerAdmin
+    name: toolTerrainModelerAdmin
+    category: material
+    stack_size: 1
+  - id: thrownGrenadeNukeAdmin
+    name: thrownGrenadeNukeAdmin
+    category: material
+    stack_size: 500
+  - id: adminPerkBook
+    name: adminPerkBook
+    category: material
+    stack_size: 20
+  - id: adminSkillMagazine
+    name: adminSkillMagazine
+    category: material
+    stack_size: 1
+  - id: adminModSchematic
+    name: adminModSchematic
+    category: material
+    stack_size: 1
+  - id: tier01Bow01
+    name: tier01Bow01
+    category: material
+    stack_size: 1
+  - id: tier01PerceptionWeapons
+    name: tier01PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier01StrengthWeapons
+    name: tier01StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier01FortitudeWeapons
+    name: tier01FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier01AgilityWeapons
+    name: tier01AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier01IntellectWeapons
+    name: tier01IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier01Weapons
+    name: tier01Weapons
+    category: material
+    stack_size: 1
+  - id: tier01Armor
+    name: tier01Armor
+    category: material
+    stack_size: 1
+  - id: tier01Loadout
+    name: tier01Loadout
+    category: material
+    stack_size: 1
+  - id: tier02Lumberjack01
+    name: tier02Lumberjack01
+    category: material
+    stack_size: 1
+  - id: tier02Preacher01
+    name: tier02Preacher01
+    category: material
+    stack_size: 1
+  - id: tier02Rogue01
+    name: tier02Rogue01
+    category: material
+    stack_size: 1
+  - id: tier02Athletic01
+    name: tier02Athletic01
+    category: material
+    stack_size: 1
+  - id: tier02Enforcer01
+    name: tier02Enforcer01
+    category: material
+    stack_size: 1
+  - id: tier02Farmer01
+    name: tier02Farmer01
+    category: material
+    stack_size: 1
+  - id: tier02Biker01
+    name: tier02Biker01
+    category: material
+    stack_size: 1
+  - id: tier02Scavenger01
+    name: tier02Scavenger01
+    category: material
+    stack_size: 1
+  - id: tier02Ranger01
+    name: tier02Ranger01
+    category: material
+    stack_size: 1
+  - id: tier02Commando01
+    name: tier02Commando01
+    category: material
+    stack_size: 1
+  - id: tier02Assassin01
+    name: tier02Assassin01
+    category: material
+    stack_size: 1
+  - id: tier02Miner01
+    name: tier02Miner01
+    category: material
+    stack_size: 1
+  - id: tier02Nomad01
+    name: tier02Nomad01
+    category: material
+    stack_size: 1
+  - id: tier02Nerd01
+    name: tier02Nerd01
+    category: material
+    stack_size: 1
+  - id: tier02Raider01
+    name: tier02Raider01
+    category: material
+    stack_size: 1
+  - id: tier02LightPerception01
+    name: tier02LightPerception01
+    category: material
+    stack_size: 1
+  - id: tier02MediumPerception01
+    name: tier02MediumPerception01
+    category: material
+    stack_size: 1
+  - id: tier02HeavyPerception01
+    name: tier02HeavyPerception01
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionArmor
+    name: tier02PerceptionArmor
+    category: material
+    stack_size: 1
+  - id: tier02LightStrength01
+    name: tier02LightStrength01
+    category: material
+    stack_size: 1
+  - id: tier02MediumStrength01
+    name: tier02MediumStrength01
+    category: material
+    stack_size: 1
+  - id: tier02HeavyStrength01
+    name: tier02HeavyStrength01
+    category: material
+    stack_size: 1
+  - id: tier02StrengthArmor
+    name: tier02StrengthArmor
+    category: material
+    stack_size: 1
+  - id: tier02LightFortitude01
+    name: tier02LightFortitude01
+    category: material
+    stack_size: 1
+  - id: tier02MediumFortitude01
+    name: tier02MediumFortitude01
+    category: material
+    stack_size: 1
+  - id: tier02HeavyFortitude01
+    name: tier02HeavyFortitude01
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeArmor
+    name: tier02FortitudeArmor
+    category: material
+    stack_size: 1
+  - id: tier02LightAgility01
+    name: tier02LightAgility01
+    category: material
+    stack_size: 1
+  - id: tier02MediumAgility01
+    name: tier02MediumAgility01
+    category: material
+    stack_size: 1
+  - id: tier02HeavyAgility01
+    name: tier02HeavyAgility01
+    category: material
+    stack_size: 1
+  - id: tier02AgilityArmor
+    name: tier02AgilityArmor
+    category: material
+    stack_size: 1
+  - id: tier02LightIntellect01
+    name: tier02LightIntellect01
+    category: material
+    stack_size: 1
+  - id: tier02MediumIntellect01
+    name: tier02MediumIntellect01
+    category: material
+    stack_size: 1
+  - id: tier02HeavyIntellect01
+    name: tier02HeavyIntellect01
+    category: material
+    stack_size: 1
+  - id: tier02IntellectArmor
+    name: tier02IntellectArmor
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionMeleeMods
+    name: tier02PerceptionMeleeMods
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionMelee
+    name: tier02PerceptionMelee
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionRangedMods
+    name: tier02PerceptionRangedMods
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionRanged
+    name: tier02PerceptionRanged
+    category: material
+    stack_size: 1
+  - id: tier02PerceptionWeapons
+    name: tier02PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier02StrengthMeleeMods
+    name: tier02StrengthMeleeMods
+    category: material
+    stack_size: 1
+  - id: tier02StrengthMelee01
+    name: tier02StrengthMelee01
+    category: material
+    stack_size: 1
+  - id: tier02StrengthMelee02
+    name: tier02StrengthMelee02
+    category: material
+    stack_size: 1
+  - id: tier02StrengthMelee
+    name: tier02StrengthMelee
+    category: material
+    stack_size: 1
+  - id: tier02StrengthRangedMods
+    name: tier02StrengthRangedMods
+    category: material
+    stack_size: 1
+  - id: tier02StrengthRanged
+    name: tier02StrengthRanged
+    category: material
+    stack_size: 1
+  - id: tier02StrengthWeapons
+    name: tier02StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeMeleeMods
+    name: tier02FortitudeMeleeMods
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeMelee
+    name: tier02FortitudeMelee
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeRangedMods
+    name: tier02FortitudeRangedMods
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeRanged
+    name: tier02FortitudeRanged
+    category: material
+    stack_size: 1
+  - id: tier02FortitudeWeapons
+    name: tier02FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier02AgilityMeleeMods
+    name: tier02AgilityMeleeMods
+    category: material
+    stack_size: 1
+  - id: tier02AgilityMelee
+    name: tier02AgilityMelee
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged01Mods
+    name: tier02AgilityRanged01Mods
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged01
+    name: tier02AgilityRanged01
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged02
+    name: tier02AgilityRanged02
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged03
+    name: tier02AgilityRanged03
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged04
+    name: tier02AgilityRanged04
+    category: material
+    stack_size: 1
+  - id: tier02AgilityRanged
+    name: tier02AgilityRanged
+    category: material
+    stack_size: 1
+  - id: tier02AgilityWeapons
+    name: tier02AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier02IntellectMelee
+    name: tier02IntellectMelee
+    category: material
+    stack_size: 1
+  - id: tier02IntellectRangedMods
+    name: tier02IntellectRangedMods
+    category: material
+    stack_size: 1
+  - id: tier02IntellectRanged
+    name: tier02IntellectRanged
+    category: material
+    stack_size: 1
+  - id: tier02IntellectWeapons
+    name: tier02IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier02Perception
+    name: tier02Perception
+    category: material
+    stack_size: 1
+  - id: tier02Strength
+    name: tier02Strength
+    category: material
+    stack_size: 1
+  - id: tier02Fortitude
+    name: tier02Fortitude
+    category: material
+    stack_size: 1
+  - id: tier02Agility
+    name: tier02Agility
+    category: material
+    stack_size: 1
+  - id: tier02Intellect
+    name: tier02Intellect
+    category: material
+    stack_size: 1
+  - id: tier02Loadout
+    name: tier02Loadout
+    category: material
+    stack_size: 1
+  - id: tier03Lumberjack01
+    name: tier03Lumberjack01
+    category: material
+    stack_size: 1
+  - id: tier03Preacher01
+    name: tier03Preacher01
+    category: material
+    stack_size: 1
+  - id: tier03Rogue01
+    name: tier03Rogue01
+    category: material
+    stack_size: 1
+  - id: tier03Athletic01
+    name: tier03Athletic01
+    category: material
+    stack_size: 1
+  - id: tier03Enforcer01
+    name: tier03Enforcer01
+    category: material
+    stack_size: 1
+  - id: tier03Farmer01
+    name: tier03Farmer01
+    category: material
+    stack_size: 1
+  - id: tier03Biker01
+    name: tier03Biker01
+    category: material
+    stack_size: 1
+  - id: tier03Scavenger01
+    name: tier03Scavenger01
+    category: material
+    stack_size: 1
+  - id: tier03Ranger01
+    name: tier03Ranger01
+    category: material
+    stack_size: 1
+  - id: tier03Commando01
+    name: tier03Commando01
+    category: material
+    stack_size: 1
+  - id: tier03Assassin01
+    name: tier03Assassin01
+    category: material
+    stack_size: 1
+  - id: tier03Miner01
+    name: tier03Miner01
+    category: material
+    stack_size: 1
+  - id: tier03Nomad01
+    name: tier03Nomad01
+    category: material
+    stack_size: 1
+  - id: tier03Nerd01
+    name: tier03Nerd01
+    category: material
+    stack_size: 1
+  - id: tier03Raider01
+    name: tier03Raider01
+    category: material
+    stack_size: 1
+  - id: tier03LightPerception01
+    name: tier03LightPerception01
+    category: material
+    stack_size: 1
+  - id: tier03MediumPerception01
+    name: tier03MediumPerception01
+    category: material
+    stack_size: 1
+  - id: tier03HeavyPerception01
+    name: tier03HeavyPerception01
+    category: material
+    stack_size: 1
+  - id: tier03PerceptionArmor
+    name: tier03PerceptionArmor
+    category: material
+    stack_size: 1
+  - id: tier03LightStrength01
+    name: tier03LightStrength01
+    category: material
+    stack_size: 1
+  - id: tier03MediumStrength01
+    name: tier03MediumStrength01
+    category: material
+    stack_size: 1
+  - id: tier03HeavyStrength01
+    name: tier03HeavyStrength01
+    category: material
+    stack_size: 1
+  - id: tier03StrengthArmor
+    name: tier03StrengthArmor
+    category: material
+    stack_size: 1
+  - id: tier03LightFortitude01
+    name: tier03LightFortitude01
+    category: material
+    stack_size: 1
+  - id: tier03MediumFortitude01
+    name: tier03MediumFortitude01
+    category: material
+    stack_size: 1
+  - id: tier03HeavyFortitude01
+    name: tier03HeavyFortitude01
+    category: material
+    stack_size: 1
+  - id: tier03FortitudeArmor
+    name: tier03FortitudeArmor
+    category: material
+    stack_size: 1
+  - id: tier03LightAgility01
+    name: tier03LightAgility01
+    category: material
+    stack_size: 1
+  - id: tier03MediumAgility01
+    name: tier03MediumAgility01
+    category: material
+    stack_size: 1
+  - id: tier03HeavyAgility01
+    name: tier03HeavyAgility01
+    category: material
+    stack_size: 1
+  - id: tier03AgilityArmor
+    name: tier03AgilityArmor
+    category: material
+    stack_size: 1
+  - id: tier03LightIntellect01
+    name: tier03LightIntellect01
+    category: material
+    stack_size: 1
+  - id: tier03MediumIntellect01
+    name: tier03MediumIntellect01
+    category: material
+    stack_size: 1
+  - id: tier03HeavyIntellect01
+    name: tier03HeavyIntellect01
+    category: material
+    stack_size: 1
+  - id: tier03IntellectArmor
+    name: tier03IntellectArmor
+    category: material
+    stack_size: 1
+  - id: tier03PerceptionMelee
+    name: tier03PerceptionMelee
+    category: material
+    stack_size: 1
+  - id: tier03PerceptionRangedMods
+    name: tier03PerceptionRangedMods
+    category: material
+    stack_size: 1
+  - id: tier03PerceptionRanged
+    name: tier03PerceptionRanged
+    category: material
+    stack_size: 1
+  - id: tier03PerceptionWeapons
+    name: tier03PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier03StrengthMelee01
+    name: tier03StrengthMelee01
+    category: material
+    stack_size: 1
+  - id: tier03StrengthMelee02
+    name: tier03StrengthMelee02
+    category: material
+    stack_size: 1
+  - id: tier03StrengthMelee
+    name: tier03StrengthMelee
+    category: material
+    stack_size: 1
+  - id: tier03StrengthRanged01
+    name: tier03StrengthRanged01
+    category: material
+    stack_size: 1
+  - id: tier03StrengthRanged02
+    name: tier03StrengthRanged02
+    category: material
+    stack_size: 1
+  - id: tier03StrengthRanged
+    name: tier03StrengthRanged
+    category: material
+    stack_size: 1
+  - id: tier03StrengthWeapons
+    name: tier03StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier03FortitudeMelee
+    name: tier03FortitudeMelee
+    category: material
+    stack_size: 1
+  - id: tier03FortitudeRangedMods
+    name: tier03FortitudeRangedMods
+    category: material
+    stack_size: 1
+  - id: tier03FortitudeRanged
+    name: tier03FortitudeRanged
+    category: material
+    stack_size: 1
+  - id: tier03FortitudeWeapons
+    name: tier03FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier03AgilityMelee
+    name: tier03AgilityMelee
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRanged01
+    name: tier03AgilityRanged01
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRanged02
+    name: tier03AgilityRanged02
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRanged03
+    name: tier03AgilityRanged03
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRanged04
+    name: tier03AgilityRanged04
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRangedA
+    name: tier03AgilityRangedA
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRangedB
+    name: tier03AgilityRangedB
+    category: material
+    stack_size: 1
+  - id: tier03AgilityRanged
+    name: tier03AgilityRanged
+    category: material
+    stack_size: 1
+  - id: tier03AgilityWeapons
+    name: tier03AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier03IntellectMelee01
+    name: tier03IntellectMelee01
+    category: material
+    stack_size: 1
+  - id: tier03IntellectMelee02
+    name: tier03IntellectMelee02
+    category: material
+    stack_size: 1
+  - id: tier03IntellectRanged
+    name: tier03IntellectRanged
+    category: material
+    stack_size: 1
+  - id: tier03IntellectWeapons
+    name: tier03IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier03Perception
+    name: tier03Perception
+    category: material
+    stack_size: 1
+  - id: tier03Strength
+    name: tier03Strength
+    category: material
+    stack_size: 1
+  - id: tier03Fortitude
+    name: tier03Fortitude
+    category: material
+    stack_size: 1
+  - id: tier03Agility
+    name: tier03Agility
+    category: material
+    stack_size: 1
+  - id: tier03Intellect
+    name: tier03Intellect
+    category: material
+    stack_size: 1
+  - id: tier03Loadout
+    name: tier03Loadout
+    category: material
+    stack_size: 1
+  - id: tier04Lumberjack01
+    name: tier04Lumberjack01
+    category: material
+    stack_size: 1
+  - id: tier04Preacher01
+    name: tier04Preacher01
+    category: material
+    stack_size: 1
+  - id: tier04Rogue01
+    name: tier04Rogue01
+    category: material
+    stack_size: 1
+  - id: tier04Athletic01
+    name: tier04Athletic01
+    category: material
+    stack_size: 1
+  - id: tier04Enforcer01
+    name: tier04Enforcer01
+    category: material
+    stack_size: 1
+  - id: tier04Farmer01
+    name: tier04Farmer01
+    category: material
+    stack_size: 1
+  - id: tier04Biker01
+    name: tier04Biker01
+    category: material
+    stack_size: 1
+  - id: tier04Scavenger01
+    name: tier04Scavenger01
+    category: material
+    stack_size: 1
+  - id: tier04Ranger01
+    name: tier04Ranger01
+    category: material
+    stack_size: 1
+  - id: tier04Commando01
+    name: tier04Commando01
+    category: material
+    stack_size: 1
+  - id: tier04Assassin01
+    name: tier04Assassin01
+    category: material
+    stack_size: 1
+  - id: tier04Miner01
+    name: tier04Miner01
+    category: material
+    stack_size: 1
+  - id: tier04Nomad01
+    name: tier04Nomad01
+    category: material
+    stack_size: 1
+  - id: tier04Nerd01
+    name: tier04Nerd01
+    category: material
+    stack_size: 1
+  - id: tier04Raider01
+    name: tier04Raider01
+    category: material
+    stack_size: 1
+  - id: tier04LightPerception01
+    name: tier04LightPerception01
+    category: material
+    stack_size: 1
+  - id: tier04MediumPerception01
+    name: tier04MediumPerception01
+    category: material
+    stack_size: 1
+  - id: tier04HeavyPerception01
+    name: tier04HeavyPerception01
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionArmor
+    name: tier04PerceptionArmor
+    category: material
+    stack_size: 1
+  - id: tier04LightStrength01
+    name: tier04LightStrength01
+    category: material
+    stack_size: 1
+  - id: tier04MediumStrength01
+    name: tier04MediumStrength01
+    category: material
+    stack_size: 1
+  - id: tier04HeavyStrength01
+    name: tier04HeavyStrength01
+    category: material
+    stack_size: 1
+  - id: tier04StrengthArmor
+    name: tier04StrengthArmor
+    category: material
+    stack_size: 1
+  - id: tier04LightFortitude01
+    name: tier04LightFortitude01
+    category: material
+    stack_size: 1
+  - id: tier04MediumFortitude01
+    name: tier04MediumFortitude01
+    category: material
+    stack_size: 1
+  - id: tier04HeavyFortitude01
+    name: tier04HeavyFortitude01
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeArmor
+    name: tier04FortitudeArmor
+    category: material
+    stack_size: 1
+  - id: tier04LightAgility01
+    name: tier04LightAgility01
+    category: material
+    stack_size: 1
+  - id: tier04MediumAgility01
+    name: tier04MediumAgility01
+    category: material
+    stack_size: 1
+  - id: tier04HeavyAgility01
+    name: tier04HeavyAgility01
+    category: material
+    stack_size: 1
+  - id: tier04AgilityArmor
+    name: tier04AgilityArmor
+    category: material
+    stack_size: 1
+  - id: tier04LightIntellect01
+    name: tier04LightIntellect01
+    category: material
+    stack_size: 1
+  - id: tier04MediumIntellect01
+    name: tier04MediumIntellect01
+    category: material
+    stack_size: 1
+  - id: tier04HeavyIntellect01
+    name: tier04HeavyIntellect01
+    category: material
+    stack_size: 1
+  - id: tier04IntellectArmor
+    name: tier04IntellectArmor
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionMeleeMods
+    name: tier04PerceptionMeleeMods
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionMelee
+    name: tier04PerceptionMelee
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionRanged01
+    name: tier04PerceptionRanged01
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionRanged02
+    name: tier04PerceptionRanged02
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionRanged
+    name: tier04PerceptionRanged
+    category: material
+    stack_size: 1
+  - id: tier04PerceptionWeapons
+    name: tier04PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier04StrengthMelee01Mods
+    name: tier04StrengthMelee01Mods
+    category: material
+    stack_size: 1
+  - id: tier04StrengthMelee01
+    name: tier04StrengthMelee01
+    category: material
+    stack_size: 1
+  - id: tier04StrengthMelee02Mods
+    name: tier04StrengthMelee02Mods
+    category: material
+    stack_size: 1
+  - id: tier04StrengthMelee02
+    name: tier04StrengthMelee02
+    category: material
+    stack_size: 1
+  - id: tier04StrengthMelee
+    name: tier04StrengthMelee
+    category: material
+    stack_size: 1
+  - id: tier04StrengthRanged01
+    name: tier04StrengthRanged01
+    category: material
+    stack_size: 1
+  - id: tier04StrengthRanged02
+    name: tier04StrengthRanged02
+    category: material
+    stack_size: 1
+  - id: tier04StrengthRanged
+    name: tier04StrengthRanged
+    category: material
+    stack_size: 1
+  - id: tier04StrengthWeapons
+    name: tier04StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeMelee01
+    name: tier04FortitudeMelee01
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeMelee02
+    name: tier04FortitudeMelee02
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeMelee
+    name: tier04FortitudeMelee
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeRanged01
+    name: tier04FortitudeRanged01
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeRanged02
+    name: tier04FortitudeRanged02
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeRanged
+    name: tier04FortitudeRanged
+    category: material
+    stack_size: 1
+  - id: tier04FortitudeWeapons
+    name: tier04FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier04AgilityMelee01
+    name: tier04AgilityMelee01
+    category: material
+    stack_size: 1
+  - id: tier04AgilityMelee02
+    name: tier04AgilityMelee02
+    category: material
+    stack_size: 1
+  - id: tier04AgilityMelee
+    name: tier04AgilityMelee
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged01
+    name: tier04AgilityRanged01
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged02
+    name: tier04AgilityRanged02
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged03
+    name: tier04AgilityRanged03
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged04
+    name: tier04AgilityRanged04
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged05
+    name: tier04AgilityRanged05
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRangedA
+    name: tier04AgilityRangedA
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRangedB
+    name: tier04AgilityRangedB
+    category: material
+    stack_size: 1
+  - id: tier04AgilityRanged
+    name: tier04AgilityRanged
+    category: material
+    stack_size: 1
+  - id: tier04AgilityWeapons
+    name: tier04AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier04IntellectMelee01
+    name: tier04IntellectMelee01
+    category: material
+    stack_size: 1
+  - id: tier04IntellectMelee02
+    name: tier04IntellectMelee02
+    category: material
+    stack_size: 1
+  - id: tier04IntellectMelee03
+    name: tier04IntellectMelee03
+    category: material
+    stack_size: 1
+  - id: tier04IntellectMelee04
+    name: tier04IntellectMelee04
+    category: material
+    stack_size: 1
+  - id: tier04IntellectMelee
+    name: tier04IntellectMelee
+    category: material
+    stack_size: 1
+  - id: tier04IntellectRanged
+    name: tier04IntellectRanged
+    category: material
+    stack_size: 1
+  - id: tier04IntellectWeapons
+    name: tier04IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier04Perception
+    name: tier04Perception
+    category: material
+    stack_size: 1
+  - id: tier04Strength
+    name: tier04Strength
+    category: material
+    stack_size: 1
+  - id: tier04Fortitude
+    name: tier04Fortitude
+    category: material
+    stack_size: 1
+  - id: tier04Agility
+    name: tier04Agility
+    category: material
+    stack_size: 1
+  - id: tier04Intellect
+    name: tier04Intellect
+    category: material
+    stack_size: 1
+  - id: tier04Loadout
+    name: tier04Loadout
+    category: material
+    stack_size: 1
+  - id: tier05Lumberjack01
+    name: tier05Lumberjack01
+    category: material
+    stack_size: 1
+  - id: tier05Preacher01
+    name: tier05Preacher01
+    category: material
+    stack_size: 1
+  - id: tier05Rogue01
+    name: tier05Rogue01
+    category: material
+    stack_size: 1
+  - id: tier05Athletic01
+    name: tier05Athletic01
+    category: material
+    stack_size: 1
+  - id: tier05Enforcer01
+    name: tier05Enforcer01
+    category: material
+    stack_size: 1
+  - id: tier05Farmer01
+    name: tier05Farmer01
+    category: material
+    stack_size: 1
+  - id: tier05Biker01
+    name: tier05Biker01
+    category: material
+    stack_size: 1
+  - id: tier05Scavenger01
+    name: tier05Scavenger01
+    category: material
+    stack_size: 1
+  - id: tier05Ranger01
+    name: tier05Ranger01
+    category: material
+    stack_size: 1
+  - id: tier05Commando01
+    name: tier05Commando01
+    category: material
+    stack_size: 1
+  - id: tier05Assassin01
+    name: tier05Assassin01
+    category: material
+    stack_size: 1
+  - id: tier05Miner01
+    name: tier05Miner01
+    category: material
+    stack_size: 1
+  - id: tier05Nomad01
+    name: tier05Nomad01
+    category: material
+    stack_size: 1
+  - id: tier05Nerd01
+    name: tier05Nerd01
+    category: material
+    stack_size: 1
+  - id: tier05Raider01
+    name: tier05Raider01
+    category: material
+    stack_size: 1
+  - id: tier05LightPerception01
+    name: tier05LightPerception01
+    category: material
+    stack_size: 1
+  - id: tier05MediumPerception01
+    name: tier05MediumPerception01
+    category: material
+    stack_size: 1
+  - id: tier05HeavyPerception01
+    name: tier05HeavyPerception01
+    category: material
+    stack_size: 1
+  - id: tier05PerceptionArmor
+    name: tier05PerceptionArmor
+    category: material
+    stack_size: 1
+  - id: tier05LightStrength01
+    name: tier05LightStrength01
+    category: material
+    stack_size: 1
+  - id: tier05MediumStrength01
+    name: tier05MediumStrength01
+    category: material
+    stack_size: 1
+  - id: tier05HeavyStrength01
+    name: tier05HeavyStrength01
+    category: material
+    stack_size: 1
+  - id: tier05StrengthArmor
+    name: tier05StrengthArmor
+    category: material
+    stack_size: 1
+  - id: tier05LightFortitude01
+    name: tier05LightFortitude01
+    category: material
+    stack_size: 1
+  - id: tier05MediumFortitude01
+    name: tier05MediumFortitude01
+    category: material
+    stack_size: 1
+  - id: tier05HeavyFortitude01
+    name: tier05HeavyFortitude01
+    category: material
+    stack_size: 1
+  - id: tier05FortitudeArmor
+    name: tier05FortitudeArmor
+    category: material
+    stack_size: 1
+  - id: tier05LightAgility01
+    name: tier05LightAgility01
+    category: material
+    stack_size: 1
+  - id: tier05MediumAgility01
+    name: tier05MediumAgility01
+    category: material
+    stack_size: 1
+  - id: tier05HeavyAgility01
+    name: tier05HeavyAgility01
+    category: material
+    stack_size: 1
+  - id: tier05AgilityArmor
+    name: tier05AgilityArmor
+    category: material
+    stack_size: 1
+  - id: tier05LightIntellect01
+    name: tier05LightIntellect01
+    category: material
+    stack_size: 1
+  - id: tier05MediumIntellect01
+    name: tier05MediumIntellect01
+    category: material
+    stack_size: 1
+  - id: tier05HeavyIntellect01
+    name: tier05HeavyIntellect01
+    category: material
+    stack_size: 1
+  - id: tier05IntellectArmor
+    name: tier05IntellectArmor
+    category: material
+    stack_size: 1
+  - id: tier05PerceptionMelee
+    name: tier05PerceptionMelee
+    category: material
+    stack_size: 1
+  - id: tier05PerceptionRanged
+    name: tier05PerceptionRanged
+    category: material
+    stack_size: 1
+  - id: tier05PerceptionWeapons
+    name: tier05PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier05StrengthMelee01
+    name: tier05StrengthMelee01
+    category: material
+    stack_size: 1
+  - id: tier05StrengthMelee02
+    name: tier05StrengthMelee02
+    category: material
+    stack_size: 1
+  - id: tier05StrengthRanged
+    name: tier05StrengthRanged
+    category: material
+    stack_size: 1
+  - id: tier05StrengthWeapons
+    name: tier05StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier05FortitudeMelee
+    name: tier05FortitudeMelee
+    category: material
+    stack_size: 1
+  - id: tier05FortitudeRanged
+    name: tier05FortitudeRanged
+    category: material
+    stack_size: 1
+  - id: tier05FortitudeWeapons
+    name: tier05FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier05AgilityMelee
+    name: tier05AgilityMelee
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRanged01
+    name: tier05AgilityRanged01
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRanged02
+    name: tier05AgilityRanged02
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRanged03
+    name: tier05AgilityRanged03
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRanged04
+    name: tier05AgilityRanged04
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRangedA
+    name: tier05AgilityRangedA
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRangedB
+    name: tier05AgilityRangedB
+    category: material
+    stack_size: 1
+  - id: tier05AgilityRanged
+    name: tier05AgilityRanged
+    category: material
+    stack_size: 1
+  - id: tier05AgilityWeapons
+    name: tier05AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier05IntellectMelee01
+    name: tier05IntellectMelee01
+    category: material
+    stack_size: 1
+  - id: tier05IntellectMelee02
+    name: tier05IntellectMelee02
+    category: material
+    stack_size: 1
+  - id: tier05IntellectMelee03
+    name: tier05IntellectMelee03
+    category: material
+    stack_size: 1
+  - id: tier05IntellectMelee04
+    name: tier05IntellectMelee04
+    category: material
+    stack_size: 1
+  - id: tier05IntellectMelee
+    name: tier05IntellectMelee
+    category: material
+    stack_size: 1
+  - id: tier05IntellectRanged
+    name: tier05IntellectRanged
+    category: material
+    stack_size: 1
+  - id: tier05IntellectWeapons
+    name: tier05IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier05Perception
+    name: tier05Perception
+    category: material
+    stack_size: 1
+  - id: tier05Strength
+    name: tier05Strength
+    category: material
+    stack_size: 1
+  - id: tier05Fortitude
+    name: tier05Fortitude
+    category: material
+    stack_size: 1
+  - id: tier05Agility
+    name: tier05Agility
+    category: material
+    stack_size: 1
+  - id: tier05Intellect
+    name: tier05Intellect
+    category: material
+    stack_size: 1
+  - id: tier05Loadout
+    name: tier05Loadout
+    category: material
+    stack_size: 1
+  - id: tier06Lumberjack01
+    name: tier06Lumberjack01
+    category: material
+    stack_size: 1
+  - id: tier06Preacher01
+    name: tier06Preacher01
+    category: material
+    stack_size: 1
+  - id: tier06Rogue01
+    name: tier06Rogue01
+    category: material
+    stack_size: 1
+  - id: tier06Athletic01
+    name: tier06Athletic01
+    category: material
+    stack_size: 1
+  - id: tier06Enforcer01
+    name: tier06Enforcer01
+    category: material
+    stack_size: 1
+  - id: tier06Farmer01
+    name: tier06Farmer01
+    category: material
+    stack_size: 1
+  - id: tier06Biker01
+    name: tier06Biker01
+    category: material
+    stack_size: 1
+  - id: tier06Scavenger01
+    name: tier06Scavenger01
+    category: material
+    stack_size: 1
+  - id: tier06Ranger01
+    name: tier06Ranger01
+    category: material
+    stack_size: 1
+  - id: tier06Commando01
+    name: tier06Commando01
+    category: material
+    stack_size: 1
+  - id: tier06Assassin01
+    name: tier06Assassin01
+    category: material
+    stack_size: 1
+  - id: tier06Miner01
+    name: tier06Miner01
+    category: material
+    stack_size: 1
+  - id: tier06Nomad01
+    name: tier06Nomad01
+    category: material
+    stack_size: 1
+  - id: tier06Nerd01
+    name: tier06Nerd01
+    category: material
+    stack_size: 1
+  - id: tier06Raider01
+    name: tier06Raider01
+    category: material
+    stack_size: 1
+  - id: tier06LightPerception01
+    name: tier06LightPerception01
+    category: material
+    stack_size: 1
+  - id: tier06MediumPerception01
+    name: tier06MediumPerception01
+    category: material
+    stack_size: 1
+  - id: tier06HeavyPerception01
+    name: tier06HeavyPerception01
+    category: material
+    stack_size: 1
+  - id: tier06PerceptionArmor
+    name: tier06PerceptionArmor
+    category: material
+    stack_size: 1
+  - id: tier06LightStrength01
+    name: tier06LightStrength01
+    category: material
+    stack_size: 1
+  - id: tier06MediumStrength01
+    name: tier06MediumStrength01
+    category: material
+    stack_size: 1
+  - id: tier06HeavyStrength01
+    name: tier06HeavyStrength01
+    category: material
+    stack_size: 1
+  - id: tier06StrengthArmor
+    name: tier06StrengthArmor
+    category: material
+    stack_size: 1
+  - id: tier06LightFortitude01
+    name: tier06LightFortitude01
+    category: material
+    stack_size: 1
+  - id: tier06MediumFortitude01
+    name: tier06MediumFortitude01
+    category: material
+    stack_size: 1
+  - id: tier06HeavyFortitude01
+    name: tier06HeavyFortitude01
+    category: material
+    stack_size: 1
+  - id: tier06FortitudeArmor
+    name: tier06FortitudeArmor
+    category: material
+    stack_size: 1
+  - id: tier06LightAgility01
+    name: tier06LightAgility01
+    category: material
+    stack_size: 1
+  - id: tier06MediumAgility01
+    name: tier06MediumAgility01
+    category: material
+    stack_size: 1
+  - id: tier06HeavyAgility01
+    name: tier06HeavyAgility01
+    category: material
+    stack_size: 1
+  - id: tier06AgilityArmor
+    name: tier06AgilityArmor
+    category: material
+    stack_size: 1
+  - id: tier06LightIntellect01
+    name: tier06LightIntellect01
+    category: material
+    stack_size: 1
+  - id: tier06MediumIntellect01
+    name: tier06MediumIntellect01
+    category: material
+    stack_size: 1
+  - id: tier06HeavyIntellect01
+    name: tier06HeavyIntellect01
+    category: material
+    stack_size: 1
+  - id: tier06IntellectArmor
+    name: tier06IntellectArmor
+    category: material
+    stack_size: 1
+  - id: tier06PerceptionMelee
+    name: tier06PerceptionMelee
+    category: material
+    stack_size: 1
+  - id: tier06PerceptionRanged
+    name: tier06PerceptionRanged
+    category: material
+    stack_size: 1
+  - id: tier06PerceptionWeapons
+    name: tier06PerceptionWeapons
+    category: material
+    stack_size: 1
+  - id: tier06StrengthMelee01
+    name: tier06StrengthMelee01
+    category: material
+    stack_size: 1
+  - id: tier06StrengthMelee02
+    name: tier06StrengthMelee02
+    category: material
+    stack_size: 1
+  - id: tier06StrengthRanged
+    name: tier06StrengthRanged
+    category: material
+    stack_size: 1
+  - id: tier06StrengthWeapons
+    name: tier06StrengthWeapons
+    category: material
+    stack_size: 1
+  - id: tier06FortitudeMelee
+    name: tier06FortitudeMelee
+    category: material
+    stack_size: 1
+  - id: tier06FortitudeRanged
+    name: tier06FortitudeRanged
+    category: material
+    stack_size: 1
+  - id: tier06FortitudeWeapons
+    name: tier06FortitudeWeapons
+    category: material
+    stack_size: 1
+  - id: tier06AgilityMelee
+    name: tier06AgilityMelee
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRanged01
+    name: tier06AgilityRanged01
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRanged02
+    name: tier06AgilityRanged02
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRanged03
+    name: tier06AgilityRanged03
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRanged04
+    name: tier06AgilityRanged04
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRangedA
+    name: tier06AgilityRangedA
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRangedB
+    name: tier06AgilityRangedB
+    category: material
+    stack_size: 1
+  - id: tier06AgilityRanged
+    name: tier06AgilityRanged
+    category: material
+    stack_size: 1
+  - id: tier06AgilityWeapons
+    name: tier06AgilityWeapons
+    category: material
+    stack_size: 1
+  - id: tier06IntellectMelee01
+    name: tier06IntellectMelee01
+    category: material
+    stack_size: 1
+  - id: tier06IntellectMelee02
+    name: tier06IntellectMelee02
+    category: material
+    stack_size: 1
+  - id: tier06IntellectMelee03
+    name: tier06IntellectMelee03
+    category: material
+    stack_size: 1
+  - id: tier06IntellectMelee04
+    name: tier06IntellectMelee04
+    category: material
+    stack_size: 1
+  - id: tier06IntellectMelee
+    name: tier06IntellectMelee
+    category: material
+    stack_size: 1
+  - id: tier06IntellectRanged
+    name: tier06IntellectRanged
+    category: material
+    stack_size: 1
+  - id: tier06IntellectWeapons
+    name: tier06IntellectWeapons
+    category: material
+    stack_size: 1
+  - id: tier06ToolMods
+    name: tier06ToolMods
+    category: material
+    stack_size: 1
+  - id: tier06Throwables01
+    name: tier06Throwables01
+    category: material
+    stack_size: 1
+  - id: tier06Perception
+    name: tier06Perception
+    category: material
+    stack_size: 1
+  - id: tier06Strength
+    name: tier06Strength
+    category: material
+    stack_size: 1
+  - id: tier06Fortitude
+    name: tier06Fortitude
+    category: material
+    stack_size: 1
+  - id: tier06Agility
+    name: tier06Agility
+    category: material
+    stack_size: 1
+  - id: tier06Intellect
+    name: tier06Intellect
+    category: material
+    stack_size: 1
+  - id: tier06Loadout
+    name: tier06Loadout
+    category: material
+    stack_size: 1
+  - id: adminPrimitiveQualityArmorBundle
+    name: 开发：粗糙质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminLumberjackQualityArmorBundle
+    name: 开发：伐木工质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminPreacherQualityArmorBundle
+    name: 开发：传道者质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminRogueQualityArmorBundle
+    name: 开发：盗贼质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminAthleticQualityArmorBundle
+    name: 开发：运动员质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminEnforcerQualityArmorBundle
+    name: 开发：警官质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminFarmerQualityArmorBundle
+    name: 开发：农夫质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminBikerQualityArmorBundle
+    name: 开发：摩托车手质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminScavengerQualityArmorBundle
+    name: 开发：拾荒者质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminRangerQualityArmorBundle
+    name: 开发：护林员质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminCommandoQualityArmorBundle
+    name: 开发：突击队员质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminAssassinQualityArmorBundle
+    name: 开发：刺客质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminMinerQualityArmorBundle
+    name: 开发：矿工质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminNomadQualityArmorBundle
+    name: 开发：游牧民质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminNerdQualityArmorBundle
+    name: 开发：学霸质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: adminRaiderQualityArmorBundle
+    name: 开发：袭击者质量护甲组合包
+    category: material
+    stack_size: 1
+  - id: giveXP_T1_admin
+    name: giveXP_T1_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T2_admin
+    name: giveXP_T2_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T3_admin
+    name: giveXP_T3_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T4_admin
+    name: giveXP_T4_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T5_admin
+    name: giveXP_T5_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T6_admin
+    name: giveXP_T6_admin
+    category: material
+    stack_size: 1
+  - id: giveXP_T300_admin
+    name: giveXP_T300_admin
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffInfection
+    name: adminGiveBuffInfection
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffAbrasion
+    name: adminGiveBuffAbrasion
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffAbrasion1800
+    name: adminGiveBuffAbrasion1800
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffAbrasion2400
+    name: adminGiveBuffAbrasion2400
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffAbrasion3200
+    name: adminGiveBuffAbrasion3200
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffFatigued
+    name: adminGiveBuffFatigued
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffLaceration
+    name: adminGiveBuffLaceration
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffConcussion
+    name: adminGiveBuffConcussion
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffDysentery
+    name: adminGiveBuffDysentery
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffSprainedLeg
+    name: adminGiveBuffSprainedLeg
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffBrokenLeg
+    name: adminGiveBuffBrokenLeg
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffSprainedArm
+    name: adminGiveBuffSprainedArm
+    category: material
+    stack_size: 1
+  - id: adminGiveBuffBrokenArm
+    name: adminGiveBuffBrokenArm
+    category: material
+    stack_size: 1
+  - id: TEST_ITEM_00
+    name: TEST_ITEM_00
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_01
+    name: TEST_ITEM_01
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_02
+    name: TEST_ITEM_02
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_03
+    name: TEST_ITEM_03
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_04
+    name: TEST_ITEM_04
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_05
+    name: TEST_ITEM_05
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_06
+    name: TEST_ITEM_06
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_07
+    name: TEST_ITEM_07
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_08
+    name: TEST_ITEM_08
+    category: ammo
+    stack_size: 500
+  - id: TEST_ITEM_09
+    name: TEST_ITEM_09
+    category: ammo
+    stack_size: 500
+  - id: armorLumberjackHelmetDemo
+    name: 伐木工帽子
+    category: armor
+    stack_size: 1
+    stats:
+      durability: 250
+  - id: missingItem
+    name: missingItem
+    category: material
+    stack_size: 1
+  - id: drinkJarGrey
+    name: drinkJarGrey
+    category: material
+    stack_size: 1
+  - id: UselessThing
+    name: UselessThing
+    category: material
+    stack_size: 1

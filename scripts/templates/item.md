@@ -51,7 +51,7 @@
 | 配方 | 工作站 |
 |---|---|
 {{#each usedInRecipes.rows}}
-| [{{name}}](/vanilla/recipes/{{id}}) | {{station}} |
+| [{{name}}](/vanilla/recipes/{{linkId}}) | {{station}} |
 {{/each}}
 {{/if}}
 
@@ -61,6 +61,6 @@
 | 僵尸 | 概率 |
 |---|---|
 {{#each droppedBy.rows}}
-| [{{name}}](/vanilla/zombies/{{id}}) | {{chance}} |
+| [{{name}}](/vanilla/zombies/{{linkId}}) | {{chance}} |
 {{/each}}
 {{/if}}

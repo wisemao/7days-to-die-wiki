@@ -1,50 +1,1981 @@
 zombies:
-  - id: zombie-biker
-    name: 飞车党僵尸
+  - id: zombieTemplateMale
+    name: zombieTemplateMale
     category: humanoid
-    tier: 2
-    hp: 250
+    tier: 1
+    hp: 100
     speed:
-      walk: 1.2
-      run: 2.5
-      crawl: 0.5
+      walk: 0.08
+      run: 2
     damage:
-      melee: 15
-      bleeding_chance: 10%
-    armor:
-      head: 1.5
-      body: 1.2
-    loot:
-      - { item_id: rotten-flesh, count: 1, chance: 80% }
-      - { item_id: cloth-fragment, count: 2, chance: 60% }
-    experience: 400
-    weakness:
-      - head: 1.5
-    spawn:
-      biomes: [森林, 沙漠]
-      time: 全天
-      groups: [城市, 公路]
-    radiant: false
-
-  - id: zombie-bear
-    name: 僵尸熊
+      melee: 10
+    experience: 100
+  - id: zombieTemplateShort
+    name: zombieTemplateShort
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTemplateSlimFemale
+    name: zombieTemplateSlimFemale
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieArlene
+    name: zombieArlene
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieArleneFeral
+    name: zombieArleneFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieArleneRadiated
+    name: zombieArleneRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieArleneCharged
+    name: zombieArleneCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieArleneInfernal
+    name: zombieArleneInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMarlene
+    name: zombieMarlene
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMarleneFeral
+    name: zombieMarleneFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMarleneRadiated
+    name: zombieMarleneRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMarleneCharged
+    name: zombieMarleneCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMarleneInfernal
+    name: zombieMarleneInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePartyGirl
+    name: zombiePartyGirl
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePartyGirlFeral
+    name: zombiePartyGirlFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePartyGirlRadiated
+    name: zombiePartyGirlRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePartyGirlCharged
+    name: zombiePartyGirlCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePartyGirlInfernal
+    name: zombiePartyGirlInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieNurse
+    name: zombieNurse
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieNurseFeral
+    name: zombieNurseFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieNurseRadiated
+    name: zombieNurseRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieNurseCharged
+    name: zombieNurseCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieNurseInfernal
+    name: zombieNurseInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJoe
+    name: zombieJoe
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJoeFeral
+    name: zombieJoeFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJoeRadiated
+    name: zombieJoeRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJoeCharged
+    name: zombieJoeCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJoeInfernal
+    name: zombieJoeInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteve
+    name: zombieSteve
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveFeral
+    name: zombieSteveFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveRadiated
+    name: zombieSteveRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveCharged
+    name: zombieSteveCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveInfernal
+    name: zombieSteveInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTomClark
+    name: zombieTomClark
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTomClarkFeral
+    name: zombieTomClarkFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTomClarkRadiated
+    name: zombieTomClarkRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTomClarkCharged
+    name: zombieTomClarkCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieTomClarkInfernal
+    name: zombieTomClarkInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBusinessMan
+    name: zombieBusinessMan
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBusinessManFeral
+    name: zombieBusinessManFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBusinessManRadiated
+    name: zombieBusinessManRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBusinessManCharged
+    name: zombieBusinessManCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBusinessManInfernal
+    name: zombieBusinessManInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBurnt
+    name: zombieBurnt
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBurntFeral
+    name: zombieBurntFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBurntRadiated
+    name: zombieBurntRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBurntCharged
+    name: zombieBurntCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBurntInfernal
+    name: zombieBurntInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieRancher
+    name: zombieRancher
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.4
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieRancherFeral
+    name: zombieRancherFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieRancherRadiated
+    name: zombieRancherRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieRancherCharged
+    name: zombieRancherCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieRancherInfernal
+    name: zombieRancherInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePlagueSpitter
+    name: zombiePlagueSpitter
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePlagueSpitterFeral
+    name: zombiePlagueSpitterFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePlagueSpitterRadiated
+    name: zombiePlagueSpitterRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePlagueSpitterCharged
+    name: zombiePlagueSpitterCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombiePlagueSpitterInfernal
+    name: zombiePlagueSpitterInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieChuck
+    name: zombieChuck
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.17
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieChuckFeral
+    name: zombieChuckFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieChuckRadiated
+    name: zombieChuckRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieChuckCharged
+    name: zombieChuckCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieChuckInfernal
+    name: zombieChuckInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFrostclaw
+    name: zombieFrostclaw
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFrostclawFeral
+    name: zombieFrostclawFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFrostclawRadiated
+    name: zombieFrostclawRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFrostclawCharged
+    name: zombieFrostclawCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFrostclawInfernal
+    name: zombieFrostclawInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSpider
+    name: zombieSpider
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.08
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSpiderFeral
+    name: zombieSpiderFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSpiderRadiated
+    name: zombieSpiderRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSpiderCharged
+    name: zombieSpiderCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSpiderInfernal
+    name: zombieSpiderInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBoe
+    name: zombieBoe
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBoeFeral
+    name: zombieBoeFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBoeRadiated
+    name: zombieBoeRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBoeCharged
+    name: zombieBoeCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBoeInfernal
+    name: zombieBoeInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMaleHazmat
+    name: zombieMaleHazmat
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMaleHazmatFeral
+    name: zombieMaleHazmatFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMaleHazmatRadiated
+    name: zombieMaleHazmatRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMaleHazmatCharged
+    name: zombieMaleHazmatCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMaleHazmatInfernal
+    name: zombieMaleHazmatInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJanitor
+    name: zombieJanitor
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJanitorFeral
+    name: zombieJanitorFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJanitorRadiated
+    name: zombieJanitorRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJanitorCharged
+    name: zombieJanitorCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieJanitorInfernal
+    name: zombieJanitorInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieInmate
+    name: zombieInmate
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieInmateFeral
+    name: zombieInmateFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieInmateRadiated
+    name: zombieInmateRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieInmateCharged
+    name: zombieInmateCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieInmateInfernal
+    name: zombieInmateInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMoe
+    name: zombieMoe
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMoeFeral
+    name: zombieMoeFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMoeRadiated
+    name: zombieMoeRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMoeCharged
+    name: zombieMoeCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMoeInfernal
+    name: zombieMoeInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLab
+    name: zombieLab
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLabFeral
+    name: zombieLabFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLabRadiated
+    name: zombieLabRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLabCharged
+    name: zombieLabCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLabInfernal
+    name: zombieLabInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDarlene
+    name: zombieDarlene
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDarleneFeral
+    name: zombieDarleneFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDarleneRadiated
+    name: zombieDarleneRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDarleneCharged
+    name: zombieDarleneCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDarleneInfernal
+    name: zombieDarleneInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieYo
+    name: zombieYo
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieYoFeral
+    name: zombieYoFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieYoRadiated
+    name: zombieYoRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieYoCharged
+    name: zombieYoCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieYoInfernal
+    name: zombieYoInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieUtilityWorker
+    name: zombieUtilityWorker
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieUtilityWorkerFeral
+    name: zombieUtilityWorkerFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieUtilityWorkerRadiated
+    name: zombieUtilityWorkerRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieUtilityWorkerCharged
+    name: zombieUtilityWorkerCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieUtilityWorkerInfernal
+    name: zombieUtilityWorkerInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBiker
+    name: zombieBiker
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBikerFeral
+    name: zombieBikerFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBikerRadiated
+    name: zombieBikerRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBikerCharged
+    name: zombieBikerCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBikerInfernal
+    name: zombieBikerInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLumberjack
+    name: zombieLumberjack
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLumberjackFeral
+    name: zombieLumberjackFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLumberjackRadiated
+    name: zombieLumberjackRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLumberjackCharged
+    name: zombieLumberjackCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieLumberjackInfernal
+    name: zombieLumberjackInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFemaleFat
+    name: zombieFemaleFat
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFemaleFatFeral
+    name: zombieFemaleFatFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFemaleFatRadiated
+    name: zombieFemaleFatRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFemaleFatCharged
+    name: zombieFemaleFatCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFemaleFatInfernal
+    name: zombieFemaleFatInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatHawaiian
+    name: zombieFatHawaiian
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatHawaiianFeral
+    name: zombieFatHawaiianFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatHawaiianRadiated
+    name: zombieFatHawaiianRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatHawaiianCharged
+    name: zombieFatHawaiianCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatHawaiianInfernal
+    name: zombieFatHawaiianInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBowler
+    name: zombieBowler
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBowlerFeral
+    name: zombieBowlerFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBowlerRadiated
+    name: zombieBowlerRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBowlerCharged
+    name: zombieBowlerCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieBowlerInfernal
+    name: zombieBowlerInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatCop
+    name: zombieFatCop
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatCopFeral
+    name: zombieFatCopFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatCopRadiated
+    name: zombieFatCopRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatCopCharged
+    name: zombieFatCopCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieFatCopInfernal
+    name: zombieFatCopInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSkateboarder
+    name: zombieSkateboarder
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSkateboarderFeral
+    name: zombieSkateboarderFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSkateboarderRadiated
+    name: zombieSkateboarderRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSkateboarderCharged
+    name: zombieSkateboarderCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSkateboarderInfernal
+    name: zombieSkateboarderInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSoldier
+    name: zombieSoldier
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSoldierFeral
+    name: zombieSoldierFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSoldierRadiated
+    name: zombieSoldierRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSoldierCharged
+    name: zombieSoldierCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSoldierInfernal
+    name: zombieSoldierInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieWightFeral
+    name: zombieWightFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieWightRadiated
+    name: zombieWightRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieWightCharged
+    name: zombieWightCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieWightInfernal
+    name: zombieWightInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieScreamer
+    name: zombieScreamer
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieScreamerFeral
+    name: zombieScreamerFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieScreamerRadiated
+    name: zombieScreamerRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieScreamerCharged
+    name: zombieScreamerCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieScreamerInfernal
+    name: zombieScreamerInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMutated
+    name: zombieMutated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.25
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMutatedFeral
+    name: zombieMutatedFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMutatedRadiated
+    name: zombieMutatedRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMutatedCharged
+    name: zombieMutatedCharged
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieMutatedInfernal
+    name: zombieMutatedInfernal
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieDemolition
+    name: zombieDemolition
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveCrawler
+    name: zombieSteveCrawler
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.25
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: zombieSteveCrawlerFeral
+    name: zombieSteveCrawlerFeral
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: animalZombieBear
+    name: animalZombieBear
     category: animal
-    tier: 5
-    hp: 1500
+    tier: 1
+    hp: 100
     speed:
-      walk: 1.5
-      run: 3.5
+      walk: 1
+      run: 2
     damage:
-      melee: 45
-      armor_penetration: 3.0
-    loot:
-      - { item_id: animal-fat, count: 4, chance: 100% }
-      - { item_id: rotten-flesh, count: 6, chance: 100% }
-    experience: 2800
-    weakness:
-      - head: 1.5
-      - fire: 1.2
-    special:
-      - 冲刺击倒玩家
-      - 破坏方块
-    radiant: true
+      melee: 10
+    experience: 100
+  - id: animalZombieVulture
+    name: animalZombieVulture
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: animalZombieVultureRadiated
+    name: animalZombieVultureRadiated
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.7
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: animalZombieDog
+    name: animalZombieDog
+    category: animal
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.45
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+  - id: animalZombieBoar
+    name: animalZombieBoar
+    category: humanoid
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.3
+      run: 2
+    damage:
+      melee: 10
+    experience: 100

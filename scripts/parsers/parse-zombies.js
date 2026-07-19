@@ -4,7 +4,7 @@ const ZOMBIE_CATEGORY_LABELS = {
   humanoid: '人形', animal: '动物', special: '特殊',
 };
 
-export function parseZombie(zombie, refs, template, resolveItemName) {
+export function parseZombie(zombie, refs, template, resolveItemName, sanitizeId = (id) => id) {
   const statsTable = [];
   statsTable.push({ key: '步行速度', value: zombie.speed?.walk });
   statsTable.push({ key: '奔跑速度', value: zombie.speed?.run });
@@ -20,6 +20,7 @@ export function parseZombie(zombie, refs, template, resolveItemName) {
 
   const loot = zombie.loot?.map(l => ({
     item_id: l.item_id,
+    itemLinkId: sanitizeId(l.item_id),
     itemName: resolveItemName(l.item_id),
     count: l.count,
     chance: l.chance,

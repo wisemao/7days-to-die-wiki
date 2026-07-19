@@ -1,22 +1,7765 @@
 recipes:
-  - id: forged-iron
-    name: 锻铁
+  - id: resourceScrapPolymers
+    name: 废聚合物
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceElectricParts
+    name: 电子零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceMechanicalParts
+    name: 机械零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceBrokenGlass
+    name: 碎玻璃
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceCloth
+    name: 碎布
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceLeather
+    name: 皮革
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourcePaper
+    name: 纸
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceRockSmall
+    name: 小石子
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceScrapBrass
+    name: 黄铜
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceScrapIron
+    name: 铁
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceScrapLead
+    name: 铅
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceWood
+    name: 木头
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceYuccaFibers
+    name: 植物纤维
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceClayLump
+    name: 粘土
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourcePaint
+    name: 油漆
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceBone
+    name: 骨头
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: foodRawMeat
+    name: foodRawMeat
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceClayLump
+    name: 粘土
     station: 熔炉
-    craft_time: 30
+    craft_time: 1
     craft_count: 1
     recipe:
-      - { item_id: iron, count: 6 }
-      - { item_id: clay, count: 10 }
-      - { item_id: oil-shale, count: 5 }
-    scrappable_into:
-      - { item_id: iron, count: 3 }
-
-  - id: iron-pickaxe
-    name: 铁镐
-    station: 工作台
+      - item_id: unit_clay
+        count: 5
+  - id: resourceCrushedSand
+    name: 碎石砂
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 4
+  - id: resourceRockSmall
+    name: 小石子
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_stone
+        count: 5
+  - id: resourceScrapBrass
+    name: 黄铜
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_brass
+        count: 1
+  - id: resourceScrapIron
+    name: 铁
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 1
+  - id: resourceScrapLead
+    name: 铅
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_lead
+        count: 1
+  - id: gunBowT1WoodenBowParts
+    name: gunBowT1WoodenBowParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunHandgunT1PistolParts
+    name: gunHandgunT1PistolParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunShotgunT1DoubleBarrelParts
+    name: gunShotgunT1DoubleBarrelParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunRifleT1HuntingRifleParts
+    name: gunRifleT1HuntingRifleParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunMGT1AK47Parts
+    name: gunMGT1AK47Parts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunExplosivesT3RocketLauncherParts
+    name: gunExplosivesT3RocketLauncherParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: gunBotRoboticsParts
+    name: gunBotRoboticsParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnBatonT2StunBatonParts
+    name: 眩晕棒零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnKnucklesT3SteelKnucklesParts
+    name: 钢质拳套零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeToolAxeT3ChainsawParts
+    name: meleeToolAxeT3ChainsawParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnBladeT3MacheteParts
+    name: 砍刀零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnSpearT3SteelSpearParts
+    name: 钢矛零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnClubT3SteelClubParts
+    name: 钢棍零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeWpnSledgeT3SteelSledgehammerParts
+    name: 钢质大锤零件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: meleeToolAllSteelParts
+    name: meleeToolAllSteelParts
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: armorParts
+    name: 护甲部件
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe: []
+  - id: resourceRockSmallBundle
+    name: 一堆小石子（6000）
+    station: 背包合成
     craft_time: 10
     craft_count: 1
     recipe:
-      - { item_id: forged-iron, count: 20 }
-      - { item_id: wood, count: 15 }
-      - { item_id: leather, count: 8 }
+      - item_id: resourceRockSmall
+        count: 6000
+  - id: resourceWoodBundle
+    name: 一堆木头（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 6000
+  - id: resourceScrapIronBundle
+    name: 一堆铁（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 6000
+  - id: resourceOilShaleBundle
+    name: 一堆油页岩（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceOilShale
+        count: 6000
+  - id: resourcePotassiumNitratePowderBundle
+    name: 一堆硝酸盐粉（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourcePotassiumNitratePowder
+        count: 6000
+  - id: resourceLeadBundle
+    name: 一堆铅（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 6000
+  - id: resourceScrapBrassBundle
+    name: 一堆黄铜（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapBrass
+        count: 6000
+  - id: resourceCoalBundle
+    name: 一堆煤炭（6000）
+    station: 背包合成
+    craft_time: 10
+    craft_count: 1
+    recipe:
+      - item_id: resourceCoal
+        count: 6000
+  - id: ammo9mmBulletBall
+    name: ammo9mmBulletBall
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 1
+      - item_id: resourceGunPowder
+        count: 1
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle9mmBulletBall
+    name: ammoBundle9mmBulletBall
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 80
+      - item_id: resourceGunPowder
+        count: 80
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo9mmBulletHP
+    name: ammo9mmBulletHP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 1
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle9mmBulletHP
+    name: ammoBundle9mmBulletHP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 80
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo9mmBulletAP
+    name: ammo9mmBulletAP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 2
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle9mmBulletAP
+    name: ammoBundle9mmBulletAP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 160
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo44MagnumBulletBall
+    name: ammo44MagnumBulletBall
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 1
+      - item_id: resourceGunPowder
+        count: 2
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle44MagnumBulletBall
+    name: ammoBundle44MagnumBulletBall
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 80
+      - item_id: resourceGunPowder
+        count: 160
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo44MagnumBulletHP
+    name: ammo44MagnumBulletHP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 2
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle44MagnumBulletHP
+    name: ammoBundle44MagnumBulletHP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 160
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo44MagnumBulletAP
+    name: ammo44MagnumBulletAP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 3
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle44MagnumBulletAP
+    name: ammoBundle44MagnumBulletAP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 240
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo762mmBulletBall
+    name: ammo762mmBulletBall
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 1
+      - item_id: resourceGunPowder
+        count: 3
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle762mmBulletBall
+    name: ammoBundle762mmBulletBall
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 80
+      - item_id: resourceGunPowder
+        count: 240
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo762mmBulletHP
+    name: ammo762mmBulletHP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 3
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle762mmBulletHP
+    name: ammoBundle762mmBulletHP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 240
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammo762mmBulletAP
+    name: ammo762mmBulletAP
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 5
+      - item_id: resourceBulletCasing
+        count: 1
+  - id: ammoBundle762mmBulletAP
+    name: ammoBundle762mmBulletAP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 400
+      - item_id: resourceBulletCasing
+        count: 80
+  - id: ammoShotgunShell
+    name: ammoShotgunShell
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceBuckshot
+        count: 1
+      - item_id: resourceGunPowder
+        count: 4
+      - item_id: resourcePaper
+        count: 1
+  - id: ammoBundleShotgunShell
+    name: ammoBundleShotgunShell
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceBuckshot
+        count: 80
+      - item_id: resourceGunPowder
+        count: 320
+      - item_id: resourcePaper
+        count: 80
+  - id: ammoShotgunSlug
+    name: ammoShotgunSlug
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 2
+      - item_id: resourceGunPowder
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 1
+  - id: ammoBundleShotgunSlug
+    name: ammoBundleShotgunSlug
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceBulletTip
+        count: 160
+      - item_id: resourceGunPowder
+        count: 400
+      - item_id: resourceScrapPolymers
+        count: 80
+  - id: ammoShotgunBreachingSlug
+    name: ammoShotgunBreachingSlug
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 3
+      - item_id: resourceClayLump
+        count: 2
+      - item_id: resourceGunPowder
+        count: 4
+      - item_id: resourceScrapPolymers
+        count: 1
+  - id: ammoBundleShotgunBreachingSlug
+    name: ammoBundleShotgunBreachingSlug
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 240
+      - item_id: resourceClayLump
+        count: 160
+      - item_id: resourceGunPowder
+        count: 320
+      - item_id: resourceScrapPolymers
+        count: 80
+  - id: ammoJunkTurretRegular
+    name: ammoJunkTurretRegular
+    station: 背包合成
+    craft_time: 0.36
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 2
+  - id: ammoBundleJunkTurretRegular
+    name: ammoBundleJunkTurretRegular
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 1600
+  - id: ammoJunkTurretShell
+    name: ammoJunkTurretShell
+    station: 背包合成
+    craft_time: 0.36
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 1
+      - item_id: resourceBuckshot
+        count: 1
+  - id: ammoBundleJunkTurretShell
+    name: ammoBundleJunkTurretShell
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 800
+      - item_id: resourceBuckshot
+        count: 800
+  - id: ammoJunkTurretAP
+    name: ammoJunkTurretAP
+    station: 背包合成
+    craft_time: 0.36
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 2
+      - item_id: resourceScrapIron
+        count: 2
+  - id: ammoBundleJunkTurretAP
+    name: ammoBundleJunkTurretAP
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 1600
+      - item_id: resourceScrapIron
+        count: 1600
+  - id: ammoArrowFlaming
+    name: ammoArrowFlaming
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceGunPowder
+        count: 2
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceAnimalFat
+        count: 1
+  - id: ammoBundleArrowFlaming
+    name: ammoBundleArrowFlaming
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 80
+      - item_id: resourceScrapPolymers
+        count: 160
+      - item_id: resourceGunPowder
+        count: 160
+      - item_id: resourceCloth
+        count: 400
+      - item_id: resourceAnimalFat
+        count: 80
+  - id: ammoArrowExploding
+    name: ammoArrowExploding
+    station: 工作台
+    craft_time: 4.8
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceGunPowder
+        count: 6
+      - item_id: resourcePaper
+        count: 1
+      - item_id: resourceYuccaFibers
+        count: 1
+  - id: ammoBundleArrowExploding
+    name: ammoBundleArrowExploding
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 60
+      - item_id: resourceScrapPolymers
+        count: 120
+      - item_id: resourceGunPowder
+        count: 360
+      - item_id: resourcePaper
+        count: 60
+      - item_id: resourceYuccaFibers
+        count: 60
+  - id: ammoArrowIron
+    name: ammoArrowIron
+    station: 背包合成
+    craft_time: 1.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadIron
+        count: 1
+      - item_id: resourceWood
+        count: 1
+      - item_id: resourceFeather
+        count: 1
+  - id: ammoBundleArrowIron
+    name: ammoBundleArrowIron
+    station: 背包合成
+    craft_time: 140
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadIron
+        count: 80
+      - item_id: resourceWood
+        count: 80
+      - item_id: resourceFeather
+        count: 80
+  - id: ammoArrowSteelAP
+    name: ammoArrowSteelAP
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+  - id: ammoBundleArrowSteelAP
+    name: ammoBundleArrowSteelAP
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 80
+      - item_id: resourceScrapPolymers
+        count: 160
+  - id: ammoArrowStone
+    name: ammoArrowStone
+    station: 背包合成
+    craft_time: 1.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 1
+      - item_id: resourceWood
+        count: 1
+      - item_id: resourceFeather
+        count: 1
+  - id: ammoBundleArrowStone
+    name: ammoBundleArrowStone
+    station: 背包合成
+    craft_time: 140
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 80
+      - item_id: resourceWood
+        count: 80
+      - item_id: resourceFeather
+        count: 80
+  - id: ammoCrossbowBoltFlaming
+    name: ammoCrossbowBoltFlaming
+    station: 工作台
+    craft_time: 3.6
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceGunPowder
+        count: 2
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceAnimalFat
+        count: 1
+  - id: ammoBundleCrossbowBoltFlaming
+    name: ammoBundleCrossbowBoltFlaming
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 80
+      - item_id: resourceScrapPolymers
+        count: 160
+      - item_id: resourceGunPowder
+        count: 160
+      - item_id: resourceCloth
+        count: 400
+      - item_id: resourceAnimalFat
+        count: 80
+  - id: ammoCrossbowBoltExploding
+    name: ammoCrossbowBoltExploding
+    station: 工作台
+    craft_time: 4.8
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceGunPowder
+        count: 8
+      - item_id: resourcePaper
+        count: 1
+      - item_id: resourceYuccaFibers
+        count: 1
+  - id: ammoBundleCrossbowBoltExploding
+    name: ammoBundleCrossbowBoltExploding
+    station: 工作台
+    craft_time: 360
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 60
+      - item_id: resourceScrapPolymers
+        count: 120
+      - item_id: resourceGunPowder
+        count: 480
+      - item_id: resourcePaper
+        count: 60
+      - item_id: resourceYuccaFibers
+        count: 60
+  - id: ammoCrossbowBoltIron
+    name: ammoCrossbowBoltIron
+    station: 背包合成
+    craft_time: 1.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadIron
+        count: 1
+      - item_id: resourceWood
+        count: 1
+      - item_id: resourceFeather
+        count: 1
+  - id: ammoBundleCrossbowBoltIron
+    name: ammoBundleCrossbowBoltIron
+    station: 背包合成
+    craft_time: 140
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadIron
+        count: 80
+      - item_id: resourceWood
+        count: 80
+      - item_id: resourceFeather
+        count: 80
+  - id: ammoCrossbowBoltSteelAP
+    name: ammoCrossbowBoltSteelAP
+    station: 工作台
+    craft_time: 2.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 2
+  - id: ammoBundleCrossbowBoltSteelAP
+    name: ammoBundleCrossbowBoltSteelAP
+    station: 工作台
+    craft_time: 240
+    craft_count: 1
+    recipe:
+      - item_id: resourceArrowHeadSteelAP
+        count: 80
+      - item_id: resourceScrapPolymers
+        count: 160
+  - id: ammoCrossbowBoltStone
+    name: ammoCrossbowBoltStone
+    station: 背包合成
+    craft_time: 1.4
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 1
+      - item_id: resourceWood
+        count: 1
+      - item_id: resourceFeather
+        count: 1
+  - id: ammoBundleCrossbowBoltStone
+    name: ammoBundleCrossbowBoltStone
+    station: 背包合成
+    craft_time: 140
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 80
+      - item_id: resourceWood
+        count: 80
+      - item_id: resourceFeather
+        count: 80
+  - id: ammoDartIron
+    name: ammoDartIron
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 3
+      - item_id: unit_clay
+        count: 5
+  - id: ammoDartIron
+    name: ammoDartIron
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 3
+      - item_id: resourceClayLump
+        count: 1
+  - id: ammoGasCan
+    name: 汽油罐
+    station: 化学台
+    craft_time: 0.125
+    craft_count: 2
+    recipe:
+      - item_id: resourceOilShale
+        count: 1
+  - id: ammoGasCanBundle
+    name: 汽油罐堆（5000）
+    station: 化学台
+    craft_time: 625
+    craft_count: 1
+    recipe:
+      - item_id: resourceOilShale
+        count: 2000
+  - id: ammoGasCan
+    name: 汽油罐
+    station: 背包合成
+    craft_time: 5
+    craft_count: 600
+    recipe:
+      - item_id: oilBarrel
+        count: 1
+  - id: oilBarrel
+    name: oilBarrel
+    station: 背包合成
+    craft_time: 5
+    craft_count: 1
+    recipe:
+      - item_id: ammoGasCan
+        count: 600
+  - id: ammoRocketFrag
+    name: ammoRocketFrag
+    station: 工作台
+    craft_time: 40
+    craft_count: 1
+    recipe:
+      - item_id: resourceBuckshot
+        count: 25
+      - item_id: resourceGunPowder
+        count: 15
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: ammoGasCan
+        count: 500
+      - item_id: resourceRocketCasing
+        count: 1
+  - id: ammoRocketHE
+    name: ammoRocketHE
+    station: 工作台
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - item_id: resourceRocketTip
+        count: 1
+      - item_id: resourceGunPowder
+        count: 15
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: ammoGasCan
+        count: 500
+      - item_id: resourceRocketCasing
+        count: 1
+  - id: armorPrimitiveHelmet
+    name: 粗糙兜帽
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 5
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceCloth
+        count: 0
+      - item_id: resourceDuctTape
+        count: 0
+  - id: armorPrimitiveOutfit
+    name: 粗糙装束
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 5
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceCloth
+        count: 0
+      - item_id: resourceDuctTape
+        count: 0
+  - id: armorPrimitiveGloves
+    name: 粗糙手套
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 5
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceCloth
+        count: 0
+      - item_id: resourceDuctTape
+        count: 0
+  - id: armorPrimitiveBoots
+    name: 粗糙鞋子
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 5
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceCloth
+        count: 0
+      - item_id: resourceDuctTape
+        count: 0
+  - id: armorLumberjackHelmet
+    name: 伐木工帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorLumberjackOutfit
+    name: 伐木工装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorLumberjackGloves
+    name: 伐木工手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorLumberjackBoots
+    name: 伐木工靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorPreacherHelmet
+    name: 传道者帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorPreacherOutfit
+    name: 传道者装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorPreacherGloves
+    name: 传道者手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorPreacherBoots
+    name: 传道者靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRogueHelmet
+    name: 盗贼兜帽
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRogueOutfit
+    name: 盗贼装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRogueGloves
+    name: 盗贼手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRogueBoots
+    name: 盗贼靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAthleticHelmet
+    name: 运动员帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAthleticOutfit
+    name: 运动员装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAthleticGloves
+    name: 运动员手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAthleticBoots
+    name: 运动员鞋子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorEnforcerHelmet
+    name: 警官墨镜
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorEnforcerOutfit
+    name: 警官装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorEnforcerGloves
+    name: 警官手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorEnforcerBoots
+    name: 警官鞋子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorFarmerHelmet
+    name: 农夫帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorFarmerOutfit
+    name: 农夫装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorFarmerGloves
+    name: 农夫手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorFarmerBoots
+    name: 农夫靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorBikerHelmet
+    name: 摩托车手头盔
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorBikerOutfit
+    name: 摩托车手装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorBikerGloves
+    name: 摩托车手手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorBikerBoots
+    name: 摩托车手靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorScavengerHelmet
+    name: 拾荒者帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorScavengerOutfit
+    name: 拾荒者装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorScavengerGloves
+    name: 拾荒者手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorScavengerBoots
+    name: 拾荒者靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRangerHelmet
+    name: 护林员帽子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRangerOutfit
+    name: 护林员装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRangerGloves
+    name: 护林员手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRangerBoots
+    name: 护林员靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorCommandoHelmet
+    name: 指挥官头盔
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorCommandoOutfit
+    name: 指挥官装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorCommandoGloves
+    name: 指挥官手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorCommandoBoots
+    name: 指挥官靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAssassinHelmet
+    name: 刺客兜帽
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAssassinOutfit
+    name: 刺客装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAssassinGloves
+    name: 刺客手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorAssassinBoots
+    name: 刺客靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorMinerHelmet
+    name: 矿工头盔
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorMinerOutfit
+    name: 矿工装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorMinerGloves
+    name: 矿工手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorMinerBoots
+    name: 矿工靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNomadHelmet
+    name: 游牧民头饰
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNomadOutfit
+    name: 游牧民装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNomadGloves
+    name: 游牧民手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNomadBoots
+    name: 游牧民靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNerdHelmet
+    name: 学霸护目镜
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNerdOutfit
+    name: 学霸装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNerdGloves
+    name: 学霸手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorNerdBoots
+    name: 学霸靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRaiderHelmet
+    name: 袭击者头盔
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRaiderOutfit
+    name: 袭击者装束
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRaiderGloves
+    name: 袭击者手套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: armorRaiderBoots
+    name: 袭击者靴子
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceForgedIron
+        count: 0
+      - item_id: resourceForgedSteel
+        count: 0
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: biomeWeatherItem1
+    name: 防烟装备
+    station: 背包合成
+    craft_time: 60
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceCloth
+        count: 20
+      - item_id: resourceCoal
+        count: 50
+  - id: biomeWeatherItem2
+    name: 沙漠装备
+    station: 背包合成
+    craft_time: 60
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceCloth
+        count: 20
+      - item_id: resourceScopeLens
+        count: 2
+  - id: biomeWeatherItem3
+    name: 雪地装备
+    station: 背包合成
+    craft_time: 60
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceCropCottonPlant
+        count: 50
+      - item_id: resourceScopeLens
+        count: 2
+  - id: biomeWeatherItem4
+    name: 防辐射装备
+    station: 背包合成
+    craft_time: 60
+    craft_count: 1
+    recipe:
+      - item_id: resourceArmorCraftingKit
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceScrapLead
+        count: 100
+      - item_id: resourceForgedSteel
+        count: 10
+  - id: autoTurret
+    name: autoTurret
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: motionsensor
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 30
+      - item_id: gunHandgunT1PistolParts
+        count: 3
+      - item_id: resourceOil
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 5
+  - id: appliancesVariantHelper
+    name: appliancesVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceElectricParts
+        count: 5
+      - item_id: resourceMetalPipe
+        count: 5
+      - item_id: resourceHeadlight
+        count: 1
+  - id: wallClockWorking
+    name: 壁挂钟
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceElectricParts
+        count: 5
+  - id: barbedFence
+    name: barbedFence
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 10
+      - item_id: resourceWood
+        count: 10
+  - id: carBattery
+    name: 汽车铅蓄电池
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 180
+      - item_id: resourceAcid
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: batterybank
+    name: batterybank
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceElectricParts
+        count: 11
+      - item_id: resourceScrapPolymers
+        count: 6
+  - id: bed02BlockVariantHelper
+    name: bed02BlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 100
+      - item_id: resourceCropCottonPlant
+        count: 40
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceMetalPipe
+        count: 10
+  - id: bedrollBlockVariantHelper
+    name: bedrollBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 10
+  - id: bladeTrap
+    name: bladeTrap
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 8
+      - item_id: resourceElectricParts
+        count: 6
+      - item_id: resourceOil
+        count: 10
+  - id: bucketEmpty
+    name: 水桶
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 7
+  - id: burningBarrelPlayer
+    name: 燃烧桶
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 3
+      - item_id: resourceWood
+        count: 10
+  - id: cellarDoorDoubleWood
+    name: 地窖木门
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: cellarDoorDoubleIron
+    name: 地窖铁门
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: cellarDoorDoubleSteel
+    name: 地窖钢门
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: shuttersWoodBlockVariantHelper
+    name: shuttersWoodBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: shuttersIronBlockVariantHelper
+    name: shuttersIronBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: shuttersSteelBlockVariantHelper
+    name: shuttersSteelBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: campfire
+    name: campfire
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 5
+  - id: candle
+    name: 蜡烛
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+  - id: candleTableLightPlayer
+    name: candleTableLightPlayer
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: candle
+        count: 1
+  - id: ceilingLight01_player
+    name: ceilingLight01_player
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceHeadlight
+        count: 1
+  - id: ceilingLight07_player
+    name: ceilingLight07_player
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceElectricParts
+        count: 4
+  - id: combineStation
+    name: 合并工作站
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 50
+      - item_id: resourceWood
+        count: 100
+  - id: industrialLight01_player
+    name: industrialLight01_player
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceElectricParts
+        count: 4
+  - id: industrialLight02_player
+    name: industrialLight02_player
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceElectricParts
+        count: 4
+  - id: calendarVariantHelper
+    name: calendarVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourcePaper
+        count: 5
+      - item_id: resourcePaint
+        count: 5
+      - item_id: resourceNail
+        count: 1
+  - id: cementMixer
+    name: cementMixer
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 25
+      - item_id: resourceSpring
+        count: 4
+      - item_id: smallEngine
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: chemistryStation
+    name: chemistryStation
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: toolBeaker
+        count: 1
+      - item_id: resourceForgedIron
+        count: 100
+      - item_id: toolCookingPot
+        count: 3
+      - item_id: resourceMetalPipe
+        count: 30
+      - item_id: resourceAcid
+        count: 5
+  - id: cntCoolerVariantHelper
+    name: cntCoolerVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 8
+  - id: cntWallSafe_Player
+    name: 墙面保险箱
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 3
+  - id: cntDeskSafe_Player
+    name: 台式保险箱
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 3
+  - id: cntGunSafeVariantHelper
+    name: cntGunSafeVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 3
+  - id: cntSteelWallCabinetSecure
+    name: 钢制壁橱
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 3
+  - id: metalFurnitureBlockVariantHelper
+    name: metalFurnitureBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 3
+  - id: cntMailBox01VariantHelper
+    name: cntMailBox01VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceWood
+        count: 5
+  - id: cntMailBox02VariantHelper
+    name: cntMailBox02VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceWood
+        count: 5
+  - id: cntMailBox03VariantHelper
+    name: cntMailBox03VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceWood
+        count: 5
+  - id: cntWoodWritableCrate
+    name: 木储藏箱
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: cntIronWritableCrate
+    name: 铁储藏箱
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: cntSteelWritableCrate
+    name: 钢储藏箱
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+  - id: cntWoodFurnitureBlockVariantHelper
+    name: cntWoodFurnitureBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceWood
+        count: 5
+  - id: cntWoodFurnitureBlockVariantHelper2
+    name: cntWoodFurnitureBlockVariantHelper2
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceWood
+        count: 5
+  - id: curtainVariantHelper
+    name: curtainVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceScrapIron
+        count: 5
+  - id: woodSignBlockVariantHelper
+    name: woodSignBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 10
+  - id: sinksToiletsBlockVariantHelper
+    name: sinksToiletsBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: bucketRiverWater
+        count: 1
+      - item_id: resourceMetalPipe
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceWood
+        count: 4
+  - id: toiletsBlockVariantHelper
+    name: toiletsBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: bucketRiverWater
+        count: 1
+      - item_id: resourceMetalPipe
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceWood
+        count: 4
+  - id: dartTrap
+    name: dartTrap
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 6
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceOil
+        count: 5
+  - id: cntApiary
+    name: 蜂房
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceBeeswax
+        count: 5
+      - item_id: resourceWood
+        count: 100
+      - item_id: resourceNail
+        count: 50
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceDuctTape
+        count: 8
+  - id: cntDewCollector
+    name: 露水收集器
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 200
+      - item_id: resourceMetalPipe
+        count: 30
+      - item_id: resourceDuctTape
+        count: 8
+  - id: drinkJarEmpty
+    name: drinkJarEmpty
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 24
+      - item_id: unit_clay
+        count: 5
+  - id: drinkJarEmpty
+    name: drinkJarEmpty
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 6
+      - item_id: resourceClayLump
+        count: 1
+  - id: drinkCanEmpty
+    name: drinkCanEmpty
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: drinkCanEmpty
+    name: drinkCanEmpty
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: drinkJarBeer
+    name: drinkJarBeer
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropHopsFlower
+        count: 4
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkJarBoiledWater
+    name: drinkJarBoiledWater
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: drinkJarRiverWater
+        count: 1
+  - id: drinkJarPureMineralWater
+    name: drinkJarPureMineralWater
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: drinkJarBoiledWater
+        count: 1
+      - item_id: resourceCoal
+        count: 1
+      - item_id: resourceCropGoldenrodPlant
+        count: 1
+      - item_id: resourceCropChrysanthemumPlant
+        count: 1
+  - id: drinkJarCoffee
+    name: drinkJarCoffee
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropCoffeeBeans
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkJarBlackStrapCoffee
+    name: drinkJarBlackStrapCoffee
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropCoffeeBeans
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+      - item_id: resourceGunPowder
+        count: 5
+  - id: drinkJarGoldenRodTea
+    name: drinkJarGoldenRodTea
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropGoldenrodPlant
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkJarHoneyTea
+    name: 蜂蜜茶
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropGoldenrodPlant
+        count: 1
+      - item_id: foodHoney
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkJarGrandpasAwesomeSauce
+    name: drinkJarGrandpasAwesomeSauce
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: casinoCoin
+        count: 50
+      - item_id: foodHoney
+        count: 5
+      - item_id: foodCropMushrooms
+        count: 5
+      - item_id: ammoGasCan
+        count: 10
+      - item_id: foodCropGraceCorn
+        count: 1
+  - id: drinkJarGrandpasLearningElixir
+    name: drinkJarGrandpasLearningElixir
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanDogfood
+        count: 2
+      - item_id: drinkJarRedTea
+        count: 2
+      - item_id: resourceAcid
+        count: 1
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: foodCropGraceCorn
+        count: 1
+  - id: drinkJarGrandpasMoonshine
+    name: drinkJarGrandpasMoonshine
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCornMeal
+        count: 5
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: foodCropBlueberries
+        count: 5
+      - item_id: resourceAcid
+        count: 1
+      - item_id: foodCropGraceCorn
+        count: 1
+  - id: drinkJarRedTea
+    name: drinkJarRedTea
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropChrysanthemumPlant
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkJarRiverWater
+    name: drinkJarRiverWater
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceSnowBall
+        count: 1
+      - item_id: drinkJarEmpty
+        count: 1
+  - id: drinkJarYuccaJuice
+    name: drinkJarYuccaJuice
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropYuccaFruit
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drinkYuccaJuiceSmoothie
+    name: drinkYuccaJuiceSmoothie
+    station: 背包合成
+    craft_time: 25
+    craft_count: 1
+    recipe:
+      - item_id: foodCropYuccaFruit
+        count: 4
+      - item_id: foodCropBlueberries
+        count: 4
+      - item_id: resourceSnowBall
+        count: 1
+      - item_id: drinkJarEmpty
+        count: 1
+  - id: drugAntibiotics
+    name: 抗生素
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodShamSandwich
+        count: 4
+      - item_id: resourcePotassiumNitratePowder
+        count: 3
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drugAntibiotics
+    name: 抗生素
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodShamSandwich
+        count: 1
+      - item_id: resourcePotassiumNitratePowder
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drugFortBites
+    name: 强健宝
+    station: 营火
+    craft_time: 600
+    craft_count: 1
+    recipe:
+      - item_id: medicalBloodBag
+        count: 4
+      - item_id: drinkJarBeer
+        count: 2
+      - item_id: foodRottingFlesh
+        count: 40
+      - item_id: drugVitamins
+        count: 2
+  - id: drugFortBites
+    name: 强健宝
+    station: 化学台
+    craft_time: 300
+    craft_count: 1
+    recipe:
+      - item_id: medicalBloodBag
+        count: 2
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: foodRottingFlesh
+        count: 20
+      - item_id: drugVitamins
+        count: 1
+  - id: drugHerbalAntibiotics
+    name: 草药抗生素
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropBlueberries
+        count: 5
+      - item_id: foodCropMushrooms
+        count: 3
+      - item_id: resourceCropChrysanthemumPlant
+        count: 3
+      - item_id: resourcePotassiumNitratePowder
+        count: 3
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drugHerbalAntibiotics
+    name: 草药抗生素
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropBlueberries
+        count: 2
+      - item_id: foodCropMushrooms
+        count: 1
+      - item_id: resourceCropChrysanthemumPlant
+        count: 1
+      - item_id: resourcePotassiumNitratePowder
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: drugRecog
+    name: 雷克格
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceAcid
+        count: 4
+      - item_id: drinkJarBeer
+        count: 2
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: drugVitamins
+        count: 2
+  - id: drugRecog
+    name: 雷克格
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceAcid
+        count: 2
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: drugVitamins
+        count: 1
+  - id: drugSteroids
+    name: 类固醇
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceOil
+        count: 1
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: resourceTestosteroneExtract
+        count: 1
+  - id: electricfencepost
+    name: electricfencepost
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceElectricParts
+        count: 2
+  - id: electrictimerrelay
+    name: electrictimerrelay
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceElectricParts
+        count: 5
+  - id: electricwirerelay
+    name: electricwirerelay
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceElectricParts
+        count: 1
+  - id: endTableLamp
+    name: 茶几台灯
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 3
+      - item_id: resourceDuctTape
+        count: 4
+      - item_id: resourceScrapPolymers
+        count: 4
+  - id: lanternDecorLightBlockVariantHelper
+    name: lanternDecorLightBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 3
+      - item_id: resourceDuctTape
+        count: 4
+      - item_id: resourceOil
+        count: 5
+  - id: lanternOldBlockVariantHelper
+    name: lanternOldBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceOil
+        count: 5
+  - id: farmPlotBlockVariantHelper
+    name: farmPlotBlockVariantHelper
+    station: 背包合成
+    craft_time: 20
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 4
+      - item_id: foodRottingFlesh
+        count: 10
+      - item_id: resourcePotassiumNitratePowder
+        count: 25
+      - item_id: resourceClayLump
+        count: 100
+  - id: flagThick44BlockVariantHelper
+    name: flagThick44BlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 44
+  - id: foodBaconAndEggs
+    name: foodBaconAndEggs
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodRawMeat
+        count: 5
+      - item_id: foodEgg
+        count: 2
+  - id: foodBakedPotato
+    name: foodBakedPotato
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPotato
+        count: 1
+  - id: foodBlueberryPie
+    name: foodBlueberryPie
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropBlueberries
+        count: 5
+      - item_id: foodEgg
+        count: 1
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodPumpkinPie
+    name: foodPumpkinPie
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPumpkin
+        count: 2
+      - item_id: foodEgg
+        count: 1
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodPumpkinCheesecake
+    name: foodPumpkinCheesecake
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPumpkin
+        count: 1
+      - item_id: foodEgg
+        count: 1
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: drinkJarBeer
+        count: 1
+  - id: foodPumpkinBread
+    name: foodPumpkinBread
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPumpkin
+        count: 1
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodBoiledMeat
+    name: foodBoiledMeat
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodRawMeat
+        count: 5
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodCanSham
+    name: foodCanSham
+    station: 营火
+    craft_time: 15
+    craft_count: 1
+    recipe:
+      - item_id: foodRottingFlesh
+        count: 5
+      - item_id: resourceBone
+        count: 5
+      - item_id: resourceAnimalFat
+        count: 5
+  - id: foodCharredMeat
+    name: foodCharredMeat
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodRawMeat
+        count: 5
+  - id: foodChiliDog
+    name: foodChiliDog
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanChili
+        count: 1
+      - item_id: foodGrilledMeat
+        count: 1
+      - item_id: foodCornBread
+        count: 1
+  - id: foodCornBread
+    name: foodCornBread
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodCornMeal
+    name: foodCornMeal
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropCorn
+        count: 1
+  - id: foodCornOnTheCob
+    name: foodCornOnTheCob
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropCorn
+        count: 1
+  - id: foodEggBoiled
+    name: foodEggBoiled
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodEgg
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodFishTacos
+    name: foodFishTacos
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanSalmon
+        count: 1
+      - item_id: foodCornMeal
+        count: 2
+  - id: foodGrilledMeat
+    name: foodGrilledMeat
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodRawMeat
+        count: 5
+  - id: foodBurntSmoothie
+    name: foodBurntSmoothie
+    station: 背包合成
+    craft_time: 25
+    craft_count: 1
+    recipe:
+      - item_id: resourceCoal
+        count: 5
+      - item_id: resourceYuccaFibers
+        count: 20
+      - item_id: foodCropMushrooms
+        count: 5
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodOasisSmoothie
+    name: 中暑补剂
+    station: 背包合成
+    craft_time: 25
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropAloeLeaf
+        count: 5
+      - item_id: resourceOilShale
+        count: 5
+      - item_id: foodCropMushrooms
+        count: 5
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodFrostbiteSmoothie
+    name: foodFrostbiteSmoothie
+    station: 背包合成
+    craft_time: 25
+    craft_count: 1
+    recipe:
+      - item_id: foodCropBlueberries
+        count: 5
+      - item_id: foodGrilledMeat
+        count: 1
+      - item_id: foodCanChili
+        count: 1
+      - item_id: drinkJarBeer
+        count: 1
+  - id: foodAtomicSmoothie
+    name: foodAtomicSmoothie
+    station: 背包合成
+    craft_time: 25
+    craft_count: 1
+    recipe:
+      - item_id: foodCropYuccaFruit
+        count: 5
+      - item_id: foodCropGraceCorn
+        count: 1
+      - item_id: foodCropMushroomsRadiated
+        count: 5
+      - item_id: resourceAcid
+        count: 1
+  - id: foodHoboStew
+    name: foodHoboStew
+    station: 营火
+    craft_time: 65
+    craft_count: 1
+    recipe:
+      - item_id: foodRottingFlesh
+        count: 10
+      - item_id: foodCropPotato
+        count: 2
+      - item_id: foodCropCorn
+        count: 2
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodMeatStew
+    name: foodMeatStew
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodGrilledMeat
+        count: 1
+      - item_id: foodCropPotato
+        count: 2
+      - item_id: foodCropCorn
+        count: 2
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodHoneyGlazedSham
+    name: 蜜汁山威
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanSham
+        count: 1
+      - item_id: foodCropCorn
+        count: 4
+      - item_id: foodCropPotato
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: foodHoney
+        count: 1
+  - id: foodHoneyBrisket
+    name: 蜜汁牛腩
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodGrilledMeat
+        count: 3
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: foodCropMushrooms
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: foodHoney
+        count: 1
+  - id: foodGumboStew
+    name: foodGumboStew
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanBeef
+        count: 1
+      - item_id: foodCanPeas
+        count: 1
+      - item_id: foodCanStock
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 3
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodRawMeatBundle
+    name: 生肉捆
+    station: 背包合成
+    craft_time: 5
+    craft_count: 1
+    recipe:
+      - item_id: foodRawMeat
+        count: 5
+      - item_id: resourcePaper
+        count: 1
+      - item_id: resourceYuccaFibers
+        count: 1
+  - id: foodShepardsPie
+    name: foodShepardsPie
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanLamb
+        count: 1
+      - item_id: foodCanPeas
+        count: 1
+      - item_id: foodCropCorn
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 3
+      - item_id: foodCropPotato
+        count: 1
+  - id: foodSpaghetti
+    name: foodSpaghetti
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanBeef
+        count: 1
+      - item_id: foodCanPasta
+        count: 1
+      - item_id: foodCropMushrooms
+        count: 1
+      - item_id: resourceAnimalFat
+        count: 3
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodTunaFishGravyToast
+    name: foodTunaFishGravyToast
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanTuna
+        count: 1
+      - item_id: foodCornMeal
+        count: 1
+      - item_id: foodCornBread
+        count: 2
+      - item_id: resourceAnimalFat
+        count: 3
+      - item_id: foodCanPeas
+        count: 1
+  - id: foodShamChowder
+    name: foodShamChowder
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCanSham
+        count: 1
+      - item_id: foodCropPotato
+        count: 2
+      - item_id: foodCropCorn
+        count: 2
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: foodSteakAndPotato
+    name: foodSteakAndPotato
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodGrilledMeat
+        count: 1
+      - item_id: foodCropPotato
+        count: 2
+      - item_id: foodCropMushrooms
+        count: 2
+      - item_id: resourceAnimalFat
+        count: 1
+  - id: foodVegetableStew
+    name: foodVegetableStew
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPotato
+        count: 2
+      - item_id: foodCropCorn
+        count: 2
+      - item_id: foodCropMushrooms
+        count: 2
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: forge
+    name: forge
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCobblestones
+        count: 50
+      - item_id: woodLogPillar100
+        count: 1
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceMetalPipe
+        count: 3
+  - id: ironGarageDoorBlockVariantHelper
+    name: ironGarageDoorBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+  - id: ironGarageDoor_PoweredBlockVariantHelper
+    name: ironGarageDoor_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: woodenGarageDoor3x3_PoweredBlockVariantHelper
+    name: woodenGarageDoor3x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: woodenGarageDoor4x3_PoweredBlockVariantHelper
+    name: woodenGarageDoor4x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: woodenGarageDoor5x3_PoweredBlockVariantHelper
+    name: woodenGarageDoor5x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: steelGarageDoor3x3_PoweredBlockVariantHelper
+    name: steelGarageDoor3x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: steelGarageDoor4x3_PoweredBlockVariantHelper
+    name: steelGarageDoor4x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: steelGarageDoor5x3_PoweredBlockVariantHelper
+    name: steelGarageDoor5x3_PoweredBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: rollUpDoor3x3VariantHelper
+    name: rollUpDoor3x3VariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: rollUpDoor5x4VariantHelper
+    name: rollUpDoor5x4VariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: rollUpDoor7x4VariantHelper
+    name: rollUpDoor7x4VariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: metalReinforcedWoodDrawBridge
+    name: metalReinforcedWoodDrawBridge
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+  - id: metalReinforcedWoodDrawBridgePowered
+    name: metalReinforcedWoodDrawBridgePowered
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 20
+  - id: generatorbank
+    name: generatorbank
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceElectricParts
+        count: 14
+  - id: glassBulletproofBlockVariantHelper
+    name: glassBulletproofBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 112
+      - item_id: unit_stone
+        count: 10
+      - item_id: unit_lead
+        count: 40
+      - item_id: unit_iron
+        count: 20
+      - item_id: unit_clay
+        count: 20
+  - id: glassBulletproofBlockVariantHelper
+    name: glassBulletproofBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 28
+      - item_id: resourceRockSmall
+        count: 2
+      - item_id: resourceScrapLead
+        count: 40
+      - item_id: resourceScrapIron
+        count: 20
+      - item_id: resourceClayLump
+        count: 4
+  - id: glassBlockVariantHelper
+    name: glassBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 12
+      - item_id: unit_lead
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: glassBlockVariantHelper
+    name: glassBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 3
+      - item_id: resourceScrapLead
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: gunHandgunT0PipePistol
+    name: gunHandgunT0PipePistol
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceMetalPipe
+        count: 4
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceWood
+        count: 6
+  - id: gunHandgunT1Pistol
+    name: gunHandgunT1Pistol
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunHandgunT1PistolParts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceSpring
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunHandgunT2Magnum44
+    name: gunHandgunT2Magnum44
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunHandgunT1PistolParts
+        count: 7
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: resourceDuctTape
+        count: 7
+      - item_id: resourceSpring
+        count: 13
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunHandgunT3DesertVulture
+    name: gunHandgunT3DesertVulture
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunHandgunT1PistolParts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunHandgunT3SMG5
+    name: gunHandgunT3SMG5
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunHandgunT1PistolParts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunShotgunT0PipeShotgun
+    name: gunShotgunT0PipeShotgun
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceMetalPipe
+        count: 4
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceWood
+        count: 6
+  - id: gunShotgunT1DoubleBarrel
+    name: gunShotgunT1DoubleBarrel
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunShotgunT1DoubleBarrelParts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceSpring
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunShotgunT2PumpShotgun
+    name: gunShotgunT2PumpShotgun
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunShotgunT1DoubleBarrelParts
+        count: 7
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: resourceDuctTape
+        count: 7
+      - item_id: resourceSpring
+        count: 13
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunShotgunT3AutoShotgun
+    name: gunShotgunT3AutoShotgun
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunShotgunT1DoubleBarrelParts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunRifleT0PipeRifle
+    name: gunRifleT0PipeRifle
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceMetalPipe
+        count: 4
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceWood
+        count: 6
+  - id: gunRifleT1HuntingRifle
+    name: gunRifleT1HuntingRifle
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunRifleT1HuntingRifleParts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceSpring
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunRifleT2LeverActionRifle
+    name: gunRifleT2LeverActionRifle
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunRifleT1HuntingRifleParts
+        count: 7
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: resourceDuctTape
+        count: 7
+      - item_id: resourceSpring
+        count: 13
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunRifleT3SniperRifle
+    name: gunRifleT3SniperRifle
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunRifleT1HuntingRifleParts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunMGT0PipeMachineGun
+    name: gunMGT0PipeMachineGun
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceMetalPipe
+        count: 4
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceWood
+        count: 6
+  - id: gunMGT1AK47
+    name: gunMGT1AK47
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunMGT1AK47Parts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceSpring
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunMGT2TacticalAR
+    name: gunMGT2TacticalAR
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunMGT1AK47Parts
+        count: 7
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: resourceDuctTape
+        count: 7
+      - item_id: resourceSpring
+        count: 13
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunMGT3M60
+    name: gunMGT3M60
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunMGT1AK47Parts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunExplosivesT3RocketLauncher
+    name: gunExplosivesT3RocketLauncher
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunExplosivesT3RocketLauncherParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 20
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceSpring
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBowT0PrimitiveBow
+    name: gunBowT0PrimitiveBow
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 8
+      - item_id: resourceYuccaFibers
+        count: 3
+  - id: gunBowT1WoodenBow
+    name: gunBowT1WoodenBow
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBowT1WoodenBowParts
+        count: 1
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceLeather
+        count: 1
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBowT3CompoundBow
+    name: gunBowT3CompoundBow
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBowT1WoodenBowParts
+        count: 13
+      - item_id: resourceLeather
+        count: 25
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceSpring
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBowT1IronCrossbow
+    name: gunBowT1IronCrossbow
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBowT1WoodenBowParts
+        count: 7
+      - item_id: resourceForgedIron
+        count: 35
+      - item_id: resourceDuctTape
+        count: 7
+      - item_id: resourceWood
+        count: 35
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBowT3CompoundCrossbow
+    name: gunBowT3CompoundCrossbow
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBowT1WoodenBowParts
+        count: 13
+      - item_id: resourceForgedSteel
+        count: 100
+      - item_id: resourceDuctTape
+        count: 13
+      - item_id: resourceLeather
+        count: 25
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBotT1JunkSledge
+    name: gunBotT1JunkSledge
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBotRoboticsParts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 40
+      - item_id: resourceDuctTape
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBotT2JunkTurret
+    name: gunBotT2JunkTurret
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBotRoboticsParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: resourceDuctTape
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: gunBotT3JunkDrone
+    name: gunBotT3JunkDrone
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: gunBotRoboticsParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceDuctTape
+        count: 10
+      - item_id: resourceElectricParts
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolRepairT3Nailgun
+    name: meleeToolRepairT3Nailgun
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAxeT3ChainsawParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 16
+      - item_id: resourceMechanicalParts
+        count: 6
+      - item_id: resourceSpring
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: hayBaleSquare
+    name: 干草捆
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 10
+  - id: ironBars
+    name: 铁栅栏
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 100
+      - item_id: unit_clay
+        count: 20
+  - id: ironBars
+    name: 铁栅栏
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 100
+      - item_id: resourceClayLump
+        count: 4
+  - id: ironBarsCentered
+    name: 铁栅栏 居中
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 100
+      - item_id: unit_clay
+        count: 20
+  - id: ironBarsCentered
+    name: 铁栅栏 居中
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 100
+      - item_id: resourceClayLump
+        count: 4
+  - id: ironBarsCNR
+    name: 铁栅栏 拐角
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 100
+      - item_id: unit_clay
+        count: 20
+  - id: ironBarsCNR
+    name: 铁栅栏 拐角
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 100
+      - item_id: resourceClayLump
+        count: 4
+  - id: ironDoorBlockVariantHelper
+    name: ironDoorBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: ironDoorDoubleBlockVariantHelper
+    name: ironDoorDoubleBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: keystoneBlock
+    name: 土地征用块
+    station: 背包合成
+    craft_time: 5
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 5
+  - id: ladderMetal
+    name: 铁梯
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+  - id: ladderSteel
+    name: 钢梯
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+  - id: ladderWood
+    name: 木梯
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 3
+  - id: apparelCoatLeatherPoncho
+    name: 皮披巾
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceLeather
+        count: 20
+  - id: resourceLockPick
+    name: 撬锁工具
+    station: 工作台
+    craft_time: 6
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 1
+  - id: resourceLockPickBundle
+    name: 一堆撬锁工具（50）
+    station: 工作台
+    craft_time: 300
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 40
+      - item_id: resourceMechanicalParts
+        count: 40
+  - id: looseBoardsTrapBlock1x1
+    name: 松动木板块 1x1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceWood
+        count: 20
+  - id: looseBoardsTrapBlock3x3
+    name: 松动木板块 3x3
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 30
+      - item_id: resourceWood
+        count: 180
+  - id: looseBoardsTrapPlate1x1
+    name: 松动木板板 1x1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceWood
+        count: 20
+  - id: m60Turret
+    name: m60Turret
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: motionsensor
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 60
+      - item_id: gunMGT1AK47Parts
+        count: 3
+      - item_id: resourceOil
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+  - id: medicalAloeCream
+    name: 芦荟霜
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropAloeLeaf
+        count: 4
+  - id: medicalBandage
+    name: 绷带
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 10
+  - id: medicalFirstAidBandage
+    name: 急救绷带
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: medicalAloeCream
+        count: 1
+      - item_id: medicalBandage
+        count: 1
+  - id: medicalFirstAidKit
+    name: 急救包
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: medicalBloodBag
+        count: 1
+      - item_id: drinkJarBeer
+        count: 1
+      - item_id: medicalBandage
+        count: 5
+      - item_id: resourceSewingKit
+        count: 1
+  - id: medicalPlasterCast
+    name: 石膏绷带
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 50
+      - item_id: foodCornMeal
+        count: 8
+      - item_id: resourceCrushedSand
+        count: 4
+      - item_id: drinkJarBoiledWater
+        count: 2
+  - id: medicalPlasterCast
+    name: 石膏绷带
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 25
+      - item_id: foodCornMeal
+        count: 4
+      - item_id: resourceCrushedSand
+        count: 2
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: medicalSplint
+    name: 夹板
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 10
+      - item_id: resourceWood
+        count: 2
+      - item_id: resourceDuctTape
+        count: 1
+  - id: meleeWpnBladeT0BoneKnife
+    name: 骨刀
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceBone
+        count: 5
+  - id: meleeWpnClubT1BaseballBat
+    name: 球棒
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 1
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnClubT0WoodenClub
+    name: 木棒
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 5
+  - id: meleeWpnClubT3SteelClub
+    name: 钢棍
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnClubT3SteelClubParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolPickT3Auger
+    name: meleeToolPickT3Auger
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAxeT3ChainsawParts
+        count: 1
+      - item_id: vehicleBicycleHandlebars
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolAxeT3Chainsaw
+    name: meleeToolAxeT3Chainsaw
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAxeT3ChainsawParts
+        count: 1
+      - item_id: vehicleBicycleHandlebars
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolRepairT1ClawHammer
+    name: meleeToolRepairT1ClawHammer
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 12
+      - item_id: resourceWood
+        count: 6
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolAxeT1IronFireaxe
+    name: meleeToolAxeT1IronFireaxe
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolAxeT2SteelAxe
+    name: meleeToolAxeT2SteelAxe
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAllSteelParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnSpearT0StoneSpear
+    name: 石矛
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 5
+      - item_id: resourceYuccaFibers
+        count: 3
+      - item_id: resourceWood
+        count: 3
+  - id: meleeWpnSpearT1IronSpear
+    name: 铁矛
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 16
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnSpearT3SteelSpear
+    name: 钢矛
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnSpearT3SteelSpearParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolFlashlight02
+    name: meleeToolFlashlight02
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceElectricParts
+        count: 10
+      - item_id: resourceDuctTape
+        count: 4
+      - item_id: resourceScrapPolymers
+        count: 4
+  - id: meleeWpnBladeT1HuntingKnife
+    name: 猎刀
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 8
+      - item_id: resourceWood
+        count: 4
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnBladeT3Machete
+    name: 砍刀
+    station: 工作台
+    craft_time: 60
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnBladeT3MacheteParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolPaintTool
+    name: meleeToolPaintTool
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 2
+      - item_id: resourceLeather
+        count: 1
+  - id: meleeToolPickT1IronPickaxe
+    name: meleeToolPickT1IronPickaxe
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolPickT2SteelPickaxe
+    name: meleeToolPickT2SteelPickaxe
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAllSteelParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolShovelT1IronShovel
+    name: meleeToolShovelT1IronShovel
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 16
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolShovelT2SteelShovel
+    name: meleeToolShovelT2SteelShovel
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAllSteelParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolShovelT0StoneShovel
+    name: meleeToolShovelT0StoneShovel
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 5
+      - item_id: resourceYuccaFibers
+        count: 3
+      - item_id: resourceWood
+        count: 3
+  - id: meleeWpnSledgeT0StoneSledgehammer
+    name: 石质大锤
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 10
+      - item_id: resourceYuccaFibers
+        count: 10
+      - item_id: resourceWood
+        count: 10
+  - id: meleeWpnSledgeT1IronSledgehammer
+    name: 铁质大锤
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 30
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnSledgeT3SteelSledgehammer
+    name: 钢质大锤
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnSledgeT3SteelSledgehammerParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolRepairT0StoneAxe
+    name: meleeToolRepairT0StoneAxe
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 2
+      - item_id: resourceYuccaFibers
+        count: 2
+      - item_id: resourceWood
+        count: 2
+  - id: meleeWpnBatonT0PipeBaton
+    name: 铁管棒
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceMetalPipe
+        count: 4
+      - item_id: resourceLeather
+        count: 3
+  - id: meleeWpnBatonT2StunBaton
+    name: 电击棒
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnBatonT2StunBatonParts
+        count: 1
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceElectricParts
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolTorch
+    name: meleeToolTorch
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceAnimalFat
+        count: 1
+      - item_id: resourceCloth
+        count: 5
+      - item_id: resourceWood
+        count: 1
+  - id: meleeToolWireTool
+    name: meleeToolWireTool
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 9
+      - item_id: resourceMechanicalParts
+        count: 3
+  - id: meleeToolSalvageT1Wrench
+    name: meleeToolSalvageT1Wrench
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 12
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolSalvageT2Ratchet
+    name: meleeToolSalvageT2Ratchet
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAllSteelParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 8
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeToolSalvageT3ImpactDriver
+    name: meleeToolSalvageT3ImpactDriver
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeToolAxeT3ChainsawParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 16
+      - item_id: resourceMechanicalParts
+        count: 6
+      - item_id: resourceSpring
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnKnucklesT0LeatherKnuckles
+    name: 拳手绑带
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 6
+      - item_id: resourceCloth
+        count: 20
+  - id: meleeWpnKnucklesT1IronKnuckles
+    name: 铁质拳套
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 12
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: meleeWpnKnucklesT3SteelKnuckles
+    name: 钢质拳套
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: meleeWpnKnucklesT3SteelKnucklesParts
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceLeather
+        count: 3
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceLegendaryParts
+        count: 0
+  - id: metalTrussingIBeamBlockVariantHelper
+    name: metalTrussingIBeamBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 40
+      - item_id: unit_clay
+        count: 5
+  - id: metalTrussingIBeamBlockVariantHelper
+    name: metalTrussingIBeamBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 40
+      - item_id: resourceClayLump
+        count: 1
+  - id: mineCandyTin
+    name: mineCandyTin
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 4
+      - item_id: resourceGunPowder
+        count: 4
+      - item_id: resourceNail
+        count: 10
+  - id: mineHubcap
+    name: mineHubcap
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceGunPowder
+        count: 8
+      - item_id: resourceNail
+        count: 20
+  - id: mineAirFilter
+    name: mineAirFilter
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceGunPowder
+        count: 12
+      - item_id: resourceSpring
+        count: 30
+  - id: mineCookingPot
+    name: mineCookingPot
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceGunPowder
+        count: 5
+      - item_id: resourceNail
+        count: 1
+  - id: modArmorAdvancedMuffledConnectors
+    name: 高级消音连接器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 60
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorBandolier
+    name: 弹药带模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 100
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceLeather
+        count: 15
+      - item_id: resourceGlue
+        count: 3
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorCigar
+    name: 雪茄模组
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 250
+      - item_id: resourcePaper
+        count: 1
+      - item_id: resourceTestosteroneExtract
+        count: 1
+  - id: modArmorCoolingMesh
+    name: 散热网模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceOil
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 2
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorCustomizedFittings
+    name: 高级护甲配件模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 8
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 8
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorDoubleStoragePocket
+    name: 护甲双收纳口袋模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 15
+      - item_id: resourceLeather
+        count: 8
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 2
+  - id: modArmorHelmetLight
+    name: 头盔灯模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceSewingKit
+        count: 1
+      - item_id: meleeToolFlashlight02
+        count: 1
+  - id: modFuelTankSmall
+    name: 电动工具小油箱模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: ammoGasCan
+        count: 10
+  - id: modFuelTankLarge
+    name: 电动工具大油箱模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: ammoGasCan
+        count: 10
+  - id: modArmorImpactBracing
+    name: 冲击支撑模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceSpring
+        count: 20
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorImprovedFittings
+    name: 护甲配件模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceLeather
+        count: 4
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorMuffledConnectors
+    name: 消音连接器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 4
+      - item_id: resourceScrapPolymers
+        count: 30
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorPlatingBasic
+    name: 装甲板模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 2
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorPlatingReinforced
+    name: 高级护甲镀层模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorStealthBoots
+    name: 潜行靴模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 60
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorStoragePocket
+    name: 护甲收纳口袋模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceLeather
+        count: 6
+      - item_id: resourceDuctTape
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modArmorTripleStoragePocket
+    name: 护甲三收纳口袋模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceDuctTape
+        count: 3
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSewingKit
+        count: 3
+  - id: modArmorQuadStoragePocket
+    name: 护甲四收纳口袋模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 40
+      - item_id: resourceLeather
+        count: 20
+      - item_id: resourceDuctTape
+        count: 6
+      - item_id: resourceSewingKit
+        count: 6
+      - item_id: resourceLegendaryParts
+        count: 1
+  - id: modArmorWaterPurifier
+    name: 净水器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceCoal
+        count: 30
+      - item_id: resourceSewingKit
+        count: 1
+  - id: modGunBarrelExtender
+    name: 枪管延伸模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceOil
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 2
+  - id: modGunDrumMagazineExtender
+    name: 弹鼓模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 20
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceOil
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modGunBipod
+    name: 双脚支架模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunBowArrowRest
+    name: 箭托模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunBowPolymerString
+    name: 聚合物弓弦模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 50
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunChoke
+    name: 霰弹枪喉缩模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunCrippleEm
+    name: 致残模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunDuckbill
+    name: 霰弹枪鸭嘴枪口模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunFlashlight
+    name: 武器照明模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceElectricParts
+        count: 5
+      - item_id: meleeToolFlashlight02
+        count: 1
+  - id: modGunForegrip
+    name: 前握把模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunLaserSight
+    name: 激光瞄准器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceGlue
+        count: 2
+      - item_id: resourceElectricParts
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 2
+  - id: modGunMagazineExtender
+    name: 弹匣扩充模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunShotgunTubeExtenderMagazine
+    name: 霰弹枪管扩充模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunMeleeRadRemover
+    name: 辐射去除模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunMeleeTheHunter
+    name: 猎人模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunMuzzleBrake
+    name: 枪口制动模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceOil
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 2
+  - id: modGunReflexSight
+    name: 反射式瞄准镜模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceElectricParts
+        count: 10
+  - id: modGunRetractingStock
+    name: 收缩枪托模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modGunScopeLarge
+    name: 8倍镜模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScopeLens
+        count: 8
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceGlue
+        count: 5
+  - id: modGunScopeMedium
+    name: 4倍镜模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScopeLens
+        count: 4
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 8
+      - item_id: resourceGlue
+        count: 3
+  - id: modGunScopeSmall
+    name: 2倍镜模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScopeLens
+        count: 2
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceGlue
+        count: 2
+  - id: modGunSoundSuppressorSilencer
+    name: 消声器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceOil
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 2
+  - id: modGunTriggerGroupAutomatic
+    name: 触发器组：全自动模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: modGunTriggerGroupBurst3
+    name: 触发器组：三发点放模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: modGunTriggerGroupSemi
+    name: 触发器组：半自动模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: modMeleeDiamondTip
+    name: 金刚石刀刃模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceRawDiamond
+        count: 3
+  - id: modMeleeStunBatonRepulsor
+    name: 电击棒冲击波模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceDuctTape
+        count: 5
+      - item_id: resourceElectricParts
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 5
+  - id: modMeleeBunkerBuster
+    name: 掩体炸弹模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeClubBarbedWire
+    name: 铁丝网模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeClubBurningShaft
+    name: 燃烧杆模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceOil
+        count: 5
+      - item_id: ammoGasCan
+        count: 50
+  - id: modMeleeClubMetalSpikes
+    name: 金属长钉模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeClubMetalChain
+    name: 金属链模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeErgonomicGrip
+    name: 人体工学握把模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeFortifyingGrip
+    name: 强化握把模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeFiremansAxeMod
+    name: 消防斧模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeGraveDigger
+    name: 掘墓者模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeIronBreaker
+    name: 铁见愁模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeSerratedBlade
+    name: 锯齿刀片模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeStructuralBrace
+    name: 结构支撑模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeTemperedBlade
+    name: 钢化刀片模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeWeightedHead
+    name: 重头模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modMeleeWoodSplitter
+    name: 劈木模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modShotgunSawedOffBarrel
+    name: 削短型霰弹枪模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceSpring
+        count: 10
+  - id: modRoboticDroneArmorPlatingMod
+    name: 机器人无人机装甲板模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneCargoMod
+    name: 机器人无人机储物模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneMedicMod
+    name: 机器人无人机医疗模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneHeadlampMod
+    name: 机器人无人机头灯模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneMoraleBoosterMod
+    name: 机器人无人机鼓舞士气模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceCloth
+        count: 100
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneWeaponMod
+    name: 机器人无人机武器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modRoboticDroneStunWeaponMod
+    name: 机器人无人机眩晕模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehicleFuelSaver
+    name: 载具节油器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceAcid
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehicleOffRoadHeadlights
+    name: 载具越野头灯模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceElectricParts
+        count: 4
+      - item_id: resourceHeadlight
+        count: 4
+  - id: modVehicleSuperCharger
+    name: 载具增压器模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceMetalPipe
+        count: 10
+      - item_id: resourceRadiator
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehicleExpandedSeat
+    name: 载具扩展座椅模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceCloth
+        count: 100
+      - item_id: resourceLeather
+        count: 4
+      - item_id: resourceSpring
+        count: 4
+  - id: modVehicleReserveFuelTank
+    name: 载具备用油箱模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 5
+      - item_id: resourceDuctTape
+        count: 5
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehiclePlow
+    name: 载具犁模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceMetalPipe
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehicleArmor
+    name: 载具护甲模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceMetalPipe
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 4
+  - id: modVehicleStorage
+    name: 载具储物模组
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 20
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 8
+  - id: motionsensor
+    name: motionsensor
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceElectricParts
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceScopeLens
+        count: 1
+  - id: officeChair01VariantHelper
+    name: officeChair01VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceLeather
+        count: 8
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceCropCottonPlant
+        count: 10
+  - id: oldChair1VariantHelper
+    name: oldChair1VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceCloth
+        count: 15
+  - id: pictureVariantHelper
+    name: pictureVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourcePaint
+        count: 5
+      - item_id: resourceNail
+        count: 5
+  - id: plantedAloe1
+    name: plantedAloe1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropAloeLeaf
+        count: 5
+  - id: plantedBlueberry1
+    name: plantedBlueberry1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropBlueberries
+        count: 5
+  - id: plantedChrysanthemum1
+    name: plantedChrysanthemum1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropChrysanthemumPlant
+        count: 5
+  - id: plantedCoffee1
+    name: plantedCoffee1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropCoffeeBeans
+        count: 5
+  - id: plantedCorn1
+    name: plantedCorn1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropCorn
+        count: 5
+  - id: plantedCotton1
+    name: plantedCotton1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropCottonPlant
+        count: 5
+  - id: plantedGoldenrod1
+    name: plantedGoldenrod1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropGoldenrodPlant
+        count: 5
+  - id: plantedGraceCorn1
+    name: plantedGraceCorn1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropGraceCorn
+        count: 5
+  - id: plantedHop1
+    name: plantedHop1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropHopsFlower
+        count: 5
+  - id: plantedMushroom1
+    name: plantedMushroom1
+    station: 背包合成
+    craft_time: 2
+    craft_count: 1
+    recipe:
+      - item_id: foodCropMushrooms
+        count: 5
+      - item_id: resourceClayLump
+        count: 2
+  - id: plantedPotato1
+    name: plantedPotato1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPotato
+        count: 5
+  - id: plantedYucca1
+    name: plantedYucca1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropYuccaFruit
+        count: 5
+  - id: plantedPumpkin1
+    name: plantedPumpkin1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPumpkin
+        count: 5
+  - id: decoPumpkinJackOLantern
+    name: 南瓜灯
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropPumpkin
+        count: 1
+      - item_id: candle
+        count: 1
+  - id: plantedtreeGrassSeed1
+    name: plantedtreeGrassSeed1
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 5
+  - id: pressureplate
+    name: pressureplate
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 2
+      - item_id: resourceElectricParts
+        count: 2
+  - id: pressureplateLong
+    name: pressureplateLong
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 50
+      - item_id: resourceMechanicalParts
+        count: 8
+      - item_id: resourceElectricParts
+        count: 6
+  - id: resourceArrowHeadIron
+    name: 铁箭头
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 2
+      - item_id: unit_clay
+        count: 5
+  - id: resourceArrowHeadIron
+    name: 铁箭头
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 2
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceArrowHeadSteelAP
+    name: 钢箭头
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: resourceArrowHeadSteelAP
+    name: 钢箭头
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceBuckshot
+    name: resourceBuckshot
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_lead
+        count: 3
+      - item_id: unit_clay
+        count: 5
+  - id: resourceBuckshot
+    name: resourceBuckshot
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 3
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceBulletCasing
+    name: 弹壳
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_brass
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: resourceBulletCasing
+    name: 弹壳
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapBrass
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceBulletTip
+    name: 弹尖
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_lead
+        count: 2
+      - item_id: unit_clay
+        count: 5
+  - id: resourceBulletTip
+    name: 弹尖
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 2
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceCement
+    name: 水泥
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_stone
+        count: 10
+  - id: resourceCement
+    name: 水泥
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 2
+  - id: resourceCloth
+    name: 碎布
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCropCottonPlant
+        count: 1
+  - id: resourceCloth
+    name: 碎布
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 20
+  - id: resourceCobblestones
+    name: 鹅卵石
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceClayLump
+        count: 1
+      - item_id: resourceRockSmall
+        count: 1
+  - id: resourceConcreteMix
+    name: 混凝土混合料
+    station: 混凝土搅拌机
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 1
+      - item_id: resourceRockSmall
+        count: 1
+      - item_id: resourceCement
+        count: 1
+  - id: resourceCrushedSand
+    name: 碎石砂
+    station: 混凝土搅拌机
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 1
+  - id: resourceDuctTape
+    name: 胶带
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceGlue
+        count: 1
+      - item_id: resourceCloth
+        count: 7
+  - id: resourceForgedIron
+    name: 锻铁
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 10
+      - item_id: unit_clay
+        count: 5
+  - id: resourceForgedIron
+    name: 锻铁
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 10
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceForgedSteel
+    name: 锻钢
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 20
+      - item_id: unit_clay
+        count: 10
+  - id: resourceForgedSteel
+    name: 锻钢
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 20
+      - item_id: resourceClayLump
+        count: 2
+  - id: resourceGlue
+    name: 胶水
+    station: 营火
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceBone
+        count: 7
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourceGlue
+    name: 胶水
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceBone
+        count: 5
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourceGlue
+    name: 胶水
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: foodCropGraceCorn
+        count: 3
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourceGunPowder
+    name: 火药
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCoal
+        count: 2
+      - item_id: resourcePotassiumNitratePowder
+        count: 2
+  - id: resourceGunPowder
+    name: 火药
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCoal
+        count: 1
+      - item_id: resourcePotassiumNitratePowder
+        count: 1
+  - id: resourceGunPowderBundle
+    name: 一堆火药（1000）
+    station: 化学台
+    craft_time: 1000
+    craft_count: 1
+    recipe:
+      - item_id: resourceCoal
+        count: 800
+      - item_id: resourcePotassiumNitratePowder
+        count: 800
+  - id: resourceMetalPipe
+    name: 短铁管
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 10
+      - item_id: unit_clay
+        count: 5
+  - id: resourceMetalPipe
+    name: 短铁管
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 10
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceMetalPipe
+    name: 短铁管
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+  - id: resourceNail
+    name: 钉子
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 1
+      - item_id: unit_clay
+        count: 5
+  - id: resourceNail
+    name: 钉子
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 1
+      - item_id: resourceClayLump
+        count: 1
+  - id: resourceOil
+    name: 机油
+    station: 化学台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceOilShale
+        count: 24
+  - id: resourcePaint
+    name: 油漆
+    station: 化学台
+    craft_time: 1
+    craft_count: 500
+    recipe:
+      - item_id: resourceCropChrysanthemumPlant
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourcePaint
+    name: 油漆
+    station: 营火
+    craft_time: 1
+    craft_count: 250
+    recipe:
+      - item_id: resourceCropChrysanthemumPlant
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourcePaper
+    name: 纸
+    station: 营火
+    craft_time: 1
+    craft_count: 10
+    recipe:
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceGlue
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourcePaper
+    name: 纸
+    station: 化学台
+    craft_time: 1
+    craft_count: 10
+    recipe:
+      - item_id: resourceWood
+        count: 10
+      - item_id: resourceGlue
+        count: 1
+      - item_id: drinkJarBoiledWater
+        count: 1
+  - id: resourceRepairKit
+    name: 维修工具
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 1
+      - item_id: resourceDuctTape
+        count: 1
+  - id: resourceArmorCraftingKit
+    name: 护甲制作包
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: armorParts
+        count: 1
+      - item_id: resourceSewingKit
+        count: 1
+      - item_id: resourceDuctTape
+        count: 1
+  - id: resourceRocketCasing
+    name: 火箭弹壳
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 50
+      - item_id: unit_clay
+        count: 30
+  - id: resourceRocketCasing
+    name: 火箭弹壳
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 50
+      - item_id: resourceClayLump
+        count: 6
+  - id: resourceRocketTip
+    name: 火箭弹尖
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_lead
+        count: 50
+      - item_id: unit_clay
+        count: 30
+  - id: resourceRocketTip
+    name: 火箭弹尖
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapLead
+        count: 50
+      - item_id: resourceClayLump
+        count: 6
+  - id: resourceScopeLens
+    name: resourceScopeLens
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 56
+      - item_id: unit_clay
+        count: 30
+  - id: resourceScopeLens
+    name: resourceScopeLens
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 14
+      - item_id: resourceClayLump
+        count: 6
+  - id: ironHatchBlockVariantHelper
+    name: ironHatchBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+  - id: sandbagBlockVariantHelper
+    name: sandbagBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 4
+      - item_id: resourceCloth
+        count: 15
+  - id: sectionalLeatherCouchSofaBlockVariantHelper
+    name: sectionalLeatherCouchSofaBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceLeather
+        count: 5
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 10
+  - id: sectionalPlaidCouchSofaBlockVariantHelper
+    name: sectionalPlaidCouchSofaBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 15
+  - id: couchModernBlockVariantHelper
+    name: couchModernBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 15
+  - id: couchUglySingleBlockVariantHelper
+    name: couchUglySingleBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 15
+  - id: couchUglySmallBlockVariantHelper
+    name: couchUglySmallBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 15
+  - id: couchUglyLargeBlockVariantHelper
+    name: couchUglyLargeBlockVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 15
+      - item_id: resourceNail
+        count: 10
+      - item_id: resourceWood
+        count: 15
+  - id: oldWoodDoor
+    name: 木门
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: oldWoodDoorDouble
+    name: 双开木门
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: shotgunTurret
+    name: shotgunTurret
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: motionsensor
+        count: 1
+      - item_id: resourceForgedSteel
+        count: 40
+      - item_id: gunShotgunT1DoubleBarrelParts
+        count: 3
+      - item_id: resourceOil
+        count: 10
+      - item_id: resourceScrapPolymers
+        count: 10
+  - id: speaker
+    name: speaker
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceElectricParts
+        count: 3
+  - id: spotlightPlayer
+    name: spotlightPlayer
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 8
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceScrapIron
+        count: 50
+  - id: switch
+    name: switch
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceElectricParts
+        count: 1
+  - id: tableSaw
+    name: tableSaw
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 25
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceElectricParts
+        count: 10
+      - item_id: resourceSpring
+        count: 4
+  - id: terrDestroyedStone
+    name: terrDestroyedStone
+    station: 背包合成
+    craft_time: 2
+    craft_count: 1
+    recipe:
+      - item_id: resourceRockSmall
+        count: 18
+  - id: terrDirt
+    name: terrDirt
+    station: 背包合成
+    craft_time: 3
+    craft_count: 1
+    recipe:
+      - item_id: resourceClayLump
+        count: 16
+  - id: terrTopSoil
+    name: terrTopSoil
+    station: 背包合成
+    craft_time: 3
+    craft_count: 1
+    recipe:
+      - item_id: resourceClayLump
+        count: 16
+  - id: terrGravel
+    name: terrGravel
+    station: 混凝土搅拌机
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 10
+      - item_id: resourceRockSmall
+        count: 10
+  - id: terrAsphalt
+    name: terrAsphalt
+    station: 混凝土搅拌机
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 8
+      - item_id: resourceRockSmall
+        count: 17
+      - item_id: resourceOilShale
+        count: 5
+  - id: terrGravel
+    name: terrGravel
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 11
+      - item_id: resourceRockSmall
+        count: 11
+  - id: terrStone
+    name: terrStone
+    station: 混凝土搅拌机
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 10
+      - item_id: resourceRockSmall
+        count: 18
+      - item_id: resourceCement
+        count: 4
+  - id: thrownAmmoMolotovCocktail
+    name: thrownAmmoMolotovCocktail
+    station: 背包合成
+    craft_time: 12
+    craft_count: 1
+    recipe:
+      - item_id: resourceCloth
+        count: 5
+      - item_id: ammoGasCan
+        count: 300
+      - item_id: resourceOil
+        count: 1
+  - id: thrownAmmoPipeBomb
+    name: thrownAmmoPipeBomb
+    station: 工作台
+    craft_time: 12
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 1
+      - item_id: resourceGunPowder
+        count: 12
+      - item_id: resourceMetalPipe
+        count: 1
+  - id: thrownGrenade
+    name: thrownGrenade
+    station: 工作台
+    craft_time: 16
+    craft_count: 1
+    recipe:
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceGunPowder
+        count: 14
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceSpring
+        count: 1
+  - id: thrownGrenadeContact
+    name: thrownGrenadeContact
+    station: 工作台
+    craft_time: 20
+    craft_count: 1
+    recipe:
+      - item_id: resourceMechanicalParts
+        count: 2
+      - item_id: resourceGunPowder
+        count: 14
+      - item_id: resourceForgedIron
+        count: 4
+      - item_id: resourceSpring
+        count: 1
+  - id: thrownTimedCharge
+    name: thrownTimedCharge
+    station: 工作台
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 20
+      - item_id: resourceGunPowder
+        count: 10
+      - item_id: resourceElectricParts
+        count: 1
+  - id: thrownDynamite
+    name: thrownDynamite
+    station: 工作台
+    craft_time: 15
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 1
+      - item_id: resourceGunPowder
+        count: 20
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourcePaper
+        count: 10
+  - id: toolAnvil
+    name: 铁砧
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 1000
+      - item_id: unit_clay
+        count: 100
+  - id: toolAnvil
+    name: 铁砧
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 1000
+      - item_id: resourceClayLump
+        count: 20
+  - id: toolForgeCrucible
+    name: 坩埚
+    station: 工作台
+    craft_time: 300
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 100
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceRockSmall
+        count: 1200
+      - item_id: resourceOil
+        count: 20
+      - item_id: resourceClayLump
+        count: 900
+  - id: toolBellows
+    name: 高级风箱
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 6
+      - item_id: resourceLeather
+        count: 20
+      - item_id: resourceMetalPipe
+        count: 2
+      - item_id: resourceDuctTape
+        count: 5
+      - item_id: resourceNail
+        count: 5
+  - id: toolCookingGrill
+    name: 烤架
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 25
+      - item_id: unit_clay
+        count: 5
+  - id: toolCookingGrill
+    name: 烤架
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 25
+      - item_id: resourceClayLump
+        count: 1
+  - id: toolCookingPot
+    name: 烹饪锅
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 25
+      - item_id: unit_clay
+        count: 5
+  - id: toolCookingPot
+    name: 烹饪锅
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 25
+      - item_id: resourceClayLump
+        count: 1
+  - id: toolDewGatherer
+    name: 采集者
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceRadiator
+        count: 1
+      - item_id: resourceGlue
+        count: 5
+      - item_id: resourceMetalPipe
+        count: 5
+  - id: toolDewTarp
+    name: 油布
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 200
+      - item_id: resourceSewingKit
+        count: 10
+      - item_id: resourceDuctTape
+        count: 5
+  - id: toolDewFilter
+    name: 滤水器
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 200
+      - item_id: resourceCoal
+        count: 100
+      - item_id: resourceCrushedSand
+        count: 100
+      - item_id: resourceCropCottonPlant
+        count: 10
+      - item_id: resourceMetalPipe
+        count: 2
+  - id: toolApiaryBroodBox
+    name: 育蜂箱
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 200
+      - item_id: resourceScrapPolymers
+        count: 100
+      - item_id: resourceNail
+        count: 50
+      - item_id: resourceGlue
+        count: 5
+  - id: toolApiaryExtractor
+    name: 采蜜器
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 20
+      - item_id: resourceWood
+        count: 100
+      - item_id: resourceMechanicalParts
+        count: 5
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceMetalPipe
+        count: 2
+  - id: toolApiarySmoker
+    name: 烟熏器
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceLeather
+        count: 20
+      - item_id: resourceWood
+        count: 20
+      - item_id: resourceNail
+        count: 5
+      - item_id: resourceMetalPipe
+        count: 2
+  - id: trapGlassBusinessCTRSheet1x1
+    name: 商业玻璃 居中（陷阱）
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 20
+      - item_id: unit_stone
+        count: 5
+      - item_id: unit_lead
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: trapGlassBusinessCTRSheet1x1
+    name: 商业玻璃 居中（陷阱）
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 5
+      - item_id: resourceRockSmall
+        count: 1
+      - item_id: resourceScrapLead
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: trapGlassBusinessSheet1x1
+    name: 商业玻璃窗格 1x1（陷阱）
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_glass
+        count: 20
+      - item_id: unit_stone
+        count: 5
+      - item_id: unit_lead
+        count: 5
+      - item_id: unit_clay
+        count: 5
+  - id: trapGlassBusinessSheet1x1
+    name: 商业玻璃窗格 1x1（陷阱）
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCrushedSand
+        count: 5
+      - item_id: resourceRockSmall
+        count: 1
+      - item_id: resourceScrapLead
+        count: 5
+      - item_id: resourceClayLump
+        count: 1
+  - id: trapSpikesIronDmg0
+    name: trapSpikesIronDmg0
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 4
+  - id: trapSpikesWoodDmg0
+    name: trapSpikesWoodDmg0
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 20
+  - id: plantPottedVariantHelper
+    name: plantPottedVariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceYuccaFibers
+        count: 4
+      - item_id: resourceClayLump
+        count: 8
+  - id: tripwirepost
+    name: tripwirepost
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 5
+      - item_id: resourceElectricParts
+        count: 1
+  - id: tvBlockVariantHelper
+    name: tvBlockVariantHelper
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapPolymers
+        count: 8
+      - item_id: resourceElectricParts
+        count: 12
+      - item_id: glassBlockVariantHelper
+        count: 1
+  - id: vaultDoor01
+    name: vaultDoor01
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: vaultHatch01
+    name: vaultHatch01
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: vaultHatch01_Powered
+    name: vaultHatch01_Powered
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceElectricParts
+        count: 10
+  - id: vaultDoor01_Powered
+    name: vaultDoor01_Powered
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceElectricParts
+        count: 10
+  - id: vaultDoor01Double
+    name: 双开钢门
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+  - id: vaultDoor01Double_Powered
+    name: 双开钢门（通电）
+    station: 工作台
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10
+      - item_id: resourceSpring
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceElectricParts
+        count: 10
+  - id: vehicleTruck4x4Accessories
+    name: 4x4 卡车附件
+    station: 工作台
+    craft_time: 210
+    craft_count: 1
+    recipe:
+      - item_id: resourceElectricParts
+        count: 33
+      - item_id: resourceHeadlight
+        count: 8
+      - item_id: resourceMetalPipe
+        count: 50
+      - item_id: resourceSpring
+        count: 4
+      - item_id: resourceMechanicalParts
+        count: 16
+  - id: vehicleTruck4x4Chassis
+    name: 4x4 卡车底盘
+    station: 工作台
+    craft_time: 210
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 250
+      - item_id: resourceMechanicalParts
+        count: 40
+      - item_id: resourceDuctTape
+        count: 20
+      - item_id: resourceLeather
+        count: 40
+      - item_id: resourceElectricParts
+        count: 16
+  - id: vehicleTruck4x4Placeable
+    name: 4x4 卡车
+    station: 工作台
+    craft_time: 210
+    craft_count: 1
+    recipe:
+      - item_id: vehicleWheels
+        count: 4
+      - item_id: vehicleTruck4x4Chassis
+        count: 1
+      - item_id: vehicleTruck4x4Accessories
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: carBattery
+        count: 1
+  - id: vehicleBicycleChassis
+    name: 自行车底盘
+    station: 工作台
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 5
+      - item_id: resourceMechanicalParts
+        count: 2
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceSpring
+        count: 2
+  - id: vehicleBicycleHandlebars
+    name: 自行车车把
+    station: 工作台
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - item_id: resourceDuctTape
+        count: 2
+      - item_id: resourceLeather
+        count: 2
+      - item_id: resourceMechanicalParts
+        count: 1
+      - item_id: resourceMetalPipe
+        count: 6
+      - item_id: resourceSpring
+        count: 2
+  - id: vehicleBicyclePlaceable
+    name: 自行车
+    station: 背包合成
+    craft_time: 30
+    craft_count: 1
+    recipe:
+      - item_id: vehicleWheels
+        count: 2
+      - item_id: vehicleBicycleChassis
+        count: 1
+      - item_id: vehicleBicycleHandlebars
+        count: 1
+      - item_id: resourceMechanicalParts
+        count: 1
+  - id: vehicleGyroCopterAccessories
+    name: 旋翼机配件
+    station: 工作台
+    craft_time: 270
+    craft_count: 1
+    recipe:
+      - item_id: resourceElectricParts
+        count: 33
+      - item_id: resourceHeadlight
+        count: 8
+      - item_id: resourceMetalPipe
+        count: 50
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceSpring
+        count: 4
+  - id: vehicleGyroCopterChassis
+    name: 旋翼机底盘
+    station: 工作台
+    craft_time: 270
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 125
+      - item_id: resourceMechanicalParts
+        count: 40
+      - item_id: resourceDuctTape
+        count: 25
+      - item_id: resourceLeather
+        count: 40
+      - item_id: resourceElectricParts
+        count: 20
+  - id: vehicleGyrocopterPlaceable
+    name: 旋翼机
+    station: 工作台
+    craft_time: 270
+    craft_count: 1
+    recipe:
+      - item_id: vehicleWheels
+        count: 3
+      - item_id: vehicleGyroCopterChassis
+        count: 1
+      - item_id: vehicleGyroCopterAccessories
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: carBattery
+        count: 1
+  - id: vehicleMinibikeChassis
+    name: 小型机车底盘
+    station: 工作台
+    craft_time: 90
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 10
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceDuctTape
+        count: 4
+      - item_id: resourceLeather
+        count: 4
+      - item_id: resourceElectricParts
+        count: 1
+  - id: vehicleMinibikeHandlebars
+    name: 小型机车车把
+    station: 工作台
+    craft_time: 90
+    craft_count: 1
+    recipe:
+      - item_id: resourceMechanicalParts
+        count: 4
+      - item_id: resourceSpring
+        count: 2
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 2
+      - item_id: resourceMetalPipe
+        count: 6
+  - id: vehicleMinibikePlaceable
+    name: 小型机车
+    station: 工作台
+    craft_time: 90
+    craft_count: 1
+    recipe:
+      - item_id: vehicleWheels
+        count: 2
+      - item_id: vehicleMinibikeChassis
+        count: 1
+      - item_id: vehicleMinibikeHandlebars
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: carBattery
+        count: 1
+  - id: vehicleMotorcycleChassis
+    name: 摩托车底盘
+    station: 工作台
+    craft_time: 150
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 25
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceDuctTape
+        count: 10
+      - item_id: resourceLeather
+        count: 10
+      - item_id: resourceElectricParts
+        count: 3
+  - id: vehicleMotorcycleHandlebars
+    name: 摩托车车把
+    station: 工作台
+    craft_time: 150
+    craft_count: 1
+    recipe:
+      - item_id: resourceMechanicalParts
+        count: 10
+      - item_id: resourceDuctTape
+        count: 10
+      - item_id: resourceHeadlight
+        count: 1
+      - item_id: resourceElectricParts
+        count: 6
+      - item_id: resourceForgedSteel
+        count: 5
+  - id: vehicleMotorcyclePlaceable
+    name: 摩托车
+    station: 工作台
+    craft_time: 150
+    craft_count: 1
+    recipe:
+      - item_id: vehicleWheels
+        count: 2
+      - item_id: vehicleMotorcycleChassis
+        count: 1
+      - item_id: vehicleMotorcycleHandlebars
+        count: 1
+      - item_id: smallEngine
+        count: 1
+      - item_id: carBattery
+        count: 1
+  - id: vehicleWheels
+    name: 车轮
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 2
+      - item_id: resourceScrapPolymers
+        count: 16
+      - item_id: resourceOil
+        count: 2
+      - item_id: resourceCoal
+        count: 10
+      - item_id: resourceAcid
+        count: 1
+  - id: woodHatch
+    name: 木闸门
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: woodLogPillar100
+    name: 原木
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: workbench
+    name: workbench
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedIron
+        count: 25
+      - item_id: resourceMechanicalParts
+        count: 20
+      - item_id: resourceDuctTape
+        count: 5
+      - item_id: resourceNail
+        count: 100
+      - item_id: resourceWood
+        count: 100
+  - id: metalFenceRailingTrellisSheetBlockVariantHelper
+    name: metalFenceRailingTrellisSheetBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: unit_iron
+        count: 15
+      - item_id: unit_clay
+        count: 5
+  - id: metalFenceRailingTrellisSheetBlockVariantHelper
+    name: metalFenceRailingTrellisSheetBlockVariantHelper
+    station: 熔炉
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceScrapIron
+        count: 15
+      - item_id: resourceClayLump
+        count: 1
+  - id: frameShapes:VariantHelper
+    name: frameShapes:VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 2
+  - id: woodShapes:VariantHelper
+    name: woodShapes:VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceWood
+        count: 10
+  - id: cobblestoneShapes:VariantHelper
+    name: cobblestoneShapes:VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceCobblestones
+        count: 10
+  - id: concreteShapes:VariantHelper
+    name: concreteShapes:VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceConcreteMix
+        count: 10
+  - id: steelShapes:VariantHelper
+    name: steelShapes:VariantHelper
+    station: 背包合成
+    craft_time: 1
+    craft_count: 1
+    recipe:
+      - item_id: resourceForgedSteel
+        count: 10

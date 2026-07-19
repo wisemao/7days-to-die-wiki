@@ -4,14 +4,45 @@ export function parseLocalization(filePath) {
   if (!filePath) return new Map();
   const text = readFileSync(filePath, 'utf-8');
   const lines = text.split('\n');
+  if (lines.length === 0) return new Map();
   const map = new Map();
 
-  for (const line of lines) {
-    const parts = line.split('\t');
-    if (parts.length < 4) continue;
-    const [key, type, chinese] = parts;
-    if (type === 'item' || type === 'recipe' || type === 'skill' || type === 'entity') {
-      map.set(key, { name: chinese.trim() });
+  // Detect delimiter: tabs in header = tab-separated, commas = CSV
+  const header = lines[0];
+  const delimiter = header.includes('\t') ? '\t' : ',';
+  const headers = header.split(delimiter).map(h => h.trim());
+  const typeIdx = headers.indexOf('Type');
+  const keyIdx = headers.indexOf('Key');
+  const chineseIdx = headers.indexOf('schinese');
+  const englishIdx = headers.indexOf('english');
+
+  if (keyIdx === -1) return map; // can't parse
+
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    // Simple CSV split (handles quoted fields with commas)
+    const parts = [];
+    let current = '';
+    let inQuotes = false;
+    for (const ch of line) {
+      if (ch === '"') inQuotes = !inQuotes;
+      else if (ch === delimiter && !inQuotes) { parts.push(current); current = ''; }
+      else current += ch;
+    }
+    parts.push(current);
+
+    const key = parts[keyIdx]?.trim();
+    const type = typeIdx >= 0 ? parts[typeIdx]?.trim() : '';
+    const chineseName = chineseIdx >= 0 ? parts[chineseIdx]?.trim() : '';
+    const englishName = englishIdx >= 0 ? parts[englishIdx]?.trim() : '';
+
+    if (!key) continue;
+
+    const name = chineseName || englishName;
+    if (name && ['item', 'recipe', 'skill', 'entity', 'block', 'mod', 'clothes', 'medical', 'melee', 'buff'].includes(type.toLowerCase())) {
+      map.set(key, { name });
     }
   }
 

@@ -17,7 +17,7 @@
 | 物品 | 数量 | 概率 |
 |---|---|---|
 {{#each loot.rows}}
-| [{{itemName}}](/vanilla/items/{{item_id}}) | {{count}} | {{chance}} |
+| [{{itemName}}](/vanilla/items/{{itemLinkId}}) | {{count}} | {{chance}} |
 {{/each}}
 
 ## 弱点

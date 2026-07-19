@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs';
 import { join } from 'path';
 
-export function generateSidebar(items, recipes, skills, zombies) {
+export function generateSidebar(items, recipes, skills, zombies, sanitizeId = (id) => id) {
   const sidebar = [
     {
       text: '导航',
@@ -14,23 +14,23 @@ export function generateSidebar(items, recipes, skills, zombies) {
       items: [
         {
           text: '物品',
-          collapsed: false,
-          items: items.map(i => ({ text: i.name, link: `/vanilla/items/${i.id}` })),
+          collapsed: true,
+          items: items.map(i => ({ text: i.name, link: `/vanilla/items/${sanitizeId(i.id)}` })),
         },
         {
           text: '配方',
-          collapsed: false,
-          items: recipes.map(r => ({ text: r.name, link: `/vanilla/recipes/${r.id}` })),
+          collapsed: true,
+          items: recipes.map(r => ({ text: r.name, link: `/vanilla/recipes/${sanitizeId(r.id)}` })),
         },
         {
           text: '技能',
-          collapsed: false,
-          items: skills.map(s => ({ text: s.name, link: `/vanilla/skills/${s.id}` })),
+          collapsed: true,
+          items: skills.map(s => ({ text: s.name, link: `/vanilla/skills/${sanitizeId(s.id)}` })),
         },
         {
           text: '僵尸',
-          collapsed: false,
-          items: zombies.map(z => ({ text: z.name, link: `/vanilla/zombies/${z.id}` })),
+          collapsed: true,
+          items: zombies.map(z => ({ text: z.name, link: `/vanilla/zombies/${sanitizeId(z.id)}` })),
         },
       ],
     },

@@ -32,9 +32,10 @@ function importAll(gamePath) {
 
   console.log(`📂 读取游戏数据: ${configDir}`);
 
-  const locPath = join(configDir, 'localization.txt');
+  let locPath = join(configDir, 'localization.txt');
+  if (!existsSync(locPath)) locPath = join(configDir, 'Localization.csv');
   const locMap = existsSync(locPath) ? parseLocalization(locPath) : new Map();
-  console.log(`  - localization.txt: ${locMap.size} 条`);
+  console.log(`  - Localization: ${locMap.size} 条`);
 
   const itemsPath = join(configDir, 'items.xml');
   if (existsSync(itemsPath)) {
