@@ -1,0 +1,19 @@
+{
+  "name": "7dtd-wiki",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run generate && vitepress dev docs",
+    "build": "npm run generate && vitepress build docs",
+    "preview": "vitepress preview docs",
+    "generate": "node scripts/generate.js",
+    "import": "node scripts/import/import-all.js"
+  },
+  "devDependencies": {
+    "vitepress": "^2.0.0-alpha.18"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
