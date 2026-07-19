@@ -127,6 +127,7 @@ items:
       recipe:
         - { item_id: iron, count: 6 }
         - { item_id: clay, count: 10 }
+        - { item_id: oil-shale, count: 5 }
 
   - id: ammo-762
     name: 7.62mm 子弹
@@ -193,3 +194,95 @@ items:
     category: quest_item
     stack_size: 1
     quest: 秘密基地
+
+  # --- 被引用的基础材料 ---
+  - id: small-stone
+    name: 小石头
+    category: material
+    stack_size: 600
+
+  - id: plant-fiber
+    name: 植物纤维
+    category: material
+    stack_size: 600
+
+  - id: wood
+    name: 木头
+    category: material
+    stack_size: 600
+
+  - id: leather
+    name: 皮革
+    category: material
+    stack_size: 200
+
+  - id: iron
+    name: 铁
+    category: material
+    stack_size: 600
+
+  - id: clay
+    name: 黏土
+    category: material
+    stack_size: 600
+
+  - id: oil-shale
+    name: 油页岩
+    category: material
+    stack_size: 600
+
+  - id: forged-steel
+    name: 锻钢
+    category: material
+    stack_size: 600
+    craft:
+      station: 熔炉
+      craft_time: 45
+      recipe:
+        - { item_id: iron, count: 10 }
+        - { item_id: clay, count: 15 }
+        - { item_id: oil-shale, count: 8 }
+
+  - id: mechanical-parts
+    name: 机械零件
+    category: material
+    stack_size: 100
+
+  - id: spring
+    name: 弹簧
+    category: material
+    stack_size: 100
+
+  - id: rotten-flesh
+    name: 腐肉
+    category: material
+    stack_size: 100
+
+  - id: cloth-fragment
+    name: 布碎片
+    category: material
+    stack_size: 300
+
+  - id: animal-fat
+    name: 动物脂肪
+    category: material
+    stack_size: 100
+
+  # --- 被引用的书籍 ---
+  - id: sex-tex-vol2
+    name: 《性暴龙》第2卷
+    category: book
+    tier: 2
+    stack_size: 1
+    max_level: 5
+    skill_name: 性暴龙
+    effect: 使用工具时 +20% 伤害
+
+  - id: gunsmith-vol3
+    name: 《枪械师》第3卷
+    category: book
+    tier: 3
+    stack_size: 1
+    max_level: 5
+    skill_name: 枪械师
+    effect: 解锁高级枪械制作
