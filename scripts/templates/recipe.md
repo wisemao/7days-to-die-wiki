@@ -9,7 +9,7 @@
 | 材料 | 数量 |
 |---|---|
 {{#each recipe.rows}}
-| [{{itemName}}](/vanilla/items/{{itemLinkId}}) | {{count}} |
+| [{{itemName}}](../items/{{itemLinkId}}) | {{count}} |
 {{/each}}
 
 ## 分解获得
@@ -18,6 +18,6 @@
 | 材料 | 数量 |
 |---|---|
 {{#each scrappable.rows}}
-| [{{itemName}}](/vanilla/items/{{itemLinkId}}) | {{count}} |
+| [{{itemName}}](../items/{{itemLinkId}}) | {{count}} |
 {{/each}}
 {{/if}}
