@@ -8,8 +8,8 @@
 - **描述:** {{description}}
 {{/if}}
 
-## 基础属性
 {{#if statsTable.length}}
+## 基础属性
 
 | 属性 | 值 |
 |---|---|

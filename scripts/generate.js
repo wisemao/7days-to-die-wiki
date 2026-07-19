@@ -36,6 +36,37 @@ function generate() {
   const skills = readYamlFile(join(DATA_DIR, 'vanilla/skills.yaml')).skills || [];
   const zombies = readYamlFile(join(DATA_DIR, 'vanilla/zombies.yaml')).zombies || [];
 
+  // Merge mod data (mods override vanilla)
+  const modsIndex = readYamlFile(join(DATA_DIR, 'mods-index.yaml'));
+  const activeMods = modsIndex.active_mods || [];
+  for (const modName of activeMods) {
+    const modDir = join(DATA_DIR, 'mods', modName);
+    if (!existsSync(modDir)) continue;
+    const mergeMod = (key, list, arr) => {
+      for (const item of list) {
+        const idx = arr.findIndex(i => i.id === item.id);
+        if (idx >= 0) arr[idx] = item; else arr.push(item);
+      }
+    };
+    mergeMod('items', readYamlFile(join(modDir, 'items.yaml')).items || [], items);
+    mergeMod('recipes', readYamlFile(join(modDir, 'recipes.yaml')).recipes || [], recipes);
+    mergeMod('skills', readYamlFile(join(modDir, 'skills.yaml')).skills || [], skills);
+    mergeMod('zombies', readYamlFile(join(modDir, 'zombies.yaml')).zombies || [], zombies);
+  }
+
+  // Merge patches (patches have highest priority)
+  const mergePatch = (key, arr) => {
+    const list = readYamlFile(join(DATA_DIR, 'patches', `${key}.yaml`))[key] || [];
+    for (const item of list) {
+      const idx = arr.findIndex(i => i.id === item.id);
+      if (idx >= 0) arr[idx] = item; else arr.push(item);
+    }
+  };
+  mergePatch('items', items);
+  mergePatch('recipes', recipes);
+  mergePatch('skills', skills);
+  mergePatch('zombies', zombies);
+
   console.log(`  - 物品: ${items.length}`);
   console.log(`  - 配方: ${recipes.length}`);
   console.log(`  - 技能: ${skills.length}`);
@@ -73,7 +104,7 @@ function generate() {
   const skillsDir = join(DOCS_DIR, 'vanilla/skills');
   ensureDir(skillsDir);
   for (const skill of skills) {
-    const md = parseSkill(skill, refs, skillTemplate);
+    const md = parseSkill(skill, refs, skillTemplate, resolveItemName);
     writeFileSync(join(skillsDir, `${skill.id}.md`), md, 'utf-8');
   }
 

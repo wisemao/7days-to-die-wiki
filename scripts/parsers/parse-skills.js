@@ -1,6 +1,6 @@
 import { renderTemplate } from './renderer.js';
 
-export function parseSkill(skill, refs, template) {
+export function parseSkill(skill, refs, template, resolveItemName = (id) => id) {
   const levels = skill.levels?.map(l => ({
     level: l.level,
     effect: l.effect,
@@ -8,7 +8,7 @@ export function parseSkill(skill, refs, template) {
   })) || [];
 
   const tiedBooks = skill.tied_books?.map(b => ({
-    bookName: b.book_id,
+    bookName: resolveItemName(b.book_id),
     effect: b.effect,
   })) || [];
 

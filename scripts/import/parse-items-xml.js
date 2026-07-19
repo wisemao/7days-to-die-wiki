@@ -1,5 +1,3 @@
-import { existsSync, readFileSync } from 'fs';
-
 export function parseItemsXml(xmlText, locMap = new Map()) {
   const items = [];
   const itemRegex = /<item\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/item>/g;
