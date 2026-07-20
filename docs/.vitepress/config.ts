@@ -4,7 +4,7 @@ import { sidebar } from './sidebar.generated'
 export default defineConfig({
   title: '七日杀 Wiki',
   description: '7 Days to Die Wiki - 快速查询物品、配方、技能、僵尸',
-  base: '/',
+  base: '/7days-to-die-wiki/',
   ignoreDeadLinks: true,
   themeConfig: {
     nav: [
