@@ -1,4 +1,10 @@
+import { existsSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
 import { renderTemplate } from './renderer.js';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ICONS_DIR = join(__dirname, '..', '..', 'docs', '.vitepress', 'public', 'images', 'items');
 
 const ITEM_CATEGORY_LABELS = {
   tool: '工具', melee_weapon: '近战武器', ranged_weapon: '远程武器',
@@ -64,10 +70,12 @@ export function parseItem(item, refs, template, resolveItemName, sanitizeId = (i
 
   const qualityLabel = tierToQuality(item.tier);
   const tierDisplay = qualityLabel || null;
+  const iconFile = item.icon || item.id;
+  const hasIcon = existsSync(join(ICONS_DIR, `${iconFile}.png`));
 
   const data = {
     name: item.name,
-    icon: item.icon || item.id,
+    icon: hasIcon ? iconFile : null,
     tier: item.tier,
     tierDisplay,
     qualityLabel,

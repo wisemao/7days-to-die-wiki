@@ -1,8 +1,6 @@
 # {{name}}
 
-{{#if icon}}
-![{{name}}](/7days-to-die-wiki/images/items/{{icon}}.png)
-{{/if}}
+
 
 {{#if tier}}
 - **品质:** {{tier}}

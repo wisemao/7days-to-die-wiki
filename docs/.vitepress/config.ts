@@ -6,6 +6,9 @@ export default defineConfig({
   description: '7 Days to Die Wiki - 快速查询物品、配方、技能、僵尸',
   base: '/7days-to-die-wiki/',
   ignoreDeadLinks: true,
+  markdown: {
+    image: { lazyLoading: true },
+  },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
