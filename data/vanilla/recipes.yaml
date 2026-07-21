@@ -3938,7 +3938,7 @@ recipes:
       - item_id: resourceWood
         count: 6
   - id: gunMGT1AK47
-    name: gunMGT1AK47
+    name: AK-47突击步枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3970,7 +3970,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunMGT3M60
-    name: gunMGT3M60
+    name: M60机枪
     station: 工作台
     craft_time: 1
     craft_count: 1
