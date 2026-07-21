@@ -6,7 +6,7 @@ import { renderTemplate } from './renderer.js';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ICONS_DIR = join(__dirname, '..', '..', 'docs', '.vitepress', 'public', 'images', 'items');
 
-const ITEM_CATEGORY_LABELS = {
+export const ITEM_CATEGORY_LABELS = {
   tool: '工具', melee_weapon: '近战武器', ranged_weapon: '远程武器',
   armor: '护甲', food: '食物', medical: '医疗', material: '材料',
   ammo: '弹药', book: '书籍', vehicle: '载具', trap: '陷阱',
