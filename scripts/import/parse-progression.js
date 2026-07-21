@@ -18,7 +18,7 @@ export function parseProgressionXml(xmlText, locMap = new Map()) {
     if (maxMatch) skill.max_level = parseInt(maxMatch[1]);
 
     const nameMatch = /name_key="([^"]+)"/.exec(match[0]);
-    if (nameMatch) skill.name = nameMatch[1];
+    if (nameMatch && !locMap.get(name)?.name) skill.name = nameMatch[1];
 
     const attrMatch = /parent_attribute="([^"]+)"/.exec(match[0]);
     if (attrMatch) skill.category = attrMatch[1].toLowerCase();
