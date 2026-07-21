@@ -1,6 +1,6 @@
 zombies:
   - id: zombieTemplateMale
-    name: zombieTemplateMale
+    name: 僵尸模板（男性）
     category: humanoid
     tier: 1
     hp: 100
@@ -11,7 +11,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTemplateShort
-    name: zombieTemplateShort
+    name: 僵尸模板（矮个）
     category: humanoid
     tier: 1
     hp: 100
@@ -22,7 +22,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTemplateSlimFemale
-    name: zombieTemplateSlimFemale
+    name: 僵尸模板（苗条女性）
     category: humanoid
     tier: 1
     hp: 100

@@ -794,7 +794,7 @@ items:
       durability: 100
       mod_slots: 1
   - id: gunMGT1AK47
-    name: gunMGT1AK47
+    name: AK-47突击步枪
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -830,7 +830,7 @@ items:
       durability: 400
       mod_slots: 3
   - id: gunMGT3M60
-    name: gunMGT3M60
+    name: M60机枪
     category: ranged_weapon
     stack_size: 1
     tier: 5000

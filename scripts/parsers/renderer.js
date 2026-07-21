@@ -46,8 +46,8 @@ export function renderTemplate(template, data) {
     let before = result.slice(0, block.startIdx);
     let after = result.slice(block.endIdx);
     if (!replacement) {
-      before = before.replace(/\n+$/, '');
-      after = after.replace(/^\n+/, '');
+      before = before.replace(/\n{2,}$/, '\n');
+      after = after.replace(/^\n{2,}/, '\n');
     }
     result = before + replacement + after;
     result = renderTemplate(result, data);
@@ -58,7 +58,7 @@ export function renderTemplate(template, data) {
     return val !== undefined && val !== null ? String(val) : '';
   });
 
-  result = result.replace(/[^\S\n]+\n/g, '\n').replace(/\n{2,}/g, '\n\n').trim();
+  result = result.replace(/[^\S\n]+\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim();
 
   return result;
 }
