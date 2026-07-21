@@ -4,7 +4,7 @@ import { fileURLToPath } from 'url';
 import { load } from 'js-yaml';
 import { buildCrossReferences } from './utils/cross-ref.js';
 import { generateSidebar } from './utils/sidebar-gen.js';
-import { parseItem } from './parsers/parse-items.js';
+import { parseItem, ITEM_CATEGORY_LABELS } from './parsers/parse-items.js';
 import { parseRecipe } from './parsers/parse-recipes.js';
 import { parseSkill } from './parsers/parse-skills.js';
 import { parseZombie } from './parsers/parse-zombies.js';
@@ -121,6 +121,13 @@ function generate() {
     writeFileSync(join(zombiesDir, `${sanitizeId(zombie.id)}.md`), md, 'utf-8');
   }
 
+  // Generate index pages
+  console.log('📑 生成索引页...');
+  ensureDir(join(DOCS_DIR, 'vanilla'));
+  generateIndexPages(items, recipes, skills, zombies);
+  const vanillaIndex = `# 原版数据\n\n- [物品](/vanilla/items/) — 工具、武器、护甲、食物等\n- [配方](/vanilla/recipes/) — 合成配方大全\n- [技能](/vanilla/skills/) — Perk 技能树\n- [僵尸](/vanilla/zombies/) — 僵尸图鉴\n`;
+  writeFileSync(join(DOCS_DIR, 'vanilla/index.md'), vanillaIndex, 'utf-8');
+
   // Generate sidebar
   console.log('📑 生成侧边栏...');
   const sidebarCode = generateSidebar(items, recipes, skills, zombies, sanitizeId);
@@ -134,6 +141,43 @@ function generate() {
   - ${skills.length} 个技能
   - ${zombies.length} 个僵尸
   - 侧边栏已更新`);
+}
+
+function generateIndexPages(items, recipes, skills, zombies) {
+  // items/index.md
+  const catCounts = {};
+  for (const item of items) {
+    const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
+    catCounts[label] = (catCounts[label] || 0) + 1;
+  }
+  const itemIndex = `# 物品列表\n\n共 ${items.length} 个物品\n\n| 分类 | 数量 |\n|---|---|\n${Object.entries(catCounts).sort((a,b) => b[1]-a[1]).map(([k,v]) => `| ${k} | ${v} |`).join('\n')}\n`;
+  writeFileSync(join(DOCS_DIR, 'vanilla/items/index.md'), itemIndex, 'utf-8');
+
+  // recipes/index.md
+  const stationCounts = {};
+  for (const r of recipes) {
+    const s = r.station || '背包合成';
+    stationCounts[s] = (stationCounts[s] || 0) + 1;
+  }
+  const recipeIndex = `# 配方列表\n\n共 ${recipes.length} 个配方\n\n| 工作站 | 数量 |\n|---|---|\n${Object.entries(stationCounts).sort((a,b) => b[1]-a[1]).map(([k,v]) => `| ${k} | ${v} |`).join('\n')}\n`;
+  writeFileSync(join(DOCS_DIR, 'vanilla/recipes/index.md'), recipeIndex, 'utf-8');
+
+  // skills/index.md
+  const attrCounts = {};
+  for (const s of skills) {
+    attrCounts[s.category] = (attrCounts[s.category] || 0) + 1;
+  }
+  const skillIndex = `# 技能列表\n\n共 ${skills.length} 个技能\n\n| 属性 | 数量 |\n|---|---|\n${Object.entries(attrCounts).sort((a,b) => b[1]-a[1]).map(([k,v]) => `| ${k} | ${v} |`).join('\n')}\n`;
+  writeFileSync(join(DOCS_DIR, 'vanilla/skills/index.md'), skillIndex, 'utf-8');
+
+  // zombies/index.md
+  const typeCounts = {};
+  for (const z of zombies) {
+    const t = z.category || '未知';
+    typeCounts[t] = (typeCounts[t] || 0) + 1;
+  }
+  const zombieIndex = `# 僵尸列表\n\n共 ${zombies.length} 个僵尸\n\n| 类型 | 数量 |\n|---|---|\n${Object.entries(typeCounts).sort((a,b) => b[1]-a[1]).map(([k,v]) => `| ${k} | ${v} |`).join('\n')}\n`;
+  writeFileSync(join(DOCS_DIR, 'vanilla/zombies/index.md'), zombieIndex, 'utf-8');
 }
 
 generate();

@@ -1,354 +1,354 @@
 skills:
   - id: perkDeadEye
-    name: perkDeadEyeName
+    name: 鹰眼
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkDemolitionsExpert
-    name: perkDemolitionsExpertName
+    name: 爆破专家
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkJavelinMaster
-    name: perkJavelinMasterName
+    name: 标枪大师
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkFlurryOfPerception
-    name: perkFlurryOfPerceptionName
+    name: 感知连击
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel02
   - id: perkInfiltrator
-    name: perkInfiltratorName
+    name: 渗透者
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkAnimalTracker
-    name: perkAnimalTrackerName
+    name: 动物追踪者
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkPenetrator
-    name: perkPenetratorName
+    name: 穿透者
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkTreasureHunter
-    name: perkTreasureHunterName
+    name: 寻宝者
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkSalvageOperations
-    name: perkSalvageOperationsName
+    name: 拆解操作
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel01
   - id: perkPerceptionMastery
-    name: perkPerceptionMasteryName
+    name: 感知精通
     category: strength
     max_level: 1
     levels: []
     description: reqPerceptionLevel06
   - id: perkBoomstick
-    name: perkBoomstickName
+    name: 喷子大师
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkPummelPete
-    name: perkPummelPeteName
+    name: 重击专家
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkSkullCrusher
-    name: perkSkullCrusherName
+    name: 碎颅者
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkGrandSlam
-    name: perkGrandSlamName
+    name: 大满贯
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkFlurryOfStrength
-    name: perkFlurryOfStrengthName
+    name: 力量连击
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel02
   - id: perkSexualTrex
-    name: perkSexualTrexName
+    name: 性感的霸王龙
     category: strength
     max_level: 4
     levels: []
     description: reqStrengthLevel01
   - id: perkPackMule
-    name: perkPackMuleName
+    name: 驮骡
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkStrengthMastery
-    name: perkStrengthMasteryName
+    name: 力量精通
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel06
   - id: perkMiner69r
-    name: perkMiner69rName
+    name: 矿工69r
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkMotherLode
-    name: perkMotherLodeName
+    name: 富矿脉
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkJunkMiner
-    name: perkJunkMinerName
+    name: 废品矿工
     category: strength
     max_level: 1
     levels: []
     description: reqStrengthLevel01
   - id: perkBrawler
-    name: perkBrawlerName
+    name: 格斗家
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkMachineGunner
-    name: perkMachineGunnerName
+    name: 机枪手
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkFlurryOfFortitude
-    name: perkFlurryOfFortitudeName
+    name: 体质连击
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel02
   - id: perkTheHuntsman
-    name: perkTheHuntsmanName
+    name: 猎人
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkWellInsulated
-    name: perkWellInsulatedName
+    name: 良好绝缘
     category: strength
     max_level: 3
     levels: []
     description: reqFortitudeLevel01
   - id: perkPainTolerance
-    name: perkPainToleranceName
+    name: 痛觉耐受
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkFortitudeMastery
-    name: perkFortitudeMasteryName
+    name: 体质精通
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel06
   - id: perkSiphoningStrikes
-    name: perkSiphoningStrikesName
+    name: 吸血打击
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkHealingFactor
-    name: perkHealingFactorName
+    name: 自愈因子
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkSlowMetabolism
-    name: perkSlowMetabolismName
+    name: 缓慢代谢
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkRuleOneCardio
-    name: perkRuleOneCardioName
+    name: 规则一:心肺
     category: strength
     max_level: 1
     levels: []
     description: reqFortitudeLevel01
   - id: perkArchery
-    name: perkArcheryName
+    name: 箭术
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkGunslinger
-    name: perkGunslingerName
+    name: 枪手
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkDeepCuts
-    name: perkDeepCutsName
+    name: 深伤口
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkFlurryOfAgility
-    name: perkFlurryOfAgilityName
+    name: 敏捷连击
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel02
   - id: perkRunAndGun
-    name: perkRunAndGunName
+    name: 跑射
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkHardTarget
-    name: perkHardTargetName
+    name: 硬目标
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkParkour
-    name: perkParkourName
+    name: 跑酷
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel02
   - id: perkAgilityMastery
-    name: perkAgilityMasteryName
+    name: 敏捷精通
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel06
   - id: perkHiddenStrike
-    name: perkHiddenStrikeName
+    name: 隐匿打击
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkFromTheShadows
-    name: perkFromTheShadowsName
+    name: 暗影行者
     category: strength
     max_level: 1
     levels: []
     description: reqAgilityLevel01
   - id: perkElectrocutioner
-    name: perkElectrocutionerName
+    name: 电刑者
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel01
   - id: perkTurrets
-    name: perkTurretsName
+    name: 炮塔专家
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel03
   - id: perkFlurryOfIntellect
-    name: perkFlurryOfIntellectName
+    name: 智力连击
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel02
   - id: perkBetterBarter
-    name: perkBetterBarterName
+    name: 讨价还价
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel01
   - id: perkDaringAdventurer
-    name: perkDaringAdventurerName
+    name: 勇敢冒险家
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel01
   - id: perkCharismaticNature
-    name: perkCharismaticNatureName
+    name: 魅力天性
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel05
   - id: perkPhysician
-    name: perkPhysicianName
+    name: 医师
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel03
   - id: perkAdvancedEngineering
-    name: perkAdvancedEngineeringName
+    name: 高级工程
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel01
   - id: perkGreaseMonkey
-    name: perkGreaseMonkeyName
+    name: 修车工
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel01
   - id: perkIntellectMastery
-    name: perkIntellectMasteryName
+    name: 智力精通
     category: strength
     max_level: 1
     levels: []
     description: reqIntellectLevel06
   - id: perkLightArmor
-    name: perkLightArmorName
+    name: 轻甲专精
     category: strength
     max_level: 4
     levels: []
     description: perkLightArmorRank1Desc
   - id: perkMediumArmor
-    name: perkMediumArmorName
+    name: 中甲专精
     category: strength
     max_level: 4
     levels: []
     description: perkMediumArmorRank1Desc
   - id: perkHeavyArmor
-    name: perkHeavyArmorName
+    name: 重甲专精
     category: strength
     max_level: 4
     levels: []
     description: perkHeavyArmorRank1Desc
   - id: perkMasterChef
-    name: perkMasterChefName
+    name: 大厨
     category: strength
     max_level: 3
     levels: []
     description: reqStrengthLevel01
   - id: perkLivingOffTheLand
-    name: perkLivingOffTheLandName
+    name: 自给自足
     category: strength
     max_level: 3
     levels: []
     description: reqFortitudeLevel01
   - id: perkLockPicking
-    name: perkLockPickingName
+    name: 开锁
     category: strength
     max_level: 3
     levels: []
     description: reqIntellectLevel01
   - id: perkLuckyLooter
-    name: perkLuckyLooterName
+    name: 幸运搜刮者
     category: strength
     max_level: 1
     levels: []
