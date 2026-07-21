@@ -18,21 +18,21 @@
 {{/each}}
 {{/if}}
 
+{{#if craftRecipes.length}}
 ## 制作配方
-{{#if hasCraft}}
-**工作站:** {{craft.station}}
-{{#if craft.craft_time}}
-**耗时:** {{craft.craft_time}} 秒
-{{/if}}
+
+{{#each craftRecipes}}
+**工作站:** {{station}}
+**耗时:** {{craft_time}} 秒
+**产出数量:** {{craft_count}}
 
 | 材料 | 数量 |
 |---|---|
-{{#each craft.recipe}}
-| {{itemName}} | {{count}} |
+{{#each materials}}
+| [{{itemName}}](../items/{{linkId}}) | {{count}} |
 {{/each}}
-{{/if}}
-{{#if craft.recipes_locked_by}}
-**需要解锁:** {{lockBookName}}
+
+{{/each}}
 {{/if}}
 
 ## 分解获得

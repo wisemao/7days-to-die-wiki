@@ -11,6 +11,12 @@ export function buildCrossReferences(datasets) {
     }
   }
 
+  const itemCraftRecipes = new Map();
+  for (const recipe of recipes) {
+    if (!itemCraftRecipes.has(recipe.id)) itemCraftRecipes.set(recipe.id, []);
+    itemCraftRecipes.get(recipe.id).push(recipe);
+  }
+
   const zombieLoot = new Map();
   for (const zombie of zombies) {
     for (const loot of (zombie.loot || [])) {
@@ -25,7 +31,7 @@ export function buildCrossReferences(datasets) {
   }
 
   return {
-    refs: { itemRecipes, zombieLoot },
+    refs: { itemRecipes, itemCraftRecipes, zombieLoot },
     resolveItemName,
     itemMap,
   };

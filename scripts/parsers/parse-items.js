@@ -26,11 +26,19 @@ export function parseItem(item, refs, template, resolveItemName, sanitizeId = (i
     })),
   } : null;
 
-  const craftRecipe = item.craft?.recipe?.map(r => ({
-    item_id: r.item_id,
-    itemName: resolveItemName(r.item_id),
-    count: r.count,
-  }));
+  const craftRecipes = (refs.itemCraftRecipes.get(item.id) || [])
+    .filter(r => r.recipe && r.recipe.length > 0)
+    .map(r => ({
+      station: r.station || '',
+      craft_time: r.craft_time || 0,
+      craft_count: r.craft_count ?? 1,
+      materials: r.recipe.map(m => ({
+        item_id: m.item_id,
+        itemName: resolveItemName(m.item_id),
+        count: m.count,
+        linkId: sanitizeId(m.item_id),
+      })),
+    }));
 
   const scrappableRows = item.scrappable_into?.map(s => ({
     item_id: s.item_id,
@@ -45,13 +53,7 @@ export function parseItem(item, refs, template, resolveItemName, sanitizeId = (i
     stack_size: item.stack_size,
     description: item.description || '',
     statsTable,
-    hasCraft: !!item.craft,
-    craft: item.craft ? {
-      station: item.craft.station,
-      craft_time: item.craft.craft_time,
-      recipe: craftRecipe,
-      recipes_locked_by: item.recipes_locked_by,
-    } : {},
+    craftRecipes,
     lockBookName: item.recipes_locked_by?.book_id || '',
     scrappable: scrappableRows ? { rows: scrappableRows } : null,
     usedInRecipes: usedInRecipes.rows.length > 0 ? usedInRecipes : null,
@@ -65,7 +67,7 @@ function buildStatsTable(item) {
   if (!item.stats) return [];
   const rows = [];
   const labels = {
-    damage: '攻击力', attacks_per_min: '攻击速度', durability: '耐久度',
+    damage: '攻击力', attacks_per_min: '攻击速度', durability: '耐久度', block_damage: '方块伤害',
     knockback: '击退', power_attack_damage: '重击伤害', power_attack_stamina: '重击体力',
     range: '射程', fire_rate: '射速', magazine_size: '弹匣容量',
     reload_time: '换弹时间', ammo_type: '弹药类型', penetration: '穿透',
