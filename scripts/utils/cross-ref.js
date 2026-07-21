@@ -17,6 +17,16 @@ export function buildCrossReferences(datasets) {
     itemCraftRecipes.get(recipe.id).push(recipe);
   }
 
+  const itemScrappableFrom = new Map();
+  for (const recipe of recipes) {
+    if (recipe.scrappable_into && recipe.scrappable_into.length > 0) {
+      for (const mat of recipe.recipe) {
+        if (!itemScrappableFrom.has(mat.item_id)) itemScrappableFrom.set(mat.item_id, []);
+        itemScrappableFrom.get(mat.item_id).push(recipe);
+      }
+    }
+  }
+
   const zombieLoot = new Map();
   for (const zombie of zombies) {
     for (const loot of (zombie.loot || [])) {
@@ -31,7 +41,7 @@ export function buildCrossReferences(datasets) {
   }
 
   return {
-    refs: { itemRecipes, itemCraftRecipes, zombieLoot },
+    refs: { itemRecipes, itemCraftRecipes, itemScrappableFrom, zombieLoot },
     resolveItemName,
     itemMap,
   };

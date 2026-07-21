@@ -53,14 +53,14 @@ function importAll(gamePath) {
 
   const progPath = join(configDir, 'progression.xml');
   if (existsSync(progPath)) {
-    const skills = parseProgressionXml(readFileSync(progPath, 'utf-8'));
+    const skills = parseProgressionXml(readFileSync(progPath, 'utf-8'), locMap);
     writeYaml(join(DATA_DIR, 'skills.yaml'), { skills });
     console.log(`  - progression.xml: ${skills.length} 个技能`);
   }
 
   const entityPath = join(configDir, 'entityclasses.xml');
   if (existsSync(entityPath)) {
-    const zombies = parseEntitiesXml(readFileSync(entityPath, 'utf-8'));
+    const zombies = parseEntitiesXml(readFileSync(entityPath, 'utf-8'), locMap);
     writeYaml(join(DATA_DIR, 'zombies.yaml'), { zombies });
     console.log(`  - entityclasses.xml: ${zombies.length} 个僵尸`);
   }

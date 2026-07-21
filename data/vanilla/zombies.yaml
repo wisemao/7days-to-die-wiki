@@ -33,7 +33,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieArlene
-    name: zombieArlene
+    name: 阿琳
     category: humanoid
     tier: 1
     hp: 100
@@ -44,7 +44,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieArleneFeral
-    name: zombieArleneFeral
+    name: 凶残的阿琳
     category: humanoid
     tier: 1
     hp: 100
@@ -55,7 +55,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieArleneRadiated
-    name: zombieArleneRadiated
+    name: 被辐射的阿琳
     category: humanoid
     tier: 1
     hp: 100
@@ -66,7 +66,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieArleneCharged
-    name: zombieArleneCharged
+    name: 带电阿琳
     category: humanoid
     tier: 1
     hp: 100
@@ -77,7 +77,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieArleneInfernal
-    name: zombieArleneInfernal
+    name: 炼狱阿琳
     category: humanoid
     tier: 1
     hp: 100
@@ -88,7 +88,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMarlene
-    name: zombieMarlene
+    name: 马琳
     category: humanoid
     tier: 1
     hp: 100
@@ -99,7 +99,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMarleneFeral
-    name: zombieMarleneFeral
+    name: 凶残的马琳
     category: humanoid
     tier: 1
     hp: 100
@@ -110,7 +110,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMarleneRadiated
-    name: zombieMarleneRadiated
+    name: 被辐射的马琳
     category: humanoid
     tier: 1
     hp: 100
@@ -121,7 +121,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMarleneCharged
-    name: zombieMarleneCharged
+    name: 带电马琳
     category: humanoid
     tier: 1
     hp: 100
@@ -132,7 +132,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMarleneInfernal
-    name: zombieMarleneInfernal
+    name: 炼狱马琳
     category: humanoid
     tier: 1
     hp: 100
@@ -143,7 +143,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePartyGirl
-    name: zombiePartyGirl
+    name: 派对女孩
     category: humanoid
     tier: 1
     hp: 100
@@ -154,7 +154,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePartyGirlFeral
-    name: zombiePartyGirlFeral
+    name: 凶残派对女孩
     category: humanoid
     tier: 1
     hp: 100
@@ -165,7 +165,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePartyGirlRadiated
-    name: zombiePartyGirlRadiated
+    name: 被辐射的派对女孩
     category: humanoid
     tier: 1
     hp: 100
@@ -176,7 +176,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePartyGirlCharged
-    name: zombiePartyGirlCharged
+    name: 带电派对女孩
     category: humanoid
     tier: 1
     hp: 100
@@ -187,7 +187,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePartyGirlInfernal
-    name: zombiePartyGirlInfernal
+    name: 炼狱派对女孩
     category: humanoid
     tier: 1
     hp: 100
@@ -198,7 +198,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieNurse
-    name: zombieNurse
+    name: 护士
     category: humanoid
     tier: 1
     hp: 100
@@ -209,7 +209,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieNurseFeral
-    name: zombieNurseFeral
+    name: 凶残的瘟疫感染护士
     category: humanoid
     tier: 1
     hp: 100
@@ -220,7 +220,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieNurseRadiated
-    name: zombieNurseRadiated
+    name: 被辐射的护士
     category: humanoid
     tier: 1
     hp: 100
@@ -231,7 +231,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieNurseCharged
-    name: zombieNurseCharged
+    name: 带电护士
     category: humanoid
     tier: 1
     hp: 100
@@ -242,7 +242,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieNurseInfernal
-    name: zombieNurseInfernal
+    name: 炼狱护士
     category: humanoid
     tier: 1
     hp: 100
@@ -253,7 +253,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJoe
-    name: zombieJoe
+    name: 乔
     category: humanoid
     tier: 1
     hp: 100
@@ -264,7 +264,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJoeFeral
-    name: zombieJoeFeral
+    name: 凶残的乔
     category: humanoid
     tier: 1
     hp: 100
@@ -275,7 +275,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJoeRadiated
-    name: zombieJoeRadiated
+    name: 被辐射的乔
     category: humanoid
     tier: 1
     hp: 100
@@ -286,7 +286,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJoeCharged
-    name: zombieJoeCharged
+    name: 带电乔
     category: humanoid
     tier: 1
     hp: 100
@@ -297,7 +297,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJoeInfernal
-    name: zombieJoeInfernal
+    name: 炼狱乔
     category: humanoid
     tier: 1
     hp: 100
@@ -308,7 +308,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteve
-    name: zombieSteve
+    name: 史蒂夫
     category: humanoid
     tier: 1
     hp: 100
@@ -319,7 +319,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveFeral
-    name: zombieSteveFeral
+    name: 凶残的史蒂夫
     category: humanoid
     tier: 1
     hp: 100
@@ -330,7 +330,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveRadiated
-    name: zombieSteveRadiated
+    name: 被辐射的史蒂夫
     category: humanoid
     tier: 1
     hp: 100
@@ -341,7 +341,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveCharged
-    name: zombieSteveCharged
+    name: 带电史蒂夫
     category: humanoid
     tier: 1
     hp: 100
@@ -352,7 +352,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveInfernal
-    name: zombieSteveInfernal
+    name: 炼狱史蒂夫
     category: humanoid
     tier: 1
     hp: 100
@@ -363,7 +363,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTomClark
-    name: zombieTomClark
+    name: 汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
@@ -374,7 +374,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTomClarkFeral
-    name: zombieTomClarkFeral
+    name: 凶残的汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
@@ -385,7 +385,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTomClarkRadiated
-    name: zombieTomClarkRadiated
+    name: 被辐射的汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
@@ -396,7 +396,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTomClarkCharged
-    name: zombieTomClarkCharged
+    name: 带电汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
@@ -407,7 +407,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieTomClarkInfernal
-    name: zombieTomClarkInfernal
+    name: 炼狱汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
@@ -418,7 +418,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBusinessMan
-    name: zombieBusinessMan
+    name: 商人
     category: humanoid
     tier: 1
     hp: 100
@@ -429,7 +429,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBusinessManFeral
-    name: zombieBusinessManFeral
+    name: 凶残的商人
     category: humanoid
     tier: 1
     hp: 100
@@ -440,7 +440,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBusinessManRadiated
-    name: zombieBusinessManRadiated
+    name: 被辐射的商人
     category: humanoid
     tier: 1
     hp: 100
@@ -451,7 +451,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBusinessManCharged
-    name: zombieBusinessManCharged
+    name: 带电商人
     category: humanoid
     tier: 1
     hp: 100
@@ -462,7 +462,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBusinessManInfernal
-    name: zombieBusinessManInfernal
+    name: 炼狱商人
     category: humanoid
     tier: 1
     hp: 100
@@ -473,7 +473,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBurnt
-    name: zombieBurnt
+    name: 被灼烧者
     category: humanoid
     tier: 1
     hp: 100
@@ -484,7 +484,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBurntFeral
-    name: zombieBurntFeral
+    name: 凶残的被灼烧者
     category: humanoid
     tier: 1
     hp: 100
@@ -495,7 +495,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBurntRadiated
-    name: zombieBurntRadiated
+    name: 被辐射的被灼烧者
     category: humanoid
     tier: 1
     hp: 100
@@ -506,7 +506,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBurntCharged
-    name: zombieBurntCharged
+    name: 带电被灼烧者
     category: humanoid
     tier: 1
     hp: 100
@@ -517,7 +517,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBurntInfernal
-    name: zombieBurntInfernal
+    name: 炼狱被灼烧者
     category: humanoid
     tier: 1
     hp: 100
@@ -528,7 +528,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieRancher
-    name: zombieRancher
+    name: 兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -539,7 +539,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieRancherFeral
-    name: zombieRancherFeral
+    name: 凶残兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -550,7 +550,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieRancherRadiated
-    name: zombieRancherRadiated
+    name: 辐射兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -561,7 +561,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieRancherCharged
-    name: zombieRancherCharged
+    name: 带电兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -572,7 +572,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieRancherInfernal
-    name: zombieRancherInfernal
+    name: 炼狱兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -583,7 +583,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePlagueSpitter
-    name: zombiePlagueSpitter
+    name: 兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -594,7 +594,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePlagueSpitterFeral
-    name: zombiePlagueSpitterFeral
+    name: 凶残兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -605,7 +605,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePlagueSpitterRadiated
-    name: zombiePlagueSpitterRadiated
+    name: 辐射兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -616,7 +616,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePlagueSpitterCharged
-    name: zombiePlagueSpitterCharged
+    name: 带电兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -627,7 +627,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombiePlagueSpitterInfernal
-    name: zombiePlagueSpitterInfernal
+    name: 炼狱兰凯尔
     category: humanoid
     tier: 1
     hp: 100
@@ -638,7 +638,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieChuck
-    name: zombieChuck
+    name: 恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -649,7 +649,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieChuckFeral
-    name: zombieChuckFeral
+    name: 凶残恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -660,7 +660,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieChuckRadiated
-    name: zombieChuckRadiated
+    name: 辐射恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -671,7 +671,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieChuckCharged
-    name: zombieChuckCharged
+    name: 带电恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -682,7 +682,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieChuckInfernal
-    name: zombieChuckInfernal
+    name: 炼狱恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -693,7 +693,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFrostclaw
-    name: zombieFrostclaw
+    name: 恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -704,7 +704,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFrostclawFeral
-    name: zombieFrostclawFeral
+    name: 凶残恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -715,7 +715,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFrostclawRadiated
-    name: zombieFrostclawRadiated
+    name: 辐射恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -726,7 +726,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFrostclawCharged
-    name: zombieFrostclawCharged
+    name: 带电恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -737,7 +737,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFrostclawInfernal
-    name: zombieFrostclawInfernal
+    name: 炼狱恰克
     category: humanoid
     tier: 1
     hp: 100
@@ -748,7 +748,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSpider
-    name: zombieSpider
+    name: 蜘蛛
     category: humanoid
     tier: 1
     hp: 100
@@ -759,7 +759,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSpiderFeral
-    name: zombieSpiderFeral
+    name: 凶残的蜘蛛
     category: humanoid
     tier: 1
     hp: 100
@@ -770,7 +770,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSpiderRadiated
-    name: zombieSpiderRadiated
+    name: 被辐射的蜘蛛
     category: humanoid
     tier: 1
     hp: 100
@@ -781,7 +781,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSpiderCharged
-    name: zombieSpiderCharged
+    name: 带电蜘蛛
     category: humanoid
     tier: 1
     hp: 100
@@ -792,7 +792,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSpiderInfernal
-    name: zombieSpiderInfernal
+    name: 炼狱蜘蛛
     category: humanoid
     tier: 1
     hp: 100
@@ -803,7 +803,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBoe
-    name: zombieBoe
+    name: 布尔
     category: humanoid
     tier: 1
     hp: 100
@@ -814,7 +814,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBoeFeral
-    name: zombieBoeFeral
+    name: 凶残的布尔
     category: humanoid
     tier: 1
     hp: 100
@@ -825,7 +825,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBoeRadiated
-    name: zombieBoeRadiated
+    name: 被辐射的布尔
     category: humanoid
     tier: 1
     hp: 100
@@ -836,7 +836,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBoeCharged
-    name: zombieBoeCharged
+    name: 带电布尔
     category: humanoid
     tier: 1
     hp: 100
@@ -847,7 +847,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBoeInfernal
-    name: zombieBoeInfernal
+    name: 炼狱布尔
     category: humanoid
     tier: 1
     hp: 100
@@ -858,7 +858,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMaleHazmat
-    name: zombieMaleHazmat
+    name: 穿着防化服的丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -869,7 +869,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMaleHazmatFeral
-    name: zombieMaleHazmatFeral
+    name: 凶残的穿着防化服的丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -880,7 +880,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMaleHazmatRadiated
-    name: zombieMaleHazmatRadiated
+    name: 被辐射的穿着防化服的丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -891,7 +891,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMaleHazmatCharged
-    name: zombieMaleHazmatCharged
+    name: 带电防护服丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -902,7 +902,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMaleHazmatInfernal
-    name: zombieMaleHazmatInfernal
+    name: 炼狱防护服丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -913,7 +913,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJanitor
-    name: zombieJanitor
+    name: 看门人
     category: humanoid
     tier: 1
     hp: 100
@@ -924,7 +924,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJanitorFeral
-    name: zombieJanitorFeral
+    name: 凶残的看门人
     category: humanoid
     tier: 1
     hp: 100
@@ -935,7 +935,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJanitorRadiated
-    name: zombieJanitorRadiated
+    name: 被辐射的看门人
     category: humanoid
     tier: 1
     hp: 100
@@ -946,7 +946,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJanitorCharged
-    name: zombieJanitorCharged
+    name: 带电看门人
     category: humanoid
     tier: 1
     hp: 100
@@ -957,7 +957,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieJanitorInfernal
-    name: zombieJanitorInfernal
+    name: 炼狱看门人
     category: humanoid
     tier: 1
     hp: 100
@@ -968,7 +968,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieInmate
-    name: zombieInmate
+    name: 囚犯
     category: humanoid
     tier: 1
     hp: 100
@@ -979,7 +979,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieInmateFeral
-    name: zombieInmateFeral
+    name: 凶残的囚犯
     category: humanoid
     tier: 1
     hp: 100
@@ -990,7 +990,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieInmateRadiated
-    name: zombieInmateRadiated
+    name: 被辐射的囚犯
     category: humanoid
     tier: 1
     hp: 100
@@ -1001,7 +1001,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieInmateCharged
-    name: zombieInmateCharged
+    name: 带电囚犯
     category: humanoid
     tier: 1
     hp: 100
@@ -1012,7 +1012,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieInmateInfernal
-    name: zombieInmateInfernal
+    name: 炼狱囚犯
     category: humanoid
     tier: 1
     hp: 100
@@ -1023,7 +1023,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMoe
-    name: zombieMoe
+    name: 莫伊
     category: humanoid
     tier: 1
     hp: 100
@@ -1034,7 +1034,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMoeFeral
-    name: zombieMoeFeral
+    name: 凶残的莫伊
     category: humanoid
     tier: 1
     hp: 100
@@ -1045,7 +1045,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMoeRadiated
-    name: zombieMoeRadiated
+    name: 被辐射的莫伊
     category: humanoid
     tier: 1
     hp: 100
@@ -1056,7 +1056,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMoeCharged
-    name: zombieMoeCharged
+    name: 带电莫伊
     category: humanoid
     tier: 1
     hp: 100
@@ -1067,7 +1067,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMoeInfernal
-    name: zombieMoeInfernal
+    name: 炼狱莫伊
     category: humanoid
     tier: 1
     hp: 100
@@ -1078,7 +1078,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLab
-    name: zombieLab
+    name: 实验室工作人员
     category: humanoid
     tier: 1
     hp: 100
@@ -1089,7 +1089,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLabFeral
-    name: zombieLabFeral
+    name: 凶残的实验室工作人员
     category: humanoid
     tier: 1
     hp: 100
@@ -1100,7 +1100,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLabRadiated
-    name: zombieLabRadiated
+    name: 被辐射的实验室工作人员
     category: humanoid
     tier: 1
     hp: 100
@@ -1111,7 +1111,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLabCharged
-    name: zombieLabCharged
+    name: 带电实验室工作人员
     category: humanoid
     tier: 1
     hp: 100
@@ -1122,7 +1122,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLabInfernal
-    name: zombieLabInfernal
+    name: 炼狱实验室工作人员
     category: humanoid
     tier: 1
     hp: 100
@@ -1133,7 +1133,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDarlene
-    name: zombieDarlene
+    name: 达琳
     category: humanoid
     tier: 1
     hp: 100
@@ -1144,7 +1144,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDarleneFeral
-    name: zombieDarleneFeral
+    name: 凶残的达琳
     category: humanoid
     tier: 1
     hp: 100
@@ -1155,7 +1155,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDarleneRadiated
-    name: zombieDarleneRadiated
+    name: 被辐射的达琳
     category: humanoid
     tier: 1
     hp: 100
@@ -1166,7 +1166,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDarleneCharged
-    name: zombieDarleneCharged
+    name: 带电达琳
     category: humanoid
     tier: 1
     hp: 100
@@ -1177,7 +1177,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDarleneInfernal
-    name: zombieDarleneInfernal
+    name: 炼狱达琳
     category: humanoid
     tier: 1
     hp: 100
@@ -1188,7 +1188,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieYo
-    name: zombieYo
+    name: 幽
     category: humanoid
     tier: 1
     hp: 100
@@ -1199,7 +1199,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieYoFeral
-    name: zombieYoFeral
+    name: 凶残的幽
     category: humanoid
     tier: 1
     hp: 100
@@ -1210,7 +1210,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieYoRadiated
-    name: zombieYoRadiated
+    name: 被辐射的幽
     category: humanoid
     tier: 1
     hp: 100
@@ -1221,7 +1221,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieYoCharged
-    name: zombieYoCharged
+    name: 带电幽
     category: humanoid
     tier: 1
     hp: 100
@@ -1232,7 +1232,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieYoInfernal
-    name: zombieYoInfernal
+    name: 炼狱幽
     category: humanoid
     tier: 1
     hp: 100
@@ -1243,7 +1243,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieUtilityWorker
-    name: zombieUtilityWorker
+    name: 公用事业工人
     category: humanoid
     tier: 1
     hp: 100
@@ -1254,7 +1254,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieUtilityWorkerFeral
-    name: zombieUtilityWorkerFeral
+    name: 凶残的公用事业工人
     category: humanoid
     tier: 1
     hp: 100
@@ -1265,7 +1265,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieUtilityWorkerRadiated
-    name: zombieUtilityWorkerRadiated
+    name: 被辐射的公用事业工人
     category: humanoid
     tier: 1
     hp: 100
@@ -1276,7 +1276,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieUtilityWorkerCharged
-    name: zombieUtilityWorkerCharged
+    name: 带电公用事业工人
     category: humanoid
     tier: 1
     hp: 100
@@ -1287,7 +1287,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieUtilityWorkerInfernal
-    name: zombieUtilityWorkerInfernal
+    name: 炼狱公共事业工人
     category: humanoid
     tier: 1
     hp: 100
@@ -1298,7 +1298,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBiker
-    name: zombieBiker
+    name: 摩托车手
     category: humanoid
     tier: 1
     hp: 100
@@ -1309,7 +1309,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBikerFeral
-    name: zombieBikerFeral
+    name: 凶残的摩托车手
     category: humanoid
     tier: 1
     hp: 100
@@ -1320,7 +1320,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBikerRadiated
-    name: zombieBikerRadiated
+    name: 被辐射的摩托车手
     category: humanoid
     tier: 1
     hp: 100
@@ -1331,7 +1331,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBikerCharged
-    name: zombieBikerCharged
+    name: 带电摩托车手
     category: humanoid
     tier: 1
     hp: 100
@@ -1342,7 +1342,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBikerInfernal
-    name: zombieBikerInfernal
+    name: 炼狱摩托车手
     category: humanoid
     tier: 1
     hp: 100
@@ -1353,7 +1353,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLumberjack
-    name: zombieLumberjack
+    name: 伐木工
     category: humanoid
     tier: 1
     hp: 100
@@ -1364,7 +1364,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLumberjackFeral
-    name: zombieLumberjackFeral
+    name: 凶残伐木工
     category: humanoid
     tier: 1
     hp: 100
@@ -1375,7 +1375,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLumberjackRadiated
-    name: zombieLumberjackRadiated
+    name: 被辐射的伐木工
     category: humanoid
     tier: 1
     hp: 100
@@ -1386,7 +1386,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLumberjackCharged
-    name: zombieLumberjackCharged
+    name: 带电伐木工
     category: humanoid
     tier: 1
     hp: 100
@@ -1397,7 +1397,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieLumberjackInfernal
-    name: zombieLumberjackInfernal
+    name: 炼狱伐木工
     category: humanoid
     tier: 1
     hp: 100
@@ -1408,7 +1408,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFemaleFat
-    name: zombieFemaleFat
+    name: 大妈妈
     category: humanoid
     tier: 1
     hp: 100
@@ -1419,7 +1419,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFemaleFatFeral
-    name: zombieFemaleFatFeral
+    name: 凶残大妈妈
     category: humanoid
     tier: 1
     hp: 100
@@ -1430,7 +1430,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFemaleFatRadiated
-    name: zombieFemaleFatRadiated
+    name: 被辐射的大妈妈
     category: humanoid
     tier: 1
     hp: 100
@@ -1441,7 +1441,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFemaleFatCharged
-    name: zombieFemaleFatCharged
+    name: 带电大妈妈
     category: humanoid
     tier: 1
     hp: 100
@@ -1452,7 +1452,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFemaleFatInfernal
-    name: zombieFemaleFatInfernal
+    name: 炼狱大妈妈
     category: humanoid
     tier: 1
     hp: 100
@@ -1463,7 +1463,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatHawaiian
-    name: zombieFatHawaiian
+    name: 游客
     category: humanoid
     tier: 1
     hp: 100
@@ -1474,7 +1474,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatHawaiianFeral
-    name: zombieFatHawaiianFeral
+    name: 凶残的游客
     category: humanoid
     tier: 1
     hp: 100
@@ -1485,7 +1485,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatHawaiianRadiated
-    name: zombieFatHawaiianRadiated
+    name: 被辐射的游客
     category: humanoid
     tier: 1
     hp: 100
@@ -1496,7 +1496,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatHawaiianCharged
-    name: zombieFatHawaiianCharged
+    name: 带电游客
     category: humanoid
     tier: 1
     hp: 100
@@ -1507,7 +1507,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatHawaiianInfernal
-    name: zombieFatHawaiianInfernal
+    name: 炼狱游客
     category: humanoid
     tier: 1
     hp: 100
@@ -1518,7 +1518,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBowler
-    name: zombieBowler
+    name: 保龄球丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1529,7 +1529,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBowlerFeral
-    name: zombieBowlerFeral
+    name: 凶残的保龄球丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1540,7 +1540,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBowlerRadiated
-    name: zombieBowlerRadiated
+    name: 被辐射的保龄球丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1551,7 +1551,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBowlerCharged
-    name: zombieBowlerCharged
+    name: 带电保龄球丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1562,7 +1562,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieBowlerInfernal
-    name: zombieBowlerInfernal
+    name: 炼狱保龄球丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1573,7 +1573,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatCop
-    name: zombieFatCop
+    name: 警察
     category: humanoid
     tier: 1
     hp: 100
@@ -1584,7 +1584,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatCopFeral
-    name: zombieFatCopFeral
+    name: 凶残的警察
     category: humanoid
     tier: 1
     hp: 100
@@ -1595,7 +1595,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatCopRadiated
-    name: zombieFatCopRadiated
+    name: 被辐射的警察
     category: humanoid
     tier: 1
     hp: 100
@@ -1606,7 +1606,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatCopCharged
-    name: zombieFatCopCharged
+    name: 带电警察
     category: humanoid
     tier: 1
     hp: 100
@@ -1617,7 +1617,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieFatCopInfernal
-    name: zombieFatCopInfernal
+    name: 炼狱警察
     category: humanoid
     tier: 1
     hp: 100
@@ -1628,7 +1628,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSkateboarder
-    name: zombieSkateboarder
+    name: 暴徒
     category: humanoid
     tier: 1
     hp: 100
@@ -1639,7 +1639,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSkateboarderFeral
-    name: zombieSkateboarderFeral
+    name: 凶残的暴徒
     category: humanoid
     tier: 1
     hp: 100
@@ -1650,7 +1650,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSkateboarderRadiated
-    name: zombieSkateboarderRadiated
+    name: 被辐射的暴徒
     category: humanoid
     tier: 1
     hp: 100
@@ -1661,7 +1661,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSkateboarderCharged
-    name: zombieSkateboarderCharged
+    name: 带电暴徒
     category: humanoid
     tier: 1
     hp: 100
@@ -1672,7 +1672,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSkateboarderInfernal
-    name: zombieSkateboarderInfernal
+    name: 炼狱暴徒
     category: humanoid
     tier: 1
     hp: 100
@@ -1683,7 +1683,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSoldier
-    name: zombieSoldier
+    name: 士兵
     category: humanoid
     tier: 1
     hp: 100
@@ -1694,7 +1694,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSoldierFeral
-    name: zombieSoldierFeral
+    name: 凶残的士兵
     category: humanoid
     tier: 1
     hp: 100
@@ -1705,7 +1705,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSoldierRadiated
-    name: zombieSoldierRadiated
+    name: 被辐射的士兵
     category: humanoid
     tier: 1
     hp: 100
@@ -1716,7 +1716,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSoldierCharged
-    name: zombieSoldierCharged
+    name: 带电士兵
     category: humanoid
     tier: 1
     hp: 100
@@ -1727,7 +1727,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSoldierInfernal
-    name: zombieSoldierInfernal
+    name: 炼狱士兵
     category: humanoid
     tier: 1
     hp: 100
@@ -1738,7 +1738,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieWightFeral
-    name: zombieWightFeral
+    name: 凶残的怀特
     category: humanoid
     tier: 1
     hp: 100
@@ -1749,7 +1749,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieWightRadiated
-    name: zombieWightRadiated
+    name: 被辐射的恶灵
     category: humanoid
     tier: 1
     hp: 100
@@ -1760,7 +1760,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieWightCharged
-    name: zombieWightCharged
+    name: 带电恶灵
     category: humanoid
     tier: 1
     hp: 100
@@ -1771,7 +1771,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieWightInfernal
-    name: zombieWightInfernal
+    name: 炼狱恶灵
     category: humanoid
     tier: 1
     hp: 100
@@ -1782,7 +1782,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieScreamer
-    name: zombieScreamer
+    name: 尖叫丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1793,7 +1793,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieScreamerFeral
-    name: zombieScreamerFeral
+    name: 凶残的尖叫丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1804,7 +1804,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieScreamerRadiated
-    name: zombieScreamerRadiated
+    name: 被辐射的尖叫丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1815,7 +1815,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieScreamerCharged
-    name: zombieScreamerCharged
+    name: 带电尖叫丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1826,7 +1826,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieScreamerInfernal
-    name: zombieScreamerInfernal
+    name: 炼狱尖叫丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1837,7 +1837,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMutated
-    name: zombieMutated
+    name: 变异丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1848,7 +1848,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMutatedFeral
-    name: zombieMutatedFeral
+    name: 凶残的变异丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1859,7 +1859,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMutatedRadiated
-    name: zombieMutatedRadiated
+    name: 被辐射的变异丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1870,7 +1870,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMutatedCharged
-    name: zombieMutatedCharged
+    name: 带电变异丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1881,7 +1881,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieMutatedInfernal
-    name: zombieMutatedInfernal
+    name: 炼狱变异丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1892,7 +1892,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieDemolition
-    name: zombieDemolition
+    name: 爆破丧尸
     category: humanoid
     tier: 1
     hp: 100
@@ -1903,7 +1903,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveCrawler
-    name: zombieSteveCrawler
+    name: 爬行者
     category: humanoid
     tier: 1
     hp: 100
@@ -1914,7 +1914,7 @@ zombies:
       melee: 10
     experience: 100
   - id: zombieSteveCrawlerFeral
-    name: zombieSteveCrawlerFeral
+    name: 凶残的爬行者
     category: humanoid
     tier: 1
     hp: 100
@@ -1925,7 +1925,7 @@ zombies:
       melee: 10
     experience: 100
   - id: animalZombieBear
-    name: animalZombieBear
+    name: 丧尸熊
     category: animal
     tier: 1
     hp: 100
@@ -1936,7 +1936,7 @@ zombies:
       melee: 10
     experience: 100
   - id: animalZombieVulture
-    name: animalZombieVulture
+    name: 丧尸秃鹫
     category: humanoid
     tier: 1
     hp: 100
@@ -1947,7 +1947,7 @@ zombies:
       melee: 10
     experience: 100
   - id: animalZombieVultureRadiated
-    name: animalZombieVultureRadiated
+    name: 被辐射的秃鹫
     category: humanoid
     tier: 1
     hp: 100
@@ -1958,7 +1958,7 @@ zombies:
       melee: 10
     experience: 100
   - id: animalZombieDog
-    name: animalZombieDog
+    name: 丧尸犬
     category: animal
     tier: 1
     hp: 100
@@ -1969,7 +1969,7 @@ zombies:
       melee: 10
     experience: 100
   - id: animalZombieBoar
-    name: animalZombieBoar
+    name: 丧尸野猪
     category: humanoid
     tier: 1
     hp: 100

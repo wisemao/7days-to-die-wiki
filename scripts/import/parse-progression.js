@@ -1,4 +1,4 @@
-export function parseProgressionXml(xmlText) {
+export function parseProgressionXml(xmlText, locMap = new Map()) {
   const skills = [];
   const skillRegex = /<perk\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/perk>/g;
   let match;
@@ -7,7 +7,7 @@ export function parseProgressionXml(xmlText) {
     const [_, name, content] = match;
     const skill = {
       id: name,
-      name,
+      name: locMap.get(name)?.name || name,
       category: 'strength',
       max_level: 1,
       levels: [],

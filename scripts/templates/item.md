@@ -1,6 +1,11 @@
 # {{name}}
+
+{{#if icon}}
+![{{name}}](/7days-to-die-wiki/images/items/{{icon}}.png)
+{{/if}}
+
 {{#if tier}}
-- **等级:** {{tier}}
+- **品质:** {{tier}}
 {{/if}}
 - **类型:** {{categoryLabel}}
 - **堆叠:** {{stack_size}}
@@ -35,8 +40,8 @@
 {{/each}}
 {{/if}}
 
-## 分解获得
 {{#if scrappable}}
+## 分解获得
 
 | 材料 | 数量 |
 |---|---|
@@ -45,8 +50,8 @@
 {{/each}}
 {{/if}}
 
-## 用于以下配方
 {{#if usedInRecipes}}
+## 用于以下配方
 
 | 配方 | 工作站 |
 |---|---|
@@ -55,8 +60,8 @@
 {{/each}}
 {{/if}}
 
-## 关联僵尸掉落
 {{#if droppedBy}}
+## 关联僵尸掉落
 
 | 僵尸 | 概率 |
 |---|---|

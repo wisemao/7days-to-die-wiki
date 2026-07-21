@@ -34,10 +34,27 @@ export function parseRecipesXml(xmlText, locMap = new Map()) {
       recipe.station = areaMap[areaMatch[1]] || areaMatch[1];
     }
 
+    const isScrappable = /scrappable="true"/.test(match[0]);
+    const scrapMatch = /scrap_into="([^"]+)"/.exec(match[0]);
+
     const ingRegex = /<ingredient\s+name="([^"]+)"\s+count="(\d+)"/g;
     let ingMatch;
     while ((ingMatch = ingRegex.exec(content)) !== null) {
-      recipe.recipe.push({ item_id: ingMatch[1], count: parseInt(ingMatch[2]) });
+      if (isScrappable || scrapMatch) {
+        if (!recipe.scrappable_into) recipe.scrappable_into = [];
+        recipe.scrappable_into.push({ item_id: ingMatch[1], count: parseInt(ingMatch[2]) });
+      } else {
+        recipe.recipe.push({ item_id: ingMatch[1], count: parseInt(ingMatch[2]) });
+      }
+    }
+
+    if (scrapMatch) {
+      if (!recipe.scrappable_into) recipe.scrappable_into = [];
+      const parts = scrapMatch[1].split(',');
+      for (const part of parts) {
+        const [itemId, countStr] = part.trim().split('/');
+        recipe.scrappable_into.push({ item_id: itemId, count: parseInt(countStr) || 1 });
+      }
     }
 
     recipes.push(recipe);

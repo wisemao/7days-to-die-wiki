@@ -1,14 +1,14 @@
 import { renderTemplate } from './renderer.js';
 
 export function parseRecipe(recipe, refs, template, resolveItemName, sanitizeId = (id) => id) {
-  const craftRecipe = recipe.recipe?.map(r => ({
+  const craftRecipe = recipe.recipe?.filter(r => r.count > 0).map(r => ({
     item_id: r.item_id,
     itemLinkId: sanitizeId(r.item_id),
     itemName: resolveItemName(r.item_id),
     count: r.count,
   }));
 
-  const scrappableRows = recipe.scrappable_into?.map(s => ({
+  const scrappableRows = recipe.scrappable_into?.filter(s => s.count > 0).map(s => ({
     item_id: s.item_id,
     itemLinkId: sanitizeId(s.item_id),
     itemName: resolveItemName(s.item_id),

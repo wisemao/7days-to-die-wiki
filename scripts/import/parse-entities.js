@@ -1,4 +1,4 @@
-export function parseEntitiesXml(xmlText) {
+export function parseEntitiesXml(xmlText, locMap = new Map()) {
   const zombies = [];
   const entityRegex = /<entity_class\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/entity_class>/g;
   let match;
@@ -10,7 +10,7 @@ export function parseEntitiesXml(xmlText) {
 
     const zombie = {
       id: name,
-      name,
+      name: locMap.get(name)?.name || name,
       category: 'humanoid',
       tier: 1,
       hp: 100,
