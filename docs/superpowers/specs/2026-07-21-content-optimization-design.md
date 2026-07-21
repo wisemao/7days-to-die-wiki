@@ -2,7 +2,7 @@
 
 ## 背景
 
-七日杀 Wiki 项目通过解析游戏 XML 数据，自动生成 VitePress 文档。当前内容存在三类问题：技能页面显示占位符名称（如 `perkMiner69rName`）、页面格式有多余空行、索引页过于简陋。
+七日杀 Wiki 项目通过解析游戏 XML 数据，自动生成 VitePress 文档。当前内容存在三类问题：技能页面显示占位符名称（如 `perkMiner69rName`）、页面格式有多余空行、索引页过于简陋、物品页缺少图标。
 
 ---
 
@@ -59,14 +59,55 @@ skill.name = locMap.get(name)?.name || nameMatch?.[1] || name;
 
 ---
 
+## 改动 5：恢复物品图标显示
+
+**文件：** `scripts/templates/item.md`
+
+**背景：** `docs/.vitepress/public/images/items/` 目录已存在 1212 张物品图标 PNG。`parse-items.js` 已具备图标检测能力（`hasIcon` + `data.icon`），但模板中的 `![...](...)` 引用在之前的构建失败中被移除。
+
+**问题当时：** 模板硬编码了 `/7days-to-die-wiki/images/items/{{icon}}.png`，当 VitePress 的 `base` 配置与之不匹配时导致死链接，且没有检测文件是否存在。
+
+**现在已具备修复条件：**
+1. `hasIcon` 检测已到位——仅当文件实际存在时才设置 `data.icon`
+2. `base: '/7days-to-die-wiki/'` 已在 `config.ts` 中配置
+
+**修复：** 在 `item.md` 模板 `{{name}}` 下方重新添加图片引用。使用 VitePress 标准路径 `/images/items/{{icon}}.png`，由 `{{#if icon}}` 守卫：
+
+```md
+# {{name}}
+
+{{#if icon}}
+![](/images/items/{{icon}}.png)
+{{/if}}
+```
+
+**效果：** 约 1212 个有图标物品显示对应图标，无图标的物品不显示破损图片。
+
+---
+
 ## 实施步骤
 
 1. 修复技能名称解析器
 2. 优化渲染器空白处理
-3. 补全索引页（生成器+新文件）
-4. 检查交叉引用完整性
-5. 重新生成全部文档
-6. 验证构建通过
+3. 恢复物品模板图标显示
+4. 补全索引页（生成器+新文件）
+5. 检查交叉引用完整性
+6. 重新生成全部文档
+7. 验证构建通过
+
+## 涉及文件清单
+
+| 文件 | 改动类型 |
+|---|---|
+| `scripts/import/parse-progression.js` | 修复 |
+| `scripts/parsers/renderer.js` | 优化 |
+| `scripts/templates/item.md` | 恢复图标 |
+| `scripts/generate.js` | 新增索引逻辑 |
+| `docs/vanilla/index.md` | 新建 |
+| `docs/vanilla/items/index.md` | 更新 |
+| `docs/vanilla/recipes/index.md` | 更新 |
+| `docs/vanilla/skills/index.md` | 更新 |
+| `docs/vanilla/zombies/index.md` | 更新 |
 
 ## 非改动范围
 
