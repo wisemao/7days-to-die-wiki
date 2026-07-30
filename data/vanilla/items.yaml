@@ -6106,32 +6106,32 @@ items:
     icon: bundleMachineGun
   - id: questRewardT1BookBundle
     name: 3本书组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT2BookBundle
     name: 4本书组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT3BookBundle
     name: 5本书组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT4BookBundle
     name: 6本书组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT5BookBundle
     name: 7本书组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT1SkillMagazineBundle
     name: 制作技能杂志组合包
-    category: material
+    category: book
     stack_size: 1
     icon: bundleBooks
   - id: questRewardT1TrapsBundle
