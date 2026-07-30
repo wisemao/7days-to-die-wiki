@@ -116,9 +116,13 @@ const LABELS = {
                 等级 {tier.level} 解锁
               </p>
               <div class="item-grid" style="margin:0;">
-                {tier.recipes.map(r => (
-                  <a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{r.name}</a>
-                ))}
+                {tier.recipes.map(r => {
+                  // Clean up English names: remove suffixes, convert camelCase
+                  const displayName = /^[a-zA-Z0-9_]+$/.test(r.name)
+                    ? r.name.replace(/BlockVariantHelper|_Powered|_player/g, '').replace(/([a-z])([A-Z])/g, '$1 $2')
+                    : r.name;
+                  return (<a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{displayName}</a>);
+                })}
               </div>
             </div>
           ))}
