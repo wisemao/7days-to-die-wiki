@@ -68,16 +68,19 @@ const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.p
 
 <Layout title={seriesName} description={`${seriesName} - ${volumeCount}卷`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <a href={`${base}/vanilla/items/category/book/`}>书籍</a> / <span>{seriesName}</span>
+    <a href={base}>首页</a><span class="sep">/</span>
+    <a href={`${base}/vanilla/items/`}>物品列表</a><span class="sep">/</span>
+    <a href={`${base}/vanilla/items/category/book/`}>书籍</a><span class="sep">/</span>
+    <span>{seriesName}</span>
   </nav>
   <h1>{seriesName}</h1>
   <p class="subtitle">共 {volumeCount} 卷 · 全部阅读后可获得额外加成</p>
 
   <table>
-    <tr><th style="width:48px;">#</th><th>名称</th><th>效果</th></tr>
+    <tr><th class="col-num">#</th><th>名称</th><th>效果</th></tr>
     {volumes.map((v, i) => (
       <tr>
-        <td style="text-align:center;">{i + 1}</td>
+        <td class="col-num">{i + 1}</td>
         <td><a href={`${base}${v.itemPath}`}>{v.name}</a></td>
         <td>{v.effect || '-'}</td>
       </tr>
@@ -85,19 +88,59 @@ const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.p
   </table>
 
   {(completeName || completeDesc) && (
-    <div style="margin-top:32px;padding:24px;background:linear-gradient(135deg,#fef2f2 0%,#fff5f5 100%);border:2px solid var(--c-brand);border-radius:var(--radius);box-shadow:var(--shadow-sm);">
-      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
-        <span style="font-size:24px;">🏆</span>
-        <h2 style="margin:0;color:var(--c-brand);font-size:1.2rem;">全卷加成</h2>
+    <div class="info-card bonus-card">
+      <div class="bonus-header">
+        <span class="bonus-icon">🏆</span>
+        <h2>全卷加成</h2>
       </div>
-      <p style="margin-bottom:8px;font-size:15px;color:var(--c-text);">
-        <strong style="color:var(--c-brand);">
-          {/^perk/.test(completeName) ? seriesName + ' 精通' : completeName}
-        </strong>
+      <p class="bonus-name">
+        <strong>{/^perk/.test(completeName) ? seriesName + ' 精通' : completeName}</strong>
       </p>
-      <p style="margin-bottom:0;font-size:14px;color:var(--c-text-2);line-height:1.7;">
+      <p class="bonus-desc">
         {completeDesc || '阅读全部 7 卷后解锁此强力加成。'}
       </p>
     </div>
   )}
+
+  <style>
+    .col-num {
+      width: 48px;
+      text-align: center;
+    }
+    .bonus-card {
+      margin-top: 32px;
+    }
+    .bonus-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .bonus-header h2 {
+      margin: 0;
+      color: var(--c-blood);
+      font-size: 1.15rem;
+      border-bottom: none;
+      display: block;
+      padding: 0;
+    }
+    .bonus-icon {
+      font-size: 24px;
+      flex-shrink: 0;
+    }
+    .bonus-name {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: var(--c-text);
+    }
+    .bonus-name strong {
+      color: var(--c-blood);
+    }
+    .bonus-desc {
+      margin-bottom: 0;
+      font-size: 14px;
+      color: var(--c-text-2);
+      line-height: 1.7;
+    }
+  </style>
 </Layout>
