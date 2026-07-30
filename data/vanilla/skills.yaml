@@ -210,7 +210,7 @@ skills:
         cost: 5
     description: 感知技能大师
   - id: perkBoomstick
-    name: perkBoomstick
+    name: 喷子
     category: strength
     max_level: 5
     levels:
@@ -231,7 +231,7 @@ skills:
         cost: 5
     description: perkBoomstickDesc
   - id: perkPummelPete
-    name: perkPummelPete
+    name: 击球手佩特
     category: strength
     max_level: 5
     levels:
@@ -252,7 +252,7 @@ skills:
         cost: 5
     description: perkPummelPeteDesc
   - id: perkSkullCrusher
-    name: perkSkullCrusher
+    name: 头骨粉碎者
     category: strength
     max_level: 5
     levels:
@@ -273,7 +273,7 @@ skills:
         cost: 5
     description: perkSkullCrusherDesc
   - id: perkGrandSlam
-    name: perkGrandSlam
+    name: 满垒本垒打
     category: strength
     max_level: 5
     levels:
@@ -294,7 +294,7 @@ skills:
         cost: 5
     description: perkGrandSlamDesc
   - id: perkFlurryOfStrength
-    name: perkFlurryOfStrength
+    name: 外壮内活
     category: strength
     max_level: 5
     levels:
@@ -315,7 +315,7 @@ skills:
         cost: 5
     description: perkFlurryOfStrengthDesc
   - id: perkSexualTrex
-    name: perkSexualTrex
+    name: 霸王龙
     category: strength
     max_level: 4
     levels:
@@ -333,7 +333,7 @@ skills:
         cost: 5
     description: perkSexualTrexDesc
   - id: perkPackMule
-    name: perkPackMule
+    name: 驮骡
     category: strength
     max_level: 5
     levels:
@@ -354,7 +354,7 @@ skills:
         cost: 5
     description: perkPackMuleDesc
   - id: perkStrengthMastery
-    name: perkStrengthMastery
+    name: 力量专精
     category: strength
     max_level: 5
     levels:
@@ -375,7 +375,7 @@ skills:
         cost: 5
     description: perkStrengthMasteryDesc
   - id: perkMiner69r
-    name: perkMiner69r
+    name: 矿业69族
     category: strength
     max_level: 5
     levels:
@@ -396,7 +396,7 @@ skills:
         cost: 5
     description: perkMiner69rDesc
   - id: perkMotherLode
-    name: perkMotherLode
+    name: 母矿
     category: strength
     max_level: 5
     levels:
@@ -417,7 +417,7 @@ skills:
         cost: 5
     description: perkMotherLodeDesc
   - id: perkJunkMiner
-    name: perkJunkMiner
+    name: 垃圾矿工
     category: strength
     max_level: 5
     levels:
@@ -438,7 +438,7 @@ skills:
         cost: 5
     description: perkJunkMinerDesc
   - id: perkBrawler
-    name: perkBrawler
+    name: 搏斗家
     category: fortitude
     max_level: 5
     levels:
@@ -459,7 +459,7 @@ skills:
         cost: 5
     description: perkBrawlerDesc
   - id: perkMachineGunner
-    name: perkMachineGunner
+    name: 机枪射手
     category: fortitude
     max_level: 5
     levels:
@@ -480,7 +480,7 @@ skills:
         cost: 5
     description: perkMachineGunnerDesc
   - id: perkFlurryOfFortitude
-    name: perkFlurryOfFortitude
+    name: 无影手
     category: fortitude
     max_level: 5
     levels:
@@ -501,7 +501,7 @@ skills:
         cost: 5
     description: perkFlurryOfFortitudeDesc
   - id: perkTheHuntsman
-    name: perkTheHuntsman
+    name: 狩猎者
     category: fortitude
     max_level: 5
     levels:
@@ -522,7 +522,7 @@ skills:
         cost: 5
     description: perkTheHuntsmanDesc
   - id: perkWellInsulated
-    name: perkWellInsulated
+    name: 完美隔热
     category: fortitude
     max_level: 3
     levels:
@@ -537,7 +537,7 @@ skills:
         cost: 5
     description: perkWellInsulatedDesc
   - id: perkPainTolerance
-    name: perkPainTolerance
+    name: 忍痛
     category: fortitude
     max_level: 5
     levels:
@@ -558,7 +558,7 @@ skills:
         cost: 5
     description: perkPainToleranceDesc
   - id: perkFortitudeMastery
-    name: perkFortitudeMastery
+    name: 强健专精
     category: fortitude
     max_level: 5
     levels:
@@ -579,7 +579,7 @@ skills:
         cost: 5
     description: perkFortitudeMasteryDesc
   - id: perkSiphoningStrikes
-    name: perkSiphoningStrikes
+    name: 虹吸打击
     category: fortitude
     max_level: 5
     levels:
@@ -600,7 +600,7 @@ skills:
         cost: 5
     description: perkSiphoningStrikesDesc
   - id: perkHealingFactor
-    name: perkHealingFactor
+    name: 治疗因子
     category: fortitude
     max_level: 5
     levels:
@@ -621,7 +621,7 @@ skills:
         cost: 5
     description: perkHealingFactorDesc
   - id: perkSlowMetabolism
-    name: perkSlowMetabolism
+    name: 铁胃
     category: fortitude
     max_level: 5
     levels:
@@ -642,7 +642,7 @@ skills:
         cost: 5
     description: perkSlowMetabolismDesc
   - id: perkRuleOneCardio
-    name: perkRuleOneCardio
+    name: 规则1：有氧运动
     category: fortitude
     max_level: 5
     levels:
@@ -663,7 +663,7 @@ skills:
         cost: 5
     description: perkRuleOneCardioDesc
   - id: perkArchery
-    name: perkArchery
+    name: 弓术
     category: agility
     max_level: 5
     levels:
@@ -684,7 +684,7 @@ skills:
         cost: 5
     description: perkArcheryDesc
   - id: perkGunslinger
-    name: perkGunslinger
+    name: 枪手
     category: agility
     max_level: 5
     levels:
@@ -705,7 +705,7 @@ skills:
         cost: 5
     description: perkGunslingerDesc
   - id: perkDeepCuts
-    name: perkDeepCuts
+    name: 深度刀伤
     category: agility
     max_level: 5
     levels:
@@ -726,7 +726,7 @@ skills:
         cost: 5
     description: perkDeepCutsDesc
   - id: perkFlurryOfAgility
-    name: perkFlurryOfAgility
+    name: 旋风斩
     category: agility
     max_level: 5
     levels:
@@ -747,7 +747,7 @@ skills:
         cost: 5
     description: perkFlurryOfAgilityDesc
   - id: perkRunAndGun
-    name: perkRunAndGun
+    name: 奔袭战术
     category: agility
     max_level: 5
     levels:
@@ -768,7 +768,7 @@ skills:
         cost: 5
     description: perkRunandGunDesc
   - id: perkHardTarget
-    name: perkHardTarget
+    name: 难以命中
     category: agility
     max_level: 5
     levels:
@@ -789,7 +789,7 @@ skills:
         cost: 5
     description: perkHardTargetDesc
   - id: perkParkour
-    name: perkParkour
+    name: 跑酷
     category: agility
     max_level: 5
     levels:
@@ -810,7 +810,7 @@ skills:
         cost: 5
     description: perkParkourDesc
   - id: perkAgilityMastery
-    name: perkAgilityMastery
+    name: 敏捷专精
     category: agility
     max_level: 5
     levels:
@@ -831,7 +831,7 @@ skills:
         cost: 5
     description: perkAgilityMasteryDesc
   - id: perkHiddenStrike
-    name: perkHiddenStrike
+    name: 隐蔽之击
     category: agility
     max_level: 5
     levels:
@@ -852,7 +852,7 @@ skills:
         cost: 5
     description: perkHiddenStrikeDesc
   - id: perkFromTheShadows
-    name: perkFromTheShadows
+    name: 来自暗影
     category: agility
     max_level: 5
     levels:
@@ -873,7 +873,7 @@ skills:
         cost: 5
     description: perkFromTheShadowsDesc
   - id: perkElectrocutioner
-    name: perkElectrocutioner
+    name: 电击处刑官
     category: intellect
     max_level: 5
     levels:
@@ -894,7 +894,7 @@ skills:
         cost: 5
     description: perkElectrocutionerDesc
   - id: perkTurrets
-    name: perkTurrets
+    name: 机器人发明者
     category: intellect
     max_level: 5
     levels:
@@ -915,7 +915,7 @@ skills:
         cost: 5
     description: perkTurretsDesc
   - id: perkFlurryOfIntellect
-    name: perkFlurryOfIntellect
+    name: 精准攻击
     category: intellect
     max_level: 5
     levels:
@@ -936,7 +936,7 @@ skills:
         cost: 5
     description: perkFlurryOfIntellectDesc
   - id: perkBetterBarter
-    name: perkBetterBarter
+    name: 贸易砍价
     category: intellect
     max_level: 5
     levels:
@@ -957,7 +957,7 @@ skills:
         cost: 5
     description: perkBetterBarterDesc
   - id: perkDaringAdventurer
-    name: perkDaringAdventurer
+    name: 大胆的冒险家
     category: intellect
     max_level: 5
     levels:
@@ -978,7 +978,7 @@ skills:
         cost: 5
     description: perkDaringAdventurerDesc
   - id: perkCharismaticNature
-    name: perkCharismaticNature
+    name: 魅力十足
     category: intellect
     max_level: 5
     levels:
@@ -999,7 +999,7 @@ skills:
         cost: 5
     description: perkCharismaticNatureDesc
   - id: perkPhysician
-    name: perkPhysician
+    name: 医师
     category: intellect
     max_level: 5
     levels:
@@ -1020,7 +1020,7 @@ skills:
         cost: 5
     description: perkPhysicianDesc
   - id: perkAdvancedEngineering
-    name: perkAdvancedEngineering
+    name: 高级工程师
     category: intellect
     max_level: 5
     levels:
@@ -1041,7 +1041,7 @@ skills:
         cost: 5
     description: perkAdvancedEngineeringDesc
   - id: perkGreaseMonkey
-    name: perkGreaseMonkey
+    name: 修理油猴
     category: intellect
     max_level: 5
     levels:
@@ -1062,7 +1062,7 @@ skills:
         cost: 5
     description: perkGreaseMonkeyDesc
   - id: perkIntellectMastery
-    name: perkIntellectMastery
+    name: 智慧专精
     category: intellect
     max_level: 5
     levels:
@@ -1083,7 +1083,7 @@ skills:
         cost: 5
     description: perkIntellectMasteryDesc
   - id: perkLightArmor
-    name: perkLightArmor
+    name: 轻甲
     category: generalperks
     max_level: 4
     levels:
@@ -1101,7 +1101,7 @@ skills:
         cost: 5
     description: perkLightArmorDesc
   - id: perkMediumArmor
-    name: perkMediumArmor
+    name: 中型护甲
     category: generalperks
     max_level: 4
     levels:
@@ -1119,7 +1119,7 @@ skills:
         cost: 5
     description: perkMediumArmorDesc
   - id: perkHeavyArmor
-    name: perkHeavyArmor
+    name: 重甲护身
     category: generalperks
     max_level: 4
     levels:
@@ -1137,7 +1137,7 @@ skills:
         cost: 5
     description: perkHeavyArmorDesc
   - id: perkMasterChef
-    name: perkMasterChef
+    name: 厨艺大师
     category: generalperks
     max_level: 3
     levels:
@@ -1152,7 +1152,7 @@ skills:
         cost: 5
     description: perkMasterChefDesc
   - id: perkLivingOffTheLand
-    name: perkLivingOffTheLand
+    name: 就地取材
     category: generalperks
     max_level: 3
     levels:
@@ -1479,7 +1479,7 @@ skills:
     levels: []
     description: perkEnforcerCriminalPursuitDesc
   - id: perkEnforcerComplete
-    name: perkEnforcerComplete
+    name: 警官 - 完成
     category: strength
     max_level: 1
     levels:
@@ -1602,7 +1602,7 @@ skills:
         cost: 0
     description: perkGreatHeistMotionDetectionDesc
   - id: perkGreatHeistComplete
-    name: perkGreatHeistComplete
+    name: 大劫掠 - 完成
     category: strength
     max_level: 1
     levels:
@@ -1884,7 +1884,7 @@ skills:
     levels: []
     description: perkRangersKnockdownDesc
   - id: perkRangersComplete
-    name: perkRangersComplete
+    name: 游侠箭术指南 - 完成
     category: strength
     max_level: 1
     levels:
@@ -1953,7 +1953,7 @@ skills:
         cost: 0
     description: perkPistolPeteDamageDesc
   - id: perkPistolPeteComplete
-    name: perkPistolPeteComplete
+    name: 手枪皮特 - 完成
     category: strength
     max_level: 1
     levels:
@@ -2025,7 +2025,7 @@ skills:
         cost: 0
     description: perkShotgunMessiahPartyStarterDesc
   - id: perkShotgunMessiahComplete
-    name: perkShotgunMessiahComplete
+    name: 霰弹枪救星 - 完成
     category: strength
     max_level: 1
     levels:
@@ -2148,7 +2148,7 @@ skills:
         cost: 0
     description: perkSniperHPAmmoDesc
   - id: perkSniperComplete
-    name: perkSniperComplete
+    name: 狙击手 - 完成
     category: strength
     max_level: 1
     levels:
