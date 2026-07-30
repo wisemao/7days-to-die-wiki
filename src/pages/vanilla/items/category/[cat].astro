@@ -1,7 +1,7 @@
----
+﻿---
 import Layout from '../../../../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS } from '../../../../utils/data-loader';
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Astro note: module-level function declarations are NOT accessible in component scope.
 // Use const arrow functions for helpers needed in both frontmatter and template.

@@ -1,6 +1,0 @@
-﻿fix: 全站面包屑统一分隔符样式
-
-所有配方/技能/僵尸列表详情页面包屑从' / '改为<span class="sep">/</span>
-
-Ultraworked with Sisyphus
-Co-authored-by: Sisyphus <clio-agent@sisyphuslabs.ai>

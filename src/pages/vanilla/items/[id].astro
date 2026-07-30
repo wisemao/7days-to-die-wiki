@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
 import { readFileSync, existsSync } from 'fs';
@@ -22,7 +22,7 @@ const { itemCraftRecipes, itemRecipes, resolveItemName, ITEM_CATEGORY_LABELS } =
 const { item } = Astro.props;
 const magInfo = craftingSkills.magazines?.[item.id];
 
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const categoryLabel = ITEM_CATEGORY_LABELS[item.category] || item.category;
 const stars = item.tier ? (() => {
   let q = 1;

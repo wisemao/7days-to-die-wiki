@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
 export function getStaticPaths() {
@@ -6,7 +6,7 @@ export function getStaticPaths() {
   return recipes.map(r => ({ params: { id: r._sanitizedId }, props: { recipe: r, itemMap } }));
 }
 const { recipe, itemMap } = Astro.props;
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const resolveName = (id) => itemMap.get(id)?.name || id;
 const hasRecipe = recipe.recipe && recipe.recipe.length > 0;
 const hasScrap = recipe.scrappable_into && recipe.scrappable_into.length > 0;

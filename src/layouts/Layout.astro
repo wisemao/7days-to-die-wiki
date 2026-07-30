@@ -1,10 +1,10 @@
----
+﻿---
 export interface Props {
   title: string;
   description?: string;
 }
 const { title, description } = Astro.props;
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!DOCTYPE html>
@@ -15,8 +15,7 @@ const base = '/7days-to-die-wiki';
   <title>{title} | 七日杀 Wiki</title>
   <meta name="description" content={description || title} />
   <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
-  <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
-  <script src={`${base}/pagefind/pagefind-ui.js`} defer></script>
+  <script type="module" src={`${base}/pagefind/pagefind-ui.js`}></script>
   <style is:global>
     /* ═══════════════════════════════════════════
        🎨 7 Days to Die Wiki — Design System
@@ -38,7 +37,7 @@ const base = '/7days-to-die-wiki';
 
       /* ─── Survival Accents ─── */
       --c-olive:        #5a7247;
-      --c-amber:        #e65100;
+      --c-amber:        #ff8f00;
       --c-steel:        #546e7a;
 
       /* ─── Light Mode ─── */
@@ -184,7 +183,7 @@ const base = '/7days-to-die-wiki';
       max-width: 240px;
       margin: 0 8px;
     }
-    .pagefind-ui {
+    pagefind-ui {
       --pagefind-ui-scale: 0.72;
       --pagefind-ui-primary: #fff;
       --pagefind-ui-text: #fff;
@@ -192,11 +191,12 @@ const base = '/7days-to-die-wiki';
       --pagefind-ui-border: rgba(255,255,255,0.22);
       --pagefind-ui-font: inherit;
       --pagefind-ui-border-radius: 6px;
+      --pagefind-ui-image-size: 0;
+      --pagefind-ui-clear-button-size: 0;
     }
-    .pagefind-ui__search-input {
-      color: #fff !important;
-    }
-    .pagefind-ui__search-input::placeholder { color: rgba(255,255,255,0.5) !important; }
+    pagefind-ui .pagefind-ui__search-input { color: #fff !important; }
+    pagefind-ui .pagefind-ui__search-input::placeholder { color: rgba(255,255,255,0.5) !important; }
+    pagefind-ui .pagefind-ui__search-clear { display: none; }
 
     /* ═══════════════════════════════════════════
        LAYOUT
@@ -503,7 +503,7 @@ const base = '/7days-to-die-wiki';
     }
 
     /* ─── Stars (item quality) ─── */
-    .stars { font-size: 16px; letter-spacing: 2px; color: var(--c-amber); }
+    .stars { font-size: 16px; letter-spacing: 2px; color: #ff8f00; }
 
     /* ═══════════════════════════════════════════
        ACCESSIBILITY
@@ -594,7 +594,7 @@ const base = '/7days-to-die-wiki';
       <a href={`${base}/vanilla/skills/`}>技能</a>
       <a href={`${base}/vanilla/zombies/`}>僵尸</a>
     </div>
-    <div id="search"></div>
+    <pagefind-ui show-images="false" show-empty-query="false" base-url="/7days-to-die-wiki/"></pagefind-ui>
     <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
       <span id="themeIcon">☀️</span>
       <span class="label" id="themeLabel">主题</span>
@@ -637,10 +637,9 @@ const base = '/7days-to-die-wiki';
 
   <script>
   window.addEventListener('DOMContentLoaded', () => {
-    const base = '/7days-to-die-wiki';
+    const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-    /* ─── Pagefind Search ─── */
-    new PagefindUI({ element: '#search', showImages: false, showEmptyQuery: false, baseUrl: base + '/' });
+    /* ─── Pagefind Component UI auto-initializes via <pagefind-ui> ─── */
 
     /* ─── Collapsible Sections ─── */
     document.querySelectorAll('.collapsible').forEach((btn, i) => {

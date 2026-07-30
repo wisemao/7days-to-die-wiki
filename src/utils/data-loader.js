@@ -1,4 +1,4 @@
-import { load } from 'js-yaml';
+﻿import { load } from 'js-yaml';
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
@@ -8,6 +8,7 @@ const DATA_DIR = join(process.cwd(), 'data', 'vanilla');
 export const ATTR_LABELS = {
   strength: '力量', fortitude: '强壮', perception: '感知',
   agility: '敏捷', intellect: '智力',
+  generalperks: '通用',
 };
 
 export const ITEM_CATEGORY_LABELS = {

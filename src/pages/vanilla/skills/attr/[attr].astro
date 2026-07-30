@@ -1,12 +1,13 @@
----
+﻿---
 import Layout from '../../../../layouts/Layout.astro';
 import { loadData, ATTR_LABELS } from '../../../../utils/data-loader';
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
+// Maps URL slug to the actual category value in skills.yaml
 const ATTR_MAP = { strength: 'strength', fortitude: 'fortitude', perception: 'perception', agility: 'agility', intellect: 'intellect', general: 'generalperks' };
 
 export function getStaticPaths() {
-  const MAP = { strength: 'strength', fortitude: 'fortitude', perception: 'perception', agility: 'agility', intellect: 'intellect' };
+  const MAP = { strength: 'strength', fortitude: 'fortitude', perception: 'perception', agility: 'agility', intellect: 'intellect', general: 'generalperks' };
   const { skills } = loadData();
   const groups = {};
   for (const s of skills) {

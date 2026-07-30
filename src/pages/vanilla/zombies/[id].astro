@@ -1,4 +1,4 @@
----
+﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
 export function getStaticPaths() {
@@ -7,7 +7,7 @@ export function getStaticPaths() {
 }
 const { zombie } = Astro.props;
 const { ZOMBIE_CATEGORY_LABELS, resolveItemName, getItemLink } = loadData();
-const base = '/7days-to-die-wiki';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catLabel = ZOMBIE_CATEGORY_LABELS[zombie.category] || zombie.category;
 const hasLoot = zombie.loot && zombie.loot.length > 0;
 const hasWeakness = zombie.weakness && zombie.weakness.length > 0;
@@ -23,7 +23,7 @@ const hp = zombie.hp?.toString?.()?.startsWith?.('^') ? '?' : zombie.hp;
   <p><strong>类型:</strong> {catLabel} | <strong>等级:</strong> {zombie.tier} | <strong>HP:</strong> {hp}</p>
 
   <h2>属性</h2>
-  <table><tr><th>属性</th><th>值</th></tr>
+  <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{zombie.name} 基础属性</caption><tr><th scope="col">属性</th><th scope="col">值</th></tr>
     <tr><td>步行速度</td><td>{zombie.speed?.walk}</td></tr>
     <tr><td>奔跑速度</td><td>{zombie.speed?.run}</td></tr>
     <tr><td>近战伤害</td><td>{zombie.damage?.melee}</td></tr>
@@ -34,7 +34,7 @@ const hp = zombie.hp?.toString?.()?.startsWith?.('^') ? '?' : zombie.hp;
 
   {hasLoot && (<>
     <h2>掉落物</h2>
-    <table><tr><th>物品</th><th>数量</th><th>概率</th></tr>
+    <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{zombie.name} 掉落物品</caption><tr><th scope="col">物品</th><th scope="col">数量</th><th scope="col">概率</th></tr>
       {zombie.loot.map(l => {
         const link = getItemLink(l.item_id);
         const name = resolveItemName(l.item_id);
