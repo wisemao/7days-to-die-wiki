@@ -84,11 +84,20 @@ const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.p
     ))}
   </table>
 
-  {completeName && (
-    <div style="margin-top:28px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-brand);border-radius:var(--radius);">
-      <h2 style="margin-top:0;color:var(--c-brand);">全卷加成</h2>
-      <p style="margin-bottom:0;"><strong>{completeName}</strong></p>
-      <p style="margin-bottom:0;">{completeDesc || '阅读全部卷册后解锁此加成。'}</p>
+  {(completeName || completeDesc) && (
+    <div style="margin-top:32px;padding:24px;background:linear-gradient(135deg,#fef2f2 0%,#fff5f5 100%);border:2px solid var(--c-brand);border-radius:var(--radius);box-shadow:var(--shadow-sm);">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <span style="font-size:24px;">🏆</span>
+        <h2 style="margin:0;color:var(--c-brand);font-size:1.2rem;">全卷加成</h2>
+      </div>
+      <p style="margin-bottom:8px;font-size:15px;color:var(--c-text);">
+        <strong style="color:var(--c-brand);">
+          {/^perk/.test(completeName) ? seriesName + ' 精通' : completeName}
+        </strong>
+      </p>
+      <p style="margin-bottom:0;font-size:14px;color:var(--c-text-2);line-height:1.7;">
+        {completeDesc || '阅读全部 7 卷后解锁此强力加成。'}
+      </p>
     </div>
   )}
 </Layout>
