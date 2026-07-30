@@ -3,7 +3,7 @@
     "harvestingToolsSkillMagazine": {
       "skillName": "craftingHarvestingTools",
       "name": "收集工具",
-      "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
+      "desc": "阅读工具摘要可以提高收集工具的制作品质。\\n提升矿业69族的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -74,7 +74,7 @@
     "repairToolsSkillMagazine": {
       "skillName": "craftingRepairTools",
       "name": "修理工具",
-      "desc": "阅读[DECEA3]巧手之家[-]可以提高修理工具的制作品质。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "desc": "阅读巧手之家可以提高修理工具的制作品质。\\n提升高级工程师的战利品几率",
       "maxLevel": 50,
       "recipeTiers": [
         {
@@ -103,7 +103,7 @@
     "salvageToolsSkillMagazine": {
       "skillName": "craftingSalvageTools",
       "name": "废旧工具",
-      "desc": "阅读[DECEA3]趣味分解[-]杂志可以提高废旧工具的制作品质。\\n提升[DECEA3]拾荒行动[-]的战利品几率",
+      "desc": "阅读趣味分解杂志可以提高废旧工具的制作品质。\\n提升拾荒行动的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -141,7 +141,7 @@
     "knucklesSkillMagazine": {
       "skillName": "craftingKnuckles",
       "name": "拳套",
-      "desc": "阅读[DECEA3]愤怒之拳[-]杂志可以提高拳套的制作品质。\\n提升[DECEA3]搏斗家[-]的战利品几率",
+      "desc": "阅读愤怒之拳杂志可以提高拳套的制作品质。\\n提升搏斗家的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -179,7 +179,7 @@
     "bladesSkillMagazine": {
       "skillName": "craftingBlades",
       "name": "刀剑",
-      "desc": "阅读[DECEA3]刀剑客[-]可以提高刀剑的制作品质。\\n提升[DECEA3]深度刀伤[-]的战利品几率",
+      "desc": "阅读刀剑客可以提高刀剑的制作品质。\\n提升深度刀伤的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -217,7 +217,7 @@
     "clubsSkillMagazine": {
       "skillName": "craftingClubs",
       "name": "棍棒",
-      "desc": "阅读[DECEA3]打击高手[-]可以提高棍棒的制作品质。\\n提升[DECEA3]击球手佩特[-]的战利品几率",
+      "desc": "阅读打击高手可以提高棍棒的制作品质。\\n提升击球手佩特的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -255,7 +255,7 @@
     "sledgehammersSkillMagazine": {
       "skillName": "craftingSledgehammers",
       "name": "大锤",
-      "desc": "阅读[DECEA3]锤行天下[-]可以提高大锤的制作品质。\\n提升[DECEA3]头骨粉碎者[-]的战利品几率",
+      "desc": "阅读锤行天下可以提高大锤的制作品质。\\n提升头骨粉碎者的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -293,7 +293,7 @@
     "spearsSkillMagazine": {
       "skillName": "craftingSpears",
       "name": "长矛",
-      "desc": "阅读[DECEA3]尖锐之棍[-]可以提高长矛的制作品质。\\n提升[DECEA3]长矛大师[-]的战利品几率",
+      "desc": "阅读尖锐之棍可以提高长矛的制作品质。\\n提升长矛大师的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -331,7 +331,7 @@
     "bowsSkillMagazine": {
       "skillName": "craftingBows",
       "name": "弓箭",
-      "desc": "阅读[DECEA3]猎手之弓[-]可以提高弓箭的制作品质。\\n提升[DECEA3]弓术[-]的战利品几率",
+      "desc": "阅读猎手之弓可以提高弓箭的制作品质。\\n提升弓术的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -387,7 +387,7 @@
     "handgunsSkillMagazine": {
       "skillName": "craftingHandguns",
       "name": "手枪",
-      "desc": "阅读[DECEA3]手枪弹匣[-]可以提高手枪的制作品质。\\n提升[DECEA3]枪手[-]的战利品几率",
+      "desc": "阅读手枪弹匣可以提高手枪的制作品质。\\n提升枪手的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -443,7 +443,7 @@
     "shotgunsSkillMagazine": {
       "skillName": "craftingShotguns",
       "name": "霰弹枪",
-      "desc": "阅读[DECEA3]霰弹枪周刊[-]可以提高霰弹枪的制作品质。\\n提升[DECEA3]喷子[-]的战利品几率",
+      "desc": "阅读霰弹枪周刊可以提高霰弹枪的制作品质。\\n提升喷子的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -490,7 +490,7 @@
     "riflesSkillMagazine": {
       "skillName": "craftingRifles",
       "name": "步枪",
-      "desc": "阅读[DECEA3]步枪世界[-]可以提高步枪的制作品质。\\n提升[DECEA3]死神之眼[-]的战利品几率",
+      "desc": "阅读步枪世界可以提高步枪的制作品质。\\n提升死神之眼的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -537,7 +537,7 @@
     "machineGunsSkillMagazine": {
       "skillName": "craftingMachineGuns",
       "name": "机枪",
-      "desc": "阅读[DECEA3]战备竞赛[-]可以提高机枪的制作品质。\\n提升[DECEA3]机枪射手[-]的战利品几率",
+      "desc": "阅读战备竞赛可以提高机枪的制作品质。\\n提升机枪射手的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -584,7 +584,7 @@
     "explosivesSkillMagazine": {
       "skillName": "craftingExplosives",
       "name": "爆炸物",
-      "desc": "阅读[DECEA3]炸药库[-]可以解锁多种炸药。\\n提升[DECEA3]爆破专家[-]的战利品几率",
+      "desc": "阅读炸药库可以解锁多种炸药。\\n提升爆破专家的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -676,7 +676,7 @@
     "roboticsSkillMagazine": {
       "skillName": "craftingRobotics",
       "name": "机器人",
-      "desc": "阅读[DECEA3]科技星球[-]可以提高机器人的制作品质。\\n提升[DECEA3]电击处刑官和或/机器人发明者[-]的战利品几率",
+      "desc": "阅读科技星球可以提高机器人的制作品质。\\n提升电击处刑官和或/机器人发明者的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -732,7 +732,7 @@
     "armorSkillMagazine": {
       "skillName": "craftingArmor",
       "name": "护甲",
-      "desc": "阅读[DECEA3]全副武装[-]可以提高护甲的制作品质。\\n通过提高任意[DECEA3]护甲技能[-]来增加获得战利品的几率",
+      "desc": "阅读全副武装可以提高护甲的制作品质。\\n通过提高任意护甲技能来增加获得战利品的几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -827,7 +827,7 @@
     "medicalSkillMagazine": {
       "skillName": "craftingMedical",
       "name": "医疗",
-      "desc": "阅读[DECEA3]医学期刊[-]可解锁不同等级的医疗物品。\\n提升[DECEA3]医师[-]的战利品几率",
+      "desc": "阅读医学期刊可解锁不同等级的医疗物品。\\n提升医师的战利品几率",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -885,7 +885,7 @@
     "foodSkillMagazine": {
       "skillName": "craftingFood",
       "name": "食物",
-      "desc": "阅读[DECEA3]家庭烹饪周刊[-]可解锁不同等级的食物。\\n提升[DECEA3]厨艺大师[-]的战利品几率",
+      "desc": "阅读家庭烹饪周刊可解锁不同等级的食物。\\n提升厨艺大师的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -1064,7 +1064,7 @@
     "seedSkillMagazine": {
       "skillName": "craftingSeeds",
       "name": "种子",
-      "desc": "阅读[DECEA3]南方种植[-]可解锁不同等级的种子。\\n提升[DECEA3]就地取材[-]的战利品几率",
+      "desc": "阅读南方种植可解锁不同等级的种子。\\n提升就地取材的战利品几率",
       "maxLevel": 20,
       "recipeTiers": [
         {
@@ -1133,7 +1133,7 @@
     "electricianSkillMagazine": {
       "skillName": "craftingElectrician",
       "name": "电工",
-      "desc": "阅读[DECEA3]布线101[-]可解锁不同等级的电子物品。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "desc": "阅读布线101可解锁不同等级的电子物品。\\n提升高级工程师的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -1272,7 +1272,7 @@
     "trapsSkillMagazine": {
       "skillName": "craftingTraps",
       "name": "陷阱",
-      "desc": "阅读[DECEA3]电力陷阱[-]可解锁不同等级的陷阱。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "desc": "阅读电力陷阱可解锁不同等级的陷阱。\\n提升高级工程师的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -1327,7 +1327,7 @@
     "workstationSkillMagazine": {
       "skillName": "craftingWorkstations",
       "name": "工作站",
-      "desc": "阅读[DECEA3]锻造指南[-]可解锁不同的工作站及其工具。借助[DECEA3]高级工程[-]可提升获得战利品的几率。[DECEA3]撬锁[-]最多提升至制作第 12 级。",
+      "desc": "阅读锻造指南可解锁不同的工作站及其工具。借助高级工程可提升获得战利品的几率。撬锁最多提升至制作第 12 级。",
       "maxLevel": 75,
       "recipeTiers": [
         {
@@ -1479,7 +1479,7 @@
     "vehiclesSkillMagazine": {
       "skillName": "craftingVehicles",
       "name": "载具",
-      "desc": "阅读[DECEA3]载具大冒险[-]可解锁不同等级的载具。\\n提升[DECEA3]高级机械师[-]的战利品几率",
+      "desc": "阅读载具大冒险可解锁不同等级的载具。\\n提升高级机械师的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
@@ -1571,7 +1571,7 @@
     "adminSkillMagazine": {
       "skillName": "craftingHarvestingTools",
       "name": "收集工具",
-      "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
+      "desc": "阅读工具摘要可以提高收集工具的制作品质。\\n提升矿业69族的战利品几率",
       "maxLevel": 100,
       "recipeTiers": [
         {
