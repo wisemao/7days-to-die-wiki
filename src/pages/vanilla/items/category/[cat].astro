@@ -3,6 +3,11 @@ import Layout from '../../../../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS } from '../../../../utils/data-loader';
 const base = '/7days-to-die-wiki';
 
+// Astro note: module-level function declarations are NOT accessible in component scope.
+// Use const arrow functions for helpers needed in both frontmatter and template.
+const toSlug = (name) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
+const extractSeries = (chn) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
+
 export function getStaticPaths() {
   const { items } = loadData();
   const cats = {};
@@ -18,17 +23,32 @@ export function getStaticPaths() {
 const { catItems, catKey } = Astro.props;
 const catLabel = ITEM_CATEGORY_LABELS[catKey] || catKey;
 
-// For book category: group into sub-sections
-const bookGroups = catKey === 'book' ? (() => {
-  const groups = { '设计图': [], '技能杂志': [], '技能书': [], '奖励': [] };
-  for (const b of catItems) {
-    const id = b.id;
-    if (/Schematic$/.test(id)) groups['设计图'].push(b);
-    else if (/SkillMagazine$/.test(id)) groups['技能杂志'].push(b);
-    else if (/^book/.test(id) || /^questReward/.test(id)) groups['技能书'].push(b);
-    else groups['奖励'].push(b);
+// For book category: group schematics by type, skill books by series
+const schematicSub = catKey === 'book' ? (() => {
+  const sgs = { '武器': [], '护甲': [], '载具': [], '工具': [], '机器人': [], '其他': [] };
+  for (const i of catItems) {
+    if (!/Schematic$/.test(i.id)) continue;
+    const id = i.id;
+    if (/^modGun|^modShotgun|^modMelee/.test(id) || /Gun|Melee|Bow|Shotgun/.test(id)) sgs['武器'].push(i);
+    else if (/^modArmor/.test(id)) sgs['护甲'].push(i);
+    else if (/^modVehicle/.test(id)) sgs['载具'].push(i);
+    else if (/^modFuelTank/.test(id)) sgs['工具'].push(i);
+    else if (/^modRobotic/.test(id)) sgs['机器人'].push(i);
+    else sgs['其他'].push(i);
   }
-  return Object.entries(groups).filter(([,v]) => v.length > 0);
+  return Object.entries(sgs).filter(([,v]) => v.length > 0);
+})() : null;
+
+// For book category: group skill books by series
+const bookSeries = catKey === 'book' ? (() => {
+  const series = {};
+  for (const b of catItems) {
+    if (!/^book/.test(b.id) && !/^questReward/.test(b.id)) continue;
+    const sn = extractSeries(b.name || b.id);
+    if (!series[sn]) series[sn] = [];
+    series[sn].push(b);
+  }
+  return Object.entries(series).sort((a, b) => b[1].length - a[1].length);
 })() : null;
 ---
 
@@ -39,23 +59,62 @@ const bookGroups = catKey === 'book' ? (() => {
 
   {catKey === 'book' ? (
     <>
-      <div class="card-grid">
-        {bookGroups.map(([g, list]) => (
-          <a href={`#${g}`} class="card">
-            <span class="num">{list.length}</span>
-            <span class="lbl">{g}</span>
-          </a>
-        ))}
-      </div>
-      {bookGroups.map(([g, list]) => (
-        <section id={g} style="scroll-margin-top:64px;">
+      {/* ─── Schematics sub-categories ─── */}
+      {schematicSub && (
+        <section id="设计图">
           <h2 style="display:flex;align-items:baseline;gap:8px;">
-            <span>{g}</span>
-            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{list.length} 项</span>
+            <span>🔧 设计图</span>
+            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{schematicSub.reduce((s, [,v]) => s + v.length, 0)} 项</span>
           </h2>
-          <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+          <div class="card-grid">
+            {schematicSub.map(([g, list]) => (
+              <a href={`#${g}`} class="card">
+                <span class="num">{list.length}</span>
+                <span class="lbl">{g}</span>
+              </a>
+            ))}
+          </div>
+          {schematicSub.map(([g, list]) => (
+            <section id={g} style="scroll-margin-top:64px;margin-bottom:20px;">
+              <h3 style="font-size:15px;font-weight:600;margin:16px 0 8px;color:var(--c-text-2);">{g}</h3>
+              <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+            </section>
+          ))}
         </section>
-      ))}
+      )}
+
+      {/* ─── Skill Magazines ─── */}
+      {(() => {
+        const mags = catItems.filter(i => /SkillMagazine$/.test(i.id));
+        if (mags.length === 0) return null;
+        return (
+          <section id="技能杂志">
+            <h2 style="display:flex;align-items:baseline;gap:8px;">
+              <span>📘 技能杂志</span>
+              <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{mags.length} 项</span>
+            </h2>
+            <div class="item-grid">{mags.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+          </section>
+        );
+      })()}
+
+      {/* ─── Skill Book Series ─── */}
+      {bookSeries && (
+        <section id="技能书">
+          <h2 style="display:flex;align-items:baseline;gap:8px;">
+            <span>📚 技能书系列</span>
+            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{bookSeries.reduce((s, [,v]) => s + v.length, 0)} 卷</span>
+          </h2>
+          <div class="card-grid">
+            {bookSeries.map(([name, list]) => (
+              <a href={`${base}/vanilla/book-series/${toSlug(name)}/`} class="card">
+                <span class="num">{list.length}</span>
+                <span class="lbl">{name}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
     </>
   ) : (
     <div class="item-grid">
