@@ -70,7 +70,7 @@ const LABELS = {
   {stars && <p><strong>品质:</strong> {stars}</p>}
   <p><strong>类型:</strong> {categoryLabel}</p>
   <p><strong>堆叠:</strong> {item.stack_size}</p>
-  {item.description && <p><strong>描述:</strong> {item.description.split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+  {item.description && <p><strong>描述:</strong> {item.description.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
 
   {item.stats && Object.keys(item.stats).length > 0 && (
     <>
@@ -107,7 +107,7 @@ const LABELS = {
     <div style="margin-top:24px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-border);border-radius:var(--radius);">
       <h2 style="margin-top:0;font-size:1.1rem;">📖 关联技能</h2>
       <p><strong>{magInfo.name}</strong></p>
-      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
       {magInfo.reqSkill && (
         <p style="font-size:13px;color:var(--c-text-3);">
           需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读

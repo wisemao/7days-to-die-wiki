@@ -19,7 +19,7 @@ skills:
       - level: 5
         effect: 死神之眼
         cost: 5
-    description: 专精于步枪瞄准，用一发精准射入的子弹结束掉你目标的生命。百发百中。\n提高搜刮到[DECEA3]《步枪世界》[-]杂志的概率。
+    description: 专精于步枪瞄准，用一发精准射入的子弹结束掉你目标的生命。百发百中。\n提高搜刮到《步枪世界》杂志的概率。
   - id: perkDemolitionsExpert
     name: 爆破专家
     category: perception
@@ -40,7 +40,7 @@ skills:
       - level: 5
         effect: 爆破专家
         cost: 5
-    description: 专精于使用爆炸物致残与肢解你的敌人。\n提高搜刮到[DECEA3]《炸药库》[-]杂志的概率。
+    description: 专精于使用爆炸物致残与肢解你的敌人。\n提高搜刮到《炸药库》杂志的概率。
   - id: perkJavelinMaster
     name: 长矛大师
     category: perception
@@ -61,7 +61,7 @@ skills:
       - level: 5
         effect: 长矛大师
         cost: 5
-    description: 学习通过强力攻击造成更多伤害，并让你的敌人减速。\n提高搜刮到[DECEA3]《尖锐之棍》[-]杂志的概率。
+    description: 学习通过强力攻击造成更多伤害，并让你的敌人减速。\n提高搜刮到《尖锐之棍》杂志的概率。
   - id: perkFlurryOfPerception
     name: 出招如电
     category: perception
@@ -187,7 +187,7 @@ skills:
       - level: 5
         effect: 大师级拾荒者
         cost: 5
-    description: 杜绝浪费！用扳手、棘齿或冲击起子回收更多资源。\n提高搜刮到[DECEA3]《趣味分解》[-]杂志的概率。
+    description: 杜绝浪费！用扳手、棘齿或冲击起子回收更多资源。\n提高搜刮到《趣味分解》杂志的概率。
   - id: perkPerceptionMastery
     name: 感知专精
     category: perception
@@ -229,7 +229,7 @@ skills:
       - level: 5
         effect: 喷子
         cost: 5
-    description: 专精于霰弹枪，增加伤害、射速和装填速度。\n提高搜刮到[DECEA3]《霰弹枪周刊》[-]杂志的概率。
+    description: 专精于霰弹枪，增加伤害、射速和装填速度。\n提高搜刮到《霰弹枪周刊》杂志的概率。
   - id: perkPummelPete
     name: 击球手佩特
     category: strength
@@ -250,7 +250,7 @@ skills:
       - level: 5
         effect: 击球手佩特
         cost: 5
-    description: 专精于使用棍棒把你的敌人打得不省人事。\n提高搜刮到[DECEA3]《打击高手》[-]杂志的概率。
+    description: 专精于使用棍棒把你的敌人打得不省人事。\n提高搜刮到《打击高手》杂志的概率。
   - id: perkSkullCrusher
     name: 头骨粉碎者
     category: strength
@@ -271,7 +271,7 @@ skills:
       - level: 5
         effect: 头骨粉碎者
         cost: 5
-    description: 专精于使用大锤一类的重武器摧毁敌人和建筑。\n提高搜刮到[DECEA3]《锤行天下》[-]杂志的概率。
+    description: 专精于使用大锤一类的重武器摧毁敌人和建筑。\n提高搜刮到《锤行天下》杂志的概率。
   - id: perkGrandSlam
     name: 满垒本垒打
     category: strength
@@ -394,7 +394,7 @@ skills:
       - level: 5
         effect: 矿业69族
         cost: 5
-    description: 增强工具伤害，更迅速地处理岩石和树木，最大程度提高采矿效率。\n提高搜刮到[DECEA3]《工具文摘》[-]杂志的概率。
+    description: 增强工具伤害，更迅速地处理岩石和树木，最大程度提高采矿效率。\n提高搜刮到《工具文摘》杂志的概率。
   - id: perkMotherLode
     name: 母矿
     category: strength
@@ -457,7 +457,7 @@ skills:
       - level: 5
         effect: 多派武术大师
         cost: 5
-    description: 学习武术，用你的双拳来把你的敌人击晕、击倒、缴械或者打残吧。\n提高搜刮到[DECEA3]《愤怒之拳》[-]杂志的概率。
+    description: 学习武术，用你的双拳来把你的敌人击晕、击倒、缴械或者打残吧。\n提高搜刮到《愤怒之拳》杂志的概率。
   - id: perkMachineGunner
     name: 机枪射手
     category: fortitude
@@ -478,7 +478,7 @@ skills:
       - level: 5
         effect: 机枪射手
         cost: 5
-    description: 成为使用突击步枪消灭敌人的突击队员。\n提高搜刮到[DECEA3]《战备竞赛》[-]杂志的概率。
+    description: 成为使用突击步枪消灭敌人的突击队员。\n提高搜刮到《战备竞赛》杂志的概率。
   - id: perkFlurryOfFortitude
     name: 无影手
     category: fortitude
@@ -682,7 +682,7 @@ skills:
       - level: 5
         effect: 护林员
         cost: 5
-    description: 使用弓弩的大师。\n提高搜刮到[DECEA3]《猎人之弓》[-]杂志的概率。
+    description: 使用弓弩的大师。\n提高搜刮到《猎人之弓》杂志的概率。
   - id: perkGunslinger
     name: 枪手
     category: agility
@@ -703,7 +703,7 @@ skills:
       - level: 5
         effect: 枪手
         cost: 5
-    description: 以老牌做法解决你们的争端，在后启示录时代成为一个枪手。使用手枪和冲锋枪的大师。\n提高搜刮到[DECEA3]《手枪弹匣》[-]的概率。
+    description: 以老牌做法解决你们的争端，在后启示录时代成为一个枪手。使用手枪和冲锋枪的大师。\n提高搜刮到《手枪弹匣》的概率。
   - id: perkDeepCuts
     name: 深度刀伤
     category: agility
@@ -724,7 +724,7 @@ skills:
       - level: 5
         effect: 武士
         cost: 5
-    description: 专精于使用匕首或是砍刀这类带刃武器，让你的敌人血流不止而死吧。\n提高搜刮到[DECEA3]《匕首男孩》[-]杂志的概率。
+    description: 专精于使用匕首或是砍刀这类带刃武器，让你的敌人血流不止而死吧。\n提高搜刮到《匕首男孩》杂志的概率。
   - id: perkFlurryOfAgility
     name: 旋风斩
     category: agility
@@ -892,7 +892,7 @@ skills:
       - level: 5
         effect: 电击处刑官
         cost: 5
-    description: 学习如何高效使用短棒。能更轻易地俘获你的敌人，也能造成更多伤害。\n提高搜刮到[DECEA3]《科技星球》[-]杂志的概率。
+    description: 学习如何高效使用短棒。能更轻易地俘获你的敌人，也能造成更多伤害。\n提高搜刮到《科技星球》杂志的概率。
   - id: perkTurrets
     name: 机器人发明者
     category: intellect
@@ -913,7 +913,7 @@ skills:
       - level: 5
         effect: 机器人专家
         cost: 5
-    description: 你对机器人非常着迷。学习使用和部署机器人武器。\n提高搜刮到[DECEA3]《科技星球》[-]杂志的概率。
+    description: 你对机器人非常着迷。学习使用和部署机器人武器。\n提高搜刮到《科技星球》杂志的概率。
   - id: perkFlurryOfIntellect
     name: 精准攻击
     category: intellect
@@ -1018,7 +1018,7 @@ skills:
       - level: 5
         effect: 安乐师
         cost: 5
-    description: 能更有效地使用药物与治疗物品。\n提高搜刮到[DECEA3]《医学期刊》[-]杂志的概率。
+    description: 能更有效地使用药物与治疗物品。\n提高搜刮到《医学期刊》杂志的概率。
   - id: perkAdvancedEngineering
     name: 高级工程师
     category: intellect
@@ -1039,7 +1039,7 @@ skills:
       - level: 5
         effect: 高级工程师
         cost: 5
-    description: 在工作站以更低的成本加速制造高级物品。提高搜刮到[DECEA3]《电力陷阱》、《锻造指南》《巧手之家》《布线 101》[-]杂志的概率。
+    description: 在工作站以更低的成本加速制造高级物品。提高搜刮到《电力陷阱》、《锻造指南》《巧手之家》《布线 101》杂志的概率。
   - id: perkGreaseMonkey
     name: 修理油猴
     category: intellect
@@ -1060,7 +1060,7 @@ skills:
       - level: 5
         effect: 电子巫师
         cost: 5
-    description: 学习更便宜地利用荒野的垃圾建造载具！无此技能也可以组装载具。\n提高搜刮到[DECEA3]《载具大冒险》[-]杂志的概率。
+    description: 学习更便宜地利用荒野的垃圾建造载具！无此技能也可以组装载具。\n提高搜刮到《载具大冒险》杂志的概率。
   - id: perkIntellectMastery
     name: 智慧专精
     category: intellect
@@ -1099,7 +1099,7 @@ skills:
       - level: 4
         effect: 实战检验
         cost: 5
-    description: 专精轻甲，降低损坏。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的几率。
+    description: 专精轻甲，降低损坏。\n提高搜刮到《全副武装》杂志的几率。
   - id: perkMediumArmor
     name: 中型护甲
     category: generalperks
@@ -1117,7 +1117,7 @@ skills:
       - level: 4
         effect: 大角斗士
         cost: 5
-    description: 专精于中型护甲，降低损坏、体力和移动惩罚。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的概率。
+    description: 专精于中型护甲，降低损坏、体力和移动惩罚。\n提高搜刮到《全副武装》杂志的概率。
   - id: perkHeavyArmor
     name: 重甲护身
     category: generalperks
@@ -1135,7 +1135,7 @@ skills:
       - level: 4
         effect: 金刚不坏
         cost: 5
-    description: 擅长用钢铁保护自己，成为战场上不可阻挡的巨兽。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的概率。
+    description: 擅长用钢铁保护自己，成为战场上不可阻挡的巨兽。\n提高搜刮到《全副武装》杂志的概率。
   - id: perkMasterChef
     name: 厨艺大师
     category: generalperks
@@ -1150,7 +1150,7 @@ skills:
       - level: 3
         effect: 军中伙夫
         cost: 5
-    description: 学习如何成为一名大厨！减少烹饪时间与你最爱食谱所需的食材。提高搜刮到[DECEA3]《家庭烹饪周刊》[-]杂志和食材的概率。
+    description: 学习如何成为一名大厨！减少烹饪时间与你最爱食谱所需的食材。提高搜刮到《家庭烹饪周刊》杂志和食材的概率。
   - id: perkLivingOffTheLand
     name: 就地取材
     category: generalperks
@@ -1171,7 +1171,7 @@ skills:
       - level: 5
         effect: perkLivingOffTheLandRank5Desc
         cost: 5
-    description: 专精于用手或工具收割更多庄稼。\n提高搜刮到[DECEA3]《南方种植》[-]杂志的概率。
+    description: 专精于用手或工具收割更多庄稼。\n提高搜刮到《南方种植》杂志的概率。
   - id: perkLockPicking
     name: 撬锁
     category: generalperks
