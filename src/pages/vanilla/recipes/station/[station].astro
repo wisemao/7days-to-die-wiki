@@ -25,7 +25,7 @@ const stLabel = STATION_LABELS[stationSlug] || stationSlug;
 ---
 
 <Layout title={stLabel} description={`${stLabel} - ${stRecipes.length} 个配方`}>
-  <nav class="breadcrumb"><a href={base}>首页</a> / <a href={`${base}/vanilla/recipes/`}>配方列表</a> / <span>{stLabel}</span></nav>
+  <nav class="breadcrumb"><a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/recipes/`}>配方列表</a><span class="sep">/</span><span>{stLabel}</span></nav>
   <h1>{stLabel}</h1>
   <p class="subtitle">共 {stRecipes.length} 个配方</p>
   <div class="item-grid">
