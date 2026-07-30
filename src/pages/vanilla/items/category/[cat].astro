@@ -17,13 +17,49 @@ export function getStaticPaths() {
 }
 const { catItems, catKey } = Astro.props;
 const catLabel = ITEM_CATEGORY_LABELS[catKey] || catKey;
+
+// For book category: group into sub-sections
+const bookGroups = catKey === 'book' ? (() => {
+  const groups = { '设计图': [], '技能杂志': [], '技能书': [], '奖励': [] };
+  for (const b of catItems) {
+    const id = b.id;
+    if (/Schematic$/.test(id)) groups['设计图'].push(b);
+    else if (/SkillMagazine$/.test(id)) groups['技能杂志'].push(b);
+    else if (/^book/.test(id) || /^questReward/.test(id)) groups['技能书'].push(b);
+    else groups['奖励'].push(b);
+  }
+  return Object.entries(groups).filter(([,v]) => v.length > 0);
+})() : null;
 ---
 
 <Layout title={catLabel} description={`${catLabel} - ${catItems.length} 个物品`}>
   <nav class="breadcrumb"><a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <span>{catLabel}</span></nav>
   <h1>{catLabel}</h1>
   <p class="subtitle">共 {catItems.length} 个物品</p>
-  <div class="item-grid">
-    {catItems.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
-  </div>
+
+  {catKey === 'book' ? (
+    <>
+      <div class="card-grid">
+        {bookGroups.map(([g, list]) => (
+          <a href={`#${g}`} class="card">
+            <span class="num">{list.length}</span>
+            <span class="lbl">{g}</span>
+          </a>
+        ))}
+      </div>
+      {bookGroups.map(([g, list]) => (
+        <section id={g} style="scroll-margin-top:64px;">
+          <h2 style="display:flex;align-items:baseline;gap:8px;">
+            <span>{g}</span>
+            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{list.length} 项</span>
+          </h2>
+          <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+        </section>
+      ))}
+    </>
+  ) : (
+    <div class="item-grid">
+      {catItems.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
+    </div>
+  )}
 </Layout>
