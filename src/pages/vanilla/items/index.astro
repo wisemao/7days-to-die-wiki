@@ -1,54 +1,30 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData, sanitizeId } from '../../../utils/data-loader';
-const { items, ITEM_CATEGORY_LABELS } = loadData();
-
+import { loadData, ITEM_CATEGORY_LABELS } from '../../../utils/data-loader';
+const { items } = loadData();
 const base = '/7days-to-die-wiki';
 
 const catCounts = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
-  catCounts[label] = (catCounts[label] || 0) + 1;
+  if (!catCounts[item.category]) catCounts[item.category] = { key: item.category, label, count: 0 };
+  catCounts[item.category].count++;
 }
-const catEntries = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
-
-// group items by category for the full listing
-const cats = {};
-for (const item of items) {
-  const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
-  if (!cats[label]) cats[label] = [];
-  cats[label].push(item);
-}
-for (const k of Object.keys(cats)) {
-  cats[k].sort((a, b) => a.name.localeCompare(b.name, 'zh'));
-}
+const cats = Object.values(catCounts).sort((a, b) => b.count - a.count);
 ---
 
-<Layout title="物品列表" description={`全部 ${items.length} 个物品`}>
+<Layout title="物品列表" description={`${items.length} 个物品`}>
   <nav class="breadcrumb">
     <a href={base}>首页</a> / <span>物品列表</span>
   </nav>
-
   <h1>物品列表</h1>
-  <p>共 {items.length} 个物品 · 点击分类卡片快速跳转，或从下方列表浏览</p>
-
-  <div class="category-grid">
-    {catEntries.map(([k, v]) => (
-      <a href={`#${k}`} class="category-card">
-        <span class="count">{v}</span>
-        <span class="label">{k}</span>
+  <p class="subtitle">共 {items.length} 个物品 · 选择分类浏览</p>
+  <div class="card-grid">
+    {cats.map(c => (
+      <a href={`${base}/vanilla/items/category/${c.key}/`} class="card">
+        <span class="num">{c.count}</span>
+        <span class="lbl">{c.label}</span>
       </a>
     ))}
   </div>
-
-  {catEntries.map(([k, v]) => (
-    <section class="cat-section" id={k}>
-      <h2><a href={`#${k}`} style="color:inherit;text-decoration:none;">{k}</a> <span style="font-size:14px;font-weight:400;color:#999;">({v})</span></h2>
-      <div class="item-list">
-        {cats[k].map(item => (
-          <a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>
-        ))}
-      </div>
-    </section>
-  ))}
 </Layout>

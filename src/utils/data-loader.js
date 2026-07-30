@@ -5,19 +5,19 @@ import { join } from 'path';
 // process.cwd() 在 Astro build 时指向项目根目录
 const DATA_DIR = join(process.cwd(), 'data', 'vanilla');
 
-const ATTR_LABELS = {
+export const ATTR_LABELS = {
   strength: '力量', fortitude: '强壮', perception: '感知',
   agility: '敏捷', intellect: '智力',
 };
 
-const ITEM_CATEGORY_LABELS = {
+export const ITEM_CATEGORY_LABELS = {
   tool: '工具', melee_weapon: '近战武器', ranged_weapon: '远程武器',
   armor: '护甲', food: '食物', medical: '医疗', material: '材料',
   ammo: '弹药', book: '书籍', vehicle: '载具', trap: '陷阱',
   accessory: '配件', consumable: '消耗品', quest_item: '任务物品',
 };
 
-const ZOMBIE_CATEGORY_LABELS = {
+export const ZOMBIE_CATEGORY_LABELS = {
   humanoid: '人形', animal: '动物', special: '特殊',
 };
 
