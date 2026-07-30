@@ -22,7 +22,6 @@ jobs:
         with:
           node-version: 20
       - run: npm ci
-      - run: node --version && npx astro --version
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
