@@ -4,16 +4,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs",
-    "generate": "node scripts/generate.js",
+    "dev": "astro dev",
+    "build": "astro build && npx pagefind --site dist --glob \"**/*.html\"",
+    "preview": "astro preview",
     "import": "node scripts/import/import-all.js"
   },
   "devDependencies": {
-    "vitepress": "^1.6.4"
+    "@astrojs/mdx": "^7.0.5",
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^7.1.5"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "pagefind": "^1.5.2"
   }
 }

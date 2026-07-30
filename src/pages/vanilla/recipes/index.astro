@@ -1,0 +1,19 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { recipes } = loadData();
+const stations = {};
+for (const r of recipes) {
+  const s = r.station || '背包合成';
+  stations[s] = (stations[s] || 0) + 1;
+}
+---
+
+<Layout title="配方列表" description={`全部 ${recipes.length} 个配方`}>
+  <h1>配方列表</h1>
+  <p>共 {recipes.length} 个配方</p>
+  <table><tr><th>工作站</th><th>数量</th></tr>
+    {Object.entries(stations).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
+  </table>
+  <p>从侧边栏或搜索查找具体配方。</p>
+</Layout>

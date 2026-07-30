@@ -1,0 +1,51 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData, sanitizeId } from '../../../utils/data-loader';
+export function getStaticPaths() {
+  const { zombies } = loadData();
+  return zombies.map(z => ({ params: { id: z._sanitizedId }, props: { zombie: z } }));
+}
+const { zombie } = Astro.props;
+const { ZOMBIE_CATEGORY_LABELS, resolveItemName, getItemLink } = loadData();
+const catLabel = ZOMBIE_CATEGORY_LABELS[zombie.category] || zombie.category;
+const hasLoot = zombie.loot && zombie.loot.length > 0;
+const hasWeakness = zombie.weakness && zombie.weakness.length > 0;
+const hasSpawn = zombie.spawn;
+const hp = zombie.hp?.toString?.()?.startsWith?.('^') ? '?' : zombie.hp;
+---
+
+<Layout title={zombie.name} description={`${zombie.name} - ${catLabel}僵尸`}>
+  <h1>{zombie.name}</h1>
+  <p><strong>类型:</strong> {catLabel} | <strong>等级:</strong> {zombie.tier} | <strong>HP:</strong> {hp}</p>
+
+  <h2>属性</h2>
+  <table><tr><th>属性</th><th>值</th></tr>
+    <tr><td>步行速度</td><td>{zombie.speed?.walk}</td></tr>
+    <tr><td>奔跑速度</td><td>{zombie.speed?.run}</td></tr>
+    <tr><td>近战伤害</td><td>{zombie.damage?.melee}</td></tr>
+    {zombie.damage?.bleeding_chance && <tr><td>出血概率</td><td>{zombie.damage.bleeding_chance}</td></tr>}
+    {zombie.damage?.armor_penetration && <tr><td>护甲穿透</td><td>{zombie.damage.armor_penetration}</td></tr>}
+    <tr><td>经验值</td><td>{zombie.experience}</td></tr>
+  </table>
+
+  {hasLoot && (<>
+    <h2>掉落物</h2>
+    <table><tr><th>物品</th><th>数量</th><th>概率</th></tr>
+      {zombie.loot.map(l => {
+        const link = getItemLink(l.item_id);
+        const name = resolveItemName(l.item_id);
+        return <tr><td>{link ? <a href={link}>{name}</a> : name}</td><td>{l.count}</td><td>{l.chance}</td></tr>;
+      })}
+    </table>
+  </>)}
+
+  {hasWeakness && (<>
+    <h2>弱点</h2>
+    <ul>{zombie.weakness.map(w => Object.entries(w).map(([k, v]) => <li>{k} {v}x</li>))}</ul>
+  </>)}
+
+  {hasSpawn && (<>
+    <h2>刷新</h2>
+    <p>生物群系: {zombie.spawn.biomes || '-'} | 时间: {zombie.spawn.time || '-'} | 区域: {zombie.spawn.groups || '-'}</p>
+  </>)}
+</Layout>

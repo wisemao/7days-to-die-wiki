@@ -15,7 +15,7 @@ items:
       harvest_count: 0.7
       dismember_chance: 0.05
   - id: meleeToolRepairT0TazasStoneAxe
-    name: 塔扎石斧
+    name: 塔萨的石斧
     category: tool
     stack_size: 1
     tier: 200
@@ -60,7 +60,7 @@ items:
       reload_speed: 1
       mod_slots: 0
   - id: meleeToolAxeT1IronFireaxe
-    name: 铁消防斧
+    name: 铁斧
     category: tool
     stack_size: 1
     tier: 500
@@ -89,7 +89,7 @@ items:
       exp_gain: -0.1
       harvest_count: 0.7
   - id: meleeToolPickT1IronPickaxe
-    name: 铁镐
+    name: 铁制鹤嘴锄
     category: tool
     stack_size: 1
     tier: 500
@@ -102,7 +102,7 @@ items:
       damage: 1
       block_damage: 1
   - id: meleeToolPickT2SteelPickaxe
-    name: 钢镐
+    name: 钢制鹤嘴锄
     category: tool
     stack_size: 1
     tier: 1100
@@ -116,7 +116,7 @@ items:
       block_damage: 1.25
       exp_gain: -0.1
   - id: meleeToolShovelT0StoneShovel
-    name: 石锹
+    name: 石铲
     category: tool
     stack_size: 1
     tier: 200
@@ -129,7 +129,7 @@ items:
       damage: 1.25
       block_damage: 1.25
   - id: meleeToolShovelT1IronShovel
-    name: 铁锹
+    name: 铁铲
     category: tool
     stack_size: 1
     tier: 500
@@ -142,7 +142,7 @@ items:
       damage: 1.25
       block_damage: 1.25
   - id: meleeToolShovelT2SteelShovel
-    name: 钢锹
+    name: 钢铲
     category: tool
     stack_size: 1
     icon: meleeToolShovelT1IronShovel
@@ -212,7 +212,7 @@ items:
       block_damage: 1
       harvest_count: 1
   - id: meleeToolSalvageT2Ratchet
-    name: 棘轮扳手
+    name: 棘齿
     category: tool
     stack_size: 1
     tier: 900
@@ -241,7 +241,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT0BoneKnife
     name: 骨刀
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -255,7 +255,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT1HuntingKnife
     name: 猎刀
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -269,7 +269,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT1CandyKnife
     name: 拐杖糖刀
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -283,7 +283,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT3Machete
     name: 砍刀
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -298,7 +298,7 @@ items:
       dismember_chance: 1
   - id: meleeWpnClubT0WoodenClub
     name: 木棒
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -312,7 +312,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT1BaseballBat
     name: 球棒
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -326,7 +326,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT1CandyClub
     name: 拐杖糖棍棒
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -340,7 +340,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT3SteelClub
     name: 钢棍
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -354,7 +354,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnBatonT0PipeBaton
     name: 铁管棒
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -368,7 +368,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnBatonT2StunBaton
     name: 电击棒
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -381,12 +381,12 @@ items:
       block_damage: 1
       harvest_count: -0.75
   - id: meleeWpnBatonT3PlasmaBaton
-    name: 等离子警棍
+    name: Plasma Baton
     category: material
     stack_size: 1
   - id: meleeWpnSpearT0StoneSpear
     name: 石矛
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -400,7 +400,7 @@ items:
       penetration: 1
   - id: meleeWpnSpearT1IronSpear
     name: 铁矛
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -414,7 +414,7 @@ items:
       penetration: 1
   - id: meleeWpnSpearT3SteelSpear
     name: 钢矛
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -428,7 +428,7 @@ items:
       penetration: 1
   - id: meleeWpnSledgeT0StoneSledgehammer
     name: 石质大锤
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -443,7 +443,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnSledgeT1IronSledgehammer
     name: 铁质大锤
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -458,7 +458,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnSledgeT3SteelSledgehammer
     name: 钢质大锤
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -473,7 +473,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnKnucklesT0LeatherKnuckles
     name: 拳手绑带
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -486,7 +486,7 @@ items:
       block_damage: 1
   - id: meleeWpnKnucklesT1IronKnuckles
     name: 铁质拳套
-    category: melee_weapon
+    category: ranged_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -498,8 +498,8 @@ items:
       damage: 1
       block_damage: 1
   - id: meleeWpnKnucklesT3SteelKnuckles
-    name: 钢质拳套
-    category: melee_weapon
+    name: 钢质指虎
+    category: ranged_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -539,7 +539,7 @@ items:
       mod_slots: 0
       cold_resistance: 20
   - id: meleeToolWireTool
-    name: 钢丝钳
+    name: 电线工具
     category: tool
     stack_size: 1
     tier: 200
@@ -556,7 +556,7 @@ items:
       spread_vertical: 0
       spread_horizontal: 0
   - id: gunHandgunT0PipePistol
-    name: 铁管手枪
+    name: gunHandgunT0PipePistol
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -574,7 +574,7 @@ items:
       spread_horizontal: 1.5
       durability: 100
   - id: gunHandgunT1Pistol
-    name: 手枪
+    name: gunHandgunT1Pistol
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -592,7 +592,7 @@ items:
       spread_horizontal: 1.5
       durability: 300
   - id: gunHandgunT3SMG5
-    name: 冲锋枪5型
+    name: gunHandgunT3SMG5
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -610,7 +610,7 @@ items:
       spread_horizontal: 1.35
       durability: 500
   - id: gunHandgunT2Magnum44
-    name: 马格南
+    name: gunHandgunT2Magnum44
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -628,7 +628,7 @@ items:
       spread_horizontal: 1.3
       durability: 400
   - id: gunHandgunT3DesertVulture
-    name: 沙漠秃鹫
+    name: gunHandgunT3DesertVulture
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -646,7 +646,7 @@ items:
       spread_horizontal: 1.3
       durability: 500
   - id: gunShotgunT0PipeShotgun
-    name: 铁管霰弹枪
+    name: gunShotgunT0PipeShotgun
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -662,7 +662,7 @@ items:
       spread_horizontal: 0.07
       durability: 100
   - id: gunShotgunT1DoubleBarrel
-    name: 双管霰弹枪
+    name: gunShotgunT1DoubleBarrel
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -676,7 +676,7 @@ items:
       block_damage: 0.15
       durability: 200
   - id: gunShotgunT2PumpShotgun
-    name: 泵动霰弹枪
+    name: gunShotgunT2PumpShotgun
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -690,7 +690,7 @@ items:
       block_damage: 0.15
       durability: 400
   - id: gunShotgunT3AutoShotgun
-    name: 自动霰弹枪
+    name: gunShotgunT3AutoShotgun
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -704,7 +704,7 @@ items:
       block_damage: 0.15
       durability: 700
   - id: gunRifleT0PipeRifle
-    name: 铁管步枪
+    name: gunRifleT0PipeRifle
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -722,7 +722,7 @@ items:
       spread_horizontal: 5.7
       durability: 100
   - id: gunRifleT1HuntingRifle
-    name: 狩猎步枪
+    name: gunRifleT1HuntingRifle
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -740,7 +740,7 @@ items:
       spread_horizontal: 5
       durability: 200
   - id: gunRifleT2LeverActionRifle
-    name: 杠杆步枪
+    name: gunRifleT2LeverActionRifle
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -758,7 +758,7 @@ items:
       spread_horizontal: 6
       durability: 400
   - id: gunRifleT3SniperRifle
-    name: 狙击步枪
+    name: gunRifleT3SniperRifle
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -776,7 +776,7 @@ items:
       spread_horizontal: 6
       durability: 700
   - id: gunMGT0PipeMachineGun
-    name: 铁管机枪
+    name: gunMGT0PipeMachineGun
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -794,7 +794,7 @@ items:
       durability: 100
       mod_slots: 1
   - id: gunMGT1AK47
-    name: AK-47突击步枪
+    name: gunMGT1AK47
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -812,7 +812,7 @@ items:
       durability: 200
       mod_slots: 2
   - id: gunMGT2TacticalAR
-    name: 战术步枪
+    name: gunMGT2TacticalAR
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -830,7 +830,7 @@ items:
       durability: 400
       mod_slots: 3
   - id: gunMGT3M60
-    name: M60机枪
+    name: gunMGT3M60
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -848,7 +848,7 @@ items:
       durability: 700
       mod_slots: 4
   - id: gunExplosivesT3RocketLauncher
-    name: 火箭筒
+    name: gunExplosivesT3RocketLauncher
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -866,7 +866,7 @@ items:
       spread_horizontal: 7
       durability: 100
   - id: gunBowT0PrimitiveBow
-    name: 原始弓
+    name: gunBowT0PrimitiveBow
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -885,7 +885,7 @@ items:
       durability: 100
       mod_slots: 1
   - id: gunBowT1WoodenBow
-    name: 木弓
+    name: gunBowT1WoodenBow
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -904,7 +904,7 @@ items:
       durability: 200
       mod_slots: 2
   - id: gunBowT3CompoundBow
-    name: 复合弓
+    name: gunBowT3CompoundBow
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -922,7 +922,7 @@ items:
       durability: 350
       mod_slots: 3
   - id: gunBowT1IronCrossbow
-    name: 铁弩
+    name: gunBowT1IronCrossbow
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -940,7 +940,7 @@ items:
       durability: 200
       mod_slots: 2
   - id: gunBowT1DevCrossbow
-    name: 开发者弩
+    name: gunBowT1DevCrossbow
     category: material
     stack_size: 1
     stats:
@@ -951,7 +951,7 @@ items:
       spread_vertical: 1
       spread_horizontal: 1
   - id: gunBowT3CompoundCrossbow
-    name: 复合弩
+    name: gunBowT3CompoundCrossbow
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -969,7 +969,7 @@ items:
       durability: 350
       mod_slots: 3
   - id: gunBotT1JunkSledge
-    name: 垃圾投掷机器人
+    name: gunBotT1JunkSledge
     category: ranged_weapon
     stack_size: 1
     tier: 1000
@@ -987,7 +987,7 @@ items:
       mod_slots: 1
       harvest_count: -0.75
   - id: gunBotT2JunkTurret
-    name: 垃圾炮塔
+    name: gunBotT2JunkTurret
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -1001,7 +1001,7 @@ items:
       durability: 300
       mod_slots: 1
   - id: gunBotT3JunkDrone
-    name: 垃圾无人机
+    name: gunBotT3JunkDrone
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -1017,14 +1017,14 @@ items:
       spread_vertical: 0
       spread_horizontal: 0
   - id: meleeHandMaster
-    name: 徒手攻击（管理员）
+    name: meleeHandMaster
     category: melee_weapon
     stack_size: 1
     icon: missingIcon
     stats:
       damage_falloff: 1.65
   - id: meleeHandPlayer
-    name: 徒手攻击（玩家）
+    name: meleeHandPlayer
     category: melee_weapon
     stack_size: 1
     description: lblContextActionDrink
@@ -1035,7 +1035,7 @@ items:
       stamina_cost: 15.8
       range: 2
   - id: meleeHandZombie01
-    name: 僵尸攻击
+    name: meleeHandZombie01
     category: material
     stack_size: 1
     stats:
@@ -1044,62 +1044,62 @@ items:
       mod_slots: 0
       buff_chance: 0.15
   - id: meleeHandZombieTest
-    name: 测试僵尸攻击
+    name: meleeHandZombieTest
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       damage: 0
   - id: meleeHandZombieBalancingDummy
-    name: 平衡假人
+    name: meleeHandZombieBalancingDummy
     category: material
     stack_size: 1
   - id: meleeHandZombie02
-    name: 僵尸攻击2
+    name: meleeHandZombie02
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 30
   - id: meleeHandZombieFeral
-    name: 狂野僵尸攻击
+    name: meleeHandZombieFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombie02Feral
-    name: 狂野僵尸攻击
+    name: meleeHandZombie02Feral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieCharged
-    name: 冲锋僵尸攻击
+    name: meleeHandZombieCharged
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieInfernal
-    name: 地狱僵尸攻击
+    name: meleeHandZombieInfernal
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieShort
-    name: 矮个僵尸攻击
+    name: meleeHandZombieShort
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       damage: 10
   - id: meleeHandZombieShortFeral
-    name: 矮个狂野僵尸攻击
+    name: meleeHandZombieShortFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieBurning
-    name: 燃烧僵尸攻击
+    name: meleeHandZombieBurning
     category: material
     stack_size: 1
     stats:
@@ -1107,7 +1107,7 @@ items:
       attacks_per_min: 75
       buff_chance: 0.15
   - id: meleeHandZombieBurningFeral
-    name: 燃烧狂野僵尸攻击
+    name: meleeHandZombieBurningFeral
     category: material
     stack_size: 1
     stats:
@@ -1115,28 +1115,28 @@ items:
       attacks_per_min: 75
       buff_chance: 0.25
   - id: meleeHandZombieBurningCharged
-    name: 燃烧冲锋僵尸攻击
+    name: meleeHandZombieBurningCharged
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       buff_chance: 0.25
   - id: meleeHandZombieBurningInfernal
-    name: 燃烧地狱僵尸攻击
+    name: meleeHandZombieBurningInfernal
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       buff_chance: 0.25
   - id: meleeHandZombieBurningCrawler
-    name: 燃烧爬行僵尸攻击
+    name: meleeHandZombieBurningCrawler
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 30
   - id: meleeHandZombieCop
-    name: 警察僵尸攻击
+    name: meleeHandZombieCop
     category: material
     stack_size: 1
     stats:
@@ -1149,7 +1149,7 @@ items:
       spread_vertical: 2
       spread_horizontal: 4
   - id: ammoProjectileZombieVomit
-    name: 僵尸呕吐物投射物
+    name: ammoProjectileZombieVomit
     category: material
     stack_size: 1
     icon: missingIcon
@@ -1157,7 +1157,7 @@ items:
       mod_slots: 0
       buff_chance: 0.3
   - id: meleeHandZombieCopFeral
-    name: 狂野警察僵尸攻击
+    name: meleeHandZombieCopFeral
     category: material
     stack_size: 1
     stats:
@@ -1167,7 +1167,7 @@ items:
       spread_vertical: 4
       spread_horizontal: 10
   - id: ammoProjectileZombieVomitFeral
-    name: 狂野僵尸呕吐物投射物
+    name: ammoProjectileZombieVomitFeral
     category: material
     stack_size: 1
     icon: missingIcon
@@ -1176,7 +1176,7 @@ items:
       block_damage: 105
       damage: 1
   - id: meleeHandZombieCopRadiated
-    name: 辐射警察僵尸攻击
+    name: meleeHandZombieCopRadiated
     category: material
     stack_size: 1
     stats:
@@ -1186,7 +1186,7 @@ items:
       spread_vertical: 10
       spread_horizontal: 40
   - id: ammoProjectileZombieVomitRadiated
-    name: 辐射僵尸呕吐物投射物
+    name: ammoProjectileZombieVomitRadiated
     category: material
     stack_size: 1
     icon: missingIcon
@@ -1195,7 +1195,7 @@ items:
       block_damage: 145
       damage: 1
   - id: meleeHandzombieMutated
-    name: 变异僵尸攻击
+    name: meleeHandzombieMutated
     category: material
     stack_size: 1
     stats:
@@ -1207,7 +1207,7 @@ items:
       spread_horizontal: 90
       spread_vertical: 30
   - id: meleeHandzombieMutatedFeral
-    name: 变异狂野僵尸攻击
+    name: meleeHandzombieMutatedFeral
     category: material
     stack_size: 1
     stats:
@@ -1219,7 +1219,7 @@ items:
       spread_horizontal: 90
       spread_vertical: 30
   - id: meleeHandzombieMutatedRadiated
-    name: 变异辐射僵尸攻击
+    name: meleeHandzombieMutatedRadiated
     category: material
     stack_size: 1
     stats:
@@ -1232,7 +1232,7 @@ items:
       spread_horizontal: 21
       spread_vertical: 38
   - id: meleeHandzombieMutatedCharged
-    name: 变异冲锋僵尸攻击
+    name: meleeHandzombieMutatedCharged
     category: material
     stack_size: 1
     stats:
@@ -1244,7 +1244,7 @@ items:
       spread_horizontal: 13
       spread_vertical: 27
   - id: meleeHandzombieMutatedInfernal
-    name: 变异地狱僵尸攻击
+    name: meleeHandzombieMutatedInfernal
     category: material
     stack_size: 1
     stats:
@@ -1257,7 +1257,7 @@ items:
       spread_horizontal: 30
       spread_vertical: 30
   - id: ammoProjectileZombieMutated
-    name: 变异僵尸投射物
+    name: ammoProjectileZombieMutated
     category: material
     stack_size: 1
     icon: missingIcon
@@ -1265,29 +1265,29 @@ items:
       mod_slots: 0
       buff_chance: 0.3
   - id: ammoProjectileZombieMutatedFast
-    name: 快速变异僵尸投射物
+    name: ammoProjectileZombieMutatedFast
     category: material
     stack_size: 1
   - id: meleeHandZombieRancher
-    name: 牧场主僵尸攻击
+    name: meleeHandZombieRancher
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieRancherFeral
-    name: 牧场主狂野僵尸攻击
+    name: meleeHandZombieRancherFeral
     category: material
     stack_size: 1
   - id: meleeHandZombieRancherCharged
-    name: 牧场主冲锋僵尸攻击
+    name: meleeHandZombieRancherCharged
     category: material
     stack_size: 1
   - id: meleeHandZombieRancherInfernal
-    name: 牧场主地狱僵尸攻击
+    name: meleeHandZombieRancherInfernal
     category: material
     stack_size: 1
   - id: meleeHandZombieChuck
-    name: 查克僵尸攻击
+    name: meleeHandZombieChuck
     category: material
     stack_size: 1
     stats:
@@ -1299,7 +1299,7 @@ items:
       spread_vertical: 2
       spread_horizontal: 4
   - id: meleeHandZombieChuckFeral
-    name: 查克狂野僵尸攻击
+    name: meleeHandZombieChuckFeral
     category: material
     stack_size: 1
     stats:
@@ -1311,7 +1311,7 @@ items:
       spread_vertical: 2
       spread_horizontal: 4
   - id: meleeHandZombieChuckCharged
-    name: 查克冲锋僵尸攻击
+    name: meleeHandZombieChuckCharged
     category: material
     stack_size: 1
     stats:
@@ -1323,7 +1323,7 @@ items:
       spread_vertical: 2
       spread_horizontal: 4
   - id: meleeHandZombieChuckInfernal
-    name: 查克地狱僵尸攻击
+    name: meleeHandZombieChuckInfernal
     category: material
     stack_size: 1
     stats:
@@ -1335,151 +1335,151 @@ items:
       spread_vertical: 2
       spread_horizontal: 4
   - id: ammoProjectileZombieBoulder
-    name: 僵尸巨石投射物
+    name: ammoProjectileZombieBoulder
     category: material
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderFeral
-    name: 狂野僵尸巨石投射物
+    name: ammoProjectileZombieBoulderFeral
     category: material
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderCharged
-    name: 冲锋僵尸巨石投射物
+    name: ammoProjectileZombieBoulderCharged
     category: material
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderInfernal
-    name: 地狱僵尸巨石投射物
+    name: ammoProjectileZombieBoulderInfernal
     category: material
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: meleeHandAnimalZombieDog
-    name: 僵尸狗攻击
+    name: meleeHandAnimalZombieDog
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 85
   - id: meleeHandZombieStrong
-    name: 强壮僵尸攻击
+    name: meleeHandZombieStrong
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombieDemolition
-    name: 爆破僵尸攻击
+    name: meleeHandZombieDemolition
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombieStrongFeral
-    name: 强壮狂野僵尸攻击
+    name: meleeHandZombieStrongFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandAnimalBear
-    name: 熊攻击
+    name: meleeHandAnimalBear
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 40
   - id: meleeHandAnimalLittleBear
-    name: 幼熊攻击
+    name: meleeHandAnimalLittleBear
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 40
   - id: meleeHandAnimalZombieBear
-    name: 僵尸熊攻击
+    name: meleeHandAnimalZombieBear
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 40
   - id: meleeHandZombieHazMat
-    name: 防化僵尸攻击
+    name: meleeHandZombieHazMat
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombieHazMatFeral
-    name: 狂野防化僵尸攻击
+    name: meleeHandZombieHazMatFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombieWorker
-    name: 工人僵尸攻击
+    name: meleeHandZombieWorker
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombieWorkerFeral
-    name: 工人狂野僵尸攻击
+    name: meleeHandZombieWorkerFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombiePartyGirl
-    name: 派对女孩僵尸攻击
+    name: meleeHandZombiePartyGirl
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandZombiePartyGirlFeral
-    name: 狂野派对女孩僵尸攻击
+    name: meleeHandZombiePartyGirlFeral
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandAnimalCoyote
-    name: 郊狼攻击
+    name: meleeHandAnimalCoyote
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 85
   - id: meleeHandAnimalInsectSwarm
-    name: 虫群攻击
+    name: meleeHandAnimalInsectSwarm
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandAnimalBeeSwarm
-    name: 蜂群攻击
+    name: meleeHandAnimalBeeSwarm
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandAnimalZombieVulture
-    name: 僵尸秃鹫攻击
+    name: meleeHandAnimalZombieVulture
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandAnimalZombieVultureRadiated
-    name: 辐射僵尸秃鹫攻击
+    name: meleeHandAnimalZombieVultureRadiated
     category: material
     stack_size: 1
     stats:
@@ -1491,52 +1491,52 @@ items:
       damage_falloff: 50
       range: 50
   - id: ammoProjectileVultureVomit
-    name: 秃鹫呕吐物投射物
+    name: ammoProjectileVultureVomit
     category: material
     stack_size: 1
     icon: missingIcon
     stats:
       buff_chance: 0.2
   - id: meleeHandAnimalSnake
-    name: 蛇攻击
+    name: meleeHandAnimalSnake
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 75
   - id: meleeHandAnimalWolf
-    name: 狼攻击
+    name: meleeHandAnimalWolf
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
       attacks_per_min: 85
   - id: meleeHandAnimalDireWolf
-    name: 恐狼攻击
+    name: meleeHandAnimalDireWolf
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandAnimalMountainLion
-    name: 美洲狮攻击
+    name: meleeHandAnimalMountainLion
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandZombieBoar
-    name: 僵尸野猪攻击
+    name: meleeHandZombieBoar
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: meleeHandBossGrace
-    name: Boss格蕾丝攻击
+    name: meleeHandBossGrace
     category: material
     stack_size: 1
     stats:
       mod_slots: 0
   - id: ammo9mmBulletBall
-    name: 9mm子弹
+    name: 9毫米弹药
     category: ammo
     stack_size: 300
     tier: 9
@@ -1544,7 +1544,7 @@ items:
       damage: 32
       block_damage: 100
   - id: ammo9mmBulletHP
-    name: 9mm空尖弹
+    name: 9毫米空心弹
     category: ammo
     stack_size: 1
     tier: 14
@@ -1552,7 +1552,7 @@ items:
       damage: 35
       block_damage: 100
   - id: ammo9mmBulletAP
-    name: 9mm穿甲弹
+    name: 9毫米穿甲弹
     category: ammo
     stack_size: 1
     tier: 14
@@ -1561,7 +1561,7 @@ items:
       block_damage: 100
       penetration: 1
   - id: ammo44MagnumBulletBall
-    name: .44马格南子弹
+    name: .44马格南弹药
     category: ammo
     stack_size: 1
     tier: 10
@@ -1570,7 +1570,7 @@ items:
       block_damage: 100
       penetration: 1
   - id: ammo44MagnumBulletHP
-    name: .44马格南空尖弹
+    name: .44马格南空心弹
     category: ammo
     stack_size: 1
     tier: 15
@@ -1588,7 +1588,7 @@ items:
       block_damage: 100
       penetration: 1
   - id: ammo762mmBulletBall
-    name: 7.62mm子弹
+    name: 7.62毫米弹药
     category: ammo
     stack_size: 150
     tier: 11
@@ -1596,7 +1596,7 @@ items:
       damage: 47
       block_damage: 100
   - id: ammo762mmBulletHP
-    name: 7.62mm空尖弹
+    name: 7.62毫米马格南空心弹
     category: ammo
     stack_size: 1
     tier: 16
@@ -1604,7 +1604,7 @@ items:
       damage: -1.5
       block_damage: 100
   - id: ammo762mmBulletAP
-    name: 7.62mm穿甲弹
+    name: 7.62毫米穿甲弹
     category: ammo
     stack_size: 1
     tier: 16
@@ -1613,7 +1613,7 @@ items:
       block_damage: 100
       penetration: 1
   - id: ammoShotgunShell
-    name: 霰弹枪弹药
+    name: 霰弹（弹药）
     category: ammo
     stack_size: 150
     tier: 11
@@ -1625,7 +1625,7 @@ items:
       spread_vertical: 4.5
       spread_horizontal: 4.5
   - id: ammoShotgunSlug
-    name: 霰弹枪独头弹
+    name: 霰弹枪穿甲弹（弹药）
     category: ammo
     stack_size: 150
     tier: 20
@@ -1638,7 +1638,7 @@ items:
       spread_horizontal: 2.4
       penetration: 2
   - id: ammoShotgunBreachingSlug
-    name: 破门独头弹
+    name: 霰弹枪拆门弹（弹药）
     category: ammo
     stack_size: 150
     tier: 20
@@ -1650,7 +1650,7 @@ items:
       spread_vertical: 2.4
       spread_horizontal: 2.4
   - id: ammoJunkTurretRegular
-    name: 垃圾炮塔常规弹药
+    name: 机器人炮塔弹药
     category: ammo
     stack_size: 1000
     tier: 3
@@ -1663,7 +1663,7 @@ items:
       spread_vertical: 5
       spread_horizontal: 5
   - id: ammoJunkTurretShell
-    name: 垃圾炮塔霰弹药
+    name: 机器人炮塔霰弹（弹药）
     category: material
     stack_size: 1
     tier: 2
@@ -1677,7 +1677,7 @@ items:
       spread_vertical: 7
       spread_horizontal: 7
   - id: ammoJunkTurretAP
-    name: 垃圾炮塔穿甲弹
+    name: 机器人炮塔穿甲弹
     category: material
     stack_size: 1
     tier: 6
@@ -1691,7 +1691,7 @@ items:
       spread_vertical: 4
       spread_horizontal: 4
   - id: ammoRocketHE
-    name: 高爆火箭弹
+    name: 高爆火箭弹（弹药）
     category: ammo
     stack_size: 20
     tier: 250
@@ -1699,7 +1699,7 @@ items:
       block_damage: 100
       damage: 20
   - id: ammoRocketFrag
-    name: 破片火箭弹
+    name: 火箭弹（弹药）
     category: material
     stack_size: 1
     stats:
@@ -1711,7 +1711,7 @@ items:
     stack_size: 10000
     tier: 30
   - id: ammoArrowStone
-    name: 石箭
+    name: 石箭（弹药）
     category: ammo
     stack_size: 150
     tier: 12
@@ -1719,7 +1719,7 @@ items:
       damage: 0.25
       block_damage: 100
   - id: ammoArrowIron
-    name: 铁箭
+    name: 铁箭（弹药）
     category: ammo
     stack_size: 1
     tier: 25
@@ -1727,7 +1727,7 @@ items:
       damage: 0.25
       block_damage: 100
   - id: ammoArrowSteelAP
-    name: 钢箭穿甲弹
+    name: 钢箭（弹药）
     category: material
     stack_size: 1
     tier: 57
@@ -1735,7 +1735,7 @@ items:
       damage: 0.25
       block_damage: 100
   - id: ammoArrowFlaming
-    name: 燃烧箭
+    name: 燃烧箭（弹药）
     category: material
     stack_size: 1
     tier: 44
@@ -1744,7 +1744,7 @@ items:
       block_damage: 100
       cold_resistance: 10
   - id: ammoArrowExploding
-    name: 爆炸箭
+    name: 爆炸箭（弹药）
     category: ammo
     stack_size: 75
     tier: 65
@@ -1752,7 +1752,7 @@ items:
       block_damage: 100
       damage: 0.25
   - id: ammoCrossbowBoltStone
-    name: 石弩箭
+    name: 石头弩箭（弹药）
     category: ammo
     stack_size: 150
     tier: 12
@@ -1760,7 +1760,7 @@ items:
       damage: 50
       block_damage: 100
   - id: ammoCrossbowBoltIron
-    name: 铁弩箭
+    name: 铁弩箭（弹药）
     category: ammo
     stack_size: 150
     tier: 25
@@ -1768,7 +1768,7 @@ items:
       damage: 59
       block_damage: 100
   - id: ammoCrossbowBoltSteelAP
-    name: 钢弩箭穿甲弹
+    name: 钢弩箭（弹药）
     category: material
     stack_size: 1
     tier: 57
@@ -1776,7 +1776,7 @@ items:
       damage: 63
       block_damage: 100
   - id: ammoCrossbowBoltFlaming
-    name: 燃烧弩箭
+    name: 燃烧弩箭（弹药）
     category: material
     stack_size: 1
     tier: 44
@@ -1793,155 +1793,155 @@ items:
       block_damage: 100
       damage: 250
   - id: ammoBundleMaster
-    name: 弹药捆（管理员）
+    name: ammoBundleMaster
     category: material
     stack_size: 5
     icon: ammo9mmBulletBall
     tier: 900
   - id: ammoBundle9mmBulletBall
-    name: 9mm子弹（捆）
+    name: 一盒9毫米弹药（100）
     category: material
     stack_size: 10
     icon: ammo9mmBulletBall
     tier: 900
   - id: ammoBundle9mmBulletHP
-    name: 9mm空尖弹（捆）
+    name: 一盒9毫米空心弹（100）
     category: material
     stack_size: 10
     icon: ammo9mmBulletHP
     tier: 1400
   - id: ammoBundle9mmBulletAP
-    name: 9mm穿甲弹（捆）
+    name: 一盒9毫米穿甲弹（100）
     category: material
     stack_size: 10
     icon: ammo9mmBulletAP
     tier: 1400
   - id: ammoBundle44MagnumBulletBall
-    name: .44马格南子弹（捆）
+    name: 一盒.44马格南弹药（100）
     category: material
     stack_size: 10
     icon: ammo44MagnumBulletBall
     tier: 1000
   - id: ammoBundle44MagnumBulletHP
-    name: .44马格南空尖弹（捆）
+    name: 一盒.44马格南空心弹（100）
     category: material
     stack_size: 10
     icon: ammo44MagnumBulletHP
     tier: 1500
   - id: ammoBundle44MagnumBulletAP
-    name: .44马格南穿甲弹（捆）
+    name: 一盒.44马格南穿甲弹（100）
     category: material
     stack_size: 10
     icon: ammo44MagnumBulletAP
     tier: 1500
   - id: ammoBundle762mmBulletBall
-    name: 7.62mm子弹（捆）
+    name: 一盒7.62毫米弹药（100）
     category: material
     stack_size: 1
     icon: ammo762mmBulletBall
     tier: 1100
   - id: ammoBundle762mmBulletHP
-    name: 7.62mm空尖弹（捆）
+    name: 一盒7.62毫米马格南空心弹（100）
     category: material
     stack_size: 1
     icon: ammo762mmBulletHp
     tier: 1600
   - id: ammoBundle762mmBulletAP
-    name: 7.62mm穿甲弹（捆）
+    name: 一盒 7.62毫米穿甲弹（100）
     category: material
     stack_size: 1
     icon: ammo762mmBulletAP
     tier: 1600
   - id: ammoBundleShotgunShell
-    name: 霰弹枪弹药（捆）
+    name: 一盒霰弹（100）
     category: material
     stack_size: 1
     icon: ammoShotgunShell
     tier: 1100
   - id: ammoBundleShotgunSlug
-    name: 霰弹枪独头弹（捆）
+    name: 一盒霰弹枪穿甲弹（100）
     category: material
     stack_size: 1
     icon: ammoShotgunSlug
     tier: 2000
   - id: ammoBundleShotgunBreachingSlug
-    name: 破门独头弹（捆）
+    name: 一盒霰弹枪拆门弹（100）
     category: material
     stack_size: 1
     icon: ammoShotgunBreachingSlug
     tier: 2000
   - id: ammoBundleJunkTurretRegular
-    name: 垃圾炮塔常规弹药（盒）
+    name: 机器人炮塔弹药盒（1000 枚）
     category: material
     stack_size: 1
     icon: ammoJunkTurretRegular
     tier: 1000
   - id: ammoBundleJunkTurretShell
-    name: 垃圾炮塔霰弹药（盒）
+    name: 机器人炮塔霰弹弹药盒（1000 枚）
     category: material
     stack_size: 1
     icon: ammoJunkTurretShell
   - id: ammoBundleJunkTurretAP
-    name: 垃圾炮塔穿甲弹（盒）
+    name: 机器人炮塔穿甲弹药盒（1000 枚）
     category: material
     stack_size: 1
     icon: ammoJunkTurretAP
   - id: ammoBundleArrowStone
-    name: 石箭（捆）
+    name: 一盒石箭（100）
     category: material
     stack_size: 1
     icon: ammoArrowStone
     tier: 240
   - id: ammoBundleArrowIron
-    name: 铁箭（捆）
+    name: 一盒铁箭（100）
     category: material
     stack_size: 1
     icon: ammoArrowIron
     tier: 500
   - id: ammoBundleArrowSteelAP
-    name: 钢箭穿甲弹（捆）
+    name: 一盒钢箭（100）
     category: material
     stack_size: 1
     icon: ammoArrowSteelAP
     tier: 1140
   - id: ammoBundleArrowFlaming
-    name: 燃烧箭（捆）
+    name: 一盒燃烧箭（100）
     category: material
     stack_size: 1
     icon: ammoArrowFlaming
     tier: 4400
   - id: ammoBundleArrowExploding
-    name: 爆炸箭（捆）
+    name: 一盒爆炸箭（75）
     category: material
     stack_size: 1
     icon: ammoArrowExploding
     tier: 4125
   - id: ammoBundleCrossbowBoltStone
-    name: 石弩箭（捆）
+    name: 一盒石弩箭（100）
     category: material
     stack_size: 1
     icon: ammoCrossbowBoltStone
     tier: 240
   - id: ammoBundleCrossbowBoltIron
-    name: 铁弩箭（捆）
+    name: 一盒铁弩箭（100）
     category: material
     stack_size: 1
     icon: ammoCrossbowBoltIron
     tier: 500
   - id: ammoBundleCrossbowBoltSteelAP
-    name: 钢弩箭穿甲弹（捆）
+    name: 一盒钢弩箭（100）
     category: material
     stack_size: 1
     icon: ammoCrossbowBoltSteelAP
     tier: 1140
   - id: ammoBundleCrossbowBoltFlaming
-    name: 燃烧弩箭（捆）
+    name: 一盒燃烧弩箭（100）
     category: material
     stack_size: 1
     icon: ammoCrossbowBoltFlaming
     tier: 4400
   - id: ammoBundleCrossbowBoltExploding
-    name: 爆炸弩箭（捆）
+    name: 一盒爆炸弩箭（75）
     category: material
     stack_size: 1
     icon: ammoCrossbowBoltExploding
@@ -2001,38 +2001,38 @@ items:
     icon: resourceGunPowder
     tier: 1000
   - id: thrownAmmoPipeBomb
-    name: 铁管炸弹
+    name: thrownAmmoPipeBomb
     category: ammo
     stack_size: 20
     tier: 50
   - id: thrownGrenadeContact
-    name: 触碰手雷
+    name: thrownGrenadeContact
     category: ammo
     stack_size: 25
     tier: 75
   - id: thrownGrenade
-    name: 手雷
+    name: thrownGrenade
     category: ammo
     stack_size: 1
   - id: thrownTimedCharge
-    name: 定时炸药
+    name: thrownTimedCharge
     category: ammo
     stack_size: 10
     tier: 300
   - id: thrownDynamite
-    name: 炸药
+    name: thrownDynamite
     category: ammo
     stack_size: 10
     tier: 100
   - id: thrownAmmoMolotovCocktail
-    name: 燃烧瓶
+    name: thrownAmmoMolotovCocktail
     category: ammo
     stack_size: 20
     tier: 75
     stats:
       cold_resistance: 10
   - id: ammoDartIron
-    name: 铁飞镖
+    name: 铁飞镖（弹药）
     category: material
     stack_size: 500
     tier: 34
@@ -2040,39 +2040,39 @@ items:
       damage: 45
       block_damage: 2
   - id: partsMaster
-    name: 零件大师
+    name: partsMaster
     category: material
     stack_size: 50
     icon: missingIcon
     tier: 750
   - id: gunMGT1AK47Parts
-    name: AK-47零件
+    name: gunMGT1AK47Parts
     category: material
     stack_size: 50
     tier: 150
   - id: gunHandgunT1PistolParts
-    name: 手枪零件
+    name: gunHandgunT1PistolParts
     category: material
     stack_size: 1
   - id: gunRifleT1HuntingRifleParts
-    name: 狩猎步枪零件
+    name: gunRifleT1HuntingRifleParts
     category: material
     stack_size: 1
   - id: gunShotgunT1DoubleBarrelParts
-    name: 双管霰弹枪零件
+    name: gunShotgunT1DoubleBarrelParts
     category: material
     stack_size: 1
   - id: gunBowT1WoodenBowParts
-    name: 木弓零件
+    name: gunBowT1WoodenBowParts
     category: material
     stack_size: 1
   - id: gunExplosivesT3RocketLauncherParts
-    name: 火箭筒零件
+    name: gunExplosivesT3RocketLauncherParts
     category: material
     stack_size: 1
     tier: 200
   - id: gunBotRoboticsParts
-    name: 机器人零件
+    name: gunBotRoboticsParts
     category: melee_weapon
     stack_size: 1
   - id: meleeWpnBatonT2StunBatonParts
@@ -2105,7 +2105,7 @@ items:
     stack_size: 1
     tier: 200
   - id: meleeToolAllSteelParts
-    name: 全钢零件
+    name: 钢制工具零件
     category: melee_weapon
     stack_size: 1
     tier: 200
@@ -2115,7 +2115,7 @@ items:
     stack_size: 1
     tier: 200
   - id: meleeToolAxeT3ChainsawParts
-    name: 电锯零件
+    name: 电动工具零件
     category: melee_weapon
     stack_size: 1
     tier: 200
@@ -2172,7 +2172,7 @@ items:
     tier: 3000
   - id: vehicleMotorcyclePlaceable
     name: 摩托车
-    category: vehicle
+    category: armor
     stack_size: 1
     tier: 10000
     stats:
@@ -2208,7 +2208,7 @@ items:
     tier: 15000
   - id: vehicleGyrocopterPlaceable
     name: 旋翼机
-    category: vehicle
+    category: armor
     stack_size: 1
     tier: 50000
     stats:
@@ -2223,7 +2223,7 @@ items:
       mod_slots: 4
       durability: 4500
   - id: armorPrimitiveMaster
-    name: 原始护甲大师
+    name: armorPrimitiveMaster
     category: material
     stack_size: 1
     icon: armorLumberjackHelmet
@@ -2273,7 +2273,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
   - id: armorLightMaster
-    name: 轻甲大师
+    name: armorLightMaster
     category: material
     stack_size: 1
     icon: armorLumberjackHelmet
@@ -2515,7 +2515,7 @@ items:
       heat_resistance: 20
       run_speed: 0.02
   - id: armorMediumMaster
-    name: 中甲大师
+    name: armorMediumMaster
     category: material
     stack_size: 1
     icon: armorAssassinHelmet
@@ -2874,7 +2874,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: -0.999
   - id: armorHeavyMaster
-    name: 重甲大师
+    name: armorHeavyMaster
     category: material
     stack_size: 1
     icon: armorRaiderHelmet
@@ -3126,7 +3126,7 @@ items:
       heat_resistance: 20
       loot_stage: 0.02
   - id: armorDLCMaster
-    name: DLC护甲大师
+    name: armorDLCMaster
     category: material
     stack_size: 1
     icon: armorRaiderHelmet
@@ -3351,6 +3351,22 @@ items:
     name: 武士靴子
     category: armor
     stack_size: 1
+  - id: armorBigbeakHelmet
+    name: 巨喙头饰
+    category: armor
+    stack_size: 1
+  - id: armorBigbeakOutfit
+    name: 巨喙装束
+    category: armor
+    stack_size: 1
+  - id: armorBigbeakGloves
+    name: 巨喙手套
+    category: armor
+    stack_size: 1
+  - id: armorBigbeakBoots
+    name: 巨喙靴子
+    category: armor
+    stack_size: 1
   - id: armorMonsterMaskHelmet
     name: 怪物面具
     category: armor
@@ -3384,11 +3400,11 @@ items:
     category: armor
     stack_size: 1
   - id: armorPimpHatBlueHelmet
-    name: 蓝色皮条客帽子
+    name: armorPimpHatBlueHelmet
     category: armor
     stack_size: 1
   - id: armorPimpHatPurpleHelmet
-    name: 紫色皮条客帽子
+    name: armorPimpHatPurpleHelmet
     category: armor
     stack_size: 1
   - id: armorWatcherHelmet
@@ -3472,7 +3488,7 @@ items:
     category: armor
     stack_size: 1
   - id: clothingMaster
-    name: 服装大师
+    name: clothingMaster
     category: material
     stack_size: 1
     icon: clothingHeadT1
@@ -3585,12 +3601,12 @@ items:
     tier: 5
   - id: medicalFirstAidBandage
     name: 急救绷带
-    category: medical
+    category: material
     stack_size: 5
     tier: 15
   - id: medicalFirstAidKit
     name: 急救包
-    category: medical
+    category: material
     stack_size: 5
     tier: 200
   - id: medicalSplint
@@ -3629,7 +3645,7 @@ items:
     tier: 240
   - id: drugSteroids
     name: 类固醇
-    category: consumable
+    category: material
     stack_size: 1
     tier: 250
   - id: drugRecog
@@ -3639,10 +3655,10 @@ items:
     tier: 250
   - id: drugFortBites
     name: 强健宝
-    category: consumable
+    category: material
     stack_size: 1
   - id: foodBurntSmoothie
-    name: 烧焦冰沙
+    name: 黑肺血清
     category: food
     stack_size: 10
     icon: blackLungSerum
@@ -3654,13 +3670,13 @@ items:
     icon: sunstrokeTonic
     tier: 1000
   - id: foodFrostbiteSmoothie
-    name: 冻伤冰沙
+    name: 灼热炖肉
     category: food
     stack_size: 10
     icon: scorcherStew
     tier: 1000
   - id: foodAtomicSmoothie
-    name: 原子冰沙
+    name: 辐射净化剂
     category: food
     stack_size: 10
     icon: falloutFlush
@@ -3672,120 +3688,120 @@ items:
     tier: 100
   - id: drugCovertCats
     name: 隐蔽的猫
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugEyeKandy
     name: 寻宝眼药水
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugHackers
     name: 黑客
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugHealthBar
     name: 能量棒
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugJailBreakers
     name: 越狱者
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugNerdTats
     name: 学霸刺青
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugOhShitzDrops
     name: 该死的坠落
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugRockBusters
     name: 岩石克星
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugSkullCrushers
     name: 头骨粉碎者
-    category: consumable
+    category: material
     stack_size: 1
   - id: drugSugarButts
     name: 烟蒂糖
-    category: consumable
+    category: material
     stack_size: 1
   - id: foodHoney
-    name: 蜂蜜
+    name: 一罐蜂蜜
     category: food
     stack_size: 10
     tier: 80
   - id: foodCanBeef
-    name: 牛肉罐头
+    name: 大份牛肉罐头
     category: food
     stack_size: 10
     tier: 60
   - id: foodCanChicken
     name: 鸡肉罐头
-    category: food
+    category: material
     stack_size: 1
   - id: foodCanLamb
     name: 羊肉罐头
-    category: food
+    category: material
     stack_size: 1
   - id: foodCanCatfood
     name: 猫粮罐头
-    category: food
+    category: material
     stack_size: 1
     tier: 40
   - id: foodCanDogfood
     name: 狗粮罐头
-    category: food
+    category: material
     stack_size: 1
     tier: 40
   - id: foodCanChili
     name: 辣椒罐头
-    category: food
+    category: material
     stack_size: 1
   - id: foodCanTuna
     name: 金枪鱼罐头
-    category: food
+    category: material
     stack_size: 1
     tier: 20
   - id: foodCanSham
-    name: 山寨罐头
-    category: food
+    name: 山威罐头
+    category: material
     stack_size: 1
   - id: foodCanPasta
-    name: 意大利面罐头
-    category: food
+    name: 通心粉罐头
+    category: material
     stack_size: 1
   - id: foodCanSalmon
     name: 三文鱼罐头
-    category: food
+    category: material
     stack_size: 1
   - id: foodCanMiso
-    name: 味噌罐头
-    category: food
+    name: 味增罐头
+    category: material
     stack_size: 1
     tier: 55
   - id: foodCanPeas
     name: 豌豆罐头
-    category: food
+    category: material
     stack_size: 1
     tier: 50
   - id: foodCanPears
-    name: 梨罐头
-    category: food
+    name: 梨子罐头
+    category: material
     stack_size: 1
     tier: 50
   - id: foodCanSoup
-    name: 汤罐头
-    category: food
+    name: 鸡汤
+    category: material
     stack_size: 1
     tier: 55
   - id: foodCanStock
-    name: 高汤罐头
-    category: food
+    name: 浓汤罐头
+    category: material
     stack_size: 1
     tier: 30
   - id: foodCornOnTheCob
-    name: 玉米棒
+    name: 烤玉米
     category: food
     stack_size: 10
     tier: 30
@@ -3795,12 +3811,12 @@ items:
     stack_size: 10
     tier: 16
   - id: foodShamSandwich
-    name: 山寨三明治
+    name: 过期的山威三明治
     category: food
     stack_size: 10
     tier: 5
   - id: foodCharredMeat
-    name: 焦肉
+    name: 烧焦的肉
     category: food
     stack_size: 10
     tier: 20
@@ -3810,17 +3826,37 @@ items:
     stack_size: 10
     tier: 24
   - id: foodBoiledMeat
-    name: 煮肉
+    name: 水煮肉
     category: food
     stack_size: 10
     tier: 52
+  - id: foodChickenWings
+    name: 鸡翅
+    category: food
+    stack_size: 10
+    tier: 24
+  - id: foodChickenNuggets
+    name: 鸡块
+    category: food
+    stack_size: 10
+    tier: 24
+  - id: foodAshChickenStew
+    name: 灰烬鸡肉炖
+    category: food
+    stack_size: 10
+    tier: 134
+  - id: foodRoadrunnerChickenJerky
+    name: 走鹃鸡肉干
+    category: food
+    stack_size: 10
+    tier: 24
   - id: foodMeatStew
     name: 炖肉
     category: food
     stack_size: 10
     tier: 134
   - id: foodSteakAndPotato
-    name: 牛排土豆
+    name: 牛排配土豆
     category: food
     stack_size: 10
     tier: 100
@@ -3835,22 +3871,22 @@ items:
     stack_size: 10
     tier: 100
   - id: foodShamChowder
-    name: 山寨杂烩汤
-    category: food
+    name: 山威杂烩
+    category: material
     stack_size: 1
     tier: 126
   - id: foodHoboStew
-    name: 流浪汉炖菜
+    name: 蔬菜炖肉
     category: food
     stack_size: 10
     tier: 134
   - id: foodFishTacos
-    name: 鱼卷饼
+    name: 鱼肉塔可
     category: food
     stack_size: 10
     tier: 100
   - id: foodChiliDog
-    name: 辣味热狗
+    name: 辣狗
     category: food
     stack_size: 10
     tier: 106
@@ -3880,7 +3916,7 @@ items:
     stack_size: 10
     tier: 124
   - id: foodGumboStew
-    name: 秋葵汤
+    name: 秋葵浓汤
     category: food
     stack_size: 10
     tier: 250
@@ -3895,22 +3931,22 @@ items:
     stack_size: 10
     tier: 250
   - id: foodTunaFishGravyToast
-    name: 金枪鱼酱吐司
+    name: 金枪鱼肉汁吐司
     category: food
     stack_size: 10
     tier: 250
   - id: foodEggBoiled
-    name: 煮鸡蛋
+    name: 水煮蛋
     category: food
     stack_size: 10
     tier: 25
   - id: foodBaconAndEggs
-    name: 培根煎蛋
+    name: 培根鸡蛋
     category: food
     stack_size: 10
     tier: 72
   - id: foodVegetableStew
-    name: 蔬菜炖菜
+    name: 炖杂蔬
     category: food
     stack_size: 10
     tier: 102
@@ -3921,12 +3957,12 @@ items:
     tier: 20
   - id: foodRawMeatBundle
     name: 生肉捆
-    category: food
+    category: material
     stack_size: 10
     icon: foodRawMeatBundle
     tier: 100
   - id: foodRottingFlesh
-    name: 腐烂的肉
+    name: 腐肉
     category: food
     stack_size: 125
     tier: 5
@@ -3936,33 +3972,33 @@ items:
     stack_size: 125
     tier: 15
   - id: foodCornMeal
-    name: 玉米粉
+    name: 粗玉米粉
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropBlueberries
-    name: 蓝莓
+    name: foodCropBlueberries
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropCorn
-    name: 玉米
+    name: foodCropCorn
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropGraceCorn
-    name: 恩典玉米
+    name: foodCropGraceCorn
     category: food
     stack_size: 125
     icon: foodCropCorn
     tier: 200
   - id: foodCropPotato
-    name: 土豆
+    name: foodCropPotato
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropMushrooms
-    name: 蘑菇
+    name: foodCropMushrooms
     category: food
     stack_size: 125
     tier: 10
@@ -3973,39 +4009,39 @@ items:
     icon: foodCropMushrooms
     tier: 50
   - id: foodCropYuccaFruit
-    name: 丝兰果
+    name: foodCropYuccaFruit
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropPumpkin
-    name: 南瓜
+    name: foodCropPumpkin
     category: food
     stack_size: 125
     icon: plantedPumpkin3Harvest
     tier: 10
   - id: drinkCanEmpty
     name: 空罐
-    category: food
+    category: material
     stack_size: 500
     tier: 5
   - id: drinkJarEmpty
-    name: 空瓶
-    category: food
+    name: 空水罐
+    category: material
     stack_size: 10
     tier: 20
   - id: drinkJarRiverWater
-    name: 河水
-    category: food
+    name: 浑浊的水
+    category: material
     stack_size: 10
     tier: 20
   - id: drinkJarBoiledWater
-    name: 开水
-    category: food
+    name: 水
+    category: material
     stack_size: 10
     tier: 40
   - id: drinkJarPureMineralWater
     name: 纯净矿泉水
-    category: food
+    category: material
     stack_size: 10
     tier: 100
   - id: drinkJarYuccaJuice
@@ -4014,7 +4050,7 @@ items:
     stack_size: 10
     tier: 68
   - id: drinkJarGoldenRodTea
-    name: 黄花茶
+    name: 秋麒麟茶
     category: food
     stack_size: 10
     tier: 48
@@ -4029,13 +4065,13 @@ items:
     stack_size: 10
     tier: 48
   - id: drinkYuccaJuiceSmoothie
-    name: 丝兰冰沙
+    name: 丝兰汁果昔
     category: food
     stack_size: 10
     tier: 156
   - id: drinkCanMegaCrush
-    name: 超级粉碎饮料
-    category: food
+    name: 碾压王
+    category: material
     stack_size: 1
     tier: 240
   - id: drinkJarCoffee
@@ -4045,7 +4081,7 @@ items:
     tier: 96
   - id: drinkJarBlackStrapCoffee
     name: 黑带咖啡
-    category: food
+    category: material
     stack_size: 1
     tier: 200
   - id: drinkJarBeer
@@ -4054,23 +4090,23 @@ items:
     stack_size: 10
     tier: 100
   - id: drinkJarGrandpasMoonshine
-    name: 爷爷的私酿酒
+    name: 祖父的私酒
     category: food
     stack_size: 10
     tier: 500
   - id: drinkJarGrandpasAwesomeSauce
-    name: 爷爷的绝赞酱汁
+    name: 祖父的美味酱
     category: food
     stack_size: 10
     tier: 100
   - id: drinkJarGrandpasLearningElixir
-    name: 爷爷的学习灵药
+    name: 祖父的学习妙药
     category: food
     stack_size: 10
     tier: 250
   - id: drinkJarGrandpasForgettingElixir
-    name: 爷爷的遗忘灵药
-    category: food
+    name: 祖父的遗忘妙药
+    category: material
     stack_size: 10
     tier: 2000
   - id: bucketEmpty
@@ -4084,17 +4120,17 @@ items:
     stack_size: 1
     tier: 88
   - id: schematicMaster
-    name: 图纸大师
+    name: schematicMaster
     category: material
     stack_size: 5
     icon: schematicMaster
     tier: 800
   - id: invisibleRecipesForRepairCost
-    name: 维修配方（隐藏）
+    name: invisibleRecipesForRepairCost
     category: material
     stack_size: 1
   - id: schematicNoQualityMaster
-    name: 无品质图纸大师
+    name: schematicNoQualityMaster
     category: material
     stack_size: 1
     icon: schematicMaster
@@ -4449,117 +4485,117 @@ items:
     stack_size: 1
     icon: modVehicleStorage
   - id: schematicNoQualityRecipeMaster
-    name: 无品质配方图纸大师
+    name: schematicNoQualityRecipeMaster
     category: material
     stack_size: 1
     icon: schematicMaster
   - id: foodCanShamSchematic
-    name: 山寨肉罐头图纸
-    category: food
+    name: 山威秘密配方
+    category: material
     stack_size: 1
     icon: foodCanSham
   - id: plantedGraceCorn1Schematic
-    name: 恩典玉米1号图纸
+    name: plantedGraceCorn1Schematic
     category: material
     stack_size: 1
     icon: plantedCorn1
   - id: skillBookMaster
-    name: 技能书大师
+    name: skillBookMaster
     category: material
     stack_size: 1
     tier: 500
   - id: blankNoteMaster
-    name: 空白纸条大师
+    name: blankNoteMaster
     category: material
     stack_size: 50
     icon: questMaster
     tier: 1600
   - id: noteDuke01
-    name: 公爵金币
+    name: noteDuke01
     category: material
     stack_size: 1
     icon: challengeQuestMaster
   - id: questMaster
-    name: 任务大师
+    name: questMaster
     category: material
     stack_size: 50
     icon: questMaster
     tier: 1600
   - id: challengeQuestMaster
-    name: 挑战任务大师
+    name: challengeQuestMaster
     category: material
     stack_size: 1
     icon: challengeQuestMaster
     tier: 400
   - id: treasureQuestMaster
-    name: 宝藏任务大师
+    name: treasureQuestMaster
     category: material
     stack_size: 1
     icon: treasureQuestMaster
   - id: q_basicSurvival
-    name: 基础生存任务
+    name: q_basicSurvival
     category: material
     stack_size: 1
   - id: qt_taylor
-    name: 泰勒任务
+    name: qt_taylor
     category: material
     stack_size: 1
   - id: qt_nickole
-    name: 妮可尔任务
+    name: qt_nickole
     category: material
     stack_size: 1
   - id: qt_stephan
-    name: 斯蒂芬任务
+    name: qt_stephan
     category: material
     stack_size: 1
   - id: qt_jennifer
-    name: 詹妮弗任务
+    name: qt_jennifer
     category: material
     stack_size: 1
   - id: qt_claude
-    name: 克劳德任务
+    name: qt_claude
     category: material
     stack_size: 1
   - id: qt_sarah
-    name: 莎拉任务
+    name: qt_sarah
     category: material
     stack_size: 1
   - id: qt_raphael
-    name: 拉斐尔任务
+    name: qt_raphael
     category: material
     stack_size: 1
   - id: qtest_nextTraderAdmin
-    name: 测试商人任务
+    name: qtest_nextTraderAdmin
     category: material
     stack_size: 1
   - id: adminQuestTicketMaster
-    name: 管理员任务票大师
+    name: adminQuestTicketMaster
     category: material
     stack_size: 10
     icon: adminQuestTicketMaster
     tier: 1600
   - id: adminT1QuestTicket
-    name: T1任务票
+    name: adminT1QuestTicket
     category: material
     stack_size: 1
   - id: adminT2QuestTicket
-    name: T2任务票
+    name: adminT2QuestTicket
     category: material
     stack_size: 1
   - id: adminT3QuestTicket
-    name: T3任务票
+    name: adminT3QuestTicket
     category: material
     stack_size: 1
   - id: adminT4QuestTicket
-    name: T4任务票
+    name: adminT4QuestTicket
     category: material
     stack_size: 1
   - id: adminT5QuestTicket
-    name: T5任务票
+    name: adminT5QuestTicket
     category: material
     stack_size: 1
   - id: adminT6QuestTicket
-    name: T6任务票
+    name: adminT6QuestTicket
     category: material
     stack_size: 1
   - id: resourceRockSmall
@@ -4623,7 +4659,7 @@ items:
     stack_size: 1000
     tier: 16
   - id: resourceScopeLens
-    name: 瞄准镜镜片
+    name: resourceScopeLens
     category: material
     stack_size: 10
     tier: 5
@@ -4667,37 +4703,42 @@ items:
     category: material
     stack_size: 10
     tier: 500
+  - id: resourceChickenFeed
+    name: 鸡饲料
+    category: material
+    stack_size: 250
+    tier: 10
   - id: resourceCropHopsFlower
-    name: 啤酒花
+    name: resourceCropHopsFlower
     category: material
     stack_size: 500
     icon: plantedHop3Harvest
     tier: 12
   - id: resourceCropAloeLeaf
-    name: 芦荟叶
+    name: resourceCropAloeLeaf
     category: material
     stack_size: 500
     tier: 12
   - id: resourceCropChrysanthemumPlant
-    name: 菊花
+    name: resourceCropChrysanthemumPlant
     category: material
     stack_size: 500
     icon: plantedChrysanthemum3Harvest
     tier: 12
   - id: resourceCropCottonPlant
-    name: 棉花
+    name: resourceCropCottonPlant
     category: material
     stack_size: 500
     icon: plantedCotton3Harvest
     tier: 12
   - id: resourceCropGoldenrodPlant
-    name: 黄花
+    name: resourceCropGoldenrodPlant
     category: material
     stack_size: 500
     icon: plantedGoldenrod3HarvestPlayer
     tier: 12
   - id: resourceCropCoffeeBeans
-    name: 咖啡豆
+    name: resourceCropCoffeeBeans
     category: material
     stack_size: 500
     tier: 12
@@ -4917,7 +4958,7 @@ items:
     stats:
       cold_resistance: 5
   - id: smallEngine
-    name: 小型引擎
+    name: smallEngine
     category: material
     stack_size: 1
     tier: 1000
@@ -4940,7 +4981,7 @@ items:
     stack_size: 10000
     tier: 7
   - id: solarCell
-    name: 太阳能电池
+    name: solarCell
     category: material
     stack_size: 1
     tier: 12000
@@ -4993,12 +5034,12 @@ items:
     stack_size: 1
     tier: 5000
   - id: toolDewGatherer
-    name: 采集者
+    name: 集露器
     category: material
     stack_size: 1
     tier: 240
   - id: toolDewTarp
-    name: 油布
+    name: 篷布
     category: material
     stack_size: 1
     tier: 500
@@ -5023,38 +5064,65 @@ items:
     category: material
     stack_size: 1
     tier: 2500
+  - id: toolChickenCoopLamp
+    name: 育雏灯
+    category: material
+    stack_size: 1
+    tier: 240
+  - id: toolChickenCoopRun
+    name: 鸡舍跑道
+    category: material
+    stack_size: 1
+    tier: 500
+  - id: toolChickenCoopNestingBox
+    name: 巢箱
+    category: material
+    stack_size: 1
+    tier: 2500
+  - id: wildChicken
+    name: 野鸡
+    category: material
+    stack_size: 1
+    tier: 1
+    stats:
+      mod_slots: 0
+  - id: domesticatedChicken
+    name: 家鸡
+    category: material
+    stack_size: 1
+    tier: 200
   - id: unit_iron
-    name: 铁锭
+    name: unit_iron
     category: material
     stack_size: 30000
     icon: resourceScrapIron
   - id: unit_brass
-    name: 黄铜锭
+    name: unit_brass
     category: material
     stack_size: 1
     icon: resourceScrapBrass
   - id: unit_lead
-    name: 铅锭
+    name: unit_lead
     category: material
     stack_size: 1
     icon: resourceScrapLead
   - id: unit_glass
-    name: 玻璃锭
+    name: unit_glass
     category: material
     stack_size: 1
     icon: resourceCrushedSand
   - id: unit_stone
-    name: 石块
+    name: unit_stone
     category: material
     stack_size: 1
     icon: resourceRockSmall
   - id: unit_clay
-    name: 粘土锭
+    name: unit_clay
     category: material
     stack_size: 1
     icon: resourceClayLump
   - id: questItem
-    name: 任务物品
+    name: questItem
     category: material
     stack_size: 1
     icon: missingIcon
@@ -5070,574 +5138,574 @@ items:
     icon: resourceLockPick
     tier: 5000
   - id: bookFiremansAlmanacHeat
-    name: 消防员年鉴：热度
+    name: bookFiremansAlmanacHeat
     category: material
     stack_size: 20
     icon: bookFiremansAlmanacHeat
     tier: 500
   - id: bookFiremansAlmanacAxes
-    name: 消防员年鉴：斧
+    name: bookFiremansAlmanacAxes
     category: material
     stack_size: 1
   - id: bookFiremansAlmanacSpeed
-    name: 消防员年鉴：速度
+    name: bookFiremansAlmanacSpeed
     category: material
     stack_size: 1
   - id: bookFiremansAlmanacMolotov
-    name: 消防员年鉴：燃烧瓶
+    name: bookFiremansAlmanacMolotov
     category: material
     stack_size: 1
   - id: bookFiremansAlmanacPrevention
-    name: 消防员年鉴：预防
+    name: bookFiremansAlmanacPrevention
     category: material
     stack_size: 1
   - id: bookFiremansAlmanacHarvest
-    name: 消防员年鉴：采集
+    name: bookFiremansAlmanacHarvest
     category: material
     stack_size: 1
   - id: bookFiremansAlmanacEquipment
-    name: 消防员年鉴：装备
+    name: bookFiremansAlmanacEquipment
     category: material
     stack_size: 1
   - id: bookNightStalkerStealthDamage
-    name: 暗夜猎手：潜行伤害
+    name: bookNightStalkerStealthDamage
     category: material
     stack_size: 1
     icon: bookNightStalkerStealthDamage
   - id: bookNightStalkerSilentNight
-    name: 暗夜猎手：寂静之夜
+    name: bookNightStalkerSilentNight
     category: material
     stack_size: 1
   - id: bookNightStalkerBlades
-    name: 暗夜猎手：刀刃
+    name: bookNightStalkerBlades
     category: material
     stack_size: 1
   - id: bookNightStalkerThiefAdrenaline
-    name: 暗夜猎手：盗贼肾上腺素
+    name: bookNightStalkerThiefAdrenaline
     category: material
     stack_size: 1
   - id: bookNightStalkerArchery
-    name: 暗夜猎手：弓箭
+    name: bookNightStalkerArchery
     category: material
     stack_size: 1
   - id: bookNightStalkerTwilightThief
-    name: 暗夜猎手：黄昏盗贼
+    name: bookNightStalkerTwilightThief
     category: material
     stack_size: 1
   - id: bookNightStalkerSlumberParty
-    name: 暗夜猎手：睡衣派对
+    name: bookNightStalkerSlumberParty
     category: material
     stack_size: 1
   - id: bookLuckyLooterDukes
-    name: 幸运拾荒者：公爵金币
+    name: bookLuckyLooterDukes
     category: material
     stack_size: 1
     icon: bookLuckyLooterDukes
   - id: bookLuckyLooterAmmunition
-    name: 幸运拾荒者：弹药
+    name: bookLuckyLooterAmmunition
     category: material
     stack_size: 1
   - id: bookLuckyLooterBrass
-    name: 幸运拾荒者：黄铜
+    name: bookLuckyLooterBrass
     category: material
     stack_size: 1
   - id: bookLuckyLooterLead
-    name: 幸运拾荒者：铅
+    name: bookLuckyLooterLead
     category: material
     stack_size: 1
   - id: bookLuckyLooterBooks
-    name: 幸运拾荒者：书籍
+    name: bookLuckyLooterBooks
     category: material
     stack_size: 1
   - id: bookLuckyLooterFood
-    name: 幸运拾荒者：食物
+    name: bookLuckyLooterFood
     category: material
     stack_size: 1
   - id: bookLuckyLooterMedical
-    name: 幸运拾荒者：医疗
+    name: bookLuckyLooterMedical
     category: material
     stack_size: 1
   - id: bookEnforcerDamage
-    name: 执法者：伤害
+    name: bookEnforcerDamage
     category: material
     stack_size: 1
     icon: bookEnforcerDamage
   - id: bookEnforcerApparel
-    name: 执法者：服装
+    name: bookEnforcerApparel
     category: material
     stack_size: 1
   - id: bookEnforcerPunks
-    name: 执法者：暴徒
+    name: bookEnforcerPunks
     category: material
     stack_size: 1
   - id: bookEnforcerIntimidation
-    name: 执法者：威吓
+    name: bookEnforcerIntimidation
     category: material
     stack_size: 1
   - id: bookEnforcerAPAmmo
-    name: 执法者：穿甲弹
+    name: bookEnforcerAPAmmo
     category: material
     stack_size: 1
   - id: bookEnforcerHPAmmo
-    name: 执法者：空尖弹
+    name: bookEnforcerHPAmmo
     category: material
     stack_size: 1
   - id: bookEnforcerCriminalPursuit
-    name: 执法者：追缉
+    name: bookEnforcerCriminalPursuit
     category: material
     stack_size: 1
   - id: bookBatterUpBigHits
-    name: 击球手：重击
+    name: bookBatterUpBigHits
     category: material
     stack_size: 1
     icon: bookBatterUpBigHits
   - id: bookBatterUpStealingBases
-    name: 击球手：盗垒
+    name: bookBatterUpStealingBases
     category: material
     stack_size: 1
   - id: bookBatterUpSlowPitch
-    name: 击球手：慢投
+    name: bookBatterUpSlowPitch
     category: material
     stack_size: 1
   - id: bookBatterUpKnockdown
-    name: 击球手：击倒
+    name: bookBatterUpKnockdown
     category: material
     stack_size: 1
   - id: bookBatterUpMaintenance
-    name: 击球手：维护
+    name: bookBatterUpMaintenance
     category: material
     stack_size: 1
   - id: bookBatterUpFoulBalls
-    name: 击球手：界外球
+    name: bookBatterUpFoulBalls
     category: material
     stack_size: 1
   - id: bookBatterUpMetalChain
-    name: 击球手：铁链
+    name: bookBatterUpMetalChain
     category: material
     stack_size: 1
   - id: bookSledgeSagaKnockdown
-    name: 大锤传说：击倒
+    name: bookSledgeSagaKnockdown
     category: material
     stack_size: 1
     icon: bookSledgeSagaKnockdown
   - id: bookSledgeSagaDegradation
-    name: 大锤传说：磨损
+    name: bookSledgeSagaDegradation
     category: material
     stack_size: 1
   - id: bookSledgeSagaCrippledMorale
-    name: 大锤传说：士气崩溃
+    name: bookSledgeSagaCrippledMorale
     category: material
     stack_size: 1
   - id: bookSledgeSagaPulverizingFinishers
-    name: 大锤传说：粉碎终结
+    name: bookSledgeSagaPulverizingFinishers
     category: material
     stack_size: 1
   - id: bookSledgeSagaSavageReaper
-    name: 大锤传说：野蛮收割
+    name: bookSledgeSagaSavageReaper
     category: material
     stack_size: 1
   - id: bookSledgeSagaConcussiveStrike
-    name: 大锤传说：震荡打击
+    name: bookSledgeSagaConcussiveStrike
     category: material
     stack_size: 1
   - id: bookSledgeSagaArmorCrusher
-    name: 大锤传说：碎甲
+    name: bookSledgeSagaArmorCrusher
     category: material
     stack_size: 1
   - id: bookGreatHeistSafes
-    name: 惊天劫案：保险箱
+    name: bookGreatHeistSafes
     category: material
     stack_size: 1
     icon: bookTheGreatHeistSafes
   - id: bookGreatHeistGems
-    name: 惊天劫案：宝石
+    name: bookGreatHeistGems
     category: material
     stack_size: 1
   - id: bookGreatHeistGoldRush
-    name: 惊天劫案：淘金热
+    name: bookGreatHeistGoldRush
     category: material
     stack_size: 1
   - id: bookGreatHeistClaimed
-    name: 惊天劫案：认领
+    name: bookGreatHeistClaimed
     category: material
     stack_size: 1
   - id: bookGreatHeistAdrenalineFall
-    name: 惊天劫案：肾上腺素坠落
+    name: bookGreatHeistAdrenalineFall
     category: material
     stack_size: 1
   - id: bookGreatHeistSprintSneak
-    name: 惊天劫案：冲刺潜行
+    name: bookGreatHeistSprintSneak
     category: material
     stack_size: 1
   - id: bookGreatHeistMotionDetection
-    name: 惊天劫案：运动检测
+    name: bookGreatHeistMotionDetection
     category: material
     stack_size: 1
   - id: bookWasteTreasuresHoney
-    name: 废土宝藏：蜂蜜
+    name: bookWasteTreasuresHoney
     category: material
     stack_size: 1
     icon: bookWasteTreasuresHoney
   - id: bookWasteTreasuresCoffins
-    name: 废土宝藏：棺材
+    name: bookWasteTreasuresCoffins
     category: material
     stack_size: 1
   - id: bookWasteTreasuresAcid
-    name: 废土宝藏：酸
+    name: bookWasteTreasuresAcid
     category: material
     stack_size: 1
   - id: bookWasteTreasuresWater
-    name: 废土宝藏：水
+    name: bookWasteTreasuresWater
     category: material
     stack_size: 1
   - id: bookWasteTreasuresDoors
-    name: 废土宝藏：门
+    name: bookWasteTreasuresDoors
     category: material
     stack_size: 1
   - id: bookWasteTreasuresCloth
-    name: 废土宝藏：布料
+    name: bookWasteTreasuresCloth
     category: material
     stack_size: 1
   - id: bookWasteTreasuresSinks
-    name: 废土宝藏：水槽
+    name: bookWasteTreasuresSinks
     category: material
     stack_size: 1
   - id: bookHuntingJournalBears
-    name: 狩猎日志：熊
+    name: bookHuntingJournalBears
     category: material
     stack_size: 1
     icon: bookHuntingJournalBears
   - id: bookHuntingJournalWolves
-    name: 狩猎日志：狼
+    name: bookHuntingJournalWolves
     category: material
     stack_size: 1
   - id: bookHuntingJournalCoyotes
-    name: 狩猎日志：郊狼
+    name: bookHuntingJournalCoyotes
     category: material
     stack_size: 1
   - id: bookHuntingJournalMountainLions
-    name: 狩猎日志：美洲狮
+    name: bookHuntingJournalMountainLions
     category: material
     stack_size: 1
   - id: bookHuntingJournalDeer
-    name: 狩猎日志：鹿
+    name: bookHuntingJournalDeer
     category: material
     stack_size: 1
   - id: bookHuntingJournalVultures
-    name: 狩猎日志：秃鹫
+    name: bookHuntingJournalVultures
     category: material
     stack_size: 1
   - id: bookHuntingJournalSelfDefense
-    name: 狩猎日志：自卫
+    name: bookHuntingJournalSelfDefense
     category: material
     stack_size: 1
   - id: bookArtOfMiningLuckyStrike
-    name: 采矿艺术：幸运一击
+    name: bookArtOfMiningLuckyStrike
     category: material
     stack_size: 1
     icon: bookArtOfMiningLuckyStrike
   - id: bookArtOfMiningDiamondTools
-    name: 采矿艺术：钻石工具
+    name: bookArtOfMiningDiamondTools
     category: material
     stack_size: 1
   - id: bookArtOfMiningCoffee
-    name: 采矿艺术：咖啡
+    name: bookArtOfMiningCoffee
     category: material
     stack_size: 1
   - id: bookArtOfMiningBlackStrap
-    name: 采矿艺术：黑带
+    name: bookArtOfMiningBlackStrap
     category: material
     stack_size: 1
   - id: bookArtOfMiningPallets
-    name: 采矿艺术：托盘
+    name: bookArtOfMiningPallets
     category: material
     stack_size: 1
   - id: bookArtOfMiningAvalanche
-    name: 采矿艺术：雪崩
+    name: bookArtOfMiningAvalanche
     category: material
     stack_size: 1
   - id: bookArtOfMiningDamage
-    name: 采矿艺术：伤害
+    name: bookArtOfMiningDamage
     category: material
     stack_size: 1
   - id: bookRangersArrowRecovery
-    name: 游侠：箭矢回收
+    name: bookRangersArrowRecovery
     category: material
     stack_size: 1
     icon: bookRangersArrowRecovery
   - id: bookRangersExplodingBolts
-    name: 游侠：爆炸弩箭
+    name: bookRangersExplodingBolts
     category: material
     stack_size: 1
   - id: bookRangersCripplingShot
-    name: 游侠：致残射击
+    name: bookRangersCripplingShot
     category: material
     stack_size: 1
   - id: bookRangersAPAmmo
-    name: 游侠：穿甲弹
+    name: bookRangersAPAmmo
     category: material
     stack_size: 1
   - id: bookRangersFlamingArrows
-    name: 游侠：燃烧箭
+    name: bookRangersFlamingArrows
     category: material
     stack_size: 1
   - id: bookRangersForestGuide
-    name: 游侠：森林向导
+    name: bookRangersForestGuide
     category: material
     stack_size: 1
   - id: bookRangersKnockdown
-    name: 游侠：击倒
+    name: bookRangersKnockdown
     category: material
     stack_size: 1
   - id: bookPistolPeteTakeAim
-    name: 神枪手皮特：瞄准
+    name: bookPistolPeteTakeAim
     category: material
     stack_size: 1
     icon: bookPistolPeteTakeAim
   - id: bookPistolPeteSwissKnees
-    name: 神枪手皮特：膝盖
+    name: bookPistolPeteSwissKnees
     category: material
     stack_size: 1
   - id: bookPistolPeteSteadyHand
-    name: 神枪手皮特：稳手
+    name: bookPistolPeteSteadyHand
     category: material
     stack_size: 1
   - id: bookPistolPeteMaintenance
-    name: 神枪手皮特：维护
+    name: bookPistolPeteMaintenance
     category: material
     stack_size: 1
   - id: bookPistolPeteHPAmmo
-    name: 神枪手皮特：空尖弹
+    name: bookPistolPeteHPAmmo
     category: material
     stack_size: 1
   - id: bookPistolPeteAPAmmo
-    name: 神枪手皮特：穿甲弹
+    name: bookPistolPeteAPAmmo
     category: material
     stack_size: 1
   - id: bookPistolPeteDamage
-    name: 神枪手皮特：伤害
+    name: bookPistolPeteDamage
     category: material
     stack_size: 1
   - id: bookShotgunMessiahDamage
-    name: 霰弹枪救世主：伤害
+    name: bookShotgunMessiahDamage
     category: material
     stack_size: 1
     icon: bookShotgunMessiahDamage
   - id: bookShotgunMessiahBreachingSlugs
-    name: 霰弹枪救世主：破门弹
+    name: bookShotgunMessiahBreachingSlugs
     category: material
     stack_size: 1
   - id: bookShotgunMessiahLimbShot
-    name: 霰弹枪救世主：断肢射击
+    name: bookShotgunMessiahLimbShot
     category: material
     stack_size: 1
   - id: bookShotgunMessiahSlugs
-    name: 霰弹枪救世主：独头弹
+    name: bookShotgunMessiahSlugs
     category: material
     stack_size: 1
   - id: bookShotgunMessiahMaintenance
-    name: 霰弹枪救世主：维护
+    name: bookShotgunMessiahMaintenance
     category: material
     stack_size: 1
   - id: bookShotgunMessiahMagazine
-    name: 霰弹枪救世主：弹匣
+    name: bookShotgunMessiahMagazine
     category: material
     stack_size: 1
   - id: bookShotgunMessiahPartyStarter
-    name: 霰弹枪救世主：派对开始
+    name: bookShotgunMessiahPartyStarter
     category: material
     stack_size: 1
   - id: bookSniperDamage
-    name: 狙击手：伤害
+    name: bookSniperDamage
     category: material
     stack_size: 1
     icon: bookSniperDamage
   - id: bookSniperCripplingShot
-    name: 狙击手：致残射击
+    name: bookSniperCripplingShot
     category: material
     stack_size: 1
   - id: bookSniperHeadShot
-    name: 狙击手：爆头
+    name: bookSniperHeadShot
     category: material
     stack_size: 1
   - id: bookSniperReload
-    name: 狙击手：装填
+    name: bookSniperReload
     category: material
     stack_size: 1
   - id: bookSniperControlledBreathing
-    name: 狙击手：控制呼吸
+    name: bookSniperControlledBreathing
     category: material
     stack_size: 1
   - id: bookSniperAPAmmo
-    name: 狙击手：穿甲弹
+    name: bookSniperAPAmmo
     category: material
     stack_size: 1
   - id: bookSniperHPAmmo
-    name: 狙击手：空尖弹
+    name: bookSniperHPAmmo
     category: material
     stack_size: 1
   - id: bookAutoWeaponsDamage
-    name: 自动武器：伤害
+    name: bookAutoWeaponsDamage
     category: material
     stack_size: 1
     icon: bookAutoWeaponsDamage
   - id: bookAutoWeaponsUncontrolledBurst
-    name: 自动武器：失控连发
+    name: bookAutoWeaponsUncontrolledBurst
     category: material
     stack_size: 1
   - id: bookAutoWeaponsMaintenance
-    name: 自动武器：维护
+    name: bookAutoWeaponsMaintenance
     category: material
     stack_size: 1
   - id: bookAutoWeaponsDrumMag
-    name: 自动武器：弹鼓
+    name: bookAutoWeaponsDrumMag
     category: material
     stack_size: 1
   - id: bookAutoWeaponsRecoil
-    name: 自动武器：后坐力
+    name: bookAutoWeaponsRecoil
     category: material
     stack_size: 1
   - id: bookAutoWeaponsRagdoll
-    name: 自动武器：布娃娃
+    name: bookAutoWeaponsRagdoll
     category: material
     stack_size: 1
   - id: bookAutoWeaponsMachineGuns
-    name: 自动武器：机枪
+    name: bookAutoWeaponsMachineGuns
     category: material
     stack_size: 1
   - id: bookUrbanCombatLanding
-    name: 城市战斗：着陆
+    name: bookUrbanCombatLanding
     category: material
     stack_size: 1
     icon: bookUrbanCombatLanding
   - id: bookUrbanCombatCigar
-    name: 城市战斗：雪茄
+    name: bookUrbanCombatCigar
     category: material
     stack_size: 1
   - id: bookUrbanCombatSneaking
-    name: 城市战斗：潜行
+    name: bookUrbanCombatSneaking
     category: material
     stack_size: 1
   - id: bookUrbanCombatJumping
-    name: 城市战斗：跳跃
+    name: bookUrbanCombatJumping
     category: material
     stack_size: 1
   - id: bookUrbanCombatLandMines
-    name: 城市战斗：地雷
+    name: bookUrbanCombatLandMines
     category: material
     stack_size: 1
   - id: bookUrbanCombatAdrenalineRush
-    name: 城市战斗：肾上腺素奔涌
+    name: bookUrbanCombatAdrenalineRush
     category: material
     stack_size: 1
   - id: bookUrbanCombatRoomClearing
-    name: 城市战斗：清房
+    name: bookUrbanCombatRoomClearing
     category: material
     stack_size: 1
   - id: bookTechJunkie1Damage
-    name: 科技迷：伤害
+    name: bookTechJunkie1Damage
     category: material
     stack_size: 1
     icon: bookTechJunkie1Damage
   - id: bookTechJunkie2Maintenance
-    name: 科技迷：维护
+    name: bookTechJunkie2Maintenance
     category: material
     stack_size: 1
   - id: bookTechJunkie3APAmmo
-    name: 科技迷：穿甲弹
+    name: bookTechJunkie3APAmmo
     category: material
     stack_size: 1
   - id: bookTechJunkie4Shells
-    name: 科技迷：弹药壳
+    name: bookTechJunkie4Shells
     category: material
     stack_size: 1
   - id: bookTechJunkie5Repulsor
-    name: 科技迷：斥力器
+    name: bookTechJunkie5Repulsor
     category: material
     stack_size: 1
   - id: bookTechJunkie6BatonCharge
-    name: 科技迷：警棍充能
+    name: bookTechJunkie6BatonCharge
     category: material
     stack_size: 1
   - id: bookTechJunkie7Hydraulics
-    name: 科技迷：液压
+    name: bookTechJunkie7Hydraulics
     category: material
     stack_size: 1
   - id: bookBarBrawling1BasicMoves
-    name: 酒馆斗殴：基础动作
+    name: bookBarBrawling1BasicMoves
     category: material
     stack_size: 1
     icon: bookBarBrawling1BasicMoves
   - id: bookBarBrawling2DropABomb
-    name: 酒馆斗殴：投弹
+    name: bookBarBrawling2DropABomb
     category: material
     stack_size: 1
   - id: bookBarBrawling3KillerInstinct
-    name: 酒馆斗殴：杀手本能
+    name: bookBarBrawling3KillerInstinct
     category: material
     stack_size: 1
   - id: bookBarBrawling4FinishingMoves
-    name: 酒馆斗殴：终结技
+    name: bookBarBrawling4FinishingMoves
     category: material
     stack_size: 1
   - id: bookBarBrawling5AdrenalineHealing
-    name: 酒馆斗殴：肾上腺素治愈
+    name: bookBarBrawling5AdrenalineHealing
     category: material
     stack_size: 1
   - id: bookBarBrawling6RageMode
-    name: 酒馆斗殴：狂暴模式
+    name: bookBarBrawling6RageMode
     category: material
     stack_size: 1
   - id: bookBarBrawling7BoozedUp
-    name: 酒馆斗殴：醉酒
+    name: bookBarBrawling7BoozedUp
     category: material
     stack_size: 1
   - id: bookSpearHunter1Damage
-    name: 矛猎手：伤害
+    name: bookSpearHunter1Damage
     category: material
     stack_size: 1
     icon: bookSpearHunter1Damage
   - id: bookSpearHunter2Maintenance
-    name: 矛猎手：维护
+    name: bookSpearHunter2Maintenance
     category: material
     stack_size: 1
   - id: bookSpearHunter3Bleed
-    name: 矛猎手：流血
+    name: bookSpearHunter3Bleed
     category: material
     stack_size: 1
   - id: bookSpearHunter4KillMove
-    name: 矛猎手：斩杀
+    name: bookSpearHunter4KillMove
     category: material
     stack_size: 1
   - id: bookSpearHunter5RapidStrike
-    name: 矛猎手：快速打击
+    name: bookSpearHunter5RapidStrike
     category: material
     stack_size: 1
   - id: bookSpearHunter6PenetratingShaft
-    name: 矛猎手：穿透矛杆
+    name: bookSpearHunter6PenetratingShaft
     category: material
     stack_size: 1
   - id: bookSpearHunter7QuickStrike
-    name: 矛猎手：快速突刺
+    name: bookSpearHunter7QuickStrike
     category: material
     stack_size: 1
   - id: masterSkillMagazine
-    name: 技能杂志总集
+    name: masterSkillMagazine
     category: material
     stack_size: 20
     tier: 100
   - id: harvestingToolsSkillMagazine
-    name: 采集工具技能杂志
+    name: harvestingToolsSkillMagazine
     category: material
     stack_size: 1
     icon: bookToolsDigest
   - id: repairToolsSkillMagazine
-    name: 维修工具技能杂志
+    name: repairToolsSkillMagazine
     category: material
     stack_size: 1
     icon: bookHandyLand
   - id: salvageToolsSkillMagazine
-    name: 拆解工具技能杂志
+    name: salvageToolsSkillMagazine
     category: material
     stack_size: 1
     icon: bookScrapping4Fun
@@ -5667,42 +5735,42 @@ items:
     stack_size: 1
     icon: bookSharpSticks
   - id: bowsSkillMagazine
-    name: 弓技能杂志
+    name: bowsSkillMagazine
     category: material
     stack_size: 1
     icon: bookBowHunters
   - id: handgunsSkillMagazine
-    name: 手枪技能杂志
+    name: handgunsSkillMagazine
     category: material
     stack_size: 1
     icon: bookHandgunMagazine
   - id: shotgunsSkillMagazine
-    name: 霰弹枪技能杂志
+    name: shotgunsSkillMagazine
     category: material
     stack_size: 1
     icon: bookShotgunWeekly
   - id: riflesSkillMagazine
-    name: 步枪技能杂志
+    name: riflesSkillMagazine
     category: material
     stack_size: 1
     icon: bookRifleWorld
   - id: machineGunsSkillMagazine
-    name: 机枪技能杂志
+    name: machineGunsSkillMagazine
     category: material
     stack_size: 1
     icon: bookTacticalWarfare
   - id: explosivesSkillMagazine
-    name: 爆炸物技能杂志
+    name: explosivesSkillMagazine
     category: material
     stack_size: 1
     icon: bookExplosiveMagazine
   - id: roboticsSkillMagazine
-    name: 机器人技能杂志
+    name: roboticsSkillMagazine
     category: material
     stack_size: 1
     icon: bookTechPlanet
   - id: armorSkillMagazine
-    name: 护甲技能杂志
+    name: 全副武装
     category: armor
     stack_size: 1
     icon: bookArmoredUp
@@ -5712,37 +5780,37 @@ items:
     stack_size: 1
     icon: bookMedicalJournal
   - id: foodSkillMagazine
-    name: 食物技能杂志
+    name: 家庭烹饪周刊
     category: food
     stack_size: 1
     icon: bookHomeCookingWeekly
   - id: seedSkillMagazine
-    name: 种子技能杂志
+    name: 南方种植
     category: material
     stack_size: 1
     icon: bookSouthernFarming
   - id: electricianSkillMagazine
-    name: 电工技能杂志
+    name: electricianSkillMagazine
     category: material
     stack_size: 1
     icon: bookWiring101
   - id: trapsSkillMagazine
-    name: 陷阱技能杂志
+    name: trapsSkillMagazine
     category: trap
     stack_size: 1
     icon: bookElectricalTraps
   - id: workstationSkillMagazine
-    name: 工作站技能杂志
+    name: workstationSkillMagazine
     category: material
     stack_size: 1
     icon: bookForgeAhead
   - id: vehiclesSkillMagazine
-    name: 载具技能杂志
+    name: vehiclesSkillMagazine
     category: vehicle
     stack_size: 1
     icon: bookVehicleAdventures
   - id: questRewardBundleMaster
-    name: 任务奖励包大师
+    name: questRewardBundleMaster
     category: material
     stack_size: 1
     icon: resourcePaper
@@ -6202,7 +6270,7 @@ items:
     stack_size: 1
     icon: bundleVehicleGyro
   - id: twitchTurd
-    name: Twitch粪便
+    name: twitchTurd
     category: material
     stack_size: 1
     icon: twitchTurd
@@ -6261,7 +6329,7 @@ items:
     stats:
       mod_slots: 0
   - id: meleeToolPaintToolAdmin
-    name: 管理员喷漆工具
+    name: meleeToolPaintToolAdmin
     category: material
     stack_size: 1
     icon: meleeToolPaintTool
@@ -6271,7 +6339,7 @@ items:
       spread_vertical: 0
       spread_horizontal: 0
   - id: meleeToolSalvageWrenchAdmin
-    name: 管理员拆解扳手
+    name: meleeToolSalvageWrenchAdmin
     category: tool
     stack_size: 1
     icon: meleeToolSalvageT1Wrench
@@ -6285,7 +6353,7 @@ items:
       durability: 9999
       mod_slots: 0
   - id: meleeToolBlockReplaceTool
-    name: 方块替换工具
+    name: 开发：管理员砖块替换工具
     category: tool
     stack_size: 1
     icon: meleeToolSalvageT1Wrench
@@ -6295,7 +6363,7 @@ items:
       spread_vertical: 0
       spread_horizontal: 0
   - id: gunToolDiggerAdmin
-    name: 管理员挖掘枪
+    name: gunToolDiggerAdmin
     category: ranged_weapon
     stack_size: 1
     icon: gunHandgunT3SMG5
@@ -6310,7 +6378,7 @@ items:
       durability: 9999
       mod_slots: 0
   - id: gunHandgunPistolAdmin
-    name: 管理员手枪
+    name: gunHandgunPistolAdmin
     category: ranged_weapon
     stack_size: 1
     icon: gunHandgunT1Pistol
@@ -6326,7 +6394,7 @@ items:
       durability: 9999
       mod_slots: 0
   - id: meleeToolHammerOfGodAdmin
-    name: 管理员神之锤
+    name: meleeToolHammerOfGodAdmin
     category: tool
     stack_size: 1
     icon: meleeToolRepairT1ClawHammer
@@ -6340,7 +6408,7 @@ items:
       stamina_cost: 25
       mod_slots: 0
   - id: coolLootShadesAdmin
-    name: 管理员酷炫墨镜
+    name: coolLootShadesAdmin
     category: armor
     stack_size: 1
     icon: apparelShades
@@ -6348,7 +6416,7 @@ items:
       mod_slots: 0
       loot_stage: 100
   - id: coolLootShadesAdmin200
-    name: 管理员酷炫墨镜200
+    name: coolLootShadesAdmin200
     category: armor
     stack_size: 1
     icon: apparelShades
@@ -6356,14 +6424,14 @@ items:
       mod_slots: 0
       loot_stage: 200
   - id: craftingShadesAdmin
-    name: 管理员制作墨镜
+    name: craftingShadesAdmin
     category: armor
     stack_size: 1
     icon: apparelShades
     stats:
       craft_time: -2000
   - id: pimpMiningHelmetAdmin
-    name: 管理员矿工头盔
+    name: pimpMiningHelmetAdmin
     category: armor
     stack_size: 1
     icon: armorMinerHelmet
@@ -6379,7 +6447,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
   - id: toughGuyShirtAdmin
-    name: 管理员硬汉T恤
+    name: toughGuyShirtAdmin
     category: material
     stack_size: 1
     icon: armorBikerOutfit
@@ -6389,7 +6457,7 @@ items:
       heat_resistance: 100
       max_health: .nan
   - id: ringOfFireAdmin
-    name: 火焰环
+    name: ringOfFireAdmin
     category: armor
     stack_size: 1
     icon: armorBikerGloves
@@ -6397,7 +6465,7 @@ items:
       mod_slots: 0
       durability: 9999
   - id: staminaBootsAdmin
-    name: 耐力靴子
+    name: staminaBootsAdmin
     category: material
     stack_size: 1
     icon: armorBikerBoots
@@ -6406,7 +6474,7 @@ items:
       durability: 9999
       max_stamina: .nan
   - id: staminaOnlyBootsAdmin
-    name: 纯耐力靴子
+    name: staminaOnlyBootsAdmin
     category: material
     stack_size: 1
     icon: armorBikerBoots
@@ -6415,7 +6483,7 @@ items:
       durability: 9999
       max_stamina: .nan
   - id: rocketBootsAdmin
-    name: 火箭靴子
+    name: rocketBootsAdmin
     category: material
     stack_size: 1
     icon: armorBikerBoots
@@ -6425,1918 +6493,1918 @@ items:
       jump_strength: 4.2
       stamina_cost: -0.75
   - id: drinkJarFullRespecAdmin
-    name: 完全重置药水
-    category: food
+    name: drinkJarFullRespecAdmin
+    category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
     stats:
       max_health: 100
       max_stamina: 100
   - id: drinkJarFullRespecWithPointsAdmin
-    name: 完全重置含技能点药水
-    category: food
+    name: drinkJarFullRespecWithPointsAdmin
+    category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
     stats:
       max_health: 100
       max_stamina: 100
   - id: noteTestersDelightAdmin
-    name: 管理员测试者愉悦
+    name: noteTestersDelightAdmin
     category: material
     stack_size: 1
     icon: resourcePaper
   - id: noteTestingAdmin
-    name: 测试通知
+    name: noteTestingAdmin
     category: material
     stack_size: 1
     icon: resourcePaper
   - id: noteAchievementAdmin
-    name: 管理员成就通知
+    name: noteAchievementAdmin
     category: material
     stack_size: 1
     icon: resourcePaper
   - id: noteTestersElectricityAdmin
-    name: 管理员电力测试
+    name: noteTestersElectricityAdmin
     category: material
     stack_size: 1
     icon: meleeToolWireTool
   - id: upgradeResourcesPackAdmin
-    name: 管理员升级资源包
+    name: upgradeResourcesPackAdmin
     category: material
     stack_size: 1
     icon: cntShippingCrateHero
   - id: craftingResourcesPackAdmin
-    name: 管理员资源包
+    name: craftingResourcesPackAdmin
     category: material
     stack_size: 1
     icon: cntShippingCrateHero
   - id: workstationsPackAdmin
-    name: 管理员工作站包
+    name: workstationsPackAdmin
     category: material
     stack_size: 1
     icon: forge
   - id: levelDesignToolsAdmin
-    name: 管理员关卡设计工具
+    name: levelDesignToolsAdmin
     category: material
     stack_size: 1
     icon: cementMixer
   - id: toolTerrainModelerAdmin
-    name: 管理员地形塑造器
+    name: toolTerrainModelerAdmin
     category: material
     stack_size: 1
     icon: meleeToolShovelT1IronShovel
   - id: thrownGrenadeNukeAdmin
-    name: 管理员核弹
+    name: thrownGrenadeNukeAdmin
     category: material
     stack_size: 500
     icon: thrownGrenadeContact
   - id: adminPerkBook
-    name: 管理员技能书
+    name: adminPerkBook
     category: material
     stack_size: 20
     icon: bookLuckyLooterDukes
   - id: adminSkillMagazine
-    name: 管理员技能杂志
+    name: adminSkillMagazine
     category: material
     stack_size: 1
     icon: bookTechPlanet
   - id: adminModSchematic
-    name: 管理员模组图纸
+    name: adminModSchematic
     category: material
     stack_size: 1
     icon: modRoboticDroneMoraleBoosterMod
   - id: tier01Bow01
-    name: T1 弓包包
+    name: tier01Bow01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01PerceptionWeapons
-    name: T1 感知 Weapons包
+    name: tier01PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01StrengthWeapons
-    name: T1 力量 Weapons包
+    name: tier01StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01FortitudeWeapons
-    name: T1 坚毅 Weapons包
+    name: tier01FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01AgilityWeapons
-    name: T1 敏捷 Weapons包
+    name: tier01AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01IntellectWeapons
-    name: T1 智力 Weapons包
+    name: tier01IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01Weapons
-    name: T1 武器包包
+    name: tier01Weapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01Armor
-    name: T1 护甲包包
+    name: tier01Armor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier01Loadout
-    name: T1装备包
+    name: tier01Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Lumberjack01
-    name: T2 伐木工护甲包
+    name: tier02Lumberjack01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Preacher01
-    name: T2 传道者护甲包
+    name: tier02Preacher01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Rogue01
-    name: T2 盗贼护甲包
+    name: tier02Rogue01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Athletic01
-    name: T2 运动员护甲包
+    name: tier02Athletic01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Enforcer01
-    name: T2 执法者护甲包
+    name: tier02Enforcer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Farmer01
-    name: T2 农夫护甲包
+    name: tier02Farmer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Biker01
-    name: T2 摩托车手护甲包
+    name: tier02Biker01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Scavenger01
-    name: T2 拾荒者护甲包
+    name: tier02Scavenger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Ranger01
-    name: T2 护林员护甲包
+    name: tier02Ranger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Commando01
-    name: T2 指挥官护甲包
+    name: tier02Commando01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Assassin01
-    name: T2 刺客护甲包
+    name: tier02Assassin01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Miner01
-    name: T2 矿工护甲包
+    name: tier02Miner01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Nomad01
-    name: T2 游牧民护甲包
+    name: tier02Nomad01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Nerd01
-    name: T2 学霸护甲包
+    name: tier02Nerd01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Raider01
-    name: T2 袭击者护甲包
+    name: tier02Raider01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02LightPerception01
-    name: T2 轻甲 Perception包
+    name: tier02LightPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02MediumPerception01
-    name: T2 中甲 Perception包
+    name: tier02MediumPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02HeavyPerception01
-    name: T2 重甲 Perception包
+    name: tier02HeavyPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionArmor
-    name: T2 感知 Armor包
+    name: tier02PerceptionArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02LightStrength01
-    name: T2 轻甲 Strength包
+    name: tier02LightStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02MediumStrength01
-    name: T2 中甲 Strength包
+    name: tier02MediumStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02HeavyStrength01
-    name: T2 重甲 Strength包
+    name: tier02HeavyStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthArmor
-    name: T2 力量 Armor包
+    name: tier02StrengthArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02LightFortitude01
-    name: T2 轻甲 Fortitude包
+    name: tier02LightFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02MediumFortitude01
-    name: T2 中甲 Fortitude包
+    name: tier02MediumFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02HeavyFortitude01
-    name: T2 重甲 Fortitude包
+    name: tier02HeavyFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeArmor
-    name: T2 坚毅 Armor包
+    name: tier02FortitudeArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02LightAgility01
-    name: T2 轻甲 Agility包
+    name: tier02LightAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02MediumAgility01
-    name: T2 中甲 Agility包
+    name: tier02MediumAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02HeavyAgility01
-    name: T2 重甲 Agility包
+    name: tier02HeavyAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityArmor
-    name: T2 敏捷 Armor包
+    name: tier02AgilityArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02LightIntellect01
-    name: T2 轻甲 Intellect包
+    name: tier02LightIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02MediumIntellect01
-    name: T2 中甲 Intellect包
+    name: tier02MediumIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02HeavyIntellect01
-    name: T2 重甲 Intellect包
+    name: tier02HeavyIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02IntellectArmor
-    name: T2 智力 Armor包
+    name: tier02IntellectArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionMeleeMods
-    name: T2 感知 近战模组包
+    name: tier02PerceptionMeleeMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionMelee
-    name: T2 感知 近战包
+    name: tier02PerceptionMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionRangedMods
-    name: T2 感知 远程模组包
+    name: tier02PerceptionRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionRanged
-    name: T2 感知 远程包
+    name: tier02PerceptionRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02PerceptionWeapons
-    name: T2 感知 Weapons包
+    name: tier02PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthMeleeMods
-    name: T2 力量 近战模组包
+    name: tier02StrengthMeleeMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthMelee01
-    name: T2 力量 近战包
+    name: tier02StrengthMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthMelee02
-    name: T2 力量 近战包
+    name: tier02StrengthMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthMelee
-    name: T2 力量 近战包
+    name: tier02StrengthMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthRangedMods
-    name: T2 力量 远程模组包
+    name: tier02StrengthRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthRanged
-    name: T2 力量 远程包
+    name: tier02StrengthRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02StrengthWeapons
-    name: T2 力量 Weapons包
+    name: tier02StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeMeleeMods
-    name: T2 坚毅 近战模组包
+    name: tier02FortitudeMeleeMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeMelee
-    name: T2 坚毅 近战包
+    name: tier02FortitudeMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeRangedMods
-    name: T2 坚毅 远程模组包
+    name: tier02FortitudeRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeRanged
-    name: T2 坚毅 远程包
+    name: tier02FortitudeRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02FortitudeWeapons
-    name: T2 坚毅 Weapons包
+    name: tier02FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityMeleeMods
-    name: T2 敏捷 近战模组包
+    name: tier02AgilityMeleeMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityMelee
-    name: T2 敏捷 近战包
+    name: tier02AgilityMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged01Mods
-    name: T2 敏捷 远程模组包
+    name: tier02AgilityRanged01Mods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged01
-    name: T2 敏捷 远程包
+    name: tier02AgilityRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged02
-    name: T2 敏捷 远程包
+    name: tier02AgilityRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged03
-    name: T2 敏捷 远程包
+    name: tier02AgilityRanged03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged04
-    name: T2 敏捷 远程包
+    name: tier02AgilityRanged04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityRanged
-    name: T2 敏捷 远程包
+    name: tier02AgilityRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02AgilityWeapons
-    name: T2 敏捷 Weapons包
+    name: tier02AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02IntellectMelee
-    name: T2 智力 近战包
+    name: tier02IntellectMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02IntellectRangedMods
-    name: T2 智力 远程模组包
+    name: tier02IntellectRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02IntellectRanged
-    name: T2 智力 远程包
+    name: tier02IntellectRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02IntellectWeapons
-    name: T2 智力 Weapons包
+    name: tier02IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Perception
-    name: T2 感知包
+    name: tier02Perception
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Strength
-    name: T2 力量包
+    name: tier02Strength
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Fortitude
-    name: T2 坚毅包
+    name: tier02Fortitude
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Agility
-    name: T2 敏捷包
+    name: tier02Agility
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Intellect
-    name: T2 智力包
+    name: tier02Intellect
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier02Loadout
-    name: T2装备包
+    name: tier02Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Lumberjack01
-    name: T3 伐木工护甲包
+    name: tier03Lumberjack01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Preacher01
-    name: T3 传道者护甲包
+    name: tier03Preacher01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Rogue01
-    name: T3 盗贼护甲包
+    name: tier03Rogue01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Athletic01
-    name: T3 运动员护甲包
+    name: tier03Athletic01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Enforcer01
-    name: T3 执法者护甲包
+    name: tier03Enforcer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Farmer01
-    name: T3 农夫护甲包
+    name: tier03Farmer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Biker01
-    name: T3 摩托车手护甲包
+    name: tier03Biker01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Scavenger01
-    name: T3 拾荒者护甲包
+    name: tier03Scavenger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Ranger01
-    name: T3 护林员护甲包
+    name: tier03Ranger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Commando01
-    name: T3 指挥官护甲包
+    name: tier03Commando01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Assassin01
-    name: T3 刺客护甲包
+    name: tier03Assassin01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Miner01
-    name: T3 矿工护甲包
+    name: tier03Miner01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Nomad01
-    name: T3 游牧民护甲包
+    name: tier03Nomad01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Nerd01
-    name: T3 学霸护甲包
+    name: tier03Nerd01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Raider01
-    name: T3 袭击者护甲包
+    name: tier03Raider01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03LightPerception01
-    name: T3 轻甲 Perception包
+    name: tier03LightPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03MediumPerception01
-    name: T3 中甲 Perception包
+    name: tier03MediumPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03HeavyPerception01
-    name: T3 重甲 Perception包
+    name: tier03HeavyPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03PerceptionArmor
-    name: T3 感知 Armor包
+    name: tier03PerceptionArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03LightStrength01
-    name: T3 轻甲 Strength包
+    name: tier03LightStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03MediumStrength01
-    name: T3 中甲 Strength包
+    name: tier03MediumStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03HeavyStrength01
-    name: T3 重甲 Strength包
+    name: tier03HeavyStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthArmor
-    name: T3 力量 Armor包
+    name: tier03StrengthArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03LightFortitude01
-    name: T3 轻甲 Fortitude包
+    name: tier03LightFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03MediumFortitude01
-    name: T3 中甲 Fortitude包
+    name: tier03MediumFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03HeavyFortitude01
-    name: T3 重甲 Fortitude包
+    name: tier03HeavyFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03FortitudeArmor
-    name: T3 坚毅 Armor包
+    name: tier03FortitudeArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03LightAgility01
-    name: T3 轻甲 Agility包
+    name: tier03LightAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03MediumAgility01
-    name: T3 中甲 Agility包
+    name: tier03MediumAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03HeavyAgility01
-    name: T3 重甲 Agility包
+    name: tier03HeavyAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityArmor
-    name: T3 敏捷 Armor包
+    name: tier03AgilityArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03LightIntellect01
-    name: T3 轻甲 Intellect包
+    name: tier03LightIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03MediumIntellect01
-    name: T3 中甲 Intellect包
+    name: tier03MediumIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03HeavyIntellect01
-    name: T3 重甲 Intellect包
+    name: tier03HeavyIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03IntellectArmor
-    name: T3 智力 Armor包
+    name: tier03IntellectArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03PerceptionMelee
-    name: T3 感知 近战包
+    name: tier03PerceptionMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03PerceptionRangedMods
-    name: T3 感知 远程模组包
+    name: tier03PerceptionRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03PerceptionRanged
-    name: T3 感知 远程包
+    name: tier03PerceptionRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03PerceptionWeapons
-    name: T3 感知 Weapons包
+    name: tier03PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthMelee01
-    name: T3 力量 近战包
+    name: tier03StrengthMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthMelee02
-    name: T3 力量 近战包
+    name: tier03StrengthMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthMelee
-    name: T3 力量 近战包
+    name: tier03StrengthMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthRanged01
-    name: T3 力量 远程包
+    name: tier03StrengthRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthRanged02
-    name: T3 力量 远程包
+    name: tier03StrengthRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthRanged
-    name: T3 力量 远程包
+    name: tier03StrengthRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03StrengthWeapons
-    name: T3 力量 Weapons包
+    name: tier03StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03FortitudeMelee
-    name: T3 坚毅 近战包
+    name: tier03FortitudeMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03FortitudeRangedMods
-    name: T3 坚毅 远程模组包
+    name: tier03FortitudeRangedMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03FortitudeRanged
-    name: T3 坚毅 远程包
+    name: tier03FortitudeRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03FortitudeWeapons
-    name: T3 坚毅 Weapons包
+    name: tier03FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityMelee
-    name: T3 敏捷 近战包
+    name: tier03AgilityMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRanged01
-    name: T3 敏捷 远程包
+    name: tier03AgilityRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRanged02
-    name: T3 敏捷 远程包
+    name: tier03AgilityRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRanged03
-    name: T3 敏捷 远程包
+    name: tier03AgilityRanged03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRanged04
-    name: T3 敏捷 远程包
+    name: tier03AgilityRanged04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRangedA
-    name: T3 敏捷 远程A包
+    name: tier03AgilityRangedA
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRangedB
-    name: T3 敏捷 远程B包
+    name: tier03AgilityRangedB
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityRanged
-    name: T3 敏捷 远程包
+    name: tier03AgilityRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03AgilityWeapons
-    name: T3 敏捷 Weapons包
+    name: tier03AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03IntellectMelee01
-    name: T3 智力 近战包
+    name: tier03IntellectMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03IntellectMelee02
-    name: T3 智力 近战包
+    name: tier03IntellectMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03IntellectRanged
-    name: T3 智力 远程包
+    name: tier03IntellectRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03IntellectWeapons
-    name: T3 智力 Weapons包
+    name: tier03IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Perception
-    name: T3 感知包
+    name: tier03Perception
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Strength
-    name: T3 力量包
+    name: tier03Strength
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Fortitude
-    name: T3 坚毅包
+    name: tier03Fortitude
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Agility
-    name: T3 敏捷包
+    name: tier03Agility
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Intellect
-    name: T3 智力包
+    name: tier03Intellect
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier03Loadout
-    name: T3装备包
+    name: tier03Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Lumberjack01
-    name: T4 伐木工护甲包
+    name: tier04Lumberjack01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Preacher01
-    name: T4 传道者护甲包
+    name: tier04Preacher01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Rogue01
-    name: T4 盗贼护甲包
+    name: tier04Rogue01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Athletic01
-    name: T4 运动员护甲包
+    name: tier04Athletic01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Enforcer01
-    name: T4 执法者护甲包
+    name: tier04Enforcer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Farmer01
-    name: T4 农夫护甲包
+    name: tier04Farmer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Biker01
-    name: T4 摩托车手护甲包
+    name: tier04Biker01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Scavenger01
-    name: T4 拾荒者护甲包
+    name: tier04Scavenger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Ranger01
-    name: T4 护林员护甲包
+    name: tier04Ranger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Commando01
-    name: T4 指挥官护甲包
+    name: tier04Commando01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Assassin01
-    name: T4 刺客护甲包
+    name: tier04Assassin01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Miner01
-    name: T4 矿工护甲包
+    name: tier04Miner01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Nomad01
-    name: T4 游牧民护甲包
+    name: tier04Nomad01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Nerd01
-    name: T4 学霸护甲包
+    name: tier04Nerd01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Raider01
-    name: T4 袭击者护甲包
+    name: tier04Raider01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04LightPerception01
-    name: T4 轻甲 Perception包
+    name: tier04LightPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04MediumPerception01
-    name: T4 中甲 Perception包
+    name: tier04MediumPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04HeavyPerception01
-    name: T4 重甲 Perception包
+    name: tier04HeavyPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionArmor
-    name: T4 感知 Armor包
+    name: tier04PerceptionArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04LightStrength01
-    name: T4 轻甲 Strength包
+    name: tier04LightStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04MediumStrength01
-    name: T4 中甲 Strength包
+    name: tier04MediumStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04HeavyStrength01
-    name: T4 重甲 Strength包
+    name: tier04HeavyStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthArmor
-    name: T4 力量 Armor包
+    name: tier04StrengthArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04LightFortitude01
-    name: T4 轻甲 Fortitude包
+    name: tier04LightFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04MediumFortitude01
-    name: T4 中甲 Fortitude包
+    name: tier04MediumFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04HeavyFortitude01
-    name: T4 重甲 Fortitude包
+    name: tier04HeavyFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeArmor
-    name: T4 坚毅 Armor包
+    name: tier04FortitudeArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04LightAgility01
-    name: T4 轻甲 Agility包
+    name: tier04LightAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04MediumAgility01
-    name: T4 中甲 Agility包
+    name: tier04MediumAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04HeavyAgility01
-    name: T4 重甲 Agility包
+    name: tier04HeavyAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityArmor
-    name: T4 敏捷 Armor包
+    name: tier04AgilityArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04LightIntellect01
-    name: T4 轻甲 Intellect包
+    name: tier04LightIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04MediumIntellect01
-    name: T4 中甲 Intellect包
+    name: tier04MediumIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04HeavyIntellect01
-    name: T4 重甲 Intellect包
+    name: tier04HeavyIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectArmor
-    name: T4 智力 Armor包
+    name: tier04IntellectArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionMeleeMods
-    name: T4 感知 近战模组包
+    name: tier04PerceptionMeleeMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionMelee
-    name: T4 感知 近战包
+    name: tier04PerceptionMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionRanged01
-    name: T4 感知 远程包
+    name: tier04PerceptionRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionRanged02
-    name: T4 感知 远程包
+    name: tier04PerceptionRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionRanged
-    name: T4 感知 远程包
+    name: tier04PerceptionRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04PerceptionWeapons
-    name: T4 感知 Weapons包
+    name: tier04PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthMelee01Mods
-    name: T4 力量 近战模组包
+    name: tier04StrengthMelee01Mods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthMelee01
-    name: T4 力量 近战包
+    name: tier04StrengthMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthMelee02Mods
-    name: T4 力量 近战模组包
+    name: tier04StrengthMelee02Mods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthMelee02
-    name: T4 力量 近战包
+    name: tier04StrengthMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthMelee
-    name: T4 力量 近战包
+    name: tier04StrengthMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthRanged01
-    name: T4 力量 远程包
+    name: tier04StrengthRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthRanged02
-    name: T4 力量 远程包
+    name: tier04StrengthRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthRanged
-    name: T4 力量 远程包
+    name: tier04StrengthRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04StrengthWeapons
-    name: T4 力量 Weapons包
+    name: tier04StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeMelee01
-    name: T4 坚毅 近战包
+    name: tier04FortitudeMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeMelee02
-    name: T4 坚毅 近战包
+    name: tier04FortitudeMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeMelee
-    name: T4 坚毅 近战包
+    name: tier04FortitudeMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeRanged01
-    name: T4 坚毅 远程包
+    name: tier04FortitudeRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeRanged02
-    name: T4 坚毅 远程包
+    name: tier04FortitudeRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeRanged
-    name: T4 坚毅 远程包
+    name: tier04FortitudeRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04FortitudeWeapons
-    name: T4 坚毅 Weapons包
+    name: tier04FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityMelee01
-    name: T4 敏捷 近战包
+    name: tier04AgilityMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityMelee02
-    name: T4 敏捷 近战包
+    name: tier04AgilityMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityMelee
-    name: T4 敏捷 近战包
+    name: tier04AgilityMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged01
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged02
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged03
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged04
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged05
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged05
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRangedA
-    name: T4 敏捷 远程A包
+    name: tier04AgilityRangedA
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRangedB
-    name: T4 敏捷 远程B包
+    name: tier04AgilityRangedB
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityRanged
-    name: T4 敏捷 远程包
+    name: tier04AgilityRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04AgilityWeapons
-    name: T4 敏捷 Weapons包
+    name: tier04AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectMelee01
-    name: T4 智力 近战包
+    name: tier04IntellectMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectMelee02
-    name: T4 智力 近战包
+    name: tier04IntellectMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectMelee03
-    name: T4 智力 近战包
+    name: tier04IntellectMelee03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectMelee04
-    name: T4 智力 近战包
+    name: tier04IntellectMelee04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectMelee
-    name: T4 智力 近战包
+    name: tier04IntellectMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectRanged
-    name: T4 智力 远程包
+    name: tier04IntellectRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04IntellectWeapons
-    name: T4 智力 Weapons包
+    name: tier04IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Perception
-    name: T4 感知包
+    name: tier04Perception
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Strength
-    name: T4 力量包
+    name: tier04Strength
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Fortitude
-    name: T4 坚毅包
+    name: tier04Fortitude
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Agility
-    name: T4 敏捷包
+    name: tier04Agility
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Intellect
-    name: T4 智力包
+    name: tier04Intellect
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier04Loadout
-    name: T4装备包
+    name: tier04Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Lumberjack01
-    name: T5 伐木工护甲包
+    name: tier05Lumberjack01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Preacher01
-    name: T5 传道者护甲包
+    name: tier05Preacher01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Rogue01
-    name: T5 盗贼护甲包
+    name: tier05Rogue01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Athletic01
-    name: T5 运动员护甲包
+    name: tier05Athletic01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Enforcer01
-    name: T5 执法者护甲包
+    name: tier05Enforcer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Farmer01
-    name: T5 农夫护甲包
+    name: tier05Farmer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Biker01
-    name: T5 摩托车手护甲包
+    name: tier05Biker01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Scavenger01
-    name: T5 拾荒者护甲包
+    name: tier05Scavenger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Ranger01
-    name: T5 护林员护甲包
+    name: tier05Ranger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Commando01
-    name: T5 指挥官护甲包
+    name: tier05Commando01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Assassin01
-    name: T5 刺客护甲包
+    name: tier05Assassin01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Miner01
-    name: T5 矿工护甲包
+    name: tier05Miner01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Nomad01
-    name: T5 游牧民护甲包
+    name: tier05Nomad01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Nerd01
-    name: T5 学霸护甲包
+    name: tier05Nerd01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Raider01
-    name: T5 袭击者护甲包
+    name: tier05Raider01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05LightPerception01
-    name: T5 轻甲 Perception包
+    name: tier05LightPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05MediumPerception01
-    name: T5 中甲 Perception包
+    name: tier05MediumPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05HeavyPerception01
-    name: T5 重甲 Perception包
+    name: tier05HeavyPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05PerceptionArmor
-    name: T5 感知 Armor包
+    name: tier05PerceptionArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05LightStrength01
-    name: T5 轻甲 Strength包
+    name: tier05LightStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05MediumStrength01
-    name: T5 中甲 Strength包
+    name: tier05MediumStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05HeavyStrength01
-    name: T5 重甲 Strength包
+    name: tier05HeavyStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05StrengthArmor
-    name: T5 力量 Armor包
+    name: tier05StrengthArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05LightFortitude01
-    name: T5 轻甲 Fortitude包
+    name: tier05LightFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05MediumFortitude01
-    name: T5 中甲 Fortitude包
+    name: tier05MediumFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05HeavyFortitude01
-    name: T5 重甲 Fortitude包
+    name: tier05HeavyFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05FortitudeArmor
-    name: T5 坚毅 Armor包
+    name: tier05FortitudeArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05LightAgility01
-    name: T5 轻甲 Agility包
+    name: tier05LightAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05MediumAgility01
-    name: T5 中甲 Agility包
+    name: tier05MediumAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05HeavyAgility01
-    name: T5 重甲 Agility包
+    name: tier05HeavyAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityArmor
-    name: T5 敏捷 Armor包
+    name: tier05AgilityArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05LightIntellect01
-    name: T5 轻甲 Intellect包
+    name: tier05LightIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05MediumIntellect01
-    name: T5 中甲 Intellect包
+    name: tier05MediumIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05HeavyIntellect01
-    name: T5 重甲 Intellect包
+    name: tier05HeavyIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectArmor
-    name: T5 智力 Armor包
+    name: tier05IntellectArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05PerceptionMelee
-    name: T5 感知 近战包
+    name: tier05PerceptionMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05PerceptionRanged
-    name: T5 感知 远程包
+    name: tier05PerceptionRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05PerceptionWeapons
-    name: T5 感知 Weapons包
+    name: tier05PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05StrengthMelee01
-    name: T5 力量 近战包
+    name: tier05StrengthMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05StrengthMelee02
-    name: T5 力量 近战包
+    name: tier05StrengthMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05StrengthRanged
-    name: T5 力量 远程包
+    name: tier05StrengthRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05StrengthWeapons
-    name: T5 力量 Weapons包
+    name: tier05StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05FortitudeMelee
-    name: T5 坚毅 近战包
+    name: tier05FortitudeMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05FortitudeRanged
-    name: T5 坚毅 远程包
+    name: tier05FortitudeRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05FortitudeWeapons
-    name: T5 坚毅 Weapons包
+    name: tier05FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityMelee
-    name: T5 敏捷 近战包
+    name: tier05AgilityMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRanged01
-    name: T5 敏捷 远程包
+    name: tier05AgilityRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRanged02
-    name: T5 敏捷 远程包
+    name: tier05AgilityRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRanged03
-    name: T5 敏捷 远程包
+    name: tier05AgilityRanged03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRanged04
-    name: T5 敏捷 远程包
+    name: tier05AgilityRanged04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRangedA
-    name: T5 敏捷 远程A包
+    name: tier05AgilityRangedA
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRangedB
-    name: T5 敏捷 远程B包
+    name: tier05AgilityRangedB
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityRanged
-    name: T5 敏捷 远程包
+    name: tier05AgilityRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05AgilityWeapons
-    name: T5 敏捷 Weapons包
+    name: tier05AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectMelee01
-    name: T5 智力 近战包
+    name: tier05IntellectMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectMelee02
-    name: T5 智力 近战包
+    name: tier05IntellectMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectMelee03
-    name: T5 智力 近战包
+    name: tier05IntellectMelee03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectMelee04
-    name: T5 智力 近战包
+    name: tier05IntellectMelee04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectMelee
-    name: T5 智力 近战包
+    name: tier05IntellectMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectRanged
-    name: T5 智力 远程包
+    name: tier05IntellectRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05IntellectWeapons
-    name: T5 智力 Weapons包
+    name: tier05IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Perception
-    name: T5 感知包
+    name: tier05Perception
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Strength
-    name: T5 力量包
+    name: tier05Strength
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Fortitude
-    name: T5 坚毅包
+    name: tier05Fortitude
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Agility
-    name: T5 敏捷包
+    name: tier05Agility
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Intellect
-    name: T5 智力包
+    name: tier05Intellect
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier05Loadout
-    name: T5装备包
+    name: tier05Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Lumberjack01
-    name: T6 伐木工护甲包
+    name: tier06Lumberjack01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Preacher01
-    name: T6 传道者护甲包
+    name: tier06Preacher01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Rogue01
-    name: T6 盗贼护甲包
+    name: tier06Rogue01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Athletic01
-    name: T6 运动员护甲包
+    name: tier06Athletic01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Enforcer01
-    name: T6 执法者护甲包
+    name: tier06Enforcer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Farmer01
-    name: T6 农夫护甲包
+    name: tier06Farmer01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Biker01
-    name: T6 摩托车手护甲包
+    name: tier06Biker01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Scavenger01
-    name: T6 拾荒者护甲包
+    name: tier06Scavenger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Ranger01
-    name: T6 护林员护甲包
+    name: tier06Ranger01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Commando01
-    name: T6 指挥官护甲包
+    name: tier06Commando01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Assassin01
-    name: T6 刺客护甲包
+    name: tier06Assassin01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Miner01
-    name: T6 矿工护甲包
+    name: tier06Miner01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Nomad01
-    name: T6 游牧民护甲包
+    name: tier06Nomad01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Nerd01
-    name: T6 学霸护甲包
+    name: tier06Nerd01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Raider01
-    name: T6 袭击者护甲包
+    name: tier06Raider01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06LightPerception01
-    name: T6 轻甲 Perception包
+    name: tier06LightPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06MediumPerception01
-    name: T6 中甲 Perception包
+    name: tier06MediumPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06HeavyPerception01
-    name: T6 重甲 Perception包
+    name: tier06HeavyPerception01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06PerceptionArmor
-    name: T6 感知 Armor包
+    name: tier06PerceptionArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06LightStrength01
-    name: T6 轻甲 Strength包
+    name: tier06LightStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06MediumStrength01
-    name: T6 中甲 Strength包
+    name: tier06MediumStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06HeavyStrength01
-    name: T6 重甲 Strength包
+    name: tier06HeavyStrength01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06StrengthArmor
-    name: T6 力量 Armor包
+    name: tier06StrengthArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06LightFortitude01
-    name: T6 轻甲 Fortitude包
+    name: tier06LightFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06MediumFortitude01
-    name: T6 中甲 Fortitude包
+    name: tier06MediumFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06HeavyFortitude01
-    name: T6 重甲 Fortitude包
+    name: tier06HeavyFortitude01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06FortitudeArmor
-    name: T6 坚毅 Armor包
+    name: tier06FortitudeArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06LightAgility01
-    name: T6 轻甲 Agility包
+    name: tier06LightAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06MediumAgility01
-    name: T6 中甲 Agility包
+    name: tier06MediumAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06HeavyAgility01
-    name: T6 重甲 Agility包
+    name: tier06HeavyAgility01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityArmor
-    name: T6 敏捷 Armor包
+    name: tier06AgilityArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06LightIntellect01
-    name: T6 轻甲 Intellect包
+    name: tier06LightIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06MediumIntellect01
-    name: T6 中甲 Intellect包
+    name: tier06MediumIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06HeavyIntellect01
-    name: T6 重甲 Intellect包
+    name: tier06HeavyIntellect01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectArmor
-    name: T6 智力 Armor包
+    name: tier06IntellectArmor
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06PerceptionMelee
-    name: T6 感知 近战包
+    name: tier06PerceptionMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06PerceptionRanged
-    name: T6 感知 远程包
+    name: tier06PerceptionRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06PerceptionWeapons
-    name: T6 感知 Weapons包
+    name: tier06PerceptionWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06StrengthMelee01
-    name: T6 力量 近战包
+    name: tier06StrengthMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06StrengthMelee02
-    name: T6 力量 近战包
+    name: tier06StrengthMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06StrengthRanged
-    name: T6 力量 远程包
+    name: tier06StrengthRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06StrengthWeapons
-    name: T6 力量 Weapons包
+    name: tier06StrengthWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06FortitudeMelee
-    name: T6 坚毅 近战包
+    name: tier06FortitudeMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06FortitudeRanged
-    name: T6 坚毅 远程包
+    name: tier06FortitudeRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06FortitudeWeapons
-    name: T6 坚毅 Weapons包
+    name: tier06FortitudeWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityMelee
-    name: T6 敏捷 近战包
+    name: tier06AgilityMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRanged01
-    name: T6 敏捷 远程包
+    name: tier06AgilityRanged01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRanged02
-    name: T6 敏捷 远程包
+    name: tier06AgilityRanged02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRanged03
-    name: T6 敏捷 远程包
+    name: tier06AgilityRanged03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRanged04
-    name: T6 敏捷 远程包
+    name: tier06AgilityRanged04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRangedA
-    name: T6 敏捷 远程A包
+    name: tier06AgilityRangedA
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRangedB
-    name: T6 敏捷 远程B包
+    name: tier06AgilityRangedB
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityRanged
-    name: T6 敏捷 远程包
+    name: tier06AgilityRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06AgilityWeapons
-    name: T6 敏捷 Weapons包
+    name: tier06AgilityWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectMelee01
-    name: T6 智力 近战包
+    name: tier06IntellectMelee01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectMelee02
-    name: T6 智力 近战包
+    name: tier06IntellectMelee02
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectMelee03
-    name: T6 智力 近战包
+    name: tier06IntellectMelee03
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectMelee04
-    name: T6 智力 近战包
+    name: tier06IntellectMelee04
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectMelee
-    name: T6 智力 近战包
+    name: tier06IntellectMelee
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectRanged
-    name: T6 智力 远程包
+    name: tier06IntellectRanged
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06IntellectWeapons
-    name: T6 智力 Weapons包
+    name: tier06IntellectWeapons
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06ToolMods
-    name: T6 工具模组包包
+    name: tier06ToolMods
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Throwables01
-    name: T6 投掷武器包包
+    name: tier06Throwables01
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Perception
-    name: T6 感知包
+    name: tier06Perception
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Strength
-    name: T6 力量包
+    name: tier06Strength
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Fortitude
-    name: T6 坚毅包
+    name: tier06Fortitude
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Agility
-    name: T6 敏捷包
+    name: tier06Agility
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Intellect
-    name: T6 智力包
+    name: tier06Intellect
     category: material
     stack_size: 1
     icon: mineCandyTin
   - id: tier06Loadout
-    name: T6装备包
+    name: tier06Loadout
     category: material
     stack_size: 1
     icon: mineCandyTin
@@ -8421,152 +8489,152 @@ items:
     stack_size: 1
     icon: armorRaiderHelmet
   - id: giveXP_T1_admin
-    name: 给予经验T1
+    name: giveXP_T1_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T2_admin
-    name: 给予经验T2
+    name: giveXP_T2_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T3_admin
-    name: 给予经验T3
+    name: giveXP_T3_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T4_admin
-    name: 给予经验T4
+    name: giveXP_T4_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T5_admin
-    name: 给予经验T5
+    name: giveXP_T5_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T6_admin
-    name: 给予经验T6
+    name: giveXP_T6_admin
     category: material
     stack_size: 1
     icon: XP
   - id: giveXP_T300_admin
-    name: 给予经验T300
+    name: giveXP_T300_admin
     category: material
     stack_size: 1
     icon: XP
   - id: adminGiveBuffInfection
-    name: 给予感染Buff
+    name: adminGiveBuffInfection
     category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
   - id: adminGiveBuffAbrasion
-    name: 给予擦伤Buff
+    name: adminGiveBuffAbrasion
     category: material
     stack_size: 1
     icon: medicalFirstAidKit
   - id: adminGiveBuffAbrasion1800
-    name: 给予擦伤Buff 1800
+    name: adminGiveBuffAbrasion1800
     category: material
     stack_size: 1
     icon: medicalFirstAidKit
   - id: adminGiveBuffAbrasion2400
-    name: 给予擦伤Buff 2400
+    name: adminGiveBuffAbrasion2400
     category: material
     stack_size: 1
     icon: medicalFirstAidKit
   - id: adminGiveBuffAbrasion3200
-    name: 给予擦伤Buff 3200
+    name: adminGiveBuffAbrasion3200
     category: material
     stack_size: 1
     icon: medicalFirstAidKit
   - id: adminGiveBuffFatigued
-    name: 给予疲劳Buff
+    name: adminGiveBuffFatigued
     category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
   - id: adminGiveBuffLaceration
-    name: 给予撕裂Buff
+    name: adminGiveBuffLaceration
     category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
   - id: adminGiveBuffConcussion
-    name: 给予脑震荡Buff
+    name: adminGiveBuffConcussion
     category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
   - id: adminGiveBuffDysentery
-    name: 给予痢疾Buff
+    name: adminGiveBuffDysentery
     category: material
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
   - id: adminGiveBuffSprainedLeg
-    name: 给予扭伤腿Buff
+    name: adminGiveBuffSprainedLeg
     category: material
     stack_size: 1
     icon: armorAssassinBoots
   - id: adminGiveBuffBrokenLeg
-    name: 给予断腿Buff
+    name: adminGiveBuffBrokenLeg
     category: material
     stack_size: 1
     icon: armorAssassinBoots
   - id: adminGiveBuffSprainedArm
-    name: 给予扭伤手臂Buff
+    name: adminGiveBuffSprainedArm
     category: material
     stack_size: 1
     icon: armorAssassinGloves
   - id: adminGiveBuffBrokenArm
-    name: 给予断臂Buff
+    name: adminGiveBuffBrokenArm
     category: material
     stack_size: 1
     icon: armorAssassinGloves
   - id: TEST_ITEM_00
-    name: 测试物品00
+    name: TEST_ITEM_00
     category: ammo
     stack_size: 500
     icon: shapeFont0
   - id: TEST_ITEM_01
-    name: 测试物品01
+    name: TEST_ITEM_01
     category: ammo
     stack_size: 500
     icon: shapeFont1
   - id: TEST_ITEM_02
-    name: 测试物品02
+    name: TEST_ITEM_02
     category: ammo
     stack_size: 500
     icon: shapeFont2
   - id: TEST_ITEM_03
-    name: 测试物品03
+    name: TEST_ITEM_03
     category: ammo
     stack_size: 500
     icon: shapeFont3
   - id: TEST_ITEM_04
-    name: 测试物品04
+    name: TEST_ITEM_04
     category: ammo
     stack_size: 500
     icon: shapeFont4
   - id: TEST_ITEM_05
-    name: 测试物品05
+    name: TEST_ITEM_05
     category: ammo
     stack_size: 500
     icon: shapeFont5
   - id: TEST_ITEM_06
-    name: 测试物品06
+    name: TEST_ITEM_06
     category: ammo
     stack_size: 500
     icon: shapeFont6
   - id: TEST_ITEM_07
-    name: 测试物品07
+    name: TEST_ITEM_07
     category: ammo
     stack_size: 500
     icon: shapeFont7
   - id: TEST_ITEM_08
-    name: 测试物品08
+    name: TEST_ITEM_08
     category: ammo
     stack_size: 500
     icon: shapeFont8
   - id: TEST_ITEM_09
-    name: 测试物品09
+    name: TEST_ITEM_09
     category: ammo
     stack_size: 500
     icon: shapeFont9
@@ -8583,17 +8651,17 @@ items:
       cold_resistance: 20
       heat_resistance: 20
   - id: missingItem
-    name: 缺失物品
+    name: missingItem
     category: material
     stack_size: 1
     icon: missingIcon
   - id: drinkJarGrey
-    name: 灰色液体
-    category: food
+    name: drinkJarGrey
+    category: material
     stack_size: 1
     icon: drinkJarGrey
   - id: UselessThing
-    name: 无用之物
+    name: UselessThing
     category: material
     stack_size: 1
     icon: missingIcon

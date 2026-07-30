@@ -1,0 +1,18 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { skills, ATTR_LABELS } = loadData();
+const cats = {};
+for (const s of skills) {
+  const label = ATTR_LABELS[s.category] || s.category;
+  cats[label] = (cats[label] || 0) + 1;
+}
+---
+
+<Layout title="技能列表" description={`全部 ${skills.length} 个技能`}>
+  <h1>技能列表</h1>
+  <p>共 {skills.length} 个技能</p>
+  <table><tr><th>属性</th><th>数量</th></tr>
+    {Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
+  </table>
+</Layout>

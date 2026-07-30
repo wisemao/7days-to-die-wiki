@@ -1,0 +1,33 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData, sanitizeId } from '../../../utils/data-loader';
+export function getStaticPaths() {
+  const { skills } = loadData();
+  return skills.map(s => ({ params: { id: s._sanitizedId }, props: { skill: s } }));
+}
+const { skill } = Astro.props;
+const { ATTR_LABELS, resolveItemName } = loadData();
+const catLabel = ATTR_LABELS[skill.category] || skill.category;
+const hasLevels = skill.levels && skill.levels.length > 0;
+const hasBooks = skill.tied_books && skill.tied_books.length > 0;
+---
+
+<Layout title={skill.name} description={`${skill.name} - ${catLabel}技能，最高${skill.max_level}级`}>
+  <h1>{skill.name}</h1>
+  <p><strong>属性:</strong> {catLabel} | <strong>最高等级:</strong> {skill.max_level}</p>
+  {skill.description && <p><strong>描述:</strong> {skill.description}</p>}
+
+  {hasLevels && (<>
+    <h2>等级效果</h2>
+    <table><tr><th>等级</th><th>效果</th><th>消耗技能点</th></tr>
+      {skill.levels.map(l => <tr><td>{l.level}</td><td>{l.effect}</td><td>{l.cost}</td></tr>)}
+    </table>
+  </>)}
+
+  {hasBooks && (<>
+    <h2>关联书籍</h2>
+    <table><tr><th>书籍</th><th>效果</th></tr>
+      {skill.tied_books.map(b => <tr><td><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(b.book_id)}/`}>{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>)}
+    </table>
+  </>)}
+</Layout>
