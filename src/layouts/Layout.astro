@@ -18,52 +18,92 @@ const base = '/7days-to-die-wiki';
   <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
   <script src={`${base}/pagefind/pagefind-ui.js`} defer></script>
   <style>
-    :root { --c-brand: #c0392b; --c-brand-dark: #a93226; --c-bg: #fff; --c-text: #333; --c-border: #e2e2e2; --c-bg-soft: #f5f5f5; --sidebar-w: 260px; }
+    :root {
+      --c-brand: #b91c1c;
+      --c-brand-hover: #991b1b;
+      --c-brand-light: #fef2f2;
+      --c-bg: #f5f5f5;
+      --c-surface: #fff;
+      --c-text: #1a1a2e;
+      --c-text-2: #6b7280;
+      --c-text-3: #9ca3af;
+      --c-border: #e5e7eb;
+      --c-border-light: #f3f4f6;
+      --sidebar-w: 220px;
+      --max-w: 1120px;
+      --radius: 10px;
+      --radius-sm: 6px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+    }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--c-text); background: var(--c-bg); line-height: 1.6; }
-    nav { background: var(--c-brand); padding: 8px 20px; display: flex; gap: 16px; align-items: center; position: sticky; top: 0; z-index: 100; flex-wrap: wrap; }
-    nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 14px; white-space: nowrap; }
-    nav a:hover { text-decoration: underline; }
-    #search { flex: 1; min-width: 160px; max-width: 300px; }
-    .pagefind-ui { --pagefind-ui-scale: 0.8; --pagefind-ui-primary: #fff; --pagefind-ui-text: #fff; --pagefind-ui-background: rgba(255,255,255,0.15); --pagefind-ui-border: rgba(255,255,255,0.3); --pagefind-ui-font: inherit; }
-    .wrapper { display: flex; max-width: 1200px; margin: 0 auto; min-height: calc(100vh - 120px); }
-    aside { width: var(--sidebar-w); flex-shrink: 0; padding: 20px 0 20px 16px; border-right: 1px solid var(--c-border); display: none; }
-    @media (min-width: 900px) { aside { display: block; } }
-    aside h3 { font-size: 13px; color: #999; text-transform: uppercase; letter-spacing: 1px; margin: 16px 0 6px 8px; }
-    aside a { display: block; padding: 4px 8px; font-size: 13px; color: var(--c-text); text-decoration: none; border-radius: 4px; }
-    aside a:hover { background: var(--c-bg-soft); color: var(--c-brand); }
-    .container { flex: 1; padding: 24px 28px; max-width: 960px; overflow-x: auto; }
-    h1 { font-size: 28px; margin-bottom: 16px; color: var(--c-brand); }
-    h2 { font-size: 22px; margin: 24px 0 12px; color: var(--c-brand-dark); }
-    p { margin-bottom: 8px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
-    th { background: var(--c-brand); color: #fff; padding: 8px 12px; text-align: left; font-weight: 600; }
-    td, th { border: 1px solid var(--c-border); padding: 6px 12px; }
-    tr:nth-child(even) { background: var(--c-bg-soft); }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', system-ui, sans-serif;
+      color: var(--c-text); background: var(--c-bg); line-height: 1.7; font-size: 15px;
+    }
     a { color: var(--c-brand); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    ul { margin: 8px 0 8px 20px; }
-    li { margin-bottom: 4px; }
-    blockquote { border-left: 4px solid var(--c-brand); padding: 8px 16px; margin: 12px 0; background: #fafafa; color: #666; }
-    footer { text-align: center; padding: 24px; color: #999; font-size: 13px; border-top: 1px solid var(--c-border); }
-    img[src*="/images/items/"] { max-width: 72px; max-height: 72px; image-rendering: pixelated; border: 2px solid #444; border-radius: 6px; background: #1a1a2e; padding: 4px; }
-    .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; margin: 20px 0; }
-    .category-card { border: 1px solid var(--c-border); border-radius: 8px; padding: 20px; text-align: center; background: var(--c-bg-soft); transition: all 0.2s; }
-    .category-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: var(--c-brand); }
-    .category-card .count { font-size: 28px; font-weight: 700; color: var(--c-brand); display: block; }
-    .category-card .label { font-size: 14px; color: var(--c-text-2); margin-top: 4px; display: block; }
-    .breadcrumb { font-size: 13px; color: #999; margin-bottom: 16px; }
-    .breadcrumb a { color: #999; text-decoration: none; }
+    a:hover { color: var(--c-brand-hover); text-decoration: underline; }
+
+    nav.top {
+      background: var(--c-brand); padding: 0 20px; display: flex; gap: 6px;
+      align-items: center; position: sticky; top: 0; z-index: 100;
+      height: 48px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    nav.top a { color: rgba(255,255,255,0.9); padding: 4px 12px; border-radius: var(--radius-sm); font-size: 14px; font-weight: 500; transition: background 0.15s; white-space: nowrap; }
+    nav.top a:hover { background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; }
+    nav.top .brand { font-size: 16px; font-weight: 700; margin-right: 8px; }
+    #search { flex: 1; min-width: 140px; max-width: 280px; margin-left: auto; }
+    .pagefind-ui { --pagefind-ui-scale: 0.75; --pagefind-ui-primary: #fff; --pagefind-ui-text: #fff; --pagefind-ui-background: rgba(255,255,255,0.12); --pagefind-ui-border: rgba(255,255,255,0.25); --pagefind-ui-font: inherit; }
+
+    .wrapper { display: flex; max-width: var(--max-w); margin: 0 auto; min-height: calc(100vh - 120px); }
+
+    aside { width: var(--sidebar-w); flex-shrink: 0; padding: 24px 0 24px 12px; display: none; }
+    @media (min-width: 900px) { aside { display: block; } }
+    aside h3 { font-size: 11px; color: var(--c-text-3); text-transform: uppercase; letter-spacing: 1.2px; margin: 20px 0 6px 10px; }
+    aside a { display: block; padding: 5px 10px; font-size: 13px; color: var(--c-text); border-radius: var(--radius-sm); transition: all 0.12s; }
+    aside a:hover { background: var(--c-border-light); color: var(--c-brand); text-decoration: none; }
+
+    .container { flex: 1; padding: 28px 32px; max-width: 960px; overflow-x: auto; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin-bottom: 6px; color: var(--c-text); letter-spacing: -0.02em; }
+    h2 { font-size: 1.25rem; font-weight: 600; margin: 28px 0 14px; color: var(--c-text); }
+    h2:first-of-type { margin-top: 0; }
+    p { margin-bottom: 10px; color: var(--c-text-2); line-height: 1.8; }
+    .subtitle { font-size: 14px; color: var(--c-text-2); margin-bottom: 24px; }
+    blockquote { border-left: 3px solid var(--c-brand); padding: 10px 18px; margin: 16px 0; background: #fafafa; color: var(--c-text-2); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+    .breadcrumb { font-size: 13px; color: var(--c-text-3); margin-bottom: 20px; }
+    .breadcrumb a { color: var(--c-text-3); }
     .breadcrumb a:hover { color: var(--c-brand); text-decoration: underline; }
-    .item-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 4px 16px; margin: 8px 0 20px; }
-    .item-list a { display: block; padding: 3px 6px; font-size: 13px; border-radius: 3px; color: var(--c-text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-    .item-list a:hover { background: var(--c-bg-soft); color: var(--c-brand); }
-    .cat-section { scroll-margin-top: 56px; }
+
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 16px; margin: 20px 0; }
+    .card {
+      display: block; background: var(--c-surface); border: 1px solid var(--c-border);
+      border-radius: var(--radius); padding: 22px 16px; text-align: center;
+      transition: all 0.18s; text-decoration: none !important;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--c-brand); }
+    .card .num { font-size: 2rem; font-weight: 800; color: var(--c-brand); display: block; line-height: 1.2; }
+    .card .lbl { font-size: 13px; color: var(--c-text-2); margin-top: 4px; display: block; }
+
+    .item-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; margin: 16px 0 28px; }
+    .item-grid a {
+      display: block; padding: 6px 12px; font-size: 14px; color: var(--c-text);
+      border-radius: var(--radius-sm); transition: all 0.12s;
+      overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .item-grid a:hover { background: var(--c-brand-light); color: var(--c-brand); text-decoration: none; }
+
+    table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+    th { background: var(--c-brand); color: #fff; padding: 9px 14px; text-align: left; font-weight: 600; font-size: 13px; }
+    td, th { border: 1px solid var(--c-border); padding: 7px 14px; }
+    tr:nth-child(even) { background: #fafafa; }
+    ul { margin: 8px 0 8px 22px; }
+    li { margin-bottom: 4px; }
+    footer { text-align: center; padding: 24px; color: var(--c-text-3); font-size: 13px; border-top: 1px solid var(--c-border); background: var(--c-surface); }
 	</style>
 </head>
 <body>
-  <nav>
-    <a href={base}><strong>七日杀 Wiki</strong></a>
+  <nav class="top">
+    <a href={base} class="brand">七日杀 Wiki</a>
     <a href={`${base}/vanilla/items/`}>物品</a>
     <a href={`${base}/vanilla/recipes/`}>配方</a>
     <a href={`${base}/vanilla/skills/`}>技能</a>

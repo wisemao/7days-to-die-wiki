@@ -1,0 +1,32 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { loadData, ZOMBIE_CATEGORY_LABELS } from '../../../../utils/data-loader';
+const base = '/7days-to-die-wiki';
+
+export function getStaticPaths() {
+  const { zombies } = loadData();
+  const groups = {};
+  for (const z of zombies) {
+    const label = ZOMBIE_CATEGORY_LABELS[z.category] || z.category || 'other';
+    const slug = label === '人形' ? 'humanoid' : label === '动物' ? 'animal' : 'other';
+    if (!groups[slug]) groups[slug] = [];
+    groups[slug].push(z);
+  }
+  return Object.entries(groups).map(([slug, list]) => ({
+    params: { type: slug },
+    props: { zombieList: list.sort((a, b) => (a.name||a.id).localeCompare(b.name||b.id, 'zh')), typeSlug: slug },
+  }));
+}
+const { zombieList, typeSlug } = Astro.props;
+const TYPE_LABELS = { humanoid: '人形', animal: '动物', other: '其他' };
+const typeLabel = TYPE_LABELS[typeSlug] || typeSlug;
+---
+
+<Layout title={typeLabel} description={`${typeLabel} - ${zombieList.length} 个僵尸`}>
+  <nav class="breadcrumb"><a href={base}>首页</a> / <a href={`${base}/vanilla/zombies/`}>僵尸列表</a> / <span>{typeLabel}</span></nav>
+  <h1>{typeLabel}</h1>
+  <p class="subtitle">共 {zombieList.length} 个僵尸</p>
+  <div class="item-grid">
+    {zombieList.map(z => (<a href={`${base}/vanilla/zombies/${z._sanitizedId}/`}>{z.name || z.id}</a>))}
+  </div>
+</Layout>

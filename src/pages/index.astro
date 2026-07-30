@@ -10,41 +10,47 @@ for (const item of items) {
   catCounts[label] = (catCounts[label] || 0) + 1;
 }
 const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+// reverse map: Chinese label -> item category key
+const labelToKey = {};
+for (const item of items) {
+  const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
+  if (!labelToKey[label]) labelToKey[label] = item.category;
+}
 ---
 
 <Layout title="七日杀 Wiki" description="7 Days to Die 中文维基">
   <h1>七日杀 Wiki</h1>
   <p>在游戏中快速查询物品、配方、技能、僵尸信息</p>
 
-  <div class="category-grid">
-    <a href={`${base}/vanilla/items/`} class="category-card">
-      <span class="count">{items.length}</span>
-      <span class="label">物品 · 工具 · 武器 · 护甲 · 食物</span>
+  <div class="card-grid">
+    <a href={`${base}/vanilla/items/`} class="card">
+      <span class="num">{items.length}</span>
+      <span class="lbl">物品 · 工具 · 武器 · 护甲</span>
     </a>
-    <a href={`${base}/vanilla/recipes/`} class="category-card">
-      <span class="count">{recipes.length}</span>
-      <span class="label">配方 · 合成 · 熔炉 · 工作台</span>
+    <a href={`${base}/vanilla/recipes/`} class="card">
+      <span class="num">{recipes.length}</span>
+      <span class="lbl">配方 · 合成 · 熔炉 · 工作台</span>
     </a>
-    <a href={`${base}/vanilla/skills/`} class="category-card">
-      <span class="count">{skills.length}</span>
-      <span class="label">技能 · 5 系属性 · Perk</span>
+    <a href={`${base}/vanilla/skills/`} class="card">
+      <span class="num">{skills.length}</span>
+      <span class="lbl">技能 · 5 系属性 · Perk</span>
     </a>
-    <a href={`${base}/vanilla/zombies/`} class="category-card">
-      <span class="count">{zombies.length}</span>
-      <span class="label">僵尸 · 图鉴 · 掉落 · 弱点</span>
+    <a href={`${base}/vanilla/zombies/`} class="card">
+      <span class="num">{zombies.length}</span>
+      <span class="lbl">僵尸 · 图鉴 · 掉落 · 弱点</span>
     </a>
   </div>
 
   <h2>物品分类</h2>
-  <div class="category-grid">
+  <div class="card-grid">
     {catCards.map(([k, v]) => (
-      <a href={`${base}/vanilla/items/#${k}`} class="category-card">
-        <span class="count">{v}</span>
-        <span class="label">{k}</span>
+      <a href={`${base}/vanilla/items/category/${labelToKey[k] || k}/`} class="card">
+        <span class="num">{v}</span>
+        <span class="lbl">{k}</span>
       </a>
     ))}
   </div>
 
   <h2>使用提示</h2>
-  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称，或从下方列表浏览。</p>
+  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称，或选择分类浏览。</p>
 </Layout>

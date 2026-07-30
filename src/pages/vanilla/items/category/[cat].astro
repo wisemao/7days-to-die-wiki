@@ -1,0 +1,29 @@
+---
+import Layout from '../../../../layouts/Layout.astro';
+import { loadData, ITEM_CATEGORY_LABELS } from '../../../../utils/data-loader';
+const base = '/7days-to-die-wiki';
+
+export function getStaticPaths() {
+  const { items } = loadData();
+  const cats = {};
+  for (const item of items) {
+    if (!cats[item.category]) cats[item.category] = [];
+    cats[item.category].push(item);
+  }
+  return Object.entries(cats).map(([key, list]) => ({
+    params: { cat: key },
+    props: { catItems: list.sort((a, b) => a.name.localeCompare(b.name, 'zh')), catKey: key },
+  }));
+}
+const { catItems, catKey } = Astro.props;
+const catLabel = ITEM_CATEGORY_LABELS[catKey] || catKey;
+---
+
+<Layout title={catLabel} description={`${catLabel} - ${catItems.length} 个物品`}>
+  <nav class="breadcrumb"><a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <span>{catLabel}</span></nav>
+  <h1>{catLabel}</h1>
+  <p class="subtitle">共 {catItems.length} 个物品</p>
+  <div class="item-grid">
+    {catItems.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
+  </div>
+</Layout>
