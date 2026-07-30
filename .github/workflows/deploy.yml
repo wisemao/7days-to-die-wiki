@@ -20,18 +20,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - run: npm ci
-      - name: DIAG - node check
-        run: echo "=== NODE OK ===" && node --eval "console.log('node works')"
-      - name: DIAG - pwd & ls
-        run: |
-          echo "=== PWD ===" && pwd
-          echo "=== LS ===" && ls -la
-          echo "=== ASTRO BIN ===" && ls -la node_modules/astro/bin/astro.mjs
-      - name: DIAG - npm run build (redirect stderr)
-        run: npm run build 2>&1
-        continue-on-error: true
+      - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

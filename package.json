@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "node node_modules/astro/bin/astro.mjs build && npx --yes pagefind --site dist",
+    "build": "astro build && npx --yes pagefind --site dist",
     "preview": "astro preview",
     "import": "node scripts/import/import-all.js"
   },
