@@ -1,6 +1,13 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
+import { readFileSync } from 'fs';
+
+// Load crafting skills for skill magazine items
+let craftingSkills = {};
+try {
+  craftingSkills = JSON.parse(readFileSync('data/crafting-skills.json', 'utf-8'));
+} catch {}
 
 export function getStaticPaths() {
   const data = loadData();
@@ -13,6 +20,7 @@ export function getStaticPaths() {
 const data = loadData();
 const { itemCraftRecipes, itemRecipes, resolveItemName, ITEM_CATEGORY_LABELS } = data;
 const { item } = Astro.props;
+const magInfo = craftingSkills.magazines?.[item.id];
 
 const base = '/7days-to-die-wiki';
 const categoryLabel = ITEM_CATEGORY_LABELS[item.category] || item.category;
@@ -86,6 +94,29 @@ const LABELS = {
     <div>
       <h2>用于以下配方</h2>
       <ul>{usedIn.map(r => <li><a href={`/7days-to-die-wiki/vanilla/recipes/${r._sanitizedId || sanitizeId(r.id)}/`}>{r.name}</a></li>)}</ul>
+    </div>
+  )}
+
+  {magInfo && (
+    <div style="margin-top:24px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-border);border-radius:var(--radius);">
+      <h2 style="margin-top:0;font-size:1.1rem;">📖 关联技能</h2>
+      <p><strong>{magInfo.name}</strong></p>
+      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc}</p>}
+      {magInfo.reqSkill && (
+        <p style="font-size:13px;color:var(--c-text-3);">
+          需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读
+        </p>
+      )}
+      {magInfo.recipes?.length > 0 && (
+        <>
+          <h3 style="font-size:14px;margin:12px 0 6px;">解锁配方</h3>
+          <div class="item-grid" style="margin:0;">
+            {magInfo.recipes.map(r => (
+              <a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{r.name}</a>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   )}
 </Layout>

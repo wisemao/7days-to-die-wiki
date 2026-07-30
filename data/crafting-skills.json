@@ -1,0 +1,352 @@
+{
+  "magazines": {
+    "harvestingToolsSkillMagazine": {
+      "skillName": "craftingHarvestingTools",
+      "name": "收集工具",
+      "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
+      "recipes": [
+        {
+          "id": "meleeToolPickT3Auger",
+          "name": "螺旋钻"
+        },
+        {
+          "id": "meleeToolAxeT3Chainsaw",
+          "name": "电锯"
+        },
+        {
+          "id": "meleeToolRepairT1ClawHammer",
+          "name": "羊角锤"
+        },
+        {
+          "id": "meleeToolAxeT1IronFireaxe",
+          "name": "铁斧"
+        },
+        {
+          "id": "meleeToolAxeT2SteelAxe",
+          "name": "钢斧"
+        },
+        {
+          "id": "meleeToolPickT1IronPickaxe",
+          "name": "铁制鹤嘴锄"
+        },
+        {
+          "id": "meleeToolPickT2SteelPickaxe",
+          "name": "钢制鹤嘴锄"
+        },
+        {
+          "id": "meleeToolShovelT1IronShovel",
+          "name": "铁铲"
+        },
+        {
+          "id": "meleeToolShovelT2SteelShovel",
+          "name": "钢铲"
+        },
+        {
+          "id": "meleeToolShovelT0StoneShovel",
+          "name": "石铲"
+        },
+        {
+          "id": "meleeToolRepairT0StoneAxe",
+          "name": "石斧"
+        }
+      ],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "repairToolsSkillMagazine": {
+      "skillName": "craftingRepairTools",
+      "name": "修理工具",
+      "desc": "阅读[DECEA3]巧手之家[-]可以提高修理工具的制作品质。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "salvageToolsSkillMagazine": {
+      "skillName": "craftingSalvageTools",
+      "name": "废旧工具",
+      "desc": "阅读[DECEA3]趣味分解[-]杂志可以提高废旧工具的制作品质。\\n提升[DECEA3]拾荒行动[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "knucklesSkillMagazine": {
+      "skillName": "craftingKnuckles",
+      "name": "拳套",
+      "desc": "阅读[DECEA3]愤怒之拳[-]杂志可以提高拳套的制作品质。\\n提升[DECEA3]搏斗家[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "bladesSkillMagazine": {
+      "skillName": "craftingBlades",
+      "name": "刀剑",
+      "desc": "阅读[DECEA3]刀剑客[-]可以提高刀剑的制作品质。\\n提升[DECEA3]深度刀伤[-]的战利品几率",
+      "recipes": [
+        {
+          "id": "meleeWpnBladeT0BoneKnife",
+          "name": "骨刀"
+        }
+      ],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "clubsSkillMagazine": {
+      "skillName": "craftingClubs",
+      "name": "棍棒",
+      "desc": "阅读[DECEA3]打击高手[-]可以提高棍棒的制作品质。\\n提升[DECEA3]击球手佩特[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "sledgehammersSkillMagazine": {
+      "skillName": "craftingSledgehammers",
+      "name": "大锤",
+      "desc": "阅读[DECEA3]锤行天下[-]可以提高大锤的制作品质。\\n提升[DECEA3]头骨粉碎者[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "spearsSkillMagazine": {
+      "skillName": "craftingSpears",
+      "name": "长矛",
+      "desc": "阅读[DECEA3]尖锐之棍[-]可以提高长矛的制作品质。\\n提升[DECEA3]长矛大师[-]的战利品几率",
+      "recipes": [
+        {
+          "id": "meleeWpnSpearT0StoneSpear",
+          "name": "石矛"
+        },
+        {
+          "id": "meleeWpnSpearT1IronSpear",
+          "name": "铁矛"
+        },
+        {
+          "id": "meleeWpnSpearT3SteelSpear",
+          "name": "钢矛"
+        }
+      ],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "bowsSkillMagazine": {
+      "skillName": "craftingBows",
+      "name": "弓箭",
+      "desc": "阅读[DECEA3]猎手之弓[-]可以提高弓箭的制作品质。\\n提升[DECEA3]弓术[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "handgunsSkillMagazine": {
+      "skillName": "craftingHandguns",
+      "name": "手枪",
+      "desc": "阅读[DECEA3]手枪弹匣[-]可以提高手枪的制作品质。\\n提升[DECEA3]枪手[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "shotgunsSkillMagazine": {
+      "skillName": "craftingShotguns",
+      "name": "霰弹枪",
+      "desc": "阅读[DECEA3]霰弹枪周刊[-]可以提高霰弹枪的制作品质。\\n提升[DECEA3]喷子[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "riflesSkillMagazine": {
+      "skillName": "craftingRifles",
+      "name": "步枪",
+      "desc": "阅读[DECEA3]步枪世界[-]可以提高步枪的制作品质。\\n提升[DECEA3]死神之眼[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "machineGunsSkillMagazine": {
+      "skillName": "craftingMachineGuns",
+      "name": "机枪",
+      "desc": "阅读[DECEA3]战备竞赛[-]可以提高机枪的制作品质。\\n提升[DECEA3]机枪射手[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "explosivesSkillMagazine": {
+      "skillName": "craftingExplosives",
+      "name": "爆炸物",
+      "desc": "阅读[DECEA3]炸药库[-]可以解锁多种炸药。\\n提升[DECEA3]爆破专家[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "roboticsSkillMagazine": {
+      "skillName": "craftingRobotics",
+      "name": "机器人",
+      "desc": "阅读[DECEA3]科技星球[-]可以提高机器人的制作品质。\\n提升[DECEA3]电击处刑官和或/机器人发明者[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "armorSkillMagazine": {
+      "skillName": "craftingArmor",
+      "name": "护甲",
+      "desc": "阅读[DECEA3]全副武装[-]可以提高护甲的制作品质。\\n通过提高任意[DECEA3]护甲技能[-]来增加获得战利品的几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "medicalSkillMagazine": {
+      "skillName": "craftingMedical",
+      "name": "医疗",
+      "desc": "阅读[DECEA3]医学期刊[-]可解锁不同等级的医疗物品。\\n提升[DECEA3]医师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "foodSkillMagazine": {
+      "skillName": "craftingFood",
+      "name": "食物",
+      "desc": "阅读[DECEA3]家庭烹饪周刊[-]可解锁不同等级的食物。\\n提升[DECEA3]厨艺大师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "seedSkillMagazine": {
+      "skillName": "craftingSeeds",
+      "name": "种子",
+      "desc": "阅读[DECEA3]南方种植[-]可解锁不同等级的种子。\\n提升[DECEA3]就地取材[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "electricianSkillMagazine": {
+      "skillName": "craftingElectrician",
+      "name": "电工",
+      "desc": "阅读[DECEA3]布线101[-]可解锁不同等级的电子物品。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "trapsSkillMagazine": {
+      "skillName": "craftingTraps",
+      "name": "陷阱",
+      "desc": "阅读[DECEA3]电力陷阱[-]可解锁不同等级的陷阱。\\n提升[DECEA3]高级工程师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "workstationSkillMagazine": {
+      "skillName": "craftingWorkstations",
+      "name": "工作站",
+      "desc": "阅读[DECEA3]锻造指南[-]可解锁不同的工作站及其工具。借助[DECEA3]高级工程[-]可提升获得战利品的几率。[DECEA3]撬锁[-]最多提升至制作第 12 级。",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "vehiclesSkillMagazine": {
+      "skillName": "craftingVehicles",
+      "name": "载具",
+      "desc": "阅读[DECEA3]载具大冒险[-]可解锁不同等级的载具。\\n提升[DECEA3]高级机械师[-]的战利品几率",
+      "recipes": [],
+      "reqSkill": "perkIntellectMastery",
+      "reqLevel": 3,
+      "reqName": "智慧专精"
+    },
+    "adminSkillMagazine": {
+      "skillName": "craftingHarvestingTools",
+      "name": "收集工具",
+      "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
+      "recipes": [
+        {
+          "id": "meleeToolPickT3Auger",
+          "name": "螺旋钻"
+        },
+        {
+          "id": "meleeToolAxeT3Chainsaw",
+          "name": "电锯"
+        },
+        {
+          "id": "meleeToolRepairT1ClawHammer",
+          "name": "羊角锤"
+        },
+        {
+          "id": "meleeToolAxeT1IronFireaxe",
+          "name": "铁斧"
+        },
+        {
+          "id": "meleeToolAxeT2SteelAxe",
+          "name": "钢斧"
+        },
+        {
+          "id": "meleeToolPickT1IronPickaxe",
+          "name": "铁制鹤嘴锄"
+        },
+        {
+          "id": "meleeToolPickT2SteelPickaxe",
+          "name": "钢制鹤嘴锄"
+        },
+        {
+          "id": "meleeToolShovelT1IronShovel",
+          "name": "铁铲"
+        },
+        {
+          "id": "meleeToolShovelT2SteelShovel",
+          "name": "钢铲"
+        },
+        {
+          "id": "meleeToolShovelT0StoneShovel",
+          "name": "石铲"
+        },
+        {
+          "id": "meleeToolRepairT0StoneAxe",
+          "name": "石斧"
+        }
+      ],
+      "reqSkill": "",
+      "reqLevel": 0
+    }
+  },
+  "skillNames": {
+    "craftingHarvestingTools": "收集工具",
+    "craftingRepairTools": "修理工具",
+    "craftingSalvageTools": "废旧工具",
+    "craftingKnuckles": "拳套",
+    "craftingBlades": "刀剑",
+    "craftingClubs": "棍棒",
+    "craftingSledgehammers": "大锤",
+    "craftingSpears": "长矛",
+    "craftingBows": "弓箭",
+    "craftingHandguns": "手枪",
+    "craftingShotguns": "霰弹枪",
+    "craftingRifles": "步枪",
+    "craftingMachineGuns": "机枪",
+    "craftingExplosives": "爆炸物",
+    "craftingRobotics": "机器人",
+    "craftingArmor": "护甲",
+    "craftingMedical": "医疗",
+    "craftingFood": "食物",
+    "craftingSeeds": "种子",
+    "craftingElectrician": "电工",
+    "craftingTraps": "陷阱",
+    "craftingWorkstations": "工作站",
+    "craftingVehicles": "载具"
+  }
+}
