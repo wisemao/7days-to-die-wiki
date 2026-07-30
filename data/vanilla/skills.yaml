@@ -215,955 +215,955 @@ skills:
     max_level: 5
     levels:
       - level: 1
-        effect: perkBoomstickRank1Desc
+        effect: 霰弹枪流民
         cost: 5
       - level: 2
-        effect: perkBoomstickRank2Desc
+        effect: 霰弹枪游牧民
         cost: 5
       - level: 3
-        effect: perkBoomstickRank3Desc
+        effect: 霰弹枪专家
         cost: 5
       - level: 4
-        effect: perkBoomstickRank4Desc
+        effect: 霰弹枪大师
         cost: 5
       - level: 5
-        effect: perkBoomstickRank5Desc
+        effect: 喷子
         cost: 5
-    description: perkBoomstickDesc
+    description: 专精于霰弹枪，增加伤害、射速和装填速度。\n提高搜刮到[DECEA3]《霰弹枪周刊》[-]杂志的概率。
   - id: perkPummelPete
     name: 击球手佩特
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkPummelPeteRank1Desc
+        effect: 无赖
         cost: 5
       - level: 2
-        effect: perkPummelPeteRank2Desc
+        effect: 暴徒
         cost: 5
       - level: 3
-        effect: perkPummelPeteRank3Desc
+        effect: 棒球联合会
         cost: 5
       - level: 4
-        effect: perkPummelPeteRank4Desc
+        effect: 趴下
         cost: 5
       - level: 5
-        effect: perkPummelPeteRank5Desc
+        effect: 击球手佩特
         cost: 5
-    description: perkPummelPeteDesc
+    description: 专精于使用棍棒把你的敌人打得不省人事。\n提高搜刮到[DECEA3]《打击高手》[-]杂志的概率。
   - id: perkSkullCrusher
     name: 头骨粉碎者
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkSkullCrusherRank1Desc
+        effect: 好斗者
         cost: 5
       - level: 2
-        effect: perkSkullCrusherRank2Desc
+        effect: 拳击家
         cost: 5
       - level: 3
-        effect: perkSkullCrusherRank3Desc
+        effect: 击碎者
         cost: 5
       - level: 4
-        effect: perkSkullCrusherRank4Desc
+        effect: 骨折制造者
         cost: 5
       - level: 5
-        effect: perkSkullCrusherRank5Desc
+        effect: 头骨粉碎者
         cost: 5
-    description: perkSkullCrusherDesc
+    description: 专精于使用大锤一类的重武器摧毁敌人和建筑。\n提高搜刮到[DECEA3]《锤行天下》[-]杂志的概率。
   - id: perkGrandSlam
     name: 满垒本垒打
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkGrandSlamRank1Desc
+        effect: 一垒打
         cost: 5
       - level: 2
-        effect: perkGrandSlamRank2Desc
+        effect: 二垒打
         cost: 5
       - level: 3
-        effect: perkGrandSlamRank3Desc
+        effect: 三垒打
         cost: 5
       - level: 4
-        effect: perkGrandSlamRank4Desc
+        effect: 本垒打
         cost: 5
       - level: 5
-        effect: perkGrandSlamRank5Desc
+        effect: 满垒本垒打之王
         cost: 5
-    description: perkGrandSlamDesc
+    description: 专精于使用棍棒、棒球棒和大锤将敌人致残。
   - id: perkFlurryOfStrength
     name: 外壮内活
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkFlurryOfStrengthRank1Desc
+        effect: 强势开局
         cost: 5
       - level: 2
-        effect: perkFlurryOfStrengthRank2Desc
+        effect: 重型武器大师
         cost: 5
       - level: 3
-        effect: perkFlurryOfStrengthRank3Desc
+        effect: 暴力打击者
         cost: 5
       - level: 4
-        effect: perkFlurryOfStrengthRank4Desc
+        effect: 碎骨者
         cost: 5
       - level: 5
-        effect: perkFlurryOfStrengthRank5Desc
+        effect: 重金属
         cost: 5
-    description: perkFlurryOfStrengthDesc
+    description: 你不仅强壮，也同样灵巧。棍棒和大锤的速度提高。
   - id: perkSexualTrex
     name: 霸王龙
     category: strength
     max_level: 4
     levels:
       - level: 1
-        effect: perkSexualTrexRank1Desc
+        effect: 长椅伴侣
         cost: 5
       - level: 2
-        effect: perkSexualTrexRank2Desc
+        effect: 运动员
         cost: 5
       - level: 3
-        effect: perkSexualTrexRank3Desc
+        effect: 战士
         cost: 5
       - level: 4
-        effect: perkSexualTrexRank4Desc
+        effect: 角斗士
         cost: 5
-    description: perkSexualTrexDesc
+    description: 擅长发动无情的连续突击，在你用之不竭的体力下，敌人的下巴都会被你打掉。
   - id: perkPackMule
     name: 驮骡
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkPackMuleRank1Desc
+        effect: 杂乱无章
         cost: 5
       - level: 2
-        effect: perkPackMuleRank2Desc
+        effect: 拾荒女人
         cost: 5
       - level: 3
-        effect: perkPackMuleRank3Desc
+        effect: 干净利落
         cost: 5
       - level: 4
-        effect: perkPackMuleRank4Desc
+        effect: 井然有序
         cost: 5
       - level: 5
-        effect: perkPackMuleRank5Desc
+        effect: 驮骡
         cost: 5
-    description: perkPackMuleDesc
+    description: 你现在是一头驮骡，可以携带更多的物品，而不会受到移动惩罚。
   - id: perkStrengthMastery
     name: 力量专精
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkStrengthMasteryRank1Desc
+        effect: 矿工自愈
         cost: 5
       - level: 2
-        effect: perkStrengthMasteryRank2Desc
+        effect: 黄铜矿工
         cost: 5
       - level: 3
-        effect: perkStrengthMasteryRank3Desc
+        effect: 战斗矿工
         cost: 5
       - level: 4
-        effect: perkStrengthMasteryRank4Desc
+        effect: 猎头者
         cost: 5
       - level: 5
-        effect: perkStrengthMasteryRank5Desc
+        effect: 肾上腺素狂战士
         cost: 5
-    description: perkStrengthMasteryDesc
+    description: 力量技能大师
   - id: perkMiner69r
     name: 矿业69族
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkMiner69rRank1Desc
+        effect: 工具少年
         cost: 5
       - level: 2
-        effect: perkMiner69rRank2Desc
+        effect: 新人约翰尼
         cost: 5
       - level: 3
-        effect: perkMiner69rRank3Desc
+        effect: 手艺人
         cost: 5
       - level: 4
-        effect: perkMiner69rRank4Desc
+        effect: 岩石粉碎机
         cost: 5
       - level: 5
-        effect: perkMiner69rRank5Desc
+        effect: 矿业69族
         cost: 5
-    description: perkMiner69rDesc
+    description: 增强工具伤害，更迅速地处理岩石和树木，最大程度提高采矿效率。\n提高搜刮到[DECEA3]《工具文摘》[-]杂志的概率。
   - id: perkMotherLode
     name: 母矿
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkMotherLodeRank1Desc
+        effect: 有利可图
         cost: 5
       - level: 2
-        effect: perkMotherLodeRank2Desc
+        effect: 主脉
         cost: 5
       - level: 3
-        effect: perkMotherLodeRank3Desc
+        effect: 淘金
         cost: 5
       - level: 4
-        effect: perkMotherLodeRank4Desc
+        effect: 金矿
         cost: 5
       - level: 5
-        effect: perkMotherLodeRank5Desc
+        effect: 母矿
         cost: 5
-    description: perkMotherLodeDesc
+    description: 收集更多资源，可以把母矿带回家。
   - id: perkJunkMiner
     name: 垃圾矿工
     category: strength
     max_level: 5
     levels:
       - level: 1
-        effect: perkJunkMinerRank1Desc
+        effect: 垃圾挖掘者
         cost: 5
       - level: 2
-        effect: perkJunkMinerRank2Desc
+        effect: 废料铲手
         cost: 5
       - level: 3
-        effect: perkJunkMinerRank3Desc
+        effect: 废墟收割者
         cost: 5
       - level: 4
-        effect: perkJunkMinerRank4Desc
+        effect: 工业粉碎者
         cost: 5
       - level: 5
-        effect: perkJunkMinerRank5Desc
+        effect: 垃圾末日
         cost: 5
-    description: perkJunkMinerDesc
+    description: 这工具可能不太适合，但你将学会用采矿工具采集更多垃圾资源。
   - id: perkBrawler
     name: 搏斗家
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkBrawlerRank1Desc
+        effect: 施暴
         cost: 5
       - level: 2
-        effect: perkBrawlerRank2Desc
+        effect: 小混混
         cost: 5
       - level: 3
-        effect: perkBrawlerRank3Desc
+        effect: 强击手
         cost: 5
       - level: 4
-        effect: perkBrawlerRank4Desc
+        effect: 专业拳击手
         cost: 5
       - level: 5
-        effect: perkBrawlerRank5Desc
+        effect: 多派武术大师
         cost: 5
-    description: perkBrawlerDesc
+    description: 学习武术，用你的双拳来把你的敌人击晕、击倒、缴械或者打残吧。\n提高搜刮到[DECEA3]《愤怒之拳》[-]杂志的概率。
   - id: perkMachineGunner
     name: 机枪射手
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkMachineGunnerRank1Desc
+        effect: 步兵
         cost: 5
       - level: 2
-        effect: perkMachineGunnerRank2Desc
+        effect: 游击队员
         cost: 5
       - level: 3
-        effect: perkMachineGunnerRank3Desc
+        effect: 士兵
         cost: 5
       - level: 4
-        effect: perkMachineGunnerRank4Desc
+        effect: 特种部队
         cost: 5
       - level: 5
-        effect: perkMachineGunnerRank5Desc
+        effect: 机枪射手
         cost: 5
-    description: perkMachineGunnerDesc
+    description: 成为使用突击步枪消灭敌人的突击队员。\n提高搜刮到[DECEA3]《战备竞赛》[-]杂志的概率。
   - id: perkFlurryOfFortitude
     name: 无影手
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkFlurryOfFortitudeRank1Desc
+        effect: 快速刺拳
         cost: 5
       - level: 2
-        effect: perkFlurryOfFortitudeRank2Desc
+        effect: 交叉重击
         cost: 5
       - level: 3
-        effect: perkFlurryOfFortitudeRank3Desc
+        effect: 上钩拳大师
         cost: 5
       - level: 4
-        effect: perkFlurryOfFortitudeRank4Desc
+        effect: 强力猛击
         cost: 5
       - level: 5
-        effect: perkFlurryOfFortitudeRank5Desc
+        effect: 无情打击
         cost: 5
-    description: perkFlurryOfFortitudeDesc
+    description: 通过更快速的斗殴打击粉碎你的敌人。
   - id: perkTheHuntsman
     name: 狩猎者
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkTheHuntsmanRank1Desc
+        effect: 掷矛人
         cost: 5
       - level: 2
-        effect: perkTheHuntsmanRank2Desc
+        effect: 偷猎者
         cost: 5
       - level: 3
-        effect: perkTheHuntsmanRank3Desc
+        effect: 猎人
         cost: 5
       - level: 4
-        effect: perkTheHuntsmanRank4Desc
+        effect: 屠户
         cost: 5
       - level: 5
-        effect: perkTheHuntsmanRank5Desc
+        effect: 狩猎者
         cost: 5
-    description: perkTheHuntsmanDesc
+    description: 专精于狩猎并收获更多肉类、骨头与皮革。
   - id: perkWellInsulated
     name: 完美隔热
     category: fortitude
     max_level: 3
     levels:
       - level: 1
-        effect: perkWellInsulatedRank1Desc
+        effect: 温和气候耐受力
         cost: 5
       - level: 2
-        effect: perkWellInsulatedRank2Desc
+        effect: 恶劣气候耐受力
         cost: 5
       - level: 3
-        effect: perkWellInsulatedRank3Desc
+        effect: 极端气候耐受力
         cost: 5
-    description: perkWellInsulatedDesc
+    description: 擅于利用衣服与自身的抗性来度过最为恶劣的环境。
   - id: perkPainTolerance
     name: 忍痛
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkPainToleranceRank1Desc
+        effect: 吃苦耐劳
         cost: 5
       - level: 2
-        effect: perkPainToleranceRank2Desc
+        effect: 体格粗犷
         cost: 5
       - level: 3
-        effect: perkPainToleranceRank3Desc
+        effect: 耐打
         cost: 5
       - level: 4
-        effect: perkPainToleranceRank4Desc
+        effect: 受虐狂
         cost: 5
       - level: 5
-        effect: perkPainToleranceRank5Desc
+        effect: 铁下巴
         cost: 5
-    description: perkPainToleranceDesc
+    description: 专精于忍受打击，在痛苦中战斗，在其他人纷纷倒下之后继续战斗。
   - id: perkFortitudeMastery
     name: 强健专精
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkFortitudeMasteryRank1Desc
+        effect: 止血者
         cost: 5
       - level: 2
-        effect: perkFortitudeMasteryRank2Desc
+        effect: 抗体
         cost: 5
       - level: 3
-        effect: perkFortitudeMasteryRank3Desc
+        effect: 牙医
         cost: 5
       - level: 4
-        effect: perkFortitudeMasteryRank4Desc
+        effect: 韧性
         cost: 5
       - level: 5
-        effect: perkFortitudeMasteryRank5Desc
+        effect: 坚不可摧
         cost: 5
-    description: perkFortitudeMasteryDesc
+    description: 强健技能大师
   - id: perkSiphoningStrikes
     name: 虹吸打击
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkSiphoningStrikesRank1Desc
+        effect: 初尝鲜血
         cost: 5
       - level: 2
-        effect: perkSiphoningStrikesRank2Desc
+        effect: 舔伤者
         cost: 5
       - level: 3
-        effect: perkSiphoningStrikesRank3Desc
+        effect: 杀戮燃料
         cost: 5
       - level: 4
-        effect: perkSiphoningStrikesRank4Desc
+        effect: 嗜血
         cost: 5
       - level: 5
-        effect: perkSiphoningStrikesRank5Desc
+        effect: 战士盛宴
         cost: 5
-    description: perkSiphoningStrikesDesc
+    description: 每一击都能从敌人身上汲取力量。
   - id: perkHealingFactor
     name: 治疗因子
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkHealingFactorRank1Desc
+        effect: 快速代谢
         cost: 5
       - level: 2
-        effect: perkHealingFactorRank2Desc
+        effect: 快速愈合
         cost: 5
       - level: 3
-        effect: perkHealingFactorRank3Desc
+        effect: 动物凶猛
         cost: 5
       - level: 4
-        effect: perkHealingFactorRank4Desc
+        effect: 生生不息
         cost: 5
       - level: 5
-        effect: perkHealingFactorRank5Desc
+        effect: 基因突变
         cost: 5
-    description: perkHealingFactorDesc
+    description: 擅长在不挨饿的情况下提升你的自然愈合率。\n\n当你没有食物或水时将无法自愈。
   - id: perkSlowMetabolism
     name: 铁胃
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkSlowMetabolismRank1Desc
+        effect: 漏胃
         cost: 5
       - level: 2
-        effect: perkSlowMetabolismRank2Desc
+        effect: 铜牙铁胃
         cost: 5
       - level: 3
-        effect: perkSlowMetabolismRank3Desc
+        effect: 代谢超群
         cost: 5
       - level: 4
-        effect: perkSlowMetabolismRank4Desc
+        effect: 内在免疫
         cost: 5
       - level: 5
-        effect: perkSlowMetabolismRank5Desc
+        effect: 铁胃
         cost: 5
-    description: perkSlowMetabolismDesc
+    description: 专注于胃肠道健康，减少卡路里摄入，从食物中获得更多营养。潜水时减少氧气消耗。
   - id: perkRuleOneCardio
     name: 规则1：有氧运动
     category: fortitude
     max_level: 5
     levels:
       - level: 1
-        effect: perkRuleOneCardioNameRank1Desc
+        effect: 远足者
         cost: 5
       - level: 2
-        effect: perkRuleOneCardioNameRank2Desc
+        effect: 赛跑运动员
         cost: 5
       - level: 3
-        effect: perkRuleOneCardioNameRank3Desc
+        effect: 慢跑战神
         cost: 5
       - level: 4
-        effect: perkRuleOneCardioNameRank4Desc
+        effect: 马拉松运动员
         cost: 5
       - level: 5
-        effect: perkRuleOneCardioNameRank5Desc
+        effect: 铁人三项运动员
         cost: 5
-    description: perkRuleOneCardioDesc
+    description: 让你的身体学会对抗丧尸的最好战术：逃跑。
   - id: perkArchery
     name: 弓术
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkArcheryRank1Desc
+        effect: 弓手
         cost: 5
       - level: 2
-        effect: perkArcheryRank2Desc
+        effect: 长弓手
         cost: 5
       - level: 3
-        effect: perkArcheryRank3Desc
+        effect: 神射手
         cost: 5
       - level: 4
-        effect: perkArcheryRank4Desc
+        effect: 发丝射手
         cost: 5
       - level: 5
-        effect: perkArcheryRank5Desc
+        effect: 护林员
         cost: 5
-    description: perkArcheryDesc
+    description: 使用弓弩的大师。\n提高搜刮到[DECEA3]《猎人之弓》[-]杂志的概率。
   - id: perkGunslinger
     name: 枪手
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkGunslingerRank1Desc
+        effect: 豌豆射手
         cost: 5
       - level: 2
-        effect: perkGunslingerRank2Desc
+        effect: 不法之徒
         cost: 5
       - level: 3
-        effect: perkGunslingerRank3Desc
+        effect: 小镇警长
         cost: 5
       - level: 4
-        effect: perkGunslingerRank4Desc
+        effect: 枪战高手
         cost: 5
       - level: 5
-        effect: perkGunslingerRank5Desc
+        effect: 枪手
         cost: 5
-    description: perkGunslingerDesc
+    description: 以老牌做法解决你们的争端，在后启示录时代成为一个枪手。使用手枪和冲锋枪的大师。\n提高搜刮到[DECEA3]《手枪弹匣》[-]的概率。
   - id: perkDeepCuts
     name: 深度刀伤
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkDeepCutsRank1Desc
+        effect: 钝刀残刃
         cost: 5
       - level: 2
-        effect: perkDeepCutsRank2Desc
+        effect: 匕首男孩
         cost: 5
       - level: 3
-        effect: perkDeepCutsRank3Desc
+        effect: 剑术家
         cost: 5
       - level: 4
-        effect: perkDeepCutsRank4Desc
+        effect: 剑士
         cost: 5
       - level: 5
-        effect: perkDeepCutsRank5Desc
+        effect: 武士
         cost: 5
-    description: perkDeepCutsDesc
+    description: 专精于使用匕首或是砍刀这类带刃武器，让你的敌人血流不止而死吧。\n提高搜刮到[DECEA3]《匕首男孩》[-]杂志的概率。
   - id: perkFlurryOfAgility
     name: 旋风斩
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkFlurryOfAgilityRank1Desc
+        effect: 瞬杀
         cost: 5
       - level: 2
-        effect: perkFlurryOfAgilityRank2Desc
+        effect: 大卸八块
         cost: 5
       - level: 3
-        effect: perkFlurryOfAgilityRank3Desc
+        effect: 四分五裂
         cost: 5
       - level: 4
-        effect: perkFlurryOfAgilityRank4Desc
+        effect: 割喉者
         cost: 5
       - level: 5
-        effect: perkFlurryOfAgilityRank5Desc
+        effect: 旋风斩
         cost: 5
-    description: perkFlurryOfAgilityDesc
+    description: 学会更快速地挥动你的刀剑，化身毁灭与屠杀的旋风。
   - id: perkRunAndGun
     name: 奔袭战术
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkRunAndGunRank1Desc
+        effect: 疯狂扫射
         cost: 5
       - level: 2
-        effect: perkRunAndGunRank2Desc
+        effect: 手指抽筋
         cost: 5
       - level: 3
-        effect: perkRunAndGunRank3Desc
+        effect: 铅弹狂徒
         cost: 5
       - level: 4
-        effect: perkRunAndGunRank4Desc
+        effect: 疯狂突袭者
         cost: 5
       - level: 5
-        effect: perkRunAndGunRank5Desc
+        effect: 扳机手
         cost: 5
-    description: perkRunandGunDesc
+    description: 为远距武器装弹时提高腰射精度。
   - id: perkHardTarget
     name: 难以命中
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkHardTargetRank1Desc
+        effect: 闪避战术
         cost: 5
       - level: 2
-        effect: perkHardTargetRank2Desc
+        effect: 闪避本能
         cost: 5
       - level: 3
-        effect: perkHardTargetRank3Desc
+        effect: 幻影步伐
         cost: 5
       - level: 4
-        effect: perkHardTargetRank4Desc
+        effect: 流畅防御
         cost: 5
       - level: 5
-        effect: perkHardTargetRank5Desc
+        effect: 幽灵反射
         cost: 5
-    description: perkHardTargetDesc
+    description: 翻滚、迂回、躲避——你敏捷的反应力让你成为难以击中的目标。
   - id: perkParkour
     name: 跑酷
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkParkourRank1Desc
+        effect: 杂技演员
         cost: 5
       - level: 2
-        effect: perkParkourRank2Desc
+        effect: 特技演员
         cost: 5
       - level: 3
-        effect: perkParkourRank3Desc
+        effect: 作死高手
         cost: 5
       - level: 4
-        effect: perkParkourRank4Desc
+        effect: 都市跑酷大师
         cost: 5
       - level: 5
-        effect: perkParkourRank5Desc
+        effect: 跑酷大师
         cost: 5
-    description: perkParkourDesc
+    description: 专精于运用杂技前往各种你想去的地方，无论是在高天还是在地底。
   - id: perkAgilityMastery
     name: 敏捷专精
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkAgilityMasteryRank1Desc
+        effect: 陷阱射击
         cost: 5
       - level: 2
-        effect: perkAgilityMasteryRank2Desc
+        effect: 快速装填
         cost: 5
       - level: 3
-        effect: perkAgilityMasteryRank3Desc
+        effect: 流血之心
         cost: 5
       - level: 4
-        effect: perkAgilityMasteryRank4Desc
+        effect: 幽灵恩惠
         cost: 5
       - level: 5
-        effect: perkAgilityMasteryRank5Desc
+        effect: 穿透精准
         cost: 5
-    description: perkAgilityMasteryDesc
+    description: 敏捷技能大师
   - id: perkHiddenStrike
     name: 隐蔽之击
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkHiddenStrikeRank1Desc
+        effect: 割喉利手
         cost: 5
       - level: 2
-        effect: perkHiddenStrikeRank2Desc
+        effect: 屠户
         cost: 5
       - level: 3
-        effect: perkHiddenStrikeRank3Desc
+        effect: 行刑者
         cost: 5
       - level: 4
-        effect: perkHiddenStrikeRank4Desc
+        effect: 冷血杀手
         cost: 5
       - level: 5
-        effect: perkHiddenStrikeRank5Desc
+        effect: 刺客
         cost: 5
-    description: perkHiddenStrikeDesc
+    description: 擅长在潜行的时候抓住正在休息或者漫无目地游荡的敌人。
   - id: perkFromTheShadows
     name: 来自暗影
     category: agility
     max_level: 5
     levels:
       - level: 1
-        effect: perkFromTheShadowsRank1Desc
+        effect: 潜伏之人
         cost: 5
       - level: 2
-        effect: perkFromTheShadowsRank2Desc
+        effect: 暗影使者
         cost: 5
       - level: 3
-        effect: perkFromTheShadowsRank3Desc
+        effect: 夜行太保
         cost: 5
       - level: 4
-        effect: perkFromTheShadowsRank4Desc
+        effect: 逡巡幽影
         cost: 5
       - level: 5
-        effect: perkFromTheShadowsRank5Desc
+        effect: 暗影忍者
         cost: 5
-    description: perkFromTheShadowsDesc
+    description: 擅长在黑暗中潜行，发出的声音更小。
   - id: perkElectrocutioner
     name: 电击处刑官
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkElectrocutionerRank1Desc
+        effect: 低电压
         cost: 5
       - level: 2
-        effect: perkElectrocutionerRank2Desc
+        effect: 电击枪
         cost: 5
       - level: 3
-        effect: perkElectrocutionerRank3Desc
+        effect: 驱牛棒
         cost: 5
       - level: 4
-        effect: perkElectrocutionerRank4Desc
+        effect: 危险：高电压
         cost: 5
       - level: 5
-        effect: perkElectrocutionerRank5Desc
+        effect: 电击处刑官
         cost: 5
-    description: perkElectrocutionerDesc
+    description: 学习如何高效使用短棒。能更轻易地俘获你的敌人，也能造成更多伤害。\n提高搜刮到[DECEA3]《科技星球》[-]杂志的概率。
   - id: perkTurrets
     name: 机器人发明者
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkTurretsRank1Desc
+        effect: 科学项目
         cost: 5
       - level: 2
-        effect: perkTurretsRank2Desc
+        effect: 机器人学入门
         cost: 5
       - level: 3
-        effect: perkTurretsRank3Desc
+        effect: 自动武器
         cost: 5
       - level: 4
-        effect: perkTurretsRank4Desc
+        effect: 高级机器人学
         cost: 5
       - level: 5
-        effect: perkTurretsRank5Desc
+        effect: 机器人专家
         cost: 5
-    description: perkTurretsDesc
+    description: 你对机器人非常着迷。学习使用和部署机器人武器。\n提高搜刮到[DECEA3]《科技星球》[-]杂志的概率。
   - id: perkFlurryOfIntellect
     name: 精准攻击
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkFlurryOfIntellectRank1Desc
+        effect: 基础数学
         cost: 5
       - level: 2
-        effect: perkFlurryOfIntellectRank2Desc
+        effect: 高级计算
         cost: 5
       - level: 3
-        effect: perkFlurryOfIntellectRank3Desc
+        effect: 算法大师
         cost: 5
       - level: 4
-        effect: perkFlurryOfIntellectRank4Desc
+        effect: 夏洛克·福尔摩斯
         cost: 5
       - level: 5
-        effect: perkFlurryOfIntellectRank5Desc
+        effect: 爱因斯坦之怒
         cost: 5
-    description: perkFlurryOfIntellectDesc
+    description: 运用你的智慧来计算到达目标的最短轨迹，并有效地提高使用短棒的攻击速度！
   - id: perkBetterBarter
     name: 贸易砍价
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkBetterBarterRank1Desc
+        effect: 砍价商贩
         cost: 5
       - level: 2
-        effect: perkBetterBarterRank2Desc
+        effect: 推销员
         cost: 5
       - level: 3
-        effect: perkBetterBarterRank3Desc
+        effect: 销售经理
         cost: 5
       - level: 4
-        effect: perkBetterBarterRank4Desc
+        effect: 商界大亨
         cost: 5
       - level: 5
-        effect: perkBetterBarterRank5Desc
+        effect: 公司市场部CEO
         cost: 5
-    description: perkBetterBarterDesc
+    description: 精通与区域商人交流的话术，这样能让你在交易中拿到更合适的价格。
   - id: perkDaringAdventurer
     name: 大胆的冒险家
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkDaringAdventurerRank1Desc
+        effect: 搜刮者
         cost: 5
       - level: 2
-        effect: perkDaringAdventurerRank2Desc
+        effect: 掠夺者
         cost: 5
       - level: 3
-        effect: perkDaringAdventurerRank3Desc
+        effect: 雇佣兵
         cost: 5
       - level: 4
-        effect: perkDaringAdventurerRank4Desc
+        effect: 赏金猎人
         cost: 5
       - level: 5
-        effect: perkDaringAdventurerRank5Desc
+        effect: 无畏冒险家
         cost: 5
-    description: perkDaringAdventurerDesc
+    description: 做一名大胆的冒险家！\n去领取任务，获得奖励吧。
   - id: perkCharismaticNature
     name: 魅力十足
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkCharismaticNatureRank1Desc
+        effect: 鼓舞士气
         cost: 5
       - level: 2
-        effect: perkCharismaticNatureRank2Desc
+        effect: 团队领导
         cost: 5
       - level: 3
-        effect: perkCharismaticNatureRank3Desc
+        effect: 激情发言人
         cost: 5
       - level: 4
-        effect: perkCharismaticNatureRank4Desc
+        effect: 队长
         cost: 5
       - level: 5
-        effect: perkCharismaticNatureRank5Desc
+        effect: 将军
         cost: 5
-    description: perkCharismaticNatureDesc
+    description: 你的存在能鼓舞你的队友，增强他们的战斗能力。
   - id: perkPhysician
     name: 医师
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkPhysicianRank1Desc
+        effect: 实习医生
         cost: 5
       - level: 2
-        effect: perkPhysicianRank2Desc
+        effect: 正规医生
         cost: 5
       - level: 3
-        effect: perkPhysicianRank3Desc
+        effect: 外科医生
         cost: 5
       - level: 4
-        effect: perkPhysicianRank4Desc
+        effect: 截肢者
         cost: 5
       - level: 5
-        effect: perkPhysicianRank5Desc
+        effect: 安乐师
         cost: 5
-    description: perkPhysicianDesc
+    description: 能更有效地使用药物与治疗物品。\n提高搜刮到[DECEA3]《医学期刊》[-]杂志的概率。
   - id: perkAdvancedEngineering
     name: 高级工程师
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkAdvancedEngineeringRank1Desc
+        effect: 学徒
         cost: 5
       - level: 2
-        effect: perkAdvancedEngineeringRank2Desc
+        effect: 修补匠
         cost: 5
       - level: 3
-        effect: perkAdvancedEngineeringRank3Desc
+        effect: 工匠
         cost: 5
       - level: 4
-        effect: perkAdvancedEngineeringRank4Desc
+        effect: 发明家
         cost: 5
       - level: 5
-        effect: perkAdvancedEngineeringRank5Desc
+        effect: 高级工程师
         cost: 5
-    description: perkAdvancedEngineeringDesc
+    description: 在工作站以更低的成本加速制造高级物品。提高搜刮到[DECEA3]《电力陷阱》、《锻造指南》《巧手之家》《布线 101》[-]杂志的概率。
   - id: perkGreaseMonkey
     name: 修理油猴
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkGreaseMonkeyRank1Desc
+        effect: 单车技师
         cost: 5
       - level: 2
-        effect: perkGreaseMonkeyRank2Desc
+        effect: 小型机车大师
         cost: 5
       - level: 3
-        effect: perkGreaseMonkeyRank3Desc
+        effect: 摩托狂热者
         cost: 5
       - level: 4
-        effect: perkGreaseMonkeyRank4Desc
+        effect: 卡车狂人
         cost: 5
       - level: 5
-        effect: perkGreaseMonkeyRank5Desc
+        effect: 电子巫师
         cost: 5
-    description: perkGreaseMonkeyDesc
+    description: 学习更便宜地利用荒野的垃圾建造载具！无此技能也可以组装载具。\n提高搜刮到[DECEA3]《载具大冒险》[-]杂志的概率。
   - id: perkIntellectMastery
     name: 智慧专精
     category: intellect
     max_level: 5
     levels:
       - level: 1
-        effect: perkIntellectMasteryRank1Desc
+        effect: 飞行大师
         cost: 5
       - level: 2
-        effect: perkIntellectMasteryRank2Desc
+        effect: 书虫
         cost: 5
       - level: 3
-        effect: perkIntellectMasteryRank3Desc
+        effect: 过目不忘
         cost: 5
       - level: 4
-        effect: perkIntellectMasteryRank4Desc
+        effect: 天才狂怒
         cost: 5
       - level: 5
-        effect: perkIntellectMasteryRank5Desc
+        effect: 警棍大师
         cost: 5
-    description: perkIntellectMasteryDesc
+    description: 智慧技能大师
   - id: perkLightArmor
     name: 轻甲
     category: generalperks
     max_level: 4
     levels:
       - level: 1
-        effect: perkLightArmorRank1Desc
+        effect: 精致
         cost: 5
       - level: 2
-        effect: perkLightArmorRank2Desc
+        effect: 坚固
         cost: 5
       - level: 3
-        effect: perkLightArmorRank3Desc
+        effect: 加固
         cost: 5
       - level: 4
-        effect: perkLightArmorRank4Desc
+        effect: 实战检验
         cost: 5
-    description: perkLightArmorDesc
+    description: 专精轻甲，降低损坏。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的几率。
   - id: perkMediumArmor
     name: 中型护甲
     category: generalperks
     max_level: 4
     levels:
       - level: 1
-        effect: perkMediumArmorRank1Desc
+        effect: 护卫
         cost: 5
       - level: 2
-        effect: perkMediumArmorRank2Desc
+        effect: 好战者
         cost: 5
       - level: 3
-        effect: perkMediumArmorRank3Desc
+        effect: 骑士
         cost: 5
       - level: 4
-        effect: perkMediumArmorRank4Desc
+        effect: 大角斗士
         cost: 5
-    description: perkMediumArmorDesc
+    description: 专精于中型护甲，降低损坏、体力和移动惩罚。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的概率。
   - id: perkHeavyArmor
     name: 重甲护身
     category: generalperks
     max_level: 4
     levels:
       - level: 1
-        effect: perkHeavyArmorRank1Desc
+        effect: 铁皮之人
         cost: 5
       - level: 2
-        effect: perkHeavyArmorRank2Desc
+        effect: 厚重金属
         cost: 5
       - level: 3
-        effect: perkHeavyArmorRank3Desc
+        effect: 无敌铁人
         cost: 5
       - level: 4
-        effect: perkHeavyArmorRank4Desc
+        effect: 金刚不坏
         cost: 5
-    description: perkHeavyArmorDesc
+    description: 擅长用钢铁保护自己，成为战场上不可阻挡的巨兽。\n提高搜刮到[DECEA3]《全副武装》[-]杂志的概率。
   - id: perkMasterChef
     name: 厨艺大师
     category: generalperks
     max_level: 3
     levels:
       - level: 1
-        effect: perkMasterChefRank1Desc
+        effect: 单身汉
         cost: 5
       - level: 2
-        effect: perkMasterChefRank2Desc
+        effect: 垃圾车司机
         cost: 5
       - level: 3
-        effect: perkMasterChefRank3Desc
+        effect: 军中伙夫
         cost: 5
-    description: perkMasterChefDesc
+    description: 学习如何成为一名大厨！减少烹饪时间与你最爱食谱所需的食材。提高搜刮到[DECEA3]《家庭烹饪周刊》[-]杂志和食材的概率。
   - id: perkLivingOffTheLand
     name: 就地取材
     category: generalperks
     max_level: 3
     levels:
       - level: 1
-        effect: perkLivingOffTheLandRank1Desc
+        effect: 收集者
         cost: 5
       - level: 2
-        effect: perkLivingOffTheLandRank2Desc
+        effect: 搜寻者
         cost: 5
       - level: 3
-        effect: perkLivingOffTheLandRank3Desc
+        effect: 农夫
         cost: 5
       - level: 4
         effect: perkLivingOffTheLandRank4Desc
@@ -1171,7 +1171,7 @@ skills:
       - level: 5
         effect: perkLivingOffTheLandRank5Desc
         cost: 5
-    description: perkLivingOffTheLandDesc
+    description: 专精于用手或工具收割更多庄稼。\n提高搜刮到[DECEA3]《南方种植》[-]杂志的概率。
   - id: perkLockPicking
     name: 撬锁
     category: generalperks
@@ -1216,7 +1216,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacHeatDesc
+    description: 增加搜刮时获取额外水源的概率。
   - id: perkFiremansAlmanacAxes
     name: perkFiremansAlmanacAxes
     category: strength
@@ -1225,7 +1225,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacAxesDesc
+    description: 制作消防斧模组。
   - id: perkFiremansAlmanacSpeed
     name: perkFiremansAlmanacSpeed
     category: strength
@@ -1234,13 +1234,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacSpeedDesc
+    description: 斧子的攻击速度加快5%
   - id: perkFiremansAlmanacMolotov
     name: perkFiremansAlmanacMolotov
     category: strength
     max_level: 1
     levels: []
-    description: perkFiremansAlmanacMolotovDesc
+    description: 火攻武器燃烧时长增加10%。
   - id: perkFiremansAlmanacPrevention
     name: perkFiremansAlmanacPrevention
     category: strength
@@ -1249,7 +1249,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacPreventionDesc
+    description: 被火引燃的几率降低25%。
   - id: perkFiremansAlmanacHarvest
     name: perkFiremansAlmanacHarvest
     category: strength
@@ -1258,7 +1258,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacHarvestDesc
+    description: 对煤炭与木炭造成的伤害增加10%。
   - id: perkFiremansAlmanacEquipment
     name: perkFiremansAlmanacEquipment
     category: strength
@@ -1267,7 +1267,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacEquipmentDesc
+    description: 减少载具受到的碰撞伤害。
   - id: perkFiremansAlmanacComplete
     name: perkFiremansAlmanacComplete
     category: strength
@@ -1276,7 +1276,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkFiremansAlmanacCompleteDesc
+    description: 在焚毁的森林或荒野中可冲刺更久时间，并不受负重影响。电锯伤害增加 50%。
   - id: perkNightStalkerStealthDamage
     name: perkNightStalkerStealthDamage
     category: strength
@@ -1285,7 +1285,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerStealthDamageDesc
+    description: 夜间潜行伤害增加10%。
   - id: perkNightStalkerSilentNight
     name: perkNightStalkerSilentNight
     category: strength
@@ -1294,7 +1294,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerSilentNightDesc
+    description: 增强夜间潜行效果5%。
   - id: perkNightStalkerBlades
     name: perkNightStalkerBlades
     category: strength
@@ -1303,7 +1303,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerBladesDesc
+    description: 夜晚时刀剑造成的伤害增加10%。
   - id: perkNightStalkerThiefAdrenaline
     name: perkNightStalkerThiefAdrenaline
     category: strength
@@ -1312,7 +1312,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerThiefAdrenalineDesc
+    description: 夜间负重永远不会超限。
   - id: perkNightStalkerArchery
     name: perkNightStalkerArchery
     category: strength
@@ -1321,7 +1321,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerArcheryDesc
+    description: 夜晚时弓箭造成的伤害增加10%。
   - id: perkNightStalkerTwilightThief
     name: perkNightStalkerTwilightThief
     category: strength
@@ -1330,7 +1330,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerTwilightThiefDesc
+    description: 夜间击杀经验值增加5%。
   - id: perkNightStalkerSlumberParty
     name: perkNightStalkerSlumberParty
     category: strength
@@ -1339,7 +1339,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerSlumberPartyDesc
+    description: 对夜间熟睡中的目标增加额外50%伤害。
   - id: perkNightStalkerComplete
     name: perkNightStalkerComplete
     category: strength
@@ -1348,7 +1348,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkNightStalkerCompleteDesc
+    description: 夜间使用匕首潜行攻击时造成200%额外伤害。
   - id: perkLuckyLooterDukes
     name: perkLuckyLooterDukes
     category: strength
@@ -1357,7 +1357,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterDukesDesc
+    description: 在搜刮时能找到更多公爵币。
   - id: perkLuckyLooterAmmunition
     name: perkLuckyLooterAmmunition
     category: strength
@@ -1366,7 +1366,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterAmmoDesc
+    description: 在搜刮时能找到更多弹药。
   - id: perkLuckyLooterBrass
     name: perkLuckyLooterBrass
     category: strength
@@ -1375,7 +1375,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterBrassDesc
+    description: 在搜刮时能找到更多黄铜。
   - id: perkLuckyLooterLead
     name: perkLuckyLooterLead
     category: strength
@@ -1384,7 +1384,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterLeadDesc
+    description: 在搜刮时能找到更多铅。
   - id: perkLuckyLooterBooks
     name: perkLuckyLooterBooks
     category: strength
@@ -1393,7 +1393,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterBooksDesc
+    description: 在搜刮时能找到更多垃圾。
   - id: perkLuckyLooterFood
     name: perkLuckyLooterFood
     category: strength
@@ -1402,7 +1402,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterFoodDesc
+    description: 在搜刮时能找到更多食物。
   - id: perkLuckyLooterMedical
     name: perkLuckyLooterMedical
     category: strength
@@ -1411,7 +1411,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterMedicalDesc
+    description: 在搜刮时能找到更多医疗补给。
   - id: perkLuckyLooterComplete
     name: perkLuckyLooterComplete
     category: strength
@@ -1420,7 +1420,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkLuckyLooterCompleteDesc
+    description: 敌人掉落战利品的几率更高。
   - id: perkEnforcerDamage
     name: perkEnforcerDamage
     category: strength
@@ -1429,13 +1429,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerDamageDesc
+    description: .44 枪造成的伤害增加 10%。
   - id: perkEnforcerApparel
     name: perkEnforcerApparel
     category: strength
     max_level: 1
     levels: []
-    description: perkEnforcerApparelDesc
+    description: 穿着警官装束时受到的伤害减少 5%。
   - id: perkEnforcerPunks
     name: perkEnforcerPunks
     category: strength
@@ -1444,7 +1444,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerPunksDesc
+    description: 弹仓内最后一发子弹造成双倍伤害。
   - id: perkEnforcerIntimidation
     name: perkEnforcerIntimidation
     category: strength
@@ -1453,7 +1453,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerIntimidationDesc
+    description: 手持.44 枪交易时价格会优惠 5%。
   - id: perkEnforcerAPAmmo
     name: perkEnforcerAPAmmo
     category: strength
@@ -1462,7 +1462,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerAPAmmoDesc
+    description: 你能制作.44马格南穿甲弹。
   - id: perkEnforcerHPAmmo
     name: perkEnforcerHPAmmo
     category: strength
@@ -1471,13 +1471,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerHPAmmoDesc
+    description: 你能制作.44马格南空心弹。
   - id: perkEnforcerCriminalPursuit
     name: perkEnforcerCriminalPursuit
     category: strength
     max_level: 1
     levels: []
-    description: perkEnforcerCriminalPursuitDesc
+    description: 在战斗中使用.44 枪冲刺时消耗的耐力减少 20%。
   - id: perkEnforcerComplete
     name: 警官 - 完成
     category: strength
@@ -1486,7 +1486,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkEnforcerCompleteDesc
+    description: 所有.44 弹药都能穿透敌人。批量制作弹药。
   - id: perkBatterUpBigHits
     name: perkBatterUpBigHits
     category: strength
@@ -1495,25 +1495,25 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkBatterUpBigHitsDesc
+    description: 棍棒造成的伤害增加10%。
   - id: perkBatterUpStealingBases
     name: perkBatterUpStealingBases
     category: strength
     max_level: 1
     levels: []
-    description: perkBatterUpStealingBasesDesc
+    description: 在战斗中抽出棍棒冲刺时消耗的体力减少20%。
   - id: perkBatterUpSlowPitch
     name: perkBatterUpSlowPitch
     category: strength
     max_level: 1
     levels: []
-    description: perkBatterUpSlowPitchDesc
+    description: 对腿部进行的强力攻击能减缓敌人。
   - id: perkBatterUpKnockdown
     name: perkBatterUpKnockdown
     category: strength
     max_level: 1
     levels: []
-    description: perkBatterUpKnockdownDesc
+    description: 强力攻击会增加击倒的几率。
   - id: perkBatterUpMaintenance
     name: perkBatterUpMaintenance
     category: strength
@@ -1522,13 +1522,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkBatterUpMaintenanceDesc
+    description: 棒球棒与棍棒损坏速度减慢20%。
   - id: perkBatterUpFoulBalls
     name: perkBatterUpFoulBalls
     category: strength
     max_level: 1
     levels: []
-    description: perkBatterUpFoulBallsDesc
+    description: 致残敌人。
   - id: perkBatterUpMetalChain
     name: perkBatterUpMetalChain
     category: strength
@@ -1537,13 +1537,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkBatterUpMetalChainDesc
+    description: 为棒球棒与棍棒制作铁链模组。
   - id: perkBatterUpComplete
     name: perkBatterUpComplete
     category: strength
     max_level: 1
     levels: []
-    description: perkBatterUpCompleteDesc
+    description: 用强力攻击杀死敌人时能填充你的体力槽。
   - id: perkGreatHeistSafes
     name: perkGreatHeistSafes
     category: strength
@@ -1552,7 +1552,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistSafesDesc
+    description: 对保险箱造成的伤害增加10%。
   - id: perkGreatHeistGems
     name: perkGreatHeistGems
     category: strength
@@ -1561,7 +1561,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistGemsDesc
+    description: 去寻找更多的珠宝和宝石吧。
   - id: perkGreatHeistGoldRush
     name: perkGreatHeistGoldRush
     category: strength
@@ -1570,7 +1570,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistGoldRushDesc
+    description: 在保险箱和自动取款机中找到的公爵币和现金增加10%。
   - id: perkGreatHeistClaimed
     name: perkGreatHeistClaimed
     category: strength
@@ -1579,19 +1579,19 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistClaimedDesc
+    description: 对土地征用权造成的伤害增加20%。
   - id: perkGreatHeistAdrenalineFall
     name: perkGreatHeistAdrenalineFall
     category: strength
     max_level: 1
     levels: []
-    description: perkGreatHeistAdrenalineFallDesc
+    description: 从很高的高处跳下！
   - id: perkGreatHeistSprintSneak
     name: perkGreatHeistSprintSneak
     category: strength
     max_level: 1
     levels: []
-    description: perkGreatHeistSprintSneakDesc
+    description: 潜行冲刺时不消耗体力。
   - id: perkGreatHeistMotionDetection
     name: perkGreatHeistMotionDetection
     category: strength
@@ -1600,7 +1600,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistMotionDetectionDesc
+    description: 溜过动作监测装置的眼睛。
   - id: perkGreatHeistComplete
     name: 大劫掠 - 完成
     category: strength
@@ -1609,7 +1609,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkGreatHeistCompleteDesc
+    description: 搜刮时找到的撬锁工具增加20%，撬锁速度加快20%，撬锁工具损坏的几率降低10%。
   - id: perkWasteTreasuresHoney
     name: perkWasteTreasuresHoney
     category: strength
@@ -1618,7 +1618,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresHoneyDesc
+    description: 小幅提高从树上收集蜂蜜的几率。
   - id: perkWasteTreasuresCoffins
     name: perkWasteTreasuresCoffins
     category: strength
@@ -1627,7 +1627,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresCoffinsDesc
+    description: 搜寻棺材，找到骨头、珠宝和珍贵宝石吧。
   - id: perkWasteTreasuresAcid
     name: perkWasteTreasuresAcid
     category: strength
@@ -1636,7 +1636,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresAcidDesc
+    description: 提高从汽车和医疗设备获取酸的几率。
   - id: perkWasteTreasuresWater
     name: perkWasteTreasuresWater
     category: strength
@@ -1645,7 +1645,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresWaterDesc
+    description: 净化纯净的矿泉水，荒野中最美味的水。
   - id: perkWasteTreasuresDoors
     name: perkWasteTreasuresDoors
     category: strength
@@ -1654,7 +1654,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresDoorsDesc
+    description: 从大多数门上面收集黄铜。
   - id: perkWasteTreasuresCloth
     name: perkWasteTreasuresCloth
     category: strength
@@ -1663,7 +1663,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresClothDesc
+    description: 学会把植物纤维织成布。
   - id: perkWasteTreasuresSinks
     name: perkWasteTreasuresSinks
     category: strength
@@ -1672,7 +1672,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresSinksDesc
+    description: 从水槽中收集更多的铅和黄铜。
   - id: perkWasteTreasuresComplete
     name: perkWasteTreasuresComplete
     category: strength
@@ -1681,7 +1681,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkWasteTreasuresCompleteDesc
+    description: 找到更多传奇零件。
   - id: perkHuntingJournalBears
     name: perkHuntingJournalBears
     category: strength
@@ -1690,7 +1690,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalBearsDesc
+    description: 对熊造成的伤害增加10%。
   - id: perkHuntingJournalWolves
     name: perkHuntingJournalWolves
     category: strength
@@ -1699,7 +1699,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalWolvesDesc
+    description: 对灰狼造成的伤害增加10%。
   - id: perkHuntingJournalCoyotes
     name: perkHuntingJournalCoyotes
     category: strength
@@ -1708,7 +1708,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalCoyotesDesc
+    description: 对丛林狼造成的伤害增加10%。
   - id: perkHuntingJournalMountainLions
     name: perkHuntingJournalMountainLions
     category: strength
@@ -1717,7 +1717,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalMountainLionsDesc
+    description: 对美洲狮造成的伤害增加10%。
   - id: perkHuntingJournalDeer
     name: perkHuntingJournalDeer
     category: strength
@@ -1726,7 +1726,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalDeerDesc
+    description: 对鹿造成的伤害增加10%。
   - id: perkHuntingJournalVultures
     name: perkHuntingJournalVultures
     category: strength
@@ -1735,7 +1735,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalVulturesDesc
+    description: 对秃鹫造成的伤害增加10%。
   - id: perkHuntingJournalSelfDefense
     name: perkHuntingJournalSelfDefense
     category: strength
@@ -1744,7 +1744,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalSelfDefenseDesc
+    description: 对人形生物造成的伤害增加10%。
   - id: perkHuntingJournalComplete
     name: perkHuntingJournalComplete
     category: strength
@@ -1753,7 +1753,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkHuntingJournalCompleteDesc
+    description: 解刨动物时获得更多骨头、肉类与皮革。
   - id: perkArtOfMiningLuckyStrike
     name: perkArtOfMiningLuckyStrike
     category: strength
@@ -1762,7 +1762,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningLuckyStrikeDesc
+    description: 小幅增加从矿石中开采出稀有宝石的几率。
   - id: perkArtOfMiningDiamondTools
     name: perkArtOfMiningDiamondTools
     category: strength
@@ -1771,7 +1771,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningDiamondToolsDesc
+    description: 你能为工具制作尖部带有钻石的刀刃模组，该模组能大幅提升耐久度。
   - id: perkArtOfMiningCoffee
     name: perkArtOfMiningCoffee
     category: strength
@@ -1780,7 +1780,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningCoffeeDesc
+    description: 咖啡起效时矿石采集量增加10%。
   - id: perkArtOfMiningBlackStrap
     name: perkArtOfMiningBlackStrap
     category: strength
@@ -1789,7 +1789,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningBlackStrapDesc
+    description: 能够制作黑带咖啡，一种非常浓重的咖啡。
   - id: perkArtOfMiningPallets
     name: perkArtOfMiningPallets
     category: strength
@@ -1798,7 +1798,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningPalletsDesc
+    description: 你可以将矿石等基础资源堆叠起来。
   - id: perkArtOfMiningAvalanche
     name: perkArtOfMiningAvalanche
     category: strength
@@ -1807,7 +1807,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningAvalancheDesc
+    description: 垮塌的矿井造成的伤害减少50%。
   - id: perkArtOfMiningDamage
     name: perkArtOfMiningDamage
     category: strength
@@ -1816,7 +1816,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningDamageDesc
+    description: 采矿工具的物块伤害增加10%。
   - id: perkArtOfMiningComplete
     name: perkArtOfMiningComplete
     category: strength
@@ -1825,7 +1825,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkArtOfMiningCompleteDesc
+    description: 矿石采集量增加20%。
   - id: perkRangersArrowRecovery
     name: perkRangersArrowRecovery
     category: strength
@@ -1834,7 +1834,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersArrowRecoveryDesc
+    description: 可以多回收20%的箭。
   - id: perkRangersExplodingBolts
     name: perkRangersExplodingBolts
     category: strength
@@ -1843,13 +1843,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersExplodingBoltsDesc
+    description: 制作爆炸箭和爆炸弩箭。
   - id: perkRangersCripplingShot
     name: perkRangersCripplingShot
     category: strength
     max_level: 1
     levels: []
-    description: perkRangersCripplingShotDesc
+    description: 腿部射击会减缓你的对手。
   - id: perkRangersAPAmmo
     name: perkRangersAPAmmo
     category: strength
@@ -1858,7 +1858,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersAPAmmoDesc
+    description: 制作穿甲钢箭。
   - id: perkRangersFlamingArrows
     name: perkRangersFlamingArrows
     category: strength
@@ -1867,7 +1867,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersFlamingArrowsDesc
+    description: 制作燃烧箭和燃烧驽箭。
   - id: perkRangersForestGuide
     name: perkRangersForestGuide
     category: strength
@@ -1876,13 +1876,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersForestGuideDesc
+    description: 弓箭的损坏速度减慢20%。
   - id: perkRangersKnockdown
     name: perkRangersKnockdown
     category: strength
     max_level: 1
     levels: []
-    description: perkRangersKnockdownDesc
+    description: 潜行攻击的击倒几率增加20%。
   - id: perkRangersComplete
     name: 游侠箭术指南 - 完成
     category: strength
@@ -1891,7 +1891,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkRangersCompleteDesc
+    description: 大量制作箭与弩箭。
   - id: perkPistolPeteTakeAim
     name: perkPistolPeteTakeAim
     category: strength
@@ -1900,13 +1900,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteTakeAimDesc
+    description: 9毫米子弹武器的射程增加20%。
   - id: perkPistolPeteSwissKnees
     name: perkPistolPeteSwissKnees
     category: strength
     max_level: 1
     levels: []
-    description: perkPistolPeteSwissKneesDesc
+    description: 每一次连续腿部射击都会增加致残几率。
   - id: perkPistolPeteSteadyHand
     name: perkPistolPeteSteadyHand
     category: strength
@@ -1915,7 +1915,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteSteadyHandDesc
+    description: 使用9毫米子弹武器快速开火时精度更高。
   - id: perkPistolPeteMaintenance
     name: perkPistolPeteMaintenance
     category: strength
@@ -1924,7 +1924,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteMaintenanceDesc
+    description: 手枪与冲锋枪损坏速度减慢20%。
   - id: perkPistolPeteHPAmmo
     name: perkPistolPeteHPAmmo
     category: strength
@@ -1933,7 +1933,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteHPAmmoDesc
+    description: 你可以制作9毫米空心弹。
   - id: perkPistolPeteAPAmmo
     name: perkPistolPeteAPAmmo
     category: strength
@@ -1942,7 +1942,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteAPAmmoDesc
+    description: 制作9毫米空心弹。
   - id: perkPistolPeteDamage
     name: perkPistolPeteDamage
     category: strength
@@ -1951,7 +1951,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteDamageDesc
+    description: 9毫米子弹武器造成的伤害增加10%。
   - id: perkPistolPeteComplete
     name: 手枪皮特 - 完成
     category: strength
@@ -1960,7 +1960,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkPistolPeteCompleteDesc
+    description: 近距离开火忽略护甲并造成流血效果。可批量制作 9 毫米弹药。
   - id: perkShotgunMessiahDamage
     name: perkShotgunMessiahDamage
     category: strength
@@ -1969,7 +1969,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahDamageDesc
+    description: 霰弹枪造成的伤害增加10%。
   - id: perkShotgunMessiahBreachingSlugs
     name: perkShotgunMessiahBreachingSlugs
     category: strength
@@ -1978,7 +1978,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahBreachingSlugsDesc
+    description: 制作用于破坏安保的破坏弹药。
   - id: perkShotgunMessiahLimbShot
     name: perkShotgunMessiahLimbShot
     category: strength
@@ -1987,7 +1987,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahLimbShotDesc
+    description: 3米之内的目标会有更高的肢解几率。
   - id: perkShotgunMessiahSlugs
     name: perkShotgunMessiahSlugs
     category: strength
@@ -1996,7 +1996,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahSlugsDesc
+    description: 你可以制作霰弹枪子弹。
   - id: perkShotgunMessiahMaintenance
     name: perkShotgunMessiahMaintenance
     category: strength
@@ -2005,7 +2005,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahMaintenanceDesc
+    description: 霰弹枪的损坏速度减慢20%。
   - id: perkShotgunMessiahMagazine
     name: perkShotgunMessiahMagazine
     category: strength
@@ -2014,7 +2014,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahMagazineDesc
+    description: 你可以制作霰弹枪管扩充模组。
   - id: perkShotgunMessiahPartyStarter
     name: perkShotgunMessiahPartyStarter
     category: strength
@@ -2023,7 +2023,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahPartyStarterDesc
+    description: 对生命全满的目标造成的伤害增加20%。
   - id: perkShotgunMessiahComplete
     name: 霰弹枪救星 - 完成
     category: strength
@@ -2032,13 +2032,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkShotgunMessiahCompleteDesc
+    description: 你可以一击破坏大多数木头物块。批量制作所有霰弹枪弹药。
   - id: perkSledgeSagaKnockdown
     name: perkSledgeSagaKnockdown
     category: strength
     max_level: 1
     levels: []
-    description: perkSledgeSagaKnockdownDesc
+    description: 击倒几率增加 10%。
   - id: perkSledgeSagaDegradation
     name: perkSledgeSagaDegradation
     category: strength
@@ -2047,19 +2047,19 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSledgeSagaDegradationDesc
+    description: 大锤损坏速度降低 20%。
   - id: perkSledgeSagaCrippledMorale
     name: perkSledgeSagaCrippledMorale
     category: strength
     max_level: 1
     levels: []
-    description: perkSledgeSagaCrippledMoraleDesc
+    description: 强力攻击造成击杀会使附近敌人虚弱并减速 10 秒。
   - id: perkSledgeSagaPulverizingFinishers
     name: perkSledgeSagaPulverizingFinishers
     category: strength
     max_level: 1
     levels: []
-    description: perkSledgeSagaPulverizingFinishersDesc
+    description: 对生命值低于 30% 的敌人额外造成 25% 伤害。
   - id: perkSledgeSagaSavageReaper
     name: perkSledgeSagaSavageReaper
     category: strength
@@ -2068,13 +2068,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSledgeSagaSavageReaperDesc
+    description: 大锤爆头击杀获得双倍经验。
   - id: perkSledgeSagaConcussiveStrike
     name: perkSledgeSagaConcussiveStrike
     category: strength
     max_level: 1
     levels: []
-    description: perkSledgeSagaConcussiveStrikeDesc
+    description: 击晕几率增加 10%。
   - id: perkSledgeSagaArmorCrusher
     name: perkSledgeSagaArmorCrusher
     category: strength
@@ -2083,19 +2083,19 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSledgeSagaArmorCrusherDesc
+    description: 大锤强力攻击无视 50% 护甲。
   - id: perkSledgeSagaComplete
     name: perkSledgeSagaComplete
     category: strength
     max_level: 1
     levels: []
-    description: perkSledgeSagaCompleteDesc
+    description: 每次强力攻击击杀恢复体力。
   - id: perkSniperDamage
     name: perkSniperDamage
     category: strength
     max_level: 1
     levels: []
-    description: perkSniperDamageDesc
+    description: 使用瞄准镜时伤害增加10%。
   - id: perkSniperCripplingShot
     name: perkSniperCripplingShot
     category: strength
@@ -2104,7 +2104,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperCripplingShotDesc
+    description: 腿部射击可以削弱除最强敌人以外的所有敌人，并有机会将其肢解。
   - id: perkSniperHeadShot
     name: perkSniperHeadShot
     category: strength
@@ -2113,7 +2113,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperHeadShotDesc
+    description: 击中头部有几率眩晕敌人，有很大几率肢解敌人。
   - id: perkSniperReload
     name: perkSniperReload
     category: strength
@@ -2122,13 +2122,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperReloadDesc
+    description: 步枪装填速度加快10%。
   - id: perkSniperControlledBreathing
     name: perkSniperControlledBreathing
     category: strength
     max_level: 1
     levels: []
-    description: perkSniperControlledBreathingDesc
+    description: 缩放消耗的体力更少。
   - id: perkSniperAPAmmo
     name: perkSniperAPAmmo
     category: strength
@@ -2137,7 +2137,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperAPAmmoDesc
+    description: 制作7.62毫米穿甲弹。
   - id: perkSniperHPAmmo
     name: perkSniperHPAmmo
     category: strength
@@ -2146,7 +2146,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperHPAmmoDesc
+    description: 制作7.62毫米空心弹。
   - id: perkSniperComplete
     name: 狙击手 - 完成
     category: strength
@@ -2155,7 +2155,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSniperCompleteDesc
+    description: 批量制作所有 7.62 毫米弹药。
   - id: perkAutoWeaponsDamage
     name: perkAutoWeaponsDamage
     category: strength
@@ -2164,7 +2164,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkAutoWeaponsDamageDesc
+    description: 自动武器的伤害增加10%。
   - id: perkAutoWeaponsUncontrolledBurst
     name: perkAutoWeaponsUncontrolledBurst
     category: strength
@@ -2173,7 +2173,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkAutoWeaponsUncontrolledBurstDesc
+    description: 全自动模式下，每次命中都会增加1%伤害。
   - id: perkAutoWeaponsMaintenance
     name: perkAutoWeaponsMaintenance
     category: strength
@@ -2182,7 +2182,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkAutoWeaponsMaintenanceDesc
+    description: 自动武器损坏速度减慢20%。
   - id: perkAutoWeaponsDrumMag
     name: perkAutoWeaponsDrumMag
     category: strength
@@ -2191,7 +2191,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkAutoWeaponsDrumMagDesc
+    description: 你可以为自动武器制作弹鼓模组。
   - id: perkAutoWeaponsRecoil
     name: perkAutoWeaponsRecoil
     category: strength
@@ -2200,25 +2200,25 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkAutoWeaponsRecoilDesc
+    description: 全自动开火时，每开一枪都会更加精准。
   - id: perkAutoWeaponsRagdoll
     name: perkAutoWeaponsRagdoll
     category: strength
     max_level: 1
     levels: []
-    description: perkAutoWeaponsRagdollDesc
+    description: 全自动模式下，每次命中都能增加致残敌人的几率。
   - id: perkAutoWeaponsMachineGuns
     name: perkAutoWeaponsMachineGuns
     category: strength
     max_level: 1
     levels: []
-    description: perkAutoWeaponsMachineGunsDesc
+    description: 腰射精确度大幅提高。
   - id: perkAutoWeaponsComplete
     name: perkAutoWeaponsComplete
     category: strength
     max_level: 1
     levels: []
-    description: perkAutoWeaponsCompleteDesc
+    description: 每个击杀都能让你在20秒内奔跑速度加快20%。
   - id: perkUrbanCombatLanding
     name: perkUrbanCombatLanding
     category: strength
@@ -2227,7 +2227,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkUrbanCombatLandingDesc
+    description: 制作潜行靴模组。
   - id: perkUrbanCombatCigar
     name: perkUrbanCombatCigar
     category: strength
@@ -2236,7 +2236,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkUrbanCombatCigarDesc
+    description: 制作雪茄，看起来像性感霸王龙一样酷。
   - id: perkUrbanCombatSneaking
     name: perkUrbanCombatSneaking
     category: strength
@@ -2245,13 +2245,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkUrbanCombatSneakingDesc
+    description: 踩在垃圾上潜行不会发出声音。
   - id: perkUrbanCombatJumping
     name: perkUrbanCombatJumping
     category: strength
     max_level: 1
     levels: []
-    description: perkUrbanCombatJumpingDesc
+    description: 潜行落地的声音更小，潜行跳跃的高度不会降低。
   - id: perkUrbanCombatLandMines
     name: perkUrbanCombatLandMines
     category: strength
@@ -2260,13 +2260,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkUrbanCombatLandMinesDesc
+    description: 地雷触发延迟增加 2 秒。
   - id: perkUrbanCombatAdrenalineRush
     name: perkUrbanCombatAdrenalineRush
     category: strength
     max_level: 1
     levels: []
-    description: perkUrbanCombatAdrenalineRushDesc
+    description: 战斗中，护甲无法使你减速。
   - id: perkUrbanCombatRoomClearing
     name: perkUrbanCombatRoomClearing
     category: strength
@@ -2275,13 +2275,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkUrbanCombatRoomClearingDesc
+    description: 受到的伤害减少5%，在室内造成的伤害增加10%。
   - id: perkUrbanCombatComplete
     name: perkUrbanCombatComplete
     category: strength
     max_level: 1
     levels: []
-    description: perkUrbanCombatCompleteDesc
+    description: 消音器不再有伤害惩罚。
   - id: perkTechJunkie1Damage
     name: perkTechJunkie1Damage
     category: strength
@@ -2290,7 +2290,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie1DamageDesc
+    description: 机器人武器的伤害增加 10%。
   - id: perkTechJunkie2Maintenance
     name: perkTechJunkie2Maintenance
     category: strength
@@ -2299,7 +2299,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie2MaintenanceDesc
+    description: 机器人武器和电击棒损坏速度减慢 20%。
   - id: perkTechJunkie3APAmmo
     name: perkTechJunkie3APAmmo
     category: strength
@@ -2308,7 +2308,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie3APAmmoDesc
+    description: 制作机器人炮塔穿甲弹药。
   - id: perkTechJunkie4Shells
     name: perkTechJunkie4Shells
     category: strength
@@ -2317,7 +2317,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie4ShellsDesc
+    description: 制作机器人炮塔霰弹。
   - id: perkTechJunkie5Repulsor
     name: perkTechJunkie5Repulsor
     category: strength
@@ -2326,13 +2326,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie5RepulsorDesc
+    description: 制作眩晕冲击波模组。
   - id: perkTechJunkie6BatonCharge
     name: perkTechJunkie6BatonCharge
     category: strength
     max_level: 1
     levels: []
-    description: perkTechJunkie6BatonChargeDesc
+    description: 电击棒充电中。
   - id: perkTechJunkie7Hydraulics
     name: perkTechJunkie7Hydraulics
     category: strength
@@ -2341,7 +2341,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie7HydraulicsDesc
+    description: 提高机器人武器的射击速度。
   - id: perkTechJunkie8Complete
     name: perkTechJunkie8Complete
     category: strength
@@ -2350,7 +2350,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkTechJunkie8CompleteDesc
+    description: 批量制作机器人炮塔弹药。
   - id: perkBarBrawling1BasicMoves
     name: perkBarBrawling1BasicMoves
     category: strength
@@ -2359,19 +2359,19 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkBarBrawling1BasicMovesDesc
+    description: 用拳头和指节套武器增加 10% 的伤害。
   - id: perkBarBrawling2DropABomb
     name: perkBarBrawling2DropABomb
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling2DropABombDesc
+    description: 冲刺强力攻击可以击倒你的对手。
   - id: perkBarBrawling3KillerInstinct
     name: perkBarBrawling3KillerInstinct
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling3KillerInstinctDesc
+    description: 每次击杀获得 5% 的伤害，最高 15%。
   - id: perkBarBrawling4FinishingMoves
     name: perkBarBrawling4FinishingMoves
     category: strength
@@ -2380,31 +2380,31 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkBarBrawling4FinishingMovesDesc
+    description: 对被击倒并击晕的对手造成额外伤害。
   - id: perkBarBrawling5AdrenalineHealing
     name: perkBarBrawling5AdrenalineHealing
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling5AdrenalineHealingDesc
+    description: 在战斗中每次出拳都会恢复生命值。
   - id: perkBarBrawling6RageMode
     name: perkBarBrawling6RageMode
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling6RageModeDesc
+    description: 被击中后，攻击和移动速度加快。
   - id: perkBarBrawling7BoozedUp
     name: perkBarBrawling7BoozedUp
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling7BoozedUpDesc
+    description: 喝啤酒不会再让你眼花。
   - id: perkBarBrawling8Complete
     name: perkBarBrawling8Complete
     category: strength
     max_level: 1
     levels: []
-    description: perkBarBrawling8CompleteDesc
+    description: 第 7 个诅咒。拳头和指节套武器在第 7 次攻击时造成 300% 伤害。
   - id: perkSpearHunter1Damage
     name: perkSpearHunter1Damage
     category: strength
@@ -2413,7 +2413,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSpearHunter1DamageDesc
+    description: 你造成的伤害增加 10%。
   - id: perkSpearHunter2Maintenance
     name: perkSpearHunter2Maintenance
     category: strength
@@ -2422,13 +2422,13 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSpearHunter2MaintenanceDesc
+    description: 长矛的损坏速度减慢 20%。
   - id: perkSpearHunter3Bleed
     name: perkSpearHunter3Bleed
     category: strength
     max_level: 1
     levels: []
-    description: perkSpearHunter3BleedDesc
+    description: 长矛有25%几率造成流血伤害。
   - id: perkSpearHunter4KillMove
     name: perkSpearHunter4KillMove
     category: strength
@@ -2437,7 +2437,7 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSpearHunter4KillMoveDesc
+    description: 强力攻击对被击倒的目标造成更多伤害。
   - id: perkSpearHunter5RapidStrike
     name: perkSpearHunter5RapidStrike
     category: strength
@@ -2446,22 +2446,22 @@ skills:
       - level: 1
         effect: 等级 1
         cost: 0
-    description: perkSpearHunter5RapidStrikeDesc
+    description: 攻击速度增加 10%。
   - id: perkSpearHunter6PenetratingShaft
     name: perkSpearHunter6PenetratingShaft
     category: strength
     max_level: 1
     levels: []
-    description: perkSpearHunter6PenetratingShaftDesc
+    description: 穿透多个目标。
   - id: perkSpearHunter7QuickStrike
     name: perkSpearHunter7QuickStrike
     category: strength
     max_level: 1
     levels: []
-    description: perkSpearHunter7QuickStrikeDesc
+    description: 连续快速命中造成的伤害更大。
   - id: perkSpearHunter8Complete
     name: perkSpearHunter8Complete
     category: strength
     max_level: 1
     levels: []
-    description: perkSpearHunter8CompleteDesc
+    description: 使用长矛击杀目标可回复体力值。
