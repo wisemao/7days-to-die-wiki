@@ -107,14 +107,21 @@ const LABELS = {
           需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读
         </p>
       )}
-      {magInfo.recipes?.length > 0 && (
+      {magInfo.recipeTiers?.length > 0 && (
         <>
-          <h3 style="font-size:14px;margin:12px 0 6px;">解锁配方</h3>
-          <div class="item-grid" style="margin:0;">
-            {magInfo.recipes.map(r => (
-              <a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{r.name}</a>
-            ))}
-          </div>
+          <h3 style="font-size:14px;margin:16px 0 8px;">解锁配方（按技能等级）</h3>
+          {magInfo.recipeTiers.map(tier => (
+            <div style="margin-bottom:10px;">
+              <p style="font-size:13px;font-weight:600;color:var(--c-brand);margin:0 0 4px;">
+                等级 {tier.level} 解锁
+              </p>
+              <div class="item-grid" style="margin:0;">
+                {tier.recipes.map(r => (
+                  <a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{r.name}</a>
+                ))}
+              </div>
+            </div>
+          ))}
         </>
       )}
     </div>

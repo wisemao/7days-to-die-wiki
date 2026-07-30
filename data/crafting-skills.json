@@ -4,50 +4,67 @@
       "skillName": "craftingHarvestingTools",
       "name": "收集工具",
       "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
-      "recipes": [
+      "maxLevel": 100,
+      "recipeTiers": [
         {
-          "id": "meleeToolPickT3Auger",
-          "name": "螺旋钻"
+          "level": 1,
+          "recipes": [
+            {
+              "id": "meleeToolRepairT0StoneAxe",
+              "name": "石斧"
+            },
+            {
+              "id": "meleeToolShovelT0StoneShovel",
+              "name": "石铲"
+            }
+          ]
         },
         {
-          "id": "meleeToolAxeT3Chainsaw",
-          "name": "电锯"
+          "level": 11,
+          "recipes": [
+            {
+              "id": "meleeToolPickT1IronPickaxe",
+              "name": "铁制鹤嘴锄"
+            },
+            {
+              "id": "meleeToolShovelT1IronShovel",
+              "name": "铁铲"
+            },
+            {
+              "id": "meleeToolAxeT1IronFireaxe",
+              "name": "铁斧"
+            }
+          ]
         },
         {
-          "id": "meleeToolRepairT1ClawHammer",
-          "name": "羊角锤"
+          "level": 26,
+          "recipes": [
+            {
+              "id": "meleeToolPickT2SteelPickaxe",
+              "name": "钢制鹤嘴锄"
+            },
+            {
+              "id": "meleeToolShovelT2SteelShovel",
+              "name": "钢铲"
+            },
+            {
+              "id": "meleeToolAxeT2SteelAxe",
+              "name": "钢斧"
+            }
+          ]
         },
         {
-          "id": "meleeToolAxeT1IronFireaxe",
-          "name": "铁斧"
-        },
-        {
-          "id": "meleeToolAxeT2SteelAxe",
-          "name": "钢斧"
-        },
-        {
-          "id": "meleeToolPickT1IronPickaxe",
-          "name": "铁制鹤嘴锄"
-        },
-        {
-          "id": "meleeToolPickT2SteelPickaxe",
-          "name": "钢制鹤嘴锄"
-        },
-        {
-          "id": "meleeToolShovelT1IronShovel",
-          "name": "铁铲"
-        },
-        {
-          "id": "meleeToolShovelT2SteelShovel",
-          "name": "钢铲"
-        },
-        {
-          "id": "meleeToolShovelT0StoneShovel",
-          "name": "石铲"
-        },
-        {
-          "id": "meleeToolRepairT0StoneAxe",
-          "name": "石斧"
+          "level": 61,
+          "recipes": [
+            {
+              "id": "meleeToolPickT3Auger",
+              "name": "螺旋钻"
+            },
+            {
+              "id": "meleeToolAxeT3Chainsaw",
+              "name": "电锯"
+            }
+          ]
         }
       ],
       "reqSkill": "perkIntellectMastery",
@@ -58,7 +75,8 @@
       "skillName": "craftingRepairTools",
       "name": "修理工具",
       "desc": "阅读[DECEA3]巧手之家[-]可以提高修理工具的制作品质。\\n提升[DECEA3]高级工程师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 50,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -67,7 +85,8 @@
       "skillName": "craftingSalvageTools",
       "name": "废旧工具",
       "desc": "阅读[DECEA3]趣味分解[-]杂志可以提高废旧工具的制作品质。\\n提升[DECEA3]拾荒行动[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -76,7 +95,8 @@
       "skillName": "craftingKnuckles",
       "name": "拳套",
       "desc": "阅读[DECEA3]愤怒之拳[-]杂志可以提高拳套的制作品质。\\n提升[DECEA3]搏斗家[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -85,12 +105,8 @@
       "skillName": "craftingBlades",
       "name": "刀剑",
       "desc": "阅读[DECEA3]刀剑客[-]可以提高刀剑的制作品质。\\n提升[DECEA3]深度刀伤[-]的战利品几率",
-      "recipes": [
-        {
-          "id": "meleeWpnBladeT0BoneKnife",
-          "name": "骨刀"
-        }
-      ],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -99,7 +115,8 @@
       "skillName": "craftingClubs",
       "name": "棍棒",
       "desc": "阅读[DECEA3]打击高手[-]可以提高棍棒的制作品质。\\n提升[DECEA3]击球手佩特[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -108,7 +125,8 @@
       "skillName": "craftingSledgehammers",
       "name": "大锤",
       "desc": "阅读[DECEA3]锤行天下[-]可以提高大锤的制作品质。\\n提升[DECEA3]头骨粉碎者[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -117,20 +135,8 @@
       "skillName": "craftingSpears",
       "name": "长矛",
       "desc": "阅读[DECEA3]尖锐之棍[-]可以提高长矛的制作品质。\\n提升[DECEA3]长矛大师[-]的战利品几率",
-      "recipes": [
-        {
-          "id": "meleeWpnSpearT0StoneSpear",
-          "name": "石矛"
-        },
-        {
-          "id": "meleeWpnSpearT1IronSpear",
-          "name": "铁矛"
-        },
-        {
-          "id": "meleeWpnSpearT3SteelSpear",
-          "name": "钢矛"
-        }
-      ],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -139,7 +145,8 @@
       "skillName": "craftingBows",
       "name": "弓箭",
       "desc": "阅读[DECEA3]猎手之弓[-]可以提高弓箭的制作品质。\\n提升[DECEA3]弓术[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -148,7 +155,8 @@
       "skillName": "craftingHandguns",
       "name": "手枪",
       "desc": "阅读[DECEA3]手枪弹匣[-]可以提高手枪的制作品质。\\n提升[DECEA3]枪手[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -157,7 +165,8 @@
       "skillName": "craftingShotguns",
       "name": "霰弹枪",
       "desc": "阅读[DECEA3]霰弹枪周刊[-]可以提高霰弹枪的制作品质。\\n提升[DECEA3]喷子[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -166,7 +175,8 @@
       "skillName": "craftingRifles",
       "name": "步枪",
       "desc": "阅读[DECEA3]步枪世界[-]可以提高步枪的制作品质。\\n提升[DECEA3]死神之眼[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -175,7 +185,8 @@
       "skillName": "craftingMachineGuns",
       "name": "机枪",
       "desc": "阅读[DECEA3]战备竞赛[-]可以提高机枪的制作品质。\\n提升[DECEA3]机枪射手[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -184,7 +195,90 @@
       "skillName": "craftingExplosives",
       "name": "爆炸物",
       "desc": "阅读[DECEA3]炸药库[-]可以解锁多种炸药。\\n提升[DECEA3]爆破专家[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 2,
+          "recipes": [
+            {
+              "id": "thrownAmmoPipeBomb",
+              "name": "管状炸弹（弹药）"
+            },
+            {
+              "id": "thrownGrenade",
+              "name": "手雷（弹药）"
+            },
+            {
+              "id": "mineCookingPot",
+              "name": "烹饪锅地雷"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "recipes": [
+            {
+              "id": "thrownDynamite",
+              "name": "柱状炸药（弹药）"
+            },
+            {
+              "id": "thrownGrenadeContact",
+              "name": "触炸手雷（弹药）"
+            },
+            {
+              "id": "mineHubcap",
+              "name": "轮毂盖地雷"
+            }
+          ]
+        },
+        {
+          "level": 25,
+          "recipes": [
+            {
+              "id": "mineAirFilter",
+              "name": "空滤地雷"
+            },
+            {
+              "id": "resourceGunPowderBundle",
+              "name": "一堆火药（1000）"
+            },
+            {
+              "id": "thrownTimedCharge",
+              "name": "定时炸弹（弹药）"
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "recipes": [
+            {
+              "id": "resourceRocketTip",
+              "name": "火箭弹尖"
+            },
+            {
+              "id": "resourceRocketCasing",
+              "name": "火箭弹壳"
+            },
+            {
+              "id": "ammoRocketFrag",
+              "name": "火箭弹（弹药）"
+            },
+            {
+              "id": "ammoRocketHE",
+              "name": "高爆火箭弹（弹药）"
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "recipes": [
+            {
+              "id": "gunExplosivesT3RocketLauncher",
+              "name": "火箭发射器"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -193,7 +287,8 @@
       "skillName": "craftingRobotics",
       "name": "机器人",
       "desc": "阅读[DECEA3]科技星球[-]可以提高机器人的制作品质。\\n提升[DECEA3]电击处刑官和或/机器人发明者[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -202,7 +297,93 @@
       "skillName": "craftingArmor",
       "name": "护甲",
       "desc": "阅读[DECEA3]全副武装[-]可以提高护甲的制作品质。\\n通过提高任意[DECEA3]护甲技能[-]来增加获得战利品的几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 1,
+          "recipes": [
+            {
+              "id": "armorPrimitiveOutfit",
+              "name": "粗糙装束"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "recipes": [
+            {
+              "id": "armorLumberjackOutfit",
+              "name": "伐木工装束"
+            },
+            {
+              "id": "armorPreacherOutfit",
+              "name": "传道者装束"
+            },
+            {
+              "id": "armorRogueOutfit",
+              "name": "盗贼装束"
+            },
+            {
+              "id": "armorAthleticOutfit",
+              "name": "运动员装束"
+            },
+            {
+              "id": "armorEnforcerOutfit",
+              "name": "警官装束"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "recipes": [
+            {
+              "id": "armorFarmerOutfit",
+              "name": "农夫装束"
+            },
+            {
+              "id": "armorBikerOutfit",
+              "name": "摩托车手装束"
+            },
+            {
+              "id": "armorScavengerOutfit",
+              "name": "拾荒者装束"
+            },
+            {
+              "id": "armorRangerOutfit",
+              "name": "护林员装束"
+            },
+            {
+              "id": "armorCommandoOutfit",
+              "name": "指挥官装束"
+            },
+            {
+              "id": "armorAssassinOutfit",
+              "name": "刺客装束"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "recipes": [
+            {
+              "id": "armorMinerOutfit",
+              "name": "矿工装束"
+            },
+            {
+              "id": "armorNomadOutfit",
+              "name": "游牧民装束"
+            },
+            {
+              "id": "armorNerdOutfit",
+              "name": "学霸装束"
+            },
+            {
+              "id": "armorRaiderOutfit",
+              "name": "袭击者装束"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -211,7 +392,56 @@
       "skillName": "craftingMedical",
       "name": "医疗",
       "desc": "阅读[DECEA3]医学期刊[-]可解锁不同等级的医疗物品。\\n提升[DECEA3]医师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [
+        {
+          "level": 5,
+          "recipes": [
+            {
+              "id": "medicalFirstAidBandage",
+              "name": "急救绷带"
+            },
+            {
+              "id": "drugFortBites",
+              "name": "强健宝"
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "recipes": [
+            {
+              "id": "medicalPlasterCast",
+              "name": "石膏绷带"
+            },
+            {
+              "id": "drugHerbalAntibiotics",
+              "name": "草药抗生素"
+            },
+            {
+              "id": "drugRecog",
+              "name": "雷克格"
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "recipes": [
+            {
+              "id": "medicalFirstAidKit",
+              "name": "急救包"
+            },
+            {
+              "id": "drugAntibiotics",
+              "name": "抗生素"
+            },
+            {
+              "id": "drugSteroids",
+              "name": "类固醇"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -220,7 +450,177 @@
       "skillName": "craftingFood",
       "name": "食物",
       "desc": "阅读[DECEA3]家庭烹饪周刊[-]可解锁不同等级的食物。\\n提升[DECEA3]厨艺大师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 2,
+          "recipes": [
+            {
+              "id": "foodCornOnTheCob",
+              "name": "烤玉米"
+            },
+            {
+              "id": "foodBakedPotato",
+              "name": "烤土豆"
+            },
+            {
+              "id": "foodCornBread",
+              "name": "玉米面包"
+            },
+            {
+              "id": "drinkJarGoldenRodTea",
+              "name": "秋麒麟茶"
+            },
+            {
+              "id": "foodGrilledMeat",
+              "name": "烤肉"
+            },
+            {
+              "id": "drinkJarRedTea",
+              "name": "红茶"
+            },
+            {
+              "id": "foodBoiledMeat",
+              "name": "水煮肉"
+            },
+            {
+              "id": "drinkJarYuccaJuice",
+              "name": "丝兰汁"
+            },
+            {
+              "id": "foodBaconAndEggs",
+              "name": "培根鸡蛋"
+            },
+            {
+              "id": "drinkJarCoffee",
+              "name": "咖啡"
+            }
+          ]
+        },
+        {
+          "level": 11,
+          "recipes": [
+            {
+              "id": "foodPumpkinBread",
+              "name": "南瓜面包"
+            },
+            {
+              "id": "foodBlueberryPie",
+              "name": "蓝莓派"
+            },
+            {
+              "id": "foodChickenNuggets",
+              "name": "鸡块"
+            },
+            {
+              "id": "foodPumpkinPie",
+              "name": "南瓜派"
+            },
+            {
+              "id": "drinkJarHoneyTea",
+              "name": "蜂蜜茶"
+            },
+            {
+              "id": "foodPumpkinCheesecake",
+              "name": "南瓜芝士蛋糕"
+            },
+            {
+              "id": "foodRoadrunnerChickenJerky",
+              "name": "走鹃鸡肉干"
+            },
+            {
+              "id": "foodVegetableStew",
+              "name": "炖杂蔬"
+            },
+            {
+              "id": "foodMeatStew",
+              "name": "炖肉"
+            },
+            {
+              "id": "foodSteakAndPotato",
+              "name": "牛排配土豆"
+            },
+            {
+              "id": "foodAshChickenStew",
+              "name": "灰烬鸡肉炖"
+            }
+          ]
+        },
+        {
+          "level": 27,
+          "recipes": [
+            {
+              "id": "drinkYuccaJuiceSmoothie",
+              "name": "丝兰汁果昔"
+            },
+            {
+              "id": "drinkJarBeer",
+              "name": "啤酒"
+            },
+            {
+              "id": "foodHoboStew",
+              "name": "蔬菜炖肉"
+            },
+            {
+              "id": "foodFishTacos",
+              "name": "鱼肉塔可"
+            },
+            {
+              "id": "foodChiliDog",
+              "name": "辣狗"
+            },
+            {
+              "id": "foodShamChowder",
+              "name": "山威杂烩"
+            },
+            {
+              "id": "foodHoneyGlazedSham",
+              "name": "蜜汁山威"
+            }
+          ]
+        },
+        {
+          "level": 60,
+          "recipes": [
+            {
+              "id": "foodTunaFishGravyToast",
+              "name": "金枪鱼肉汁吐司"
+            },
+            {
+              "id": "drinkJarGrandpasAwesomeSauce",
+              "name": "祖父的美味酱"
+            },
+            {
+              "id": "foodShepardsPie",
+              "name": "牧羊人派"
+            },
+            {
+              "id": "drinkJarGrandpasMoonshine",
+              "name": "祖父的私酒"
+            },
+            {
+              "id": "drinkJarGrandpasLearningElixir",
+              "name": "祖父的学习妙药"
+            },
+            {
+              "id": "foodHoneyBrisket",
+              "name": "蜜汁牛腩"
+            },
+            {
+              "id": "foodSpaghetti",
+              "name": "意大利面"
+            },
+            {
+              "id": "foodChickenWings",
+              "name": "鸡翅"
+            },
+            {
+              "id": "foodGumboStew",
+              "name": "秋葵浓汤"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -229,7 +629,67 @@
       "skillName": "craftingSeeds",
       "name": "种子",
       "desc": "阅读[DECEA3]南方种植[-]可解锁不同等级的种子。\\n提升[DECEA3]就地取材[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 20,
+      "recipeTiers": [
+        {
+          "level": 2,
+          "recipes": [
+            {
+              "id": "plantedCotton1",
+              "name": "棉花（种子）"
+            },
+            {
+              "id": "plantedGoldenrod1",
+              "name": "秋麒麟（种子）"
+            },
+            {
+              "id": "plantedChrysanthemum1",
+              "name": "菊花（种子）"
+            },
+            {
+              "id": "plantedCoffee1",
+              "name": "咖啡（种子）"
+            },
+            {
+              "id": "plantedYucca1",
+              "name": "丝兰（种子）"
+            },
+            {
+              "id": "plantedAloe1",
+              "name": "芦荟（种子）"
+            }
+          ]
+        },
+        {
+          "level": 12,
+          "recipes": [
+            {
+              "id": "plantedBlueberry1",
+              "name": "蓝莓（种子）"
+            },
+            {
+              "id": "plantedHop1",
+              "name": "啤酒花（种子）"
+            },
+            {
+              "id": "plantedPumpkin1",
+              "name": "南瓜（种子）"
+            },
+            {
+              "id": "plantedMushroom1",
+              "name": "蘑菇孢子（种子）"
+            },
+            {
+              "id": "plantedCorn1",
+              "name": "玉米（种子）"
+            },
+            {
+              "id": "plantedPotato1",
+              "name": "土豆（种子）"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -238,7 +698,137 @@
       "skillName": "craftingElectrician",
       "name": "电工",
       "desc": "阅读[DECEA3]布线101[-]可解锁不同等级的电子物品。\\n提升[DECEA3]高级工程师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 25,
+          "recipes": [
+            {
+              "id": "generatorbank",
+              "name": "generatorbank"
+            },
+            {
+              "id": "electricwirerelay",
+              "name": "electricwirerelay"
+            },
+            {
+              "id": "switch",
+              "name": "switch"
+            },
+            {
+              "id": "tripwirepost",
+              "name": "tripwirepost"
+            },
+            {
+              "id": "ceilingLight01_player",
+              "name": "ceilingLight01_player"
+            },
+            {
+              "id": "industrialLight01_player",
+              "name": "industrialLight01_player"
+            },
+            {
+              "id": "industrialLight02_player",
+              "name": "industrialLight02_player"
+            },
+            {
+              "id": "ceilingLight07_player",
+              "name": "ceilingLight07_player"
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "recipes": [
+            {
+              "id": "motionsensor",
+              "name": "motionsensor"
+            },
+            {
+              "id": "electrictimerrelay",
+              "name": "electrictimerrelay"
+            },
+            {
+              "id": "pressureplate",
+              "name": "pressureplate"
+            },
+            {
+              "id": "pressureplateLong",
+              "name": "pressureplateLong"
+            },
+            {
+              "id": "spotlightPlayer",
+              "name": "spotlightPlayer"
+            },
+            {
+              "id": "speaker",
+              "name": "speaker"
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "recipes": [
+            {
+              "id": "batterybank",
+              "name": "batterybank"
+            },
+            {
+              "id": "vaultDoor01_Powered",
+              "name": "vaultDoor01_Powered"
+            },
+            {
+              "id": "vaultDoor01Double_Powered",
+              "name": "双开钢门（通电）"
+            },
+            {
+              "id": "vaultHatch01_Powered",
+              "name": "vaultHatch01_Powered"
+            },
+            {
+              "id": "ironGarageDoor_PoweredBlockVariantHelper",
+              "name": "ironGarageDoor_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "woodenGarageDoor3x3_PoweredBlockVariantHelper",
+              "name": "woodenGarageDoor3x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "woodenGarageDoor4x3_PoweredBlockVariantHelper",
+              "name": "woodenGarageDoor4x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "woodenGarageDoor5x3_PoweredBlockVariantHelper",
+              "name": "woodenGarageDoor5x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "steelGarageDoor3x3_PoweredBlockVariantHelper",
+              "name": "steelGarageDoor3x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "steelGarageDoor4x3_PoweredBlockVariantHelper",
+              "name": "steelGarageDoor4x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "steelGarageDoor5x3_PoweredBlockVariantHelper",
+              "name": "steelGarageDoor5x3_PoweredBlockVariantHelper"
+            },
+            {
+              "id": "metalReinforcedWoodDrawBridgePowered",
+              "name": "metalReinforcedWoodDrawBridgePowered"
+            }
+          ]
+        },
+        {
+          "level": 55,
+          "recipes": [
+            {
+              "id": "carBattery",
+              "name": "汽车铅蓄电池"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -247,7 +837,53 @@
       "skillName": "craftingTraps",
       "name": "陷阱",
       "desc": "阅读[DECEA3]电力陷阱[-]可解锁不同等级的陷阱。\\n提升[DECEA3]高级工程师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 25,
+          "recipes": [
+            {
+              "id": "electricfencepost",
+              "name": "electricfencepost"
+            },
+            {
+              "id": "dartTrap",
+              "name": "dartTrap"
+            },
+            {
+              "id": "bladeTrap",
+              "name": "bladeTrap"
+            }
+          ]
+        },
+        {
+          "level": 50,
+          "recipes": [
+            {
+              "id": "shotgunTurret",
+              "name": "shotgunTurret"
+            }
+          ]
+        },
+        {
+          "level": 75,
+          "recipes": [
+            {
+              "id": "autoTurret",
+              "name": "autoTurret"
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "recipes": [
+            {
+              "id": "m60Turret",
+              "name": "m60Turret"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -256,7 +892,150 @@
       "skillName": "craftingWorkstations",
       "name": "工作站",
       "desc": "阅读[DECEA3]锻造指南[-]可解锁不同的工作站及其工具。借助[DECEA3]高级工程[-]可提升获得战利品的几率。[DECEA3]撬锁[-]最多提升至制作第 12 级。",
-      "recipes": [],
+      "maxLevel": 75,
+      "recipeTiers": [
+        {
+          "level": 4,
+          "recipes": [
+            {
+              "id": "forge",
+              "name": "锻造炉"
+            },
+            {
+              "id": "cntChickenCoop",
+              "name": "鸡舍"
+            },
+            {
+              "id": "toolBellows",
+              "name": "高级风箱"
+            },
+            {
+              "id": "workbench",
+              "name": "工作台"
+            },
+            {
+              "id": "resourceLockPick",
+              "name": "撬锁工具"
+            },
+            {
+              "id": "toolChickenCoopLamp",
+              "name": "育雏灯"
+            }
+          ]
+        },
+        {
+          "level": 16,
+          "recipes": [
+            {
+              "id": "cntDewCollector",
+              "name": "露水收集器"
+            },
+            {
+              "id": "toolChickenCoopRun",
+              "name": "鸡舍跑道"
+            },
+            {
+              "id": "toolAnvil",
+              "name": "铁砧"
+            },
+            {
+              "id": "toolToolbox",
+              "name": "toolToolbox"
+            },
+            {
+              "id": "toolChickenCoopNestingBox",
+              "name": "巢箱"
+            },
+            {
+              "id": "toolDewGatherer",
+              "name": "集露器"
+            }
+          ]
+        },
+        {
+          "level": 30,
+          "recipes": [
+            {
+              "id": "toolVise",
+              "name": "toolVise"
+            },
+            {
+              "id": "cntApiary",
+              "name": "蜂房"
+            },
+            {
+              "id": "toolDewTarp",
+              "name": "篷布"
+            },
+            {
+              "id": "cementMixer",
+              "name": "水泥搅拌机"
+            },
+            {
+              "id": "toolReloadPress",
+              "name": "toolReloadPress"
+            },
+            {
+              "id": "toolEngineUpgrade",
+              "name": "toolEngineUpgrade"
+            }
+          ]
+        },
+        {
+          "level": 40,
+          "recipes": [
+            {
+              "id": "toolApiaryExtractor",
+              "name": "采蜜器"
+            },
+            {
+              "id": "toolRockCrusher",
+              "name": "toolRockCrusher"
+            },
+            {
+              "id": "toolApiaryBroodBox",
+              "name": "育蜂箱"
+            },
+            {
+              "id": "toolMixerBlade",
+              "name": "toolMixerBlade"
+            },
+            {
+              "id": "toolDewFilter",
+              "name": "滤水器"
+            },
+            {
+              "id": "chemistryStation",
+              "name": "化学工作站"
+            }
+          ]
+        },
+        {
+          "level": 56,
+          "recipes": [
+            {
+              "id": "toolGlassware",
+              "name": "toolGlassware"
+            },
+            {
+              "id": "toolApiarySmoker",
+              "name": "烟熏器"
+            },
+            {
+              "id": "toolAdvancedBurner",
+              "name": "toolAdvancedBurner"
+            },
+            {
+              "id": "toolBunsenBurner",
+              "name": "toolBunsenBurner"
+            },
+            {
+              "id": "toolForgeCrucible",
+              "name": "坩埚"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -265,7 +1044,90 @@
       "skillName": "craftingVehicles",
       "name": "载具",
       "desc": "阅读[DECEA3]载具大冒险[-]可解锁不同等级的载具。\\n提升[DECEA3]高级机械师[-]的战利品几率",
-      "recipes": [],
+      "maxLevel": 100,
+      "recipeTiers": [
+        {
+          "level": 5,
+          "recipes": [
+            {
+              "id": "vehicleBicycleChassis",
+              "name": "自行车底盘"
+            },
+            {
+              "id": "vehicleBicycleHandlebars",
+              "name": "自行车车把"
+            },
+            {
+              "id": "vehicleWheels",
+              "name": "车轮"
+            }
+          ]
+        },
+        {
+          "level": 20,
+          "recipes": [
+            {
+              "id": "vehicleMinibikeChassis",
+              "name": "小型机车底盘"
+            },
+            {
+              "id": "vehicleMinibikeHandlebars",
+              "name": "小型机车车把"
+            },
+            {
+              "id": "resourceOil",
+              "name": "机油"
+            },
+            {
+              "id": "ammoGasCan",
+              "name": "汽油罐"
+            }
+          ]
+        },
+        {
+          "level": 45,
+          "recipes": [
+            {
+              "id": "vehicleMotorcycleChassis",
+              "name": "摩托车底盘"
+            },
+            {
+              "id": "vehicleMotorcycleHandlebars",
+              "name": "摩托车车把"
+            },
+            {
+              "id": "ammoGasCanBundle",
+              "name": "汽油罐堆（5000）"
+            }
+          ]
+        },
+        {
+          "level": 70,
+          "recipes": [
+            {
+              "id": "vehicleTruck4x4Chassis",
+              "name": "4x4 卡车底盘"
+            },
+            {
+              "id": "vehicleTruck4x4Accessories",
+              "name": "4x4 卡车附件"
+            }
+          ]
+        },
+        {
+          "level": 100,
+          "recipes": [
+            {
+              "id": "vehicleGyroCopterChassis",
+              "name": "旋翼机底盘"
+            },
+            {
+              "id": "vehicleGyroCopterAccessories",
+              "name": "旋翼机配件"
+            }
+          ]
+        }
+      ],
       "reqSkill": "perkIntellectMastery",
       "reqLevel": 3,
       "reqName": "智慧专精"
@@ -274,54 +1136,72 @@
       "skillName": "craftingHarvestingTools",
       "name": "收集工具",
       "desc": "阅读[DECEA3]工具摘要[-]可以提高收集工具的制作品质。\\n提升[DECEA3]矿业69族[-]的战利品几率",
-      "recipes": [
+      "maxLevel": 100,
+      "recipeTiers": [
         {
-          "id": "meleeToolPickT3Auger",
-          "name": "螺旋钻"
+          "level": 1,
+          "recipes": [
+            {
+              "id": "meleeToolRepairT0StoneAxe",
+              "name": "石斧"
+            },
+            {
+              "id": "meleeToolShovelT0StoneShovel",
+              "name": "石铲"
+            }
+          ]
         },
         {
-          "id": "meleeToolAxeT3Chainsaw",
-          "name": "电锯"
+          "level": 11,
+          "recipes": [
+            {
+              "id": "meleeToolPickT1IronPickaxe",
+              "name": "铁制鹤嘴锄"
+            },
+            {
+              "id": "meleeToolShovelT1IronShovel",
+              "name": "铁铲"
+            },
+            {
+              "id": "meleeToolAxeT1IronFireaxe",
+              "name": "铁斧"
+            }
+          ]
         },
         {
-          "id": "meleeToolRepairT1ClawHammer",
-          "name": "羊角锤"
+          "level": 26,
+          "recipes": [
+            {
+              "id": "meleeToolPickT2SteelPickaxe",
+              "name": "钢制鹤嘴锄"
+            },
+            {
+              "id": "meleeToolShovelT2SteelShovel",
+              "name": "钢铲"
+            },
+            {
+              "id": "meleeToolAxeT2SteelAxe",
+              "name": "钢斧"
+            }
+          ]
         },
         {
-          "id": "meleeToolAxeT1IronFireaxe",
-          "name": "铁斧"
-        },
-        {
-          "id": "meleeToolAxeT2SteelAxe",
-          "name": "钢斧"
-        },
-        {
-          "id": "meleeToolPickT1IronPickaxe",
-          "name": "铁制鹤嘴锄"
-        },
-        {
-          "id": "meleeToolPickT2SteelPickaxe",
-          "name": "钢制鹤嘴锄"
-        },
-        {
-          "id": "meleeToolShovelT1IronShovel",
-          "name": "铁铲"
-        },
-        {
-          "id": "meleeToolShovelT2SteelShovel",
-          "name": "钢铲"
-        },
-        {
-          "id": "meleeToolShovelT0StoneShovel",
-          "name": "石铲"
-        },
-        {
-          "id": "meleeToolRepairT0StoneAxe",
-          "name": "石斧"
+          "level": 61,
+          "recipes": [
+            {
+              "id": "meleeToolPickT3Auger",
+              "name": "螺旋钻"
+            },
+            {
+              "id": "meleeToolAxeT3Chainsaw",
+              "name": "电锯"
+            }
+          ]
         }
       ],
       "reqSkill": "",
-      "reqLevel": 0
+      "reqLevel": 0,
+      "reqName": ""
     }
   },
   "skillNames": {
