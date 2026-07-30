@@ -23,21 +23,43 @@ export function getStaticPaths() {
     .filter(([, list]) => list.length > 1)
     .map(([name, list]) => {
       list.sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, 'zh'));
+
+      // Find series prefix from first item: bookFiremansAlmanacHeat -> perkFiremansAlmanac
       const firstId = list[0].id;
-      const completeId = 'perk' + firstId.slice(4).replace(/[A-Z][a-z]*$/, 'Complete');
-      const completePerk = skillMap.get(completeId);
+      const skillPrefix = 'perk' + firstId.slice(4);
+      // Find the common base by comparing with other items
+      let commonPrefix = skillPrefix;
+      for (const item of list) {
+        const p = 'perk' + item.id.slice(4);
+        let i = 0;
+        while (i < commonPrefix.length && i < p.length && commonPrefix[i] === p[i]) i++;
+        commonPrefix = commonPrefix.slice(0, i);
+      }
+
+      // Find completion perk: scan all skills for one that starts with the common prefix and ends with Complete
+      const completePerk = skills.find(s => {
+        const sid = s.id;
+        return sid.startsWith(commonPrefix) && /Complete$/.test(sid) && sid !== skillPrefix;
+      });
+
       const volumes = list.map(item => {
         const skillId = 'perk' + item.id.slice(4);
         const skill = skillMap.get(skillId);
+        const effect = skill?.levels?.[0]?.effect || '';
+        // Use description instead if effect is generic level label
         return {
           name: item.name || item.id,
           itemPath: `/vanilla/items/${item._sanitizedId}/`,
-          effect: skill?.levels?.[0]?.effect || skill?.description || '',
+          effect: (effect && !/^[等级\s\d]+$/.test(effect)) ? effect : (skill?.description || ''),
         };
       });
+
+      const completeName = completePerk?.name || '';
+      const completeDesc = completePerk?.description || completePerk?.levels?.[0]?.effect || '';
+
       return {
         params: { slug: toSlug(name) },
-        props: { seriesName: name, volumes, volumeCount: list.length, completeName: completePerk?.name || '', completeDesc: completePerk?.description || completePerk?.levels?.[0]?.effect || '' },
+        props: { seriesName: name, volumes, volumeCount: list.length, completeName, completeDesc },
       };
     });
 }
