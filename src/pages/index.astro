@@ -38,13 +38,13 @@ const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 
   <h2>物品分类</h2>
   <div class="category-grid">
     {catCards.map(([k, v]) => (
-      <div class="category-card">
+      <a href={`${base}/vanilla/items/#${k}`} class="category-card">
         <span class="count">{v}</span>
         <span class="label">{k}</span>
-      </div>
+      </a>
     ))}
   </div>
 
   <h2>使用提示</h2>
-  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称。侧边栏可快速切换分类。</p>
+  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称，或从下方列表浏览。</p>
 </Layout>

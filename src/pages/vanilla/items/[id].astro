@@ -14,6 +14,7 @@ const data = loadData();
 const { itemCraftRecipes, itemRecipes, resolveItemName, ITEM_CATEGORY_LABELS } = data;
 const { item } = Astro.props;
 
+const base = '/7days-to-die-wiki';
 const categoryLabel = ITEM_CATEGORY_LABELS[item.category] || item.category;
 const stars = item.tier ? (() => {
   let q = 1;
@@ -32,10 +33,25 @@ const LABELS = {
   reload_speed: '换弹速度', mod_slots: '模组插槽', stamina_cost: '体力消耗',
   attacks_per_min: '攻击速度', harvest_count: '采集数量',
   spread_horizontal: '水平散布', spread_vertical: '垂直散布',
+  burst_round_count: '连发数', dismember_chance: '肢解概率',
+  damage_falloff: '伤害衰减', exp_gain: '经验加成', penetration: '穿透',
+  cold_resistance: '寒冷抗性', buff_chance: '异常概率',
+  physical_resist: '物理抗性', elemental_resist: '元素抗性',
+  heat_resistance: '炎热抗性', carry_capacity: '负重',
+  stamina_regen_rate: '体力恢复', loot_stage: '搜刮阶段',
+  noise: '噪音', crouch_speed: '潜行速度',
+  lockpick_time: '开锁时间', lockpick_break_chance: '开锁破坏率',
+  max_health: '最大生命', max_stamina: '最大体力', run_speed: '移动速度',
+  damage_reduction: '伤害减免', fuel_consumption: '油耗',
+  mobility: '机动性', water_loss_rate: '脱水率', craft_time: '制作时间',
+  jump_strength: '跳跃力',
 };
 ---
 
 <Layout title={item.name} description={`${item.name} - ${categoryLabel}`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <span>{item.name}</span>
+  </nav>
   <h1>{item.name}</h1>
   {stars && <p><strong>品质:</strong> {stars}</p>}
   <p><strong>类型:</strong> {categoryLabel}</p>
@@ -69,7 +85,7 @@ const LABELS = {
   {usedIn.length > 0 && (
     <div>
       <h2>用于以下配方</h2>
-      <ul>{usedIn.map(r => <li><a href={`/7days-to-die-wiki/vanilla/recipes/${r.id}/`}>{r.name}</a></li>)}</ul>
+      <ul>{usedIn.map(r => <li><a href={`/7days-to-die-wiki/vanilla/recipes/${r._sanitizedId || sanitizeId(r.id)}/`}>{r.name}</a></li>)}</ul>
     </div>
   )}
 </Layout>

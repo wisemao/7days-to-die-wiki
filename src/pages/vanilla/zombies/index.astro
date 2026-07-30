@@ -2,17 +2,48 @@
 import Layout from '../../../layouts/Layout.astro';
 import { loadData } from '../../../utils/data-loader';
 const { zombies, ZOMBIE_CATEGORY_LABELS } = loadData();
+
+const base = '/7days-to-die-wiki';
+
 const cats = {};
 for (const z of zombies) {
   const label = ZOMBIE_CATEGORY_LABELS[z.category] || z.category || '未知';
-  cats[label] = (cats[label] || 0) + 1;
+  if (!cats[label]) cats[label] = [];
+  cats[label].push(z);
 }
+const catOrder = ['人形', '动物', '特殊'];
+for (const k of Object.keys(cats)) {
+  cats[k].sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, 'zh'));
+}
+const catEntries = catOrder.filter(c => cats[c]).map(c => [c, cats[c]]);
+Object.entries(cats).filter(([k]) => !catOrder.includes(k)).forEach(([k, v]) => catEntries.push([k, v]));
 ---
 
 <Layout title="僵尸列表" description={`全部 ${zombies.length} 个僵尸`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <span>僵尸列表</span>
+  </nav>
+
   <h1>僵尸列表</h1>
   <p>共 {zombies.length} 个僵尸</p>
-  <table><tr><th>类型</th><th>数量</th></tr>
-    {Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
-  </table>
+
+  <div class="category-grid">
+    {catEntries.map(([k, v]) => (
+      <a href={`#${k}`} class="category-card">
+        <span class="count">{v.length}</span>
+        <span class="label">{k}</span>
+      </a>
+    ))}
+  </div>
+
+  {catEntries.map(([k, v]) => (
+    <section class="cat-section" id={k}>
+      <h2><a href={`#${k}`} style="color:inherit;text-decoration:none;">{k}</a> <span style="font-size:14px;font-weight:400;color:#999;">({v.length})</span></h2>
+      <div class="item-list">
+        {v.map(z => (
+          <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`}>{z.name || z.id}</a>
+        ))}
+      </div>
+    </section>
+  ))}
 </Layout>
