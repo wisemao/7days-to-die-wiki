@@ -19,7 +19,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   </nav>
   <h1>{skill.name}</h1>
   <p><strong>属性:</strong> {catLabel} | <strong>最高等级:</strong> {skill.max_level}</p>
-  {skill.description && <p><strong>描述:</strong> {skill.description}</p>}
+  {skill.description && <p><strong>描述:</strong> {skill.description.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
 
   {hasLevels && (<>
     <h2>等级效果</h2>
