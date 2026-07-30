@@ -26,10 +26,15 @@ function isItemVisible(item) {
   if (/^admin/i.test(id) || /Admin/.test(id) || /^TEST_/.test(id)) return false;
   if (/^qtest_/i.test(id) || /^giveXP_/i.test(id)) return false;
   if (/^note[A-Z]/.test(id)) return false;
-  if (/^meleeHandMaster$|^meleeHandZombieTest$|^meleeHandZombieBalancingDummy$/.test(id)) return false;
   if (/^missingItem$|^UselessThing$/.test(id)) return false;
-  if (/^ammoBundleMaster$|^twitchTurd$/i.test(id)) return false;
+  if (/^twitchTurd$/i.test(id)) return false;
   if (/^tier\d{2}/.test(id) || /^questReward/.test(id)) return false;
+  // Internal game mechanic items (no player-facing use)
+  if (/^meleeHand/.test(id)) return false;
+  if (/^ammoProjectile/.test(id)) return false;
+  if (/invisibleRecipes/.test(id)) return false;
+  // Master template items without Chinese name (internal templates)
+  if (/Master$/.test(id) && (!item.name || item.name === id || /^[a-zA-Z0-9_]+$/.test(item.name))) return false;
   return true;
 }
 
