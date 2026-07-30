@@ -4121,7 +4121,7 @@ items:
     tier: 88
   - id: schematicMaster
     name: schematicMaster
-    category: material
+    category: book
     stack_size: 5
     icon: schematicMaster
     tier: 800
@@ -4131,382 +4131,382 @@ items:
     stack_size: 1
   - id: schematicNoQualityMaster
     name: schematicNoQualityMaster
-    category: material
+    category: book
     stack_size: 1
     icon: schematicMaster
   - id: modGunBarrelExtenderSchematic
     name: 枪管延伸模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunBarrelExtender
   - id: modGunMuzzleBrakeSchematic
     name: 枪口制动模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunMuzzleBrake
   - id: modGunSoundSuppressorSilencerSchematic
     name: 消声器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunSoundSuppressorSilencer
   - id: modGunLaserSightSchematic
     name: 激光瞄准器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunLaserSight
   - id: modGunFlashlightSchematic
     name: 武器照明模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunFlashlight
   - id: modGunScopeSmallSchematic
     name: 2倍镜模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunScopeSmall
   - id: modGunScopeMediumSchematic
     name: 4倍镜模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunScopeMedium
   - id: modGunScopeLargeSchematic
     name: 8倍镜模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunScopeLarge
   - id: modGunReflexSightSchematic
     name: 反射式瞄准镜模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunReflexSight
   - id: modGunTriggerGroupSemiSchematic
     name: 触发器组：半自动模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunTriggerGroupSemi
   - id: modGunTriggerGroupBurst3Schematic
     name: 触发器组：三发点放模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunTriggerGroupBurst
   - id: modGunTriggerGroupAutomaticSchematic
     name: 触发器组：全自动模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunTriggerGroupAutomatic
   - id: modGunBipodSchematic
     name: 双脚支架模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunBipod
   - id: modGunForegripSchematic
     name: 前握把模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunForegrip
   - id: modGunRetractingStockSchematic
     name: 收缩枪托模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunRetractingStock
   - id: modGunDuckbillSchematic
     name: 霰弹枪鸭嘴枪口模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunDuckbill
   - id: modGunChokeSchematic
     name: 霰弹枪喉缩模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunChoke
   - id: modGunMagazineExtenderSchematic
     name: 弹匣扩充模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunMagazineExtender
   - id: modShotgunSawedOffBarrelSchematic
     name: 削短型霰弹枪模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modShotgunSawedOffBarrel
   - id: modGunCrippleEmSchematic
     name: 致残模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunCrippleEm
   - id: modGunBowPolymerStringSchematic
     name: 聚合物弓弦模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunBowPolymerString
   - id: modGunBowArrowRestSchematic
     name: 箭托模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunBowArrowRest
   - id: modGunMeleeTheHunterSchematic
     name: 猎人模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunMeleeTheHunter
   - id: modGunMeleeRadRemoverSchematic
     name: 辐射去除模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modGunMeleeRadRemover
   - id: modMeleeTemperedBladeSchematic
     name: 钢化刀片设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeTemperedBlade
   - id: modMeleeSerratedBladeSchematic
     name: 锯齿刀片模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeSerratedBlade
   - id: modMeleeWeightedHeadSchematic
     name: 重头模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeWeightedHead
   - id: modMeleeStructuralBraceSchematic
     name: 结构支撑模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeStructuralBrace
   - id: modMeleeErgonomicGripSchematic
     name: 人体工学握把模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeErgonomicGrip
   - id: modMeleeFortifyingGripSchematic
     name: 强化握把模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeFortifyingGrip
   - id: modMeleeClubBarbedWireSchematic
     name: 铁丝网模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeClubBarbedWire
   - id: modMeleeClubMetalSpikesSchematic
     name: 金属长钉模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeClubMetalSpikes
   - id: modMeleeGraveDiggerSchematic
     name: 掘墓者模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeGraveDigger
   - id: modMeleeBunkerBusterSchematic
     name: 掩体炸弹模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeBunkerBuster
   - id: modMeleeIronBreakerSchematic
     name: 铁见愁模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeIronBreaker
   - id: modMeleeWoodSplitterSchematic
     name: 劈木模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeWoodSplitter
   - id: modMeleeClubBurningShaftSchematic
     name: 燃烧杆模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modMeleeClubBurningShaft
   - id: modArmorInsulatedLinerSchematic
     name: 隔冷内衬模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorInsulatedLiner
   - id: modArmorCoolingMeshSchematic
     name: 散热网模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorCoolingMesh
   - id: modArmorImprovedFittingsSchematic
     name: 护甲配件模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorImprovedFittings
   - id: modArmorCustomizedFittingsSchematic
     name: 高级护甲配件模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorCustomizedFittings
   - id: modArmorPlatingBasicSchematic
     name: 装甲板模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorPlatingBasic
   - id: modArmorPlatingReinforcedSchematic
     name: 高级护甲镀层模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorPlatingReinforced
   - id: modArmorStoragePocketSchematic
     name: 护甲收纳口袋模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorStoragePocket
   - id: modArmorDoubleStoragePocketSchematic
     name: 护甲双收纳口袋模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorDoubleStoragePocket
   - id: modArmorTripleStoragePocketSchematic
     name: 护甲三收纳口袋模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorTripleStoragePocket
   - id: modArmorQuadStoragePocketSchematic
     name: 护甲四收纳口袋模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorQuadStoragePocket
   - id: modArmorMuffledConnectorsSchematic
     name: 消音连接器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorMuffledConnectors
   - id: modArmorAdvancedMuffledConnectorsSchematic
     name: 高级消音连接器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorAdvancedMuffledConnectors
   - id: modArmorImpactBracingSchematic
     name: 冲击支撑模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorImpactBracing
   - id: modArmorBandolierSchematic
     name: 弹药带模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorBandolier
   - id: modArmorWaterPurifierSchematic
     name: 净水器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorWaterPurifier
   - id: modArmorHelmetLightSchematic
     name: 头盔灯模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modArmorHelmetLight
   - id: modFuelTankSmallSchematic
     name: 电动工具小油箱模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modFuelTankSmall
   - id: modFuelTankLargeSchematic
     name: 电动工具大油箱模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modFuelTankLarge
   - id: modRoboticDroneCargoModSchematic
     name: 机器人无人机储物模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneCargoMod
   - id: modRoboticDroneMedicModSchematic
     name: 机器人无人机医疗模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneMedicMod
   - id: modRoboticDroneHeadlampModSchematic
     name: 机器人无人机头灯模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneHeadlampMod
   - id: modRoboticDroneArmorPlatingModSchematic
     name: 机器人无人机装甲板模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneArmorPlatingMod
   - id: modRoboticDroneMoraleBoosterModSchematic
     name: 机器人无人机鼓舞士气模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneMoraleBoosterMod
   - id: modRoboticDroneStunWeaponModSchematic
     name: 机器人无人机眩晕模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneStunWeaponMod
   - id: modRoboticDroneWeaponModSchematic
     name: 机器人无人机武器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modRoboticDroneWeaponMod
   - id: modVehicleFuelSaverSchematic
     name: 载具节油器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleFuelSaver
   - id: modVehicleOffRoadHeadlightsSchematic
     name: 载具越野头灯模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleOffRoadHeadlights
   - id: modVehicleSuperChargerSchematic
     name: 载具增压器模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleSuperCharger
   - id: modVehicleExpandedSeatSchematic
     name: 载具扩展座椅模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleExpandedSeat
   - id: modVehicleReserveFuelTankSchematic
     name: 载具备用油箱模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleReserveFuelTank
   - id: modVehiclePlowSchematic
     name: 载具犁模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehiclePlow
   - id: modVehicleArmorSchematic
     name: 载具护甲模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleArmor
   - id: modVehicleStorageSchematic
     name: 载具储物模组设计图
-    category: material
+    category: book
     stack_size: 1
     icon: modVehicleStorage
   - id: schematicNoQualityRecipeMaster
     name: schematicNoQualityRecipeMaster
-    category: material
+    category: book
     stack_size: 1
     icon: schematicMaster
   - id: foodCanShamSchematic
     name: 山威秘密配方
-    category: material
+    category: book
     stack_size: 1
     icon: foodCanSham
   - id: plantedGraceCorn1Schematic
     name: plantedGraceCorn1Schematic
-    category: material
+    category: book
     stack_size: 1
     icon: plantedCorn1
   - id: skillBookMaster
     name: skillBookMaster
-    category: material
+    category: book
     stack_size: 1
     tier: 500
   - id: blankNoteMaster
     name: blankNoteMaster
-    category: material
+    category: book
     stack_size: 50
     icon: questMaster
     tier: 1600
@@ -5139,634 +5139,634 @@ items:
     tier: 5000
   - id: bookFiremansAlmanacHeat
     name: bookFiremansAlmanacHeat
-    category: material
+    category: book
     stack_size: 20
     icon: bookFiremansAlmanacHeat
     tier: 500
   - id: bookFiremansAlmanacAxes
     name: bookFiremansAlmanacAxes
-    category: material
+    category: book
     stack_size: 1
   - id: bookFiremansAlmanacSpeed
     name: bookFiremansAlmanacSpeed
-    category: material
+    category: book
     stack_size: 1
   - id: bookFiremansAlmanacMolotov
     name: bookFiremansAlmanacMolotov
-    category: material
+    category: book
     stack_size: 1
   - id: bookFiremansAlmanacPrevention
     name: bookFiremansAlmanacPrevention
-    category: material
+    category: book
     stack_size: 1
   - id: bookFiremansAlmanacHarvest
     name: bookFiremansAlmanacHarvest
-    category: material
+    category: book
     stack_size: 1
   - id: bookFiremansAlmanacEquipment
     name: bookFiremansAlmanacEquipment
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerStealthDamage
     name: bookNightStalkerStealthDamage
-    category: material
+    category: book
     stack_size: 1
     icon: bookNightStalkerStealthDamage
   - id: bookNightStalkerSilentNight
     name: bookNightStalkerSilentNight
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerBlades
     name: bookNightStalkerBlades
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerThiefAdrenaline
     name: bookNightStalkerThiefAdrenaline
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerArchery
     name: bookNightStalkerArchery
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerTwilightThief
     name: bookNightStalkerTwilightThief
-    category: material
+    category: book
     stack_size: 1
   - id: bookNightStalkerSlumberParty
     name: bookNightStalkerSlumberParty
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterDukes
     name: bookLuckyLooterDukes
-    category: material
+    category: book
     stack_size: 1
     icon: bookLuckyLooterDukes
   - id: bookLuckyLooterAmmunition
     name: bookLuckyLooterAmmunition
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterBrass
     name: bookLuckyLooterBrass
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterLead
     name: bookLuckyLooterLead
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterBooks
     name: bookLuckyLooterBooks
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterFood
     name: bookLuckyLooterFood
-    category: material
+    category: book
     stack_size: 1
   - id: bookLuckyLooterMedical
     name: bookLuckyLooterMedical
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerDamage
     name: bookEnforcerDamage
-    category: material
+    category: book
     stack_size: 1
     icon: bookEnforcerDamage
   - id: bookEnforcerApparel
     name: bookEnforcerApparel
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerPunks
     name: bookEnforcerPunks
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerIntimidation
     name: bookEnforcerIntimidation
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerAPAmmo
     name: bookEnforcerAPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerHPAmmo
     name: bookEnforcerHPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookEnforcerCriminalPursuit
     name: bookEnforcerCriminalPursuit
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpBigHits
     name: bookBatterUpBigHits
-    category: material
+    category: book
     stack_size: 1
     icon: bookBatterUpBigHits
   - id: bookBatterUpStealingBases
     name: bookBatterUpStealingBases
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpSlowPitch
     name: bookBatterUpSlowPitch
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpKnockdown
     name: bookBatterUpKnockdown
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpMaintenance
     name: bookBatterUpMaintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpFoulBalls
     name: bookBatterUpFoulBalls
-    category: material
+    category: book
     stack_size: 1
   - id: bookBatterUpMetalChain
     name: bookBatterUpMetalChain
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaKnockdown
     name: bookSledgeSagaKnockdown
-    category: material
+    category: book
     stack_size: 1
     icon: bookSledgeSagaKnockdown
   - id: bookSledgeSagaDegradation
     name: bookSledgeSagaDegradation
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaCrippledMorale
     name: bookSledgeSagaCrippledMorale
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaPulverizingFinishers
     name: bookSledgeSagaPulverizingFinishers
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaSavageReaper
     name: bookSledgeSagaSavageReaper
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaConcussiveStrike
     name: bookSledgeSagaConcussiveStrike
-    category: material
+    category: book
     stack_size: 1
   - id: bookSledgeSagaArmorCrusher
     name: bookSledgeSagaArmorCrusher
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistSafes
     name: bookGreatHeistSafes
-    category: material
+    category: book
     stack_size: 1
     icon: bookTheGreatHeistSafes
   - id: bookGreatHeistGems
     name: bookGreatHeistGems
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistGoldRush
     name: bookGreatHeistGoldRush
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistClaimed
     name: bookGreatHeistClaimed
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistAdrenalineFall
     name: bookGreatHeistAdrenalineFall
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistSprintSneak
     name: bookGreatHeistSprintSneak
-    category: material
+    category: book
     stack_size: 1
   - id: bookGreatHeistMotionDetection
     name: bookGreatHeistMotionDetection
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresHoney
     name: bookWasteTreasuresHoney
-    category: material
+    category: book
     stack_size: 1
     icon: bookWasteTreasuresHoney
   - id: bookWasteTreasuresCoffins
     name: bookWasteTreasuresCoffins
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresAcid
     name: bookWasteTreasuresAcid
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresWater
     name: bookWasteTreasuresWater
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresDoors
     name: bookWasteTreasuresDoors
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresCloth
     name: bookWasteTreasuresCloth
-    category: material
+    category: book
     stack_size: 1
   - id: bookWasteTreasuresSinks
     name: bookWasteTreasuresSinks
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalBears
     name: bookHuntingJournalBears
-    category: material
+    category: book
     stack_size: 1
     icon: bookHuntingJournalBears
   - id: bookHuntingJournalWolves
     name: bookHuntingJournalWolves
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalCoyotes
     name: bookHuntingJournalCoyotes
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalMountainLions
     name: bookHuntingJournalMountainLions
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalDeer
     name: bookHuntingJournalDeer
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalVultures
     name: bookHuntingJournalVultures
-    category: material
+    category: book
     stack_size: 1
   - id: bookHuntingJournalSelfDefense
     name: bookHuntingJournalSelfDefense
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningLuckyStrike
     name: bookArtOfMiningLuckyStrike
-    category: material
+    category: book
     stack_size: 1
     icon: bookArtOfMiningLuckyStrike
   - id: bookArtOfMiningDiamondTools
     name: bookArtOfMiningDiamondTools
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningCoffee
     name: bookArtOfMiningCoffee
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningBlackStrap
     name: bookArtOfMiningBlackStrap
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningPallets
     name: bookArtOfMiningPallets
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningAvalanche
     name: bookArtOfMiningAvalanche
-    category: material
+    category: book
     stack_size: 1
   - id: bookArtOfMiningDamage
     name: bookArtOfMiningDamage
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersArrowRecovery
     name: bookRangersArrowRecovery
-    category: material
+    category: book
     stack_size: 1
     icon: bookRangersArrowRecovery
   - id: bookRangersExplodingBolts
     name: bookRangersExplodingBolts
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersCripplingShot
     name: bookRangersCripplingShot
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersAPAmmo
     name: bookRangersAPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersFlamingArrows
     name: bookRangersFlamingArrows
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersForestGuide
     name: bookRangersForestGuide
-    category: material
+    category: book
     stack_size: 1
   - id: bookRangersKnockdown
     name: bookRangersKnockdown
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteTakeAim
     name: bookPistolPeteTakeAim
-    category: material
+    category: book
     stack_size: 1
     icon: bookPistolPeteTakeAim
   - id: bookPistolPeteSwissKnees
     name: bookPistolPeteSwissKnees
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteSteadyHand
     name: bookPistolPeteSteadyHand
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteMaintenance
     name: bookPistolPeteMaintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteHPAmmo
     name: bookPistolPeteHPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteAPAmmo
     name: bookPistolPeteAPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookPistolPeteDamage
     name: bookPistolPeteDamage
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahDamage
     name: bookShotgunMessiahDamage
-    category: material
+    category: book
     stack_size: 1
     icon: bookShotgunMessiahDamage
   - id: bookShotgunMessiahBreachingSlugs
     name: bookShotgunMessiahBreachingSlugs
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahLimbShot
     name: bookShotgunMessiahLimbShot
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahSlugs
     name: bookShotgunMessiahSlugs
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahMaintenance
     name: bookShotgunMessiahMaintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahMagazine
     name: bookShotgunMessiahMagazine
-    category: material
+    category: book
     stack_size: 1
   - id: bookShotgunMessiahPartyStarter
     name: bookShotgunMessiahPartyStarter
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperDamage
     name: bookSniperDamage
-    category: material
+    category: book
     stack_size: 1
     icon: bookSniperDamage
   - id: bookSniperCripplingShot
     name: bookSniperCripplingShot
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperHeadShot
     name: bookSniperHeadShot
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperReload
     name: bookSniperReload
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperControlledBreathing
     name: bookSniperControlledBreathing
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperAPAmmo
     name: bookSniperAPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookSniperHPAmmo
     name: bookSniperHPAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsDamage
     name: bookAutoWeaponsDamage
-    category: material
+    category: book
     stack_size: 1
     icon: bookAutoWeaponsDamage
   - id: bookAutoWeaponsUncontrolledBurst
     name: bookAutoWeaponsUncontrolledBurst
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsMaintenance
     name: bookAutoWeaponsMaintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsDrumMag
     name: bookAutoWeaponsDrumMag
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsRecoil
     name: bookAutoWeaponsRecoil
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsRagdoll
     name: bookAutoWeaponsRagdoll
-    category: material
+    category: book
     stack_size: 1
   - id: bookAutoWeaponsMachineGuns
     name: bookAutoWeaponsMachineGuns
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatLanding
     name: bookUrbanCombatLanding
-    category: material
+    category: book
     stack_size: 1
     icon: bookUrbanCombatLanding
   - id: bookUrbanCombatCigar
     name: bookUrbanCombatCigar
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatSneaking
     name: bookUrbanCombatSneaking
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatJumping
     name: bookUrbanCombatJumping
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatLandMines
     name: bookUrbanCombatLandMines
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatAdrenalineRush
     name: bookUrbanCombatAdrenalineRush
-    category: material
+    category: book
     stack_size: 1
   - id: bookUrbanCombatRoomClearing
     name: bookUrbanCombatRoomClearing
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie1Damage
     name: bookTechJunkie1Damage
-    category: material
+    category: book
     stack_size: 1
     icon: bookTechJunkie1Damage
   - id: bookTechJunkie2Maintenance
     name: bookTechJunkie2Maintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie3APAmmo
     name: bookTechJunkie3APAmmo
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie4Shells
     name: bookTechJunkie4Shells
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie5Repulsor
     name: bookTechJunkie5Repulsor
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie6BatonCharge
     name: bookTechJunkie6BatonCharge
-    category: material
+    category: book
     stack_size: 1
   - id: bookTechJunkie7Hydraulics
     name: bookTechJunkie7Hydraulics
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling1BasicMoves
     name: bookBarBrawling1BasicMoves
-    category: material
+    category: book
     stack_size: 1
     icon: bookBarBrawling1BasicMoves
   - id: bookBarBrawling2DropABomb
     name: bookBarBrawling2DropABomb
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling3KillerInstinct
     name: bookBarBrawling3KillerInstinct
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling4FinishingMoves
     name: bookBarBrawling4FinishingMoves
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling5AdrenalineHealing
     name: bookBarBrawling5AdrenalineHealing
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling6RageMode
     name: bookBarBrawling6RageMode
-    category: material
+    category: book
     stack_size: 1
   - id: bookBarBrawling7BoozedUp
     name: bookBarBrawling7BoozedUp
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter1Damage
     name: bookSpearHunter1Damage
-    category: material
+    category: book
     stack_size: 1
     icon: bookSpearHunter1Damage
   - id: bookSpearHunter2Maintenance
     name: bookSpearHunter2Maintenance
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter3Bleed
     name: bookSpearHunter3Bleed
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter4KillMove
     name: bookSpearHunter4KillMove
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter5RapidStrike
     name: bookSpearHunter5RapidStrike
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter6PenetratingShaft
     name: bookSpearHunter6PenetratingShaft
-    category: material
+    category: book
     stack_size: 1
   - id: bookSpearHunter7QuickStrike
     name: bookSpearHunter7QuickStrike
-    category: material
+    category: book
     stack_size: 1
   - id: masterSkillMagazine
     name: masterSkillMagazine
-    category: material
+    category: book
     stack_size: 20
     tier: 100
   - id: harvestingToolsSkillMagazine
     name: harvestingToolsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookToolsDigest
   - id: repairToolsSkillMagazine
     name: repairToolsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookHandyLand
   - id: salvageToolsSkillMagazine
     name: salvageToolsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookScrapping4Fun
   - id: knucklesSkillMagazine
     name: 愤怒之拳
-    category: material
+    category: book
     stack_size: 1
     icon: bookFuriousFists
   - id: bladesSkillMagazine
     name: 刀剑客
-    category: material
+    category: book
     stack_size: 1
     icon: bookKnifeGuy
   - id: clubsSkillMagazine
     name: 打击高手
-    category: material
+    category: book
     stack_size: 1
     icon: bookBigHitters
   - id: sledgehammersSkillMagazine
     name: 锤行天下
-    category: material
+    category: book
     stack_size: 1
     icon: bookGetHammered
   - id: spearsSkillMagazine
     name: 尖锐之棍
-    category: material
+    category: book
     stack_size: 1
     icon: bookSharpSticks
   - id: bowsSkillMagazine
     name: bowsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookBowHunters
   - id: handgunsSkillMagazine
     name: handgunsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookHandgunMagazine
   - id: shotgunsSkillMagazine
     name: shotgunsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookShotgunWeekly
   - id: riflesSkillMagazine
     name: riflesSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookRifleWorld
   - id: machineGunsSkillMagazine
     name: machineGunsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookTacticalWarfare
   - id: explosivesSkillMagazine
     name: explosivesSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookExplosiveMagazine
   - id: roboticsSkillMagazine
     name: roboticsSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookTechPlanet
   - id: armorSkillMagazine
@@ -5786,12 +5786,12 @@ items:
     icon: bookHomeCookingWeekly
   - id: seedSkillMagazine
     name: 南方种植
-    category: material
+    category: book
     stack_size: 1
     icon: bookSouthernFarming
   - id: electricianSkillMagazine
     name: electricianSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookWiring101
   - id: trapsSkillMagazine
@@ -5801,7 +5801,7 @@ items:
     icon: bookElectricalTraps
   - id: workstationSkillMagazine
     name: workstationSkillMagazine
-    category: material
+    category: book
     stack_size: 1
     icon: bookForgeAhead
   - id: vehiclesSkillMagazine
