@@ -1,7 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
-import { readFileSync } from 'fs';
+import { readFileSync, existsSync } from 'fs';
 
 // Load crafting skills for skill magazine items
 let craftingSkills = {};
@@ -32,6 +32,10 @@ const stars = item.tier ? (() => {
   return '★'.repeat(q) + '☆'.repeat(6 - q);
 })() : null;
 
+// Check if item icon exists
+const iconPath = `public/images/items/${item.id}.png`;
+const hasIcon = existsSync(iconPath);
+
 const craftRecipes = (itemCraftRecipes.get(item.id) || []).filter(r => r.recipe && r.recipe.length > 0);
 const usedIn = (itemRecipes.get(item.id) || []);
 
@@ -54,45 +58,92 @@ const LABELS = {
   mobility: '机动性', water_loss_rate: '脱水率', craft_time: '制作时间',
   jump_strength: '跳跃力',
 };
+function fmtLabel(k) { return LABELS[k] || k; }
+function fmtVal(v) {
+  if (typeof v === 'number' && v % 1 !== 0) return v.toFixed(2);
+  return v;
+}
 ---
 
 <Layout title={item.name} description={`${item.name} - ${categoryLabel}`}>
   <nav class="breadcrumb">
     <a href={base}>首页</a>
-    / <a href={`${base}/vanilla/items/`}>物品列表</a>
-    / <a href={`${base}/vanilla/items/category/${item.category}/`}>{categoryLabel}</a>
-    {magInfo && <span> / <a href={`${base}/vanilla/items/category/book/#技能杂志`}>技能杂志</a></span>}
-    {item.category === 'book' && /Schematic$/.test(item.id) && <span> / <a href={`${base}/vanilla/items/category/book/#设计图`}>设计图</a></span>}
-    {item.category === 'book' && /^book/.test(item.id) && <span> / <a href={`${base}/vanilla/items/category/book/#技能书`}>技能书</a></span>}
-    / <span>{item.name}</span>
+    <span class="sep">/</span>
+    <a href={`${base}/vanilla/items/`}>物品列表</a>
+    <span class="sep">/</span>
+    <a href={`${base}/vanilla/items/category/${item.category}/`}>{categoryLabel}</a>
+    {magInfo && <><span class="sep">/</span> <a href={`${base}/vanilla/items/category/book/#技能杂志`}>技能杂志</a></>}
+    {item.category === 'book' && /Schematic$/.test(item.id) && <><span class="sep">/</span> <a href={`${base}/vanilla/items/category/book/#设计图`}>设计图</a></>}
+    {item.category === 'book' && /^book/.test(item.id) && <><span class="sep">/</span> <a href={`${base}/vanilla/items/category/book/#技能书`}>技能书</a></>}
+    <span class="sep">/</span>
+    <span>{item.name}</span>
   </nav>
-  <h1>{item.name}</h1>
-  {stars && <p><strong>品质:</strong> {stars}</p>}
-  <p><strong>类型:</strong> {categoryLabel}</p>
-  <p><strong>堆叠:</strong> {item.stack_size}</p>
-  {item.description && <p><strong>描述:</strong> {item.description.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+
+  <div class="item-header">
+    {hasIcon && (
+      <div class="icon">
+        <img src={`${base}/images/items/${item.id}.png`} alt={item.name} loading="lazy" />
+      </div>
+    )}
+    <div class="meta">
+      <h1>{item.name}</h1>
+      <div class="tags">
+        <span class="tag">{categoryLabel}</span>
+        <span class="tag">堆叠: {item.stack_size}</span>
+        {stars && <span class="tag" style="background:#fff3e0;border-color:#ff8f00;color:#e65100;">品质: {stars}</span>}
+      </div>
+      {item.description && (
+        <p style="margin-top:12px;line-height:1.8;">
+          <strong>描述:</strong>{' '}
+          {item.description.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}
+        </p>
+      )}
+    </div>
+  </div>
 
   {item.stats && Object.keys(item.stats).length > 0 && (
     <>
       <h2>基础属性</h2>
-      <table><tr><th>属性</th><th>值</th></tr>
-        {Object.entries(item.stats).map(([k, v]) => <tr><td>{LABELS[k] || k}</td><td>{v}</td></tr>)}
-      </table>
+      <div class="stats-grid">
+        {Object.entries(item.stats).map(([k, v]) => (
+          <div class="stat-item">
+            <span class="stat-label">{fmtLabel(k)}</span>
+            <span class="stat-value">{fmtVal(v)}</span>
+          </div>
+        ))}
+      </div>
     </>
   )}
 
   {craftRecipes.map(cr => (
     <div>
       <h2>制作配方</h2>
-      <p>{cr.station} | {cr.craft_time}秒 | 产出 {cr.craft_count}</p>
-      <ul>{cr.recipe.filter(m => m.count > 0).map(m => <li><a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveItemName(m.item_id)}</a> x{m.count}</li>)}</ul>
+      <p style="margin-bottom:12px;color:var(--c-text-2);font-size:14px;">
+        <span class="tag" style="background:var(--c-blood-light);border-color:var(--c-blood);color:var(--c-blood);">{cr.station}</span>
+        {' '}耗时 {cr.craft_time} 秒 · 产出 {cr.craft_count} 个
+      </p>
+      <div class="recipe-mats">
+        {cr.recipe.filter(m => m.count > 0).map(m => (
+          <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
+            <span class="mat-name">{resolveItemName(m.item_id)}</span>
+            <span class="mat-count">×{m.count}</span>
+          </a>
+        ))}
+      </div>
     </div>
   ))}
 
   {item.scrappable_into?.length > 0 && (
     <div>
       <h2>分解获得</h2>
-      <ul>{item.scrappable_into.map(s => <li><a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveItemName(s.item_id)}</a> x{s.count}</li>)}</ul>
+      <div class="recipe-mats">
+        {item.scrappable_into.map(s => (
+          <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
+            <span class="mat-name">{resolveItemName(s.item_id)}</span>
+            <span class="mat-count">×{s.count}</span>
+          </a>
+        ))}
+      </div>
     </div>
   )}
 
@@ -104,8 +155,11 @@ const LABELS = {
   )}
 
   {magInfo && (
-    <div style="margin-top:24px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-border);border-radius:var(--radius);">
-      <h2 style="margin-top:0;font-size:1.1rem;">📖 关联技能</h2>
+    <div class="info-card">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+        <span style="font-size:24px;">📖</span>
+        <h2 style="margin:0;color:var(--c-blood);font-size:1.15rem;">关联技能</h2>
+      </div>
       <p><strong>{magInfo.name}</strong></p>
       {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
       {magInfo.reqSkill && (
@@ -118,12 +172,11 @@ const LABELS = {
           <h3 style="font-size:14px;margin:16px 0 8px;">解锁配方（按技能等级）</h3>
           {magInfo.recipeTiers.map(tier => (
             <div style="margin-bottom:10px;">
-              <p style="font-size:13px;font-weight:600;color:var(--c-brand);margin:0 0 4px;">
+              <p style="font-size:13px;font-weight:600;color:var(--c-blood);margin:0 0 4px;">
                 等级 {tier.level} 解锁
               </p>
               <div class="item-grid" style="margin:0;">
                 {tier.recipes.map(r => {
-                  // Clean up English names: remove suffixes, convert camelCase
                   const displayName = /^[a-zA-Z0-9_]+$/.test(r.name)
                     ? r.name.replace(/BlockVariantHelper|_Powered|_player/g, '').replace(/([a-z])([A-Z])/g, '$1 $2')
                     : r.name;
@@ -136,4 +189,57 @@ const LABELS = {
       )}
     </div>
   )}
+
+  <style>
+    /* ─── Stats Grid ─── */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 8px;
+      margin: 16px 0;
+    }
+    .stat-item {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s;
+    }
+    .stat-item:hover { border-color: var(--c-rust-light); }
+    .stat-label { font-size: 12px; color: var(--c-text-3); text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-value { font-size: 16px; font-weight: 700; color: var(--c-text); margin-top: 2px; }
+
+    /* ─── Recipe Materials ─── */
+    .recipe-mats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 16px;
+    }
+    .mat-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      transition: all 0.15s;
+      text-decoration: none !important;
+    }
+    .mat-chip:hover {
+      border-color: var(--c-blood);
+      background: var(--c-blood-light);
+      transform: translateY(-1px);
+    }
+    .mat-name { color: var(--c-text); }
+    .mat-count {
+      font-weight: 700;
+      color: var(--c-blood);
+      font-size: 13px;
+    }
+  </style>
 </Layout>

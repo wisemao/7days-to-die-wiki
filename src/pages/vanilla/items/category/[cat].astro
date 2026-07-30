@@ -53,18 +53,22 @@ const bookSeries = catKey === 'book' ? (() => {
 ---
 
 <Layout title={catLabel} description={`${catLabel} - ${catItems.length} 个物品`}>
-  <nav class="breadcrumb"><a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <span>{catLabel}</span></nav>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a><span class="sep">/</span>
+    <a href={`${base}/vanilla/items/`}>物品列表</a><span class="sep">/</span>
+    <span>{catLabel}</span>
+  </nav>
   <h1>{catLabel}</h1>
   <p class="subtitle">共 {catItems.length} 个物品</p>
 
   {catKey === 'book' ? (
-    <>
-      {/* ─── Schematics sub-categories ─── */}
+    <div class="book-layout">
       {schematicSub && (
-        <section id="设计图">
-          <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
-            <span>🔧 设计图</span>
-            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{schematicSub.reduce((s, [,v]) => s + v.length, 0)} 项</span>
+        <section id="设计图" class="book-section">
+          <h2 class="collapsible section-head">
+            <span class="section-icon">🔧</span>
+            <span>设计图</span>
+            <span class="section-count">{schematicSub.reduce((s, [,v]) => s + v.length, 0)} 项</span>
           </h2>
           <div>
             <div class="card-grid">
@@ -76,8 +80,10 @@ const bookSeries = catKey === 'book' ? (() => {
               ))}
             </div>
             {schematicSub.map(([g, list]) => (
-              <section id={g} style="scroll-margin-top:64px;margin-bottom:12px;">
-                <h3 class="collapsible collapsed" style="font-size:15px;font-weight:600;margin:12px 0 6px;color:var(--c-text-2);">{g}</h3>
+              <section id={g} class="sub-section">
+                <h3 class="collapsible collapsed sub-head">
+                  <span>{g}</span>
+                </h3>
                 <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
               </section>
             ))}
@@ -85,27 +91,27 @@ const bookSeries = catKey === 'book' ? (() => {
         </section>
       )}
 
-      {/* ─── Skill Magazines ─── */}
       {(() => {
         const mags = catItems.filter(i => /SkillMagazine$/.test(i.id));
         if (mags.length === 0) return null;
         return (
-          <section id="技能杂志">
-            <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
-              <span>📘 技能杂志</span>
-              <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{mags.length} 项</span>
+          <section id="技能杂志" class="book-section">
+            <h2 class="collapsible section-head">
+              <span class="section-icon">📘</span>
+              <span>技能杂志</span>
+              <span class="section-count">{mags.length} 项</span>
             </h2>
             <div class="item-grid">{mags.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
           </section>
         );
       })()}
 
-      {/* ─── Skill Book Series ─── */}
       {bookSeries && (
-        <section id="技能书">
-          <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
-            <span>📚 技能书系列</span>
-            <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{bookSeries.reduce((s, [,v]) => s + v.length, 0)} 卷</span>
+        <section id="技能书" class="book-section">
+          <h2 class="collapsible section-head">
+            <span class="section-icon">📚</span>
+            <span>技能书系列</span>
+            <span class="section-count">{bookSeries.reduce((s, [,v]) => s + v.length, 0)} 卷</span>
           </h2>
           <div class="card-grid">
             {bookSeries.map(([name, list]) => (
@@ -117,10 +123,52 @@ const bookSeries = catKey === 'book' ? (() => {
           </div>
         </section>
       )}
-    </>
+    </div>
   ) : (
     <div class="item-grid">
       {catItems.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
     </div>
   )}
+
+  <style>
+    .book-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .book-section {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+    }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 4px;
+      padding-bottom: 8px;
+      border-bottom: none !important;
+      font-size: 1.1rem;
+    }
+    .section-icon { font-size: 18px; flex-shrink: 0; }
+    .section-count {
+      margin-left: auto;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--c-text-3);
+    }
+    .sub-section {
+      scroll-margin-top: 72px;
+      margin-bottom: 8px;
+    }
+    .sub-section:last-child { margin-bottom: 0; }
+    .sub-section .item-grid { margin: 4px 0 0; }
+    .sub-head {
+      font-size: 14px;
+      font-weight: 600;
+      margin: 8px 0 4px;
+      color: var(--c-text-2);
+    }
+  </style>
 </Layout>
