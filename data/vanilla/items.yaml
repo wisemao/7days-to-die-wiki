@@ -556,7 +556,7 @@ items:
       spread_vertical: 0
       spread_horizontal: 0
   - id: gunHandgunT0PipePistol
-    name: gunHandgunT0PipePistol
+    name: 铁管手枪
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -574,7 +574,7 @@ items:
       spread_horizontal: 1.5
       durability: 100
   - id: gunHandgunT1Pistol
-    name: gunHandgunT1Pistol
+    name: 手枪
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -592,7 +592,7 @@ items:
       spread_horizontal: 1.5
       durability: 300
   - id: gunHandgunT3SMG5
-    name: gunHandgunT3SMG5
+    name: SMG-5
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -610,7 +610,7 @@ items:
       spread_horizontal: 1.35
       durability: 500
   - id: gunHandgunT2Magnum44
-    name: gunHandgunT2Magnum44
+    name: .44马格南
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -628,7 +628,7 @@ items:
       spread_horizontal: 1.3
       durability: 400
   - id: gunHandgunT3DesertVulture
-    name: gunHandgunT3DesertVulture
+    name: .44 口径沙漠秃鹰
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -646,7 +646,7 @@ items:
       spread_horizontal: 1.3
       durability: 500
   - id: gunShotgunT0PipeShotgun
-    name: gunShotgunT0PipeShotgun
+    name: 铁管霰弹枪
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -662,7 +662,7 @@ items:
       spread_horizontal: 0.07
       durability: 100
   - id: gunShotgunT1DoubleBarrel
-    name: gunShotgunT1DoubleBarrel
+    name: 双管霰弹枪
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -676,7 +676,7 @@ items:
       block_damage: 0.15
       durability: 200
   - id: gunShotgunT2PumpShotgun
-    name: gunShotgunT2PumpShotgun
+    name: 泵动式霰弹枪
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -690,7 +690,7 @@ items:
       block_damage: 0.15
       durability: 400
   - id: gunShotgunT3AutoShotgun
-    name: gunShotgunT3AutoShotgun
+    name: 自动霰弹枪
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -704,7 +704,7 @@ items:
       block_damage: 0.15
       durability: 700
   - id: gunRifleT0PipeRifle
-    name: gunRifleT0PipeRifle
+    name: 铁管步枪
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -722,7 +722,7 @@ items:
       spread_horizontal: 5.7
       durability: 100
   - id: gunRifleT1HuntingRifle
-    name: gunRifleT1HuntingRifle
+    name: 猎枪
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -740,7 +740,7 @@ items:
       spread_horizontal: 5
       durability: 200
   - id: gunRifleT2LeverActionRifle
-    name: gunRifleT2LeverActionRifle
+    name: 杠杆式步枪
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -758,7 +758,7 @@ items:
       spread_horizontal: 6
       durability: 400
   - id: gunRifleT3SniperRifle
-    name: gunRifleT3SniperRifle
+    name: 狙击步枪
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -776,7 +776,7 @@ items:
       spread_horizontal: 6
       durability: 700
   - id: gunMGT0PipeMachineGun
-    name: gunMGT0PipeMachineGun
+    name: 铁管机枪
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -794,7 +794,7 @@ items:
       durability: 100
       mod_slots: 1
   - id: gunMGT1AK47
-    name: gunMGT1AK47
+    name: AK-47机枪
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -812,7 +812,7 @@ items:
       durability: 200
       mod_slots: 2
   - id: gunMGT2TacticalAR
-    name: gunMGT2TacticalAR
+    name: 战术突击步枪
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -830,7 +830,7 @@ items:
       durability: 400
       mod_slots: 3
   - id: gunMGT3M60
-    name: gunMGT3M60
+    name: M60机枪
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -848,7 +848,7 @@ items:
       durability: 700
       mod_slots: 4
   - id: gunExplosivesT3RocketLauncher
-    name: gunExplosivesT3RocketLauncher
+    name: 火箭发射器
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -866,7 +866,7 @@ items:
       spread_horizontal: 7
       durability: 100
   - id: gunBowT0PrimitiveBow
-    name: gunBowT0PrimitiveBow
+    name: 传统弓
     category: ranged_weapon
     stack_size: 1
     tier: 200
@@ -885,7 +885,7 @@ items:
       durability: 100
       mod_slots: 1
   - id: gunBowT1WoodenBow
-    name: gunBowT1WoodenBow
+    name: 木弓
     category: ranged_weapon
     stack_size: 1
     tier: 500
@@ -904,7 +904,7 @@ items:
       durability: 200
       mod_slots: 2
   - id: gunBowT3CompoundBow
-    name: gunBowT3CompoundBow
+    name: 复合弓
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -922,7 +922,7 @@ items:
       durability: 350
       mod_slots: 3
   - id: gunBowT1IronCrossbow
-    name: gunBowT1IronCrossbow
+    name: 铁弩
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -951,7 +951,7 @@ items:
       spread_vertical: 1
       spread_horizontal: 1
   - id: gunBowT3CompoundCrossbow
-    name: gunBowT3CompoundCrossbow
+    name: 复合弩
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -969,7 +969,7 @@ items:
       durability: 350
       mod_slots: 3
   - id: gunBotT1JunkSledge
-    name: gunBotT1JunkSledge
+    name: 机器人大锤
     category: ranged_weapon
     stack_size: 1
     tier: 1000
@@ -987,7 +987,7 @@ items:
       mod_slots: 1
       harvest_count: -0.75
   - id: gunBotT2JunkTurret
-    name: gunBotT2JunkTurret
+    name: 机器人炮塔
     category: ranged_weapon
     stack_size: 1
     tier: 2000
@@ -1001,7 +1001,7 @@ items:
       durability: 300
       mod_slots: 1
   - id: gunBotT3JunkDrone
-    name: gunBotT3JunkDrone
+    name: 机器人无人机
     category: ranged_weapon
     stack_size: 1
     tier: 5000
@@ -2001,31 +2001,31 @@ items:
     icon: resourceGunPowder
     tier: 1000
   - id: thrownAmmoPipeBomb
-    name: thrownAmmoPipeBomb
+    name: 管状炸弹（弹药）
     category: ammo
     stack_size: 20
     tier: 50
   - id: thrownGrenadeContact
-    name: thrownGrenadeContact
+    name: 触炸手雷（弹药）
     category: ammo
     stack_size: 25
     tier: 75
   - id: thrownGrenade
-    name: thrownGrenade
+    name: 手雷（弹药）
     category: ammo
     stack_size: 1
   - id: thrownTimedCharge
-    name: thrownTimedCharge
+    name: 定时炸弹（弹药）
     category: ammo
     stack_size: 10
     tier: 300
   - id: thrownDynamite
-    name: thrownDynamite
+    name: 柱状炸药（弹药）
     category: ammo
     stack_size: 10
     tier: 100
   - id: thrownAmmoMolotovCocktail
-    name: thrownAmmoMolotovCocktail
+    name: 燃烧瓶（弹药）
     category: ammo
     stack_size: 20
     tier: 75
@@ -2046,33 +2046,33 @@ items:
     icon: missingIcon
     tier: 750
   - id: gunMGT1AK47Parts
-    name: gunMGT1AK47Parts
+    name: 机枪零件
     category: material
     stack_size: 50
     tier: 150
   - id: gunHandgunT1PistolParts
-    name: gunHandgunT1PistolParts
+    name: 手枪零件
     category: material
     stack_size: 1
   - id: gunRifleT1HuntingRifleParts
-    name: gunRifleT1HuntingRifleParts
+    name: 步枪零件
     category: material
     stack_size: 1
   - id: gunShotgunT1DoubleBarrelParts
-    name: gunShotgunT1DoubleBarrelParts
+    name: 霰弹枪零件
     category: material
     stack_size: 1
   - id: gunBowT1WoodenBowParts
-    name: gunBowT1WoodenBowParts
+    name: 弓/弩零件
     category: material
     stack_size: 1
   - id: gunExplosivesT3RocketLauncherParts
-    name: gunExplosivesT3RocketLauncherParts
+    name: 火箭发射器零件
     category: material
     stack_size: 1
     tier: 200
   - id: gunBotRoboticsParts
-    name: gunBotRoboticsParts
+    name: 机器人零件
     category: melee_weapon
     stack_size: 1
   - id: meleeWpnBatonT2StunBatonParts
@@ -3400,11 +3400,11 @@ items:
     category: armor
     stack_size: 1
   - id: armorPimpHatBlueHelmet
-    name: armorPimpHatBlueHelmet
+    name: 蓝色炫彩帽
     category: armor
     stack_size: 1
   - id: armorPimpHatPurpleHelmet
-    name: armorPimpHatPurpleHelmet
+    name: 紫色炫彩帽
     category: armor
     stack_size: 1
   - id: armorWatcherHelmet
@@ -3977,28 +3977,28 @@ items:
     stack_size: 125
     tier: 10
   - id: foodCropBlueberries
-    name: foodCropBlueberries
+    name: 蓝莓
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropCorn
-    name: foodCropCorn
+    name: 玉米穗
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropGraceCorn
-    name: foodCropGraceCorn
+    name: 超级玉米穗
     category: food
     stack_size: 125
     icon: foodCropCorn
     tier: 200
   - id: foodCropPotato
-    name: foodCropPotato
+    name: 土豆
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropMushrooms
-    name: foodCropMushrooms
+    name: 蘑菇
     category: food
     stack_size: 125
     tier: 10
@@ -4009,12 +4009,12 @@ items:
     icon: foodCropMushrooms
     tier: 50
   - id: foodCropYuccaFruit
-    name: foodCropYuccaFruit
+    name: 丝兰果实
     category: food
     stack_size: 125
     tier: 10
   - id: foodCropPumpkin
-    name: foodCropPumpkin
+    name: 南瓜
     category: food
     stack_size: 125
     icon: plantedPumpkin3Harvest
@@ -4495,7 +4495,7 @@ items:
     stack_size: 1
     icon: foodCanSham
   - id: plantedGraceCorn1Schematic
-    name: plantedGraceCorn1Schematic
+    name: 超级玉米（种子）配方
     category: book
     stack_size: 1
     icon: plantedCorn1
@@ -4511,7 +4511,7 @@ items:
     icon: questMaster
     tier: 1600
   - id: noteDuke01
-    name: noteDuke01
+    name: 来自纳维戈恩公爵的便条
     category: material
     stack_size: 1
     icon: challengeQuestMaster
@@ -4533,39 +4533,39 @@ items:
     stack_size: 1
     icon: treasureQuestMaster
   - id: q_basicSurvival
-    name: q_basicSurvival
+    name: 基础生存任务笔记
     category: material
     stack_size: 1
   - id: qt_taylor
-    name: qt_taylor
+    name: 泰勒的藏宝图
     category: material
     stack_size: 1
   - id: qt_nickole
-    name: qt_nickole
+    name: 尼科尔的藏宝图
     category: material
     stack_size: 1
   - id: qt_stephan
-    name: qt_stephan
+    name: 斯蒂芬的藏宝图
     category: material
     stack_size: 1
   - id: qt_jennifer
-    name: qt_jennifer
+    name: 詹妮弗的藏宝图
     category: material
     stack_size: 1
   - id: qt_claude
-    name: qt_claude
+    name: 克劳德的藏宝图
     category: material
     stack_size: 1
   - id: qt_sarah
-    name: qt_sarah
+    name: 萨拉的藏宝图
     category: material
     stack_size: 1
   - id: qt_raphael
-    name: qt_raphael
+    name: 拉斐尔的藏宝图
     category: material
     stack_size: 1
   - id: qtest_nextTraderAdmin
-    name: qtest_nextTraderAdmin
+    name: 开发团队：找到商人任务
     category: material
     stack_size: 1
   - id: adminQuestTicketMaster
@@ -4659,7 +4659,7 @@ items:
     stack_size: 1000
     tier: 16
   - id: resourceScopeLens
-    name: resourceScopeLens
+    name: 镜片
     category: material
     stack_size: 10
     tier: 5
@@ -4709,36 +4709,36 @@ items:
     stack_size: 250
     tier: 10
   - id: resourceCropHopsFlower
-    name: resourceCropHopsFlower
+    name: 啤酒花
     category: material
     stack_size: 500
     icon: plantedHop3Harvest
     tier: 12
   - id: resourceCropAloeLeaf
-    name: resourceCropAloeLeaf
+    name: 芦荟叶
     category: material
     stack_size: 500
     tier: 12
   - id: resourceCropChrysanthemumPlant
-    name: resourceCropChrysanthemumPlant
+    name: 菊花
     category: material
     stack_size: 500
     icon: plantedChrysanthemum3Harvest
     tier: 12
   - id: resourceCropCottonPlant
-    name: resourceCropCottonPlant
+    name: 棉花
     category: material
     stack_size: 500
     icon: plantedCotton3Harvest
     tier: 12
   - id: resourceCropGoldenrodPlant
-    name: resourceCropGoldenrodPlant
+    name: 秋麒麟花
     category: material
     stack_size: 500
     icon: plantedGoldenrod3HarvestPlayer
     tier: 12
   - id: resourceCropCoffeeBeans
-    name: resourceCropCoffeeBeans
+    name: 咖啡豆
     category: material
     stack_size: 500
     tier: 12
@@ -4958,7 +4958,7 @@ items:
     stats:
       cold_resistance: 5
   - id: smallEngine
-    name: smallEngine
+    name: 发动机
     category: material
     stack_size: 1
     tier: 1000
@@ -4981,7 +4981,7 @@ items:
     stack_size: 10000
     tier: 7
   - id: solarCell
-    name: solarCell
+    name: 太阳能电池
     category: material
     stack_size: 1
     tier: 12000
@@ -5138,555 +5138,555 @@ items:
     icon: resourceLockPick
     tier: 5000
   - id: bookFiremansAlmanacHeat
-    name: bookFiremansAlmanacHeat
+    name: 消防员年鉴 第1卷
     category: book
     stack_size: 20
     icon: bookFiremansAlmanacHeat
     tier: 500
   - id: bookFiremansAlmanacAxes
-    name: bookFiremansAlmanacAxes
+    name: 消防员年鉴 第2卷
     category: book
     stack_size: 1
   - id: bookFiremansAlmanacSpeed
-    name: bookFiremansAlmanacSpeed
+    name: 消防员年鉴 第3卷
     category: book
     stack_size: 1
   - id: bookFiremansAlmanacMolotov
-    name: bookFiremansAlmanacMolotov
+    name: 消防员年鉴 第4卷
     category: book
     stack_size: 1
   - id: bookFiremansAlmanacPrevention
-    name: bookFiremansAlmanacPrevention
+    name: 消防员年鉴 第5卷
     category: book
     stack_size: 1
   - id: bookFiremansAlmanacHarvest
-    name: bookFiremansAlmanacHarvest
+    name: 消防员年鉴 第6卷
     category: book
     stack_size: 1
   - id: bookFiremansAlmanacEquipment
-    name: bookFiremansAlmanacEquipment
+    name: 消防员年鉴 第7卷
     category: book
     stack_size: 1
   - id: bookNightStalkerStealthDamage
-    name: bookNightStalkerStealthDamage
+    name: 夜行者 第1卷
     category: book
     stack_size: 1
     icon: bookNightStalkerStealthDamage
   - id: bookNightStalkerSilentNight
-    name: bookNightStalkerSilentNight
+    name: 夜行者 第2卷
     category: book
     stack_size: 1
   - id: bookNightStalkerBlades
-    name: bookNightStalkerBlades
+    name: 夜行者 第3卷
     category: book
     stack_size: 1
   - id: bookNightStalkerThiefAdrenaline
-    name: bookNightStalkerThiefAdrenaline
+    name: 夜行者 第4卷
     category: book
     stack_size: 1
   - id: bookNightStalkerArchery
-    name: bookNightStalkerArchery
+    name: 夜行者 第5卷
     category: book
     stack_size: 1
   - id: bookNightStalkerTwilightThief
-    name: bookNightStalkerTwilightThief
+    name: 夜行者 第6卷
     category: book
     stack_size: 1
   - id: bookNightStalkerSlumberParty
-    name: bookNightStalkerSlumberParty
+    name: 夜行者 第7卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterDukes
-    name: bookLuckyLooterDukes
+    name: 幸运掠夺者 第1卷
     category: book
     stack_size: 1
     icon: bookLuckyLooterDukes
   - id: bookLuckyLooterAmmunition
-    name: bookLuckyLooterAmmunition
+    name: 幸运掠夺者 第2卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterBrass
-    name: bookLuckyLooterBrass
+    name: 幸运掠夺者 第3卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterLead
-    name: bookLuckyLooterLead
+    name: 幸运掠夺者 第4卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterBooks
-    name: bookLuckyLooterBooks
+    name: 幸运掠夺者 第5卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterFood
-    name: bookLuckyLooterFood
+    name: 幸运掠夺者 第6卷
     category: book
     stack_size: 1
   - id: bookLuckyLooterMedical
-    name: bookLuckyLooterMedical
+    name: 幸运掠夺者 第7卷
     category: book
     stack_size: 1
   - id: bookEnforcerDamage
-    name: bookEnforcerDamage
+    name: 马格南警官 第1卷
     category: book
     stack_size: 1
     icon: bookEnforcerDamage
   - id: bookEnforcerApparel
-    name: bookEnforcerApparel
+    name: 马格南警官 第2卷
     category: book
     stack_size: 1
   - id: bookEnforcerPunks
-    name: bookEnforcerPunks
+    name: 马格南警官 第3卷
     category: book
     stack_size: 1
   - id: bookEnforcerIntimidation
-    name: bookEnforcerIntimidation
+    name: 马格南警官 第4卷
     category: book
     stack_size: 1
   - id: bookEnforcerAPAmmo
-    name: bookEnforcerAPAmmo
+    name: 马格南警官 第5卷
     category: book
     stack_size: 1
   - id: bookEnforcerHPAmmo
-    name: bookEnforcerHPAmmo
+    name: 马格南警官 第6卷
     category: book
     stack_size: 1
   - id: bookEnforcerCriminalPursuit
-    name: bookEnforcerCriminalPursuit
+    name: 马格南警官 第7卷
     category: book
     stack_size: 1
   - id: bookBatterUpBigHits
-    name: bookBatterUpBigHits
+    name: 一击破坏 第1卷
     category: book
     stack_size: 1
     icon: bookBatterUpBigHits
   - id: bookBatterUpStealingBases
-    name: bookBatterUpStealingBases
+    name: 一击破坏 第2卷
     category: book
     stack_size: 1
   - id: bookBatterUpSlowPitch
-    name: bookBatterUpSlowPitch
+    name: 一击破坏 第3卷
     category: book
     stack_size: 1
   - id: bookBatterUpKnockdown
-    name: bookBatterUpKnockdown
+    name: 一击破坏 第4卷
     category: book
     stack_size: 1
   - id: bookBatterUpMaintenance
-    name: bookBatterUpMaintenance
+    name: 一击破坏 第5卷
     category: book
     stack_size: 1
   - id: bookBatterUpFoulBalls
-    name: bookBatterUpFoulBalls
+    name: 一击破坏 第6卷
     category: book
     stack_size: 1
   - id: bookBatterUpMetalChain
-    name: bookBatterUpMetalChain
+    name: 一击破坏第7卷
     category: book
     stack_size: 1
   - id: bookSledgeSagaKnockdown
-    name: bookSledgeSagaKnockdown
+    name: 《大锤传奇》卷 1
     category: book
     stack_size: 1
     icon: bookSledgeSagaKnockdown
   - id: bookSledgeSagaDegradation
-    name: bookSledgeSagaDegradation
+    name: 《大锤传奇》卷 2
     category: book
     stack_size: 1
   - id: bookSledgeSagaCrippledMorale
-    name: bookSledgeSagaCrippledMorale
+    name: 《大锤传奇》卷 3
     category: book
     stack_size: 1
   - id: bookSledgeSagaPulverizingFinishers
-    name: bookSledgeSagaPulverizingFinishers
+    name: 《大锤传奇》卷 4
     category: book
     stack_size: 1
   - id: bookSledgeSagaSavageReaper
-    name: bookSledgeSagaSavageReaper
+    name: 《大锤传奇》卷 5
     category: book
     stack_size: 1
   - id: bookSledgeSagaConcussiveStrike
-    name: bookSledgeSagaConcussiveStrike
+    name: 《大锤传奇》卷 6
     category: book
     stack_size: 1
   - id: bookSledgeSagaArmorCrusher
-    name: bookSledgeSagaArmorCrusher
+    name: 《大锤传奇》卷 7
     category: book
     stack_size: 1
   - id: bookGreatHeistSafes
-    name: bookGreatHeistSafes
+    name: 大劫掠 第1卷
     category: book
     stack_size: 1
     icon: bookTheGreatHeistSafes
   - id: bookGreatHeistGems
-    name: bookGreatHeistGems
+    name: 大劫掠 第2卷
     category: book
     stack_size: 1
   - id: bookGreatHeistGoldRush
-    name: bookGreatHeistGoldRush
+    name: 大劫掠 第3卷
     category: book
     stack_size: 1
   - id: bookGreatHeistClaimed
-    name: bookGreatHeistClaimed
+    name: 大劫掠 第4卷
     category: book
     stack_size: 1
   - id: bookGreatHeistAdrenalineFall
-    name: bookGreatHeistAdrenalineFall
+    name: 大劫掠 第5卷
     category: book
     stack_size: 1
   - id: bookGreatHeistSprintSneak
-    name: bookGreatHeistSprintSneak
+    name: 大劫掠 第6卷
     category: book
     stack_size: 1
   - id: bookGreatHeistMotionDetection
-    name: bookGreatHeistMotionDetection
+    name: 大劫掠 第7卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresHoney
-    name: bookWasteTreasuresHoney
+    name: 荒野宝藏 第1卷
     category: book
     stack_size: 1
     icon: bookWasteTreasuresHoney
   - id: bookWasteTreasuresCoffins
-    name: bookWasteTreasuresCoffins
+    name: 荒野宝藏 第2卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresAcid
-    name: bookWasteTreasuresAcid
+    name: 荒野宝藏 第3卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresWater
-    name: bookWasteTreasuresWater
+    name: 荒野宝藏 第4卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresDoors
-    name: bookWasteTreasuresDoors
+    name: 荒野宝藏 第5卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresCloth
-    name: bookWasteTreasuresCloth
+    name: 荒野宝藏 第6卷
     category: book
     stack_size: 1
   - id: bookWasteTreasuresSinks
-    name: bookWasteTreasuresSinks
+    name: 荒野宝藏 第7卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalBears
-    name: bookHuntingJournalBears
+    name: 猎人日记 第1卷
     category: book
     stack_size: 1
     icon: bookHuntingJournalBears
   - id: bookHuntingJournalWolves
-    name: bookHuntingJournalWolves
+    name: 猎人日记 第2卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalCoyotes
-    name: bookHuntingJournalCoyotes
+    name: 猎人日记 第3卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalMountainLions
-    name: bookHuntingJournalMountainLions
+    name: 猎人日记 第4卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalDeer
-    name: bookHuntingJournalDeer
+    name: 猎人日记 第5卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalVultures
-    name: bookHuntingJournalVultures
+    name: 猎人日记 第6卷
     category: book
     stack_size: 1
   - id: bookHuntingJournalSelfDefense
-    name: bookHuntingJournalSelfDefense
+    name: 猎人日记 第7卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningLuckyStrike
-    name: bookArtOfMiningLuckyStrike
+    name: 采矿的艺术 第1卷
     category: book
     stack_size: 1
     icon: bookArtOfMiningLuckyStrike
   - id: bookArtOfMiningDiamondTools
-    name: bookArtOfMiningDiamondTools
+    name: 采矿的艺术 第2卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningCoffee
-    name: bookArtOfMiningCoffee
+    name: 采矿的艺术 第3卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningBlackStrap
-    name: bookArtOfMiningBlackStrap
+    name: 采矿的艺术 第4卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningPallets
-    name: bookArtOfMiningPallets
+    name: 采矿的艺术 第5卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningAvalanche
-    name: bookArtOfMiningAvalanche
+    name: 采矿的艺术 第6卷
     category: book
     stack_size: 1
   - id: bookArtOfMiningDamage
-    name: bookArtOfMiningDamage
+    name: 采矿的艺术 第7卷
     category: book
     stack_size: 1
   - id: bookRangersArrowRecovery
-    name: bookRangersArrowRecovery
+    name: 游侠箭术指南 第1卷
     category: book
     stack_size: 1
     icon: bookRangersArrowRecovery
   - id: bookRangersExplodingBolts
-    name: bookRangersExplodingBolts
+    name: 游侠箭术指南 第2卷
     category: book
     stack_size: 1
   - id: bookRangersCripplingShot
-    name: bookRangersCripplingShot
+    name: 游侠箭术指南 第3卷
     category: book
     stack_size: 1
   - id: bookRangersAPAmmo
-    name: bookRangersAPAmmo
+    name: 游侠箭术指南 第4卷
     category: book
     stack_size: 1
   - id: bookRangersFlamingArrows
-    name: bookRangersFlamingArrows
+    name: 游侠箭术指南 第5卷
     category: book
     stack_size: 1
   - id: bookRangersForestGuide
-    name: bookRangersForestGuide
+    name: 游侠箭术指南 第6卷
     category: book
     stack_size: 1
   - id: bookRangersKnockdown
-    name: bookRangersKnockdown
+    name: 游侠箭术指南 第7卷
     category: book
     stack_size: 1
   - id: bookPistolPeteTakeAim
-    name: bookPistolPeteTakeAim
+    name: 手枪皮特 第1卷
     category: book
     stack_size: 1
     icon: bookPistolPeteTakeAim
   - id: bookPistolPeteSwissKnees
-    name: bookPistolPeteSwissKnees
+    name: 手枪皮特 第2卷
     category: book
     stack_size: 1
   - id: bookPistolPeteSteadyHand
-    name: bookPistolPeteSteadyHand
+    name: 手枪皮特 第3卷
     category: book
     stack_size: 1
   - id: bookPistolPeteMaintenance
-    name: bookPistolPeteMaintenance
+    name: 手枪皮特 第4卷
     category: book
     stack_size: 1
   - id: bookPistolPeteHPAmmo
-    name: bookPistolPeteHPAmmo
+    name: 手枪皮特 第5卷
     category: book
     stack_size: 1
   - id: bookPistolPeteAPAmmo
-    name: bookPistolPeteAPAmmo
+    name: 手枪皮特 第6卷
     category: book
     stack_size: 1
   - id: bookPistolPeteDamage
-    name: bookPistolPeteDamage
+    name: 手枪皮特 第7卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahDamage
-    name: bookShotgunMessiahDamage
+    name: 霰弹枪救星 第1卷
     category: book
     stack_size: 1
     icon: bookShotgunMessiahDamage
   - id: bookShotgunMessiahBreachingSlugs
-    name: bookShotgunMessiahBreachingSlugs
+    name: 霰弹枪救星 第2卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahLimbShot
-    name: bookShotgunMessiahLimbShot
+    name: 霰弹枪救星 第3卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahSlugs
-    name: bookShotgunMessiahSlugs
+    name: 霰弹枪救星 第4卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahMaintenance
-    name: bookShotgunMessiahMaintenance
+    name: 霰弹枪救星 第5卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahMagazine
-    name: bookShotgunMessiahMagazine
+    name: 霰弹枪救星 第6卷
     category: book
     stack_size: 1
   - id: bookShotgunMessiahPartyStarter
-    name: bookShotgunMessiahPartyStarter
+    name: 霰弹枪救星 第7卷
     category: book
     stack_size: 1
   - id: bookSniperDamage
-    name: bookSniperDamage
+    name: 狙击手 第1卷
     category: book
     stack_size: 1
     icon: bookSniperDamage
   - id: bookSniperCripplingShot
-    name: bookSniperCripplingShot
+    name: 狙击手 第2卷
     category: book
     stack_size: 1
   - id: bookSniperHeadShot
-    name: bookSniperHeadShot
+    name: 狙击手 第3卷
     category: book
     stack_size: 1
   - id: bookSniperReload
-    name: bookSniperReload
+    name: 狙击手 第4卷
     category: book
     stack_size: 1
   - id: bookSniperControlledBreathing
-    name: bookSniperControlledBreathing
+    name: 狙击手 第5卷
     category: book
     stack_size: 1
   - id: bookSniperAPAmmo
-    name: bookSniperAPAmmo
+    name: 狙击手 第6卷
     category: book
     stack_size: 1
   - id: bookSniperHPAmmo
-    name: bookSniperHPAmmo
+    name: 狙击手 第7卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsDamage
-    name: bookAutoWeaponsDamage
+    name: 自动武器指导手册 第1卷
     category: book
     stack_size: 1
     icon: bookAutoWeaponsDamage
   - id: bookAutoWeaponsUncontrolledBurst
-    name: bookAutoWeaponsUncontrolledBurst
+    name: 自动武器指导手册 第2卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsMaintenance
-    name: bookAutoWeaponsMaintenance
+    name: 自动武器指导手册 第3卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsDrumMag
-    name: bookAutoWeaponsDrumMag
+    name: 自动武器指导手册 第4卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsRecoil
-    name: bookAutoWeaponsRecoil
+    name: 自动武器指导手册 第5卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsRagdoll
-    name: bookAutoWeaponsRagdoll
+    name: 自动武器指导手册 第6卷
     category: book
     stack_size: 1
   - id: bookAutoWeaponsMachineGuns
-    name: bookAutoWeaponsMachineGuns
+    name: 自动武器指导手册 第7卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatLanding
-    name: bookUrbanCombatLanding
+    name: 城市作战 第1卷
     category: book
     stack_size: 1
     icon: bookUrbanCombatLanding
   - id: bookUrbanCombatCigar
-    name: bookUrbanCombatCigar
+    name: 城市作战 第2卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatSneaking
-    name: bookUrbanCombatSneaking
+    name: 城市作战 第3卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatJumping
-    name: bookUrbanCombatJumping
+    name: 城市作战 第4卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatLandMines
-    name: bookUrbanCombatLandMines
+    name: 城市作战 第5卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatAdrenalineRush
-    name: bookUrbanCombatAdrenalineRush
+    name: 城市作战 第6卷
     category: book
     stack_size: 1
   - id: bookUrbanCombatRoomClearing
-    name: bookUrbanCombatRoomClearing
+    name: 城市作战 第7卷
     category: book
     stack_size: 1
   - id: bookTechJunkie1Damage
-    name: bookTechJunkie1Damage
+    name: 科技迷 第 1 卷
     category: book
     stack_size: 1
     icon: bookTechJunkie1Damage
   - id: bookTechJunkie2Maintenance
-    name: bookTechJunkie2Maintenance
+    name: 科技迷 第 2 卷
     category: book
     stack_size: 1
   - id: bookTechJunkie3APAmmo
-    name: bookTechJunkie3APAmmo
+    name: 科技迷 第 3 卷
     category: book
     stack_size: 1
   - id: bookTechJunkie4Shells
-    name: bookTechJunkie4Shells
+    name: 科技迷 第 4 卷
     category: book
     stack_size: 1
   - id: bookTechJunkie5Repulsor
-    name: bookTechJunkie5Repulsor
+    name: 科技迷 第 5 卷
     category: book
     stack_size: 1
   - id: bookTechJunkie6BatonCharge
-    name: bookTechJunkie6BatonCharge
+    name: 科技迷 第 6 卷
     category: book
     stack_size: 1
   - id: bookTechJunkie7Hydraulics
-    name: bookTechJunkie7Hydraulics
+    name: 科技迷 第 7 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling1BasicMoves
-    name: bookBarBrawling1BasicMoves
+    name: 酒吧斗殴 第 1 卷
     category: book
     stack_size: 1
     icon: bookBarBrawling1BasicMoves
   - id: bookBarBrawling2DropABomb
-    name: bookBarBrawling2DropABomb
+    name: 酒吧斗殴 第 2 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling3KillerInstinct
-    name: bookBarBrawling3KillerInstinct
+    name: 酒吧斗殴 第 3 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling4FinishingMoves
-    name: bookBarBrawling4FinishingMoves
+    name: 酒吧斗殴 第 4 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling5AdrenalineHealing
-    name: bookBarBrawling5AdrenalineHealing
+    name: 酒吧斗殴 第 5 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling6RageMode
-    name: bookBarBrawling6RageMode
+    name: 酒吧斗殴 第 6 卷
     category: book
     stack_size: 1
   - id: bookBarBrawling7BoozedUp
-    name: bookBarBrawling7BoozedUp
+    name: 酒吧斗殴 第 7 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter1Damage
-    name: bookSpearHunter1Damage
+    name: 掷矛猎人 第 1 卷
     category: book
     stack_size: 1
     icon: bookSpearHunter1Damage
   - id: bookSpearHunter2Maintenance
-    name: bookSpearHunter2Maintenance
+    name: 掷矛猎人 第 2 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter3Bleed
-    name: bookSpearHunter3Bleed
+    name: 掷矛猎人 第 3 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter4KillMove
-    name: bookSpearHunter4KillMove
+    name: 掷矛猎人 第 4 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter5RapidStrike
-    name: bookSpearHunter5RapidStrike
+    name: 掷矛猎人 第 5 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter6PenetratingShaft
-    name: bookSpearHunter6PenetratingShaft
+    name: 掷矛猎人 第 6 卷
     category: book
     stack_size: 1
   - id: bookSpearHunter7QuickStrike
-    name: bookSpearHunter7QuickStrike
+    name: 掷矛猎人 第 7 卷
     category: book
     stack_size: 1
   - id: masterSkillMagazine
@@ -5695,17 +5695,17 @@ items:
     stack_size: 20
     tier: 100
   - id: harvestingToolsSkillMagazine
-    name: harvestingToolsSkillMagazine
+    name: 工具摘要
     category: book
     stack_size: 1
     icon: bookToolsDigest
   - id: repairToolsSkillMagazine
-    name: repairToolsSkillMagazine
+    name: 巧手之家
     category: book
     stack_size: 1
     icon: bookHandyLand
   - id: salvageToolsSkillMagazine
-    name: salvageToolsSkillMagazine
+    name: 趣味分解
     category: book
     stack_size: 1
     icon: bookScrapping4Fun
@@ -5735,37 +5735,37 @@ items:
     stack_size: 1
     icon: bookSharpSticks
   - id: bowsSkillMagazine
-    name: bowsSkillMagazine
+    name: 猎人之弓
     category: book
     stack_size: 1
     icon: bookBowHunters
   - id: handgunsSkillMagazine
-    name: handgunsSkillMagazine
+    name: 手枪弹匣
     category: book
     stack_size: 1
     icon: bookHandgunMagazine
   - id: shotgunsSkillMagazine
-    name: shotgunsSkillMagazine
+    name: 霰弹枪周刊
     category: book
     stack_size: 1
     icon: bookShotgunWeekly
   - id: riflesSkillMagazine
-    name: riflesSkillMagazine
+    name: 步枪世界
     category: book
     stack_size: 1
     icon: bookRifleWorld
   - id: machineGunsSkillMagazine
-    name: machineGunsSkillMagazine
+    name: 战备竞赛
     category: book
     stack_size: 1
     icon: bookTacticalWarfare
   - id: explosivesSkillMagazine
-    name: explosivesSkillMagazine
+    name: 炸药库
     category: book
     stack_size: 1
     icon: bookExplosiveMagazine
   - id: roboticsSkillMagazine
-    name: roboticsSkillMagazine
+    name: 科技星球
     category: book
     stack_size: 1
     icon: bookTechPlanet
@@ -5790,22 +5790,22 @@ items:
     stack_size: 1
     icon: bookSouthernFarming
   - id: electricianSkillMagazine
-    name: electricianSkillMagazine
+    name: 布线101
     category: book
     stack_size: 1
     icon: bookWiring101
   - id: trapsSkillMagazine
-    name: trapsSkillMagazine
+    name: 电力陷阱
     category: trap
     stack_size: 1
     icon: bookElectricalTraps
   - id: workstationSkillMagazine
-    name: workstationSkillMagazine
+    name: 锻造指南
     category: book
     stack_size: 1
     icon: bookForgeAhead
   - id: vehiclesSkillMagazine
-    name: vehiclesSkillMagazine
+    name: 载具大冒险
     category: vehicle
     stack_size: 1
     icon: bookVehicleAdventures
@@ -6270,7 +6270,7 @@ items:
     stack_size: 1
     icon: bundleVehicleGyro
   - id: twitchTurd
-    name: twitchTurd
+    name: 粪便
     category: material
     stack_size: 1
     icon: twitchTurd
@@ -8651,7 +8651,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
   - id: missingItem
-    name: missingItem
+    name: 缺失物品
     category: material
     stack_size: 1
     icon: missingIcon

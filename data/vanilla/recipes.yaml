@@ -150,43 +150,43 @@ recipes:
       - item_id: unit_lead
         count: 1
   - id: gunBowT1WoodenBowParts
-    name: gunBowT1WoodenBowParts
+    name: 弓/弩零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunHandgunT1PistolParts
-    name: gunHandgunT1PistolParts
+    name: 手枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunShotgunT1DoubleBarrelParts
-    name: gunShotgunT1DoubleBarrelParts
+    name: 霰弹枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunRifleT1HuntingRifleParts
-    name: gunRifleT1HuntingRifleParts
+    name: 步枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunMGT1AK47Parts
-    name: gunMGT1AK47Parts
+    name: 机枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunExplosivesT3RocketLauncherParts
-    name: gunExplosivesT3RocketLauncherParts
+    name: 火箭发射器零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
   - id: gunBotRoboticsParts
-    name: gunBotRoboticsParts
+    name: 机器人零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2280,7 +2280,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: campfire
-    name: campfire
+    name: 篝火
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2370,7 +2370,7 @@ recipes:
       - item_id: resourceNail
         count: 1
   - id: cementMixer
-    name: cementMixer
+    name: 水泥搅拌机
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2384,7 +2384,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: chemistryStation
-    name: chemistryStation
+    name: 化学工作站
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3546,7 +3546,7 @@ recipes:
       - item_id: drinkJarBoiledWater
         count: 1
   - id: forge
-    name: forge
+    name: 锻造炉
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -3806,7 +3806,7 @@ recipes:
       - item_id: resourceClayLump
         count: 1
   - id: gunHandgunT0PipePistol
-    name: gunHandgunT0PipePistol
+    name: 铁管手枪
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -3818,7 +3818,7 @@ recipes:
       - item_id: resourceWood
         count: 6
   - id: gunHandgunT1Pistol
-    name: gunHandgunT1Pistol
+    name: 手枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3834,7 +3834,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunHandgunT2Magnum44
-    name: gunHandgunT2Magnum44
+    name: .44马格南
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3850,7 +3850,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunHandgunT3DesertVulture
-    name: gunHandgunT3DesertVulture
+    name: .44 口径沙漠秃鹰
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3866,7 +3866,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunHandgunT3SMG5
-    name: gunHandgunT3SMG5
+    name: SMG-5
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3882,7 +3882,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunShotgunT0PipeShotgun
-    name: gunShotgunT0PipeShotgun
+    name: 铁管霰弹枪
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -3894,7 +3894,7 @@ recipes:
       - item_id: resourceWood
         count: 6
   - id: gunShotgunT1DoubleBarrel
-    name: gunShotgunT1DoubleBarrel
+    name: 双管霰弹枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3910,7 +3910,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunShotgunT2PumpShotgun
-    name: gunShotgunT2PumpShotgun
+    name: 泵动式霰弹枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3926,7 +3926,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunShotgunT3AutoShotgun
-    name: gunShotgunT3AutoShotgun
+    name: 自动霰弹枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3942,7 +3942,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunRifleT0PipeRifle
-    name: gunRifleT0PipeRifle
+    name: 铁管步枪
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -3954,7 +3954,7 @@ recipes:
       - item_id: resourceWood
         count: 6
   - id: gunRifleT1HuntingRifle
-    name: gunRifleT1HuntingRifle
+    name: 猎枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3970,7 +3970,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunRifleT2LeverActionRifle
-    name: gunRifleT2LeverActionRifle
+    name: 杠杆式步枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3986,7 +3986,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunRifleT3SniperRifle
-    name: gunRifleT3SniperRifle
+    name: 狙击步枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4002,7 +4002,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunMGT0PipeMachineGun
-    name: gunMGT0PipeMachineGun
+    name: 铁管机枪
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -4014,7 +4014,7 @@ recipes:
       - item_id: resourceWood
         count: 6
   - id: gunMGT1AK47
-    name: gunMGT1AK47
+    name: AK-47机枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4030,7 +4030,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunMGT2TacticalAR
-    name: gunMGT2TacticalAR
+    name: 战术突击步枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4046,7 +4046,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunMGT3M60
-    name: gunMGT3M60
+    name: M60机枪
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4062,7 +4062,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunExplosivesT3RocketLauncher
-    name: gunExplosivesT3RocketLauncher
+    name: 火箭发射器
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4078,7 +4078,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBowT0PrimitiveBow
-    name: gunBowT0PrimitiveBow
+    name: 传统弓
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -4088,7 +4088,7 @@ recipes:
       - item_id: resourceYuccaFibers
         count: 3
   - id: gunBowT1WoodenBow
-    name: gunBowT1WoodenBow
+    name: 木弓
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -4104,7 +4104,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBowT3CompoundBow
-    name: gunBowT3CompoundBow
+    name: 复合弓
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4120,7 +4120,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBowT1IronCrossbow
-    name: gunBowT1IronCrossbow
+    name: 铁弩
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4136,7 +4136,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBowT3CompoundCrossbow
-    name: gunBowT3CompoundCrossbow
+    name: 复合弩
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4152,7 +4152,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBotT1JunkSledge
-    name: gunBotT1JunkSledge
+    name: 机器人大锤
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4168,7 +4168,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBotT2JunkTurret
-    name: gunBotT2JunkTurret
+    name: 机器人炮塔
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4184,7 +4184,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunBotT3JunkDrone
-    name: gunBotT3JunkDrone
+    name: 机器人无人机
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6212,7 +6212,7 @@ recipes:
       - item_id: resourceNail
         count: 5
   - id: plantedAloe1
-    name: plantedAloe1
+    name: 芦荟（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6220,7 +6220,7 @@ recipes:
       - item_id: resourceCropAloeLeaf
         count: 5
   - id: plantedBlueberry1
-    name: plantedBlueberry1
+    name: 蓝莓（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6228,7 +6228,7 @@ recipes:
       - item_id: foodCropBlueberries
         count: 5
   - id: plantedChrysanthemum1
-    name: plantedChrysanthemum1
+    name: 菊花（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6236,7 +6236,7 @@ recipes:
       - item_id: resourceCropChrysanthemumPlant
         count: 5
   - id: plantedCoffee1
-    name: plantedCoffee1
+    name: 咖啡（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6244,7 +6244,7 @@ recipes:
       - item_id: resourceCropCoffeeBeans
         count: 5
   - id: plantedCorn1
-    name: plantedCorn1
+    name: 玉米（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6252,7 +6252,7 @@ recipes:
       - item_id: foodCropCorn
         count: 5
   - id: plantedCotton1
-    name: plantedCotton1
+    name: 棉花（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6260,7 +6260,7 @@ recipes:
       - item_id: resourceCropCottonPlant
         count: 5
   - id: plantedGoldenrod1
-    name: plantedGoldenrod1
+    name: 秋麒麟（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6268,7 +6268,7 @@ recipes:
       - item_id: resourceCropGoldenrodPlant
         count: 5
   - id: plantedGraceCorn1
-    name: plantedGraceCorn1
+    name: 超级玉米（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6276,7 +6276,7 @@ recipes:
       - item_id: foodCropGraceCorn
         count: 5
   - id: plantedHop1
-    name: plantedHop1
+    name: 啤酒花（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6284,7 +6284,7 @@ recipes:
       - item_id: resourceCropHopsFlower
         count: 5
   - id: plantedMushroom1
-    name: plantedMushroom1
+    name: 蘑菇孢子（种子）
     station: 背包合成
     craft_time: 2
     craft_count: 1
@@ -6294,7 +6294,7 @@ recipes:
       - item_id: resourceClayLump
         count: 2
   - id: plantedPotato1
-    name: plantedPotato1
+    name: 土豆（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6302,7 +6302,7 @@ recipes:
       - item_id: foodCropPotato
         count: 5
   - id: plantedYucca1
-    name: plantedYucca1
+    name: 丝兰（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6310,7 +6310,7 @@ recipes:
       - item_id: foodCropYuccaFruit
         count: 5
   - id: plantedPumpkin1
-    name: plantedPumpkin1
+    name: 南瓜（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6328,7 +6328,7 @@ recipes:
       - item_id: candle
         count: 1
   - id: plantedtreeGrassSeed1
-    name: plantedtreeGrassSeed1
+    name: 草（种子）
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6804,7 +6804,7 @@ recipes:
       - item_id: resourceClayLump
         count: 6
   - id: resourceScopeLens
-    name: resourceScopeLens
+    name: 镜片
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -6814,7 +6814,7 @@ recipes:
       - item_id: unit_clay
         count: 30
   - id: resourceScopeLens
-    name: resourceScopeLens
+    name: 镜片
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -6982,7 +6982,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 1
   - id: tableSaw
-    name: tableSaw
+    name: 锯床
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7064,7 +7064,7 @@ recipes:
       - item_id: resourceCement
         count: 4
   - id: thrownAmmoMolotovCocktail
-    name: thrownAmmoMolotovCocktail
+    name: 燃烧瓶（弹药）
     station: 背包合成
     craft_time: 12
     craft_count: 1
@@ -7076,7 +7076,7 @@ recipes:
       - item_id: resourceOil
         count: 1
   - id: thrownAmmoPipeBomb
-    name: thrownAmmoPipeBomb
+    name: 管状炸弹（弹药）
     station: 工作台
     craft_time: 12
     craft_count: 1
@@ -7088,7 +7088,7 @@ recipes:
       - item_id: resourceMetalPipe
         count: 1
   - id: thrownGrenade
-    name: thrownGrenade
+    name: 手雷（弹药）
     station: 工作台
     craft_time: 16
     craft_count: 1
@@ -7102,7 +7102,7 @@ recipes:
       - item_id: resourceSpring
         count: 1
   - id: thrownGrenadeContact
-    name: thrownGrenadeContact
+    name: 触炸手雷（弹药）
     station: 工作台
     craft_time: 20
     craft_count: 1
@@ -7116,7 +7116,7 @@ recipes:
       - item_id: resourceSpring
         count: 1
   - id: thrownTimedCharge
-    name: thrownTimedCharge
+    name: 定时炸弹（弹药）
     station: 工作台
     craft_time: 30
     craft_count: 1
@@ -7128,7 +7128,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 1
   - id: thrownDynamite
-    name: thrownDynamite
+    name: 柱状炸药（弹药）
     station: 工作台
     craft_time: 15
     craft_count: 1
@@ -7814,7 +7814,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: workbench
-    name: workbench
+    name: 工作台
     station: 背包合成
     craft_time: 1
     craft_count: 1
