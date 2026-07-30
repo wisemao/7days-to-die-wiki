@@ -8,10 +8,5 @@ export default defineConfig({
   output: 'static',
   integrations: [mdx(), sitemap()],
   vite: {
-    resolve: {
-      alias: {
-        '@data': '/data',
-      },
-    },
   },
 });

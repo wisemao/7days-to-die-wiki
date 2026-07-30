@@ -77,7 +77,8 @@ const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.p
   <p class="subtitle">共 {volumeCount} 卷 · 全部阅读后可获得额外加成</p>
 
   <table>
-    <tr><th class="col-num">#</th><th>名称</th><th>效果</th></tr>
+    <caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{seriesName} 卷册列表</caption>
+    <tr><th scope="col" class="col-num">#</th><th scope="col">名称</th><th scope="col">效果</th></tr>
     {volumes.map((v, i) => (
       <tr>
         <td class="col-num">{i + 1}</td>

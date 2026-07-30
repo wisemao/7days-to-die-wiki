@@ -7,7 +7,9 @@ import { readFileSync, existsSync } from 'fs';
 let craftingSkills = {};
 try {
   craftingSkills = JSON.parse(readFileSync('data/crafting-skills.json', 'utf-8'));
-} catch {}
+} catch (e) {
+  console.warn('[items] Failed to load crafting-skills.json:', e.message);
+}
 
 export function getStaticPaths() {
   const data = loadData();

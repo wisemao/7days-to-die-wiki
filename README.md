@@ -1,36 +1,42 @@
 # 7 Days to Die 中文维基 (7days-to-die-wiki)
 
-基于 [VitePress](https://vitepress.dev/) 构建的七日杀中文维基，数据来自游戏 XML 文件自动生成。
+基于 [Astro](https://astro.build/) 构建的七日杀中文维基，数据来自游戏 XML 文件自动生成。
 
 ## 快速开始
 
 ```bash
 npm install
-npm run generate   # 从 YAML 数据生成 Markdown 页面
 npm run dev        # 启动本地开发服务器
-npm run build      # 构建静态站点
+npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 ```
 
 ## 项目结构
 
 ```
 ├── data/                  # YAML 数据源
-│   └── vanilla/           # 原版游戏数据
-│       ├── items.yaml     # 物品数据
-│       ├── recipes.yaml   # 配方数据
-│       ├── skills.yaml    # 技能数据
-│       └── zombies.yaml   # 僵尸数据
-├── docs/                  # VitePress 文档目录
-│   ├── .vitepress/        # 主题和配置
-│   │   ├── config.ts      # VitePress 配置
-│   │   ├── theme/         # 自定义主题
-│   │   └── public/        # 静态资源（图标等）
-│   └── vanilla/           # 自动生成的页面
-├── scripts/               # 生成脚本
-│   ├── generate.js        # 主生成流程
-│   ├── parsers/           # 数据解析器
-│   ├── templates/         # 页面模板
-│   └── utils/             # 工具函数
+│   ├── vanilla/           # 原版游戏数据
+│   │   ├── items.yaml     # 物品数据
+│   │   ├── recipes.yaml   # 配方数据
+│   │   ├── skills.yaml    # 技能数据
+│   │   └── zombies.yaml   # 僵尸数据
+│   └── crafting-skills.json # 技能杂志数据
+├── public/
+│   └── images/items/      # 物品图标 PNG
+├── src/                   # Astro 源文件
+│   ├── layouts/
+│   │   └── Layout.astro   # 全局布局（含设计系统）
+│   ├── pages/             # 页面路由
+│   │   ├── index.astro    # 首页
+│   │   ├── 404.astro      # 404 页面
+│   │   └── vanilla/       # 原版数据页面
+│   │       ├── items/     # 物品
+│   │       ├── recipes/   # 配方
+│   │       ├── skills/    # 技能
+│   │       ├── zombies/   # 僵尸
+│   │       └── book-series/ # 技能书系列
+│   └── utils/
+│       └── data-loader.js # YAML 数据加载器
+├── scripts/               # 游戏数据导入脚本
 └── package.json
 ```
 

@@ -12,7 +12,7 @@ const catLabel = ZOMBIE_CATEGORY_LABELS[zombie.category] || zombie.category;
 const hasLoot = zombie.loot && zombie.loot.length > 0;
 const hasWeakness = zombie.weakness && zombie.weakness.length > 0;
 const hasSpawn = zombie.spawn;
-const hp = zombie.hp?.toString?.()?.startsWith?.('^') ? '?' : zombie.hp;
+const hp = typeof zombie.hp === 'string' && zombie.hp.startsWith('^') ? '?' : zombie.hp;
 ---
 
 <Layout title={zombie.name} description={`${zombie.name} - ${catLabel}僵尸`}>
