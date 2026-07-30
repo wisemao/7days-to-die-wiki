@@ -1,0 +1,24 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { items, ITEM_CATEGORY_LABELS } = loadData();
+
+const catCounts = {};
+for (const item of items) {
+  const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
+  catCounts[label] = (catCounts[label] || 0) + 1;
+}
+---
+
+<Layout title="物品列表" description={`全部 ${items.length} 个物品`}>
+  <h1>物品列表</h1>
+  <p>共 {items.length} 个物品 · 使用搜索框或侧边栏查找</p>
+  <div class="category-grid">
+    {Object.entries(catCounts).sort((a, b) => b[1] - a[1]).map(([k, v]) => (
+      <div class="category-card">
+        <span class="count">{v}</span>
+        <span class="label">{k}</span>
+      </div>
+    ))}
+  </div>
+</Layout>

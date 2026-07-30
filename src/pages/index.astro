@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { loadData } from '../utils/data-loader';
+const { items, recipes, skills, zombies, ITEM_CATEGORY_LABELS } = loadData();
+
+const base = '/7days-to-die-wiki';
+const catCounts = {};
+for (const item of items) {
+  const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
+  catCounts[label] = (catCounts[label] || 0) + 1;
+}
+const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 6);
+---
+
+<Layout title="七日杀 Wiki" description="7 Days to Die 中文维基">
+  <h1>七日杀 Wiki</h1>
+  <p>在游戏中快速查询物品、配方、技能、僵尸信息</p>
+
+  <div class="category-grid">
+    <a href={`${base}/vanilla/items/`} class="category-card">
+      <span class="count">{items.length}</span>
+      <span class="label">物品 · 工具 · 武器 · 护甲 · 食物</span>
+    </a>
+    <a href={`${base}/vanilla/recipes/`} class="category-card">
+      <span class="count">{recipes.length}</span>
+      <span class="label">配方 · 合成 · 熔炉 · 工作台</span>
+    </a>
+    <a href={`${base}/vanilla/skills/`} class="category-card">
+      <span class="count">{skills.length}</span>
+      <span class="label">技能 · 5 系属性 · Perk</span>
+    </a>
+    <a href={`${base}/vanilla/zombies/`} class="category-card">
+      <span class="count">{zombies.length}</span>
+      <span class="label">僵尸 · 图鉴 · 掉落 · 弱点</span>
+    </a>
+  </div>
+
+  <h2>物品分类</h2>
+  <div class="category-grid">
+    {catCards.map(([k, v]) => (
+      <div class="category-card">
+        <span class="count">{v}</span>
+        <span class="label">{k}</span>
+      </div>
+    ))}
+  </div>
+
+  <h2>使用提示</h2>
+  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称。侧边栏可快速切换分类。</p>
+</Layout>

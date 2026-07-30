@@ -1,0 +1,85 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description } = Astro.props;
+const base = '/7days-to-die-wiki';
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} | 七日杀 Wiki</title>
+  <meta name="description" content={description || title} />
+  <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+  <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
+  <script src={`${base}/pagefind/pagefind-ui.js`} defer></script>
+  <style>
+    :root { --c-brand: #c0392b; --c-brand-dark: #a93226; --c-bg: #fff; --c-text: #333; --c-border: #e2e2e2; --c-bg-soft: #f5f5f5; --sidebar-w: 260px; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: var(--c-text); background: var(--c-bg); line-height: 1.6; }
+    nav { background: var(--c-brand); padding: 8px 20px; display: flex; gap: 16px; align-items: center; position: sticky; top: 0; z-index: 100; flex-wrap: wrap; }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; font-size: 14px; white-space: nowrap; }
+    nav a:hover { text-decoration: underline; }
+    #search { flex: 1; min-width: 160px; max-width: 300px; }
+    .pagefind-ui { --pagefind-ui-scale: 0.8; --pagefind-ui-primary: #fff; --pagefind-ui-text: #fff; --pagefind-ui-background: rgba(255,255,255,0.15); --pagefind-ui-border: rgba(255,255,255,0.3); --pagefind-ui-font: inherit; }
+    .wrapper { display: flex; max-width: 1200px; margin: 0 auto; min-height: calc(100vh - 120px); }
+    aside { width: var(--sidebar-w); flex-shrink: 0; padding: 20px 0 20px 16px; border-right: 1px solid var(--c-border); display: none; }
+    @media (min-width: 900px) { aside { display: block; } }
+    aside h3 { font-size: 13px; color: #999; text-transform: uppercase; letter-spacing: 1px; margin: 16px 0 6px 8px; }
+    aside a { display: block; padding: 4px 8px; font-size: 13px; color: var(--c-text); text-decoration: none; border-radius: 4px; }
+    aside a:hover { background: var(--c-bg-soft); color: var(--c-brand); }
+    .container { flex: 1; padding: 24px 28px; max-width: 960px; overflow-x: auto; }
+    h1 { font-size: 28px; margin-bottom: 16px; color: var(--c-brand); }
+    h2 { font-size: 22px; margin: 24px 0 12px; color: var(--c-brand-dark); }
+    p { margin-bottom: 8px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+    th { background: var(--c-brand); color: #fff; padding: 8px 12px; text-align: left; font-weight: 600; }
+    td, th { border: 1px solid var(--c-border); padding: 6px 12px; }
+    tr:nth-child(even) { background: var(--c-bg-soft); }
+    a { color: var(--c-brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { margin: 8px 0 8px 20px; }
+    li { margin-bottom: 4px; }
+    blockquote { border-left: 4px solid var(--c-brand); padding: 8px 16px; margin: 12px 0; background: #fafafa; color: #666; }
+    footer { text-align: center; padding: 24px; color: #999; font-size: 13px; border-top: 1px solid var(--c-border); }
+    img[src*="/images/items/"] { max-width: 72px; max-height: 72px; image-rendering: pixelated; border: 2px solid #444; border-radius: 6px; background: #1a1a2e; padding: 4px; }
+    .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; margin: 20px 0; }
+    .category-card { border: 1px solid var(--c-border); border-radius: 8px; padding: 20px; text-align: center; background: var(--c-bg-soft); transition: all 0.2s; }
+    .category-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: var(--c-brand); }
+    .category-card .count { font-size: 28px; font-weight: 700; color: var(--c-brand); display: block; }
+    .category-card .label { font-size: 14px; color: var(--c-text-2); margin-top: 4px; display: block; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href={base}><strong>七日杀 Wiki</strong></a>
+    <a href={`${base}/vanilla/items/`}>物品</a>
+    <a href={`${base}/vanilla/recipes/`}>配方</a>
+    <a href={`${base}/vanilla/skills/`}>技能</a>
+    <a href={`${base}/vanilla/zombies/`}>僵尸</a>
+    <div id="search"></div>
+  </nav>
+  <div class="wrapper">
+    <aside>
+      <h3>导航</h3>
+      <a href={base}>🏠 首页</a>
+      <h3>原版数据</h3>
+      <a href={`${base}/vanilla/items/`}>🛠️ 物品</a>
+      <a href={`${base}/vanilla/recipes/`}>📖 配方</a>
+      <a href={`${base}/vanilla/skills/`}>⚡ 技能</a>
+      <a href={`${base}/vanilla/zombies/`}>🧟 僵尸</a>
+    </aside>
+    <div class="container" data-pagefind-body>
+      <slot />
+    </div>
+  </div>
+  <footer>
+    <p>基于 Astro 构建 · 数据来自 7 Days to Die 游戏文件 · <a href="https://github.com/mllllwb/7days-to-die-wiki">GitHub</a></p>
+  </footer>
+  <script>window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({element:"#search",showImages:false,showEmptyQuery:false,baseUrl:"/7days-to-die-wiki/"});});</script>
+</body>
+</html>

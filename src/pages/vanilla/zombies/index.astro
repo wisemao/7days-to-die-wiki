@@ -1,0 +1,18 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { zombies, ZOMBIE_CATEGORY_LABELS } = loadData();
+const cats = {};
+for (const z of zombies) {
+  const label = ZOMBIE_CATEGORY_LABELS[z.category] || z.category || '未知';
+  cats[label] = (cats[label] || 0) + 1;
+}
+---
+
+<Layout title="僵尸列表" description={`全部 ${zombies.length} 个僵尸`}>
+  <h1>僵尸列表</h1>
+  <p>共 {zombies.length} 个僵尸</p>
+  <table><tr><th>类型</th><th>数量</th></tr>
+    {Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
+  </table>
+</Layout>

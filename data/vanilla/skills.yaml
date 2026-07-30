@@ -1,355 +1,2467 @@
 skills:
   - id: perkDeadEye
-    name: 鹰眼
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    name: 死神之眼
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 拔枪便射
+        cost: 5
+      - level: 2
+        effect: 步枪兵
+        cost: 5
+      - level: 3
+        effect: 神射手
+        cost: 5
+      - level: 4
+        effect: 神枪手
+        cost: 5
+      - level: 5
+        effect: 死神之眼
+        cost: 5
+    description: 专精于步枪瞄准，用一发精准射入的子弹结束掉你目标的生命。百发百中。\n提高搜刮到[DECEA3]《步枪世界》[-]杂志的概率。
   - id: perkDemolitionsExpert
     name: 爆破专家
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 新晋掷弹兵
+        cost: 5
+      - level: 2
+        effect: 我是TNT，我会爆炸。
+        cost: 5
+      - level: 3
+        effect: 爆破份子
+        cost: 5
+      - level: 4
+        effect: 火箭人
+        cost: 5
+      - level: 5
+        effect: 爆破专家
+        cost: 5
+    description: 专精于使用爆炸物致残与肢解你的敌人。\n提高搜刮到[DECEA3]《炸药库》[-]杂志的概率。
   - id: perkJavelinMaster
-    name: 标枪大师
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    name: 长矛大师
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 尖锐之棍
+        cost: 5
+      - level: 2
+        effect: 穿刺者
+        cost: 5
+      - level: 3
+        effect: 矛战士
+        cost: 5
+      - level: 4
+        effect: 执矛者
+        cost: 5
+      - level: 5
+        effect: 长矛大师
+        cost: 5
+    description: 学习通过强力攻击造成更多伤害，并让你的敌人减速。\n提高搜刮到[DECEA3]《尖锐之棍》[-]杂志的概率。
   - id: perkFlurryOfPerception
-    name: 感知连击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel02
+    name: 出招如电
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 眼疾手快
+        cost: 5
+      - level: 2
+        effect: 突然袭击
+        cost: 5
+      - level: 3
+        effect: 迅猛突袭
+        cost: 5
+      - level: 4
+        effect: 迅捷处决
+        cost: 5
+      - level: 5
+        effect: 闪电反射
+        cost: 5
+    description: 你出招如电。使用长矛时攻击速度提高。
   - id: perkInfiltrator
     name: 渗透者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 钻地鼠
+        cost: 5
+      - level: 2
+        effect: 入侵者
+        cost: 5
+      - level: 3
+        effect: 渗透者
+        cost: 5
+      - level: 4
+        effect: 轻盈步履
+        cost: 5
+      - level: 5
+        effect: 地雷专家
+        cost: 5
+    description: 使用高度敏感的感官减少来自陷阱的伤害。
   - id: perkAnimalTracker
-    name: 动物追踪者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    name: 动物追踪器
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 踪迹寻者
+        cost: 5
+      - level: 2
+        effect: 护林员
+        cost: 5
+      - level: 3
+        effect: 追猎者
+        cost: 5
+      - level: 4
+        effect: 大猎物猎人
+        cost: 5
+      - level: 5
+        effect: 捕食者本能
+        cost: 5
+    description: 学习如何探测并追踪100米内的动物，这下再也不会饿肚子了。
   - id: perkPenetrator
-    name: 穿透者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    name: 穿透护甲
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 穿刺射击
+        cost: 5
+      - level: 2
+        effect: 钻透护甲
+        cost: 5
+      - level: 3
+        effect: 砸透护甲
+        cost: 5
+      - level: 4
+        effect: 穿刺者
+        cost: 5
+      - level: 5
+        effect: 穿透者
+        cost: 5
+    description: 使用长矛、弓箭和其他特殊弹药时，你在目标的护甲之中找到了一处弱点。\n利用步枪的穿甲弹可击穿多名生物目标。
   - id: perkTreasureHunter
     name: 寻宝者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 掠夺者
+        cost: 5
+      - level: 2
+        effect: 抢劫者
+        cost: 5
+      - level: 3
+        effect: 寻宝者
+        cost: 5
+      - level: 4
+        effect: 淘金者
+        cost: 5
+      - level: 5
+        effect: 遗迹搜寻者
+        cost: 5
+    description: 成为有史以来最伟大的寻宝者之一，学习甚至会让黑胡子嫉妒的技巧。
   - id: perkSalvageOperations
-    name: 拆解操作
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel01
+    name: 拾荒行动
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 垃圾收集者
+        cost: 5
+      - level: 2
+        effect: 拾荒者
+        cost: 5
+      - level: 3
+        effect: 回收者
+        cost: 5
+      - level: 4
+        effect: 零件收集者
+        cost: 5
+      - level: 5
+        effect: 大师级拾荒者
+        cost: 5
+    description: 杜绝浪费！用扳手、棘齿或冲击起子回收更多资源。\n提高搜刮到[DECEA3]《趣味分解》[-]杂志的概率。
   - id: perkPerceptionMastery
-    name: 感知精通
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqPerceptionLevel06
+    name: 感知专精
+    category: perception
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 坐垫搜刮者
+        cost: 5
+      - level: 2
+        effect: 拾荒专家
+        cost: 5
+      - level: 3
+        effect: 致命创伤
+        cost: 5
+      - level: 4
+        effect: 血之狂怒
+        cost: 5
+      - level: 5
+        effect: 远程射击
+        cost: 5
+    description: 感知技能大师
   - id: perkBoomstick
-    name: 喷子大师
+    name: perkBoomstick
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkBoomstickRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkBoomstickRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkBoomstickRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkBoomstickRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkBoomstickRank5Desc
+        cost: 5
+    description: perkBoomstickDesc
   - id: perkPummelPete
-    name: 重击专家
+    name: perkPummelPete
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkPummelPeteRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkPummelPeteRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkPummelPeteRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkPummelPeteRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkPummelPeteRank5Desc
+        cost: 5
+    description: perkPummelPeteDesc
   - id: perkSkullCrusher
-    name: 碎颅者
+    name: perkSkullCrusher
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkSkullCrusherRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkSkullCrusherRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkSkullCrusherRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkSkullCrusherRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkSkullCrusherRank5Desc
+        cost: 5
+    description: perkSkullCrusherDesc
   - id: perkGrandSlam
-    name: 大满贯
+    name: perkGrandSlam
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkGrandSlamRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkGrandSlamRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkGrandSlamRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkGrandSlamRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkGrandSlamRank5Desc
+        cost: 5
+    description: perkGrandSlamDesc
   - id: perkFlurryOfStrength
-    name: 力量连击
+    name: perkFlurryOfStrength
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel02
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFlurryOfStrengthRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFlurryOfStrengthRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFlurryOfStrengthRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFlurryOfStrengthRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFlurryOfStrengthRank5Desc
+        cost: 5
+    description: perkFlurryOfStrengthDesc
   - id: perkSexualTrex
-    name: 性感的霸王龙
+    name: perkSexualTrex
     category: strength
     max_level: 4
-    levels: []
-    description: reqStrengthLevel01
+    levels:
+      - level: 1
+        effect: perkSexualTrexRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkSexualTrexRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkSexualTrexRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkSexualTrexRank4Desc
+        cost: 5
+    description: perkSexualTrexDesc
   - id: perkPackMule
-    name: 驮骡
+    name: perkPackMule
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkPackMuleRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkPackMuleRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkPackMuleRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkPackMuleRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkPackMuleRank5Desc
+        cost: 5
+    description: perkPackMuleDesc
   - id: perkStrengthMastery
-    name: 力量精通
+    name: perkStrengthMastery
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel06
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkStrengthMasteryRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkStrengthMasteryRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkStrengthMasteryRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkStrengthMasteryRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkStrengthMasteryRank5Desc
+        cost: 5
+    description: perkStrengthMasteryDesc
   - id: perkMiner69r
-    name: 矿工69r
+    name: perkMiner69r
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkMiner69rRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkMiner69rRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkMiner69rRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkMiner69rRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkMiner69rRank5Desc
+        cost: 5
+    description: perkMiner69rDesc
   - id: perkMotherLode
-    name: 富矿脉
+    name: perkMotherLode
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkMotherLodeRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkMotherLodeRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkMotherLodeRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkMotherLodeRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkMotherLodeRank5Desc
+        cost: 5
+    description: perkMotherLodeDesc
   - id: perkJunkMiner
-    name: 废品矿工
+    name: perkJunkMiner
     category: strength
-    max_level: 1
-    levels: []
-    description: reqStrengthLevel01
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkJunkMinerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkJunkMinerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkJunkMinerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkJunkMinerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkJunkMinerRank5Desc
+        cost: 5
+    description: perkJunkMinerDesc
   - id: perkBrawler
-    name: 格斗家
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkBrawler
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkBrawlerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkBrawlerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkBrawlerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkBrawlerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkBrawlerRank5Desc
+        cost: 5
+    description: perkBrawlerDesc
   - id: perkMachineGunner
-    name: 机枪手
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkMachineGunner
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkMachineGunnerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkMachineGunnerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkMachineGunnerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkMachineGunnerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkMachineGunnerRank5Desc
+        cost: 5
+    description: perkMachineGunnerDesc
   - id: perkFlurryOfFortitude
-    name: 体质连击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel02
+    name: perkFlurryOfFortitude
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFlurryOfFortitudeRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFlurryOfFortitudeRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFlurryOfFortitudeRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFlurryOfFortitudeRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFlurryOfFortitudeRank5Desc
+        cost: 5
+    description: perkFlurryOfFortitudeDesc
   - id: perkTheHuntsman
-    name: 猎人
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkTheHuntsman
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkTheHuntsmanRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkTheHuntsmanRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkTheHuntsmanRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkTheHuntsmanRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkTheHuntsmanRank5Desc
+        cost: 5
+    description: perkTheHuntsmanDesc
   - id: perkWellInsulated
-    name: 良好绝缘
-    category: strength
+    name: perkWellInsulated
+    category: fortitude
     max_level: 3
-    levels: []
-    description: reqFortitudeLevel01
+    levels:
+      - level: 1
+        effect: perkWellInsulatedRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkWellInsulatedRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkWellInsulatedRank3Desc
+        cost: 5
+    description: perkWellInsulatedDesc
   - id: perkPainTolerance
-    name: 痛觉耐受
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkPainTolerance
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkPainToleranceRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkPainToleranceRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkPainToleranceRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkPainToleranceRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkPainToleranceRank5Desc
+        cost: 5
+    description: perkPainToleranceDesc
   - id: perkFortitudeMastery
-    name: 体质精通
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel06
+    name: perkFortitudeMastery
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFortitudeMasteryRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFortitudeMasteryRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFortitudeMasteryRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFortitudeMasteryRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFortitudeMasteryRank5Desc
+        cost: 5
+    description: perkFortitudeMasteryDesc
   - id: perkSiphoningStrikes
-    name: 吸血打击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkSiphoningStrikes
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkSiphoningStrikesRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkSiphoningStrikesRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkSiphoningStrikesRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkSiphoningStrikesRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkSiphoningStrikesRank5Desc
+        cost: 5
+    description: perkSiphoningStrikesDesc
   - id: perkHealingFactor
-    name: 自愈因子
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkHealingFactor
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkHealingFactorRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkHealingFactorRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkHealingFactorRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkHealingFactorRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkHealingFactorRank5Desc
+        cost: 5
+    description: perkHealingFactorDesc
   - id: perkSlowMetabolism
-    name: 缓慢代谢
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkSlowMetabolism
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkSlowMetabolismRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkSlowMetabolismRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkSlowMetabolismRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkSlowMetabolismRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkSlowMetabolismRank5Desc
+        cost: 5
+    description: perkSlowMetabolismDesc
   - id: perkRuleOneCardio
-    name: 规则一:心肺
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqFortitudeLevel01
+    name: perkRuleOneCardio
+    category: fortitude
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkRuleOneCardioNameRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkRuleOneCardioNameRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkRuleOneCardioNameRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkRuleOneCardioNameRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkRuleOneCardioNameRank5Desc
+        cost: 5
+    description: perkRuleOneCardioDesc
   - id: perkArchery
-    name: 箭术
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkArchery
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkArcheryRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkArcheryRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkArcheryRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkArcheryRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkArcheryRank5Desc
+        cost: 5
+    description: perkArcheryDesc
   - id: perkGunslinger
-    name: 枪手
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkGunslinger
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkGunslingerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkGunslingerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkGunslingerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkGunslingerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkGunslingerRank5Desc
+        cost: 5
+    description: perkGunslingerDesc
   - id: perkDeepCuts
-    name: 深伤口
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkDeepCuts
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkDeepCutsRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkDeepCutsRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkDeepCutsRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkDeepCutsRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkDeepCutsRank5Desc
+        cost: 5
+    description: perkDeepCutsDesc
   - id: perkFlurryOfAgility
-    name: 敏捷连击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel02
+    name: perkFlurryOfAgility
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFlurryOfAgilityRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFlurryOfAgilityRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFlurryOfAgilityRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFlurryOfAgilityRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFlurryOfAgilityRank5Desc
+        cost: 5
+    description: perkFlurryOfAgilityDesc
   - id: perkRunAndGun
-    name: 跑射
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkRunAndGun
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkRunAndGunRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkRunAndGunRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkRunAndGunRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkRunAndGunRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkRunAndGunRank5Desc
+        cost: 5
+    description: perkRunandGunDesc
   - id: perkHardTarget
-    name: 硬目标
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkHardTarget
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkHardTargetRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkHardTargetRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkHardTargetRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkHardTargetRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkHardTargetRank5Desc
+        cost: 5
+    description: perkHardTargetDesc
   - id: perkParkour
-    name: 跑酷
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel02
+    name: perkParkour
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkParkourRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkParkourRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkParkourRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkParkourRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkParkourRank5Desc
+        cost: 5
+    description: perkParkourDesc
   - id: perkAgilityMastery
-    name: 敏捷精通
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel06
+    name: perkAgilityMastery
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkAgilityMasteryRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkAgilityMasteryRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkAgilityMasteryRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkAgilityMasteryRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkAgilityMasteryRank5Desc
+        cost: 5
+    description: perkAgilityMasteryDesc
   - id: perkHiddenStrike
-    name: 隐匿打击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkHiddenStrike
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkHiddenStrikeRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkHiddenStrikeRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkHiddenStrikeRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkHiddenStrikeRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkHiddenStrikeRank5Desc
+        cost: 5
+    description: perkHiddenStrikeDesc
   - id: perkFromTheShadows
-    name: 暗影行者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqAgilityLevel01
+    name: perkFromTheShadows
+    category: agility
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFromTheShadowsRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFromTheShadowsRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFromTheShadowsRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFromTheShadowsRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFromTheShadowsRank5Desc
+        cost: 5
+    description: perkFromTheShadowsDesc
   - id: perkElectrocutioner
-    name: 电刑者
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel01
+    name: perkElectrocutioner
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkElectrocutionerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkElectrocutionerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkElectrocutionerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkElectrocutionerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkElectrocutionerRank5Desc
+        cost: 5
+    description: perkElectrocutionerDesc
   - id: perkTurrets
-    name: 炮塔专家
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel03
+    name: perkTurrets
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkTurretsRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkTurretsRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkTurretsRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkTurretsRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkTurretsRank5Desc
+        cost: 5
+    description: perkTurretsDesc
   - id: perkFlurryOfIntellect
-    name: 智力连击
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel02
+    name: perkFlurryOfIntellect
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkFlurryOfIntellectRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkFlurryOfIntellectRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkFlurryOfIntellectRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkFlurryOfIntellectRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkFlurryOfIntellectRank5Desc
+        cost: 5
+    description: perkFlurryOfIntellectDesc
   - id: perkBetterBarter
-    name: 讨价还价
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel01
+    name: perkBetterBarter
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkBetterBarterRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkBetterBarterRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkBetterBarterRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkBetterBarterRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkBetterBarterRank5Desc
+        cost: 5
+    description: perkBetterBarterDesc
   - id: perkDaringAdventurer
-    name: 勇敢冒险家
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel01
+    name: perkDaringAdventurer
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkDaringAdventurerRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkDaringAdventurerRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkDaringAdventurerRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkDaringAdventurerRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkDaringAdventurerRank5Desc
+        cost: 5
+    description: perkDaringAdventurerDesc
   - id: perkCharismaticNature
-    name: 魅力天性
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel05
+    name: perkCharismaticNature
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkCharismaticNatureRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkCharismaticNatureRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkCharismaticNatureRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkCharismaticNatureRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkCharismaticNatureRank5Desc
+        cost: 5
+    description: perkCharismaticNatureDesc
   - id: perkPhysician
-    name: 医师
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel03
+    name: perkPhysician
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkPhysicianRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkPhysicianRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkPhysicianRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkPhysicianRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkPhysicianRank5Desc
+        cost: 5
+    description: perkPhysicianDesc
   - id: perkAdvancedEngineering
-    name: 高级工程
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel01
+    name: perkAdvancedEngineering
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkAdvancedEngineeringRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkAdvancedEngineeringRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkAdvancedEngineeringRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkAdvancedEngineeringRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkAdvancedEngineeringRank5Desc
+        cost: 5
+    description: perkAdvancedEngineeringDesc
   - id: perkGreaseMonkey
-    name: 修车工
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel01
+    name: perkGreaseMonkey
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkGreaseMonkeyRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkGreaseMonkeyRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkGreaseMonkeyRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkGreaseMonkeyRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkGreaseMonkeyRank5Desc
+        cost: 5
+    description: perkGreaseMonkeyDesc
   - id: perkIntellectMastery
-    name: 智力精通
-    category: strength
-    max_level: 1
-    levels: []
-    description: reqIntellectLevel06
+    name: perkIntellectMastery
+    category: intellect
+    max_level: 5
+    levels:
+      - level: 1
+        effect: perkIntellectMasteryRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkIntellectMasteryRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkIntellectMasteryRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkIntellectMasteryRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkIntellectMasteryRank5Desc
+        cost: 5
+    description: perkIntellectMasteryDesc
   - id: perkLightArmor
-    name: 轻甲专精
-    category: strength
+    name: perkLightArmor
+    category: generalperks
     max_level: 4
-    levels: []
-    description: perkLightArmorRank1Desc
+    levels:
+      - level: 1
+        effect: perkLightArmorRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkLightArmorRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkLightArmorRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkLightArmorRank4Desc
+        cost: 5
+    description: perkLightArmorDesc
   - id: perkMediumArmor
-    name: 中甲专精
-    category: strength
+    name: perkMediumArmor
+    category: generalperks
     max_level: 4
-    levels: []
-    description: perkMediumArmorRank1Desc
+    levels:
+      - level: 1
+        effect: perkMediumArmorRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkMediumArmorRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkMediumArmorRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkMediumArmorRank4Desc
+        cost: 5
+    description: perkMediumArmorDesc
   - id: perkHeavyArmor
-    name: 重甲专精
-    category: strength
+    name: perkHeavyArmor
+    category: generalperks
     max_level: 4
-    levels: []
-    description: perkHeavyArmorRank1Desc
+    levels:
+      - level: 1
+        effect: perkHeavyArmorRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkHeavyArmorRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkHeavyArmorRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkHeavyArmorRank4Desc
+        cost: 5
+    description: perkHeavyArmorDesc
   - id: perkMasterChef
-    name: 大厨
-    category: strength
+    name: perkMasterChef
+    category: generalperks
     max_level: 3
-    levels: []
-    description: reqStrengthLevel01
+    levels:
+      - level: 1
+        effect: perkMasterChefRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkMasterChefRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkMasterChefRank3Desc
+        cost: 5
+    description: perkMasterChefDesc
   - id: perkLivingOffTheLand
-    name: 自给自足
-    category: strength
+    name: perkLivingOffTheLand
+    category: generalperks
     max_level: 3
-    levels: []
-    description: reqFortitudeLevel01
+    levels:
+      - level: 1
+        effect: perkLivingOffTheLandRank1Desc
+        cost: 5
+      - level: 2
+        effect: perkLivingOffTheLandRank2Desc
+        cost: 5
+      - level: 3
+        effect: perkLivingOffTheLandRank3Desc
+        cost: 5
+      - level: 4
+        effect: perkLivingOffTheLandRank4Desc
+        cost: 5
+      - level: 5
+        effect: perkLivingOffTheLandRank5Desc
+        cost: 5
+    description: perkLivingOffTheLandDesc
   - id: perkLockPicking
-    name: 开锁
-    category: strength
+    name: 撬锁
+    category: generalperks
     max_level: 3
-    levels: []
-    description: reqIntellectLevel01
+    levels:
+      - level: 1
+        effect: 窃贼
+        cost: 5
+      - level: 2
+        effect: 锁匠
+        cost: 5
+      - level: 3
+        effect: 绝世神偷
+        cost: 5
+    description: 学会更快开锁，损坏的撬锁工具更少。
   - id: perkLuckyLooter
-    name: 幸运搜刮者
+    name: 幸运掠夺者
+    category: generalperks
+    max_level: 5
+    levels:
+      - level: 1
+        effect: 微小机会
+        cost: 5
+      - level: 2
+        effect: 家常便饭
+        cost: 5
+      - level: 3
+        effect: 大发横财
+        cost: 5
+      - level: 4
+        effect: 财神保佑
+        cost: 5
+      - level: 5
+        effect: 幸运掠夺者
+        cost: 5
+    description: 专精于追踪宝物，也许能给你点额外的奖励。\n每一技能等级都会指引你找到更好的战利品。
+  - id: perkFiremansAlmanacHeat
+    name: perkFiremansAlmanacHeat
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacHeatDesc
+  - id: perkFiremansAlmanacAxes
+    name: perkFiremansAlmanacAxes
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacAxesDesc
+  - id: perkFiremansAlmanacSpeed
+    name: perkFiremansAlmanacSpeed
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacSpeedDesc
+  - id: perkFiremansAlmanacMolotov
+    name: perkFiremansAlmanacMolotov
     category: strength
     max_level: 1
     levels: []
-    description: reqPerceptionLevel01
+    description: perkFiremansAlmanacMolotovDesc
+  - id: perkFiremansAlmanacPrevention
+    name: perkFiremansAlmanacPrevention
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacPreventionDesc
+  - id: perkFiremansAlmanacHarvest
+    name: perkFiremansAlmanacHarvest
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacHarvestDesc
+  - id: perkFiremansAlmanacEquipment
+    name: perkFiremansAlmanacEquipment
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacEquipmentDesc
+  - id: perkFiremansAlmanacComplete
+    name: perkFiremansAlmanacComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkFiremansAlmanacCompleteDesc
+  - id: perkNightStalkerStealthDamage
+    name: perkNightStalkerStealthDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerStealthDamageDesc
+  - id: perkNightStalkerSilentNight
+    name: perkNightStalkerSilentNight
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerSilentNightDesc
+  - id: perkNightStalkerBlades
+    name: perkNightStalkerBlades
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerBladesDesc
+  - id: perkNightStalkerThiefAdrenaline
+    name: perkNightStalkerThiefAdrenaline
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerThiefAdrenalineDesc
+  - id: perkNightStalkerArchery
+    name: perkNightStalkerArchery
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerArcheryDesc
+  - id: perkNightStalkerTwilightThief
+    name: perkNightStalkerTwilightThief
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerTwilightThiefDesc
+  - id: perkNightStalkerSlumberParty
+    name: perkNightStalkerSlumberParty
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerSlumberPartyDesc
+  - id: perkNightStalkerComplete
+    name: perkNightStalkerComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkNightStalkerCompleteDesc
+  - id: perkLuckyLooterDukes
+    name: perkLuckyLooterDukes
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterDukesDesc
+  - id: perkLuckyLooterAmmunition
+    name: perkLuckyLooterAmmunition
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterAmmoDesc
+  - id: perkLuckyLooterBrass
+    name: perkLuckyLooterBrass
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterBrassDesc
+  - id: perkLuckyLooterLead
+    name: perkLuckyLooterLead
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterLeadDesc
+  - id: perkLuckyLooterBooks
+    name: perkLuckyLooterBooks
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterBooksDesc
+  - id: perkLuckyLooterFood
+    name: perkLuckyLooterFood
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterFoodDesc
+  - id: perkLuckyLooterMedical
+    name: perkLuckyLooterMedical
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterMedicalDesc
+  - id: perkLuckyLooterComplete
+    name: perkLuckyLooterComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkLuckyLooterCompleteDesc
+  - id: perkEnforcerDamage
+    name: perkEnforcerDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerDamageDesc
+  - id: perkEnforcerApparel
+    name: perkEnforcerApparel
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkEnforcerApparelDesc
+  - id: perkEnforcerPunks
+    name: perkEnforcerPunks
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerPunksDesc
+  - id: perkEnforcerIntimidation
+    name: perkEnforcerIntimidation
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerIntimidationDesc
+  - id: perkEnforcerAPAmmo
+    name: perkEnforcerAPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerAPAmmoDesc
+  - id: perkEnforcerHPAmmo
+    name: perkEnforcerHPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerHPAmmoDesc
+  - id: perkEnforcerCriminalPursuit
+    name: perkEnforcerCriminalPursuit
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkEnforcerCriminalPursuitDesc
+  - id: perkEnforcerComplete
+    name: perkEnforcerComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkEnforcerCompleteDesc
+  - id: perkBatterUpBigHits
+    name: perkBatterUpBigHits
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkBatterUpBigHitsDesc
+  - id: perkBatterUpStealingBases
+    name: perkBatterUpStealingBases
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBatterUpStealingBasesDesc
+  - id: perkBatterUpSlowPitch
+    name: perkBatterUpSlowPitch
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBatterUpSlowPitchDesc
+  - id: perkBatterUpKnockdown
+    name: perkBatterUpKnockdown
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBatterUpKnockdownDesc
+  - id: perkBatterUpMaintenance
+    name: perkBatterUpMaintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkBatterUpMaintenanceDesc
+  - id: perkBatterUpFoulBalls
+    name: perkBatterUpFoulBalls
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBatterUpFoulBallsDesc
+  - id: perkBatterUpMetalChain
+    name: perkBatterUpMetalChain
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkBatterUpMetalChainDesc
+  - id: perkBatterUpComplete
+    name: perkBatterUpComplete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBatterUpCompleteDesc
+  - id: perkGreatHeistSafes
+    name: perkGreatHeistSafes
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistSafesDesc
+  - id: perkGreatHeistGems
+    name: perkGreatHeistGems
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistGemsDesc
+  - id: perkGreatHeistGoldRush
+    name: perkGreatHeistGoldRush
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistGoldRushDesc
+  - id: perkGreatHeistClaimed
+    name: perkGreatHeistClaimed
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistClaimedDesc
+  - id: perkGreatHeistAdrenalineFall
+    name: perkGreatHeistAdrenalineFall
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkGreatHeistAdrenalineFallDesc
+  - id: perkGreatHeistSprintSneak
+    name: perkGreatHeistSprintSneak
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkGreatHeistSprintSneakDesc
+  - id: perkGreatHeistMotionDetection
+    name: perkGreatHeistMotionDetection
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistMotionDetectionDesc
+  - id: perkGreatHeistComplete
+    name: perkGreatHeistComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkGreatHeistCompleteDesc
+  - id: perkWasteTreasuresHoney
+    name: perkWasteTreasuresHoney
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresHoneyDesc
+  - id: perkWasteTreasuresCoffins
+    name: perkWasteTreasuresCoffins
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresCoffinsDesc
+  - id: perkWasteTreasuresAcid
+    name: perkWasteTreasuresAcid
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresAcidDesc
+  - id: perkWasteTreasuresWater
+    name: perkWasteTreasuresWater
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresWaterDesc
+  - id: perkWasteTreasuresDoors
+    name: perkWasteTreasuresDoors
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresDoorsDesc
+  - id: perkWasteTreasuresCloth
+    name: perkWasteTreasuresCloth
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresClothDesc
+  - id: perkWasteTreasuresSinks
+    name: perkWasteTreasuresSinks
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresSinksDesc
+  - id: perkWasteTreasuresComplete
+    name: perkWasteTreasuresComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkWasteTreasuresCompleteDesc
+  - id: perkHuntingJournalBears
+    name: perkHuntingJournalBears
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalBearsDesc
+  - id: perkHuntingJournalWolves
+    name: perkHuntingJournalWolves
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalWolvesDesc
+  - id: perkHuntingJournalCoyotes
+    name: perkHuntingJournalCoyotes
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalCoyotesDesc
+  - id: perkHuntingJournalMountainLions
+    name: perkHuntingJournalMountainLions
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalMountainLionsDesc
+  - id: perkHuntingJournalDeer
+    name: perkHuntingJournalDeer
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalDeerDesc
+  - id: perkHuntingJournalVultures
+    name: perkHuntingJournalVultures
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalVulturesDesc
+  - id: perkHuntingJournalSelfDefense
+    name: perkHuntingJournalSelfDefense
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalSelfDefenseDesc
+  - id: perkHuntingJournalComplete
+    name: perkHuntingJournalComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkHuntingJournalCompleteDesc
+  - id: perkArtOfMiningLuckyStrike
+    name: perkArtOfMiningLuckyStrike
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningLuckyStrikeDesc
+  - id: perkArtOfMiningDiamondTools
+    name: perkArtOfMiningDiamondTools
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningDiamondToolsDesc
+  - id: perkArtOfMiningCoffee
+    name: perkArtOfMiningCoffee
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningCoffeeDesc
+  - id: perkArtOfMiningBlackStrap
+    name: perkArtOfMiningBlackStrap
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningBlackStrapDesc
+  - id: perkArtOfMiningPallets
+    name: perkArtOfMiningPallets
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningPalletsDesc
+  - id: perkArtOfMiningAvalanche
+    name: perkArtOfMiningAvalanche
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningAvalancheDesc
+  - id: perkArtOfMiningDamage
+    name: perkArtOfMiningDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningDamageDesc
+  - id: perkArtOfMiningComplete
+    name: perkArtOfMiningComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkArtOfMiningCompleteDesc
+  - id: perkRangersArrowRecovery
+    name: perkRangersArrowRecovery
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersArrowRecoveryDesc
+  - id: perkRangersExplodingBolts
+    name: perkRangersExplodingBolts
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersExplodingBoltsDesc
+  - id: perkRangersCripplingShot
+    name: perkRangersCripplingShot
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkRangersCripplingShotDesc
+  - id: perkRangersAPAmmo
+    name: perkRangersAPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersAPAmmoDesc
+  - id: perkRangersFlamingArrows
+    name: perkRangersFlamingArrows
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersFlamingArrowsDesc
+  - id: perkRangersForestGuide
+    name: perkRangersForestGuide
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersForestGuideDesc
+  - id: perkRangersKnockdown
+    name: perkRangersKnockdown
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkRangersKnockdownDesc
+  - id: perkRangersComplete
+    name: perkRangersComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkRangersCompleteDesc
+  - id: perkPistolPeteTakeAim
+    name: perkPistolPeteTakeAim
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteTakeAimDesc
+  - id: perkPistolPeteSwissKnees
+    name: perkPistolPeteSwissKnees
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkPistolPeteSwissKneesDesc
+  - id: perkPistolPeteSteadyHand
+    name: perkPistolPeteSteadyHand
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteSteadyHandDesc
+  - id: perkPistolPeteMaintenance
+    name: perkPistolPeteMaintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteMaintenanceDesc
+  - id: perkPistolPeteHPAmmo
+    name: perkPistolPeteHPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteHPAmmoDesc
+  - id: perkPistolPeteAPAmmo
+    name: perkPistolPeteAPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteAPAmmoDesc
+  - id: perkPistolPeteDamage
+    name: perkPistolPeteDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteDamageDesc
+  - id: perkPistolPeteComplete
+    name: perkPistolPeteComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkPistolPeteCompleteDesc
+  - id: perkShotgunMessiahDamage
+    name: perkShotgunMessiahDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahDamageDesc
+  - id: perkShotgunMessiahBreachingSlugs
+    name: perkShotgunMessiahBreachingSlugs
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahBreachingSlugsDesc
+  - id: perkShotgunMessiahLimbShot
+    name: perkShotgunMessiahLimbShot
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahLimbShotDesc
+  - id: perkShotgunMessiahSlugs
+    name: perkShotgunMessiahSlugs
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahSlugsDesc
+  - id: perkShotgunMessiahMaintenance
+    name: perkShotgunMessiahMaintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahMaintenanceDesc
+  - id: perkShotgunMessiahMagazine
+    name: perkShotgunMessiahMagazine
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahMagazineDesc
+  - id: perkShotgunMessiahPartyStarter
+    name: perkShotgunMessiahPartyStarter
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahPartyStarterDesc
+  - id: perkShotgunMessiahComplete
+    name: perkShotgunMessiahComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkShotgunMessiahCompleteDesc
+  - id: perkSledgeSagaKnockdown
+    name: perkSledgeSagaKnockdown
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSledgeSagaKnockdownDesc
+  - id: perkSledgeSagaDegradation
+    name: perkSledgeSagaDegradation
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSledgeSagaDegradationDesc
+  - id: perkSledgeSagaCrippledMorale
+    name: perkSledgeSagaCrippledMorale
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSledgeSagaCrippledMoraleDesc
+  - id: perkSledgeSagaPulverizingFinishers
+    name: perkSledgeSagaPulverizingFinishers
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSledgeSagaPulverizingFinishersDesc
+  - id: perkSledgeSagaSavageReaper
+    name: perkSledgeSagaSavageReaper
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSledgeSagaSavageReaperDesc
+  - id: perkSledgeSagaConcussiveStrike
+    name: perkSledgeSagaConcussiveStrike
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSledgeSagaConcussiveStrikeDesc
+  - id: perkSledgeSagaArmorCrusher
+    name: perkSledgeSagaArmorCrusher
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSledgeSagaArmorCrusherDesc
+  - id: perkSledgeSagaComplete
+    name: perkSledgeSagaComplete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSledgeSagaCompleteDesc
+  - id: perkSniperDamage
+    name: perkSniperDamage
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSniperDamageDesc
+  - id: perkSniperCripplingShot
+    name: perkSniperCripplingShot
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperCripplingShotDesc
+  - id: perkSniperHeadShot
+    name: perkSniperHeadShot
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperHeadShotDesc
+  - id: perkSniperReload
+    name: perkSniperReload
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperReloadDesc
+  - id: perkSniperControlledBreathing
+    name: perkSniperControlledBreathing
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSniperControlledBreathingDesc
+  - id: perkSniperAPAmmo
+    name: perkSniperAPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperAPAmmoDesc
+  - id: perkSniperHPAmmo
+    name: perkSniperHPAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperHPAmmoDesc
+  - id: perkSniperComplete
+    name: perkSniperComplete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSniperCompleteDesc
+  - id: perkAutoWeaponsDamage
+    name: perkAutoWeaponsDamage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkAutoWeaponsDamageDesc
+  - id: perkAutoWeaponsUncontrolledBurst
+    name: perkAutoWeaponsUncontrolledBurst
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkAutoWeaponsUncontrolledBurstDesc
+  - id: perkAutoWeaponsMaintenance
+    name: perkAutoWeaponsMaintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkAutoWeaponsMaintenanceDesc
+  - id: perkAutoWeaponsDrumMag
+    name: perkAutoWeaponsDrumMag
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkAutoWeaponsDrumMagDesc
+  - id: perkAutoWeaponsRecoil
+    name: perkAutoWeaponsRecoil
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkAutoWeaponsRecoilDesc
+  - id: perkAutoWeaponsRagdoll
+    name: perkAutoWeaponsRagdoll
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkAutoWeaponsRagdollDesc
+  - id: perkAutoWeaponsMachineGuns
+    name: perkAutoWeaponsMachineGuns
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkAutoWeaponsMachineGunsDesc
+  - id: perkAutoWeaponsComplete
+    name: perkAutoWeaponsComplete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkAutoWeaponsCompleteDesc
+  - id: perkUrbanCombatLanding
+    name: perkUrbanCombatLanding
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkUrbanCombatLandingDesc
+  - id: perkUrbanCombatCigar
+    name: perkUrbanCombatCigar
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkUrbanCombatCigarDesc
+  - id: perkUrbanCombatSneaking
+    name: perkUrbanCombatSneaking
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkUrbanCombatSneakingDesc
+  - id: perkUrbanCombatJumping
+    name: perkUrbanCombatJumping
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkUrbanCombatJumpingDesc
+  - id: perkUrbanCombatLandMines
+    name: perkUrbanCombatLandMines
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkUrbanCombatLandMinesDesc
+  - id: perkUrbanCombatAdrenalineRush
+    name: perkUrbanCombatAdrenalineRush
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkUrbanCombatAdrenalineRushDesc
+  - id: perkUrbanCombatRoomClearing
+    name: perkUrbanCombatRoomClearing
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkUrbanCombatRoomClearingDesc
+  - id: perkUrbanCombatComplete
+    name: perkUrbanCombatComplete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkUrbanCombatCompleteDesc
+  - id: perkTechJunkie1Damage
+    name: perkTechJunkie1Damage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie1DamageDesc
+  - id: perkTechJunkie2Maintenance
+    name: perkTechJunkie2Maintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie2MaintenanceDesc
+  - id: perkTechJunkie3APAmmo
+    name: perkTechJunkie3APAmmo
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie3APAmmoDesc
+  - id: perkTechJunkie4Shells
+    name: perkTechJunkie4Shells
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie4ShellsDesc
+  - id: perkTechJunkie5Repulsor
+    name: perkTechJunkie5Repulsor
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie5RepulsorDesc
+  - id: perkTechJunkie6BatonCharge
+    name: perkTechJunkie6BatonCharge
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkTechJunkie6BatonChargeDesc
+  - id: perkTechJunkie7Hydraulics
+    name: perkTechJunkie7Hydraulics
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie7HydraulicsDesc
+  - id: perkTechJunkie8Complete
+    name: perkTechJunkie8Complete
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkTechJunkie8CompleteDesc
+  - id: perkBarBrawling1BasicMoves
+    name: perkBarBrawling1BasicMoves
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkBarBrawling1BasicMovesDesc
+  - id: perkBarBrawling2DropABomb
+    name: perkBarBrawling2DropABomb
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling2DropABombDesc
+  - id: perkBarBrawling3KillerInstinct
+    name: perkBarBrawling3KillerInstinct
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling3KillerInstinctDesc
+  - id: perkBarBrawling4FinishingMoves
+    name: perkBarBrawling4FinishingMoves
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkBarBrawling4FinishingMovesDesc
+  - id: perkBarBrawling5AdrenalineHealing
+    name: perkBarBrawling5AdrenalineHealing
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling5AdrenalineHealingDesc
+  - id: perkBarBrawling6RageMode
+    name: perkBarBrawling6RageMode
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling6RageModeDesc
+  - id: perkBarBrawling7BoozedUp
+    name: perkBarBrawling7BoozedUp
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling7BoozedUpDesc
+  - id: perkBarBrawling8Complete
+    name: perkBarBrawling8Complete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkBarBrawling8CompleteDesc
+  - id: perkSpearHunter1Damage
+    name: perkSpearHunter1Damage
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSpearHunter1DamageDesc
+  - id: perkSpearHunter2Maintenance
+    name: perkSpearHunter2Maintenance
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSpearHunter2MaintenanceDesc
+  - id: perkSpearHunter3Bleed
+    name: perkSpearHunter3Bleed
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSpearHunter3BleedDesc
+  - id: perkSpearHunter4KillMove
+    name: perkSpearHunter4KillMove
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSpearHunter4KillMoveDesc
+  - id: perkSpearHunter5RapidStrike
+    name: perkSpearHunter5RapidStrike
+    category: strength
+    max_level: 1
+    levels:
+      - level: 1
+        effect: 等级 1
+        cost: 0
+    description: perkSpearHunter5RapidStrikeDesc
+  - id: perkSpearHunter6PenetratingShaft
+    name: perkSpearHunter6PenetratingShaft
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSpearHunter6PenetratingShaftDesc
+  - id: perkSpearHunter7QuickStrike
+    name: perkSpearHunter7QuickStrike
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSpearHunter7QuickStrikeDesc
+  - id: perkSpearHunter8Complete
+    name: perkSpearHunter8Complete
+    category: strength
+    max_level: 1
+    levels: []
+    description: perkSpearHunter8CompleteDesc

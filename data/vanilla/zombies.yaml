@@ -1,17 +1,22 @@
 zombies:
   - id: zombieTemplateMale
-    name: 僵尸模板（男性）
+    name: zombieTemplateMale
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlim
     speed:
-      walk: 0.08
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormal01
+    hand_item: meleeHandZombie01
+    loot:
+      - item_id: zPackReg
+        count: 1
+        chance: '.04'
   - id: zombieTemplateShort
-    name: 僵尸模板（矮个）
+    name: zombieTemplateShort
     category: humanoid
     tier: 1
     hp: 100
@@ -20,15 +25,16 @@ zombies:
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlim01
+    hand_item: meleeHandZombieShort
   - id: zombieTemplateSlimFemale
-    name: 僵尸模板（苗条女性）
+    name: zombieTemplateSlimFemale
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlim
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -36,10 +42,10 @@ zombies:
     name: 阿琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlim
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -47,54 +53,66 @@ zombies:
     name: 凶残的阿琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieArleneRadiated
     name: 被辐射的阿琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieArleneCharged
     name: 带电阿琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieArleneInfernal
     name: 炼狱阿琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMarlene
     name: 马琳
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -102,54 +120,66 @@ zombies:
     name: 凶残的马琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieMarleneRadiated
     name: 被辐射的马琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieMarleneCharged
     name: 带电马琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMarleneInfernal
     name: 炼狱马琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombiePartyGirl
     name: 派对女孩
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -157,164 +187,205 @@ zombies:
     name: 凶残派对女孩
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombiePartyGirlRadiated
     name: 被辐射的派对女孩
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombiePartyGirlCharged
     name: 带电派对女孩
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombiePartyGirlInfernal
     name: 炼狱派对女孩
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieNurse
     name: 护士
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
+    loot:
+      - item_id: zPackNurse
+        count: 1
+        chance: '.04'
   - id: zombieNurseFeral
     name: 凶残的瘟疫感染护士
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieNurseRadiated
     name: 被辐射的护士
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieNurseCharged
     name: 带电护士
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieNurseInfernal
     name: 炼狱护士
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieJoe
     name: 乔
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlim01
+    hand_item: meleeHandZombieShort
   - id: zombieJoeFeral
     name: 凶残的乔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieJoeRadiated
     name: 被辐射的乔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieJoeCharged
     name: 带电乔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieJoeInfernal
     name: 炼狱乔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieSteve
     name: 史蒂夫
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -322,54 +393,66 @@ zombies:
     name: 凶残的史蒂夫
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieSteveRadiated
     name: 被辐射的史蒂夫
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieSteveCharged
     name: 带电史蒂夫
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieSteveInfernal
     name: 炼狱史蒂夫
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieTomClark
     name: 汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -377,54 +460,66 @@ zombies:
     name: 凶残的汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieTomClarkRadiated
     name: 被辐射的汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieTomClarkCharged
     name: 带电汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieTomClarkInfernal
     name: 炼狱汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBusinessMan
     name: 商人
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
     experience: 100
@@ -432,156 +527,205 @@ zombies:
     name: 凶残的商人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral01
+    hand_item: meleeHandZombieShortFeral
+    loot: []
   - id: zombieBusinessManRadiated
     name: 被辐射的商人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated01
   - id: zombieBusinessManCharged
     name: 带电商人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBusinessManInfernal
     name: 炼狱商人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBurnt
     name: 被灼烧者
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlim03
+    hand_item: meleeHandZombieBurning
   - id: zombieBurntFeral
     name: 凶残的被灼烧者
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral03
+    hand_item: meleeHandZombieBurningFeral
+    loot: []
   - id: zombieBurntRadiated
     name: 被辐射的被灼烧者
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated03
   - id: zombieBurntCharged
     name: 带电被灼烧者
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged02
+    hand_item: meleeHandZombieBurningCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBurntInfernal
     name: 炼狱被灼烧者
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimInfernal01
+    hand_item: meleeHandZombieBurningInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieRancher
     name: 兰凯尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
       walk: 0.4
-      run: 2
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong01
+    hand_item: meleeHandZombieRancher
+    loot:
+      - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
+        count: 1
+        chance: '.05'
   - id: zombieRancherFeral
     name: 凶残兰凯尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral01
+    hand_item: meleeHandZombieRancherFeral
+    loot:
+      - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
+        count: 1
+        chance: '.05'
   - id: zombieRancherRadiated
     name: 辐射兰凯尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+        count: 1
+        chance: 0%
   - id: zombieRancherCharged
     name: 带电兰凯尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieRancherCharged
+    loot:
+      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+        count: 1
+        chance: '.1'
   - id: zombieRancherInfernal
     name: 炼狱兰凯尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieRancherInfernal
+    loot:
+      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+        count: 1
+        chance: '.1'
   - id: zombiePlagueSpitter
     name: 兰凯尔
     category: humanoid
@@ -641,57 +785,70 @@ zombies:
     name: 恰克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthTough
     speed:
-      walk: 0.17
-      run: 2
+      walk: 0.55
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral00
+    hand_item: meleeHandZombieChuck
   - id: zombieChuckFeral
     name: 凶残恰克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthToughFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral03
+    hand_item: meleeHandZombieChuckFeral
+    loot: []
   - id: zombieChuckRadiated
     name: 辐射恰克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthToughRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated03
   - id: zombieChuckCharged
     name: 带电恰克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthToughCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged02
+    hand_item: meleeHandZombieChuckCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieChuckInfernal
     name: 炼狱恰克
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthToughInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal03
+    hand_item: meleeHandZombieChuckInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFrostclaw
     name: 恰克
     category: humanoid
@@ -751,62 +908,74 @@ zombies:
     name: 蜘蛛
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlim
     speed:
-      walk: 0.08
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlim02
   - id: zombieSpiderFeral
     name: 凶残的蜘蛛
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimFeral02
+    hand_item: meleeHandZombie02Feral
+    loot: []
   - id: zombieSpiderRadiated
     name: 被辐射的蜘蛛
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimRadiated02
   - id: zombieSpiderCharged
     name: 带电蜘蛛
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged02
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieSpiderInfernal
     name: 炼狱蜘蛛
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSlimInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBoe
     name: 布尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -817,106 +986,132 @@ zombies:
     name: 凶残的布尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieBoeRadiated
     name: 被辐射的布尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
   - id: zombieBoeCharged
     name: 带电布尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBoeInfernal
     name: 炼狱布尔
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMaleHazmat
     name: 穿着防化服的丧尸
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormal01
+    hand_item: meleeHandZombieHazMat
   - id: zombieMaleHazmatFeral
     name: 凶残的穿着防化服的丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieHazMatFeral
+    loot: []
   - id: zombieMaleHazmatRadiated
     name: 被辐射的穿着防化服的丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
+    hand_item: meleeHandZombieHazMatFeral
   - id: zombieMaleHazmatCharged
     name: 带电防护服丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMaleHazmatInfernal
     name: 炼狱防护服丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieJanitor
     name: 看门人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -927,51 +1122,65 @@ zombies:
     name: 凶残的看门人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieJanitorRadiated
     name: 被辐射的看门人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieJanitorCharged
     name: 带电看门人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieJanitorInfernal
     name: 炼狱看门人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieInmate
     name: 囚犯
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -982,51 +1191,65 @@ zombies:
     name: 凶残的囚犯
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieInmateRadiated
     name: 被辐射的囚犯
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieInmateCharged
     name: 带电囚犯
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieInmateInfernal
     name: 炼狱囚犯
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMoe
     name: 莫伊
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -1037,106 +1260,134 @@ zombies:
     name: 凶残的莫伊
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieMoeRadiated
     name: 被辐射的莫伊
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
   - id: zombieMoeCharged
     name: 带电莫伊
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieMoeInfernal
     name: 炼狱莫伊
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieLab
     name: 实验室工作人员
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
     experience: 100
+    loot:
+      - item_id: zPackLab
+        count: 1
+        chance: '.04'
   - id: zombieLabFeral
     name: 凶残的实验室工作人员
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieLabRadiated
     name: 被辐射的实验室工作人员
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
   - id: zombieLabCharged
     name: 带电实验室工作人员
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieLabInfernal
     name: 炼狱实验室工作人员
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieDarlene
     name: 达琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -1147,51 +1398,63 @@ zombies:
     name: 凶残的达琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieDarleneRadiated
     name: 被辐射的达琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
   - id: zombieDarleneCharged
     name: 带电达琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieDarleneInfernal
     name: 炼狱达琳
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieYo
     name: 幽
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormal
     speed:
       walk: 1
       run: 2
@@ -1202,780 +1465,1046 @@ zombies:
     name: 凶残的幽
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
   - id: zombieYoRadiated
     name: 被辐射的幽
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated01
   - id: zombieYoCharged
     name: 带电幽
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieYoInfernal
     name: 炼狱幽
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieUtilityWorker
     name: 公用事业工人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthUtilityWorker
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormal02
+    hand_item: meleeHandZombieWorker
+    loot:
+      - item_id: zPackUtility
+        count: 1
+        chance: '.04'
   - id: zombieUtilityWorkerFeral
     name: 凶残的公用事业工人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthUtilityWorkerFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalFeral02
+    hand_item: meleeHandZombieWorkerFeral
+    loot: []
   - id: zombieUtilityWorkerRadiated
     name: 被辐射的公用事业工人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthUtilityWorkerRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalRadiated02
   - id: zombieUtilityWorkerCharged
     name: 带电公用事业工人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthUtilityWorkerCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalCharged02
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieUtilityWorkerInfernal
     name: 炼狱公共事业工人
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthUtilityWorkerInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpNormalInfernal02
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBiker
     name: 摩托车手
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSturdy
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong03
+    hand_item: meleeHandZombieStrong
+    loot:
+      - item_id: zPackThug
+        count: 1
+        chance: '.04'
   - id: zombieBikerFeral
     name: 凶残的摩托车手
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSturdyFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral01
+    hand_item: meleeHandZombieStrongFeral
+    loot: []
   - id: zombieBikerRadiated
     name: 被辐射的摩托车手
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSturdyRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieBikerCharged
     name: 带电摩托车手
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSturdyCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBikerInfernal
     name: 炼狱摩托车手
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthSturdyInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieLumberjack
     name: 伐木工
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong01
+    hand_item: meleeHandZombieStrong
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieLumberjackFeral
     name: 凶残伐木工
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral00
+    hand_item: meleeHandZombieStrongFeral
+    loot: []
   - id: zombieLumberjackRadiated
     name: 被辐射的伐木工
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieLumberjackCharged
     name: 带电伐木工
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieLumberjackInfernal
     name: 炼狱伐木工
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFemaleFat
     name: 大妈妈
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong01
+    hand_item: meleeHandZombieCop
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFemaleFatFeral
     name: 凶残大妈妈
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral01
+    hand_item: meleeHandZombieCopFeral
+    loot: []
   - id: zombieFemaleFatRadiated
     name: 被辐射的大妈妈
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFemaleFatCharged
     name: 带电大妈妈
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFemaleFatInfernal
     name: 炼狱大妈妈
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFatHawaiian
     name: 游客
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong01
+    hand_item: meleeHandZombieCop
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFatHawaiianFeral
     name: 凶残的游客
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral01
+    hand_item: meleeHandZombieCopFeral
+    loot: []
   - id: zombieFatHawaiianRadiated
     name: 被辐射的游客
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFatHawaiianCharged
     name: 带电游客
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFatHawaiianInfernal
     name: 炼狱游客
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBowler
     name: 保龄球丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong01
+    hand_item: meleeHandZombieCop
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieBowlerFeral
     name: 凶残的保龄球丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral01
+    hand_item: meleeHandZombieCopFeral
+    loot: []
   - id: zombieBowlerRadiated
     name: 被辐射的保龄球丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieBowlerCharged
     name: 带电保龄球丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieBowlerInfernal
     name: 炼狱保龄球丧尸
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFatCop
     name: 警察
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrong
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrong02
+    hand_item: meleeHandZombieCop
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFatCopFeral
     name: 凶残的警察
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongFeral
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongFeral02
+    hand_item: meleeHandZombieCopFeral
+    loot: []
   - id: zombieFatCopRadiated
     name: 被辐射的警察
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongRadiated
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongRadiated02
+    hand_item: meleeHandZombieCopRadiated
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
   - id: zombieFatCopCharged
     name: 带电警察
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongCharged
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpSlimCharged01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieFatCopInfernal
     name: 炼狱警察
     category: humanoid
     tier: 1
-    hp: 100
+    hp: ^healthStrongInfernal
     speed:
       walk: 1
       run: 2
     damage:
       melee: 10
-    experience: 100
+    experience: ^xpStrongInfernal02
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
   - id: zombieSkateboarder
     name: 暴徒
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSkateboarderFeral
-    name: 凶残的暴徒
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSkateboarderRadiated
-    name: 被辐射的暴徒
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSkateboarderCharged
-    name: 带电暴徒
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSkateboarderInfernal
-    name: 炼狱暴徒
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSoldier
-    name: 士兵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSoldierFeral
-    name: 凶残的士兵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSoldierRadiated
-    name: 被辐射的士兵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSoldierCharged
-    name: 带电士兵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSoldierInfernal
-    name: 炼狱士兵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieWightFeral
-    name: 凶残的怀特
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieWightRadiated
-    name: 被辐射的恶灵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieWightCharged
-    name: 带电恶灵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieWightInfernal
-    name: 炼狱恶灵
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieScreamer
-    name: 尖叫丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieScreamerFeral
-    name: 凶残的尖叫丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieScreamerRadiated
-    name: 被辐射的尖叫丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieScreamerCharged
-    name: 带电尖叫丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieScreamerInfernal
-    name: 炼狱尖叫丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieMutated
-    name: 变异丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 0.25
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieMutatedFeral
-    name: 凶残的变异丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieMutatedRadiated
-    name: 被辐射的变异丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieMutatedCharged
-    name: 带电变异丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieMutatedInfernal
-    name: 炼狱变异丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieDemolition
-    name: 爆破丧尸
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSteveCrawler
-    name: 爬行者
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 0.25
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: zombieSteveCrawlerFeral
-    name: 凶残的爬行者
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: animalZombieBear
-    name: 丧尸熊
     category: animal
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: animalZombieVulture
-    name: 丧尸秃鹫
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 1
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: animalZombieVultureRadiated
-    name: 被辐射的秃鹫
-    category: humanoid
-    tier: 1
-    hp: 100
-    speed:
-      walk: 0.7
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: animalZombieDog
-    name: 丧尸犬
-    category: animal
-    tier: 1
-    hp: 100
-    speed:
-      walk: 0.45
-      run: 2
-    damage:
-      melee: 10
-    experience: 100
-  - id: animalZombieBoar
-    name: 丧尸野猪
-    category: humanoid
     tier: 1
     hp: 100
     speed:
       walk: 0.3
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpNormal01
+    loot:
+      - item_id: zPackThug
+        count: 1
+        chance: '.04'
+  - id: zombieSkateboarderFeral
+    name: 凶残的暴徒
+    category: animal
+    tier: 1
+    hp: ^healthNormalFeral
+    speed:
+      walk: 0.6
+      run: 1.45
+    damage:
+      melee: 10
+    experience: ^xpNormalFeral01
+    hand_item: meleeHandZombieFeral
+    loot: []
+  - id: zombieSkateboarderRadiated
+    name: 被辐射的暴徒
+    category: animal
+    tier: 1
+    hp: ^healthNormalRadiated
+    speed:
+      walk: 1
       run: 2
     damage:
       melee: 10
+    experience: ^xpNormalRadiated01
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
+  - id: zombieSkateboarderCharged
+    name: 带电暴徒
+    category: animal
+    tier: 1
+    hp: ^healthNormalCharged
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpNormalCharged02
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieSkateboarderInfernal
+    name: 炼狱暴徒
+    category: animal
+    tier: 1
+    hp: ^healthNormalInfernal
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpNormalInfernal01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieSoldier
+    name: 士兵
+    category: humanoid
+    tier: 1
+    hp: ^healthFit
+    speed:
+      walk: 0.3
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpNormal03
+    hand_item: meleeHandZombieWorker
+    loot:
+      - item_id: zPackSoldier
+        count: 1
+        chance: '.04'
+  - id: zombieSoldierFeral
+    name: 凶残的士兵
+    category: humanoid
+    tier: 1
+    hp: ^healthFitFeral
+    speed:
+      walk: 0.6
+      run: 1.45
+    damage:
+      melee: 10
+    experience: ^xpNormalFeral03
+    hand_item: meleeHandZombieFeral
+    loot: []
+  - id: zombieSoldierRadiated
+    name: 被辐射的士兵
+    category: humanoid
+    tier: 1
+    hp: ^healthFitRadiated
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpNormalRadiated03
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
+  - id: zombieSoldierCharged
+    name: 带电士兵
+    category: humanoid
+    tier: 1
+    hp: ^healthFitCharged
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpSlimCharged01
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieSoldierInfernal
+    name: 炼狱士兵
+    category: humanoid
+    tier: 1
+    hp: ^healthFitInfernal
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpNormalInfernal03
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieWightFeral
+    name: 凶残的怀特
+    category: humanoid
+    tier: 1
+    hp: ^healthWightFeral
+    speed:
+      walk: 0.6
+      run: 1.45
+    damage:
+      melee: 10
+    experience: ^xpStrongFeral03
+    hand_item: meleeHandZombieFeral
+    loot: []
+  - id: zombieWightRadiated
+    name: 被辐射的恶灵
+    category: humanoid
+    tier: 1
+    hp: ^healthWightRadiated
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongRadiated03
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
+  - id: zombieWightCharged
+    name: 带电恶灵
+    category: humanoid
+    tier: 1
+    hp: ^healthWightCharged
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongCharged02
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieWightInfernal
+    name: 炼狱恶灵
+    category: humanoid
+    tier: 1
+    hp: ^healthWightInfernal
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongInfernal03
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieScreamer
+    name: 尖叫丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthScreamer
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpSlim04
+  - id: zombieScreamerFeral
+    name: 凶残的尖叫丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthScreamerFeral
+    speed:
+      walk: 0.5
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpSlimFeral02
+    hand_item: meleeHandZombieFeral
+    loot: []
+  - id: zombieScreamerRadiated
+    name: 被辐射的尖叫丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthScreamerRadiated
+    speed:
+      walk: 0.5
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpSlimRadiated02
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
+  - id: zombieScreamerCharged
+    name: 带电尖叫丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthScreamerCharged
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpSlimCharged02
+    hand_item: meleeHandZombieCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieScreamerInfernal
+    name: 炼狱尖叫丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthScreamerInfernal
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongCharged01
+    hand_item: meleeHandZombieInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieMutated
+    name: 变异丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthBrute
+    speed:
+      walk: 0.4
+      run: 1.3
+    damage:
+      melee: 10
+    experience: ^xpStrongFeral00
+    hand_item: meleeHandzombieMutated
+  - id: zombieMutatedFeral
+    name: 凶残的变异丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthBruteFeral
+    speed:
+      walk: 0.5
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpStrongFeral03
+    hand_item: meleeHandzombieMutatedFeral
+    loot: []
+  - id: zombieMutatedRadiated
+    name: 被辐射的变异丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthBruteRadiated
+    speed:
+      walk: 0.5
+      run: 1.35
+    damage:
+      melee: 10
+    experience: ^xpStrongRadiated03
+    hand_item: meleeHandzombieMutatedRadiated
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: 0%
+  - id: zombieMutatedCharged
+    name: 带电变异丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthBruteCharged
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongCharged03
+    hand_item: meleeHandzombieMutatedCharged
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieMutatedInfernal
+    name: 炼狱变异丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthBruteInfernal
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongInfernal04
+    hand_item: meleeHandzombieMutatedInfernal
+    loot:
+      - item_id: zPackStrong
+        count: 1
+        chance: '.1'
+  - id: zombieDemolition
+    name: 爆破丧尸
+    category: humanoid
+    tier: 1
+    hp: ^healthDemo
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: ^xpStrongFeral03
+    hand_item: meleeHandZombieDemolition
+    loot:
+      - item_id: zPackBoss
+        count: 1
+        chance: '.3'
+  - id: zombieSteveCrawler
+    name: 爬行者
+    category: humanoid
+    tier: 1
+    hp: ^healthCrawler
+    speed:
+      walk: 0.7
+      run: 1
+    damage:
+      melee: 10
+    experience: ^xpNormal02
+    hand_item: meleeHandZombie02
+  - id: zombieSteveCrawlerFeral
+    name: 凶残的爬行者
+    category: humanoid
+    tier: 1
+    hp: ^healthCrawlerFeral
+    speed:
+      walk: 1.2
+      run: 1.4
+    damage:
+      melee: 10
+    experience: ^xpStrong00
+    hand_item: meleeHandZombie02Feral
+    loot: []
+  - id: animalZombieBear
+    name: 丧尸熊
+    category: animal
+    tier: 1
+    hp: 4000
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 2500
+    hand_item: meleeHandAnimalZombieBear
+    loot:
+      - item_id: zPackBoss
+        count: 1
+        chance: '.5'
+  - id: animalZombieVulture
+    name: 丧尸秃鹫
+    category: animal
+    tier: 1
+    hp: 30
+    speed:
+      walk: 2.1
+      run: 2.1
+    damage:
+      melee: 10
     experience: 100
+    hand_item: meleeHandAnimalZombieVulture
+  - id: animalZombieVultureRadiated
+    name: 被辐射的秃鹫
+    category: animal
+    tier: 1
+    hp: 120
+    speed:
+      walk: 1.5
+      run: 1.5
+    damage:
+      melee: 10
+    experience: 1200
+    hand_item: meleeHandAnimalZombieVultureRadiated
+  - id: animalZombieDog
+    name: 丧尸犬
+    category: animal
+    tier: 1
+    hp: 200
+    speed:
+      walk: 1.2
+      run: 1.3
+    damage:
+      melee: 10
+    experience: 100
+    hand_item: meleeHandAnimalZombieDog
+  - id: animalZombieBoar
+    name: 丧尸野猪
+    category: animal
+    tier: 1
+    hp: 2000
+    speed:
+      walk: 1
+      run: 1
+    damage:
+      melee: 10
+    experience: 2000
+    hand_item: meleeHandZombieBoar
+    loot:
+      - item_id: zPackBoss
+        count: 1
+        chance: '.5'
