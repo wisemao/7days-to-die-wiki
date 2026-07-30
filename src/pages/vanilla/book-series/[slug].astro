@@ -1,0 +1,72 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const base = '/7days-to-die-wiki';
+
+export function getStaticPaths() {
+  // All helpers must be inside getStaticPaths (Astro compiler restriction)
+  const extractSeries = (chn) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
+  const toSlug = (name) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
+
+  const { items, skills } = loadData();
+  const books = items.filter(i => i.category === 'book');
+  const skillMap = new Map(skills.map(s => [s.id, s]));
+
+  const series = {};
+  for (const b of books) {
+    const sName = extractSeries(b.name || b.id);
+    if (!series[sName]) series[sName] = [];
+    series[sName].push(b);
+  }
+
+  return Object.entries(series)
+    .filter(([, list]) => list.length > 1)
+    .map(([name, list]) => {
+      list.sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, 'zh'));
+      const firstId = list[0].id;
+      const completeId = 'perk' + firstId.slice(4).replace(/[A-Z][a-z]*$/, 'Complete');
+      const completePerk = skillMap.get(completeId);
+      const volumes = list.map(item => {
+        const skillId = 'perk' + item.id.slice(4);
+        const skill = skillMap.get(skillId);
+        return {
+          name: item.name || item.id,
+          itemPath: `/vanilla/items/${item._sanitizedId}/`,
+          effect: skill?.levels?.[0]?.effect || skill?.description || '',
+        };
+      });
+      return {
+        params: { slug: toSlug(name) },
+        props: { seriesName: name, volumes, volumeCount: list.length, completeName: completePerk?.name || '', completeDesc: completePerk?.description || completePerk?.levels?.[0]?.effect || '' },
+      };
+    });
+}
+const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.props;
+---
+
+<Layout title={seriesName} description={`${seriesName} - ${volumeCount}卷`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <a href={`${base}/vanilla/items/category/book/`}>书籍</a> / <span>{seriesName}</span>
+  </nav>
+  <h1>{seriesName}</h1>
+  <p class="subtitle">共 {volumeCount} 卷 · 全部阅读后可获得额外加成</p>
+
+  <table>
+    <tr><th style="width:48px;">#</th><th>名称</th><th>效果</th></tr>
+    {volumes.map((v, i) => (
+      <tr>
+        <td style="text-align:center;">{i + 1}</td>
+        <td><a href={`${base}${v.itemPath}`}>{v.name}</a></td>
+        <td>{v.effect || '-'}</td>
+      </tr>
+    ))}
+  </table>
+
+  {completeName && (
+    <div style="margin-top:28px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-brand);border-radius:var(--radius);">
+      <h2 style="margin-top:0;color:var(--c-brand);">全卷加成</h2>
+      <p style="margin-bottom:0;"><strong>{completeName}</strong></p>
+      <p style="margin-bottom:0;">{completeDesc || '阅读全部卷册后解锁此加成。'}</p>
+    </div>
+  )}
+</Layout>
