@@ -22,7 +22,7 @@ const catList = order.filter(s => cats[s]).map(s => cats[s]);
 
 <Layout title="僵尸列表" description={`${zombies.length} 个僵尸`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <span>僵尸列表</span>
+    <a href={base}>首页</a><span class="sep">/</span><span>僵尸列表</span>
   </nav>
   <h1>僵尸列表</h1>
   <p class="subtitle">共 {zombies.length} 个僵尸 · 选择类型浏览</p>

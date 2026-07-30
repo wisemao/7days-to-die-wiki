@@ -17,7 +17,7 @@ const hp = zombie.hp?.toString?.()?.startsWith?.('^') ? '?' : zombie.hp;
 
 <Layout title={zombie.name} description={`${zombie.name} - ${catLabel}僵尸`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <a href={`${base}/vanilla/zombies/`}>僵尸列表</a> / <span>{zombie.name}</span>
+    <a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/zombies/`}>僵尸列表</a><span class="sep">/</span><span>{zombie.name}</span>
   </nav>
   <h1>{zombie.name}</h1>
   <p><strong>类型:</strong> {catLabel} | <strong>等级:</strong> {zombie.tier} | <strong>HP:</strong> {hp}</p>

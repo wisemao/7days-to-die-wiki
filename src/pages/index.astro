@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { loadData } from '../utils/data-loader';
-const { items, recipes, skills, zombies, ITEM_CATEGORY_LABELS } = loadData();
+import { loadData, ITEM_CATEGORY_LABELS } from '../utils/data-loader';
+const { items, recipes, skills, zombies } = loadData();
 
 const base = '/7days-to-die-wiki';
 const catCounts = {};
@@ -9,8 +9,7 @@ for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   catCounts[label] = (catCounts[label] || 0) + 1;
 }
-const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 6);
-// reverse map: Chinese label -> item category key
+const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]).slice(0, 8);
 const labelToKey = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
@@ -18,10 +17,32 @@ for (const item of items) {
 }
 ---
 
-<Layout title="七日杀 Wiki" description="7 Days to Die 中文维基">
-  <h1>七日杀 Wiki</h1>
-  <p>在游戏中快速查询物品、配方、技能、僵尸信息</p>
+<Layout title="七日杀 Wiki" description="7 Days to Die 中文维基 — 快速查询物品、配方、技能、僵尸信息">
+  <!-- Hero -->
+  <div class="hero">
+    <h1 class="hero-title">七日杀 <span class="hero-highlight">Wiki</span></h1>
+    <p class="hero-sub">7 Days to Die 中文资料库 · 快速查阅物品、配方、技能与僵尸数据</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="hero-stat-num">{items.length}</span>
+        <span class="hero-stat-lbl">物品</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">{recipes.length}</span>
+        <span class="hero-stat-lbl">配方</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">{skills.length}</span>
+        <span class="hero-stat-lbl">技能</span>
+      </div>
+      <div class="hero-stat">
+        <span class="hero-stat-num">{zombies.length}</span>
+        <span class="hero-stat-lbl">僵尸</span>
+      </div>
+    </div>
+  </div>
 
+  <!-- Quick Links -->
   <div class="card-grid">
     <a href={`${base}/vanilla/items/`} class="card">
       <span class="num">{items.length}</span>
@@ -51,6 +72,95 @@ for (const item of items) {
     ))}
   </div>
 
-  <h2>使用提示</h2>
-  <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称，或选择分类浏览。</p>
+  <h2>快速开始</h2>
+  <div class="quick-start">
+    <p>使用顶部搜索框搜索物品、配方、技能或僵尸名称，或从导航栏选择分类浏览。所有数据来自游戏源文件自动生成。</p>
+    <div class="quick-links">
+      <span class="quick-badge" style="--badge-clr: var(--c-blood);">🎯 按分类浏览</span>
+      <span class="quick-badge" style="--badge-clr: var(--c-olive);">📊 实时数据</span>
+      <span class="quick-badge" style="--badge-clr: var(--c-amber);">🔍 全文搜索</span>
+      <span class="quick-badge" style="--badge-clr: var(--c-steel);">📱 移动端适配</span>
+    </div>
+  </div>
+
+  <style>
+    /* ─── Hero ─── */
+    .hero {
+      text-align: center;
+      padding: 48px 20px 32px;
+      margin: -32px -36px 32px;
+      background: linear-gradient(180deg, rgba(198,40,40,0.06) 0%, transparent 100%);
+      border-bottom: 1px solid var(--c-border-light);
+    }
+    @media (max-width: 600px) {
+      .hero { margin: -20px -16px 24px; padding: 32px 16px 24px; }
+    }
+    .hero-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      color: var(--c-text);
+    }
+    .hero-highlight { color: var(--c-blood); }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--c-text-3);
+      margin-bottom: 28px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      text-align: center;
+    }
+    .hero-stat-num {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--c-blood);
+      line-height: 1.2;
+    }
+    .hero-stat-lbl {
+      font-size: 13px;
+      color: var(--c-text-3);
+    }
+
+    /* ─── Quick Start ─── */
+    .quick-start {
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      margin: 16px 0 8px;
+    }
+    .quick-start p {
+      margin-bottom: 14px;
+      color: var(--c-text-2);
+      font-size: 14px;
+    }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .quick-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+      background: color-mix(in srgb, var(--badge-clr, var(--c-blood)) 10%, transparent);
+      color: var(--badge-clr, var(--c-blood));
+      border: 1px solid color-mix(in srgb, var(--badge-clr, var(--c-blood)) 25%, transparent);
+    }
+  </style>
 </Layout>

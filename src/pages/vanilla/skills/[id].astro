@@ -15,7 +15,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
 
 <Layout title={skill.name} description={`${skill.name} - ${catLabel}技能，最高${skill.max_level}级`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <a href={`${base}/vanilla/skills/`}>技能列表</a> / <span>{skill.name}</span>
+    <a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/skills/`}>技能列表</a><span class="sep">/</span><span>{skill.name}</span>
   </nav>
   <h1>{skill.name}</h1>
   <p><strong>属性:</strong> {catLabel} | <strong>最高等级:</strong> {skill.max_level}</p>

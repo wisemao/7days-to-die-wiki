@@ -15,7 +15,7 @@ const cats = Object.values(catCounts).sort((a, b) => b.count - a.count);
 
 <Layout title="物品列表" description={`${items.length} 个物品`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <span>物品列表</span>
+    <a href={base}>首页</a><span class="sep">/</span><span>物品列表</span>
   </nav>
   <h1>物品列表</h1>
   <p class="subtitle">共 {items.length} 个物品 · 选择分类浏览</p>

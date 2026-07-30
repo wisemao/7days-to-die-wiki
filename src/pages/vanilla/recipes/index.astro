@@ -32,7 +32,7 @@ stList.sort((a, b) => order.indexOf(a.slug) - order.indexOf(b.slug));
 
 <Layout title="配方列表" description={`${recipes.length} 个配方`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <span>配方列表</span>
+    <a href={base}>首页</a><span class="sep">/</span><span>配方列表</span>
   </nav>
   <h1>配方列表</h1>
   <p class="subtitle">共 {recipes.length} 个配方 · 选择工作站浏览</p>
