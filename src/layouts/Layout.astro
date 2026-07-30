@@ -99,6 +99,12 @@ const base = '/7days-to-die-wiki';
     ul { margin: 8px 0 8px 22px; }
     li { margin-bottom: 4px; }
     footer { text-align: center; padding: 24px; color: var(--c-text-3); font-size: 13px; border-top: 1px solid var(--c-border); background: var(--c-surface); }
+    .collapsible { cursor: pointer; user-select: none; }
+    .collapsible:hover { opacity: 0.8; }
+    .collapsible::before { content: '\u25BC'; display: inline-block; margin-right: 6px; font-size: 11px; transition: transform 0.2s; }
+    .collapsible.collapsed::before { transform: rotate(-90deg); }
+    .collapse-content { overflow: hidden; transition: max-height 0.25s ease; }
+    .collapse-content.collapsed { max-height: 0 !important; }
 	</style>
 </head>
 <body>
@@ -127,6 +133,20 @@ const base = '/7days-to-die-wiki';
   <footer>
     <p>基于 Astro 构建 · 数据来自 7 Days to Die 游戏文件 · <a href="https://github.com/mllllwb/7days-to-die-wiki">GitHub</a></p>
   </footer>
-  <script>window.addEventListener('DOMContentLoaded',()=>{new PagefindUI({element:"#search",showImages:false,showEmptyQuery:false,baseUrl:"/7days-to-die-wiki/"});});</script>
+  <script>
+  window.addEventListener('DOMContentLoaded',()=>{
+    new PagefindUI({element:"#search",showImages:false,showEmptyQuery:false,baseUrl:"/7days-to-die-wiki/"});
+    // Collapsible sections
+    document.querySelectorAll('.collapsible').forEach(btn => {
+      const target = btn.nextElementSibling;
+      if (!target) return;
+      target.classList.add('collapse-content');
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('collapsed');
+        target.classList.toggle('collapsed');
+      });
+    });
+  });
+  </script>
 </body>
 </html>

@@ -62,24 +62,26 @@ const bookSeries = catKey === 'book' ? (() => {
       {/* ─── Schematics sub-categories ─── */}
       {schematicSub && (
         <section id="设计图">
-          <h2 style="display:flex;align-items:baseline;gap:8px;">
+          <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
             <span>🔧 设计图</span>
             <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{schematicSub.reduce((s, [,v]) => s + v.length, 0)} 项</span>
           </h2>
-          <div class="card-grid">
+          <div>
+            <div class="card-grid">
+              {schematicSub.map(([g, list]) => (
+                <a href={`#${g}`} class="card">
+                  <span class="num">{list.length}</span>
+                  <span class="lbl">{g}</span>
+                </a>
+              ))}
+            </div>
             {schematicSub.map(([g, list]) => (
-              <a href={`#${g}`} class="card">
-                <span class="num">{list.length}</span>
-                <span class="lbl">{g}</span>
-              </a>
+              <section id={g} style="scroll-margin-top:64px;margin-bottom:12px;">
+                <h3 class="collapsible collapsed" style="font-size:15px;font-weight:600;margin:12px 0 6px;color:var(--c-text-2);">{g}</h3>
+                <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+              </section>
             ))}
           </div>
-          {schematicSub.map(([g, list]) => (
-            <section id={g} style="scroll-margin-top:64px;margin-bottom:20px;">
-              <h3 style="font-size:15px;font-weight:600;margin:16px 0 8px;color:var(--c-text-2);">{g}</h3>
-              <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
-            </section>
-          ))}
         </section>
       )}
 
@@ -89,7 +91,7 @@ const bookSeries = catKey === 'book' ? (() => {
         if (mags.length === 0) return null;
         return (
           <section id="技能杂志">
-            <h2 style="display:flex;align-items:baseline;gap:8px;">
+            <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
               <span>📘 技能杂志</span>
               <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{mags.length} 项</span>
             </h2>
@@ -101,7 +103,7 @@ const bookSeries = catKey === 'book' ? (() => {
       {/* ─── Skill Book Series ─── */}
       {bookSeries && (
         <section id="技能书">
-          <h2 style="display:flex;align-items:baseline;gap:8px;">
+          <h2 class="collapsible" style="display:flex;align-items:baseline;gap:8px;">
             <span>📚 技能书系列</span>
             <span style="font-size:14px;font-weight:400;color:var(--c-text-3);">{bookSeries.reduce((s, [,v]) => s + v.length, 0)} 卷</span>
           </h2>
