@@ -58,13 +58,19 @@ const LABELS = {
 
 <Layout title={item.name} description={`${item.name} - ${categoryLabel}`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a> / <a href={`${base}/vanilla/items/`}>物品列表</a> / <span>{item.name}</span>
+    <a href={base}>首页</a>
+    / <a href={`${base}/vanilla/items/`}>物品列表</a>
+    / <a href={`${base}/vanilla/items/category/${item.category}/`}>{categoryLabel}</a>
+    {magInfo && <span> / <a href={`${base}/vanilla/items/category/book/#技能杂志`}>技能杂志</a></span>}
+    {item.category === 'book' && /Schematic$/.test(item.id) && <span> / <a href={`${base}/vanilla/items/category/book/#设计图`}>设计图</a></span>}
+    {item.category === 'book' && /^book/.test(item.id) && <span> / <a href={`${base}/vanilla/items/category/book/#技能书`}>技能书</a></span>}
+    / <span>{item.name}</span>
   </nav>
   <h1>{item.name}</h1>
   {stars && <p><strong>品质:</strong> {stars}</p>}
   <p><strong>类型:</strong> {categoryLabel}</p>
   <p><strong>堆叠:</strong> {item.stack_size}</p>
-  {item.description && <p><strong>描述:</strong> {item.description}</p>}
+  {item.description && <p><strong>描述:</strong> {item.description.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
 
   {item.stats && Object.keys(item.stats).length > 0 && (
     <>
@@ -101,7 +107,7 @@ const LABELS = {
     <div style="margin-top:24px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-border);border-radius:var(--radius);">
       <h2 style="margin-top:0;font-size:1.1rem;">📖 关联技能</h2>
       <p><strong>{magInfo.name}</strong></p>
-      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc}</p>}
+      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
       {magInfo.reqSkill && (
         <p style="font-size:13px;color:var(--c-text-3);">
           需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读
