@@ -4,7 +4,19 @@ const base = '/7days-to-die-wiki';
 ---
 
 <Layout title="页面未找到" description="404 - 页面不存在">
-  <h1>404</h1>
-  <p>页面未找到。请使用搜索框或从导航栏浏览。</p>
-  <p><a href={base}>返回首页</a></p>
+  <div style="text-align:center;padding:60px 20px;">
+    <div style="font-size:80px;font-weight:800;color:var(--c-blood);line-height:1;margin-bottom:8px;">404</div>
+    <div style="font-size:20px;font-weight:600;color:var(--c-text);margin-bottom:8px;">这片区域尚未探索</div>
+    <p style="color:var(--c-text-3);max-width:360px;margin:0 auto 28px;">
+      你寻找的页面不存在，或者它已在末世中失落。试试搜索或从首页重新开始。
+    </p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+      <a href={base} style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:var(--c-blood);color:#fff;border-radius:var(--radius-sm);font-weight:600;text-decoration:none!important;transition:background 0.15s;">
+        ← 返回首页
+      </a>
+      <a href={`${base}/vanilla/items/`} style="display:inline-flex;align-items:center;gap:6px;padding:10px 24px;background:var(--c-surface);color:var(--c-text);border:1px solid var(--c-border);border-radius:var(--radius-sm);font-weight:500;text-decoration:none!important;transition:all 0.15s;">
+        浏览物品
+      </a>
+    </div>
+  </div>
 </Layout>
