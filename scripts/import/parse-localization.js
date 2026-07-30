@@ -41,7 +41,15 @@ export function parseLocalization(filePath) {
     if (!key) continue;
 
     const name = chineseName || englishName;
-    if (name && ['item', 'recipe', 'skill', 'entity', 'block', 'mod', 'clothes', 'medical', 'melee', 'buff'].includes(type.toLowerCase())) {
+    // Accept all item/equipment/perk/block related types - covers singular, plural, and game-specific variants
+    const itemTypes = new Set([
+      'item','items','gun','food','tool','tools','ammo','vehicle','vehicles','mod',
+      'clothes','medical','melee','farming','workstation','workstations','resource',
+      'armor','ammo and guns','part','electrical','robotics','thrown','twitchdrop',
+      'perk  book','perk book','perk','perk str','perk for','perk per','perk agi','perk int',
+      'buff','buff','entity','block','recipe','skill','challenge','container','sign',
+    ]);
+    if (name && (itemTypes.has(type.toLowerCase()) || type.startsWith('perk') || type.startsWith('quest') || type.startsWith('buff'))) {
       map.set(key, { name });
     }
   }

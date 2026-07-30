@@ -35,6 +35,8 @@ function isItemVisible(item) {
   if (/invisibleRecipes/.test(id)) return false;
   // Master template items without Chinese name (internal templates)
   if (/Master$/.test(id) && (!item.name || item.name === id || /^[a-zA-Z0-9_]+$/.test(item.name))) return false;
+  // Dev/unit/admin items without Chinese name
+  if (/^gunBowT1DevCrossbow$|^unit_|^coolLootShades|^craftingShades/.test(id)) return false;
   return true;
 }
 
