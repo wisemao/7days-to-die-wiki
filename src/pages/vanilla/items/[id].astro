@@ -70,7 +70,7 @@ const LABELS = {
   {stars && <p><strong>品质:</strong> {stars}</p>}
   <p><strong>类型:</strong> {categoryLabel}</p>
   <p><strong>堆叠:</strong> {item.stack_size}</p>
-  {item.description && <p><strong>描述:</strong> {item.description.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+  {item.description && <p><strong>描述:</strong> {item.description.split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
 
   {item.stats && Object.keys(item.stats).length > 0 && (
     <>
@@ -85,21 +85,21 @@ const LABELS = {
     <div>
       <h2>制作配方</h2>
       <p>{cr.station} | {cr.craft_time}秒 | 产出 {cr.craft_count}</p>
-      <ul>{cr.recipe.filter(m => m.count > 0).map(m => <li><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveItemName(m.item_id)}</a> x{m.count}</li>)}</ul>
+      <ul>{cr.recipe.filter(m => m.count > 0).map(m => <li><a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveItemName(m.item_id)}</a> x{m.count}</li>)}</ul>
     </div>
   ))}
 
   {item.scrappable_into?.length > 0 && (
     <div>
       <h2>分解获得</h2>
-      <ul>{item.scrappable_into.map(s => <li><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveItemName(s.item_id)}</a> x{s.count}</li>)}</ul>
+      <ul>{item.scrappable_into.map(s => <li><a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveItemName(s.item_id)}</a> x{s.count}</li>)}</ul>
     </div>
   )}
 
   {usedIn.length > 0 && (
     <div>
       <h2>用于以下配方</h2>
-      <ul>{usedIn.map(r => <li><a href={`/7days-to-die-wiki/vanilla/recipes/${r._sanitizedId || sanitizeId(r.id)}/`}>{r.name}</a></li>)}</ul>
+      <ul>{usedIn.map(r => <li><a href={`${base}/vanilla/recipes/${r._sanitizedId || sanitizeId(r.id)}/`}>{r.name}</a></li>)}</ul>
     </div>
   )}
 
@@ -107,7 +107,7 @@ const LABELS = {
     <div style="margin-top:24px;padding:20px;background:var(--c-brand-light);border:1px solid var(--c-border);border-radius:var(--radius);">
       <h2 style="margin-top:0;font-size:1.1rem;">📖 关联技能</h2>
       <p><strong>{magInfo.name}</strong></p>
-      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+      {magInfo.desc && <p style="font-size:14px;color:var(--c-text-2);">{magInfo.desc.split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
       {magInfo.reqSkill && (
         <p style="font-size:13px;color:var(--c-text-3);">
           需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读
@@ -127,7 +127,7 @@ const LABELS = {
                   const displayName = /^[a-zA-Z0-9_]+$/.test(r.name)
                     ? r.name.replace(/BlockVariantHelper|_Powered|_player/g, '').replace(/([a-z])([A-Z])/g, '$1 $2')
                     : r.name;
-                  return (<a href={`/7days-to-die-wiki/vanilla/recipes/${sanitizeId(r.id)}/`}>{displayName}</a>);
+                  return (<a href={`${base}/vanilla/recipes/${sanitizeId(r.id)}/`}>{displayName}</a>);
                 })}
               </div>
             </div>

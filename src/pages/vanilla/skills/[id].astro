@@ -19,7 +19,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   </nav>
   <h1>{skill.name}</h1>
   <p><strong>属性:</strong> {catLabel} | <strong>最高等级:</strong> {skill.max_level}</p>
-  {skill.description && <p><strong>描述:</strong> {skill.description.split('\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
+  {skill.description && <p><strong>描述:</strong> {skill.description.split('\\n').map((line, i) => <span>{i > 0 && <br/>}{line}</span>)}</p>}
 
   {hasLevels && (<>
     <h2>等级效果</h2>
@@ -31,7 +31,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   {hasBooks && (<>
     <h2>关联书籍</h2>
     <table><tr><th>书籍</th><th>效果</th></tr>
-      {skill.tied_books.map(b => <tr><td><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(b.book_id)}/`}>{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>)}
+      {skill.tied_books.map(b => <tr><td><a href={`${base}/vanilla/items/${sanitizeId(b.book_id)}/`}>{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>)}
     </table>
   </>)}
 </Layout>

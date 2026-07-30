@@ -19,16 +19,16 @@ const craftsItem = itemMap.get(recipe.id);
   </nav>
   <h1>{recipe.name}</h1>
   <p><strong>工作站:</strong> {recipe.station || '背包合成'} | <strong>耗时:</strong> {recipe.craft_time || 0}秒 | <strong>产出:</strong> {recipe.craft_count ?? 1}</p>
-  {craftsItem && <p><strong>产出物品:</strong> <a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(recipe.id)}/`}>{craftsItem.name}</a></p>}
+  {craftsItem && <p><strong>产出物品:</strong> <a href={`${base}/vanilla/items/${sanitizeId(recipe.id)}/`}>{craftsItem.name}</a></p>}
 
   {hasRecipe && (<>
     <h2>配方材料</h2>
-    <ul>{recipe.recipe.filter(m => m.count > 0).map(m => <li><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveName(m.item_id)}</a> x{m.count}</li>)}</ul>
+    <ul>{recipe.recipe.filter(m => m.count > 0).map(m => <li><a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveName(m.item_id)}</a> x{m.count}</li>)}</ul>
   </>)}
   {!hasRecipe && !hasScrap && <blockquote>此物品无法直接合成，需要从游戏中获取</blockquote>}
 
   {hasScrap && (<>
     <h2>分解获得</h2>
-    <ul>{recipe.scrappable_into.map(s => <li><a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveName(s.item_id)}</a> x{s.count}</li>)}</ul>
+    <ul>{recipe.scrappable_into.map(s => <li><a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveName(s.item_id)}</a> x{s.count}</li>)}</ul>
   </>)}
 </Layout>
