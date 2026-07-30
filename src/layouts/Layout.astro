@@ -52,7 +52,14 @@ const base = '/7days-to-die-wiki';
     .category-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-color: var(--c-brand); }
     .category-card .count { font-size: 28px; font-weight: 700; color: var(--c-brand); display: block; }
     .category-card .label { font-size: 14px; color: var(--c-text-2); margin-top: 4px; display: block; }
-  </style>
+    .breadcrumb { font-size: 13px; color: #999; margin-bottom: 16px; }
+    .breadcrumb a { color: #999; text-decoration: none; }
+    .breadcrumb a:hover { color: var(--c-brand); text-decoration: underline; }
+    .item-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 4px 16px; margin: 8px 0 20px; }
+    .item-list a { display: block; padding: 3px 6px; font-size: 13px; border-radius: 3px; color: var(--c-text); text-decoration: none; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .item-list a:hover { background: var(--c-bg-soft); color: var(--c-brand); }
+    .cat-section { scroll-margin-top: 56px; }
+	</style>
 </head>
 <body>
   <nav>

@@ -1,19 +1,50 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData } from '../../../utils/data-loader';
-const { recipes } = loadData();
+const { recipes, itemMap } = loadData();
+
+const base = '/7days-to-die-wiki';
+
+// group by station
 const stations = {};
 for (const r of recipes) {
   const s = r.station || '背包合成';
-  stations[s] = (stations[s] || 0) + 1;
+  if (!stations[s]) stations[s] = [];
+  stations[s].push(r);
 }
+const stationOrder = ['背包合成', '工作台', '熔炉', '营火', '化学台', '混凝土搅拌机'];
+for (const k of Object.keys(stations)) {
+  stations[k].sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, 'zh'));
+}
+const stationEntries = stationOrder.filter(s => stations[s]).map(s => [s, stations[s]]);
+const totalRecipes = recipes.length;
 ---
 
-<Layout title="配方列表" description={`全部 ${recipes.length} 个配方`}>
+<Layout title="配方列表" description={`全部 ${totalRecipes} 个配方`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <span>配方列表</span>
+  </nav>
+
   <h1>配方列表</h1>
-  <p>共 {recipes.length} 个配方</p>
-  <table><tr><th>工作站</th><th>数量</th></tr>
-    {Object.entries(stations).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
-  </table>
-  <p>从侧边栏或搜索查找具体配方。</p>
+  <p>共 {totalRecipes} 个配方 · 点击分类卡片快速跳转</p>
+
+  <div class="category-grid">
+    {stationEntries.map(([k, v]) => (
+      <a href={`#${k}`} class="category-card">
+        <span class="count">{v.length}</span>
+        <span class="label">{k}</span>
+      </a>
+    ))}
+  </div>
+
+  {stationEntries.map(([k, v]) => (
+    <section class="cat-section" id={k}>
+      <h2><a href={`#${k}`} style="color:inherit;text-decoration:none;">{k}</a> <span style="font-size:14px;font-weight:400;color:#999;">({v.length})</span></h2>
+      <div class="item-list">
+        {v.map(r => (
+          <a href={`${base}/vanilla/recipes/${r._sanitizedId}/`}>{r.name || r.id}</a>
+        ))}
+      </div>
+    </section>
+  ))}
 </Layout>

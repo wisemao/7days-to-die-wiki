@@ -7,12 +7,16 @@ export function getStaticPaths() {
 }
 const { skill } = Astro.props;
 const { ATTR_LABELS, resolveItemName } = loadData();
+const base = '/7days-to-die-wiki';
 const catLabel = ATTR_LABELS[skill.category] || skill.category;
 const hasLevels = skill.levels && skill.levels.length > 0;
 const hasBooks = skill.tied_books && skill.tied_books.length > 0;
 ---
 
 <Layout title={skill.name} description={`${skill.name} - ${catLabel}技能，最高${skill.max_level}级`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <a href={`${base}/vanilla/skills/`}>技能列表</a> / <span>{skill.name}</span>
+  </nav>
   <h1>{skill.name}</h1>
   <p><strong>属性:</strong> {catLabel} | <strong>最高等级:</strong> {skill.max_level}</p>
   {skill.description && <p><strong>描述:</strong> {skill.description}</p>}

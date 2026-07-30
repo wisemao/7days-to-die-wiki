@@ -6,6 +6,7 @@ export function getStaticPaths() {
   return recipes.map(r => ({ params: { id: r._sanitizedId }, props: { recipe: r, itemMap } }));
 }
 const { recipe, itemMap } = Astro.props;
+const base = '/7days-to-die-wiki';
 const resolveName = (id) => itemMap.get(id)?.name || id;
 const hasRecipe = recipe.recipe && recipe.recipe.length > 0;
 const hasScrap = recipe.scrappable_into && recipe.scrappable_into.length > 0;
@@ -13,6 +14,9 @@ const craftsItem = itemMap.get(recipe.id);
 ---
 
 <Layout title={recipe.name} description={`${recipe.name} - 合成配方`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <a href={`${base}/vanilla/recipes/`}>配方列表</a> / <span>{recipe.name}</span>
+  </nav>
   <h1>{recipe.name}</h1>
   <p><strong>工作站:</strong> {recipe.station || '背包合成'} | <strong>耗时:</strong> {recipe.craft_time || 0}秒 | <strong>产出:</strong> {recipe.craft_count ?? 1}</p>
   {craftsItem && <p><strong>产出物品:</strong> <a href={`/7days-to-die-wiki/vanilla/items/${sanitizeId(recipe.id)}/`}>{craftsItem.name}</a></p>}

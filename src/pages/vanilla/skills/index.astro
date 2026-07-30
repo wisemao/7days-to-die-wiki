@@ -2,17 +2,48 @@
 import Layout from '../../../layouts/Layout.astro';
 import { loadData } from '../../../utils/data-loader';
 const { skills, ATTR_LABELS } = loadData();
+
+const base = '/7days-to-die-wiki';
+
 const cats = {};
 for (const s of skills) {
-  const label = ATTR_LABELS[s.category] || s.category;
-  cats[label] = (cats[label] || 0) + 1;
+  const label = ATTR_LABELS[s.category] || s.category || '其他';
+  if (!cats[label]) cats[label] = [];
+  cats[label].push(s);
 }
+const attrOrder = ['力量', '强壮', '感知', '敏捷', '智力'];
+for (const k of Object.keys(cats)) {
+  cats[k].sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, 'zh'));
+}
+const catEntries = attrOrder.filter(c => cats[c]).map(c => [c, cats[c]]);
+Object.entries(cats).filter(([k]) => !attrOrder.includes(k)).forEach(([k, v]) => catEntries.push([k, v]));
 ---
 
 <Layout title="技能列表" description={`全部 ${skills.length} 个技能`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a> / <span>技能列表</span>
+  </nav>
+
   <h1>技能列表</h1>
   <p>共 {skills.length} 个技能</p>
-  <table><tr><th>属性</th><th>数量</th></tr>
-    {Object.entries(cats).sort((a, b) => b[1] - a[1]).map(([k, v]) => <tr><td>{k}</td><td>{v}</td></tr>)}
-  </table>
+
+  <div class="category-grid">
+    {catEntries.map(([k, v]) => (
+      <a href={`#${k}`} class="category-card">
+        <span class="count">{v.length}</span>
+        <span class="label">{k}</span>
+      </a>
+    ))}
+  </div>
+
+  {catEntries.map(([k, v]) => (
+    <section class="cat-section" id={k}>
+      <h2><a href={`#${k}`} style="color:inherit;text-decoration:none;">{k}</a> <span style="font-size:14px;font-weight:400;color:#999;">({v.length})</span></h2>
+      <div class="item-list">
+        {v.map(s => (
+          <a href={`${base}/vanilla/skills/${s._sanitizedId}/`}>{s.name || s.id}</a>
+        ))}
+      </div>
+    </section>
+  ))}
 </Layout>
