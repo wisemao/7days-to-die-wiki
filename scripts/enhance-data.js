@@ -152,13 +152,19 @@ function enhance(configDir) {
     const mods = parseModsXml(readFileSync(modsPath, 'utf-8'), locMap);
     const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
     const existingIds = new Set((itemsDoc.items || []).map(i => i.id));
-    // Skip master templates / items without Chinese names
+    // Skip master templates / items without Chinese names / duplicates
     const toAdd = mods.filter(m => /[\u4e00-\u9fff]/.test(m.name) && !existingIds.has(m.id));
-    if (toAdd.length > 0) {
-      itemsDoc.items.push(...toAdd);
+    const seen = new Set();
+    const uniqueAdd = toAdd.filter(m => {
+      if (seen.has(m.id)) return false;
+      seen.add(m.id);
+      return true;
+    });
+    if (uniqueAdd.length > 0) {
+      itemsDoc.items.push(...uniqueAdd);
       writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
     }
-    console.log(`  - 模组解析: ${mods.length} 个，新增 ${toAdd.length} 个模组本体`);
+    console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体`);
   }
 
   console.log('✅ 数据增强完成');

@@ -9021,12 +9021,6 @@ items:
     installable_tags: barrelAttachments,turretRanged
     modifier_tags: barrelTipAttachment
     unlocked_by: modGunMuzzleBrakeSchematic
-  - id: modGunSoundSuppressorSilencer
-    name: 消声器模组
-    category: mod
-    installable_tags: gun
-    modifier_tags: barrelTipAttachment
-    unlocked_by: modGunSoundSuppressorSilencerSchematic
   - id: modGunLaserSight
     name: 激光瞄准器模组
     category: mod
