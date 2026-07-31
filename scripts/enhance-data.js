@@ -20,6 +20,7 @@ import { parseSpawningXml } from './import/parse-spawning.js';
 import { parseTrapBlocks } from './import/parse-blocks.js';
 import { parseLocalization } from './import/parse-localization.js';
 import { parseVehiclesXml } from './import/parse-vehicles.js';
+import { parseModsXml } from './import/parse-mods.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data', 'vanilla');
@@ -143,6 +144,21 @@ function enhance(configDir) {
       writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
     }
     console.log(`  - 载具属性补全: ${enriched} 个 (共 ${vehicles.length} 辆载具)`);
+  }
+
+  // ─── 6. Weapon/armor/vehicle mods (item_modifiers.xml) ───
+  const modsPath = join(configDir, 'item_modifiers.xml');
+  if (existsSync(modsPath)) {
+    const mods = parseModsXml(readFileSync(modsPath, 'utf-8'), locMap);
+    const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
+    const existingIds = new Set((itemsDoc.items || []).map(i => i.id));
+    // Skip master templates / items without Chinese names
+    const toAdd = mods.filter(m => /[\u4e00-\u9fff]/.test(m.name) && !existingIds.has(m.id));
+    if (toAdd.length > 0) {
+      itemsDoc.items.push(...toAdd);
+      writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    }
+    console.log(`  - 模组解析: ${mods.length} 个，新增 ${toAdd.length} 个模组本体`);
   }
 
   console.log('✅ 数据增强完成');

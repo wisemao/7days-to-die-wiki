@@ -22,6 +22,9 @@ export interface Item {
   description?: string;
   stats?: Record<string, number | string>;
   scrappable_into?: RecipeMaterial[];
+  installable_tags?: string;
+  modifier_tags?: string;
+  unlocked_by?: string;
   _sanitizedId: string;
   __iconId?: string;
 }
@@ -120,6 +123,7 @@ export const ITEM_CATEGORY_LABELS: Record<string, string> = {
   armor: '护甲', food: '食物', medical: '医疗', material: '材料',
   ammo: '弹药', book: '书籍', vehicle: '载具', trap: '陷阱',
   accessory: '配件', consumable: '消耗品', quest_item: '任务物品',
+  mod: '模组',
 };
 
 export const ZOMBIE_CATEGORY_LABELS: Record<string, string> = {

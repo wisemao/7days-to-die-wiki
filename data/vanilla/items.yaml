@@ -9009,3 +9009,657 @@ items:
     category: material
     stack_size: 1
     icon: missingIcon
+  - id: modGunSoundSuppressorSilencer
+    name: 消声器模组
+    category: mod
+    installable_tags: gun
+    modifier_tags: barrelTipAttachment
+    unlocked_by: modGunBarrelExtenderSchematic
+  - id: modGunMuzzleBrake
+    name: 枪口制动模组
+    category: mod
+    installable_tags: barrelAttachments,turretRanged
+    modifier_tags: barrelTipAttachment
+    unlocked_by: modGunMuzzleBrakeSchematic
+  - id: modGunSoundSuppressorSilencer
+    name: 消声器模组
+    category: mod
+    installable_tags: gun
+    modifier_tags: barrelTipAttachment
+    unlocked_by: modGunSoundSuppressorSilencerSchematic
+  - id: modGunLaserSight
+    name: 激光瞄准器模组
+    category: mod
+    installable_tags: sideAttachments
+    modifier_tags: sideAttachment
+    unlocked_by: modGunLaserSightSchematic
+  - id: modGunFlashlight
+    name: 武器照明模组
+    category: mod
+    installable_tags: sideAttachments
+    modifier_tags: sideAttachment
+    unlocked_by: modGunFlashlightSchematic
+    light_value: 0.5
+  - id: modGunScopeSmall
+    name: 2倍镜模组
+    category: mod
+    installable_tags: smallTopAttachments
+    modifier_tags: scope
+    unlocked_by: modGunScopeSmallSchematic
+  - id: modGunScopeMedium
+    name: 4倍镜模组
+    category: mod
+    installable_tags: mediumTopAttachments
+    modifier_tags: scope
+    unlocked_by: modGunScopeMediumSchematic
+  - id: modGunScopeLarge
+    name: 8倍镜模组
+    category: mod
+    installable_tags: largeTopAttachments
+    modifier_tags: scope
+    unlocked_by: modGunScopeLargeSchematic
+  - id: modGunReflexSight
+    name: 反射式瞄准镜模组
+    category: mod
+    installable_tags: smallTopAttachments
+    modifier_tags: scope
+    unlocked_by: modGunReflexSightSchematic
+  - id: modGunTriggerGroupSemi
+    name: 触发器组：半自动模组
+    category: mod
+    installable_tags: firingMode
+    modifier_tags: trigger
+    unlocked_by: modGunTriggerGroupSemiSchematic
+  - id: modGunTriggerGroupBurst3
+    name: 触发器组：三发点放模组
+    category: mod
+    installable_tags: firingMode,turretRanged
+    modifier_tags: trigger
+    unlocked_by: modGunTriggerGroupBurst3Schematic
+    icon: modGunTriggerGroupBurst
+  - id: modGunTriggerGroupAutomatic
+    name: 触发器组：全自动模组
+    category: mod
+    installable_tags: firingMode,turretRanged
+    modifier_tags: trigger
+    unlocked_by: modGunTriggerGroupAutomaticSchematic
+  - id: modGunBipod
+    name: 双脚支架模组
+    category: mod
+    installable_tags: bottomAttachments
+    modifier_tags: accuracy
+    unlocked_by: modGunBipodSchematic
+  - id: modGunForegrip
+    name: 前握把模组
+    category: mod
+    installable_tags: bottomAttachments,turretRanged
+    modifier_tags: grips
+    unlocked_by: modGunForegripSchematic
+  - id: modGunRetractingStock
+    name: 收缩枪托模组
+    category: mod
+    installable_tags: stock
+    modifier_tags: stocks
+    unlocked_by: modGunRetractingStockSchematic
+  - id: modShotgunSawedOffBarrel
+    name: 削短型霰弹枪模组
+    category: mod
+    installable_tags: shotgun
+    modifier_tags: barrelAttachment,barrelTipAttachment
+    unlocked_by: modShotgunSawedOffBarrelSchematic
+  - id: modGunDuckbill
+    name: 霰弹枪鸭嘴枪口模组
+    category: mod
+    installable_tags: shotgun,turretRanged
+    modifier_tags: barrelTipAttachment
+    unlocked_by: modGunDuckbillSchematic
+  - id: modGunChoke
+    name: 霰弹枪喉缩模组
+    category: mod
+    installable_tags: shotgun,turretRanged
+    modifier_tags: barrelTipAttachment
+    unlocked_by: modGunChokeSchematic
+  - id: modGunMagazineExtender
+    name: 弹匣扩充模组
+    category: mod
+    installable_tags: magazine,turretRanged
+    modifier_tags: magazine
+    unlocked_by: modGunMagazineExtenderSchematic
+  - id: modGunDrumMagazineExtender
+    name: 弹鼓模组
+    category: mod
+    installable_tags: drumMagazine
+    modifier_tags: magazine
+    unlocked_by: perkAutoWeaponsDrumMag
+  - id: modGunShotgunTubeExtenderMagazine
+    name: 霰弹枪管扩充模组
+    category: mod
+    installable_tags: modGunShotgunTubeExtenderMagazine
+    modifier_tags: magazine
+    unlocked_by: perkShotgunMessiahMagazine
+  - id: modGunCrippleEm
+    name: 致残模组
+    category: mod
+    installable_tags: ranged
+    modifier_tags: crippling
+    unlocked_by: modGunCrippleEmSchematic
+  - id: modGunBowPolymerString
+    name: 聚合物弓弦模组
+    category: mod
+    installable_tags: perkArchery
+    modifier_tags: velocity
+    unlocked_by: modGunBowPolymerStringSchematic
+  - id: modGunBowArrowRest
+    name: 箭托模组
+    category: mod
+    installable_tags: bow
+    modifier_tags: accuracy
+    unlocked_by: modGunBowArrowRestSchematic
+  - id: modGunMeleeTheHunter
+    name: 猎人模组
+    category: mod
+    installable_tags: weapon,tool
+    modifier_tags: specialDamageAnimal
+    unlocked_by: modGunMeleeTheHunterSchematic
+  - id: modGunMeleeRadRemover
+    name: 辐射去除模组
+    category: mod
+    installable_tags: weapon,tool
+    modifier_tags: specialDamage
+    unlocked_by: modGunMeleeRadRemoverSchematic
+  - id: modMeleeTemperedBlade
+    name: 钢化刀片模组
+    category: mod
+    installable_tags: tool,perkBrawler,perkJavelinMaster,perkDeepCuts
+    modifier_tags: damage,durability
+    unlocked_by: modMeleeTemperedBladeSchematic
+  - id: modMeleeSerratedBlade
+    name: 锯齿刀片模组
+    category: mod
+    installable_tags: knife,machete,axe,shovel,perkBrawler,perkJavelinMaster
+    modifier_tags: damageBleed
+    unlocked_by: modMeleeSerratedBladeSchematic
+  - id: modMeleeWeightedHead
+    name: 重头模组
+    category: mod
+    installable_tags: light,medium,heavy,turretMelee
+    modifier_tags: stun
+    unlocked_by: modMeleeWeightedHeadSchematic
+  - id: modMeleeStructuralBrace
+    name: 结构支撑模组
+    category: mod
+    installable_tags: melee,perkArchery
+    modifier_tags: durability
+    unlocked_by: modMeleeStructuralBraceSchematic
+  - id: modMeleeErgonomicGrip
+    name: 人体工学握把模组
+    category: mod
+    installable_tags: melee,bow
+    modifier_tags: health
+    unlocked_by: modMeleeErgonomicGripSchematic
+  - id: modMeleeFortifyingGrip
+    name: 强化握把模组
+    category: mod
+    installable_tags: melee
+    modifier_tags: health
+    unlocked_by: modMeleeFortifyingGripSchematic
+  - id: modMeleeClubBarbedWire
+    name: 铁丝网模组
+    category: mod
+    installable_tags: club
+    modifier_tags: shaft
+    unlocked_by: modMeleeClubBarbedWireSchematic
+  - id: modMeleeClubMetalSpikes
+    name: 金属长钉模组
+    category: mod
+    installable_tags: club
+    modifier_tags: shaft
+    unlocked_by: modMeleeClubMetalSpikesSchematic
+  - id: modMeleeClubMetalChain
+    name: 金属链模组
+    category: mod
+    installable_tags: club
+    modifier_tags: shaft
+    unlocked_by: perkBatterUpMetalChain
+  - id: modMeleeClubBurningShaft
+    name: 燃烧杆模组
+    category: mod
+    installable_tags: longShaft
+    modifier_tags: fire
+    unlocked_by: modMeleeClubBurningShaftSchematic
+    light_value: 0.25
+  - id: modMeleeFiremansAxeMod
+    name: 消防斧模组
+    category: mod
+    installable_tags: axe
+    modifier_tags: damageDirt,damageStone,damageIron
+    unlocked_by: perkFiremansAlmanacAxes
+  - id: modMeleeGraveDigger
+    name: 掘墓者模组
+    category: mod
+    installable_tags: melee
+    modifier_tags: damageDirt
+    unlocked_by: modMeleeGraveDiggerSchematic
+  - id: modMeleeBunkerBuster
+    name: 掩体炸弹模组
+    category: mod
+    installable_tags: melee
+    modifier_tags: damageStone
+    unlocked_by: modMeleeBunkerBusterSchematic
+  - id: modMeleeIronBreaker
+    name: 铁见愁模组
+    category: mod
+    installable_tags: melee
+    modifier_tags: damageIron
+    unlocked_by: modMeleeIronBreakerSchematic
+  - id: modMeleeWoodSplitter
+    name: 劈木模组
+    category: mod
+    installable_tags: melee
+    modifier_tags: damageWood
+    unlocked_by: modMeleeWoodSplitterSchematic
+  - id: modMeleeDiamondTip
+    name: 金刚石刀刃模组
+    category: mod
+    installable_tags: tool,perkBrawler,perkJavelinMaster,perkDeepCuts
+    modifier_tags: durability
+    unlocked_by: perkArtOfMiningDiamondTools
+  - id: modMeleeStunBatonRepulsor
+    name: 电击棒冲击波模组
+    category: mod
+    installable_tags: perkElectrocutioner
+    modifier_tags: knockback
+    unlocked_by: perkTechJunkie5Repulsor
+  - id: modFuelTankSmall
+    name: 电动工具小油箱模组
+    category: mod
+    installable_tags: motorTool
+    modifier_tags: fuel
+    unlocked_by: modFuelTankSmallSchematic
+  - id: modFuelTankLarge
+    name: 电动工具大油箱模组
+    category: mod
+    installable_tags: motorTool
+    modifier_tags: fuel
+    unlocked_by: modFuelTankLargeSchematic
+  - id: modArmorInsulatedLinerT1
+    name: 破旧绝缘装甲模组
+    category: mod
+    installable_tags: armorHead,armorChest,armorHands,armorFeet
+    modifier_tags: thermal
+  - id: modArmorInsulatedLinerT2
+    name: 拼布绝缘装甲模组
+    category: mod
+    installable_tags: armorHead,armorChest,armorHands,armorFeet
+    modifier_tags: thermal
+  - id: modArmorInsulatedLinerT3
+    name: 热核绝缘装甲模组
+    category: mod
+    installable_tags: armorHead,armorChest,armorHands,armorFeet
+    modifier_tags: thermal
+  - id: modArmorBandolier
+    name: 弹药带模组
+    category: mod
+    installable_tags: armorChest
+    modifier_tags: ammo
+    unlocked_by: modArmorBandolierSchematic
+  - id: modRadiationReady
+    name: 辐射就绪模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: resistance
+    unlocked_by: modRadiationReadySchematic
+  - id: modArmorInsulatedLiner
+    name: 隔热内衬模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: thermal
+    unlocked_by: modArmorInsulatedLinerSchematic
+  - id: modArmorCoolingMesh
+    name: 散热网模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: temperature
+    unlocked_by: modArmorCoolingMeshSchematic
+  - id: modArmorImprovedFittings
+    name: 护甲配件模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: movement
+    unlocked_by: modArmorImprovedFittingsSchematic
+  - id: modArmorCustomizedFittings
+    name: 高级护甲配件模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: movement
+    unlocked_by: modArmorCustomizedFittingsSchematic
+  - id: modArmorPlatingBasic
+    name: 装甲板模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: resistance
+    unlocked_by: modArmorPlatingBasicSchematic
+  - id: modArmorPlatingReinforced
+    name: 高级护甲镀层模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: resistance
+    unlocked_by: modArmorPlatingReinforcedSchematic
+  - id: modArmorStoragePocket
+    name: 护甲收纳口袋模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: carryweight1
+    unlocked_by: modArmorStoragePocketSchematic
+  - id: modArmorDoubleStoragePocket
+    name: 护甲双收纳口袋模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: carryweight2
+    unlocked_by: modArmorDoubleStoragePocketSchematic
+  - id: modArmorTripleStoragePocket
+    name: 护甲三收纳口袋模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: carryweight3
+    unlocked_by: modArmorTripleStoragePocketSchematic
+  - id: modArmorQuadStoragePocket
+    name: 护甲四收纳口袋模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: carryweight4
+    unlocked_by: modArmorQuadStoragePocketSchematic
+  - id: modArmorMuffledConnectors
+    name: 消音连接器模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: stealth
+    unlocked_by: modArmorMuffledConnectorsSchematic
+  - id: modArmorAdvancedMuffledConnectors
+    name: 高级消音连接器模组
+    category: mod
+    installable_tags: armor
+    modifier_tags: stealth
+    unlocked_by: modArmorAdvancedMuffledConnectorsSchematic
+  - id: modArmorImpactBracing
+    name: 冲击支撑模组
+    category: mod
+    installable_tags: armorFeet
+    modifier_tags: falldamage
+    unlocked_by: modArmorImpactBracingSchematic
+  - id: modArmorStealthBoots
+    name: 潜行靴模组
+    category: mod
+    installable_tags: armorFeet
+    modifier_tags: stealth
+    unlocked_by: perkUrbanCombatLanding
+  - id: modArmorWaterPurifier
+    name: 净水器模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: waterPurifier
+    unlocked_by: modArmorWaterPurifierSchematic
+  - id: modArmorHelmetLight
+    name: 头盔灯模组
+    category: mod
+    installable_tags: head
+    modifier_tags: misc,modArmorHelmetLight
+    unlocked_by: modArmorHelmetLightSchematic
+    light_value: 0.4
+  - id: modArmorCigar
+    name: 雪茄模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: cigar
+    icon: apparelCigar
+    unlocked_by: perkUrbanCombatCigar
+    tier: 1000
+  - id: modArmorPerception
+    name: 感知模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostPerception
+    icon: modArmorPerception
+    tier: 1000
+  - id: modArmorStrength
+    name: 力量模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostStrength
+    icon: modArmorStrength
+    tier: 1000
+  - id: modArmorFortitude
+    name: 强健模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostFortitude
+    icon: modArmorFortitude
+    tier: 1000
+  - id: modArmorAgility
+    name: 敏捷模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostAgility
+    icon: modArmorAgility
+    tier: 1000
+  - id: modArmorIntellect
+    name: 智慧模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostIntellect
+    icon: modArmorIntellect
+    tier: 1000
+  - id: modArmorTreasureHunter
+    name: 寻宝者模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: boostTreasure
+    icon: modArmorTreasureHunter
+    tier: 1000
+  - id: modArmorNightVision
+    name: 夜视模组
+    category: mod
+    installable_tags: armorHead
+    modifier_tags: nightVision
+    icon: modArmorNightVision
+    tier: 1000
+  - id: modDyeWhite
+    name: 染色剂:溶剂
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye
+    tier: 50
+  - id: modDyeBrown
+    name: 染色剂:棕色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeBrown
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeRed
+    name: 染色剂:红色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeRed
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeOrange
+    name: 染色剂:橙色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeOrange
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeYellow
+    name: 染色剂:黄色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeYellow
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeGreen
+    name: 染色剂:绿色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeGreen
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeBlue
+    name: 染色剂:蓝色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeBlue
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyePurple
+    name: 染色剂:紫色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyePurple
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyeBlack
+    name: 染色剂:黑色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyeBlack
+    icon: modDyeWhite
+    tier: 50
+  - id: modDyePink
+    name: 染色剂:粉色
+    category: mod
+    installable_tags: weapon,tool,vehicle,drone
+    modifier_tags: dye,modDyePink
+    icon: modDyeWhite
+    tier: 50
+  - id: modVehicleMega
+    name: 超级载具模组
+    category: mod
+    installable_tags: vehicle
+    modifier_tags: test
+    unlocked_by: modVehicleMegaSchematic
+    icon: modVehicleSuperCharger
+  - id: modVehicleFuelSaver
+    name: 载具节油器模组
+    category: mod
+    installable_tags: vengine
+    modifier_tags: fuelsaver
+    unlocked_by: modVehicleFuelSaverSchematic
+    icon: modVehicleFuelSaver
+  - id: modVehicleOffRoadHeadlights
+    name: 载具越野头灯模组
+    category: mod
+    installable_tags: vlight
+    modifier_tags: light
+    unlocked_by: modVehicleOffRoadHeadlightsSchematic
+    icon: modVehicleOffRoadHeadlights
+  - id: modVehicleSuperCharger
+    name: 载具增压器模组
+    category: mod
+    installable_tags: vengine
+    modifier_tags: speed
+    unlocked_by: modVehicleSuperChargerSchematic
+    icon: modVehicleSuperCharger
+  - id: modVehicleExpandedSeat
+    name: 载具扩展座椅模组
+    category: mod
+    installable_tags: vseat
+    modifier_tags: seat
+    unlocked_by: modVehicleExpandedSeatSchematic
+    icon: modVehicleExpandedSeat
+  - id: modVehicleReserveFuelTank
+    name: 载具备用油箱模组
+    category: mod
+    installable_tags: vfuel
+    modifier_tags: fueltank
+    unlocked_by: modVehicleReserveFuelTankSchematic
+    icon: modVehicleReserveFuelTank
+  - id: modVehiclePlow
+    name: 载具犁模组
+    category: mod
+    installable_tags: vplow
+    modifier_tags: plow
+    unlocked_by: modVehiclePlowSchematic
+    icon: modVehiclePlow
+  - id: modVehicleArmor
+    name: 载具护甲模组
+    category: mod
+    installable_tags: varmor
+    modifier_tags: armor
+    unlocked_by: modVehicleArmorSchematic
+    icon: modVehicleArmor
+  - id: modVehicleStorage
+    name: 载具储物模组
+    category: mod
+    installable_tags: vstorage
+    modifier_tags: storage
+    unlocked_by: modVehicleStorageSchematic
+    icon: modVehicleStorage
+  - id: modRoboticDroneArmorPlatingMod
+    name: 机器人无人机装甲板模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneArmor
+    unlocked_by: modRoboticDroneArmorPlatingModSchematic
+  - id: modRoboticDroneCargoMod
+    name: 机器人无人机储物模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneStorage
+    unlocked_by: modRoboticDroneCargoModSchematic
+  - id: modRoboticDroneMoraleBoosterMod
+    name: 机器人无人机鼓舞士气模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneMorale
+    unlocked_by: modRoboticDroneMoraleBoosterModSchematic
+  - id: modRoboticDroneHeadlampMod
+    name: 机器人无人机头灯模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneLamp
+    unlocked_by: modRoboticDroneHeadlampModSchematic
+  - id: modRoboticDroneMedicMod
+    name: 机器人无人机医疗模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneMedic
+    unlocked_by: modRoboticDroneMedicModSchematic
+  - id: modRoboticDroneWeaponMod
+    name: 机器人无人机武器模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneWeapon
+    icon: missingIcon
+    unlocked_by: modRoboticDroneWeaponModSchematic
+  - id: modRoboticDroneStunWeaponMod
+    name: 机器人无人机眩晕模组
+    category: mod
+    installable_tags: drone
+    modifier_tags: droneWeapon
+    icon: modRoboticDroneStunWeaponMod
+    unlocked_by: modRoboticDroneStunWeaponModSchematic
+  - id: modGunButtkick3000
+    name: 大快人心3000模组
+    category: mod
+    installable_tags: weapon,tool
+    modifier_tags: ''
+    icon: apparelGothBoots
+  - id: modGunButtkick4000
+    name: 大快人心4000模组 - 技能点
+    category: mod
+    installable_tags: weapon,tool
+    modifier_tags: ''
+    icon: apparelGothBoots
+  - id: modArmorJumpJets
+    name: 喷气式飞机模组
+    category: mod
+    installable_tags: armorChest
+    modifier_tags: misc
+    icon: flamethrowerTrap
+  - id: modArmorAdminToughGuyShirt
+    name: 开发：悍将模组
+    category: mod
+    installable_tags: armorChest
+    modifier_tags: misc
+    icon: armorParts

@@ -108,6 +108,7 @@ function fmtVal(v) {
         <span class="tag">{categoryLabel}</span>
         <span class="tag">堆叠: {item.stack_size}</span>
         {stars && <span class="tag" style="background:#fff3e0;border-color:#ff8f00;color:#e65100;">品质: {stars}</span>}
+        {item.installable_tags && <span class="tag" style="background:#e8f5e9;border-color:#66bb6a;color:#2e7d32;">可安装: {item.installable_tags}</span>}
       </div>
       {item.description && (
         <p style="margin-top:12px;line-height:1.8;">

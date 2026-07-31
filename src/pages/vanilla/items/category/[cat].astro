@@ -57,7 +57,7 @@ const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length
 // ─── Sub-grouping for non-book categories ───
 // armor: by equipment slot; melee_weapon/ranged_weapon: by weapon type
 // material: by resource type; food: by preparation; medical: by type
-const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' || catKey === 'ammo' || catKey === 'vehicle' || catKey === 'tool' || catKey === 'quest_item' ? (() => {
+const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' || catKey === 'ammo' || catKey === 'vehicle' || catKey === 'tool' || catKey === 'quest_item' || catKey === 'mod' ? (() => {
   const defs = {
     armor: [
       ['头盔/帽子', /Helmet|Hat$|Head/],
@@ -132,6 +132,13 @@ const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 
       ['藏宝图', /^qt_/],
       ['任务奖励', /^questReward/],
       ['徽章/特殊', /^biomeBadge|^note|^questItem/],
+      ['其他', null],
+    ],
+    mod: [
+      ['武器模组', /^modGun|^modMelee|^modShotgun/],
+      ['护甲模组', /^modArmor/],
+      ['载具模组', /^modVehicle|^modFuelTank/],
+      ['无人机模组', /^modRobotic/],
       ['其他', null],
     ],
   };
