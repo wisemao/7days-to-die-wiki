@@ -18,13 +18,28 @@ export function getStaticPaths() {
 }
 const { zombieList, typeSlug } = Astro.props;
 const typeLabel = ZOMBIE_TYPE_LABELS[typeSlug] || typeSlug;
+function fmtHp(hp) {
+  if (hp == null) return '-';
+  if (typeof hp === 'number') return String(hp);
+  const s = String(hp).trim();
+  if (s.startsWith('^')) return '?';
+  return s;
+}
 ---
 
 <Layout title={typeLabel} description={`${typeLabel} - ${zombieList.length} 个僵尸`}>
   <nav class="breadcrumb"><a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/zombies/`}>僵尸列表</a><span class="sep">/</span><span>{typeLabel}</span></nav>
   <h1>{typeLabel}</h1>
   <p class="subtitle">共 {zombieList.length} 个僵尸</p>
-  <div class="item-grid">
-    {zombieList.map(z => (<a href={`${base}/vanilla/zombies/${z._sanitizedId}/`}>{z.name || z.id}</a>))}
+  <div class="entity-grid">
+    {zombieList.map(z => (
+      <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`} class="entity-item">
+        <span class="entity-name">{z.name || z.id}</span>
+        <span class="entity-meta">
+          HP {fmtHp(z.hp)} · 移速 {z.speed?.run ?? '-'} · 伤害 {z.damage?.melee ?? '-'}
+        </span>
+      </a>
+    ))}
   </div>
+
 </Layout>

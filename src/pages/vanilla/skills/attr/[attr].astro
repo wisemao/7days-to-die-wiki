@@ -24,7 +24,16 @@ const attrLabel = SLUG_TO_ATTR_LABEL[attrSlug] || attrSlug;
   <nav class="breadcrumb"><a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/skills/`}>技能列表</a><span class="sep">/</span><span>{attrLabel}</span></nav>
   <h1>{attrLabel}</h1>
   <p class="subtitle">共 {skillList.length} 个技能</p>
-  <div class="item-grid">
-    {skillList.map(s => (<a href={`${base}/vanilla/skills/${s._sanitizedId}/`}>{s.name || s.id}</a>))}
+  <div class="entity-grid">
+    {skillList.map(s => (
+      <a href={`${base}/vanilla/skills/${s._sanitizedId}/`} class="entity-item">
+        <span class="entity-name">{s.name || s.id}</span>
+        <span class="entity-meta">
+          {s.levels && s.levels.length > 0 ? `最高 ${s.max_level} 级` : '单级被动'}
+          {s.description ? ` · ${s.description.replace(/\[[A-F0-9]{6}\]|\[\-\]/g, '').slice(0, 40)}${s.description.length > 40 ? '…' : ''}` : ''}
+        </span>
+      </a>
+    ))}
   </div>
+
 </Layout>
