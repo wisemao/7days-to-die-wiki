@@ -1,12 +1,10 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
-import { loadData } from '../../../../utils/data-loader';
+import { loadData, STATION_LABELS } from '../../../../utils/data-loader';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const STATION_LABELS = { backpack: '背包合成', workbench: '工作台', forge: '熔炉', campfire: '营火', chemistry: '化学台', concrete: '混凝土搅拌机' };
-
 export function getStaticPaths() {
-  const RAW = { workbench: '工作台', forge: '熔炉', campfire: '营火', chemistry: '化学台', concrete: '混凝土搅拌机' };
+  const RAW = Object.fromEntries(Object.entries(STATION_LABELS).filter(([k]) => k !== 'backpack'));
   const { recipes } = loadData();
   const groups = {};
   for (const r of recipes) {

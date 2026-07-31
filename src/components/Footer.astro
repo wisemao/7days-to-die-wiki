@@ -1,0 +1,62 @@
+---
+const { base } = Astro.props;
+const buildDate = new Date().toISOString().slice(0, 10);
+---
+
+<footer>
+  <div class="footer-links">
+    <a href={base}>首页</a>
+    <a href={`${base}/vanilla/items/`}>物品</a>
+    <a href={`${base}/vanilla/recipes/`}>配方</a>
+    <a href={`${base}/vanilla/skills/`}>技能</a>
+    <a href={`${base}/vanilla/zombies/`}>僵尸</a>
+    <a href="https://github.com/mllllwb/7days-to-die-wiki">GitHub</a>
+  </div>
+  <p class="footer-meta">
+    基于 Astro 构建 · 数据来自 7 Days to Die 游戏文件 ·
+    <span class="footer-badge">v1.0</span> ·
+    更新于 {buildDate}
+  </p>
+</footer>
+
+<style>
+  footer {
+    text-align: center;
+    padding: 28px 20px;
+    color: var(--c-text-3);
+    font-size: 13px;
+    border-top: 1px solid var(--c-border);
+    background: var(--c-surface);
+    line-height: 1.8;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+  }
+  .footer-links a {
+    color: var(--c-text-2);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .footer-links a:hover {
+    color: var(--c-blood);
+    text-decoration: underline;
+  }
+  .footer-meta {
+    font-size: 12px;
+    color: var(--c-text-3);
+  }
+  .footer-badge {
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    background: var(--c-blood-light);
+    color: var(--c-blood);
+    border: 1px solid var(--c-blood);
+  }
+</style>

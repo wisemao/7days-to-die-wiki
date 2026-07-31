@@ -7,12 +7,19 @@
     "dev": "astro dev",
     "build": "astro build && npx --yes pagefind --site dist",
     "preview": "astro preview",
-    "import": "node scripts/import/import-all.js"
+    "import": "node scripts/import/import-all.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "npx --yes rimraf dist .astro",
+    "validate": "node scripts/validate-data.js",
+    "rebuild": "npm run clean && npm run build"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.10",
     "@astrojs/mdx": "^7.0.5",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^7.1.5"
+    "@types/js-yaml": "^4.0.9",
+    "astro": "^7.1.5",
+    "typescript": "^6.0.3"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",

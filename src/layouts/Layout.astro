@@ -1,4 +1,8 @@
 ﻿---
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+import Sidebar from '../components/Sidebar.astro';
+
 export interface Props {
   title: string;
   description?: string;
@@ -12,10 +16,43 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{title} | 七日杀 Wiki</title>
+  <title>{title.includes('七日杀 Wiki') ? title : `${title} | 七日杀 Wiki`}</title>
   <meta name="description" content={description || title} />
+  <link rel="canonical" href={`https://wisemao.github.io${Astro.url.pathname.replace(/\/$/, '')}/`} />
   <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
-  <script type="module" src={`${base}/pagefind/pagefind-ui.js`}></script>
+  <meta property="og:title" content={title.includes('七日杀 Wiki') ? title : `${title} | 七日杀 Wiki`} />
+  <meta property="og:description" content={description || `${title} - 7 Days to Die 中文维基`} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={`https://wisemao.github.io${Astro.url.pathname}`} />
+  <meta property="og:site_name" content="七日杀 Wiki" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title.includes('七日杀 Wiki') ? title : `${title} | 七日杀 Wiki`} />
+  <meta name="twitter:description" content={description || `${title} - 7 Days to Die 中文维基`} />
+  <link rel="stylesheet" href={`${base}/pagefind/pagefind-component-ui.css`} />
+  <script is:inline type="module" src={`${base}/pagefind/pagefind-component-ui.js`} async></script>
+  <script is:inline>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (theme === 'dark' || (!theme && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+  <script is:inline type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": title.includes('七日杀 Wiki') ? title : `${title} | 七日杀 Wiki`,
+    "description": description || title,
+    "url": `https://wisemao.github.io${Astro.url.pathname.replace(/\/$/, '')}/`,
+    "inLanguage": "zh-CN",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "七日杀 Wiki",
+      "url": "https://wisemao.github.io/7days-to-die-wiki/"
+    }
+  })} />
   <style is:global>
     /* ═══════════════════════════════════════════
        🎨 7 Days to Die Wiki — Design System
@@ -110,92 +147,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     .skip-link:focus { top: 8px; }
 
     /* ═══════════════════════════════════════════
-       TOP NAVIGATION
-       ═══════════════════════════════════════════ */
-
-    nav.top {
-      background: linear-gradient(135deg, var(--c-blood) 0%, var(--c-blood-dark) 100%);
-      padding: 0 16px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: var(--nav-h);
-      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-    }
-    nav.top a {
-      color: rgba(255,255,255,0.88);
-      padding: 6px 14px;
-      border-radius: var(--radius-sm);
-      font-size: 14px;
-      font-weight: 500;
-      transition: all 0.15s;
-      white-space: nowrap;
-      text-decoration: none !important;
-    }
-    nav.top a:hover { background: rgba(255,255,255,0.14); color: #fff; }
-    nav.top a:active { background: rgba(255,255,255,0.22); }
-    nav.top a.active { background: rgba(0,0,0,0.2); color: #fff; font-weight: 600; }
-    nav.top .brand {
-      font-size: 17px;
-      font-weight: 800;
-      margin-right: 6px;
-      letter-spacing: 0.5px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    nav.top .brand::before {
-      content: '';
-      display: inline-block;
-      width: 22px;
-      height: 22px;
-      background: rgba(255,255,255,0.2);
-      border-radius: 4px;
-      flex-shrink: 0;
-    }
-    nav.top .nav-toggle {
-      display: none;
-      background: none; border: none; color: #fff;
-      font-size: 22px; cursor: pointer;
-      padding: 4px 8px; border-radius: var(--radius-sm);
-      transition: background 0.15s;
-    }
-    nav.top .nav-toggle:hover { background: rgba(255,255,255,0.14); }
-
-    /* ─── Dark Mode Toggle ─── */
-    .theme-toggle {
-      background: none; border: none; color: rgba(255,255,255,0.8);
-      font-size: 18px; cursor: pointer;
-      padding: 4px 10px; border-radius: var(--radius-sm);
-      transition: all 0.15s; margin-left: auto;
-      display: flex; align-items: center; gap: 4px;
-    }
-    .theme-toggle:hover { background: rgba(255,255,255,0.14); color: #fff; }
-    .theme-toggle .label { font-size: 12px; font-weight: 500; }
-
-    /* ─── Search ─── */
-    #search {
-      flex: 1;
-      min-width: 120px;
-      max-width: 240px;
-      margin: 0 8px;
-    }
-    pagefind-ui {
-      --pagefind-ui-scale: 0.72;
-      --pagefind-ui-primary: #fff;
-      --pagefind-ui-text: #fff;
-      --pagefind-ui-background: rgba(255,255,255,0.14);
-      --pagefind-ui-border: rgba(255,255,255,0.22);
-      --pagefind-ui-font: inherit;
-      --pagefind-ui-border-radius: 6px;
-      --pagefind-ui-image-size: 0;
-      --pagefind-ui-clear-button-size: 0;
-    }
-
-    /* ═══════════════════════════════════════════
        LAYOUT
        ═══════════════════════════════════════════ */
 
@@ -206,40 +157,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       min-height: calc(100vh - var(--nav-h) - 60px);
     }
 
-    /* ─── Sidebar ─── */
-    aside {
-      width: var(--sidebar-w);
-      flex-shrink: 0;
-      padding: 28px 0 28px 16px;
-      display: none;
-      border-right: 1px solid var(--c-border-light);
-    }
-    @media (min-width: 900px) { aside { display: block; } }
-    aside h3 {
-      font-size: 11px;
-      color: var(--c-text-3);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      margin: 24px 0 8px 12px;
-      font-weight: 600;
-    }
-    aside h3:first-child { margin-top: 0; }
-    aside a {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      font-size: 13px;
-      color: var(--c-text);
-      border-radius: var(--radius-sm);
-      transition: all 0.12s;
-      text-decoration: none !important;
-    }
-    aside a:hover { background: var(--c-border-light); color: var(--c-blood); }
-    aside a .emoji { font-size: 14px; flex-shrink: 0; }
-
-    /* ─── Mobile sidebar (toggled) ─── */
-    aside.show { display: block; position: fixed; top: var(--nav-h); left: 0; bottom: 0; width: 240px; z-index: 99; background: var(--c-bg); border-right: 1px solid var(--c-border); box-shadow: var(--shadow-lg); overflow-y: auto; }
+    /* ─── Sidebar Overlay (bridges Nav toggle + Sidebar) ─── */
     .sidebar-overlay { display: none; }
     .sidebar-overlay.show { display: block; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 98; }
 
@@ -402,6 +320,16 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       border-radius: var(--radius-sm);
       overflow: hidden;
     }
+    caption {
+      /* Visually hidden but accessible to screen readers */
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
     th {
       background: var(--c-blood);
       color: #fff;
@@ -419,27 +347,6 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     /* ─── Lists ─── */
     ul { margin: 10px 0 10px 24px; }
     li { margin-bottom: 5px; line-height: 1.6; }
-
-    /* ─── Footer ─── */
-    footer {
-      text-align: center;
-      padding: 28px 20px;
-      color: var(--c-text-3);
-      font-size: 13px;
-      border-top: 1px solid var(--c-border);
-      background: var(--c-surface);
-      line-height: 1.8;
-    }
-    footer .footer-links { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 4px; }
-    footer .footer-links a { color: var(--c-text-2); text-decoration: none; transition: color 0.15s; }
-    footer .footer-links a:hover { color: var(--c-blood); text-decoration: underline; }
-    footer .footer-meta { font-size: 12px; color: var(--c-text-3); }
-    footer .footer-badge {
-      display: inline-block; padding: 1px 10px; border-radius: 10px;
-      font-size: 11px; font-weight: 500;
-      background: var(--c-blood-light); color: var(--c-blood);
-      border: 1px solid var(--c-blood);
-    }
 
     /* ─── Collapsible ─── */
     .collapsible {
@@ -519,17 +426,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
        RESPONSIVE
        ═══════════════════════════════════════════ */
 
-    @media (max-width: 899px) {
-      nav.top .nav-toggle { display: block; }
-      nav.top .nav-links { display: none; }
-      #search { max-width: 180px; }
-    }
     @media (max-width: 599px) {
-      nav.top { gap: 2px; padding: 0 10px; }
-      nav.top .brand { font-size: 15px; }
-      nav.top .brand::before { width: 18px; height: 18px; }
-      .theme-toggle .label { display: none; }
-      #search { min-width: 80px; max-width: 120px; }
       h1 { font-size: 1.5rem; }
       .card-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
       .item-grid { grid-template-columns: 1fr; }
@@ -582,34 +479,12 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 <body>
   <a href="#main-content" class="skip-link">跳转到主要内容</a>
 
-  <nav class="top">
-    <button class="nav-toggle" id="navToggle" aria-label="切换菜单">☰</button>
-    <a href={base} class="brand">七日杀 Wiki</a>
-    <div class="nav-links">
-      <a href={`${base}/vanilla/items/`}>物品</a>
-      <a href={`${base}/vanilla/recipes/`}>配方</a>
-      <a href={`${base}/vanilla/skills/`}>技能</a>
-      <a href={`${base}/vanilla/zombies/`}>僵尸</a>
-    </div>
-    <pagefind-ui show-images="false" show-empty-query="false" base-url="/7days-to-die-wiki/"></pagefind-ui>
-    <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
-      <span id="themeIcon">☀️</span>
-      <span class="label" id="themeLabel">主题</span>
-    </button>
-  </nav>
+  <Nav base={base} />
 
   <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
   <div class="wrapper">
-    <aside id="sidebar" role="navigation" aria-label="侧栏导航">
-      <h3>导航</h3>
-      <a href={base}><span class="emoji" aria-hidden="true">🏠</span> 首页</a>
-      <h3>原版数据</h3>
-      <a href={`${base}/vanilla/items/`}><span class="emoji" aria-hidden="true">🛠️</span> 物品</a>
-      <a href={`${base}/vanilla/recipes/`}><span class="emoji" aria-hidden="true">📖</span> 配方</a>
-      <a href={`${base}/vanilla/skills/`}><span class="emoji" aria-hidden="true">⚡</span> 技能</a>
-      <a href={`${base}/vanilla/zombies/`}><span class="emoji" aria-hidden="true">🧟</span> 僵尸</a>
-    </aside>
+    <Sidebar base={base} />
     <div class="container" data-pagefind-body id="main-content">
       <slot />
     </div>
@@ -617,31 +492,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
   <button class="back-to-top" id="backToTop" aria-label="返回顶部">↑</button>
 
-  <footer>
-    <div class="footer-links">
-      <a href={base}>首页</a>
-      <a href={`${base}/vanilla/items/`}>物品</a>
-      <a href={`${base}/vanilla/recipes/`}>配方</a>
-      <a href={`${base}/vanilla/skills/`}>技能</a>
-      <a href={`${base}/vanilla/zombies/`}>僵尸</a>
-      <a href="https://github.com/mllllwb/7days-to-die-wiki">GitHub</a>
-    </div>
-    <p class="footer-meta">
-      基于 Astro 构建 · 数据来自 7 Days to Die 游戏文件 ·
-      <span class="footer-badge">v1.0</span>
-    </p>
-  </footer>
+  <Footer base={base} />
+
+  <pagefind-modal></pagefind-modal>
 
   <script>
   window.addEventListener('DOMContentLoaded', () => {
     const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-    /* ─── Pagefind Component UI auto-initializes via <pagefind-ui> ─── */
+    /* ─── Pagefind Component UI auto-initializes via <pagefind-modal-trigger> ─── */
 
     /* ─── Collapsible Sections ─── */
-    document.querySelectorAll('.collapsible').forEach((btn, i) => {
-      const target = btn.nextElementSibling;
-      if (!target) return;
+    document.querySelectorAll<HTMLElement>('.collapsible').forEach((btn, i) => {
+      const target = btn.nextElementSibling!;
       target.classList.add('collapse-content');
       // Accessibility: set up role, tabindex, aria attributes
       btn.setAttribute('role', 'button');
@@ -667,8 +530,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
     /* ─── Mobile Nav Toggle ─── */
     const navToggle = document.getElementById('navToggle');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebarOverlay');
+    const sidebar = document.getElementById('sidebar')!;
+    const overlay = document.getElementById('sidebarOverlay')!;
     if (navToggle && sidebar && overlay) {
       function closeSidebar() {
         sidebar.classList.remove('show');
@@ -680,7 +543,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       });
       overlay.addEventListener('click', closeSidebar);
       // Close on escape
-      document.addEventListener('keydown', (e) => {
+      document.addEventListener('keydown', (e: KeyboardEvent) => {
         if (e.key === 'Escape') closeSidebar();
       });
     }
@@ -716,7 +579,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         updateThemeUI(next);
       });
 
-      function updateThemeUI(dark) {
+      function updateThemeUI(dark: boolean) {
         if (themeIcon) themeIcon.textContent = dark ? '🌙' : '☀️';
         if (themeLabel) themeLabel.textContent = dark ? '亮色' : '深色';
       }
@@ -728,10 +591,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       const href = a.getAttribute('href') || '';
       // Remove leading base from href for comparison
       const cleanHref = href.replace(base, '') || '/';
+      let isActive = false;
       if (currentPath.startsWith(cleanHref) && cleanHref !== '/') {
-        a.classList.add('active');
+        isActive = true;
       } else if (currentPath === '/' && cleanHref === '/') {
+        isActive = true;
+      }
+      if (isActive) {
         a.classList.add('active');
+        a.setAttribute('aria-current', 'page');
       }
     });
   });

@@ -21,10 +21,16 @@ npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 │   │   └── zombies.yaml   # 僵尸数据
 │   └── crafting-skills.json # 技能杂志数据
 ├── public/
-│   └── images/items/      # 物品图标 PNG
+│   ├── robots.txt         # 爬虫规则
+│   ├── favicon.svg        # 站点图标
+│   └── images/items/      # 物品图标 PNG（优化后 ~6.5MB）
 ├── src/                   # Astro 源文件
+│   ├── components/
+│   │   ├── Nav.astro      # 顶栏导航（含搜索弹窗触发）
+│   │   ├── Sidebar.astro  # 侧栏导航
+│   │   └── Footer.astro   # 页脚（含构建日期）
 │   ├── layouts/
-│   │   └── Layout.astro   # 全局布局（含设计系统）
+│   │   └── Layout.astro   # 全局布局（设计系统 + SEO 元数据）
 │   ├── pages/             # 页面路由
 │   │   ├── index.astro    # 首页
 │   │   ├── 404.astro      # 404 页面
@@ -35,14 +41,17 @@ npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 │   │       ├── zombies/   # 僵尸
 │   │       └── book-series/ # 技能书系列
 │   └── utils/
-│       └── data-loader.js # YAML 数据加载器
-├── scripts/               # 游戏数据导入脚本
+│       └── data-loader.ts # YAML 数据加载器（TypeScript 类型化）
+├── scripts/
+│   ├── import/            # 游戏数据导入脚本
+│   └── validate-data.js   # 数据质量验证脚本
+├── tsconfig.json          # TypeScript 配置
 └── package.json
 ```
 
 ## 数据贡献
 
-编辑 `data/vanilla/` 下的 YAML 文件后运行 `npm run generate` 即可更新页面：
+编辑 `data/vanilla/` 下的 YAML 文件后 Astro 会自动重新构建页面：
 
 ```yaml
 # data/vanilla/items.yaml 示例
@@ -59,13 +68,21 @@ items:
 
 ### 图标
 
-物品图标放在 `docs/.vitepress/public/images/items/` 目录，文件名需与物品 `id` 或 `icon` 字段匹配（PNG 格式）。
+物品图标放在 `public/images/items/` 目录，文件名需与物品 `id` 或 `icon` 字段匹配（PNG 格式）。
+图标会自动优化匹配（如 `modGunBarrelExtenderSchematic` 会回退查找 `modGunBarrelExtender.png`）。
 
-## 自动生成
+## 常用命令
 
-- `npm run generate` — 从 YAML 生成 Markdown 页面 + 侧边栏
-- `npm run dev` — 本地预览 Wiki
-- `npm run build` — 构建部署到 GitHub Pages
+| 命令 | 用途 |
+|------|------|
+| `npm run dev` | 本地开发服务器（自动刷新） |
+| `npm run build` | 构建静态站点（含 Pagefind 搜索索引） |
+| `npm run preview` | 预览构建结果 |
+| `npm run typecheck` | TypeScript 类型检查（`tsc --noEmit`） |
+| `npm run validate` | 数据质量验证（退出码 0=通过/1=警告/2=错误） |
+| `npm run clean` | 清理 dist/.astro 缓存 |
+| `npm run rebuild` | 清空后完整重建 |
+| `npm run import` | 从游戏 XML 导入数据 |
 
 ## 从游戏重新导入数据
 
@@ -86,16 +103,20 @@ node scripts/import/import-all.js --game-path "C:/Program Files (x86)/Steam/stea
 | `entityclasses.xml` | `data/vanilla/zombies.yaml` | 僵尸属性、掉落、弱点 |
 | `localization.txt/csv` | — | 中文名称本地化 |
 
-导入后运行 `npm run generate` 重新生成 Wiki 页面。
+导入后运行 `npm run validate` 检查数据质量，再 `npm run build` 重新生成页面。
 
 ### 已知导入限制
 
 - 部分物品分类通过 tags 推断，可能不准确
 - 僵尸掉落引用 loot container 名称而非直接物品 ID，需二次映射
 - 技能等级效果若有本地化 key 会自动解析为中文，否则保留原始 key
+- 无中文名的物品会自动生成可读名称（`generateItemName`）
 
 ## 技术栈
 
-- [VitePress](https://vitepress.dev/) — 静态站点生成器
+- [Astro](https://astro.build/) — 静态站点生成器（1811 页面，构建 ~3s）
+- [Pagefind](https://pagefind.app/) — 全文搜索（Component UI 弹窗，Ctrl+K 快捷）
+- [TypeScript](https://www.typescriptlang.org/) — 数据层类型化
 - [js-yaml](https://github.com/nodeca/js-yaml) — YAML 解析
-- 自定义模板引擎 (scripts/parsers/renderer.js)
+- [Sharp](https://sharp.pixelplumbing.com/) — 图标 PNG 优化
+- GitHub Actions — 自动部署（typecheck + validate + build 流水线）

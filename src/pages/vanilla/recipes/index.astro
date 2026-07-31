@@ -1,23 +1,18 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData } from '../../../utils/data-loader';
+import { loadData, STATION_LABELS } from '../../../utils/data-loader';
 const { recipes } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const STATION_MAP = [
-  ['backpack', '背包合成'],
-  ['workbench', '工作台'],
-  ['forge', '熔炉'],
-  ['campfire', '营火'],
-  ['chemistry', '化学台'],
-  ['concrete', '混凝土搅拌机'],
-];
 function findSlug(raw) {
   if (!raw) return 'backpack';
-  return STATION_MAP.find(([,label]) => label === raw)?.[0] || 'backpack';
+  for (const [slug, label] of Object.entries(STATION_LABELS)) {
+    if (label === raw) return slug;
+  }
+  return 'backpack';
 }
 function findLabel(slug) {
-  return STATION_MAP.find(([s]) => s === slug)?.[1] || slug;
+  return STATION_LABELS[slug] || slug;
 }
 const stations = {};
 for (const r of recipes) {

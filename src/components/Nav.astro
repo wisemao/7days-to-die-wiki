@@ -1,0 +1,125 @@
+---
+const { base } = Astro.props;
+---
+
+<nav class="top">
+  <button class="nav-toggle" id="navToggle" aria-label="切换菜单">☰</button>
+  <a href={base} class="brand">七日杀 Wiki</a>
+  <div class="nav-links">
+    <a href={`${base}/vanilla/items/`}>物品</a>
+    <a href={`${base}/vanilla/recipes/`}>配方</a>
+    <a href={`${base}/vanilla/skills/`}>技能</a>
+    <a href={`${base}/vanilla/zombies/`}>僵尸</a>
+  </div>
+  <pagefind-modal-trigger class="search-trigger"></pagefind-modal-trigger>
+  <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
+    <span id="themeIcon">☀️</span>
+    <span class="label" id="themeLabel">主题</span>
+  </button>
+</nav>
+
+<style>
+  .top {
+    background: linear-gradient(135deg, var(--c-blood) 0%, var(--c-blood-dark) 100%);
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--nav-h);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  }
+  .top a {
+    color: rgba(255,255,255,0.88);
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.15s;
+    white-space: nowrap;
+    text-decoration: none !important;
+  }
+  .top a:hover { background: rgba(255,255,255,0.14); color: #fff; }
+  .top a:active { background: rgba(255,255,255,0.22); }
+  .top a.active { background: rgba(0,0,0,0.2); color: #fff; font-weight: 600; }
+  .brand {
+    font-size: 17px;
+    font-weight: 800;
+    margin-right: 6px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .brand::before {
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .nav-toggle {
+    display: none;
+    background: none; border: none; color: #fff;
+    font-size: 22px; cursor: pointer;
+    padding: 4px 8px; border-radius: var(--radius-sm);
+    transition: background 0.15s;
+  }
+  .nav-toggle:hover { background: rgba(255,255,255,0.14); }
+
+  .theme-toggle {
+    background: none; border: none; color: rgba(255,255,255,0.8);
+    font-size: 18px; cursor: pointer;
+    padding: 4px 10px; border-radius: var(--radius-sm);
+    transition: all 0.15s; margin-left: auto;
+    display: flex; align-items: center; gap: 4px;
+  }
+  .theme-toggle:hover { background: rgba(255,255,255,0.14); color: #fff; }
+  .theme-toggle .label { font-size: 12px; font-weight: 500; }
+
+  .search-trigger {
+    flex: 1;
+    min-width: 120px;
+    max-width: 240px;
+    margin: 0 8px;
+  }
+  .search-trigger::part(trigger-btn) {
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 6px;
+    color: rgba(255,255,255,0.88);
+    padding: 4px 12px;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    transition: background 0.15s;
+  }
+  .search-trigger::part(trigger-btn):hover {
+    background: rgba(255,255,255,0.22);
+  }
+  .search-trigger::part(trigger-text) {
+    flex: 1;
+    text-align: left;
+  }
+
+  @media (max-width: 899px) {
+    .nav-toggle { display: block; }
+    .nav-links { display: none; }
+    .search-trigger { max-width: 180px; }
+  }
+  @media (max-width: 599px) {
+    .top { gap: 2px; padding: 0 10px; }
+    .brand { font-size: 15px; }
+    .brand::before { width: 18px; height: 18px; }
+    .theme-toggle .label { display: none; }
+    .search-trigger { min-width: 80px; max-width: 140px; }
+  }
+</style>

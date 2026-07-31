@@ -6,7 +6,13 @@ export default defineConfig({
   site: 'https://wisemao.github.io',
   base: '/7days-to-die-wiki',
   output: 'static',
-  integrations: [mdx(), sitemap()],
-  vite: {
+  trailingSlash: 'always',
+  compressHTML: true,
+  build: {
+    assets: 'assets',
   },
+  integrations: [
+    mdx(),
+    sitemap(),
+  ],
 });

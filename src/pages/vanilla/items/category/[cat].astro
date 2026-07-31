@@ -53,6 +53,52 @@ const bookSeries = catKey === 'book' ? (() => {
 
 const schematicCount = schematicSub ? schematicSub.reduce((s, [,v]) => s + v.length, 0) : 0;
 const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length, 0) : 0;
+
+// ─── Sub-grouping for non-book categories ───
+// armor: by equipment slot; melee_weapon/ranged_weapon: by weapon type
+const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' ? (() => {
+  const defs = {
+    armor: [
+      ['头盔/帽子', /Helmet|Hat$|Head/],
+      ['服装', /Outfit|Shirt|Coat|Jacket|Suit|Cloth/i],
+      ['手套', /Gloves|Hands/],
+      ['靴子/鞋子', /Boots|Feet|Shoes/],
+      ['其他', null],
+    ],
+    melee_weapon: [
+      ['刀剑', /Blade|Knife|Machete/],
+      ['棍棒', /Club|Baton/],
+      ['长矛', /Spear/],
+      ['大锤', /Sledge/],
+      ['拳套', /Knuckles/],
+      ['其他', null],
+    ],
+    ranged_weapon: [
+      ['手枪', /Handgun|Pistol|Magnum|Revolver/],
+      ['霰弹枪', /Shotgun|Boomstick/],
+      ['步枪/机枪', /Rifle|Sniper|AK47|M60|MachineGun|MG/],
+      ['弓弩', /Bow|Crossbow/],
+      ['机器人', /JunkTurret|Robotic|Bot/],
+      ['爆炸物', /Rocket|Explosive|Launcher/],
+      ['其他', null],
+    ],
+  };
+  const def = defs[catKey];
+  const groups = def.map(([label]) => [label, []]);
+  for (const item of catItems) {
+    let placed = false;
+    for (const [label, re] of def) {
+      if (re && re.test(item.id)) {
+        groups.find(g => g[0] === label)[1].push(item);
+        placed = true;
+        break;
+      }
+    }
+    if (!placed) groups.find(g => g[0] === '其他')[1].push(item);
+  }
+  return groups.filter(([, v]) => v.length > 0);
+})() : null;
+const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0) : 0;
 ---
 
 <Layout title={catLabel} description={`${catLabel} - ${catItems.length} 个物品`}>
@@ -117,15 +163,46 @@ const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length
             <span class="section-count">{bookSeriesCount} 卷</span>
           </h2>
           <div class="card-grid">
-            {bookSeries.map(([name, list]) => (
-              <a href={`${base}/vanilla/book-series/${toSlug(name)}/`} class="card">
-                <span class="num">{list.length}</span>
-                <span class="lbl">{name}</span>
-              </a>
-            ))}
+            {bookSeries
+              .filter(([, list]) => list.length > 1)
+              .map(([name, list]) => (
+                <a href={`${base}/vanilla/book-series/${toSlug(name)}/`} class="card">
+                  <span class="num">{list.length}</span>
+                  <span class="lbl">{name}</span>
+                </a>
+              ))}
           </div>
+          {(() => {
+            const singles = bookSeries.filter(([, list]) => list.length === 1).flatMap(([, list]) => list);
+            if (singles.length === 0) return null;
+            return (
+              <div class="item-grid" style="margin-top:8px;">
+                {singles.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
+              </div>
+            );
+          })()}
         </section>
       )}
+    </div>
+  ) : subGroups ? (
+    <div class="book-layout">
+      <div class="card-grid">
+        {subGroups.map(([label, list]) => (
+          <a href={`#${toSlug(label)}`} class="card">
+            <span class="num">{list.length}</span>
+            <span class="lbl">{label}</span>
+          </a>
+        ))}
+      </div>
+      {subGroups.map(([label, list]) => (
+        <section id={toSlug(label)} class="book-section sub-section" style="scroll-margin-top:72px;">
+          <h2 class="collapsible section-head">
+            <span>{label}</span>
+            <span class="section-count">{list.length} 项</span>
+          </h2>
+          <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+        </section>
+      ))}
     </div>
   ) : (
     <div class="item-grid">

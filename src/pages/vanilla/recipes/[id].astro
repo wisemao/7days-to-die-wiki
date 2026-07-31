@@ -6,8 +6,9 @@ export function getStaticPaths() {
   return recipes.map(r => ({ params: { id: r._sanitizedId }, props: { recipe: r, itemMap } }));
 }
 const { recipe, itemMap } = Astro.props;
+const { resolveItemName } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const resolveName = (id) => itemMap.get(id)?.name || id;
+const resolveName = (id) => resolveItemName(id);
 const hasRecipe = recipe.recipe && recipe.recipe.length > 0;
 const hasScrap = recipe.scrappable_into && recipe.scrappable_into.length > 0;
 const craftsItem = itemMap.get(recipe.id);
@@ -23,12 +24,58 @@ const craftsItem = itemMap.get(recipe.id);
 
   {hasRecipe && (<>
     <h2>配方材料</h2>
-    <ul>{recipe.recipe.filter(m => m.count > 0).map(m => <li><a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`}>{resolveName(m.item_id)}</a> x{m.count}</li>)}</ul>
+    <div class="recipe-mats">
+      {recipe.recipe.filter(m => m.count > 0).map(m => (
+        <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
+          <span class="mat-name">{resolveName(m.item_id)}</span>
+          <span class="mat-count">×{m.count}</span>
+        </a>
+      ))}
+    </div>
   </>)}
   {!hasRecipe && !hasScrap && <blockquote>此物品无法直接合成，需要从游戏中获取</blockquote>}
 
   {hasScrap && (<>
     <h2>分解获得</h2>
-    <ul>{recipe.scrappable_into.map(s => <li><a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`}>{resolveName(s.item_id)}</a> x{s.count}</li>)}</ul>
+    <div class="recipe-mats">
+      {recipe.scrappable_into.map(s => (
+        <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
+          <span class="mat-name">{resolveName(s.item_id)}</span>
+          <span class="mat-count">×{s.count}</span>
+        </a>
+      ))}
+    </div>
   </>)}
+
+  <style>
+    .recipe-mats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 16px;
+    }
+    .mat-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      transition: all 0.15s;
+      text-decoration: none !important;
+    }
+    .mat-chip:hover {
+      border-color: var(--c-blood);
+      background: var(--c-blood-light);
+      transform: translateY(-1px);
+    }
+    .mat-name { color: var(--c-text); }
+    .mat-count {
+      font-weight: 700;
+      color: var(--c-blood);
+      font-size: 13px;
+    }
+  </style>
 </Layout>

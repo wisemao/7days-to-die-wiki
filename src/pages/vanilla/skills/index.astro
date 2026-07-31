@@ -1,23 +1,17 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData, ATTR_LABELS } from '../../../utils/data-loader';
+import { loadData, ATTR_LABELS, SLUG_TO_ATTR_LABEL } from '../../../utils/data-loader';
 const { skills } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const ATTR_SLUG = [
-  ['strength', '力量'],
-  ['fortitude', '强壮'],
-  ['perception', '感知'],
-  ['agility', '敏捷'],
-  ['intellect', '智力'],
-  ['general', '通用'],
-];
 function findAttrSlug(key) {
-  const e = ATTR_SLUG.find(([,label]) => label === (ATTR_LABELS[key] || key));
-  return e ? e[0] : 'general';
+  for (const [slug, label] of Object.entries(SLUG_TO_ATTR_LABEL)) {
+    if (label === (ATTR_LABELS[key] || key)) return slug;
+  }
+  return 'general';
 }
 function findAttrLabel(slug) {
-  return ATTR_SLUG.find(([s]) => s === slug)?.[1] || slug;
+  return SLUG_TO_ATTR_LABEL[slug] || slug;
 }
 const cats = {};
 for (const s of skills) {

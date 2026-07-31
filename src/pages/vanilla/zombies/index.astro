@@ -1,18 +1,13 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData, ZOMBIE_CATEGORY_LABELS } from '../../../utils/data-loader';
+import { loadData, ZOMBIE_TYPE_LABELS } from '../../../utils/data-loader';
 const { zombies } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Build category slugs from ZOMBIE_CATEGORY_LABELS dynamically
-const toSlug = (label) => {
-  const map = { '人形': 'humanoid', '动物': 'animal', '特殊': 'special' };
-  return map[label] || 'other';
-};
 const cats = {};
 for (const z of zombies) {
-  const label = ZOMBIE_CATEGORY_LABELS[z.category] || z.category || '其他';
-  const slug = toSlug(label);
+  const label = ZOMBIE_TYPE_LABELS[z.category] || '其他';
+  const slug = ZOMBIE_TYPE_LABELS[z.category] ? z.category : 'other';
   if (!cats[slug]) cats[slug] = { slug, label, count: 0 };
   cats[slug].count++;
 }

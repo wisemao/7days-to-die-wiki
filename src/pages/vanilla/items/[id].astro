@@ -2,6 +2,7 @@
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
 import { readFileSync, existsSync } from 'fs';
+import { join } from 'path';
 
 // Load crafting skills for skill magazine items
 let craftingSkills = {};
@@ -20,7 +21,7 @@ export function getStaticPaths() {
 }
 
 const data = loadData();
-const { itemCraftRecipes, itemRecipes, resolveItemName, ITEM_CATEGORY_LABELS } = data;
+const { itemCraftRecipes, itemRecipes, resolveItemName, itemMap, ITEM_CATEGORY_LABELS } = data;
 const { item } = Astro.props;
 const magInfo = craftingSkills.magazines?.[item.id];
 
@@ -34,9 +35,19 @@ const stars = item.tier ? (() => {
   return '★'.repeat(q) + '☆'.repeat(6 - q);
 })() : null;
 
-// Check if item icon exists
-const iconPath = `public/images/items/${item.id}.png`;
-const hasIcon = existsSync(iconPath);
+// Check if item icon exists (try direct ID, then fallback to base name without suffixes)
+const iconBase = item.icon || item.id;
+const iconPath = join(process.cwd(), 'public', 'images', 'items', `${iconBase}.png`);
+let hasIcon = existsSync(iconPath);
+// Fallback: some icons are stored without Schematic/SkillMagazine suffix
+if (!hasIcon) {
+  const fallbackId = iconBase.replace(/Schematic$|SkillMagazine$/, '');
+  if (fallbackId !== iconBase) {
+    const fallbackPath = join(process.cwd(), 'public', 'images', 'items', `${fallbackId}.png`);
+    hasIcon = existsSync(fallbackPath);
+    if (hasIcon) item.__iconId = fallbackId;
+  }
+}
 
 const craftRecipes = (itemCraftRecipes.get(item.id) || []).filter(r => r.recipe && r.recipe.length > 0);
 const usedIn = (itemRecipes.get(item.id) || []);
@@ -84,7 +95,7 @@ function fmtVal(v) {
   <div class="item-header">
     {hasIcon && (
       <div class="icon">
-        <img src={`${base}/images/items/${item.id}.png`} alt={item.name} loading="lazy" />
+        <img src={`${base}/images/items/${item.__iconId || item.id}.png`} alt={item.name} loading="lazy" />
       </div>
     )}
     <div class="meta">
@@ -125,12 +136,20 @@ function fmtVal(v) {
         {' '}耗时 {cr.craft_time} 秒 · 产出 {cr.craft_count} 个
       </p>
       <div class="recipe-mats">
-        {cr.recipe.filter(m => m.count > 0).map(m => (
-          <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
-            <span class="mat-name">{resolveItemName(m.item_id)}</span>
-            <span class="mat-count">×{m.count}</span>
-          </a>
-        ))}
+        {cr.recipe.filter(m => m.count > 0).map(m => {
+          const exists = itemMap.has(m.item_id);
+          return exists ? (
+            <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
+              <span class="mat-name">{resolveItemName(m.item_id)}</span>
+              <span class="mat-count">×{m.count}</span>
+            </a>
+          ) : (
+            <span class="mat-chip">
+              <span class="mat-name">{resolveItemName(m.item_id)}</span>
+              <span class="mat-count">×{m.count}</span>
+            </span>
+          );
+        })}
       </div>
     </div>
   ))}
@@ -139,12 +158,20 @@ function fmtVal(v) {
     <div>
       <h2>分解获得</h2>
       <div class="recipe-mats">
-        {item.scrappable_into.map(s => (
-          <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
-            <span class="mat-name">{resolveItemName(s.item_id)}</span>
-            <span class="mat-count">×{s.count}</span>
-          </a>
-        ))}
+        {item.scrappable_into.map(s => {
+          const exists = itemMap.has(s.item_id);
+          const chip = (
+            <>
+              <span class="mat-name">{resolveItemName(s.item_id)}</span>
+              <span class="mat-count">×{s.count}</span>
+            </>
+          );
+          return exists ? (
+            <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">{chip}</a>
+          ) : (
+            <span class="mat-chip">{chip}</span>
+          );
+        })}
       </div>
     </div>
   )}

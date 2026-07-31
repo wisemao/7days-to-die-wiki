@@ -1,0 +1,61 @@
+---
+const { base } = Astro.props;
+---
+
+<aside id="sidebar" role="navigation" aria-label="侧栏导航">
+  <h3>导航</h3>
+  <a href={base}><span class="emoji" aria-hidden="true">🏠</span> 首页</a>
+  <h3>原版数据</h3>
+  <a href={`${base}/vanilla/items/`}><span class="emoji" aria-hidden="true">🛠️</span> 物品</a>
+  <a href={`${base}/vanilla/recipes/`}><span class="emoji" aria-hidden="true">📖</span> 配方</a>
+  <a href={`${base}/vanilla/skills/`}><span class="emoji" aria-hidden="true">⚡</span> 技能</a>
+  <a href={`${base}/vanilla/zombies/`}><span class="emoji" aria-hidden="true">🧟</span> 僵尸</a>
+</aside>
+
+<style>
+  aside {
+    width: var(--sidebar-w);
+    flex-shrink: 0;
+    padding: 28px 0 28px 16px;
+    display: none;
+    border-right: 1px solid var(--c-border-light);
+  }
+  @media (min-width: 900px) { aside { display: block; } }
+  aside h3 {
+    font-size: 11px;
+    color: var(--c-text-3);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 24px 0 8px 12px;
+    font-weight: 600;
+  }
+  aside h3:first-child { margin-top: 0; }
+  aside a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    color: var(--c-text);
+    border-radius: var(--radius-sm);
+    transition: all 0.12s;
+    text-decoration: none !important;
+  }
+  aside a:hover { background: var(--c-border-light); color: var(--c-blood); }
+  aside a .emoji { font-size: 14px; flex-shrink: 0; }
+
+  /* Mobile sidebar (toggled) */
+  aside.show {
+    display: block;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    z-index: 99;
+    background: var(--c-bg);
+    border-right: 1px solid var(--c-border);
+    box-shadow: var(--shadow-lg);
+    overflow-y: auto;
+  }
+</style>
