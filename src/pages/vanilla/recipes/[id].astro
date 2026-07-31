@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
+import { itemIconUrl } from '../../../utils/item-icons';
 export function getStaticPaths() {
   const { recipes, itemMap } = loadData();
   return recipes.map(r => ({ params: { id: r._sanitizedId }, props: { recipe: r, itemMap } }));
@@ -12,6 +13,7 @@ const resolveName = (id) => resolveItemName(id);
 const hasRecipe = recipe.recipe && recipe.recipe.length > 0;
 const hasScrap = recipe.scrappable_into && recipe.scrappable_into.length > 0;
 const craftsItem = itemMap.get(recipe.id);
+const craftsIcon = itemIconUrl({ id: recipe.id, icon: craftsItem?.icon }, base);
 ---
 
 <Layout title={recipe.name} description={`${recipe.name} - 合成配方`}>
@@ -20,17 +22,21 @@ const craftsItem = itemMap.get(recipe.id);
   </nav>
   <h1>{recipe.name}</h1>
   <p><strong>工作站:</strong> {recipe.station || '背包合成'} | <strong>耗时:</strong> {recipe.craft_time || 0}秒 | <strong>产出:</strong> {recipe.craft_count ?? 1}</p>
-  {craftsItem && <p><strong>产出物品:</strong> <a href={`${base}/vanilla/items/${sanitizeId(recipe.id)}/`}>{craftsItem.name}</a></p>}
+  {craftsItem && <p class="output-line"><strong>产出物品:</strong> <a href={`${base}/vanilla/items/${sanitizeId(recipe.id)}/`} class="output-link">{craftsIcon && <img class="mat-icon" src={craftsIcon} alt="" loading="lazy" />}{craftsItem.name}</a></p>}
 
   {hasRecipe && (<>
     <h2>配方材料</h2>
     <div class="recipe-mats">
-      {recipe.recipe.filter(m => m.count > 0).map(m => (
-        <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
-          <span class="mat-name">{resolveName(m.item_id)}</span>
-          <span class="mat-count">×{m.count}</span>
-        </a>
-      ))}
+      {recipe.recipe.filter(m => m.count > 0).map(m => {
+        const icon = itemIconUrl({ id: m.item_id }, base);
+        return (
+          <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
+            {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
+            <span class="mat-name">{resolveName(m.item_id)}</span>
+            <span class="mat-count">×{m.count}</span>
+          </a>
+        );
+      })}
     </div>
   </>)}
   {!hasRecipe && !hasScrap && <blockquote>此物品无法直接合成，需要从游戏中获取</blockquote>}
@@ -38,16 +44,30 @@ const craftsItem = itemMap.get(recipe.id);
   {hasScrap && (<>
     <h2>分解获得</h2>
     <div class="recipe-mats">
-      {recipe.scrappable_into.map(s => (
-        <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
-          <span class="mat-name">{resolveName(s.item_id)}</span>
-          <span class="mat-count">×{s.count}</span>
-        </a>
-      ))}
+      {recipe.scrappable_into.map(s => {
+        const icon = itemIconUrl({ id: s.item_id }, base);
+        return (
+          <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
+            {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
+            <span class="mat-name">{resolveName(s.item_id)}</span>
+            <span class="mat-count">×{s.count}</span>
+          </a>
+        );
+      })}
     </div>
   </>)}
 
   <style>
+    .output-line {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .output-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
     .recipe-mats {
       display: flex;
       flex-wrap: wrap;
@@ -70,6 +90,12 @@ const craftsItem = itemMap.get(recipe.id);
       border-color: var(--c-blood);
       background: var(--c-blood-light);
       transform: translateY(-1px);
+    }
+    .mat-icon {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      flex-shrink: 0;
     }
     .mat-name { color: var(--c-text); }
     .mat-count {

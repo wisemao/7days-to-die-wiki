@@ -3,6 +3,7 @@ import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
 import { readFileSync, existsSync } from 'fs';
 import { join } from 'path';
+import { itemIconUrl } from '../../../utils/item-icons';
 
 // Load crafting skills for skill magazine items
 let craftingSkills = {};
@@ -144,16 +145,18 @@ function fmtVal(v) {
       <div class="recipe-mats">
         {cr.recipe.filter(m => m.count > 0).map(m => {
           const exists = itemMap.has(m.item_id);
+          const icon = itemIconUrl({ id: m.item_id }, base);
+          const chip = (
+            <>
+              {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
+              <span class="mat-name">{resolveItemName(m.item_id)}</span>
+              <span class="mat-count">×{m.count}</span>
+            </>
+          );
           return exists ? (
-            <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
-              <span class="mat-name">{resolveItemName(m.item_id)}</span>
-              <span class="mat-count">×{m.count}</span>
-            </a>
+            <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">{chip}</a>
           ) : (
-            <span class="mat-chip">
-              <span class="mat-name">{resolveItemName(m.item_id)}</span>
-              <span class="mat-count">×{m.count}</span>
-            </span>
+            <span class="mat-chip">{chip}</span>
           );
         })}
       </div>
@@ -166,8 +169,10 @@ function fmtVal(v) {
       <div class="recipe-mats">
         {item.scrappable_into.map(s => {
           const exists = itemMap.has(s.item_id);
+          const icon = itemIconUrl({ id: s.item_id }, base);
           const chip = (
             <>
+              {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
               <span class="mat-name">{resolveItemName(s.item_id)}</span>
               <span class="mat-count">×{s.count}</span>
             </>
@@ -271,6 +276,12 @@ function fmtVal(v) {
       transform: translateY(-1px);
     }
     .mat-name { color: var(--c-text); }
+    .mat-icon {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
     .mat-count {
       font-weight: 700;
       color: var(--c-blood);

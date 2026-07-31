@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, sanitizeId } from '../../../utils/data-loader';
+import { itemIconUrl } from '../../../utils/item-icons';
 export function getStaticPaths() {
   const { skills } = loadData();
   return skills.map(s => ({ params: { id: s._sanitizedId }, props: { skill: s } }));
@@ -34,7 +35,24 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   {hasBooks && (<>
     <h2>关联书籍</h2>
     <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{skill.name} 关联的技能书籍</caption><tr><th scope="col">书籍</th><th scope="col">效果</th></tr>
-      {skill.tied_books.map(b => <tr><td><a href={`${base}/vanilla/items/${sanitizeId(b.book_id)}/`}>{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>)}
+      {skill.tied_books.map(b => {
+        const icon = itemIconUrl({ id: b.book_id }, base);
+        return <tr><td><a href={`${base}/vanilla/items/${sanitizeId(b.book_id)}/`} class="book-link">{icon && <img class="book-icon" src={icon} alt="" loading="lazy" />}{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>;
+      })}
     </table>
   </>)}
 </Layout>
+
+<style>
+  .book-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .book-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+</style>

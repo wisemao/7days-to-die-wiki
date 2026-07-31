@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData } from '../../../utils/data-loader';
+import { itemIconUrl } from '../../../utils/item-icons';
 export function getStaticPaths() {
   const { zombies } = loadData();
   return zombies.map(z => ({ params: { id: z._sanitizedId }, props: { zombie: z } }));
@@ -54,16 +55,18 @@ function fmtExp(e) {
       {zombie.loot.map(l => {
         const link = getItemLink(l.item_id);
         const name = resolveItemName(l.item_id);
-        return <tr><td>{link ? <a href={link}>{name}</a> : name}{l.resolved && <span style="font-size:11px;color:var(--c-text-3);margin-left:6px;">(掉落容器)</span>}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
+        const icon = itemIconUrl({ id: l.item_id }, base);
+        return <tr><td>{link ? <a href={link} class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{name}</a> : <span class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{name}</span>}{l.resolved && <span style="font-size:11px;color:var(--c-text-3);margin-left:6px;">(掉落容器)</span>}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
       })}
     </table>
-    {zombie.loot.some(l => l.resolved) && (
+      {zombie.loot.some(l => l.resolved) && (
       <blockquote>掉落容器内容示例：{(() => {
         const flat = zombie.loot.filter(l => l.resolved).flatMap(l => l.resolved);
         const links = flat.slice(0, 10).map(r => {
           const link = getItemLink(r.item_id);
           const n = resolveItemName(r.item_id);
-          return link ? <a href={link}>{n}</a> : n;
+          const icon = itemIconUrl({ id: r.item_id }, base);
+          return link ? <a href={link} class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{n}</a> : <span class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{n}</span>;
         });
         return <span>{links.map((l, i) => <>{i > 0 && '、'}{l}</>)}</span>;
       })()}</blockquote>
@@ -80,3 +83,18 @@ function fmtExp(e) {
     <p>生物群系: {zombie.spawn.biomes || '-'} | 时间: {zombie.spawn.time || '-'} | 区域: {zombie.spawn.groups || '-'}</p>
   </>)}
 </Layout>
+
+<style>
+  .loot-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    vertical-align: middle;
+  }
+  .loot-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+</style>
