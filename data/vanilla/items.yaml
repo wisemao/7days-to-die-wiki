@@ -5123,7 +5123,7 @@ items:
     icon: resourceClayLump
   - id: questItem
     name: 任务物品
-    category: material
+    category: quest_item
     stack_size: 1
     icon: missingIcon
   - id: resourceLockPick

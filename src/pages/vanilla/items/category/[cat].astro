@@ -56,7 +56,8 @@ const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length
 
 // ─── Sub-grouping for non-book categories ───
 // armor: by equipment slot; melee_weapon/ranged_weapon: by weapon type
-const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' ? (() => {
+// material: by resource type; food: by preparation; medical: by type
+const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' ? (() => {
   const defs = {
     armor: [
       ['头盔/帽子', /Helmet|Hat$|Head/],
@@ -80,6 +81,24 @@ const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 
       ['弓弩', /Bow|Crossbow/],
       ['机器人', /JunkTurret|Robotic|Bot/],
       ['爆炸物', /Rocket|Explosive|Launcher/],
+      ['其他', null],
+    ],
+    material: [
+      ['基础资源', /^resource/],
+      ['武器/工具零件', /Parts$/],
+      ['载具/机械部件', /^bucket|^smallEngine|^carBattery|^solarCell/],
+      ['其他', null],
+    ],
+    food: [
+      ['罐头食品', /^foodCan/],
+      ['农作物/原料', /^foodCrop/],
+      ['烹饪食品', /^food/],
+      ['饮品', /^drink/],
+      ['其他', null],
+    ],
+    medical: [
+      ['治疗用品', /^medical/],
+      ['药品', /^drug/],
       ['其他', null],
     ],
   };
