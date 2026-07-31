@@ -63,6 +63,7 @@ export interface ZombieLoot {
   item_id: string;
   count: number;
   chance?: string;
+  resolved?: { item_id: string; count: string | number }[];
 }
 
 export interface ZombieSpawn {

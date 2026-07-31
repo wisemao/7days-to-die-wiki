@@ -1,0 +1,47 @@
+blocks:
+  - id: electricfencepost
+    name: 电围栏柱
+    category: trap
+    durability: 200
+    power_usage: 5
+    tier: 62
+    extends: electricfencepost
+  - id: dartTrap
+    name: 飞镖陷阱
+    category: trap
+    power_usage: 10
+    ammo: ammoDartIron
+    tier: 220
+    extends: dartTrap
+  - id: bladeTrap
+    name: 刀片陷阱
+    category: trap
+    damage: 20
+    power_usage: 20
+    tier: 444
+    extends: bladeTrap
+  - id: flamethrowerTrap
+    name: 火焰喷射陷阱
+    category: trap
+    power_usage: 10
+    ammo: ammoDartIron
+    tier: 220
+    extends: dartTrap <- flamethrowerTrap
+  - id: trapSpikesWoodDmg0
+    name: 木尖刺陷阱
+    category: trap
+    durability: 100
+    damage: 33
+    tier: 30
+    description: trapSpikesGroupDesc
+    icon: trapSpikesWoodMaster
+    extends: trapSpikesWoodMaster <- trapSpikesWoodDmg0
+  - id: trapSpikesIronDmg0
+    name: 铁尖刺陷阱
+    category: trap
+    durability: 200
+    damage: 33
+    tier: 30
+    description: trapSpikesGroupDesc
+    icon: trapSpikesScrapIronMaster
+    extends: trapSpikesScrapIronMaster <- trapSpikesIronDmg0

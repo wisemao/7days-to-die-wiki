@@ -1034,6 +1034,7 @@ items:
       attacks_per_min: -0.3
       stamina_cost: 15.8
       range: 2
+      water: 10
   - id: meleeHandZombie01
     name: meleeHandZombie01
     category: material
@@ -3594,6 +3595,8 @@ items:
     category: medical
     stack_size: 15
     tier: 10
+    stats:
+      health: 5
   - id: medicalBandage
     name: 绷带
     category: medical
@@ -3604,11 +3607,15 @@ items:
     category: medical
     stack_size: 5
     tier: 15
+    stats:
+      health: 30
   - id: medicalFirstAidKit
     name: 急救包
     category: medical
     stack_size: 5
     tier: 200
+    stats:
+      health: 180
   - id: medicalSplint
     name: 夹板
     category: medical
@@ -3628,208 +3635,349 @@ items:
     category: medical
     stack_size: 10
     tier: 80
+    stats:
+      buff_duration: 12 分钟
   - id: drugPainkillers
     name: 止痛药
     category: medical
     stack_size: 10
     tier: 80
+    stats:
+      buff_duration: 3 分钟
   - id: drugHerbalAntibiotics
     name: 草药抗生素
     category: medical
     stack_size: 10
     tier: 120
+    stats:
+      infection_cure: 10%
   - id: drugAntibiotics
     name: 抗生素
     category: medical
     stack_size: 10
     tier: 240
+    stats:
+      infection_cure: 25%
   - id: drugSteroids
     name: 类固醇
     category: consumable
     stack_size: 1
     tier: 250
+    stats:
+      buff_duration: 12 分钟
   - id: drugRecog
     name: 雷克格
     category: medical
     stack_size: 10
     tier: 250
+    stats:
+      buff_duration: 6 分钟
   - id: drugFortBites
     name: 强健宝
     category: consumable
     stack_size: 1
+    stats:
+      buff_duration: 6 分钟
   - id: foodBurntSmoothie
     name: 黑肺血清
     category: food
     stack_size: 10
     icon: blackLungSerum
     tier: 1000
+    stats:
+      health: 10
+      buff_duration: 5 分钟
   - id: foodOasisSmoothie
     name: 中暑补剂
     category: food
     stack_size: 10
     icon: sunstrokeTonic
     tier: 1000
+    stats:
+      hunger: 10
+      water: 30
+      health: 10
+      buff_duration: 5 分钟
   - id: foodFrostbiteSmoothie
     name: 灼热炖肉
     category: food
     stack_size: 10
     icon: scorcherStew
     tier: 1000
+    stats:
+      hunger: 30
+      water: 20
+      health: 15
+      buff_duration: 5 分钟
   - id: foodAtomicSmoothie
     name: 辐射净化剂
     category: food
     stack_size: 10
     icon: falloutFlush
     tier: 1000
+    stats:
+      health: 10
+      buff_duration: 5 分钟
   - id: drugAtomJunkies
     name: 原子迷
     category: medical
     stack_size: 10
     tier: 100
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugCovertCats
     name: 隐蔽的猫
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugEyeKandy
     name: 寻宝眼药水
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugHackers
     name: 黑客
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugHealthBar
     name: 能量棒
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugJailBreakers
     name: 越狱者
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugNerdTats
     name: 学霸刺青
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugOhShitzDrops
     name: 该死的坠落
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugRockBusters
     name: 岩石克星
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugSkullCrushers
     name: 头骨粉碎者
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: drugSugarButts
     name: 烟蒂糖
     category: consumable
     stack_size: 1
+    stats:
+      hunger: 5
+      buff_duration: 6 分钟
   - id: foodHoney
     name: 一罐蜂蜜
     category: food
     stack_size: 10
     tier: 80
+    stats:
+      hunger: 8
+      health: 3
+      infection_cure: 5%
   - id: foodCanBeef
     name: 大份牛肉罐头
     category: food
     stack_size: 10
     tier: 60
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanChicken
     name: 鸡肉罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanLamb
     name: 羊肉罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanCatfood
     name: 猫粮罐头
     category: food
     stack_size: 1
     tier: 40
+    stats:
+      hunger: 10
+      health: 5
   - id: foodCanDogfood
     name: 狗粮罐头
     category: food
     stack_size: 1
     tier: 40
+    stats:
+      hunger: 10
+      health: 5
   - id: foodCanChili
     name: 辣椒罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanTuna
     name: 金枪鱼罐头
     category: food
     stack_size: 1
     tier: 20
+    stats:
+      hunger: 5
+      health: 3
   - id: foodCanSham
     name: 山威罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanPasta
     name: 通心粉罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanSalmon
     name: 三文鱼罐头
     category: food
     stack_size: 1
+    stats:
+      hunger: 15
+      health: 7
   - id: foodCanMiso
     name: 味增罐头
     category: food
     stack_size: 1
     tier: 55
+    stats:
+      hunger: 10
+      water: 10
+      health: 5
   - id: foodCanPeas
     name: 豌豆罐头
     category: food
     stack_size: 1
     tier: 50
+    stats:
+      hunger: 10
+      water: 5
+      health: 5
   - id: foodCanPears
     name: 梨子罐头
     category: food
     stack_size: 1
     tier: 50
+    stats:
+      hunger: 10
+      water: 5
+      health: 5
   - id: foodCanSoup
     name: 鸡汤
     category: food
     stack_size: 1
     tier: 55
+    stats:
+      hunger: 10
+      water: 10
+      health: 5
   - id: foodCanStock
     name: 浓汤罐头
     category: food
     stack_size: 1
     tier: 30
+    stats:
+      hunger: 5
+      water: 10
+      health: 3
   - id: foodCornOnTheCob
     name: 烤玉米
     category: food
     stack_size: 10
     tier: 30
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodCornBread
     name: 玉米面包
     category: food
     stack_size: 10
     tier: 16
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodShamSandwich
     name: 过期的山威三明治
     category: food
     stack_size: 10
     tier: 5
+    stats:
+      hunger: 15
+      stamina: -1
   - id: foodCharredMeat
     name: 烧焦的肉
     category: food
     stack_size: 10
     tier: 20
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodGrilledMeat
     name: 烤肉
     category: food
     stack_size: 10
     tier: 24
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodBoiledMeat
     name: 水煮肉
     category: food
     stack_size: 10
     tier: 52
+    stats:
+      hunger: 10
+      water: 10
+      health: 15
+      stamina: 10
   - id: foodChickenWings
     name: 鸡翅
     category: food
@@ -3855,106 +4003,198 @@ items:
     category: food
     stack_size: 10
     tier: 134
+    stats:
+      hunger: 50
+      water: 20
+      health: 25
+      stamina: 20
   - id: foodSteakAndPotato
     name: 牛排配土豆
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      hunger: 50
+      health: 25
+      stamina: 20
   - id: foodHoneyGlazedSham
     name: 蜜汁山威
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      hunger: 98
+      health: 49
+      stamina: 30
+      infection_cure: 5%
   - id: foodHoneyBrisket
     name: 蜜汁牛腩
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      hunger: 141
+      health: 70
+      stamina: 40
+      infection_cure: 5%
   - id: foodShamChowder
     name: 山威杂烩
     category: food
     stack_size: 1
     tier: 126
+    stats:
+      hunger: 53
+      water: 10
+      health: 80
+      stamina: 30
+      buff_duration: 10 分钟
   - id: foodHoboStew
     name: 蔬菜炖肉
     category: food
     stack_size: 10
     tier: 134
+    stats:
+      hunger: 64
+      water: 20
+      health: 32
+      stamina: 30
   - id: foodFishTacos
     name: 鱼肉塔可
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      hunger: 46
+      health: 40
+      stamina: 30
   - id: foodChiliDog
     name: 辣狗
     category: food
     stack_size: 10
     tier: 106
+    stats:
+      hunger: 53
+      health: 30
+      stamina: 30
   - id: foodBakedPotato
     name: 烤土豆
     category: food
     stack_size: 10
     tier: 16
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodBlueberryPie
     name: 蓝莓派
     category: food
     stack_size: 10
     tier: 124
+    stats:
+      hunger: 45
+      health: 22
+      stamina: 20
   - id: foodPumpkinPie
     name: 南瓜派
     category: food
     stack_size: 10
     tier: 124
+    stats:
+      hunger: 50
+      health: 25
+      stamina: 20
   - id: foodPumpkinCheesecake
     name: 南瓜芝士蛋糕
     category: food
     stack_size: 10
     tier: 124
+    stats:
+      hunger: 42
+      health: 21
+      stamina: 20
+      buff_duration: 5 分钟
   - id: foodPumpkinBread
     name: 南瓜面包
     category: food
     stack_size: 10
     tier: 124
+    stats:
+      hunger: 12
+      health: 6
+      stamina: 20
   - id: foodGumboStew
     name: 秋葵浓汤
     category: food
     stack_size: 10
     tier: 250
+    stats:
+      hunger: 112
+      water: 20
+      health: 56
+      stamina: 40
   - id: foodShepardsPie
     name: 牧羊人派
     category: food
     stack_size: 10
     tier: 250
+    stats:
+      hunger: 104
+      health: 52
+      stamina: 40
   - id: foodSpaghetti
     name: 意大利面
     category: food
     stack_size: 10
     tier: 250
+    stats:
+      hunger: 122
+      health: 61
+      stamina: 40
   - id: foodTunaFishGravyToast
     name: 金枪鱼肉汁吐司
     category: food
     stack_size: 10
     tier: 250
+    stats:
+      hunger: 90
+      health: 45
+      stamina: 40
   - id: foodEggBoiled
     name: 水煮蛋
     category: food
     stack_size: 10
     tier: 25
+    stats:
+      hunger: 10
+      health: 5
+      stamina: 10
   - id: foodBaconAndEggs
     name: 培根鸡蛋
     category: food
     stack_size: 10
     tier: 72
+    stats:
+      hunger: 36
+      health: 18
+      stamina: 10
   - id: foodVegetableStew
     name: 炖杂蔬
     category: food
     stack_size: 10
     tier: 102
+    stats:
+      hunger: 31
+      water: 20
+      health: 15
+      stamina: 20
   - id: foodRawMeat
     name: 生肉
     category: food
     stack_size: 125
     tier: 20
+    stats:
+      hunger: 2
+      stamina: -1
   - id: foodRawMeatBundle
     name: 生肉捆
     category: food
@@ -3966,59 +4206,90 @@ items:
     category: food
     stack_size: 125
     tier: 5
+    stats:
+      hunger: 1
+      stamina: -1
   - id: foodEgg
     name: 鸡蛋
     category: food
     stack_size: 125
     tier: 15
+    stats:
+      hunger: 5
+      health: 3
   - id: foodCornMeal
     name: 粗玉米粉
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
+      health: 3
   - id: foodCropBlueberries
     name: 蓝莓
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
   - id: foodCropCorn
     name: 玉米穗
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
+      health: 3
   - id: foodCropGraceCorn
     name: 超级玉米穗
     category: food
     stack_size: 125
     icon: foodCropCorn
     tier: 200
+    stats:
+      hunger: 3
+      health: 3
   - id: foodCropPotato
     name: 土豆
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
   - id: foodCropMushrooms
     name: 蘑菇
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
+      health: 3
   - id: foodCropMushroomsRadiated
     name: 辐射蘑菇
     category: food
     stack_size: 125
     icon: foodCropMushrooms
     tier: 50
+    stats:
+      hunger: 2
+      health: 3
   - id: foodCropYuccaFruit
     name: 丝兰果实
     category: food
     stack_size: 125
     tier: 10
+    stats:
+      hunger: 2
+      health: 3
   - id: foodCropPumpkin
     name: 南瓜
     category: food
     stack_size: 125
     icon: plantedPumpkin3Harvest
     tier: 10
+    stats:
+      hunger: 3
+      health: 3
   - id: drinkCanEmpty
     name: 空罐
     category: food
@@ -4034,76 +4305,120 @@ items:
     category: food
     stack_size: 10
     tier: 20
+    stats:
+      water: 10
   - id: drinkJarBoiledWater
     name: 水
     category: food
     stack_size: 10
     tier: 40
+    stats:
+      water: 20
   - id: drinkJarPureMineralWater
     name: 纯净矿泉水
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      water: 60
+      dysentery_cure: 20%
+      buff_duration: 6 分钟
   - id: drinkJarYuccaJuice
     name: 丝兰汁
     category: food
     stack_size: 10
     tier: 68
+    stats:
+      water: 34
   - id: drinkJarGoldenRodTea
     name: 秋麒麟茶
     category: food
     stack_size: 10
     tier: 48
+    stats:
+      water: 24
+      dysentery_cure: 20%
   - id: drinkJarHoneyTea
     name: 蜂蜜茶
     category: food
     stack_size: 10
     tier: 128
+    stats:
+      hunger: 8
+      water: 24
+      health: 3
+      infection_cure: 5%
+      dysentery_cure: 20%
   - id: drinkJarRedTea
     name: 红茶
     category: food
     stack_size: 10
     tier: 48
+    stats:
+      water: 24
+      buff_duration: 6 分钟
   - id: drinkYuccaJuiceSmoothie
     name: 丝兰汁果昔
     category: food
     stack_size: 10
     tier: 156
+    stats:
+      hunger: 22
+      water: 78
+      health: 11
+      buff_duration: 6 分钟
   - id: drinkCanMegaCrush
     name: 碾压王
     category: food
     stack_size: 1
     tier: 240
+    stats:
+      water: 60
+      buff_duration: 6 分钟
   - id: drinkJarCoffee
     name: 咖啡
     category: food
     stack_size: 10
     tier: 96
+    stats:
+      water: 24
+      buff_duration: 3 分钟
   - id: drinkJarBlackStrapCoffee
     name: 黑带咖啡
     category: food
     stack_size: 1
     tier: 200
+    stats:
+      water: 24
+      buff_duration: 6 分钟
   - id: drinkJarBeer
     name: 啤酒
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      buff_duration: 1 分钟
   - id: drinkJarGrandpasMoonshine
     name: 祖父的私酒
     category: food
     stack_size: 10
     tier: 500
+    stats:
+      buff_duration: 1 分钟
   - id: drinkJarGrandpasAwesomeSauce
     name: 祖父的美味酱
     category: food
     stack_size: 10
     tier: 100
+    stats:
+      buff_duration: 3 分钟
   - id: drinkJarGrandpasLearningElixir
     name: 祖父的学习妙药
     category: food
     stack_size: 10
     tier: 250
+    stats:
+      buff_duration: 6 分钟
   - id: drinkJarGrandpasForgettingElixir
     name: 祖父的遗忘妙药
     category: food
@@ -4688,6 +5003,10 @@ items:
     category: material
     stack_size: 500
     tier: 20
+    stats:
+      hunger: 5
+      health: 2
+      stamina: -1
   - id: resourceTestosteroneExtract
     name: 睾丸素提取物
     category: material

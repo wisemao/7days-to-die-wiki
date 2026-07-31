@@ -15,6 +15,19 @@ zombies:
       - item_id: zPackReg
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieTemplateShort
     name: zombieTemplateShort
     category: humanoid
@@ -49,6 +62,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieArleneFeral
     name: 凶残的阿琳
     category: humanoid
@@ -62,6 +77,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieArleneRadiated
     name: 被辐射的阿琳
     category: humanoid
@@ -89,6 +106,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieArleneInfernal
     name: 炼狱阿琳
     category: humanoid
@@ -105,6 +135,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMarlene
     name: 马琳
     category: humanoid
@@ -116,6 +159,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMarleneFeral
     name: 凶残的马琳
     category: humanoid
@@ -129,6 +174,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMarleneRadiated
     name: 被辐射的马琳
     category: humanoid
@@ -156,6 +203,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMarleneInfernal
     name: 炼狱马琳
     category: humanoid
@@ -172,6 +232,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombiePartyGirl
     name: 派对女孩
     category: humanoid
@@ -183,6 +256,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombiePartyGirlFeral
     name: 凶残派对女孩
     category: humanoid
@@ -196,6 +271,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombiePartyGirlRadiated
     name: 被辐射的派对女孩
     category: humanoid
@@ -223,6 +300,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombiePartyGirlInfernal
     name: 炼狱派对女孩
     category: humanoid
@@ -239,6 +329,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieNurse
     name: 护士
     category: humanoid
@@ -254,6 +357,15 @@ zombies:
       - item_id: zPackNurse
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: resourceGlue
+            count: 1,2
+          - item_id: casinoCoin
+            count: 25,100
+          - item_id: oldCash
+            count: 25,100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieNurseFeral
     name: 凶残的瘟疫感染护士
     category: humanoid
@@ -267,6 +379,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieNurseRadiated
     name: 被辐射的护士
     category: humanoid
@@ -294,6 +408,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieNurseInfernal
     name: 炼狱护士
     category: humanoid
@@ -310,6 +437,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieJoe
     name: 乔
     category: humanoid
@@ -322,6 +462,8 @@ zombies:
       melee: 10
     experience: ^xpSlim01
     hand_item: meleeHandZombieShort
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieJoeFeral
     name: 凶残的乔
     category: humanoid
@@ -335,6 +477,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieJoeRadiated
     name: 被辐射的乔
     category: humanoid
@@ -362,6 +506,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieJoeInfernal
     name: 炼狱乔
     category: humanoid
@@ -378,6 +535,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSteve
     name: 史蒂夫
     category: humanoid
@@ -389,6 +559,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSteveFeral
     name: 凶残的史蒂夫
     category: humanoid
@@ -402,6 +574,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSteveRadiated
     name: 被辐射的史蒂夫
     category: humanoid
@@ -429,6 +603,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSteveInfernal
     name: 炼狱史蒂夫
     category: humanoid
@@ -445,6 +632,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieTomClark
     name: 汤姆·克拉克
     category: humanoid
@@ -456,6 +656,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieTomClarkFeral
     name: 凶残的汤姆·克拉克
     category: humanoid
@@ -469,6 +671,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieTomClarkRadiated
     name: 被辐射的汤姆·克拉克
     category: humanoid
@@ -496,6 +700,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieTomClarkInfernal
     name: 炼狱汤姆·克拉克
     category: humanoid
@@ -512,6 +729,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBusinessMan
     name: 商人
     category: humanoid
@@ -523,6 +753,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBusinessManFeral
     name: 凶残的商人
     category: humanoid
@@ -536,6 +768,8 @@ zombies:
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBusinessManRadiated
     name: 被辐射的商人
     category: humanoid
@@ -563,6 +797,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBusinessManInfernal
     name: 炼狱商人
     category: humanoid
@@ -579,6 +826,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBurnt
     name: 被灼烧者
     category: humanoid
@@ -591,6 +851,8 @@ zombies:
       melee: 10
     experience: ^xpSlim03
     hand_item: meleeHandZombieBurning
+    spawn:
+      biomes: burnt_forest, wasteland
   - id: zombieBurntFeral
     name: 凶残的被灼烧者
     category: humanoid
@@ -604,6 +866,8 @@ zombies:
     experience: ^xpSlimFeral03
     hand_item: meleeHandZombieBurningFeral
     loot: []
+    spawn:
+      biomes: burnt_forest, wasteland
   - id: zombieBurntRadiated
     name: 被辐射的被灼烧者
     category: humanoid
@@ -631,6 +895,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBurntInfernal
     name: 炼狱被灼烧者
     category: humanoid
@@ -647,6 +924,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieRancher
     name: 兰凯尔
     category: humanoid
@@ -663,6 +953,8 @@ zombies:
       - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
         count: 1
         chance: '.05'
+    spawn:
+      biomes: desert
   - id: zombieRancherFeral
     name: 凶残兰凯尔
     category: humanoid
@@ -679,6 +971,8 @@ zombies:
       - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
         count: 1
         chance: '.05'
+    spawn:
+      biomes: desert
   - id: zombieRancherRadiated
     name: 辐射兰凯尔
     category: humanoid
@@ -793,6 +1087,8 @@ zombies:
       melee: 10
     experience: ^xpStrongFeral00
     hand_item: meleeHandZombieChuck
+    spawn:
+      biomes: snow
   - id: zombieChuckFeral
     name: 凶残恰克
     category: humanoid
@@ -806,6 +1102,8 @@ zombies:
     experience: ^xpStrongFeral03
     hand_item: meleeHandZombieChuckFeral
     loot: []
+    spawn:
+      biomes: snow
   - id: zombieChuckRadiated
     name: 辐射恰克
     category: humanoid
@@ -817,6 +1115,8 @@ zombies:
     damage:
       melee: 10
     experience: ^xpStrongRadiated03
+    spawn:
+      biomes: snow
   - id: zombieChuckCharged
     name: 带电恰克
     category: humanoid
@@ -833,6 +1133,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: snow
   - id: zombieChuckInfernal
     name: 炼狱恰克
     category: humanoid
@@ -849,6 +1164,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: snow
   - id: zombieFrostclaw
     name: 恰克
     category: humanoid
@@ -915,6 +1245,8 @@ zombies:
     damage:
       melee: 10
     experience: ^xpSlim02
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSpiderFeral
     name: 凶残的蜘蛛
     category: humanoid
@@ -928,6 +1260,8 @@ zombies:
     experience: ^xpSlimFeral02
     hand_item: meleeHandZombie02Feral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSpiderRadiated
     name: 被辐射的蜘蛛
     category: humanoid
@@ -955,6 +1289,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSpiderInfernal
     name: 炼狱蜘蛛
     category: humanoid
@@ -971,6 +1318,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBoe
     name: 布尔
     category: humanoid
@@ -982,6 +1342,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBoeFeral
     name: 凶残的布尔
     category: humanoid
@@ -995,6 +1357,8 @@ zombies:
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBoeRadiated
     name: 被辐射的布尔
     category: humanoid
@@ -1022,6 +1386,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBoeInfernal
     name: 炼狱布尔
     category: humanoid
@@ -1038,6 +1415,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMaleHazmat
     name: 穿着防化服的丧尸
     category: humanoid
@@ -1050,6 +1440,8 @@ zombies:
       melee: 10
     experience: ^xpNormal01
     hand_item: meleeHandZombieHazMat
+    spawn:
+      biomes: wasteland
   - id: zombieMaleHazmatFeral
     name: 凶残的穿着防化服的丧尸
     category: humanoid
@@ -1063,6 +1455,8 @@ zombies:
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieHazMatFeral
     loot: []
+    spawn:
+      biomes: wasteland
   - id: zombieMaleHazmatRadiated
     name: 被辐射的穿着防化服的丧尸
     category: humanoid
@@ -1091,6 +1485,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMaleHazmatInfernal
     name: 炼狱防护服丧尸
     category: humanoid
@@ -1107,6 +1514,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieJanitor
     name: 看门人
     category: humanoid
@@ -1118,6 +1538,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieJanitorFeral
     name: 凶残的看门人
     category: humanoid
@@ -1160,6 +1582,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieJanitorInfernal
     name: 炼狱看门人
     category: humanoid
@@ -1176,6 +1611,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieInmate
     name: 囚犯
     category: humanoid
@@ -1229,6 +1677,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieInmateInfernal
     name: 炼狱囚犯
     category: humanoid
@@ -1245,6 +1706,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMoe
     name: 莫伊
     category: humanoid
@@ -1256,6 +1730,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMoeFeral
     name: 凶残的莫伊
     category: humanoid
@@ -1269,6 +1745,8 @@ zombies:
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMoeRadiated
     name: 被辐射的莫伊
     category: humanoid
@@ -1296,6 +1774,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMoeInfernal
     name: 炼狱莫伊
     category: humanoid
@@ -1312,6 +1803,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieLab
     name: 实验室工作人员
     category: humanoid
@@ -1327,6 +1831,19 @@ zombies:
       - item_id: zPackLab
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: resourceSpring
+            count: 1,4
+          - item_id: resourceOil
+            count: 1,3
+          - item_id: resourceGlue
+            count: 1,2
+          - item_id: casinoCoin
+            count: 25,100
+          - item_id: oldCash
+            count: 25,100
+          - item_id: resourceElectricParts
+            count: 1,2
   - id: zombieLabFeral
     name: 凶残的实验室工作人员
     category: humanoid
@@ -1367,6 +1884,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieLabInfernal
     name: 炼狱实验室工作人员
     category: humanoid
@@ -1383,6 +1913,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieDarlene
     name: 达琳
     category: humanoid
@@ -1394,6 +1937,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieDarleneFeral
     name: 凶残的达琳
     category: humanoid
@@ -1407,6 +1952,8 @@ zombies:
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieDarleneRadiated
     name: 被辐射的达琳
     category: humanoid
@@ -1434,6 +1981,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieDarleneInfernal
     name: 炼狱达琳
     category: humanoid
@@ -1450,6 +2010,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieYo
     name: 幽
     category: humanoid
@@ -1461,6 +2034,8 @@ zombies:
     damage:
       melee: 10
     experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieYoFeral
     name: 凶残的幽
     category: humanoid
@@ -1474,6 +2049,8 @@ zombies:
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieYoRadiated
     name: 被辐射的幽
     category: humanoid
@@ -1501,6 +2078,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieYoInfernal
     name: 炼狱幽
     category: humanoid
@@ -1517,6 +2107,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieUtilityWorker
     name: 公用事业工人
     category: humanoid
@@ -1533,6 +2136,21 @@ zombies:
       - item_id: zPackUtility
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: resourceNail
+            count: 10,40
+          - item_id: resourceMetalPipe
+            count: 1,4
+          - item_id: resourceSpring
+            count: 1,4
+          - item_id: resourceOil
+            count: 1,3
+          - item_id: resourceGlue
+            count: 1,2
+          - item_id: casinoCoin
+            count: 25,100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieUtilityWorkerFeral
     name: 凶残的公用事业工人
     category: humanoid
@@ -1573,6 +2191,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieUtilityWorkerInfernal
     name: 炼狱公共事业工人
     category: humanoid
@@ -1589,6 +2220,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBiker
     name: 摩托车手
     category: humanoid
@@ -1605,6 +2249,21 @@ zombies:
       - item_id: zPackThug
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: casinoCoin
+            count: 50,200
+          - item_id: oldCash
+            count: 50,200
+          - item_id: thrownAmmoPipeBomb
+            count: 1,5
+          - item_id: thrownAmmoMolotovCocktail
+            count: 1,5
+          - item_id: armorParts
+            count: 1,2
+          - item_id: gunHandgunT1PistolParts
+            count: 1,2
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieBikerFeral
     name: 凶残的摩托车手
     category: humanoid
@@ -1618,6 +2277,8 @@ zombies:
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieStrongFeral
     loot: []
+    spawn:
+      biomes: desert
   - id: zombieBikerRadiated
     name: 被辐射的摩托车手
     category: humanoid
@@ -1633,6 +2294,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBikerCharged
     name: 带电摩托车手
     category: humanoid
@@ -1649,6 +2323,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBikerInfernal
     name: 炼狱摩托车手
     category: humanoid
@@ -1665,6 +2352,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieLumberjack
     name: 伐木工
     category: humanoid
@@ -1681,6 +2381,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieLumberjackFeral
     name: 凶残伐木工
     category: humanoid
@@ -1694,6 +2409,8 @@ zombies:
     experience: ^xpStrongFeral00
     hand_item: meleeHandZombieStrongFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieLumberjackRadiated
     name: 被辐射的伐木工
     category: humanoid
@@ -1709,6 +2426,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieLumberjackCharged
     name: 带电伐木工
     category: humanoid
@@ -1725,6 +2455,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieLumberjackInfernal
     name: 炼狱伐木工
     category: humanoid
@@ -1741,6 +2484,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFemaleFat
     name: 大妈妈
     category: humanoid
@@ -1757,6 +2513,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: wasteland
   - id: zombieFemaleFatFeral
     name: 凶残大妈妈
     category: humanoid
@@ -1770,6 +2541,8 @@ zombies:
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
+    spawn:
+      biomes: wasteland
   - id: zombieFemaleFatRadiated
     name: 被辐射的大妈妈
     category: humanoid
@@ -1785,6 +2558,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFemaleFatCharged
     name: 带电大妈妈
     category: humanoid
@@ -1801,6 +2587,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFemaleFatInfernal
     name: 炼狱大妈妈
     category: humanoid
@@ -1817,6 +2616,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatHawaiian
     name: 游客
     category: humanoid
@@ -1833,6 +2645,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieFatHawaiianFeral
     name: 凶残的游客
     category: humanoid
@@ -1846,6 +2673,8 @@ zombies:
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieFatHawaiianRadiated
     name: 被辐射的游客
     category: humanoid
@@ -1861,6 +2690,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatHawaiianCharged
     name: 带电游客
     category: humanoid
@@ -1877,6 +2719,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatHawaiianInfernal
     name: 炼狱游客
     category: humanoid
@@ -1893,6 +2748,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBowler
     name: 保龄球丧尸
     category: humanoid
@@ -1909,6 +2777,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBowlerFeral
     name: 凶残的保龄球丧尸
     category: humanoid
@@ -1922,6 +2805,8 @@ zombies:
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBowlerRadiated
     name: 被辐射的保龄球丧尸
     category: humanoid
@@ -1937,6 +2822,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBowlerCharged
     name: 带电保龄球丧尸
     category: humanoid
@@ -1953,6 +2851,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieBowlerInfernal
     name: 炼狱保龄球丧尸
     category: humanoid
@@ -1969,6 +2880,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatCop
     name: 警察
     category: humanoid
@@ -1985,6 +2909,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieFatCopFeral
     name: 凶残的警察
     category: humanoid
@@ -1998,6 +2937,8 @@ zombies:
     experience: ^xpStrongFeral02
     hand_item: meleeHandZombieCopFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieFatCopRadiated
     name: 被辐射的警察
     category: humanoid
@@ -2014,6 +2955,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatCopCharged
     name: 带电警察
     category: humanoid
@@ -2029,6 +2983,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieFatCopInfernal
     name: 炼狱警察
     category: humanoid
@@ -2044,6 +3011,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSkateboarder
     name: 暴徒
     category: animal
@@ -2059,6 +3039,21 @@ zombies:
       - item_id: zPackThug
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: casinoCoin
+            count: 50,200
+          - item_id: oldCash
+            count: 50,200
+          - item_id: thrownAmmoPipeBomb
+            count: 1,5
+          - item_id: thrownAmmoMolotovCocktail
+            count: 1,5
+          - item_id: armorParts
+            count: 1,2
+          - item_id: gunHandgunT1PistolParts
+            count: 1,2
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieSkateboarderFeral
     name: 凶残的暴徒
     category: animal
@@ -2087,6 +3082,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSkateboarderCharged
     name: 带电暴徒
     category: animal
@@ -2103,6 +3111,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSkateboarderInfernal
     name: 炼狱暴徒
     category: animal
@@ -2119,6 +3140,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSoldier
     name: 士兵
     category: humanoid
@@ -2135,6 +3169,21 @@ zombies:
       - item_id: zPackSoldier
         count: 1
         chance: '.04'
+        resolved:
+          - item_id: casinoCoin
+            count: 25,100
+          - item_id: oldCash
+            count: 25,100
+          - item_id: armorParts
+            count: 1,2
+          - item_id: resourceDuctTape
+            count: 1,4
+          - item_id: gunHandgunT1PistolParts
+            count: 1,2
+          - item_id: gunRifleT1HuntingRifleParts
+            count: 1,2
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSoldierFeral
     name: 凶残的士兵
     category: humanoid
@@ -2148,6 +3197,8 @@ zombies:
     experience: ^xpNormalFeral03
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSoldierRadiated
     name: 被辐射的士兵
     category: humanoid
@@ -2163,6 +3214,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSoldierCharged
     name: 带电士兵
     category: humanoid
@@ -2179,6 +3243,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieSoldierInfernal
     name: 炼狱士兵
     category: humanoid
@@ -2195,6 +3272,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieWightFeral
     name: 凶残的怀特
     category: humanoid
@@ -2208,6 +3298,8 @@ zombies:
     experience: ^xpStrongFeral03
     hand_item: meleeHandZombieFeral
     loot: []
+    spawn:
+      biomes: burnt_forest, desert, snow, wasteland
   - id: zombieWightRadiated
     name: 被辐射的恶灵
     category: humanoid
@@ -2223,6 +3315,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieWightCharged
     name: 带电恶灵
     category: humanoid
@@ -2239,6 +3344,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieWightInfernal
     name: 炼狱恶灵
     category: humanoid
@@ -2255,6 +3373,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieScreamer
     name: 尖叫丧尸
     category: humanoid
@@ -2294,6 +3425,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieScreamerCharged
     name: 带电尖叫丧尸
     category: humanoid
@@ -2310,6 +3454,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieScreamerInfernal
     name: 炼狱尖叫丧尸
     category: humanoid
@@ -2326,6 +3483,19 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
   - id: zombieMutated
     name: 变异丧尸
     category: humanoid
@@ -2338,6 +3508,8 @@ zombies:
       melee: 10
     experience: ^xpStrongFeral00
     hand_item: meleeHandzombieMutated
+    spawn:
+      biomes: wasteland
   - id: zombieMutatedFeral
     name: 凶残的变异丧尸
     category: humanoid
@@ -2351,6 +3523,8 @@ zombies:
     experience: ^xpStrongFeral03
     hand_item: meleeHandzombieMutatedFeral
     loot: []
+    spawn:
+      biomes: wasteland
   - id: zombieMutatedRadiated
     name: 被辐射的变异丧尸
     category: humanoid
@@ -2367,6 +3541,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: 0%
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: wasteland
   - id: zombieMutatedCharged
     name: 带电变异丧尸
     category: humanoid
@@ -2383,6 +3572,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: wasteland
   - id: zombieMutatedInfernal
     name: 炼狱变异丧尸
     category: humanoid
@@ -2399,6 +3603,21 @@ zombies:
       - item_id: zPackStrong
         count: 1
         chance: '.1'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: wasteland
   - id: zombieDemolition
     name: 爆破丧尸
     category: humanoid
@@ -2415,6 +3634,21 @@ zombies:
       - item_id: zPackBoss
         count: 1
         chance: '.3'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: burnt_forest, desert, snow, wasteland
   - id: zombieSteveCrawler
     name: 爬行者
     category: humanoid
@@ -2427,6 +3661,8 @@ zombies:
       melee: 10
     experience: ^xpNormal02
     hand_item: meleeHandZombie02
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSteveCrawlerFeral
     name: 凶残的爬行者
     category: humanoid
@@ -2440,6 +3676,8 @@ zombies:
     experience: ^xpStrong00
     hand_item: meleeHandZombie02Feral
     loot: []
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: animalZombieBear
     name: 丧尸熊
     category: animal
@@ -2456,6 +3694,21 @@ zombies:
       - item_id: zPackBoss
         count: 1
         chance: '.5'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30
+    spawn:
+      biomes: wasteland
   - id: animalZombieVulture
     name: 丧尸秃鹫
     category: animal
@@ -2468,6 +3721,8 @@ zombies:
       melee: 10
     experience: 100
     hand_item: meleeHandAnimalZombieVulture
+    spawn:
+      biomes: burnt_forest, desert, wasteland
   - id: animalZombieVultureRadiated
     name: 被辐射的秃鹫
     category: animal
@@ -2492,6 +3747,8 @@ zombies:
       melee: 10
     experience: 100
     hand_item: meleeHandAnimalZombieDog
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: animalZombieBoar
     name: 丧尸野猪
     category: animal
@@ -2508,3 +3765,16 @@ zombies:
       - item_id: zPackBoss
         count: 1
         chance: '.5'
+        resolved:
+          - item_id: ammo9mmBulletBall
+            count: 25,35
+          - item_id: ammo9mmBulletHP
+            count: 25,35
+          - item_id: ammo9mmBulletAP
+            count: 25,35
+          - item_id: ammo762mmBulletBall
+            count: 20,30
+          - item_id: ammo762mmBulletHP
+            count: 20,30
+          - item_id: ammo762mmBulletAP
+            count: 20,30

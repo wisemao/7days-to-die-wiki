@@ -54,9 +54,20 @@ function fmtExp(e) {
       {zombie.loot.map(l => {
         const link = getItemLink(l.item_id);
         const name = resolveItemName(l.item_id);
-        return <tr><td>{link ? <a href={link}>{name}</a> : name}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
+        return <tr><td>{link ? <a href={link}>{name}</a> : name}{l.resolved && <span style="font-size:11px;color:var(--c-text-3);margin-left:6px;">(掉落容器)</span>}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
       })}
     </table>
+    {zombie.loot.some(l => l.resolved) && (
+      <blockquote>掉落容器内容示例：{(() => {
+        const flat = zombie.loot.filter(l => l.resolved).flatMap(l => l.resolved);
+        const links = flat.slice(0, 10).map(r => {
+          const link = getItemLink(r.item_id);
+          const n = resolveItemName(r.item_id);
+          return link ? <a href={link}>{n}</a> : n;
+        });
+        return <span>{links.map((l, i) => <>{i > 0 && '、'}{l}</>)}</span>;
+      })()}</blockquote>
+    )}
   </>)}
 
   {hasWeakness && (<>
