@@ -2143,6 +2143,7 @@ items:
     stats:
       mod_slots: 3
       durability: 2000
+      max_speed: 9.2
   - id: vehicleBicycleChassis
     name: 自行车底盘
     category: vehicle
@@ -2161,6 +2162,7 @@ items:
     stats:
       mod_slots: 2
       durability: 1500
+      max_speed: 8.5
   - id: vehicleMotorcycleChassis
     name: 摩托车底盘
     category: vehicle
@@ -2179,6 +2181,7 @@ items:
     stats:
       mod_slots: 4
       durability: 4000
+      max_speed: 14
   - id: vehicleTruck4x4Chassis
     name: 4x4 卡车底盘
     category: vehicle
@@ -2197,6 +2200,7 @@ items:
     stats:
       mod_slots: 5
       durability: 8000
+      max_speed: 14
   - id: vehicleGyroCopterChassis
     name: 旋翼机底盘
     category: vehicle
@@ -2215,6 +2219,7 @@ items:
     stats:
       mod_slots: 5
       durability: 3500
+      max_speed: 15
   - id: vehicleHelicopterPlaceable
     name: 直升飞机
     category: vehicle

@@ -19,6 +19,7 @@ import { parseLootXml } from './import/parse-loot.js';
 import { parseSpawningXml } from './import/parse-spawning.js';
 import { parseTrapBlocks } from './import/parse-blocks.js';
 import { parseLocalization } from './import/parse-localization.js';
+import { parseVehiclesXml } from './import/parse-vehicles.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data', 'vanilla');
@@ -121,6 +122,27 @@ function enhance(configDir) {
       writeYaml(join(DATA_DIR, 'blocks.yaml'), { blocks: traps });
       console.log(`  - 陷阱方块: ${traps.length} 个 -> data/vanilla/blocks.yaml`);
     }
+  }
+
+  // ─── 5. Vehicle stats ───
+  const vehiclesPath = join(configDir, 'vehicles.xml');
+  if (existsSync(vehiclesPath)) {
+    const vehicles = parseVehiclesXml(readFileSync(vehiclesPath, 'utf-8'));
+    const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
+    let enriched = 0;
+    for (const item of itemsDoc.items || []) {
+      const v = vehicles.find(v => v.item_id === item.id);
+      if (!v || !v.max_speed) continue;
+      if (!item.stats) item.stats = {};
+      let added = 0;
+      if (!('max_speed' in item.stats) && v.max_speed) { item.stats.max_speed = v.max_speed; added++; }
+      if (!('fuel_per_unit' in item.stats) && v.fuel_per_unit) { item.stats.fuel_per_unit = v.fuel_per_unit; added++; }
+      if (added > 0) enriched++;
+    }
+    if (enriched > 0) {
+      writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    }
+    console.log(`  - 载具属性补全: ${enriched} 个 (共 ${vehicles.length} 辆载具)`);
   }
 
   console.log('✅ 数据增强完成');
