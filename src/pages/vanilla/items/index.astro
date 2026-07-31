@@ -1,13 +1,14 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS } from '../../../utils/data-loader';
+import { categoryIconUrl } from '../../../utils/item-icons';
 const { items } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 const catCounts = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
-  if (!catCounts[item.category]) catCounts[item.category] = { key: item.category, label, count: 0 };
+  if (!catCounts[item.category]) catCounts[item.category] = { key: item.category, label, count: 0, icon: categoryIconUrl(item.category, base) };
   catCounts[item.category].count++;
 }
 const cats = Object.values(catCounts).sort((a, b) => b.count - a.count);
@@ -22,9 +23,23 @@ const cats = Object.values(catCounts).sort((a, b) => b.count - a.count);
   <div class="card-grid">
     {cats.map(c => (
       <a href={`${base}/vanilla/items/category/${c.key}/`} class="card">
+        {c.icon && <img class="card-icon" src={c.icon} alt="" loading="lazy" />}
         <span class="num">{c.count}</span>
         <span class="lbl">{c.label}</span>
       </a>
     ))}
   </div>
 </Layout>
+
+<style>
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+    border-radius: 8px;
+    background: var(--c-surface-2);
+    padding: 4px;
+  }
+</style>

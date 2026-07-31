@@ -1,6 +1,8 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
+import ItemGridLink from '../../../../components/ItemGridLink.astro';
 import { loadData, ITEM_CATEGORY_LABELS } from '../../../../utils/data-loader';
+import { itemIconUrl, categoryIconUrl } from '../../../../utils/item-icons';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Astro note: module-level function declarations are NOT accessible in component scope.
@@ -166,8 +168,15 @@ const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0)
     <a href={`${base}/vanilla/items/`}>物品列表</a><span class="sep">/</span>
     <span>{catLabel}</span>
   </nav>
-  <h1>{catLabel}</h1>
-  <p class="subtitle">共 {catItems.length} 个物品</p>
+  <div class="cat-header">
+    {categoryIconUrl(catKey, base) && (
+      <img class="cat-hero-icon" src={categoryIconUrl(catKey, base)} alt={catLabel} loading="lazy" />
+    )}
+    <div>
+      <h1 style="margin:0;">{catLabel}</h1>
+      <p class="subtitle" style="margin:4px 0 0;">共 {catItems.length} 个物品</p>
+    </div>
+  </div>
 
   {catKey === 'book' ? (
     <div class="book-layout">
@@ -192,7 +201,7 @@ const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0)
                 <h3 class="collapsible collapsed sub-head">
                   <span>{g}</span>
                 </h3>
-                <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+                <div class="item-grid">{list.map(item => <ItemGridLink item={item} base={base} />)}</div>
               </section>
             ))}
           </div>
@@ -209,7 +218,7 @@ const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0)
               <span>技能杂志</span>
               <span class="section-count">{mags.length} 项</span>
             </h2>
-            <div class="item-grid">{mags.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+            <div class="item-grid">{mags.map(item => <ItemGridLink item={item} base={base} />)}</div>
           </section>
         );
       })()}
@@ -224,19 +233,23 @@ const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0)
           <div class="card-grid">
             {bookSeries
               .filter(([, list]) => list.length > 1)
-              .map(([name, list]) => (
-                <a href={`${base}/vanilla/book-series/${toSlug(name)}/`} class="card">
-                  <span class="num">{list.length}</span>
-                  <span class="lbl">{name}</span>
-                </a>
-              ))}
+              .map(([name, list]) => {
+                const seriesIcon = itemIconUrl(list[0], base);
+                return (
+                  <a href={`${base}/vanilla/book-series/${toSlug(name)}/`} class="card">
+                    {seriesIcon && <img class="card-icon" src={seriesIcon} alt="" loading="lazy" />}
+                    <span class="num">{list.length}</span>
+                    <span class="lbl">{name}</span>
+                  </a>
+                );
+              })}
           </div>
           {(() => {
             const singles = bookSeries.filter(([, list]) => list.length === 1).flatMap(([, list]) => list);
             if (singles.length === 0) return null;
             return (
               <div class="item-grid" style="margin-top:8px;">
-                {singles.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
+                {singles.map(item => <ItemGridLink item={item} base={base} />)}
               </div>
             );
           })()}
@@ -259,17 +272,36 @@ const subGroupCount = subGroups ? subGroups.reduce((s, [,v]) => s + v.length, 0)
             <span>{label}</span>
             <span class="section-count">{list.length} 项</span>
           </h2>
-          <div class="item-grid">{list.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}</div>
+          <div class="item-grid">{list.map(item => <ItemGridLink item={item} base={base} />)}</div>
         </section>
       ))}
     </div>
   ) : (
     <div class="item-grid">
-      {catItems.map(item => (<a href={`${base}/vanilla/items/${item._sanitizedId}/`}>{item.name}</a>))}
+      {catItems.map(item => <ItemGridLink item={item} base={base} />)}
     </div>
   )}
 
   <style>
+    .cat-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .cat-hero-icon {
+      width: 64px;
+      height: 64px;
+      object-fit: contain;
+      image-rendering: auto;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 6px;
+      flex-shrink: 0;
+    }
+    /* Item links with icons: hide the decorative dot, show icon instead */
+    .item-grid a::before { display: none; }
     .book-layout {
       display: flex;
       flex-direction: column;

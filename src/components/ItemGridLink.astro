@@ -1,0 +1,32 @@
+---
+import { itemIconUrl } from '../utils/item-icons';
+const { item, base } = Astro.props;
+const iconUrl = itemIconUrl(item, base);
+const href = `${base}/vanilla/items/${item._sanitizedId}/`;
+---
+
+<a href={href} class="grid-item-link">
+  {iconUrl && <img class="grid-icon" src={iconUrl} alt="" loading="lazy" />}
+  <span class="grid-name">{item.name}</span>
+</a>
+
+<style>
+  .grid-item-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 10px !important;
+  }
+  .grid-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 4px;
+  }
+  .grid-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>

@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS, STATION_LABELS } from '../utils/data-loader';
+import { categoryIconUrl } from '../utils/item-icons';
 const { items, recipes, skills, zombies } = loadData();
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -15,6 +16,21 @@ for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   if (!labelToKey[label]) labelToKey[label] = item.category;
 }
+
+// Category representative icon per card
+const catIcons = {};
+for (const item of items) {
+  const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
+  if (!catIcons[label]) catIcons[label] = categoryIconUrl(item.category, base);
+}
+
+// Hero section icons for the 4 main navigation cards
+const HERO_ICONS = {
+  items: categoryIconUrl('ranged_weapon', base),
+  recipes: `${base}/images/items/forge.png`,
+  skills: categoryIconUrl('book', base),
+  zombies: `${base}/images/items/armorZombieMaskHelmet.png`,
+};
 
 // Station counts for quick insight
 const stationCounts = {};
@@ -63,18 +79,22 @@ const seriesCount = seriesSet.size;
   <!-- Quick Links -->
   <div class="card-grid">
     <a href={`${base}/vanilla/items/`} class="card">
+      {HERO_ICONS.items && <img class="card-icon" src={HERO_ICONS.items} alt="" loading="lazy" />}
       <span class="num">{items.length}</span>
       <span class="lbl">物品 · 工具 · 武器 · 护甲</span>
     </a>
     <a href={`${base}/vanilla/recipes/`} class="card">
+      {HERO_ICONS.recipes && <img class="card-icon" src={HERO_ICONS.recipes} alt="" loading="lazy" />}
       <span class="num">{recipes.length}</span>
       <span class="lbl">配方 · 合成 · 熔炉 · 工作台</span>
     </a>
     <a href={`${base}/vanilla/skills/`} class="card">
+      {HERO_ICONS.skills && <img class="card-icon" src={HERO_ICONS.skills} alt="" loading="lazy" />}
       <span class="num">{skills.length}</span>
       <span class="lbl">技能 · 5 系属性 · Perk</span>
     </a>
     <a href={`${base}/vanilla/zombies/`} class="card">
+      {HERO_ICONS.zombies && <img class="card-icon" src={HERO_ICONS.zombies} alt="" loading="lazy" />}
       <span class="num">{zombies.length}</span>
       <span class="lbl">僵尸 · 图鉴 · 掉落 · 弱点</span>
     </a>
@@ -84,6 +104,7 @@ const seriesCount = seriesSet.size;
   <div class="card-grid">
     {catCards.map(([k, v]) => (
       <a href={`${base}/vanilla/items/category/${labelToKey[k] || k}/`} class="card">
+        {catIcons[k] && <img class="card-icon" src={catIcons[k]} alt="" loading="lazy" />}
         <span class="num">{v}</span>
         <span class="lbl">{k}</span>
       </a>
@@ -173,6 +194,16 @@ const seriesCount = seriesSet.size;
     border-radius: var(--radius);
     padding: 20px 24px;
     margin: 20px 0;
+  }
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+    border-radius: 8px;
+    background: var(--c-surface-2);
+    padding: 4px;
   }
   .quick-start p {
     margin-bottom: 14px;
