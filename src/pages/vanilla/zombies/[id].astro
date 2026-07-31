@@ -13,6 +13,22 @@ const hasLoot = zombie.loot && zombie.loot.length > 0;
 const hasWeakness = zombie.weakness && zombie.weakness.length > 0;
 const hasSpawn = zombie.spawn;
 const hp = typeof zombie.hp === 'string' && zombie.hp.startsWith('^') ? '?' : zombie.hp;
+// Format chance strings like '.04' -> '4%', '0%' -> '0%'
+function fmtChance(c) {
+  if (c == null) return '-';
+  const s = String(c).trim();
+  if (s.endsWith('%')) return s;
+  const n = parseFloat(s);
+  if (Number.isNaN(n)) return s;
+  return (n * 100) + '%';
+}
+function fmtExp(e) {
+  if (e == null) return '-';
+  if (typeof e === 'number') return String(e);
+  const s = String(e).trim();
+  if (s.startsWith('^')) return '?';
+  return s;
+}
 ---
 
 <Layout title={zombie.name} description={`${zombie.name} - ${catLabel}僵尸`}>
@@ -24,12 +40,12 @@ const hp = typeof zombie.hp === 'string' && zombie.hp.startsWith('^') ? '?' : zo
 
   <h2>属性</h2>
   <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{zombie.name} 基础属性</caption><tr><th scope="col">属性</th><th scope="col">值</th></tr>
-    <tr><td>步行速度</td><td>{zombie.speed?.walk}</td></tr>
-    <tr><td>奔跑速度</td><td>{zombie.speed?.run}</td></tr>
-    <tr><td>近战伤害</td><td>{zombie.damage?.melee}</td></tr>
-    {zombie.damage?.bleeding_chance && <tr><td>出血概率</td><td>{zombie.damage.bleeding_chance}</td></tr>}
+    <tr><td>步行速度</td><td>{zombie.speed?.walk ?? '-'}</td></tr>
+    <tr><td>奔跑速度</td><td>{zombie.speed?.run ?? '-'}</td></tr>
+    <tr><td>近战伤害</td><td>{zombie.damage?.melee ?? '-'}</td></tr>
+    {zombie.damage?.bleeding_chance && <tr><td>出血概率</td><td>{fmtChance(zombie.damage.bleeding_chance)}</td></tr>}
     {zombie.damage?.armor_penetration && <tr><td>护甲穿透</td><td>{zombie.damage.armor_penetration}</td></tr>}
-    <tr><td>经验值</td><td>{zombie.experience}</td></tr>
+    <tr><td>经验值</td><td>{fmtExp(zombie.experience)}</td></tr>
   </table>
 
   {hasLoot && (<>
@@ -38,7 +54,7 @@ const hp = typeof zombie.hp === 'string' && zombie.hp.startsWith('^') ? '?' : zo
       {zombie.loot.map(l => {
         const link = getItemLink(l.item_id);
         const name = resolveItemName(l.item_id);
-        return <tr><td>{link ? <a href={link}>{name}</a> : name}</td><td>{l.count}</td><td>{l.chance}</td></tr>;
+        return <tr><td>{link ? <a href={link}>{name}</a> : name}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
       })}
     </table>
   </>)}

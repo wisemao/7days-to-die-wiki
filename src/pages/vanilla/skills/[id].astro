@@ -27,6 +27,9 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
       {skill.levels.map(l => <tr><td>{l.level}</td><td>{l.effect}</td><td>{l.cost}</td></tr>)}
     </table>
   </>)}
+  {!hasLevels && (
+    <blockquote>此技能为单级被动技能（通常通过阅读技能杂志获得），无等级划分。</blockquote>
+  )}
 
   {hasBooks && (<>
     <h2>关联书籍</h2>
