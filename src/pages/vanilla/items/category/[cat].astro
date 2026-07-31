@@ -57,7 +57,7 @@ const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length
 // ─── Sub-grouping for non-book categories ───
 // armor: by equipment slot; melee_weapon/ranged_weapon: by weapon type
 // material: by resource type; food: by preparation; medical: by type
-const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' ? (() => {
+const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' || catKey === 'ammo' || catKey === 'vehicle' || catKey === 'tool' || catKey === 'quest_item' ? (() => {
   const defs = {
     armor: [
       ['头盔/帽子', /Helmet|Hat$|Head/],
@@ -99,6 +99,39 @@ const subGroups = catKey === 'armor' || catKey === 'melee_weapon' || catKey === 
     medical: [
       ['治疗用品', /^medical/],
       ['药品', /^drug/],
+      ['其他', null],
+    ],
+    ammo: [
+      ['子弹', /^ammo(9mm|44|762|Shotgun)/],
+      ['箭矢', /^ammoArrow/],
+      ['弩箭', /^ammoCrossbowBolt/],
+      ['投掷物/爆炸物', /^thrown|^ammoRocket|^ammoGasCan|^ammoDart/],
+      ['炮塔弹药', /^ammoJunkTurret/],
+      ['弹药盒', /^ammoBundle/],
+      ['其他', null],
+    ],
+    vehicle: [
+      ['自行车', /^vehicleBicycle/],
+      ['小型机车', /^vehicleMinibike/],
+      ['摩托车', /^vehicleMotorcycle/],
+      ['4x4 卡车', /^vehicleTruck/],
+      ['旋翼机', /^vehicleGyro/],
+      ['其他', null],
+    ],
+    tool: [
+      ['电动工具', /^meleeTool(AxeT3|PickT3|RepairT3)/],
+      ['伐木/采矿工具', /^meleeTool(Axe|Pick|Shovel)/],
+      ['修理工具', /^meleeToolRepair/],
+      ['拆解工具', /^meleeToolSalvage/],
+      ['生活工具', /^meleeTool(Flashlight|Torch|WireTool|PaintTool)/],
+      ['生产设备', /^tool(Cooking|Beaker|Bellows|Anvil|Forge)/],
+      ['养殖/采集设备', /^tool(Dew|Apiary|ChickenCoop)/],
+      ['其他', null],
+    ],
+    quest_item: [
+      ['藏宝图', /^qt_/],
+      ['任务奖励', /^questReward/],
+      ['徽章/特殊', /^biomeBadge|^note|^questItem/],
       ['其他', null],
     ],
   };

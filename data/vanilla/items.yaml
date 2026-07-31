@@ -4859,7 +4859,7 @@ items:
     tier: 10
   - id: resourceNail
     name: 钉子
-    category: ammo
+    category: material
     stack_size: 1000
     tier: 10
     stats:
@@ -5806,7 +5806,7 @@ items:
     icon: bookForgeAhead
   - id: vehiclesSkillMagazine
     name: 载具大冒险
-    category: vehicle
+    category: book
     stack_size: 1
     icon: bookVehicleAdventures
   - id: questRewardBundleMaster
