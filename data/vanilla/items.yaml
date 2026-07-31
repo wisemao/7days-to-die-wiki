@@ -14,6 +14,7 @@ items:
       block_damage: 0.15
       harvest_count: 0.7
       dismember_chance: 0.05
+    trader_available: true
   - id: meleeToolRepairT0TazasStoneAxe
     name: 塔萨的石斧
     category: tool
@@ -42,6 +43,7 @@ items:
       mod_slots: 1
       damage: 0.1
       block_damage: 0.1
+    trader_available: true
   - id: meleeToolRepairT3Nailgun
     name: 钉枪
     category: tool
@@ -59,6 +61,7 @@ items:
       magazine_size: 10
       reload_speed: 1
       mod_slots: 0
+    trader_available: true
   - id: meleeToolAxeT1IronFireaxe
     name: 铁斧
     category: tool
@@ -73,6 +76,7 @@ items:
       damage: 1.25
       block_damage: 1.25
       harvest_count: 0.7
+    trader_available: true
   - id: meleeToolAxeT2SteelAxe
     name: 钢斧
     category: tool
@@ -88,6 +92,7 @@ items:
       block_damage: 1.25
       exp_gain: -0.1
       harvest_count: 0.7
+    trader_available: true
   - id: meleeToolPickT1IronPickaxe
     name: 铁制鹤嘴锄
     category: tool
@@ -101,6 +106,7 @@ items:
       mod_slots: 2
       damage: 1
       block_damage: 1
+    trader_available: true
   - id: meleeToolPickT2SteelPickaxe
     name: 钢制鹤嘴锄
     category: tool
@@ -115,6 +121,7 @@ items:
       damage: 1.25
       block_damage: 1.25
       exp_gain: -0.1
+    trader_available: true
   - id: meleeToolShovelT0StoneShovel
     name: 石铲
     category: tool
@@ -128,6 +135,7 @@ items:
       mod_slots: 1
       damage: 1.25
       block_damage: 1.25
+    trader_available: true
   - id: meleeToolShovelT1IronShovel
     name: 铁铲
     category: tool
@@ -141,6 +149,7 @@ items:
       mod_slots: 2
       damage: 1.25
       block_damage: 1.25
+    trader_available: true
   - id: meleeToolShovelT2SteelShovel
     name: 钢铲
     category: tool
@@ -156,6 +165,7 @@ items:
       damage: 1.25
       block_damage: 1.25
       exp_gain: -0.1
+    trader_available: true
   - id: meleeToolAxeT3Chainsaw
     name: 电锯
     category: tool
@@ -177,6 +187,7 @@ items:
       spread_horizontal: 0.5
       harvest_count: 0.2
       dismember_chance: 1
+    trader_available: true
   - id: meleeToolPickT3Auger
     name: 螺旋钻
     category: tool
@@ -197,6 +208,7 @@ items:
       spread_vertical: 0.5
       spread_horizontal: 0.5
       harvest_count: 0.2
+    trader_available: true
   - id: meleeToolSalvageT1Wrench
     name: 扳手
     category: tool
@@ -211,6 +223,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: 1
+    trader_available: true
   - id: meleeToolSalvageT2Ratchet
     name: 棘齿
     category: tool
@@ -225,6 +238,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: 1
+    trader_available: true
   - id: meleeToolSalvageT3ImpactDriver
     name: 冲击起子
     category: tool
@@ -239,6 +253,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: 1
+    trader_available: true
   - id: meleeWpnBladeT0BoneKnife
     name: 骨刀
     category: melee_weapon
@@ -267,6 +282,7 @@ items:
       damage: 4
       block_damage: 1
       harvest_count: 1
+    trader_available: true
   - id: meleeWpnBladeT1CandyKnife
     name: 拐杖糖刀
     category: melee_weapon
@@ -296,6 +312,7 @@ items:
       block_damage: 1
       harvest_count: 1
       dismember_chance: 1
+    trader_available: true
   - id: meleeWpnClubT0WoodenClub
     name: 木棒
     category: melee_weapon
@@ -324,6 +341,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: -0.75
+    trader_available: true
   - id: meleeWpnClubT1CandyClub
     name: 拐杖糖棍棒
     category: melee_weapon
@@ -352,6 +370,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: -0.75
+    trader_available: true
   - id: meleeWpnBatonT0PipeBaton
     name: 铁管棒
     category: melee_weapon
@@ -380,6 +399,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: -0.75
+    trader_available: true
   - id: meleeWpnBatonT3PlasmaBaton
     name: Plasma Baton
     category: melee_weapon
@@ -412,6 +432,7 @@ items:
       block_damage: 1
       harvest_count: -0.75
       penetration: 1
+    trader_available: true
   - id: meleeWpnSpearT3SteelSpear
     name: 钢矛
     category: melee_weapon
@@ -426,6 +447,7 @@ items:
       block_damage: 1
       harvest_count: -0.75
       penetration: 1
+    trader_available: true
   - id: meleeWpnSledgeT0StoneSledgehammer
     name: 石质大锤
     category: melee_weapon
@@ -456,6 +478,7 @@ items:
       damage: 1.25
       block_damage: 1.25
       harvest_count: -0.75
+    trader_available: true
   - id: meleeWpnSledgeT3SteelSledgehammer
     name: 钢质大锤
     category: melee_weapon
@@ -471,6 +494,7 @@ items:
       damage: 1.25
       block_damage: 1.25
       harvest_count: -0.75
+    trader_available: true
   - id: meleeWpnKnucklesT0LeatherKnuckles
     name: 拳手绑带
     category: melee_weapon
@@ -497,6 +521,7 @@ items:
       mod_slots: 2
       damage: 1
       block_damage: 1
+    trader_available: true
   - id: meleeWpnKnucklesT3SteelKnuckles
     name: 钢质指虎
     category: melee_weapon
@@ -511,6 +536,7 @@ items:
       damage: 1
       block_damage: 1
       harvest_count: 1
+    trader_available: true
   - id: meleeToolFlashlight02
     name: 手电筒
     category: tool
@@ -524,6 +550,7 @@ items:
       attacks_per_min: 65
       stamina_cost: 18
       mod_slots: 0
+    trader_available: true
   - id: meleeToolTorch
     name: 火把
     category: tool
@@ -545,6 +572,7 @@ items:
     tier: 200
     stats:
       mod_slots: 0
+    trader_available: true
   - id: meleeToolPaintTool
     name: 油漆刷
     category: tool
@@ -555,6 +583,7 @@ items:
       magazine_size: 1
       spread_vertical: 0
       spread_horizontal: 0
+    trader_available: true
   - id: gunHandgunT0PipePistol
     name: 铁管手枪
     category: ranged_weapon
@@ -573,6 +602,7 @@ items:
       spread_vertical: 1.5
       spread_horizontal: 1.5
       durability: 100
+    trader_available: true
   - id: gunHandgunT1Pistol
     name: 手枪
     category: ranged_weapon
@@ -591,6 +621,7 @@ items:
       spread_vertical: 1.5
       spread_horizontal: 1.5
       durability: 300
+    trader_available: true
   - id: gunHandgunT3SMG5
     name: SMG-5
     category: ranged_weapon
@@ -609,6 +640,7 @@ items:
       spread_vertical: 1.35
       spread_horizontal: 1.35
       durability: 500
+    trader_available: true
   - id: gunHandgunT2Magnum44
     name: .44马格南
     category: ranged_weapon
@@ -627,6 +659,7 @@ items:
       spread_vertical: 1.3
       spread_horizontal: 1.3
       durability: 400
+    trader_available: true
   - id: gunHandgunT3DesertVulture
     name: .44 口径沙漠秃鹰
     category: ranged_weapon
@@ -645,6 +678,7 @@ items:
       spread_vertical: 1.3
       spread_horizontal: 1.3
       durability: 500
+    trader_available: true
   - id: gunShotgunT0PipeShotgun
     name: 铁管霰弹枪
     category: ranged_weapon
@@ -661,6 +695,7 @@ items:
       spread_vertical: 0.07
       spread_horizontal: 0.07
       durability: 100
+    trader_available: true
   - id: gunShotgunT1DoubleBarrel
     name: 双管霰弹枪
     category: ranged_weapon
@@ -675,6 +710,7 @@ items:
       damage: 0.05
       block_damage: 0.15
       durability: 200
+    trader_available: true
   - id: gunShotgunT2PumpShotgun
     name: 泵动式霰弹枪
     category: ranged_weapon
@@ -689,6 +725,7 @@ items:
       damage: 0.05
       block_damage: 0.15
       durability: 400
+    trader_available: true
   - id: gunShotgunT3AutoShotgun
     name: 自动霰弹枪
     category: ranged_weapon
@@ -703,6 +740,7 @@ items:
       damage: 0.05
       block_damage: 0.15
       durability: 700
+    trader_available: true
   - id: gunRifleT0PipeRifle
     name: 铁管步枪
     category: ranged_weapon
@@ -721,6 +759,7 @@ items:
       spread_vertical: 5.7
       spread_horizontal: 5.7
       durability: 100
+    trader_available: true
   - id: gunRifleT1HuntingRifle
     name: 猎枪
     category: ranged_weapon
@@ -739,6 +778,7 @@ items:
       spread_vertical: 5
       spread_horizontal: 5
       durability: 200
+    trader_available: true
   - id: gunRifleT2LeverActionRifle
     name: 杠杆式步枪
     category: ranged_weapon
@@ -757,6 +797,7 @@ items:
       spread_vertical: 6
       spread_horizontal: 6
       durability: 400
+    trader_available: true
   - id: gunRifleT3SniperRifle
     name: 狙击步枪
     category: ranged_weapon
@@ -775,6 +816,7 @@ items:
       spread_vertical: 6
       spread_horizontal: 6
       durability: 700
+    trader_available: true
   - id: gunMGT0PipeMachineGun
     name: 铁管机枪
     category: ranged_weapon
@@ -793,6 +835,7 @@ items:
       spread_horizontal: 3
       durability: 100
       mod_slots: 1
+    trader_available: true
   - id: gunMGT1AK47
     name: AK-47机枪
     category: ranged_weapon
@@ -811,6 +854,7 @@ items:
       spread_horizontal: 2.8
       durability: 200
       mod_slots: 2
+    trader_available: true
   - id: gunMGT2TacticalAR
     name: 战术突击步枪
     category: ranged_weapon
@@ -829,6 +873,7 @@ items:
       spread_horizontal: 2.8
       durability: 400
       mod_slots: 3
+    trader_available: true
   - id: gunMGT3M60
     name: M60机枪
     category: ranged_weapon
@@ -847,6 +892,7 @@ items:
       spread_horizontal: 2.8
       durability: 700
       mod_slots: 4
+    trader_available: true
   - id: gunExplosivesT3RocketLauncher
     name: 火箭发射器
     category: ranged_weapon
@@ -865,6 +911,7 @@ items:
       spread_vertical: 7
       spread_horizontal: 7
       durability: 100
+    trader_available: true
   - id: gunBowT0PrimitiveBow
     name: 传统弓
     category: ranged_weapon
@@ -884,6 +931,7 @@ items:
       burst_round_count: 1
       durability: 100
       mod_slots: 1
+    trader_available: true
   - id: gunBowT1WoodenBow
     name: 木弓
     category: ranged_weapon
@@ -903,6 +951,7 @@ items:
       burst_round_count: 1
       durability: 200
       mod_slots: 2
+    trader_available: true
   - id: gunBowT3CompoundBow
     name: 复合弓
     category: ranged_weapon
@@ -921,6 +970,7 @@ items:
       burst_round_count: 1
       durability: 350
       mod_slots: 3
+    trader_available: true
   - id: gunBowT1IronCrossbow
     name: 铁弩
     category: ranged_weapon
@@ -939,6 +989,7 @@ items:
       burst_round_count: 1
       durability: 200
       mod_slots: 2
+    trader_available: true
   - id: gunBowT1DevCrossbow
     name: gunBowT1DevCrossbow
     category: material
@@ -968,6 +1019,7 @@ items:
       burst_round_count: 1
       durability: 350
       mod_slots: 3
+    trader_available: true
   - id: gunBotT1JunkSledge
     name: 机器人大锤
     category: ranged_weapon
@@ -986,6 +1038,7 @@ items:
       durability: 300
       mod_slots: 1
       harvest_count: -0.75
+    trader_available: true
   - id: gunBotT2JunkTurret
     name: 机器人炮塔
     category: ranged_weapon
@@ -1000,6 +1053,7 @@ items:
       reload_speed: 1
       durability: 300
       mod_slots: 1
+    trader_available: true
   - id: gunBotT3JunkDrone
     name: 机器人无人机
     category: ranged_weapon
@@ -1016,6 +1070,7 @@ items:
       reload_speed: 1
       spread_vertical: 0
       spread_horizontal: 0
+    trader_available: true
   - id: meleeHandMaster
     name: meleeHandMaster
     category: melee_weapon
@@ -1544,6 +1599,7 @@ items:
     stats:
       damage: 32
       block_damage: 100
+    trader_available: true
   - id: ammo9mmBulletHP
     name: 9毫米空心弹
     category: ammo
@@ -1552,6 +1608,7 @@ items:
     stats:
       damage: 35
       block_damage: 100
+    trader_available: true
   - id: ammo9mmBulletAP
     name: 9毫米穿甲弹
     category: ammo
@@ -1561,6 +1618,7 @@ items:
       damage: 38
       block_damage: 100
       penetration: 1
+    trader_available: true
   - id: ammo44MagnumBulletBall
     name: .44马格南弹药
     category: ammo
@@ -1570,6 +1628,7 @@ items:
       damage: 0.5
       block_damage: 100
       penetration: 1
+    trader_available: true
   - id: ammo44MagnumBulletHP
     name: .44马格南空心弹
     category: ammo
@@ -1579,6 +1638,7 @@ items:
       damage: 0.5
       block_damage: 100
       penetration: 1
+    trader_available: true
   - id: ammo44MagnumBulletAP
     name: .44马格南穿甲弹
     category: ammo
@@ -1588,6 +1648,7 @@ items:
       damage: 0.5
       block_damage: 100
       penetration: 1
+    trader_available: true
   - id: ammo762mmBulletBall
     name: 7.62毫米弹药
     category: ammo
@@ -1596,6 +1657,7 @@ items:
     stats:
       damage: 47
       block_damage: 100
+    trader_available: true
   - id: ammo762mmBulletHP
     name: 7.62毫米马格南空心弹
     category: ammo
@@ -1604,6 +1666,7 @@ items:
     stats:
       damage: -1.5
       block_damage: 100
+    trader_available: true
   - id: ammo762mmBulletAP
     name: 7.62毫米穿甲弹
     category: ammo
@@ -1613,6 +1676,7 @@ items:
       damage: -3
       block_damage: 100
       penetration: 1
+    trader_available: true
   - id: ammoShotgunShell
     name: 霰弹（弹药）
     category: ammo
@@ -1625,6 +1689,7 @@ items:
       damage_falloff: 4
       spread_vertical: 4.5
       spread_horizontal: 4.5
+    trader_available: true
   - id: ammoShotgunSlug
     name: 霰弹枪穿甲弹（弹药）
     category: ammo
@@ -1638,6 +1703,7 @@ items:
       spread_vertical: 2.4
       spread_horizontal: 2.4
       penetration: 2
+    trader_available: true
   - id: ammoShotgunBreachingSlug
     name: 霰弹枪拆门弹（弹药）
     category: ammo
@@ -1650,6 +1716,7 @@ items:
       damage_falloff: 2
       spread_vertical: 2.4
       spread_horizontal: 2.4
+    trader_available: true
   - id: ammoJunkTurretRegular
     name: 机器人炮塔弹药
     category: ammo
@@ -1699,6 +1766,7 @@ items:
     stats:
       block_damage: 100
       damage: 20
+    trader_available: true
   - id: ammoRocketFrag
     name: 火箭弹（弹药）
     category: ammo
@@ -1706,11 +1774,13 @@ items:
     stats:
       block_damage: 10
       damage: 30
+    trader_available: true
   - id: ammoGasCan
     name: 汽油罐
     category: ammo
     stack_size: 10000
     tier: 30
+    trader_available: true
   - id: ammoArrowStone
     name: 石箭（弹药）
     category: ammo
@@ -1719,6 +1789,7 @@ items:
     stats:
       damage: 0.25
       block_damage: 100
+    trader_available: true
   - id: ammoArrowIron
     name: 铁箭（弹药）
     category: ammo
@@ -1727,6 +1798,7 @@ items:
     stats:
       damage: 0.25
       block_damage: 100
+    trader_available: true
   - id: ammoArrowSteelAP
     name: 钢箭（弹药）
     category: ammo
@@ -1735,6 +1807,7 @@ items:
     stats:
       damage: 0.25
       block_damage: 100
+    trader_available: true
   - id: ammoArrowFlaming
     name: 燃烧箭（弹药）
     category: ammo
@@ -1744,6 +1817,7 @@ items:
       damage: 0.25
       block_damage: 100
       cold_resistance: 10
+    trader_available: true
   - id: ammoArrowExploding
     name: 爆炸箭（弹药）
     category: ammo
@@ -1752,6 +1826,7 @@ items:
     stats:
       block_damage: 100
       damage: 0.25
+    trader_available: true
   - id: ammoCrossbowBoltStone
     name: 石头弩箭（弹药）
     category: ammo
@@ -1760,6 +1835,7 @@ items:
     stats:
       damage: 50
       block_damage: 100
+    trader_available: true
   - id: ammoCrossbowBoltIron
     name: 铁弩箭（弹药）
     category: ammo
@@ -1768,6 +1844,7 @@ items:
     stats:
       damage: 59
       block_damage: 100
+    trader_available: true
   - id: ammoCrossbowBoltSteelAP
     name: 钢弩箭（弹药）
     category: ammo
@@ -1776,6 +1853,7 @@ items:
     stats:
       damage: 63
       block_damage: 100
+    trader_available: true
   - id: ammoCrossbowBoltFlaming
     name: 燃烧弩箭（弹药）
     category: ammo
@@ -1785,6 +1863,7 @@ items:
       damage: 38
       block_damage: 100
       cold_resistance: 10
+    trader_available: true
   - id: ammoCrossbowBoltExploding
     name: 爆炸弩箭
     category: ammo
@@ -1793,6 +1872,7 @@ items:
     stats:
       block_damage: 100
       damage: 250
+    trader_available: true
   - id: ammoBundleMaster
     name: ammoBundleMaster
     category: ammo
@@ -2006,25 +2086,30 @@ items:
     category: ammo
     stack_size: 20
     tier: 50
+    trader_available: true
   - id: thrownGrenadeContact
     name: 触炸手雷（弹药）
     category: ammo
     stack_size: 25
     tier: 75
+    trader_available: true
   - id: thrownGrenade
     name: 手雷（弹药）
     category: ammo
     stack_size: 1
+    trader_available: true
   - id: thrownTimedCharge
     name: 定时炸弹（弹药）
     category: ammo
     stack_size: 10
     tier: 300
+    trader_available: true
   - id: thrownDynamite
     name: 柱状炸药（弹药）
     category: ammo
     stack_size: 10
     tier: 100
+    trader_available: true
   - id: thrownAmmoMolotovCocktail
     name: 燃烧瓶（弹药）
     category: ammo
@@ -2032,6 +2117,7 @@ items:
     tier: 75
     stats:
       cold_resistance: 10
+    trader_available: true
   - id: ammoDartIron
     name: 铁飞镖（弹药）
     category: ammo
@@ -2040,6 +2126,7 @@ items:
     stats:
       damage: 45
       block_damage: 2
+    trader_available: true
   - id: partsMaster
     name: partsMaster
     category: material
@@ -2051,31 +2138,38 @@ items:
     category: material
     stack_size: 50
     tier: 150
+    trader_available: true
   - id: gunHandgunT1PistolParts
     name: 手枪零件
     category: material
     stack_size: 1
+    trader_available: true
   - id: gunRifleT1HuntingRifleParts
     name: 步枪零件
     category: material
     stack_size: 1
+    trader_available: true
   - id: gunShotgunT1DoubleBarrelParts
     name: 霰弹枪零件
     category: material
     stack_size: 1
+    trader_available: true
   - id: gunBowT1WoodenBowParts
     name: 弓/弩零件
     category: material
     stack_size: 1
+    trader_available: true
   - id: gunExplosivesT3RocketLauncherParts
     name: 火箭发射器零件
     category: material
     stack_size: 1
     tier: 200
+    trader_available: true
   - id: gunBotRoboticsParts
     name: 机器人零件
     category: material
     stack_size: 1
+    trader_available: true
   - id: meleeWpnBatonT2StunBatonParts
     name: 眩晕棒零件
     category: material
@@ -2110,11 +2204,13 @@ items:
     category: material
     stack_size: 1
     tier: 200
+    trader_available: true
   - id: armorParts
     name: 护甲部件
     category: armor
     stack_size: 1
     tier: 200
+    trader_available: true
   - id: meleeToolAxeT3ChainsawParts
     name: 电动工具零件
     category: material
@@ -2125,16 +2221,19 @@ items:
     category: vehicle
     stack_size: 1
     tier: 300
+    trader_available: true
   - id: vehicleMinibikeChassis
     name: 小型机车底盘
     category: vehicle
     stack_size: 1
     tier: 1800
+    trader_available: true
   - id: vehicleMinibikeHandlebars
     name: 小型机车车把
     category: vehicle
     stack_size: 1
     tier: 1800
+    trader_available: true
   - id: vehicleMinibikePlaceable
     name: 小型机车
     category: vehicle
@@ -2144,16 +2243,19 @@ items:
       mod_slots: 3
       durability: 2000
       max_speed: 9.2
+    trader_available: true
   - id: vehicleBicycleChassis
     name: 自行车底盘
     category: vehicle
     stack_size: 1
     tier: 750
+    trader_available: true
   - id: vehicleBicycleHandlebars
     name: 自行车车把
     category: vehicle
     stack_size: 1
     tier: 750
+    trader_available: true
   - id: vehicleBicyclePlaceable
     name: 自行车
     category: vehicle
@@ -2163,16 +2265,19 @@ items:
       mod_slots: 2
       durability: 1500
       max_speed: 8.5
+    trader_available: true
   - id: vehicleMotorcycleChassis
     name: 摩托车底盘
     category: vehicle
     stack_size: 1
     tier: 3000
+    trader_available: true
   - id: vehicleMotorcycleHandlebars
     name: 摩托车车把
     category: vehicle
     stack_size: 1
     tier: 3000
+    trader_available: true
   - id: vehicleMotorcyclePlaceable
     name: 摩托车
     category: vehicle
@@ -2182,16 +2287,19 @@ items:
       mod_slots: 4
       durability: 4000
       max_speed: 14
+    trader_available: true
   - id: vehicleTruck4x4Chassis
     name: 4x4 卡车底盘
     category: vehicle
     stack_size: 1
     tier: 9000
+    trader_available: true
   - id: vehicleTruck4x4Accessories
     name: 4x4 卡车附件
     category: vehicle
     stack_size: 1
     tier: 9000
+    trader_available: true
   - id: vehicleTruck4x4Placeable
     name: 4x4 卡车
     category: vehicle
@@ -2201,16 +2309,19 @@ items:
       mod_slots: 5
       durability: 8000
       max_speed: 14
+    trader_available: true
   - id: vehicleGyroCopterChassis
     name: 旋翼机底盘
     category: vehicle
     stack_size: 1
     tier: 15000
+    trader_available: true
   - id: vehicleGyroCopterAccessories
     name: 旋翼机配件
     category: vehicle
     stack_size: 1
     tier: 15000
+    trader_available: true
   - id: vehicleGyrocopterPlaceable
     name: 旋翼机
     category: vehicle
@@ -2220,6 +2331,7 @@ items:
       mod_slots: 5
       durability: 3500
       max_speed: 15
+    trader_available: true
   - id: vehicleHelicopterPlaceable
     name: 直升飞机
     category: vehicle
@@ -2245,6 +2357,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorPrimitiveOutfit
     name: 粗糙装束
     category: armor
@@ -2256,6 +2369,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorPrimitiveGloves
     name: 粗糙手套
     category: armor
@@ -2267,6 +2381,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorPrimitiveBoots
     name: 粗糙鞋子
     category: armor
@@ -2278,6 +2393,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorLightMaster
     name: armorLightMaster
     category: material
@@ -2296,6 +2412,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       harvest_count: 0.05
+    trader_available: true
   - id: armorLumberjackOutfit
     name: 伐木工装束
     category: armor
@@ -2308,6 +2425,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       carry_capacity: 1
+    trader_available: true
   - id: armorLumberjackGloves
     name: 伐木工手套
     category: armor
@@ -2320,6 +2438,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       damage: 2
+    trader_available: true
   - id: armorLumberjackBoots
     name: 伐木工靴子
     category: armor
@@ -2332,6 +2451,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       stamina_regen_rate: 0.02
+    trader_available: true
   - id: armorPreacherHelmet
     name: 传道者帽子
     category: armor
@@ -2343,6 +2463,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorPreacherOutfit
     name: 传道者装束
     category: armor
@@ -2354,6 +2475,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorPreacherGloves
     name: 传道者手套
     category: armor
@@ -2366,6 +2488,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       damage: 0.1
+    trader_available: true
   - id: armorPreacherBoots
     name: 传道者靴子
     category: armor
@@ -2377,6 +2500,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorRogueHelmet
     name: 盗贼兜帽
     category: armor
@@ -2389,6 +2513,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       loot_stage: 0.02
+    trader_available: true
   - id: armorRogueOutfit
     name: 盗贼装束
     category: armor
@@ -2402,6 +2527,7 @@ items:
       heat_resistance: 20
       noise: -0.03
       crouch_speed: 0.02
+    trader_available: true
   - id: armorRogueGloves
     name: 盗贼手套
     category: armor
@@ -2415,6 +2541,7 @@ items:
       heat_resistance: 20
       lockpick_time: -0.02
       lockpick_break_chance: -0.02
+    trader_available: true
   - id: armorRogueBoots
     name: 盗贼靴子
     category: armor
@@ -2426,6 +2553,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorAthleticHelmet
     name: 运动员帽子
     category: armor
@@ -2437,6 +2565,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorAthleticOutfit
     name: 运动员装束
     category: armor
@@ -2449,6 +2578,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       max_health: 2
+    trader_available: true
   - id: armorAthleticGloves
     name: 运动员手套
     category: armor
@@ -2461,6 +2591,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       max_stamina: 5
+    trader_available: true
   - id: armorAthleticBoots
     name: 运动员鞋子
     category: armor
@@ -2473,6 +2604,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       run_speed: 0.02
+    trader_available: true
   - id: armorEnforcerHelmet
     name: 警官墨镜
     category: armor
@@ -2484,6 +2616,7 @@ items:
       durability: 250
       cold_resistance: 20
       heat_resistance: 20
+    trader_available: true
   - id: armorEnforcerOutfit
     name: 警官装束
     category: armor
@@ -2496,6 +2629,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       damage_reduction: 0.05
+    trader_available: true
   - id: armorEnforcerGloves
     name: 警官手套
     category: armor
@@ -2508,6 +2642,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       fuel_consumption: -0.02
+    trader_available: true
   - id: armorEnforcerBoots
     name: 警官鞋子
     category: armor
@@ -2520,6 +2655,7 @@ items:
       cold_resistance: 20
       heat_resistance: 20
       run_speed: 0.02
+    trader_available: true
   - id: armorMediumMaster
     name: armorMediumMaster
     category: material
@@ -2540,6 +2676,7 @@ items:
       mobility: -0.05
       stamina_regen_rate: -0.0562
       noise: 0.1
+    trader_available: true
   - id: armorFarmerOutfit
     name: 农夫装束
     category: armor
@@ -2555,6 +2692,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       harvest_count: 1
+    trader_available: true
   - id: armorFarmerGloves
     name: 农夫手套
     category: armor
@@ -2570,6 +2708,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       damage: 0.02
+    trader_available: true
   - id: armorFarmerBoots
     name: 农夫靴子
     category: armor
@@ -2585,6 +2724,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       harvest_count: 1
+    trader_available: true
   - id: armorBikerHelmet
     name: 摩托车手头盔
     category: armor
@@ -2599,6 +2739,7 @@ items:
       mobility: -0.049
       stamina_regen_rate: -0.0562
       noise: 0.1
+    trader_available: true
   - id: armorBikerOutfit
     name: 摩托车手装束
     category: armor
@@ -2614,6 +2755,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       max_health: 2
+    trader_available: true
   - id: armorBikerGloves
     name: 摩托车手手套
     category: armor
@@ -2629,6 +2771,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       damage: 0.1
+    trader_available: true
   - id: armorBikerBoots
     name: 摩托车手靴子
     category: armor
@@ -2644,6 +2787,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       stamina_cost: -0.02
+    trader_available: true
   - id: armorScavengerHelmet
     name: 拾荒者帽子
     category: armor
@@ -2659,6 +2803,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       exp_gain: 0.1
+    trader_available: true
   - id: armorScavengerOutfit
     name: 拾荒者装束
     category: armor
@@ -2674,6 +2819,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       carry_capacity: 1
+    trader_available: true
   - id: armorScavengerGloves
     name: 拾荒者手套
     category: armor
@@ -2689,6 +2835,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       harvest_count: 1
+    trader_available: true
   - id: armorScavengerBoots
     name: 拾荒者靴子
     category: armor
@@ -2704,6 +2851,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       stamina_cost: -0.05
+    trader_available: true
   - id: armorRangerHelmet
     name: 护林员帽子
     category: armor
@@ -2718,6 +2866,7 @@ items:
       mobility: -0.049
       stamina_regen_rate: -0.0562
       noise: 0.1
+    trader_available: true
   - id: armorRangerOutfit
     name: 护林员装束
     category: armor
@@ -2733,6 +2882,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       max_health: 2
+    trader_available: true
   - id: armorRangerGloves
     name: 护林员手套
     category: armor
@@ -2748,6 +2898,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       damage: 0.05
+    trader_available: true
   - id: armorRangerBoots
     name: 护林员靴子
     category: armor
@@ -2763,6 +2914,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       max_stamina: 10
+    trader_available: true
   - id: armorCommandoHelmet
     name: 指挥官头盔
     category: armor
@@ -2777,6 +2929,7 @@ items:
       mobility: -0.049
       stamina_regen_rate: -0.0562
       noise: 0.1
+    trader_available: true
   - id: armorCommandoOutfit
     name: 指挥官装束
     category: armor
@@ -2791,6 +2944,7 @@ items:
       mobility: -0.05
       stamina_regen_rate: -0.0562
       noise: 0.1
+    trader_available: true
   - id: armorCommandoGloves
     name: 指挥官手套
     category: armor
@@ -2806,6 +2960,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       damage: 0.05
+    trader_available: true
   - id: armorCommandoBoots
     name: 指挥官靴子
     category: armor
@@ -2821,6 +2976,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: 0.1
       run_speed: 0.02
+    trader_available: true
   - id: armorAssassinHelmet
     name: 刺客兜帽
     category: armor
@@ -2835,6 +2991,7 @@ items:
       mobility: -0.049
       stamina_regen_rate: -0.0562
       damage: 0.1
+    trader_available: true
   - id: armorAssassinOutfit
     name: 刺客装束
     category: armor
@@ -2850,6 +3007,7 @@ items:
       stamina_regen_rate: -0.0562
       noise: -0.03
       crouch_speed: 0.02
+    trader_available: true
   - id: armorAssassinGloves
     name: 刺客手套
     category: armor
@@ -2865,6 +3023,7 @@ items:
       stamina_regen_rate: -0.0562
       attacks_per_min: 0.02
       rounds_per_min: 0.02
+    trader_available: true
   - id: armorAssassinBoots
     name: 刺客靴子
     category: armor
@@ -2879,6 +3038,7 @@ items:
       mobility: -0.05
       stamina_regen_rate: -0.0562
       noise: -0.999
+    trader_available: true
   - id: armorHeavyMaster
     name: armorHeavyMaster
     category: material
@@ -2900,6 +3060,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       harvest_count: 0.05
+    trader_available: true
   - id: armorMinerOutfit
     name: 矿工装束
     category: armor
@@ -2915,6 +3076,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       stamina_cost: -0.05
+    trader_available: true
   - id: armorMinerGloves
     name: 矿工手套
     category: armor
@@ -2930,6 +3092,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       block_damage: 0.05
+    trader_available: true
   - id: armorMinerBoots
     name: 矿工靴子
     category: armor
@@ -2944,6 +3107,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorNomadHelmet
     name: 游牧民头饰
     category: armor
@@ -2959,6 +3123,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       water_loss_rate: -0.1
+    trader_available: true
   - id: armorNomadOutfit
     name: 游牧民装束
     category: armor
@@ -2974,6 +3139,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       carry_capacity: 1
+    trader_available: true
   - id: armorNomadGloves
     name: 游牧民手套
     category: armor
@@ -2989,6 +3155,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       damage: 0.05
+    trader_available: true
   - id: armorNomadBoots
     name: 游牧民靴子
     category: armor
@@ -3004,6 +3171,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       run_speed: 0.02
+    trader_available: true
   - id: armorNerdHelmet
     name: 学霸护目镜
     category: armor
@@ -3019,6 +3187,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       exp_gain: 0.02
+    trader_available: true
   - id: armorNerdOutfit
     name: 学霸装束
     category: armor
@@ -3033,6 +3202,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorNerdGloves
     name: 学霸手套
     category: armor
@@ -3048,6 +3218,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       damage: 0.1
+    trader_available: true
   - id: armorNerdBoots
     name: 学霸靴子
     category: armor
@@ -3062,6 +3233,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorRaiderHelmet
     name: 袭击者头盔
     category: armor
@@ -3076,6 +3248,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorRaiderOutfit
     name: 袭击者装束
     category: armor
@@ -3090,6 +3263,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorRaiderGloves
     name: 袭击者手套
     category: armor
@@ -3105,6 +3279,7 @@ items:
       stamina_regen_rate: -0.09
       noise: 0.2
       damage: 0.1
+    trader_available: true
   - id: armorRaiderBoots
     name: 袭击者靴子
     category: armor
@@ -3119,6 +3294,7 @@ items:
       mobility: -0.075
       stamina_regen_rate: -0.09
       noise: 0.2
+    trader_available: true
   - id: armorSantaHatHelmet
     name: 圣诞帽
     category: armor
@@ -3607,6 +3783,7 @@ items:
     category: medical
     stack_size: 10
     tier: 5
+    trader_available: true
   - id: medicalFirstAidBandage
     name: 急救绷带
     category: medical
@@ -3614,6 +3791,7 @@ items:
     tier: 15
     stats:
       health: 30
+    trader_available: true
   - id: medicalFirstAidKit
     name: 急救包
     category: medical
@@ -3621,11 +3799,13 @@ items:
     tier: 200
     stats:
       health: 180
+    trader_available: true
   - id: medicalSplint
     name: 夹板
     category: medical
     stack_size: 5
     tier: 10
+    trader_available: true
   - id: medicalPlasterCast
     name: 石膏绷带
     category: medical
@@ -3635,6 +3815,7 @@ items:
     category: medical
     stack_size: 15
     tier: 50
+    trader_available: true
   - id: drugVitamins
     name: 维生素
     category: medical
@@ -3642,6 +3823,7 @@ items:
     tier: 80
     stats:
       buff_duration: 12 分钟
+    trader_available: true
   - id: drugPainkillers
     name: 止痛药
     category: medical
@@ -3649,6 +3831,7 @@ items:
     tier: 80
     stats:
       buff_duration: 3 分钟
+    trader_available: true
   - id: drugHerbalAntibiotics
     name: 草药抗生素
     category: medical
@@ -3663,6 +3846,7 @@ items:
     tier: 240
     stats:
       infection_cure: 25%
+    trader_available: true
   - id: drugSteroids
     name: 类固醇
     category: consumable
@@ -3670,6 +3854,7 @@ items:
     tier: 250
     stats:
       buff_duration: 12 分钟
+    trader_available: true
   - id: drugRecog
     name: 雷克格
     category: medical
@@ -3677,12 +3862,14 @@ items:
     tier: 250
     stats:
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugFortBites
     name: 强健宝
     category: consumable
     stack_size: 1
     stats:
       buff_duration: 6 分钟
+    trader_available: true
   - id: foodBurntSmoothie
     name: 黑肺血清
     category: food
@@ -3731,6 +3918,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugCovertCats
     name: 隐蔽的猫
     category: consumable
@@ -3738,6 +3926,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugEyeKandy
     name: 寻宝眼药水
     category: consumable
@@ -3745,6 +3934,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugHackers
     name: 黑客
     category: consumable
@@ -3752,6 +3942,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugHealthBar
     name: 能量棒
     category: consumable
@@ -3759,6 +3950,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugJailBreakers
     name: 越狱者
     category: consumable
@@ -3766,6 +3958,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugNerdTats
     name: 学霸刺青
     category: consumable
@@ -3773,6 +3966,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugOhShitzDrops
     name: 该死的坠落
     category: consumable
@@ -3780,6 +3974,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugRockBusters
     name: 岩石克星
     category: consumable
@@ -3787,6 +3982,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugSkullCrushers
     name: 头骨粉碎者
     category: consumable
@@ -3794,6 +3990,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: drugSugarButts
     name: 烟蒂糖
     category: consumable
@@ -3801,6 +3998,7 @@ items:
     stats:
       hunger: 5
       buff_duration: 6 分钟
+    trader_available: true
   - id: foodHoney
     name: 一罐蜂蜜
     category: food
@@ -3810,6 +4008,7 @@ items:
       hunger: 8
       health: 3
       infection_cure: 5%
+    trader_available: true
   - id: foodCanBeef
     name: 大份牛肉罐头
     category: food
@@ -3818,6 +4017,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanChicken
     name: 鸡肉罐头
     category: food
@@ -3825,6 +4025,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanLamb
     name: 羊肉罐头
     category: food
@@ -3832,6 +4033,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanCatfood
     name: 猫粮罐头
     category: food
@@ -3840,6 +4042,7 @@ items:
     stats:
       hunger: 10
       health: 5
+    trader_available: true
   - id: foodCanDogfood
     name: 狗粮罐头
     category: food
@@ -3848,6 +4051,7 @@ items:
     stats:
       hunger: 10
       health: 5
+    trader_available: true
   - id: foodCanChili
     name: 辣椒罐头
     category: food
@@ -3855,6 +4059,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanTuna
     name: 金枪鱼罐头
     category: food
@@ -3863,6 +4068,7 @@ items:
     stats:
       hunger: 5
       health: 3
+    trader_available: true
   - id: foodCanSham
     name: 山威罐头
     category: food
@@ -3870,6 +4076,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanPasta
     name: 通心粉罐头
     category: food
@@ -3877,6 +4084,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanSalmon
     name: 三文鱼罐头
     category: food
@@ -3884,6 +4092,7 @@ items:
     stats:
       hunger: 15
       health: 7
+    trader_available: true
   - id: foodCanMiso
     name: 味增罐头
     category: food
@@ -3893,6 +4102,7 @@ items:
       hunger: 10
       water: 10
       health: 5
+    trader_available: true
   - id: foodCanPeas
     name: 豌豆罐头
     category: food
@@ -3902,6 +4112,7 @@ items:
       hunger: 10
       water: 5
       health: 5
+    trader_available: true
   - id: foodCanPears
     name: 梨子罐头
     category: food
@@ -3911,6 +4122,7 @@ items:
       hunger: 10
       water: 5
       health: 5
+    trader_available: true
   - id: foodCanSoup
     name: 鸡汤
     category: food
@@ -3920,6 +4132,7 @@ items:
       hunger: 10
       water: 10
       health: 5
+    trader_available: true
   - id: foodCanStock
     name: 浓汤罐头
     category: food
@@ -3929,6 +4142,7 @@ items:
       hunger: 5
       water: 10
       health: 3
+    trader_available: true
   - id: foodCornOnTheCob
     name: 烤玉米
     category: food
@@ -3947,6 +4161,7 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    trader_available: true
   - id: foodShamSandwich
     name: 过期的山威三明治
     category: food
@@ -3964,6 +4179,7 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    trader_available: true
   - id: foodGrilledMeat
     name: 烤肉
     category: food
@@ -3973,6 +4189,7 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    trader_available: true
   - id: foodBoiledMeat
     name: 水煮肉
     category: food
@@ -3983,6 +4200,7 @@ items:
       water: 10
       health: 15
       stamina: 10
+    trader_available: true
   - id: foodChickenWings
     name: 鸡翅
     category: food
@@ -4033,6 +4251,7 @@ items:
       water: 20
       health: 25
       stamina: 20
+    trader_available: true
   - id: foodSteakAndPotato
     name: 牛排配土豆
     category: food
@@ -4042,6 +4261,7 @@ items:
       hunger: 50
       health: 25
       stamina: 20
+    trader_available: true
   - id: foodHoneyGlazedSham
     name: 蜜汁山威
     category: food
@@ -4073,6 +4293,7 @@ items:
       health: 80
       stamina: 30
       buff_duration: 10 分钟
+    trader_available: true
   - id: foodHoboStew
     name: 蔬菜炖肉
     category: food
@@ -4083,6 +4304,7 @@ items:
       water: 20
       health: 32
       stamina: 30
+    trader_available: true
   - id: foodFishTacos
     name: 鱼肉塔可
     category: food
@@ -4092,6 +4314,7 @@ items:
       hunger: 46
       health: 40
       stamina: 30
+    trader_available: true
   - id: foodChiliDog
     name: 辣狗
     category: food
@@ -4101,6 +4324,7 @@ items:
       hunger: 53
       health: 30
       stamina: 30
+    trader_available: true
   - id: foodBakedPotato
     name: 烤土豆
     category: food
@@ -4110,6 +4334,7 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    trader_available: true
   - id: foodBlueberryPie
     name: 蓝莓派
     category: food
@@ -4119,6 +4344,7 @@ items:
       hunger: 45
       health: 22
       stamina: 20
+    trader_available: true
   - id: foodPumpkinPie
     name: 南瓜派
     category: food
@@ -4193,6 +4419,7 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    trader_available: true
   - id: foodBaconAndEggs
     name: 培根鸡蛋
     category: food
@@ -4202,6 +4429,7 @@ items:
       hunger: 36
       health: 18
       stamina: 10
+    trader_available: true
   - id: foodVegetableStew
     name: 炖杂蔬
     category: food
@@ -4212,6 +4440,7 @@ items:
       water: 20
       health: 15
       stamina: 20
+    trader_available: true
   - id: foodRawMeat
     name: 生肉
     category: food
@@ -4220,6 +4449,7 @@ items:
     stats:
       hunger: 2
       stamina: -1
+    trader_available: true
   - id: foodRawMeatBundle
     name: 生肉捆
     category: food
@@ -4242,6 +4472,7 @@ items:
     stats:
       hunger: 5
       health: 3
+    trader_available: true
   - id: foodCornMeal
     name: 粗玉米粉
     category: food
@@ -4250,6 +4481,7 @@ items:
     stats:
       hunger: 2
       health: 3
+    trader_available: true
   - id: foodCropBlueberries
     name: 蓝莓
     category: food
@@ -4257,6 +4489,7 @@ items:
     tier: 10
     stats:
       hunger: 2
+    trader_available: true
   - id: foodCropCorn
     name: 玉米穗
     category: food
@@ -4265,6 +4498,7 @@ items:
     stats:
       hunger: 2
       health: 3
+    trader_available: true
   - id: foodCropGraceCorn
     name: 超级玉米穗
     category: food
@@ -4281,6 +4515,7 @@ items:
     tier: 10
     stats:
       hunger: 2
+    trader_available: true
   - id: foodCropMushrooms
     name: 蘑菇
     category: food
@@ -4289,6 +4524,7 @@ items:
     stats:
       hunger: 2
       health: 3
+    trader_available: true
   - id: foodCropMushroomsRadiated
     name: 辐射蘑菇
     category: food
@@ -4298,6 +4534,7 @@ items:
     stats:
       hunger: 2
       health: 3
+    trader_available: true
   - id: foodCropYuccaFruit
     name: 丝兰果实
     category: food
@@ -4339,6 +4576,7 @@ items:
     tier: 40
     stats:
       water: 20
+    trader_available: true
   - id: drinkJarPureMineralWater
     name: 纯净矿泉水
     category: food
@@ -4355,6 +4593,7 @@ items:
     tier: 68
     stats:
       water: 34
+    trader_available: true
   - id: drinkJarGoldenRodTea
     name: 秋麒麟茶
     category: food
@@ -4363,6 +4602,7 @@ items:
     stats:
       water: 24
       dysentery_cure: 20%
+    trader_available: true
   - id: drinkJarHoneyTea
     name: 蜂蜜茶
     category: food
@@ -4382,6 +4622,7 @@ items:
     stats:
       water: 24
       buff_duration: 6 分钟
+    trader_available: true
   - id: drinkYuccaJuiceSmoothie
     name: 丝兰汁果昔
     category: food
@@ -4392,6 +4633,7 @@ items:
       water: 78
       health: 11
       buff_duration: 6 分钟
+    trader_available: true
   - id: drinkCanMegaCrush
     name: 碾压王
     category: food
@@ -4400,6 +4642,7 @@ items:
     stats:
       water: 60
       buff_duration: 6 分钟
+    trader_available: true
   - id: drinkJarCoffee
     name: 咖啡
     category: food
@@ -4408,6 +4651,7 @@ items:
     stats:
       water: 24
       buff_duration: 3 分钟
+    trader_available: true
   - id: drinkJarBlackStrapCoffee
     name: 黑带咖啡
     category: food
@@ -4416,6 +4660,7 @@ items:
     stats:
       water: 24
       buff_duration: 6 分钟
+    trader_available: true
   - id: drinkJarBeer
     name: 啤酒
     category: food
@@ -4423,6 +4668,7 @@ items:
     tier: 100
     stats:
       buff_duration: 1 分钟
+    trader_available: true
   - id: drinkJarGrandpasMoonshine
     name: 祖父的私酒
     category: food
@@ -4430,6 +4676,7 @@ items:
     tier: 500
     stats:
       buff_duration: 1 分钟
+    trader_available: true
   - id: drinkJarGrandpasAwesomeSauce
     name: 祖父的美味酱
     category: food
@@ -4437,6 +4684,7 @@ items:
     tier: 100
     stats:
       buff_duration: 3 分钟
+    trader_available: true
   - id: drinkJarGrandpasLearningElixir
     name: 祖父的学习妙药
     category: food
@@ -4444,16 +4692,19 @@ items:
     tier: 250
     stats:
       buff_duration: 6 分钟
+    trader_available: true
   - id: drinkJarGrandpasForgettingElixir
     name: 祖父的遗忘妙药
     category: food
     stack_size: 10
     tier: 2000
+    trader_available: true
   - id: bucketEmpty
     name: 水桶
     category: material
     stack_size: 1
     tier: 84
+    trader_available: true
   - id: bucketRiverWater
     name: 一桶水
     category: material
@@ -4479,11 +4730,13 @@ items:
     category: book
     stack_size: 1
     icon: modGunBarrelExtender
+    trader_available: true
   - id: modGunMuzzleBrakeSchematic
     name: 枪口制动模组设计图
     category: book
     stack_size: 1
     icon: modGunMuzzleBrake
+    trader_available: true
   - id: modGunSoundSuppressorSilencerSchematic
     name: 消声器模组设计图
     category: book
@@ -4499,16 +4752,19 @@ items:
     category: book
     stack_size: 1
     icon: modGunFlashlight
+    trader_available: true
   - id: modGunScopeSmallSchematic
     name: 2倍镜模组设计图
     category: book
     stack_size: 1
     icon: modGunScopeSmall
+    trader_available: true
   - id: modGunScopeMediumSchematic
     name: 4倍镜模组设计图
     category: book
     stack_size: 1
     icon: modGunScopeMedium
+    trader_available: true
   - id: modGunScopeLargeSchematic
     name: 8倍镜模组设计图
     category: book
@@ -4519,11 +4775,13 @@ items:
     category: book
     stack_size: 1
     icon: modGunReflexSight
+    trader_available: true
   - id: modGunTriggerGroupSemiSchematic
     name: 触发器组：半自动模组设计图
     category: book
     stack_size: 1
     icon: modGunTriggerGroupSemi
+    trader_available: true
   - id: modGunTriggerGroupBurst3Schematic
     name: 触发器组：三发点放模组设计图
     category: book
@@ -4539,56 +4797,67 @@ items:
     category: book
     stack_size: 1
     icon: modGunBipod
+    trader_available: true
   - id: modGunForegripSchematic
     name: 前握把模组设计图
     category: book
     stack_size: 1
     icon: modGunForegrip
+    trader_available: true
   - id: modGunRetractingStockSchematic
     name: 收缩枪托模组设计图
     category: book
     stack_size: 1
     icon: modGunRetractingStock
+    trader_available: true
   - id: modGunDuckbillSchematic
     name: 霰弹枪鸭嘴枪口模组设计图
     category: book
     stack_size: 1
     icon: modGunDuckbill
+    trader_available: true
   - id: modGunChokeSchematic
     name: 霰弹枪喉缩模组设计图
     category: book
     stack_size: 1
     icon: modGunChoke
+    trader_available: true
   - id: modGunMagazineExtenderSchematic
     name: 弹匣扩充模组设计图
     category: book
     stack_size: 1
     icon: modGunMagazineExtender
+    trader_available: true
   - id: modShotgunSawedOffBarrelSchematic
     name: 削短型霰弹枪模组设计图
     category: book
     stack_size: 1
     icon: modShotgunSawedOffBarrel
+    trader_available: true
   - id: modGunCrippleEmSchematic
     name: 致残模组设计图
     category: book
     stack_size: 1
     icon: modGunCrippleEm
+    trader_available: true
   - id: modGunBowPolymerStringSchematic
     name: 聚合物弓弦模组设计图
     category: book
     stack_size: 1
     icon: modGunBowPolymerString
+    trader_available: true
   - id: modGunBowArrowRestSchematic
     name: 箭托模组设计图
     category: book
     stack_size: 1
     icon: modGunBowArrowRest
+    trader_available: true
   - id: modGunMeleeTheHunterSchematic
     name: 猎人模组设计图
     category: book
     stack_size: 1
     icon: modGunMeleeTheHunter
+    trader_available: true
   - id: modGunMeleeRadRemoverSchematic
     name: 辐射去除模组设计图
     category: book
@@ -4599,46 +4868,55 @@ items:
     category: book
     stack_size: 1
     icon: modMeleeTemperedBlade
+    trader_available: true
   - id: modMeleeSerratedBladeSchematic
     name: 锯齿刀片模组设计图
     category: book
     stack_size: 1
     icon: modMeleeSerratedBlade
+    trader_available: true
   - id: modMeleeWeightedHeadSchematic
     name: 重头模组设计图
     category: book
     stack_size: 1
     icon: modMeleeWeightedHead
+    trader_available: true
   - id: modMeleeStructuralBraceSchematic
     name: 结构支撑模组设计图
     category: book
     stack_size: 1
     icon: modMeleeStructuralBrace
+    trader_available: true
   - id: modMeleeErgonomicGripSchematic
     name: 人体工学握把模组设计图
     category: book
     stack_size: 1
     icon: modMeleeErgonomicGrip
+    trader_available: true
   - id: modMeleeFortifyingGripSchematic
     name: 强化握把模组设计图
     category: book
     stack_size: 1
     icon: modMeleeFortifyingGrip
+    trader_available: true
   - id: modMeleeClubBarbedWireSchematic
     name: 铁丝网模组设计图
     category: book
     stack_size: 1
     icon: modMeleeClubBarbedWire
+    trader_available: true
   - id: modMeleeClubMetalSpikesSchematic
     name: 金属长钉模组设计图
     category: book
     stack_size: 1
     icon: modMeleeClubMetalSpikes
+    trader_available: true
   - id: modMeleeGraveDiggerSchematic
     name: 掘墓者模组设计图
     category: book
     stack_size: 1
     icon: modMeleeGraveDigger
+    trader_available: true
   - id: modMeleeBunkerBusterSchematic
     name: 掩体炸弹模组设计图
     category: book
@@ -4654,26 +4932,31 @@ items:
     category: book
     stack_size: 1
     icon: modMeleeWoodSplitter
+    trader_available: true
   - id: modMeleeClubBurningShaftSchematic
     name: 燃烧杆模组设计图
     category: book
     stack_size: 1
     icon: modMeleeClubBurningShaft
+    trader_available: true
   - id: modArmorInsulatedLinerSchematic
     name: 隔冷内衬模组设计图
     category: book
     stack_size: 1
     icon: modArmorInsulatedLiner
+    trader_available: true
   - id: modArmorCoolingMeshSchematic
     name: 散热网模组设计图
     category: book
     stack_size: 1
     icon: modArmorCoolingMesh
+    trader_available: true
   - id: modArmorImprovedFittingsSchematic
     name: 护甲配件模组设计图
     category: book
     stack_size: 1
     icon: modArmorImprovedFittings
+    trader_available: true
   - id: modArmorCustomizedFittingsSchematic
     name: 高级护甲配件模组设计图
     category: book
@@ -4684,6 +4967,7 @@ items:
     category: book
     stack_size: 1
     icon: modArmorPlatingBasic
+    trader_available: true
   - id: modArmorPlatingReinforcedSchematic
     name: 高级护甲镀层模组设计图
     category: book
@@ -4694,11 +4978,13 @@ items:
     category: book
     stack_size: 1
     icon: modArmorStoragePocket
+    trader_available: true
   - id: modArmorDoubleStoragePocketSchematic
     name: 护甲双收纳口袋模组设计图
     category: book
     stack_size: 1
     icon: modArmorDoubleStoragePocket
+    trader_available: true
   - id: modArmorTripleStoragePocketSchematic
     name: 护甲三收纳口袋模组设计图
     category: book
@@ -4714,6 +5000,7 @@ items:
     category: book
     stack_size: 1
     icon: modArmorMuffledConnectors
+    trader_available: true
   - id: modArmorAdvancedMuffledConnectorsSchematic
     name: 高级消音连接器模组设计图
     category: book
@@ -4729,6 +5016,7 @@ items:
     category: book
     stack_size: 1
     icon: modArmorBandolier
+    trader_available: true
   - id: modArmorWaterPurifierSchematic
     name: 净水器模组设计图
     category: book
@@ -4739,46 +5027,55 @@ items:
     category: book
     stack_size: 1
     icon: modArmorHelmetLight
+    trader_available: true
   - id: modFuelTankSmallSchematic
     name: 电动工具小油箱模组设计图
     category: book
     stack_size: 1
     icon: modFuelTankSmall
+    trader_available: true
   - id: modFuelTankLargeSchematic
     name: 电动工具大油箱模组设计图
     category: book
     stack_size: 1
     icon: modFuelTankLarge
+    trader_available: true
   - id: modRoboticDroneCargoModSchematic
     name: 机器人无人机储物模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneCargoMod
+    trader_available: true
   - id: modRoboticDroneMedicModSchematic
     name: 机器人无人机医疗模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneMedicMod
+    trader_available: true
   - id: modRoboticDroneHeadlampModSchematic
     name: 机器人无人机头灯模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneHeadlampMod
+    trader_available: true
   - id: modRoboticDroneArmorPlatingModSchematic
     name: 机器人无人机装甲板模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneArmorPlatingMod
+    trader_available: true
   - id: modRoboticDroneMoraleBoosterModSchematic
     name: 机器人无人机鼓舞士气模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneMoraleBoosterMod
+    trader_available: true
   - id: modRoboticDroneStunWeaponModSchematic
     name: 机器人无人机眩晕模组设计图
     category: book
     stack_size: 1
     icon: modRoboticDroneStunWeaponMod
+    trader_available: true
   - id: modRoboticDroneWeaponModSchematic
     name: 机器人无人机武器模组设计图
     category: book
@@ -4789,41 +5086,49 @@ items:
     category: book
     stack_size: 1
     icon: modVehicleFuelSaver
+    trader_available: true
   - id: modVehicleOffRoadHeadlightsSchematic
     name: 载具越野头灯模组设计图
     category: book
     stack_size: 1
     icon: modVehicleOffRoadHeadlights
+    trader_available: true
   - id: modVehicleSuperChargerSchematic
     name: 载具增压器模组设计图
     category: book
     stack_size: 1
     icon: modVehicleSuperCharger
+    trader_available: true
   - id: modVehicleExpandedSeatSchematic
     name: 载具扩展座椅模组设计图
     category: book
     stack_size: 1
     icon: modVehicleExpandedSeat
+    trader_available: true
   - id: modVehicleReserveFuelTankSchematic
     name: 载具备用油箱模组设计图
     category: book
     stack_size: 1
     icon: modVehicleReserveFuelTank
+    trader_available: true
   - id: modVehiclePlowSchematic
     name: 载具犁模组设计图
     category: book
     stack_size: 1
     icon: modVehiclePlow
+    trader_available: true
   - id: modVehicleArmorSchematic
     name: 载具护甲模组设计图
     category: book
     stack_size: 1
     icon: modVehicleArmor
+    trader_available: true
   - id: modVehicleStorageSchematic
     name: 载具储物模组设计图
     category: book
     stack_size: 1
     icon: modVehicleStorage
+    trader_available: true
   - id: schematicNoQualityRecipeMaster
     name: schematicNoQualityRecipeMaster
     category: book
@@ -4953,6 +5258,7 @@ items:
     category: material
     stack_size: 100
     tier: 140
+    trader_available: true
   - id: resourceYuccaFibers
     name: 植物纤维
     category: material
@@ -4963,11 +5269,13 @@ items:
     category: material
     stack_size: 6000
     tier: 25
+    trader_available: true
   - id: resourceCrushedSand
     name: 碎石砂
     category: material
     stack_size: 6000
     tier: 50
+    trader_available: true
   - id: resourceBrokenGlass
     name: 碎玻璃
     category: material
@@ -4978,26 +5286,31 @@ items:
     category: material
     stack_size: 6000
     tier: 10
+    trader_available: true
   - id: resourceForgedIron
     name: 锻铁
     category: material
     stack_size: 500
     tier: 12
+    trader_available: true
   - id: resourceMetalPipe
     name: 短铁管
     category: material
     stack_size: 500
     tier: 12
+    trader_available: true
   - id: resourceForgedSteel
     name: 锻钢
     category: material
     stack_size: 500
     tier: 50
+    trader_available: true
   - id: resourceScrapPolymers
     name: 废聚合物
     category: material
     stack_size: 1000
     tier: 16
+    trader_available: true
   - id: resourceScopeLens
     name: 镜片
     category: material
@@ -5008,11 +5321,13 @@ items:
     category: material
     stack_size: 50
     tier: 50
+    trader_available: true
   - id: resourceOilShale
     name: 油页岩
     category: material
     stack_size: 6000
     tier: 10
+    trader_available: true
   - id: resourceBone
     name: 骨头
     category: material
@@ -5023,6 +5338,7 @@ items:
     category: material
     stack_size: 250
     tier: 22
+    trader_available: true
   - id: resourceAnimalFat
     name: 动物脂肪
     category: material
@@ -5032,6 +5348,7 @@ items:
       hunger: 5
       health: 2
       stamina: -1
+    trader_available: true
   - id: resourceTestosteroneExtract
     name: 睾丸素提取物
     category: material
@@ -5052,6 +5369,7 @@ items:
     category: material
     stack_size: 250
     tier: 10
+    trader_available: true
   - id: resourceCropHopsFlower
     name: 啤酒花
     category: material
@@ -5091,11 +5409,13 @@ items:
     category: material
     stack_size: 6000
     tier: 20
+    trader_available: true
   - id: resourceScrapLead
     name: 铅
     category: material
     stack_size: 6000
     tier: 10
+    trader_available: true
   - id: resourceClayLump
     name: 粘土
     category: material
@@ -5106,101 +5426,121 @@ items:
     category: material
     stack_size: 1000
     tier: 10
+    trader_available: true
   - id: resourceCement
     name: 水泥
     category: material
     stack_size: 1000
     tier: 25
+    trader_available: true
   - id: resourceConcreteMix
     name: 混凝土混合料
     category: material
     stack_size: 1000
     tier: 125
+    trader_available: true
   - id: resourceCloth
     name: 碎布
     category: material
     stack_size: 250
     tier: 10
+    trader_available: true
   - id: resourcePaper
     name: 纸
     category: material
     stack_size: 500
     tier: 10
+    trader_available: true
   - id: resourceElectricParts
     name: 电子零件
     category: material
     stack_size: 1000
     tier: 32
+    trader_available: true
   - id: resourceHeadlight
     name: 前照灯
     category: material
     stack_size: 50
     tier: 150
+    trader_available: true
   - id: resourceMechanicalParts
     name: 机械零件
     category: material
     stack_size: 1000
     tier: 32
+    trader_available: true
   - id: resourceSpring
     name: 弹簧
     category: material
     stack_size: 500
     tier: 22
+    trader_available: true
   - id: resourceGlue
     name: 胶水
     category: material
     stack_size: 500
     tier: 20
+    trader_available: true
   - id: resourceDuctTape
     name: 胶带
     category: material
     stack_size: 500
     tier: 25
+    trader_available: true
   - id: resourceFeather
     name: 羽毛
     category: material
     stack_size: 250
     tier: 10
+    trader_available: true
   - id: resourceArrowHeadIron
     name: 铁箭头
     category: material
     stack_size: 500
     tier: 12
+    trader_available: true
   - id: resourceArrowHeadSteelAP
     name: 钢箭头
     category: material
     stack_size: 500
     tier: 40
+    trader_available: true
   - id: resourceCoal
     name: 煤炭
     category: material
     stack_size: 6000
     tier: 10
+    trader_available: true
   - id: resourcePotassiumNitratePowder
     name: 硝酸盐粉
     category: material
     stack_size: 6000
     tier: 10
+    trader_available: true
   - id: resourceGunPowder
     name: 火药
     category: material
     stack_size: 1000
     tier: 10
+    trader_available: true
   - id: resourceBuckshot
     name: 鹿弹
     category: material
     stack_size: 1000
     tier: 10
+    trader_available: true
   - id: resourceBulletCasing
     name: 弹壳
     category: material
     stack_size: 1000
     tier: 10
+    trader_available: true
   - id: resourceBulletTip
     name: 弹尖
     category: material
     stack_size: 1000
     tier: 10
+    trader_available: true
   - id: resourceNail
     name: 钉子
     category: material
@@ -5209,6 +5549,7 @@ items:
     stats:
       damage: 5
       block_damage: 0.1
+    trader_available: true
   - id: resourceRocketTip
     name: 火箭弹尖
     category: material
@@ -5229,6 +5570,7 @@ items:
     category: material
     stack_size: 25
     tier: 186
+    trader_available: true
   - id: resourceArmorCraftingKit
     name: 护甲制作包
     category: material
@@ -5244,11 +5586,13 @@ items:
     category: material
     stack_size: 50
     tier: 100
+    trader_available: true
   - id: resourcePaint
     name: 油漆
     category: material
     stack_size: 1000
     tier: 12
+    trader_available: true
   - id: resourceDoorKnob
     name: 黄铜门把手
     category: material
@@ -5301,11 +5645,13 @@ items:
     tier: 24
     stats:
       cold_resistance: 5
+    trader_available: true
   - id: smallEngine
     name: 发动机
     category: material
     stack_size: 1
     tier: 1000
+    trader_available: true
   - id: carBattery
     name: 汽车铅蓄电池
     category: material
@@ -5332,6 +5678,7 @@ items:
     stats:
       mod_slots: 0
       durability: 1000
+    trader_available: true
   - id: toolCookingGrill
     name: 烤架
     category: tool
@@ -5355,6 +5702,7 @@ items:
     category: tool
     stack_size: 10
     tier: 500
+    trader_available: true
   - id: toolBellows
     name: 高级风箱
     category: tool
@@ -5363,6 +5711,7 @@ items:
     stats:
       mod_slots: 0
       durability: 10
+    trader_available: true
   - id: toolAnvil
     name: 铁砧
     category: tool
@@ -5372,11 +5721,13 @@ items:
       mod_slots: 0
       durability: 10
       craft_time: -0.2
+    trader_available: true
   - id: toolForgeCrucible
     name: 坩埚
     category: tool
     stack_size: 1
     tier: 5000
+    trader_available: true
   - id: toolDewGatherer
     name: 集露器
     category: tool
@@ -5475,6 +5826,7 @@ items:
     category: material
     stack_size: 50
     tier: 100
+    trader_available: true
   - id: resourceLockPickBundle
     name: 一堆撬锁工具（50）
     category: material
@@ -5487,552 +5839,685 @@ items:
     stack_size: 20
     icon: bookFiremansAlmanacHeat
     tier: 500
+    trader_available: true
   - id: bookFiremansAlmanacAxes
     name: 消防员年鉴 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookFiremansAlmanacSpeed
     name: 消防员年鉴 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookFiremansAlmanacMolotov
     name: 消防员年鉴 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookFiremansAlmanacPrevention
     name: 消防员年鉴 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookFiremansAlmanacHarvest
     name: 消防员年鉴 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookFiremansAlmanacEquipment
     name: 消防员年鉴 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerStealthDamage
     name: 夜行者 第1卷
     category: book
     stack_size: 1
     icon: bookNightStalkerStealthDamage
+    trader_available: true
   - id: bookNightStalkerSilentNight
     name: 夜行者 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerBlades
     name: 夜行者 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerThiefAdrenaline
     name: 夜行者 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerArchery
     name: 夜行者 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerTwilightThief
     name: 夜行者 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookNightStalkerSlumberParty
     name: 夜行者 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterDukes
     name: 幸运掠夺者 第1卷
     category: book
     stack_size: 1
     icon: bookLuckyLooterDukes
+    trader_available: true
   - id: bookLuckyLooterAmmunition
     name: 幸运掠夺者 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterBrass
     name: 幸运掠夺者 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterLead
     name: 幸运掠夺者 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterBooks
     name: 幸运掠夺者 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterFood
     name: 幸运掠夺者 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookLuckyLooterMedical
     name: 幸运掠夺者 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerDamage
     name: 马格南警官 第1卷
     category: book
     stack_size: 1
     icon: bookEnforcerDamage
+    trader_available: true
   - id: bookEnforcerApparel
     name: 马格南警官 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerPunks
     name: 马格南警官 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerIntimidation
     name: 马格南警官 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerAPAmmo
     name: 马格南警官 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerHPAmmo
     name: 马格南警官 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookEnforcerCriminalPursuit
     name: 马格南警官 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpBigHits
     name: 一击破坏 第1卷
     category: book
     stack_size: 1
     icon: bookBatterUpBigHits
+    trader_available: true
   - id: bookBatterUpStealingBases
     name: 一击破坏 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpSlowPitch
     name: 一击破坏 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpKnockdown
     name: 一击破坏 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpMaintenance
     name: 一击破坏 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpFoulBalls
     name: 一击破坏 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBatterUpMetalChain
     name: 一击破坏第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaKnockdown
     name: 《大锤传奇》卷 1
     category: book
     stack_size: 1
     icon: bookSledgeSagaKnockdown
+    trader_available: true
   - id: bookSledgeSagaDegradation
     name: 《大锤传奇》卷 2
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaCrippledMorale
     name: 《大锤传奇》卷 3
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaPulverizingFinishers
     name: 《大锤传奇》卷 4
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaSavageReaper
     name: 《大锤传奇》卷 5
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaConcussiveStrike
     name: 《大锤传奇》卷 6
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSledgeSagaArmorCrusher
     name: 《大锤传奇》卷 7
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistSafes
     name: 大劫掠 第1卷
     category: book
     stack_size: 1
     icon: bookTheGreatHeistSafes
+    trader_available: true
   - id: bookGreatHeistGems
     name: 大劫掠 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistGoldRush
     name: 大劫掠 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistClaimed
     name: 大劫掠 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistAdrenalineFall
     name: 大劫掠 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistSprintSneak
     name: 大劫掠 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookGreatHeistMotionDetection
     name: 大劫掠 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresHoney
     name: 荒野宝藏 第1卷
     category: book
     stack_size: 1
     icon: bookWasteTreasuresHoney
+    trader_available: true
   - id: bookWasteTreasuresCoffins
     name: 荒野宝藏 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresAcid
     name: 荒野宝藏 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresWater
     name: 荒野宝藏 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresDoors
     name: 荒野宝藏 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresCloth
     name: 荒野宝藏 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookWasteTreasuresSinks
     name: 荒野宝藏 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalBears
     name: 猎人日记 第1卷
     category: book
     stack_size: 1
     icon: bookHuntingJournalBears
+    trader_available: true
   - id: bookHuntingJournalWolves
     name: 猎人日记 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalCoyotes
     name: 猎人日记 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalMountainLions
     name: 猎人日记 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalDeer
     name: 猎人日记 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalVultures
     name: 猎人日记 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookHuntingJournalSelfDefense
     name: 猎人日记 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningLuckyStrike
     name: 采矿的艺术 第1卷
     category: book
     stack_size: 1
     icon: bookArtOfMiningLuckyStrike
+    trader_available: true
   - id: bookArtOfMiningDiamondTools
     name: 采矿的艺术 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningCoffee
     name: 采矿的艺术 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningBlackStrap
     name: 采矿的艺术 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningPallets
     name: 采矿的艺术 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningAvalanche
     name: 采矿的艺术 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookArtOfMiningDamage
     name: 采矿的艺术 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersArrowRecovery
     name: 游侠箭术指南 第1卷
     category: book
     stack_size: 1
     icon: bookRangersArrowRecovery
+    trader_available: true
   - id: bookRangersExplodingBolts
     name: 游侠箭术指南 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersCripplingShot
     name: 游侠箭术指南 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersAPAmmo
     name: 游侠箭术指南 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersFlamingArrows
     name: 游侠箭术指南 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersForestGuide
     name: 游侠箭术指南 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookRangersKnockdown
     name: 游侠箭术指南 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteTakeAim
     name: 手枪皮特 第1卷
     category: book
     stack_size: 1
     icon: bookPistolPeteTakeAim
+    trader_available: true
   - id: bookPistolPeteSwissKnees
     name: 手枪皮特 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteSteadyHand
     name: 手枪皮特 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteMaintenance
     name: 手枪皮特 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteHPAmmo
     name: 手枪皮特 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteAPAmmo
     name: 手枪皮特 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookPistolPeteDamage
     name: 手枪皮特 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahDamage
     name: 霰弹枪救星 第1卷
     category: book
     stack_size: 1
     icon: bookShotgunMessiahDamage
+    trader_available: true
   - id: bookShotgunMessiahBreachingSlugs
     name: 霰弹枪救星 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahLimbShot
     name: 霰弹枪救星 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahSlugs
     name: 霰弹枪救星 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahMaintenance
     name: 霰弹枪救星 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahMagazine
     name: 霰弹枪救星 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookShotgunMessiahPartyStarter
     name: 霰弹枪救星 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperDamage
     name: 狙击手 第1卷
     category: book
     stack_size: 1
     icon: bookSniperDamage
+    trader_available: true
   - id: bookSniperCripplingShot
     name: 狙击手 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperHeadShot
     name: 狙击手 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperReload
     name: 狙击手 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperControlledBreathing
     name: 狙击手 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperAPAmmo
     name: 狙击手 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSniperHPAmmo
     name: 狙击手 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsDamage
     name: 自动武器指导手册 第1卷
     category: book
     stack_size: 1
     icon: bookAutoWeaponsDamage
+    trader_available: true
   - id: bookAutoWeaponsUncontrolledBurst
     name: 自动武器指导手册 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsMaintenance
     name: 自动武器指导手册 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsDrumMag
     name: 自动武器指导手册 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsRecoil
     name: 自动武器指导手册 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsRagdoll
     name: 自动武器指导手册 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookAutoWeaponsMachineGuns
     name: 自动武器指导手册 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatLanding
     name: 城市作战 第1卷
     category: book
     stack_size: 1
     icon: bookUrbanCombatLanding
+    trader_available: true
   - id: bookUrbanCombatCigar
     name: 城市作战 第2卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatSneaking
     name: 城市作战 第3卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatJumping
     name: 城市作战 第4卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatLandMines
     name: 城市作战 第5卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatAdrenalineRush
     name: 城市作战 第6卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookUrbanCombatRoomClearing
     name: 城市作战 第7卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie1Damage
     name: 科技迷 第 1 卷
     category: book
     stack_size: 1
     icon: bookTechJunkie1Damage
+    trader_available: true
   - id: bookTechJunkie2Maintenance
     name: 科技迷 第 2 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie3APAmmo
     name: 科技迷 第 3 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie4Shells
     name: 科技迷 第 4 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie5Repulsor
     name: 科技迷 第 5 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie6BatonCharge
     name: 科技迷 第 6 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookTechJunkie7Hydraulics
     name: 科技迷 第 7 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling1BasicMoves
     name: 酒吧斗殴 第 1 卷
     category: book
     stack_size: 1
     icon: bookBarBrawling1BasicMoves
+    trader_available: true
   - id: bookBarBrawling2DropABomb
     name: 酒吧斗殴 第 2 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling3KillerInstinct
     name: 酒吧斗殴 第 3 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling4FinishingMoves
     name: 酒吧斗殴 第 4 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling5AdrenalineHealing
     name: 酒吧斗殴 第 5 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling6RageMode
     name: 酒吧斗殴 第 6 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookBarBrawling7BoozedUp
     name: 酒吧斗殴 第 7 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter1Damage
     name: 掷矛猎人 第 1 卷
     category: book
     stack_size: 1
     icon: bookSpearHunter1Damage
+    trader_available: true
   - id: bookSpearHunter2Maintenance
     name: 掷矛猎人 第 2 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter3Bleed
     name: 掷矛猎人 第 3 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter4KillMove
     name: 掷矛猎人 第 4 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter5RapidStrike
     name: 掷矛猎人 第 5 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter6PenetratingShaft
     name: 掷矛猎人 第 6 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: bookSpearHunter7QuickStrike
     name: 掷矛猎人 第 7 卷
     category: book
     stack_size: 1
+    trader_available: true
   - id: masterSkillMagazine
     name: masterSkillMagazine
     category: book
@@ -6043,116 +6528,139 @@ items:
     category: book
     stack_size: 1
     icon: bookToolsDigest
+    trader_available: true
   - id: repairToolsSkillMagazine
     name: 巧手之家
     category: book
     stack_size: 1
     icon: bookHandyLand
+    trader_available: true
   - id: salvageToolsSkillMagazine
     name: 趣味分解
     category: book
     stack_size: 1
     icon: bookScrapping4Fun
+    trader_available: true
   - id: knucklesSkillMagazine
     name: 愤怒之拳
     category: book
     stack_size: 1
     icon: bookFuriousFists
+    trader_available: true
   - id: bladesSkillMagazine
     name: 刀剑客
     category: book
     stack_size: 1
     icon: bookKnifeGuy
+    trader_available: true
   - id: clubsSkillMagazine
     name: 打击高手
     category: book
     stack_size: 1
     icon: bookBigHitters
+    trader_available: true
   - id: sledgehammersSkillMagazine
     name: 锤行天下
     category: book
     stack_size: 1
     icon: bookGetHammered
+    trader_available: true
   - id: spearsSkillMagazine
     name: 尖锐之棍
     category: book
     stack_size: 1
     icon: bookSharpSticks
+    trader_available: true
   - id: bowsSkillMagazine
     name: 猎人之弓
     category: book
     stack_size: 1
     icon: bookBowHunters
+    trader_available: true
   - id: handgunsSkillMagazine
     name: 手枪弹匣
     category: book
     stack_size: 1
     icon: bookHandgunMagazine
+    trader_available: true
   - id: shotgunsSkillMagazine
     name: 霰弹枪周刊
     category: book
     stack_size: 1
     icon: bookShotgunWeekly
+    trader_available: true
   - id: riflesSkillMagazine
     name: 步枪世界
     category: book
     stack_size: 1
     icon: bookRifleWorld
+    trader_available: true
   - id: machineGunsSkillMagazine
     name: 战备竞赛
     category: book
     stack_size: 1
     icon: bookTacticalWarfare
+    trader_available: true
   - id: explosivesSkillMagazine
     name: 炸药库
     category: book
     stack_size: 1
     icon: bookExplosiveMagazine
+    trader_available: true
   - id: roboticsSkillMagazine
     name: 科技星球
     category: book
     stack_size: 1
     icon: bookTechPlanet
+    trader_available: true
   - id: armorSkillMagazine
     name: 全副武装
     category: armor
     stack_size: 1
     icon: bookArmoredUp
+    trader_available: true
   - id: medicalSkillMagazine
     name: 医学期刊
     category: medical
     stack_size: 1
     icon: bookMedicalJournal
+    trader_available: true
   - id: foodSkillMagazine
     name: 家庭烹饪周刊
     category: food
     stack_size: 1
     icon: bookHomeCookingWeekly
+    trader_available: true
   - id: seedSkillMagazine
     name: 南方种植
     category: book
     stack_size: 1
     icon: bookSouthernFarming
+    trader_available: true
   - id: electricianSkillMagazine
     name: 布线101
     category: book
     stack_size: 1
     icon: bookWiring101
+    trader_available: true
   - id: trapsSkillMagazine
     name: 电力陷阱
     category: book
     stack_size: 1
     icon: bookElectricalTraps
+    trader_available: true
   - id: workstationSkillMagazine
     name: 锻造指南
     category: book
     stack_size: 1
     icon: bookForgeAhead
+    trader_available: true
   - id: vehiclesSkillMagazine
     name: 载具大冒险
     category: book
     stack_size: 1
     icon: bookVehicleAdventures
+    trader_available: true
   - id: questRewardBundleMaster
     name: questRewardBundleMaster
     category: quest_item
@@ -8937,51 +9445,61 @@ items:
     category: ammo
     stack_size: 500
     icon: shapeFont0
+    trader_available: true
   - id: TEST_ITEM_01
     name: TEST_ITEM_01
     category: ammo
     stack_size: 500
     icon: shapeFont1
+    trader_available: true
   - id: TEST_ITEM_02
     name: TEST_ITEM_02
     category: ammo
     stack_size: 500
     icon: shapeFont2
+    trader_available: true
   - id: TEST_ITEM_03
     name: TEST_ITEM_03
     category: ammo
     stack_size: 500
     icon: shapeFont3
+    trader_available: true
   - id: TEST_ITEM_04
     name: TEST_ITEM_04
     category: ammo
     stack_size: 500
     icon: shapeFont4
+    trader_available: true
   - id: TEST_ITEM_05
     name: TEST_ITEM_05
     category: ammo
     stack_size: 500
     icon: shapeFont5
+    trader_available: true
   - id: TEST_ITEM_06
     name: TEST_ITEM_06
     category: ammo
     stack_size: 500
     icon: shapeFont6
+    trader_available: true
   - id: TEST_ITEM_07
     name: TEST_ITEM_07
     category: ammo
     stack_size: 500
     icon: shapeFont7
+    trader_available: true
   - id: TEST_ITEM_08
     name: TEST_ITEM_08
     category: ammo
     stack_size: 500
     icon: shapeFont8
+    trader_available: true
   - id: TEST_ITEM_09
     name: TEST_ITEM_09
     category: ammo
     stack_size: 500
     icon: shapeFont9
+    trader_available: true
   - id: armorLumberjackHelmetDemo
     name: 伐木工帽子
     category: armor
@@ -9015,18 +9533,21 @@ items:
     installable_tags: gun
     modifier_tags: barrelTipAttachment
     unlocked_by: modGunBarrelExtenderSchematic
+    trader_available: true
   - id: modGunMuzzleBrake
     name: 枪口制动模组
     category: mod
     installable_tags: barrelAttachments,turretRanged
     modifier_tags: barrelTipAttachment
     unlocked_by: modGunMuzzleBrakeSchematic
+    trader_available: true
   - id: modGunLaserSight
     name: 激光瞄准器模组
     category: mod
     installable_tags: sideAttachments
     modifier_tags: sideAttachment
     unlocked_by: modGunLaserSightSchematic
+    trader_available: true
   - id: modGunFlashlight
     name: 武器照明模组
     category: mod
@@ -9034,36 +9555,42 @@ items:
     modifier_tags: sideAttachment
     unlocked_by: modGunFlashlightSchematic
     light_value: 0.5
+    trader_available: true
   - id: modGunScopeSmall
     name: 2倍镜模组
     category: mod
     installable_tags: smallTopAttachments
     modifier_tags: scope
     unlocked_by: modGunScopeSmallSchematic
+    trader_available: true
   - id: modGunScopeMedium
     name: 4倍镜模组
     category: mod
     installable_tags: mediumTopAttachments
     modifier_tags: scope
     unlocked_by: modGunScopeMediumSchematic
+    trader_available: true
   - id: modGunScopeLarge
     name: 8倍镜模组
     category: mod
     installable_tags: largeTopAttachments
     modifier_tags: scope
     unlocked_by: modGunScopeLargeSchematic
+    trader_available: true
   - id: modGunReflexSight
     name: 反射式瞄准镜模组
     category: mod
     installable_tags: smallTopAttachments
     modifier_tags: scope
     unlocked_by: modGunReflexSightSchematic
+    trader_available: true
   - id: modGunTriggerGroupSemi
     name: 触发器组：半自动模组
     category: mod
     installable_tags: firingMode
     modifier_tags: trigger
     unlocked_by: modGunTriggerGroupSemiSchematic
+    trader_available: true
   - id: modGunTriggerGroupBurst3
     name: 触发器组：三发点放模组
     category: mod
@@ -9071,78 +9598,91 @@ items:
     modifier_tags: trigger
     unlocked_by: modGunTriggerGroupBurst3Schematic
     icon: modGunTriggerGroupBurst
+    trader_available: true
   - id: modGunTriggerGroupAutomatic
     name: 触发器组：全自动模组
     category: mod
     installable_tags: firingMode,turretRanged
     modifier_tags: trigger
     unlocked_by: modGunTriggerGroupAutomaticSchematic
+    trader_available: true
   - id: modGunBipod
     name: 双脚支架模组
     category: mod
     installable_tags: bottomAttachments
     modifier_tags: accuracy
     unlocked_by: modGunBipodSchematic
+    trader_available: true
   - id: modGunForegrip
     name: 前握把模组
     category: mod
     installable_tags: bottomAttachments,turretRanged
     modifier_tags: grips
     unlocked_by: modGunForegripSchematic
+    trader_available: true
   - id: modGunRetractingStock
     name: 收缩枪托模组
     category: mod
     installable_tags: stock
     modifier_tags: stocks
     unlocked_by: modGunRetractingStockSchematic
+    trader_available: true
   - id: modShotgunSawedOffBarrel
     name: 削短型霰弹枪模组
     category: mod
     installable_tags: shotgun
     modifier_tags: barrelAttachment,barrelTipAttachment
     unlocked_by: modShotgunSawedOffBarrelSchematic
+    trader_available: true
   - id: modGunDuckbill
     name: 霰弹枪鸭嘴枪口模组
     category: mod
     installable_tags: shotgun,turretRanged
     modifier_tags: barrelTipAttachment
     unlocked_by: modGunDuckbillSchematic
+    trader_available: true
   - id: modGunChoke
     name: 霰弹枪喉缩模组
     category: mod
     installable_tags: shotgun,turretRanged
     modifier_tags: barrelTipAttachment
     unlocked_by: modGunChokeSchematic
+    trader_available: true
   - id: modGunMagazineExtender
     name: 弹匣扩充模组
     category: mod
     installable_tags: magazine,turretRanged
     modifier_tags: magazine
     unlocked_by: modGunMagazineExtenderSchematic
+    trader_available: true
   - id: modGunDrumMagazineExtender
     name: 弹鼓模组
     category: mod
     installable_tags: drumMagazine
     modifier_tags: magazine
     unlocked_by: perkAutoWeaponsDrumMag
+    trader_available: true
   - id: modGunShotgunTubeExtenderMagazine
     name: 霰弹枪管扩充模组
     category: mod
     installable_tags: modGunShotgunTubeExtenderMagazine
     modifier_tags: magazine
     unlocked_by: perkShotgunMessiahMagazine
+    trader_available: true
   - id: modGunCrippleEm
     name: 致残模组
     category: mod
     installable_tags: ranged
     modifier_tags: crippling
     unlocked_by: modGunCrippleEmSchematic
+    trader_available: true
   - id: modGunBowPolymerString
     name: 聚合物弓弦模组
     category: mod
     installable_tags: perkArchery
     modifier_tags: velocity
     unlocked_by: modGunBowPolymerStringSchematic
+    trader_available: true
   - id: modGunBowArrowRest
     name: 箭托模组
     category: mod
@@ -9155,60 +9695,70 @@ items:
     installable_tags: weapon,tool
     modifier_tags: specialDamageAnimal
     unlocked_by: modGunMeleeTheHunterSchematic
+    trader_available: true
   - id: modGunMeleeRadRemover
     name: 辐射去除模组
     category: mod
     installable_tags: weapon,tool
     modifier_tags: specialDamage
     unlocked_by: modGunMeleeRadRemoverSchematic
+    trader_available: true
   - id: modMeleeTemperedBlade
     name: 钢化刀片模组
     category: mod
     installable_tags: tool,perkBrawler,perkJavelinMaster,perkDeepCuts
     modifier_tags: damage,durability
     unlocked_by: modMeleeTemperedBladeSchematic
+    trader_available: true
   - id: modMeleeSerratedBlade
     name: 锯齿刀片模组
     category: mod
     installable_tags: knife,machete,axe,shovel,perkBrawler,perkJavelinMaster
     modifier_tags: damageBleed
     unlocked_by: modMeleeSerratedBladeSchematic
+    trader_available: true
   - id: modMeleeWeightedHead
     name: 重头模组
     category: mod
     installable_tags: light,medium,heavy,turretMelee
     modifier_tags: stun
     unlocked_by: modMeleeWeightedHeadSchematic
+    trader_available: true
   - id: modMeleeStructuralBrace
     name: 结构支撑模组
     category: mod
     installable_tags: melee,perkArchery
     modifier_tags: durability
     unlocked_by: modMeleeStructuralBraceSchematic
+    trader_available: true
   - id: modMeleeErgonomicGrip
     name: 人体工学握把模组
     category: mod
     installable_tags: melee,bow
     modifier_tags: health
     unlocked_by: modMeleeErgonomicGripSchematic
+    trader_available: true
   - id: modMeleeFortifyingGrip
     name: 强化握把模组
     category: mod
     installable_tags: melee
     modifier_tags: health
     unlocked_by: modMeleeFortifyingGripSchematic
+    trader_available: true
   - id: modMeleeClubBarbedWire
     name: 铁丝网模组
     category: mod
     installable_tags: club
     modifier_tags: shaft
     unlocked_by: modMeleeClubBarbedWireSchematic
+    trader_available: true
   - id: modMeleeClubMetalSpikes
     name: 金属长钉模组
     category: mod
     installable_tags: club
     modifier_tags: shaft
     unlocked_by: modMeleeClubMetalSpikesSchematic
+    trader_available: true
   - id: modMeleeClubMetalChain
     name: 金属链模组
     category: mod
@@ -9222,42 +9772,49 @@ items:
     modifier_tags: fire
     unlocked_by: modMeleeClubBurningShaftSchematic
     light_value: 0.25
+    trader_available: true
   - id: modMeleeFiremansAxeMod
     name: 消防斧模组
     category: mod
     installable_tags: axe
     modifier_tags: damageDirt,damageStone,damageIron
     unlocked_by: perkFiremansAlmanacAxes
+    trader_available: true
   - id: modMeleeGraveDigger
     name: 掘墓者模组
     category: mod
     installable_tags: melee
     modifier_tags: damageDirt
     unlocked_by: modMeleeGraveDiggerSchematic
+    trader_available: true
   - id: modMeleeBunkerBuster
     name: 掩体炸弹模组
     category: mod
     installable_tags: melee
     modifier_tags: damageStone
     unlocked_by: modMeleeBunkerBusterSchematic
+    trader_available: true
   - id: modMeleeIronBreaker
     name: 铁见愁模组
     category: mod
     installable_tags: melee
     modifier_tags: damageIron
     unlocked_by: modMeleeIronBreakerSchematic
+    trader_available: true
   - id: modMeleeWoodSplitter
     name: 劈木模组
     category: mod
     installable_tags: melee
     modifier_tags: damageWood
     unlocked_by: modMeleeWoodSplitterSchematic
+    trader_available: true
   - id: modMeleeDiamondTip
     name: 金刚石刀刃模组
     category: mod
     installable_tags: tool,perkBrawler,perkJavelinMaster,perkDeepCuts
     modifier_tags: durability
     unlocked_by: perkArtOfMiningDiamondTools
+    trader_available: true
   - id: modMeleeStunBatonRepulsor
     name: 电击棒冲击波模组
     category: mod
@@ -9270,33 +9827,39 @@ items:
     installable_tags: motorTool
     modifier_tags: fuel
     unlocked_by: modFuelTankSmallSchematic
+    trader_available: true
   - id: modFuelTankLarge
     name: 电动工具大油箱模组
     category: mod
     installable_tags: motorTool
     modifier_tags: fuel
     unlocked_by: modFuelTankLargeSchematic
+    trader_available: true
   - id: modArmorInsulatedLinerT1
     name: 破旧绝缘装甲模组
     category: mod
     installable_tags: armorHead,armorChest,armorHands,armorFeet
     modifier_tags: thermal
+    trader_available: true
   - id: modArmorInsulatedLinerT2
     name: 拼布绝缘装甲模组
     category: mod
     installable_tags: armorHead,armorChest,armorHands,armorFeet
     modifier_tags: thermal
+    trader_available: true
   - id: modArmorInsulatedLinerT3
     name: 热核绝缘装甲模组
     category: mod
     installable_tags: armorHead,armorChest,armorHands,armorFeet
     modifier_tags: thermal
+    trader_available: true
   - id: modArmorBandolier
     name: 弹药带模组
     category: mod
     installable_tags: armorChest
     modifier_tags: ammo
     unlocked_by: modArmorBandolierSchematic
+    trader_available: true
   - id: modRadiationReady
     name: 辐射就绪模组
     category: mod
@@ -9309,54 +9872,63 @@ items:
     installable_tags: armor
     modifier_tags: thermal
     unlocked_by: modArmorInsulatedLinerSchematic
+    trader_available: true
   - id: modArmorCoolingMesh
     name: 散热网模组
     category: mod
     installable_tags: armor
     modifier_tags: temperature
     unlocked_by: modArmorCoolingMeshSchematic
+    trader_available: true
   - id: modArmorImprovedFittings
     name: 护甲配件模组
     category: mod
     installable_tags: armor
     modifier_tags: movement
     unlocked_by: modArmorImprovedFittingsSchematic
+    trader_available: true
   - id: modArmorCustomizedFittings
     name: 高级护甲配件模组
     category: mod
     installable_tags: armor
     modifier_tags: movement
     unlocked_by: modArmorCustomizedFittingsSchematic
+    trader_available: true
   - id: modArmorPlatingBasic
     name: 装甲板模组
     category: mod
     installable_tags: armor
     modifier_tags: resistance
     unlocked_by: modArmorPlatingBasicSchematic
+    trader_available: true
   - id: modArmorPlatingReinforced
     name: 高级护甲镀层模组
     category: mod
     installable_tags: armor
     modifier_tags: resistance
     unlocked_by: modArmorPlatingReinforcedSchematic
+    trader_available: true
   - id: modArmorStoragePocket
     name: 护甲收纳口袋模组
     category: mod
     installable_tags: armor
     modifier_tags: carryweight1
     unlocked_by: modArmorStoragePocketSchematic
+    trader_available: true
   - id: modArmorDoubleStoragePocket
     name: 护甲双收纳口袋模组
     category: mod
     installable_tags: armor
     modifier_tags: carryweight2
     unlocked_by: modArmorDoubleStoragePocketSchematic
+    trader_available: true
   - id: modArmorTripleStoragePocket
     name: 护甲三收纳口袋模组
     category: mod
     installable_tags: armor
     modifier_tags: carryweight3
     unlocked_by: modArmorTripleStoragePocketSchematic
+    trader_available: true
   - id: modArmorQuadStoragePocket
     name: 护甲四收纳口袋模组
     category: mod
@@ -9369,18 +9941,21 @@ items:
     installable_tags: armor
     modifier_tags: stealth
     unlocked_by: modArmorMuffledConnectorsSchematic
+    trader_available: true
   - id: modArmorAdvancedMuffledConnectors
     name: 高级消音连接器模组
     category: mod
     installable_tags: armor
     modifier_tags: stealth
     unlocked_by: modArmorAdvancedMuffledConnectorsSchematic
+    trader_available: true
   - id: modArmorImpactBracing
     name: 冲击支撑模组
     category: mod
     installable_tags: armorFeet
     modifier_tags: falldamage
     unlocked_by: modArmorImpactBracingSchematic
+    trader_available: true
   - id: modArmorStealthBoots
     name: 潜行靴模组
     category: mod
@@ -9393,6 +9968,7 @@ items:
     installable_tags: armorHead
     modifier_tags: waterPurifier
     unlocked_by: modArmorWaterPurifierSchematic
+    trader_available: true
   - id: modArmorHelmetLight
     name: 头盔灯模组
     category: mod
@@ -9400,6 +9976,7 @@ items:
     modifier_tags: misc,modArmorHelmetLight
     unlocked_by: modArmorHelmetLightSchematic
     light_value: 0.4
+    trader_available: true
   - id: modArmorCigar
     name: 雪茄模组
     category: mod
@@ -9408,6 +9985,7 @@ items:
     icon: apparelCigar
     unlocked_by: perkUrbanCombatCigar
     tier: 1000
+    trader_available: true
   - id: modArmorPerception
     name: 感知模组
     category: mod
@@ -9415,6 +9993,7 @@ items:
     modifier_tags: boostPerception
     icon: modArmorPerception
     tier: 1000
+    trader_available: true
   - id: modArmorStrength
     name: 力量模组
     category: mod
@@ -9422,6 +10001,7 @@ items:
     modifier_tags: boostStrength
     icon: modArmorStrength
     tier: 1000
+    trader_available: true
   - id: modArmorFortitude
     name: 强健模组
     category: mod
@@ -9429,6 +10009,7 @@ items:
     modifier_tags: boostFortitude
     icon: modArmorFortitude
     tier: 1000
+    trader_available: true
   - id: modArmorAgility
     name: 敏捷模组
     category: mod
@@ -9436,6 +10017,7 @@ items:
     modifier_tags: boostAgility
     icon: modArmorAgility
     tier: 1000
+    trader_available: true
   - id: modArmorIntellect
     name: 智慧模组
     category: mod
@@ -9443,6 +10025,7 @@ items:
     modifier_tags: boostIntellect
     icon: modArmorIntellect
     tier: 1000
+    trader_available: true
   - id: modArmorTreasureHunter
     name: 寻宝者模组
     category: mod
@@ -9450,6 +10033,7 @@ items:
     modifier_tags: boostTreasure
     icon: modArmorTreasureHunter
     tier: 1000
+    trader_available: true
   - id: modArmorNightVision
     name: 夜视模组
     category: mod
@@ -9457,6 +10041,7 @@ items:
     modifier_tags: nightVision
     icon: modArmorNightVision
     tier: 1000
+    trader_available: true
   - id: modDyeWhite
     name: 染色剂:溶剂
     category: mod
@@ -9470,6 +10055,7 @@ items:
     modifier_tags: dye,modDyeBrown
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeRed
     name: 染色剂:红色
     category: mod
@@ -9477,6 +10063,7 @@ items:
     modifier_tags: dye,modDyeRed
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeOrange
     name: 染色剂:橙色
     category: mod
@@ -9484,6 +10071,7 @@ items:
     modifier_tags: dye,modDyeOrange
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeYellow
     name: 染色剂:黄色
     category: mod
@@ -9491,6 +10079,7 @@ items:
     modifier_tags: dye,modDyeYellow
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeGreen
     name: 染色剂:绿色
     category: mod
@@ -9498,6 +10087,7 @@ items:
     modifier_tags: dye,modDyeGreen
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeBlue
     name: 染色剂:蓝色
     category: mod
@@ -9505,6 +10095,7 @@ items:
     modifier_tags: dye,modDyeBlue
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyePurple
     name: 染色剂:紫色
     category: mod
@@ -9512,6 +10103,7 @@ items:
     modifier_tags: dye,modDyePurple
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyeBlack
     name: 染色剂:黑色
     category: mod
@@ -9519,6 +10111,7 @@ items:
     modifier_tags: dye,modDyeBlack
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modDyePink
     name: 染色剂:粉色
     category: mod
@@ -9526,6 +10119,7 @@ items:
     modifier_tags: dye,modDyePink
     icon: modDyeWhite
     tier: 50
+    trader_available: true
   - id: modVehicleMega
     name: 超级载具模组
     category: mod
@@ -9540,6 +10134,7 @@ items:
     modifier_tags: fuelsaver
     unlocked_by: modVehicleFuelSaverSchematic
     icon: modVehicleFuelSaver
+    trader_available: true
   - id: modVehicleOffRoadHeadlights
     name: 载具越野头灯模组
     category: mod
@@ -9547,6 +10142,7 @@ items:
     modifier_tags: light
     unlocked_by: modVehicleOffRoadHeadlightsSchematic
     icon: modVehicleOffRoadHeadlights
+    trader_available: true
   - id: modVehicleSuperCharger
     name: 载具增压器模组
     category: mod
@@ -9554,6 +10150,7 @@ items:
     modifier_tags: speed
     unlocked_by: modVehicleSuperChargerSchematic
     icon: modVehicleSuperCharger
+    trader_available: true
   - id: modVehicleExpandedSeat
     name: 载具扩展座椅模组
     category: mod
@@ -9561,6 +10158,7 @@ items:
     modifier_tags: seat
     unlocked_by: modVehicleExpandedSeatSchematic
     icon: modVehicleExpandedSeat
+    trader_available: true
   - id: modVehicleReserveFuelTank
     name: 载具备用油箱模组
     category: mod
@@ -9568,6 +10166,7 @@ items:
     modifier_tags: fueltank
     unlocked_by: modVehicleReserveFuelTankSchematic
     icon: modVehicleReserveFuelTank
+    trader_available: true
   - id: modVehiclePlow
     name: 载具犁模组
     category: mod
@@ -9575,6 +10174,7 @@ items:
     modifier_tags: plow
     unlocked_by: modVehiclePlowSchematic
     icon: modVehiclePlow
+    trader_available: true
   - id: modVehicleArmor
     name: 载具护甲模组
     category: mod
@@ -9589,6 +10189,7 @@ items:
     modifier_tags: storage
     unlocked_by: modVehicleStorageSchematic
     icon: modVehicleStorage
+    trader_available: true
   - id: modRoboticDroneArmorPlatingMod
     name: 机器人无人机装甲板模组
     category: mod

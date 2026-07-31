@@ -25,6 +25,7 @@ export interface Item {
   installable_tags?: string;
   modifier_tags?: string;
   unlocked_by?: string;
+  trader_available?: boolean;
   _sanitizedId: string;
   __iconId?: string;
 }

@@ -21,6 +21,7 @@ import { parseTrapBlocks } from './import/parse-blocks.js';
 import { parseLocalization } from './import/parse-localization.js';
 import { parseVehiclesXml } from './import/parse-vehicles.js';
 import { parseModsXml } from './import/parse-mods.js';
+import { parseTradersXml } from './import/parse-traders.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data', 'vanilla');
@@ -165,6 +166,23 @@ function enhance(configDir) {
       writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
     }
     console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体`);
+  }
+
+  // ─── 7. Trader availability (traders.xml) ───
+  const tradersPath = join(configDir, 'traders.xml');
+  if (existsSync(tradersPath)) {
+    const { items: traderItems } = parseTradersXml(readFileSync(tradersPath, 'utf-8'));
+    const traderSet = new Set(traderItems);
+    const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
+    let enriched = 0;
+    for (const item of itemsDoc.items || []) {
+      if (traderSet.has(item.id) && !item.trader_available) {
+        item.trader_available = true;
+        enriched++;
+      }
+    }
+    if (enriched > 0) writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    console.log(`  - 商人可购标记: ${enriched} 个物品 (共 ${traderSet.size} 个商人物品)`);
   }
 
   console.log('✅ 数据增强完成');
