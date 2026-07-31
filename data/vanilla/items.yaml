@@ -241,7 +241,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT0BoneKnife
     name: 骨刀
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -255,7 +255,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT1HuntingKnife
     name: 猎刀
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -269,7 +269,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT1CandyKnife
     name: 拐杖糖刀
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -283,7 +283,7 @@ items:
       harvest_count: 1
   - id: meleeWpnBladeT3Machete
     name: 砍刀
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -298,7 +298,7 @@ items:
       dismember_chance: 1
   - id: meleeWpnClubT0WoodenClub
     name: 木棒
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -312,7 +312,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT1BaseballBat
     name: 球棒
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -326,7 +326,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT1CandyClub
     name: 拐杖糖棍棒
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -340,7 +340,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnClubT3SteelClub
     name: 钢棍
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -354,7 +354,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnBatonT0PipeBaton
     name: 铁管棒
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -368,7 +368,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnBatonT2StunBaton
     name: 电击棒
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -382,11 +382,11 @@ items:
       harvest_count: -0.75
   - id: meleeWpnBatonT3PlasmaBaton
     name: Plasma Baton
-    category: material
+    category: melee_weapon
     stack_size: 1
   - id: meleeWpnSpearT0StoneSpear
     name: 石矛
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -400,7 +400,7 @@ items:
       penetration: 1
   - id: meleeWpnSpearT1IronSpear
     name: 铁矛
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -414,7 +414,7 @@ items:
       penetration: 1
   - id: meleeWpnSpearT3SteelSpear
     name: 钢矛
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -428,7 +428,7 @@ items:
       penetration: 1
   - id: meleeWpnSledgeT0StoneSledgehammer
     name: 石质大锤
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -443,7 +443,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnSledgeT1IronSledgehammer
     name: 铁质大锤
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -458,7 +458,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnSledgeT3SteelSledgehammer
     name: 钢质大锤
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -473,7 +473,7 @@ items:
       harvest_count: -0.75
   - id: meleeWpnKnucklesT0LeatherKnuckles
     name: 拳手绑带
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 200
     stats:
@@ -486,7 +486,7 @@ items:
       block_damage: 1
   - id: meleeWpnKnucklesT1IronKnuckles
     name: 铁质拳套
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 500
     stats:
@@ -499,7 +499,7 @@ items:
       block_damage: 1
   - id: meleeWpnKnucklesT3SteelKnuckles
     name: 钢质指虎
-    category: ranged_weapon
+    category: melee_weapon
     stack_size: 1
     tier: 1100
     stats:
@@ -1150,7 +1150,7 @@ items:
       spread_horizontal: 4
   - id: ammoProjectileZombieVomit
     name: ammoProjectileZombieVomit
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1168,7 +1168,7 @@ items:
       spread_horizontal: 10
   - id: ammoProjectileZombieVomitFeral
     name: ammoProjectileZombieVomitFeral
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1187,7 +1187,7 @@ items:
       spread_horizontal: 40
   - id: ammoProjectileZombieVomitRadiated
     name: ammoProjectileZombieVomitRadiated
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1258,7 +1258,7 @@ items:
       spread_vertical: 30
   - id: ammoProjectileZombieMutated
     name: ammoProjectileZombieMutated
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1266,7 +1266,7 @@ items:
       buff_chance: 0.3
   - id: ammoProjectileZombieMutatedFast
     name: ammoProjectileZombieMutatedFast
-    category: material
+    category: ammo
     stack_size: 1
   - id: meleeHandZombieRancher
     name: meleeHandZombieRancher
@@ -1336,28 +1336,28 @@ items:
       spread_horizontal: 4
   - id: ammoProjectileZombieBoulder
     name: ammoProjectileZombieBoulder
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderFeral
     name: ammoProjectileZombieBoulderFeral
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderCharged
     name: ammoProjectileZombieBoulderCharged
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
       mod_slots: 0
   - id: ammoProjectileZombieBoulderInfernal
     name: ammoProjectileZombieBoulderInfernal
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1492,7 +1492,7 @@ items:
       range: 50
   - id: ammoProjectileVultureVomit
     name: ammoProjectileVultureVomit
-    category: material
+    category: ammo
     stack_size: 1
     icon: missingIcon
     stats:
@@ -1664,7 +1664,7 @@ items:
       spread_horizontal: 5
   - id: ammoJunkTurretShell
     name: 机器人炮塔霰弹（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     tier: 2
     stats:
@@ -1678,7 +1678,7 @@ items:
       spread_horizontal: 7
   - id: ammoJunkTurretAP
     name: 机器人炮塔穿甲弹
-    category: material
+    category: ammo
     stack_size: 1
     tier: 6
     stats:
@@ -1700,14 +1700,14 @@ items:
       damage: 20
   - id: ammoRocketFrag
     name: 火箭弹（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     stats:
       block_damage: 10
       damage: 30
   - id: ammoGasCan
     name: 汽油罐
-    category: material
+    category: ammo
     stack_size: 10000
     tier: 30
   - id: ammoArrowStone
@@ -1728,7 +1728,7 @@ items:
       block_damage: 100
   - id: ammoArrowSteelAP
     name: 钢箭（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     tier: 57
     stats:
@@ -1736,7 +1736,7 @@ items:
       block_damage: 100
   - id: ammoArrowFlaming
     name: 燃烧箭（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     tier: 44
     stats:
@@ -1769,7 +1769,7 @@ items:
       block_damage: 100
   - id: ammoCrossbowBoltSteelAP
     name: 钢弩箭（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     tier: 57
     stats:
@@ -1777,7 +1777,7 @@ items:
       block_damage: 100
   - id: ammoCrossbowBoltFlaming
     name: 燃烧弩箭（弹药）
-    category: material
+    category: ammo
     stack_size: 1
     tier: 44
     stats:
@@ -1794,155 +1794,155 @@ items:
       damage: 250
   - id: ammoBundleMaster
     name: ammoBundleMaster
-    category: material
+    category: ammo
     stack_size: 5
     icon: ammo9mmBulletBall
     tier: 900
   - id: ammoBundle9mmBulletBall
     name: 一盒9毫米弹药（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo9mmBulletBall
     tier: 900
   - id: ammoBundle9mmBulletHP
     name: 一盒9毫米空心弹（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo9mmBulletHP
     tier: 1400
   - id: ammoBundle9mmBulletAP
     name: 一盒9毫米穿甲弹（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo9mmBulletAP
     tier: 1400
   - id: ammoBundle44MagnumBulletBall
     name: 一盒.44马格南弹药（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo44MagnumBulletBall
     tier: 1000
   - id: ammoBundle44MagnumBulletHP
     name: 一盒.44马格南空心弹（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo44MagnumBulletHP
     tier: 1500
   - id: ammoBundle44MagnumBulletAP
     name: 一盒.44马格南穿甲弹（100）
-    category: material
+    category: ammo
     stack_size: 10
     icon: ammo44MagnumBulletAP
     tier: 1500
   - id: ammoBundle762mmBulletBall
     name: 一盒7.62毫米弹药（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammo762mmBulletBall
     tier: 1100
   - id: ammoBundle762mmBulletHP
     name: 一盒7.62毫米马格南空心弹（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammo762mmBulletHp
     tier: 1600
   - id: ammoBundle762mmBulletAP
     name: 一盒 7.62毫米穿甲弹（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammo762mmBulletAP
     tier: 1600
   - id: ammoBundleShotgunShell
     name: 一盒霰弹（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoShotgunShell
     tier: 1100
   - id: ammoBundleShotgunSlug
     name: 一盒霰弹枪穿甲弹（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoShotgunSlug
     tier: 2000
   - id: ammoBundleShotgunBreachingSlug
     name: 一盒霰弹枪拆门弹（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoShotgunBreachingSlug
     tier: 2000
   - id: ammoBundleJunkTurretRegular
     name: 机器人炮塔弹药盒（1000 枚）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoJunkTurretRegular
     tier: 1000
   - id: ammoBundleJunkTurretShell
     name: 机器人炮塔霰弹弹药盒（1000 枚）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoJunkTurretShell
   - id: ammoBundleJunkTurretAP
     name: 机器人炮塔穿甲弹药盒（1000 枚）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoJunkTurretAP
   - id: ammoBundleArrowStone
     name: 一盒石箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoArrowStone
     tier: 240
   - id: ammoBundleArrowIron
     name: 一盒铁箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoArrowIron
     tier: 500
   - id: ammoBundleArrowSteelAP
     name: 一盒钢箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoArrowSteelAP
     tier: 1140
   - id: ammoBundleArrowFlaming
     name: 一盒燃烧箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoArrowFlaming
     tier: 4400
   - id: ammoBundleArrowExploding
     name: 一盒爆炸箭（75）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoArrowExploding
     tier: 4125
   - id: ammoBundleCrossbowBoltStone
     name: 一盒石弩箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoCrossbowBoltStone
     tier: 240
   - id: ammoBundleCrossbowBoltIron
     name: 一盒铁弩箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoCrossbowBoltIron
     tier: 500
   - id: ammoBundleCrossbowBoltSteelAP
     name: 一盒钢弩箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoCrossbowBoltSteelAP
     tier: 1140
   - id: ammoBundleCrossbowBoltFlaming
     name: 一盒燃烧弩箭（100）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoCrossbowBoltFlaming
     tier: 4400
   - id: ammoBundleCrossbowBoltExploding
     name: 一盒爆炸弩箭（75）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoCrossbowBoltExploding
     tier: 6000
@@ -1990,7 +1990,7 @@ items:
     icon: resourceOilShale
   - id: ammoGasCanBundle
     name: 汽油罐堆（5000）
-    category: material
+    category: ammo
     stack_size: 1
     icon: ammoGasCan
     tier: 1500
@@ -2033,7 +2033,7 @@ items:
       cold_resistance: 10
   - id: ammoDartIron
     name: 铁飞镖（弹药）
-    category: material
+    category: ammo
     stack_size: 500
     tier: 34
     stats:
@@ -2073,40 +2073,40 @@ items:
     tier: 200
   - id: gunBotRoboticsParts
     name: 机器人零件
-    category: melee_weapon
+    category: material
     stack_size: 1
   - id: meleeWpnBatonT2StunBatonParts
     name: 眩晕棒零件
-    category: melee_weapon
+    category: material
     stack_size: 1
   - id: meleeWpnKnucklesT3SteelKnucklesParts
     name: 钢质拳套零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: meleeWpnBladeT3MacheteParts
     name: 砍刀零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: meleeWpnSpearT3SteelSpearParts
     name: 钢矛零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: meleeWpnClubT3SteelClubParts
     name: 钢棍零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: meleeWpnSledgeT3SteelSledgehammerParts
     name: 钢质大锤零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: meleeToolAllSteelParts
     name: 钢制工具零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: armorParts
@@ -2116,7 +2116,7 @@ items:
     tier: 200
   - id: meleeToolAxeT3ChainsawParts
     name: 电动工具零件
-    category: melee_weapon
+    category: material
     stack_size: 1
     tier: 200
   - id: vehicleWheels
@@ -2172,7 +2172,7 @@ items:
     tier: 3000
   - id: vehicleMotorcyclePlaceable
     name: 摩托车
-    category: armor
+    category: vehicle
     stack_size: 1
     tier: 10000
     stats:
@@ -2208,7 +2208,7 @@ items:
     tier: 15000
   - id: vehicleGyrocopterPlaceable
     name: 旋翼机
-    category: armor
+    category: vehicle
     stack_size: 1
     tier: 50000
     stats:
@@ -3601,12 +3601,12 @@ items:
     tier: 5
   - id: medicalFirstAidBandage
     name: 急救绷带
-    category: material
+    category: medical
     stack_size: 5
     tier: 15
   - id: medicalFirstAidKit
     name: 急救包
-    category: material
+    category: medical
     stack_size: 5
     tier: 200
   - id: medicalSplint
@@ -3645,7 +3645,7 @@ items:
     tier: 240
   - id: drugSteroids
     name: 类固醇
-    category: material
+    category: consumable
     stack_size: 1
     tier: 250
   - id: drugRecog
@@ -3655,7 +3655,7 @@ items:
     tier: 250
   - id: drugFortBites
     name: 强健宝
-    category: material
+    category: consumable
     stack_size: 1
   - id: foodBurntSmoothie
     name: 黑肺血清
@@ -3688,43 +3688,43 @@ items:
     tier: 100
   - id: drugCovertCats
     name: 隐蔽的猫
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugEyeKandy
     name: 寻宝眼药水
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugHackers
     name: 黑客
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugHealthBar
     name: 能量棒
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugJailBreakers
     name: 越狱者
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugNerdTats
     name: 学霸刺青
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugOhShitzDrops
     name: 该死的坠落
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugRockBusters
     name: 岩石克星
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugSkullCrushers
     name: 头骨粉碎者
-    category: material
+    category: consumable
     stack_size: 1
   - id: drugSugarButts
     name: 烟蒂糖
-    category: material
+    category: consumable
     stack_size: 1
   - id: foodHoney
     name: 一罐蜂蜜
@@ -3738,66 +3738,66 @@ items:
     tier: 60
   - id: foodCanChicken
     name: 鸡肉罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanLamb
     name: 羊肉罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanCatfood
     name: 猫粮罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 40
   - id: foodCanDogfood
     name: 狗粮罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 40
   - id: foodCanChili
     name: 辣椒罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanTuna
     name: 金枪鱼罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 20
   - id: foodCanSham
     name: 山威罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanPasta
     name: 通心粉罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanSalmon
     name: 三文鱼罐头
-    category: material
+    category: food
     stack_size: 1
   - id: foodCanMiso
     name: 味增罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 55
   - id: foodCanPeas
     name: 豌豆罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 50
   - id: foodCanPears
     name: 梨子罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 50
   - id: foodCanSoup
     name: 鸡汤
-    category: material
+    category: food
     stack_size: 1
     tier: 55
   - id: foodCanStock
     name: 浓汤罐头
-    category: material
+    category: food
     stack_size: 1
     tier: 30
   - id: foodCornOnTheCob
@@ -3872,7 +3872,7 @@ items:
     tier: 100
   - id: foodShamChowder
     name: 山威杂烩
-    category: material
+    category: food
     stack_size: 1
     tier: 126
   - id: foodHoboStew
@@ -3957,7 +3957,7 @@ items:
     tier: 20
   - id: foodRawMeatBundle
     name: 生肉捆
-    category: material
+    category: food
     stack_size: 10
     icon: foodRawMeatBundle
     tier: 100
@@ -4021,27 +4021,27 @@ items:
     tier: 10
   - id: drinkCanEmpty
     name: 空罐
-    category: material
+    category: food
     stack_size: 500
     tier: 5
   - id: drinkJarEmpty
     name: 空水罐
-    category: material
+    category: food
     stack_size: 10
     tier: 20
   - id: drinkJarRiverWater
     name: 浑浊的水
-    category: material
+    category: food
     stack_size: 10
     tier: 20
   - id: drinkJarBoiledWater
     name: 水
-    category: material
+    category: food
     stack_size: 10
     tier: 40
   - id: drinkJarPureMineralWater
     name: 纯净矿泉水
-    category: material
+    category: food
     stack_size: 10
     tier: 100
   - id: drinkJarYuccaJuice
@@ -4071,7 +4071,7 @@ items:
     tier: 156
   - id: drinkCanMegaCrush
     name: 碾压王
-    category: material
+    category: food
     stack_size: 1
     tier: 240
   - id: drinkJarCoffee
@@ -4081,7 +4081,7 @@ items:
     tier: 96
   - id: drinkJarBlackStrapCoffee
     name: 黑带咖啡
-    category: material
+    category: food
     stack_size: 1
     tier: 200
   - id: drinkJarBeer
@@ -4106,7 +4106,7 @@ items:
     tier: 250
   - id: drinkJarGrandpasForgettingElixir
     name: 祖父的遗忘妙药
-    category: material
+    category: food
     stack_size: 10
     tier: 2000
   - id: bucketEmpty
@@ -4512,7 +4512,7 @@ items:
     tier: 1600
   - id: noteDuke01
     name: 来自纳维戈恩公爵的便条
-    category: material
+    category: quest_item
     stack_size: 1
     icon: challengeQuestMaster
   - id: questMaster
@@ -4538,31 +4538,31 @@ items:
     stack_size: 1
   - id: qt_taylor
     name: 泰勒的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_nickole
     name: 尼科尔的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_stephan
     name: 斯蒂芬的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_jennifer
     name: 詹妮弗的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_claude
     name: 克劳德的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_sarah
     name: 萨拉的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qt_raphael
     name: 拉斐尔的藏宝图
-    category: material
+    category: quest_item
     stack_size: 1
   - id: qtest_nextTraderAdmin
     name: 开发团队：找到商人任务
@@ -4665,7 +4665,7 @@ items:
     tier: 5
   - id: resourceSewingKit
     name: 针线包
-    category: medical
+    category: material
     stack_size: 50
     tier: 50
   - id: resourceOilShale
@@ -4892,7 +4892,7 @@ items:
     tier: 186
   - id: resourceLegendaryParts
     name: 传奇零件
-    category: armor
+    category: material
     stack_size: 25
     tier: 186
   - id: resourceOil
@@ -5008,12 +5008,12 @@ items:
       craft_time: -0.3
   - id: toolBeaker
     name: 烧杯
-    category: material
+    category: tool
     stack_size: 10
     tier: 500
   - id: toolBellows
     name: 高级风箱
-    category: material
+    category: tool
     stack_size: 1
     tier: 1000
     stats:
@@ -5030,53 +5030,53 @@ items:
       craft_time: -0.2
   - id: toolForgeCrucible
     name: 坩埚
-    category: material
+    category: tool
     stack_size: 1
     tier: 5000
   - id: toolDewGatherer
     name: 集露器
-    category: material
+    category: tool
     stack_size: 1
     tier: 240
   - id: toolDewTarp
     name: 篷布
-    category: material
+    category: tool
     stack_size: 1
     tier: 500
   - id: toolDewFilter
     name: 滤水器
-    category: material
+    category: tool
     stack_size: 1
     icon: resourceWaterFilter
     tier: 2500
   - id: toolApiaryExtractor
     name: 采蜜器
-    category: material
+    category: tool
     stack_size: 1
     tier: 240
   - id: toolApiaryBroodBox
     name: 育蜂箱
-    category: material
+    category: tool
     stack_size: 1
     tier: 500
   - id: toolApiarySmoker
     name: 烟熏器
-    category: material
+    category: tool
     stack_size: 1
     tier: 2500
   - id: toolChickenCoopLamp
     name: 育雏灯
-    category: material
+    category: tool
     stack_size: 1
     tier: 240
   - id: toolChickenCoopRun
     name: 鸡舍跑道
-    category: material
+    category: tool
     stack_size: 1
     tier: 500
   - id: toolChickenCoopNestingBox
     name: 巢箱
-    category: material
+    category: tool
     stack_size: 1
     tier: 2500
   - id: wildChicken
@@ -5122,7 +5122,7 @@ items:
     stack_size: 1
     icon: resourceClayLump
   - id: questItem
-    name: questItem
+    name: 任务物品
     category: material
     stack_size: 1
     icon: missingIcon
@@ -5796,7 +5796,7 @@ items:
     icon: bookWiring101
   - id: trapsSkillMagazine
     name: 电力陷阱
-    category: trap
+    category: book
     stack_size: 1
     icon: bookElectricalTraps
   - id: workstationSkillMagazine
@@ -5811,297 +5811,297 @@ items:
     icon: bookVehicleAdventures
   - id: questRewardBundleMaster
     name: questRewardBundleMaster
-    category: material
+    category: quest_item
     stack_size: 1
     icon: resourcePaper
   - id: questRewardPipePistolBundle
     name: 铁管手枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRevolver
   - id: questRewardPipeShotgunBundle
     name: 铁管霰弹枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardPipeRifleBundle
     name: 铁管步枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardPipeMachineGunBundle
     name: 铁管机枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardPipeBatonBundle
     name: 铁管棒组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardSteelKnuckleCraftingBundle
     name: 钢质拳套制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleKnuckles
   - id: questRewardMacheteCraftingBundle
     name: 砍刀制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleKnife
   - id: questRewardSteelClubCraftingBundle
     name: 钢棍制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleClub
   - id: questRewardSteelSledgehammerCraftingBundle
     name: 钢质大锤制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSledge
   - id: questRewardBowCraftingBundle
     name: 弓制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleBow
   - id: questRewardSteelSpearCraftingBundle
     name: 钢矛制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSpear
   - id: questRewardHandgunCraftingBundle
     name: 手枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardShotgunCraftingBundle
     name: 霰弹枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardRifleCraftingBundle
     name: 步枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardMachineGunCraftingBundle
     name: 机枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardRocketLauncherCraftingBundle
     name: 火箭发射器制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleExplosives
   - id: questRewardBatonCraftingBundle
     name: 短棒制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardRoboticsCraftingBundle
     name: 机器人制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardSteelToolsCraftingBundle
     name: 钢制工具制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTools
   - id: questRewardMotorToolsCraftingBundle
     name: 电动工具制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTools
   - id: questRewardLegendarySteelKnuckleCraftingBundle
     name: 传奇钢质拳套制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleKnuckles
   - id: questRewardLegendaryMacheteCraftingBundle
     name: 传奇砍刀制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleKnife
   - id: questRewardLegendarySteelClubCraftingBundle
     name: 传奇钢棍制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleClub
   - id: questRewardLegendarySteelSledgehammerCraftingBundle
     name: 传奇钢质大锤制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSledge
   - id: questRewardLegendaryBowCraftingBundle
     name: 传奇弓制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleBow
   - id: questRewardLegendarySteelSpearCraftingBundle
     name: 传奇钢矛制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSpear
   - id: questRewardLegendaryHandgunCraftingBundle
     name: 传奇手枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardLegendaryShotgunCraftingBundle
     name: 传奇霰弹枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardLegendaryRifleCraftingBundle
     name: 传奇步枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardLegendaryMachineGunCraftingBundle
     name: 传奇机枪制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardLegendaryRocketLauncherCraftingBundle
     name: 传奇火箭发射器制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleExplosives
   - id: questRewardLegendaryBatonCraftingBundle
     name: 传奇短棒制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardLegendaryRoboticsCraftingBundle
     name: 传奇机器人制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardLegendarySteelToolsCraftingBundle
     name: 传奇钢制工具制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTools
   - id: questRewardLegendaryMotorToolsCraftingBundle
     name: 传奇电动工具制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTools
   - id: questRewardAmmoCraftingBundle
     name: 弹药制作组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleAmmo
   - id: questRewardT0HandgunBundle
     name: 铁管手枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRevolver
   - id: questRewardT0RifleBundle
     name: 铁管步枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardT0ShotgunBundle
     name: 铁管霰弹枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardT0MachineGunBundle
     name: 铁管机枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardT1HandgunBundle
     name: 手枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardT1ShotgunBundle
     name: 双管霰弹枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardT1RifleBundle
     name: 猎枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardT1MachineGunBundle
     name: AK-47 组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardT2HandgunBundle
     name: .44马格南组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRevolver
   - id: questRewardT2ShotgunBundle
     name: 泵动式霰弹枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardT2RifleBundle
     name: 杠杆式步枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardT2MachineGunBundle
     name: 战术突击步枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardT3HandgunBundle
     name: .44沙漠秃鹰组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardT3SMGBundle
     name: SMG-5组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardT3ShotgunBundle
     name: 自动霰弹枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardT3RifleBundle
     name: 狙击步枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardT3MachineGunBundle
     name: M60机枪组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardT3HandgunLegendaryBundle
     name: .44沙漠秃鹰传奇组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardT3SMGLegendaryBundle
     name: SMG-5传奇组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundlePistol
   - id: questRewardT3ShotgunLegendaryBundle
     name: 自动霰弹枪传奇组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleShotgun
   - id: questRewardT3RifleLegendaryBundle
     name: 狙击步枪传奇组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRifle
   - id: questRewardT3MachineGunLegendaryBundle
     name: M60机枪传奇组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMachineGun
   - id: questRewardT1BookBundle
@@ -6136,137 +6136,137 @@ items:
     icon: bundleBooks
   - id: questRewardT1TrapsBundle
     name: 陷阱组合包01
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTraps
   - id: questRewardT2TrapsBundle
     name: 陷阱组合包02
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTraps
   - id: questRewardDartTrapBundle
     name: 飞镖陷阱组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleDartTrap
   - id: questRewardBladeTrapBundle
     name: 刀片陷阱组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleBladeTrap
   - id: questRewardShotgunTurretBundle
     name: 霰弹炮塔组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardAutoTurretBundle
     name: 自动炮塔组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleTurrets
   - id: questRewardSecuritySystemBundle
     name: 安全摄像机组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSecurity
   - id: questRewardGeneratorBankBundle
     name: 发电机组组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleGeneratorBank
   - id: questRewardBatteryBankBundle
     name: 电池组组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleBatteryBank
   - id: questRewardSolarBankBundle
     name: 太阳能组组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleSolarBank
   - id: questRewardT1MeleeModsBundle
     name: 近战模组组合包01
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMeleeMods
   - id: questRewardT2MeleeModsBundle
     name: 近战模组组合包02
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMeleeMods
   - id: questRewardT3MeleeModsBundle
     name: 近战模组组合包03
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleMeleeMods
   - id: questRewardT1RangedModsBundle
     name: 远程模组组合包01
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRangedMods
   - id: questRewardT2RangedModsBundle
     name: 远程模组组合包02
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRangedMods
   - id: questRewardT3RangedModsBundle
     name: 远程模组组合包03
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleRangedMods
   - id: questRewardT2FoodBundle
     name: 食物组合包01
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFood
   - id: questRewardT3FoodBundle
     name: 食物组合包02
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFood
   - id: questRewardT4FoodBundle
     name: 食物组合包03
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFood
   - id: questRewardFarmT1Bundle
     name: 农场组合包01
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFarm
   - id: questRewardFarmT2Bundle
     name: 农场组合包02
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFarm
   - id: questRewardFarmT3Bundle
     name: 农场组合包03
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleFarm
   - id: questRewardVehiclePartsBundle
     name: 载具零件组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleVehicleParts
   - id: questRewardMinibikePartsBundle
     name: 小型机车零件组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleVehicleMiniBike
   - id: questRewardMotorcyclePartsBundle
     name: 摩托车零件组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleVehicleMotorCycle
   - id: questReward4x4PartsBundle
     name: 4x4零件组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleVehicle4x4
   - id: questRewardGyrocopterPartsBundle
     name: 旋翼机零件组合包
-    category: material
+    category: quest_item
     stack_size: 1
     icon: bundleVehicleGyro
   - id: twitchTurd
@@ -6276,54 +6276,54 @@ items:
     icon: twitchTurd
   - id: biomeBadge1
     name: 生态环境徽章 1
-    category: material
+    category: quest_item
     stack_size: 1
     icon: biomeBadge1
   - id: biomeBadge2
     name: 生态环境徽章 2
-    category: material
+    category: quest_item
     stack_size: 1
     icon: biomeBadge2
     stats:
       mod_slots: 0
   - id: biomeBadge3
     name: 生态环境徽章 3
-    category: material
+    category: quest_item
     stack_size: 1
     icon: biomeBadge3
     stats:
       mod_slots: 0
   - id: biomeBadge4
     name: 生态环境徽章 4
-    category: material
+    category: quest_item
     stack_size: 1
     icon: biomeBadge4
     stats:
       mod_slots: 0
   - id: biomeWeatherItem1
     name: 防烟装备
-    category: material
+    category: armor
     stack_size: 1
     icon: biomeWeatherItem1
     stats:
       mod_slots: 0
   - id: biomeWeatherItem2
     name: 沙漠装备
-    category: material
+    category: armor
     stack_size: 1
     icon: biomeWeatherItem2
     stats:
       mod_slots: 0
   - id: biomeWeatherItem3
     name: 雪地装备
-    category: material
+    category: armor
     stack_size: 1
     icon: biomeWeatherItem3
     stats:
       mod_slots: 0
   - id: biomeWeatherItem4
     name: 防辐射装备
-    category: material
+    category: armor
     stack_size: 1
     icon: biomeWeatherItem4
     stats:
@@ -6494,7 +6494,7 @@ items:
       stamina_cost: -0.75
   - id: drinkJarFullRespecAdmin
     name: drinkJarFullRespecAdmin
-    category: material
+    category: food
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
     stats:
@@ -6502,7 +6502,7 @@ items:
       max_stamina: 100
   - id: drinkJarFullRespecWithPointsAdmin
     name: drinkJarFullRespecWithPointsAdmin
-    category: material
+    category: food
     stack_size: 1
     icon: drinkJarGrandpasForgettingElixir
     stats:
@@ -6550,7 +6550,7 @@ items:
     icon: cementMixer
   - id: toolTerrainModelerAdmin
     name: toolTerrainModelerAdmin
-    category: material
+    category: tool
     stack_size: 1
     icon: meleeToolShovelT1IronShovel
   - id: thrownGrenadeNukeAdmin
@@ -8656,8 +8656,8 @@ items:
     stack_size: 1
     icon: missingIcon
   - id: drinkJarGrey
-    name: drinkJarGrey
-    category: material
+    name: 灰色水罐
+    category: food
     stack_size: 1
     icon: drinkJarGrey
   - id: UselessThing

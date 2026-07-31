@@ -132,21 +132,47 @@ export function parseItemsXml(xmlText, locMap = new Map()) {
     }
     if (Object.keys(stats).length > 0) item.stats = stats;
 
-    const tagsRegex = /<property\s+name="(Group|Tags)"\s+value="([^"]+)"/g;
-    let tagsMatch;
-    while ((tagsMatch = tagsRegex.exec(content)) !== null) {
-      const tags = tagsMatch[2];
-      if (tags.includes('food') || tags.includes('canFood')) item.category = 'food';
-      else if (tags.includes('medical')) item.category = 'medical';
-      else if (tags.includes('ammo')) item.category = 'ammo';
-      else if (tags.includes('armor') || tags.includes('clothing')) item.category = 'armor';
-      else if (tags.includes('tool')) item.category = 'tool';
-      else if (tags.includes('weapon')) item.category = 'ranged_weapon';
-      else if (tags.includes('melee')) item.category = 'melee_weapon';
-      else if (tags.includes('mod')) item.category = 'mod';
-      else if (tags.includes('resource') || tags.includes('material')) item.category = 'material';
-      else if (tags.includes('vehicle')) item.category = 'vehicle';
-      else if (tags.includes('trap')) item.category = 'trap';
+    // ─── Category inference ───
+    // Strong signal: ID prefixes are more reliable than tags
+    const id = item.id;
+    if (/^meleeWpn/.test(id)) item.category = 'melee_weapon';
+    else if (/^meleeWpn.*Parts$|^meleeTool.*Parts$|^gun.*Parts$/.test(id)) item.category = 'material';
+    else if (/^gun|^bow|^crossbow/.test(id)) item.category = 'ranged_weapon';
+    else if (/^ammo/.test(id)) item.category = 'ammo';
+    else if (/^food/.test(id)) item.category = 'food';
+    else if (/^drink/.test(id)) item.category = 'food';
+    else if (/^drug/.test(id)) item.category = 'consumable';
+    else if (/^tool/.test(id)) item.category = 'tool';
+    else if (/^medical/.test(id)) item.category = 'medical';
+    else if (/^armor/.test(id)) item.category = 'armor';
+    else if (/^vehicle/.test(id)) item.category = 'vehicle';
+    else if (/^book/.test(id)) item.category = 'book';
+    else if (/^qt_|^questReward|^q_/.test(id)) item.category = 'quest_item';
+    else if (/^biomeBadge/.test(id)) item.category = 'quest_item';
+    else if (/^biomeWeatherItem/.test(id)) item.category = 'armor';
+    else if (/^traps/.test(id)) item.category = 'book';
+    else if (/^mod/.test(id)) item.category = 'mod';
+    else {
+      // Fallback: tags-based inference
+      const tagsRegex = /<property\s+name="(Group|Tags)"\s+value="([^"]+)"/g;
+      let tagsMatch;
+      while ((tagsMatch = tagsRegex.exec(content)) !== null) {
+        const tags = tagsMatch[2];
+        if (tags.includes('melee')) item.category = 'melee_weapon';
+        else if (tags.includes('weapon') || tags.includes('gun')) item.category = 'ranged_weapon';
+        else if (tags.includes('cannedFood') || tags.includes('canFood') || tags.includes('food')) item.category = 'food';
+        else if (tags.includes('drink')) item.category = 'food';
+        else if (tags.includes('drug')) item.category = 'consumable';
+        else if (tags.includes('medical')) item.category = 'medical';
+        else if (tags.includes('ammo')) item.category = 'ammo';
+        else if (tags.includes('armor') || tags.includes('clothing')) item.category = 'armor';
+        else if (tags.includes('tool')) item.category = 'tool';
+        else if (tags.includes('vehicle')) item.category = 'vehicle';
+        else if (tags.includes('quest')) item.category = 'quest_item';
+        else if (tags.includes('resource') || tags.includes('material')) item.category = 'material';
+        else if (tags.includes('mod')) item.category = 'mod';
+        else if (tags.includes('book')) item.category = 'book';
+      }
     }
 
     items.push(item);
