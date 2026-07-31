@@ -5,14 +5,18 @@
 
 export function parseSpawningXml(spawningXml, entitygroupsXml) {
   // 1. entitygroups.xml: group name -> entity ids
-  // v2.6 format: <entitygroup name="X">zombieBoe zombieJoe zombieBiker, .3 ...</entitygroup>
+  // v2.6: <entitygroup name="X">zombieBoe zombieJoe zombieBiker, .3 ...</entitygroup>
+  // v3.x: <entitygroup name="X"><e n="zombieBoe" p="0.3"/>...</entitygroup>
   const entityGroups = {};
   const groupRegex = /<entitygroup\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/entitygroup>/g;
   let gm;
   while ((gm = groupRegex.exec(entitygroupsXml)) !== null) {
     const [, name, content] = gm;
-    // Tag-based entities
-    const tagEntities = [...content.matchAll(/<entity\s+name="([^"]+)"/g)].map(m => m[1]);
+    // Tag-based entities: <entity name="X"/> or <e n="X"/>
+    const tagEntities = [
+      ...[...content.matchAll(/<entity\s+name="([^"]+)"/g)].map(m => m[1]),
+      ...[...content.matchAll(/<e\s+n="([^"]+)"/g)].map(m => m[1]),
+    ];
     // Space-separated bare ids (optionally "id, weight")
     const bare = content
       .split(/[\s,]+/)
