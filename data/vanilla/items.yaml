@@ -3983,21 +3983,41 @@ items:
     category: food
     stack_size: 10
     tier: 24
+    stats:
+      hunger: 98
+      health: 49
+      stamina: 20
+      buff_duration: 6 分钟
   - id: foodChickenNuggets
     name: 鸡块
     category: food
     stack_size: 10
     tier: 24
+    stats:
+      hunger: 25
+      health: 12
+      stamina: 10
+      buff_duration: 6 分钟
   - id: foodAshChickenStew
     name: 灰烬鸡肉炖
     category: food
     stack_size: 10
     tier: 134
+    stats:
+      hunger: 75
+      water: 20
+      health: 37
+      stamina: 20
   - id: foodRoadrunnerChickenJerky
     name: 走鹃鸡肉干
     category: food
     stack_size: 10
     tier: 24
+    stats:
+      hunger: 30
+      health: 15
+      stamina: 15
+      buff_duration: 6 分钟
   - id: foodMeatStew
     name: 炖肉
     category: food
