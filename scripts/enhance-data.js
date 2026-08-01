@@ -22,6 +22,7 @@ import { parseLocalization } from './import/parse-localization.js';
 import { parseVehiclesXml } from './import/parse-vehicles.js';
 import { parseModsXml } from './import/parse-mods.js';
 import { parseTradersXml } from './import/parse-traders.js';
+import { parseBiomesXml } from './import/parse-biomes.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, '..', 'data', 'vanilla');
@@ -210,9 +211,18 @@ function enhance(configDir) {
     }
   }
 
+  // ─── 9. Biomes (biomes.xml) ───
+  const biomesPath = join(configDir, 'biomes.xml');
+  if (existsSync(biomesPath)) {
+    const biomes = parseBiomesXml(readFileSync(biomesPath, 'utf-8'));
+    if (biomes.length > 0) {
+      writeYaml(join(DATA_DIR, 'biomes.yaml'), { biomes });
+      console.log(`  - 生物群系: ${biomes.length} 个 -> data/vanilla/biomes.yaml`);
+    }
+  }
+
   console.log('✅ 数据增强完成');
 }
-
 const argIdx = process.argv.indexOf('--config-dir');
 const configDir = argIdx > -1 ? process.argv[argIdx + 1] : process.argv.find(a => a.startsWith('--config-dir='))?.split('=')[1];
 if (!configDir) {

@@ -1,0 +1,76 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+export function getStaticPaths() {
+  const { biomes } = loadData();
+  return biomes.map(b => ({ params: { id: b._sanitizedId }, props: { biome: b } }));
+}
+const { biome } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const DIFF_LABELS: Record<string, string> = { '1': '低', '2': '较低', '3': '中', '4': '较高', '5': '高' };
+const diffLabel = (d?: string) => (d ? DIFF_LABELS[d] || d : '-');
+const isUnderwater = biome.id === 'underwater';
+---
+
+<Layout title={biome.name} description={`${biome.name} - 生物群系资源与天气`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a><span class="sep">/</span>
+    <a href={`${base}/vanilla/biomes/`}>生物群系</a><span class="sep">/</span>
+    <span>{biome.name}</span>
+  </nav>
+  <h1>{biome.name}</h1>
+  {!isUnderwater && (
+    <p class="subtitle">难度 {diffLabel(biome.difficulty)} · 探索与采集指南</p>
+  )}
+
+  {!isUnderwater && (
+    <table>
+      <caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{biome.name} 基础属性</caption>
+      <tr><th scope="col">属性</th><th scope="col">值</th></tr>
+      <tr><td>难度</td><td>{diffLabel(biome.difficulty)}</td></tr>
+      {biome.lootstage_modifier !== '0' && <tr><td>搜刮阶段修正</td><td>{biome.lootstage_modifier}（额外 {biome.lootstage_bonus}）</td></tr>}
+      {biome.gamestage_modifier !== '0' && <tr><td>游戏阶段修正</td><td>{biome.gamestage_modifier}（额外 {biome.gamestage_bonus}）</td></tr>}
+      <tr><td>子群系数量</td><td>{biome.subbiome_count}</td></tr>
+      <tr><td>天气类型</td><td>{biome.weather_count} 种</td></tr>
+      {biome.temp_range && <tr><td>平均温度</td><td>{biome.temp_range} °F（约 {Math.round(((parseInt(biome.temp_range.split(',')[0]) + parseInt(biome.temp_range.split(',')[1] || biome.temp_range.split(',')[0])) / 2) - 32) * 5 / 9} °C）</td></tr>}
+      <tr><td>降水概率</td><td>{biome.rain_prob}%</td></tr>
+    </table>
+  )}
+
+  {biome.resources && biome.resources.length > 0 && (
+    <>
+      <h2>可采集资源</h2>
+      <div class="recipe-mats">
+        {biome.resources.map(r => (
+          <span class="mat-chip">
+            <span class="mat-name">{r.name}</span>
+          </span>
+        ))}
+      </div>
+    </>
+  )}
+
+  {isUnderwater && (
+    <blockquote>水下生物群系：地图边缘的深水区域，无法正常探索，主要作为地图边界。</blockquote>
+  )}
+
+  <style>
+    .recipe-mats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 16px;
+    }
+    .mat-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+    }
+    .mat-name { color: var(--c-text); }
+  </style>
+</Layout>

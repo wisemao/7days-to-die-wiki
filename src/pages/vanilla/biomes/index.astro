@@ -1,0 +1,46 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { biomes } = loadData();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const DIFF_LABELS: Record<string, string> = { '1': '低', '2': '较低', '3': '中', '4': '较高', '5': '高' };
+const BIOME_COLORS: Record<string, string> = {
+  pine_forest: '#2e6b34',
+  burnt_forest: '#5c3a1e',
+  desert: '#c9a45c',
+  snow: '#b8d4e8',
+  wasteland: '#6b5a4a',
+};
+const list = biomes.filter(b => b.id !== 'underwater');
+---
+
+<Layout title="生物群系" description={`${list.length} 个生物群系`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a><span class="sep">/</span><span>生物群系</span>
+  </nav>
+  <h1>生物群系</h1>
+  <p class="subtitle">共 {list.length} 个可探索生物群系 · 资源与天气指南</p>
+
+  <div class="card-grid">
+    {list.map(b => (
+      <a href={`${base}/vanilla/biomes/${b._sanitizedId}/`} class="card biome-card">
+        <span class="biome-dot" style={`background: ${BIOME_COLORS[b.id] || 'var(--c-rust)'};`}></span>
+        <span class="num" style="font-size:1.2rem;">{b.name}</span>
+        <span class="lbl">难度 {DIFF_LABELS[b.difficulty] || b.difficulty} · {b.subbiome_count} 子群系 · {b.temp_range}°F</span>
+      </a>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  .biome-card { position: relative; }
+  .biome-dot {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 8px;
+    border: 2px solid var(--c-border);
+  }
+</style>

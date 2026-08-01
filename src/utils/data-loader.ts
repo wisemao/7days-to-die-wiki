@@ -293,12 +293,30 @@ export interface Block {
   _sanitizedId: string;
 }
 
+export interface Biome {
+  id: string;
+  name: string;
+  difficulty?: string;
+  lootstage_modifier?: string;
+  lootstage_bonus?: string;
+  gamestage_modifier?: string;
+  gamestage_bonus?: string;
+  buff?: string;
+  resources?: { id: string; name: string }[];
+  subbiome_count?: number;
+  weather_count?: number;
+  temp_range?: string;
+  rain_prob?: number;
+  _sanitizedId: string;
+}
+
 export interface WikiData {
   items: Item[];
   recipes: Recipe[];
   skills: Skill[];
   zombies: Zombie[];
   blocks: Block[];
+  biomes: Biome[];
   itemMap: Map<string, Item>;
   itemRecipes: Map<string, Recipe[]>;
   itemCraftRecipes: Map<string, Recipe[]>;
@@ -320,6 +338,7 @@ export function loadData(): WikiData {
   const rawSkills = (load(readFileSync(join(DATA_DIR, 'skills.yaml'), 'utf-8')) as { skills?: Skill[] }).skills || [];
   const rawZombies = (load(readFileSync(join(DATA_DIR, 'zombies.yaml'), 'utf-8')) as { zombies?: Zombie[] }).zombies || [];
   const rawBlocks = (load(readFileSync(join(DATA_DIR, 'blocks.yaml'), 'utf-8')) as { blocks?: Block[] }).blocks || [];
+  const rawBiomes = (load(readFileSync(join(DATA_DIR, 'biomes.yaml'), 'utf-8')) as { biomes?: Biome[] }).biomes || [];
 
   const recipes = mergeRecipes(rawRecipes);
 
@@ -348,6 +367,11 @@ export function loadData(): WikiData {
     ...b,
     _sanitizedId: sanitizeId(b.id),
     name: b.name && /[\u4e00-\u9fff]/.test(b.name) ? b.name : generateItemName(b.id),
+  }));
+
+  const biomes: Biome[] = rawBiomes.map(b => ({
+    ...b,
+    _sanitizedId: sanitizeId(b.id),
   }));
 
   const itemMap = new Map(items.map(i => [i.id, i] as const));
@@ -386,7 +410,7 @@ export function loadData(): WikiData {
   }
 
   _cached = {
-    items, recipes, skills, zombies, blocks,
+    items, recipes, skills, zombies, blocks, biomes,
     itemMap, itemRecipes, itemCraftRecipes, zombieLoot,
     resolveItemName, getItemLink,
     ITEM_CATEGORY_LABELS, ATTR_LABELS, ZOMBIE_CATEGORY_LABELS,

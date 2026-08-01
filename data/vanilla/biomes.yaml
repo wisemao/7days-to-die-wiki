@@ -1,0 +1,129 @@
+biomes:
+  - id: pine_forest
+    name: 松树林
+    difficulty: '1'
+    lootstage_modifier: '0'
+    lootstage_bonus: '0'
+    gamestage_modifier: '0'
+    gamestage_bonus: '0'
+    buff: twitch_storm
+    resources:
+      - id: terrOreIron
+        name: 铁矿
+      - id: terrGravel
+        name: 砾石
+      - id: terrOreCoal
+        name: 煤矿
+      - id: terrOreLead
+        name: 铅矿
+      - id: terrOrePotassiumNitrate
+        name: 硝石矿
+    subbiome_count: 8
+    weather_count: 11
+    temp_range: 76,80
+    rain_prob: 10
+  - id: burnt_forest
+    name: 烧焦森林
+    difficulty: '2'
+    lootstage_modifier: '0.5'
+    lootstage_bonus: '5'
+    gamestage_modifier: '0.5'
+    gamestage_bonus: '10'
+    buff: twitch_storm
+    resources:
+      - id: terrGravel
+        name: 砾石
+      - id: terrOreIron
+        name: 铁矿
+      - id: terrOreLead
+        name: 铅矿
+      - id: terrOreCoal
+        name: 煤矿
+      - id: terrOrePotassiumNitrate
+        name: 硝石矿
+    subbiome_count: 5
+    weather_count: 10
+    temp_range: 75,85
+    rain_prob: 17
+  - id: desert
+    name: 沙漠
+    difficulty: '3'
+    lootstage_modifier: '1'
+    lootstage_bonus: '10'
+    gamestage_modifier: '1'
+    gamestage_bonus: '10'
+    buff: twitch_storm
+    resources:
+      - id: terrGravel
+        name: 砾石
+      - id: terrOreLead
+        name: 铅矿
+      - id: terrOreIron
+        name: 铁矿
+      - id: terrOrePotassiumNitrate
+        name: 硝石矿
+      - id: terrOreOilDeposit
+        name: 油矿藏
+    subbiome_count: 7
+    weather_count: 10
+    temp_range: 95,105
+    rain_prob: 10
+  - id: snow
+    name: 雪地
+    difficulty: '4'
+    lootstage_modifier: '1.5'
+    lootstage_bonus: '15'
+    gamestage_modifier: '3'
+    gamestage_bonus: '30'
+    buff: twitch_storm
+    resources:
+      - id: terrOreIron
+        name: 铁矿
+      - id: terrGravel
+        name: 砾石
+      - id: terrOrePotassiumNitrate
+        name: 硝石矿
+      - id: terrOreLead
+        name: 铅矿
+      - id: terrOreCoal
+        name: 煤矿
+    subbiome_count: 5
+    weather_count: 11
+    temp_range: 28,32
+    rain_prob: 0
+  - id: wasteland
+    name: 荒原
+    difficulty: '5'
+    lootstage_modifier: '2'
+    lootstage_bonus: '20'
+    gamestage_modifier: '5'
+    gamestage_bonus: '50'
+    buff: twitch_storm
+    resources:
+      - id: terrGravel
+        name: 砾石
+      - id: terrOreCoal
+        name: 煤矿
+      - id: terrOrePotassiumNitrate
+        name: 硝石矿
+      - id: terrOreIron
+        name: 铁矿
+      - id: terrOreLead
+        name: 铅矿
+    subbiome_count: 7
+    weather_count: 12
+    temp_range: 60,90
+    rain_prob: 17
+  - id: underwater
+    name: 水下
+    difficulty: ''
+    lootstage_modifier: ''
+    lootstage_bonus: ''
+    gamestage_modifier: ''
+    gamestage_bonus: ''
+    buff: ''
+    resources: []
+    subbiome_count: 0
+    weather_count: 0
+    temp_range: ''
+    rain_prob: 0

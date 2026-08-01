@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS, STATION_LABELS } from '../utils/data-loader';
 import { categoryIconUrl } from '../utils/item-icons';
-const { items, recipes, skills, zombies, blocks } = loadData();
+const { items, recipes, skills, zombies, blocks, biomes } = loadData();
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catCounts = {};
@@ -120,6 +120,11 @@ const seriesCount = seriesSet.size;
       <img class="card-icon" src={`${base}/images/items/bladeTrap.png`} alt="" loading="lazy" />
       <span class="num">{blocks.length}</span>
       <span class="lbl">防御方块 · 陷阱 · 炮塔 · 电力</span>
+    </a>
+    <a href={`${base}/vanilla/biomes/`} class="card">
+      <img class="card-icon" src={`${base}/images/items/resourceClayLump.png`} alt="" loading="lazy" />
+      <span class="num">{biomes.length}</span>
+      <span class="lbl">生物群系 · 资源 · 天气 · 难度</span>
     </a>
   </div>
 
