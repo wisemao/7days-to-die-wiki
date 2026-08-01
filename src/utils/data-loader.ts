@@ -277,11 +277,28 @@ export function sanitizeId(id: string): string {
   return id.replace(/[<>:"\/\\|?*]/g, '_').replace(/\s+/g, '-');
 }
 
+export interface Block {
+  id: string;
+  name: string;
+  category: string;
+  durability?: number;
+  damage?: number;
+  power_usage?: number;
+  trigger_range?: number;
+  ammo?: string;
+  tier?: number;
+  description?: string;
+  icon?: string;
+  extends?: string;
+  _sanitizedId: string;
+}
+
 export interface WikiData {
   items: Item[];
   recipes: Recipe[];
   skills: Skill[];
   zombies: Zombie[];
+  blocks: Block[];
   itemMap: Map<string, Item>;
   itemRecipes: Map<string, Recipe[]>;
   itemCraftRecipes: Map<string, Recipe[]>;
@@ -302,6 +319,7 @@ export function loadData(): WikiData {
   const rawRecipes = (load(readFileSync(join(DATA_DIR, 'recipes.yaml'), 'utf-8')) as { recipes?: Recipe[] }).recipes || [];
   const rawSkills = (load(readFileSync(join(DATA_DIR, 'skills.yaml'), 'utf-8')) as { skills?: Skill[] }).skills || [];
   const rawZombies = (load(readFileSync(join(DATA_DIR, 'zombies.yaml'), 'utf-8')) as { zombies?: Zombie[] }).zombies || [];
+  const rawBlocks = (load(readFileSync(join(DATA_DIR, 'blocks.yaml'), 'utf-8')) as { blocks?: Block[] }).blocks || [];
 
   const recipes = mergeRecipes(rawRecipes);
 
@@ -324,6 +342,12 @@ export function loadData(): WikiData {
     // Resolve formula-based HP values (field is `hp` in the data)
     hp: typeof z.hp === 'string' && z.hp.startsWith('^') ? (HP_FORMULAS[z.hp] || z.hp) : z.hp,
     _sanitizedId: sanitizeId(z.id),
+  }));
+
+  const blocks: Block[] = rawBlocks.map(b => ({
+    ...b,
+    _sanitizedId: sanitizeId(b.id),
+    name: b.name && /[\u4e00-\u9fff]/.test(b.name) ? b.name : generateItemName(b.id),
   }));
 
   const itemMap = new Map(items.map(i => [i.id, i] as const));
@@ -362,7 +386,7 @@ export function loadData(): WikiData {
   }
 
   _cached = {
-    items, recipes, skills, zombies,
+    items, recipes, skills, zombies, blocks,
     itemMap, itemRecipes, itemCraftRecipes, zombieLoot,
     resolveItemName, getItemLink,
     ITEM_CATEGORY_LABELS, ATTR_LABELS, ZOMBIE_CATEGORY_LABELS,

@@ -1,0 +1,81 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData } from '../../../utils/data-loader';
+const { blocks } = loadData();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+// Group defensive blocks by type
+const GROUPS = [
+  ['炮塔', /Turret$/],
+  ['陷阱', /Trap$|fencepost/],
+  ['电力设备', /wire|switch|pressure|tripwire|motion|timer|relay/i],
+  ['尖刺', /Spikes/],
+];
+const grouped = GROUPS.map(([label, re]) => [label, blocks.filter(b => re.test(b.id))]).filter(([, l]) => l.length > 0);
+const groupedIds = new Set(grouped.flatMap(([, l]) => l.map(b => b.id)));
+const others = blocks.filter(b => !groupedIds.has(b.id));
+---
+
+<Layout title="防御方块" description={`${blocks.length} 个防御/电力方块`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a><span class="sep">/</span><span>防御方块</span>
+  </nav>
+  <h1>防御方块</h1>
+  <p class="subtitle">共 {blocks.length} 个基地防御与电力设备方块</p>
+
+  <div class="card-grid">
+    {grouped.map(([label, list]) => (
+      <a href={`#${label}`} class="card">
+        <span class="num">{list.length}</span>
+        <span class="lbl">{label}</span>
+      </a>
+    ))}
+    {others.length > 0 && (
+      <a href="#其他" class="card">
+        <span class="num">{others.length}</span>
+        <span class="lbl">其他</span>
+      </a>
+    )}
+  </div>
+
+  {grouped.map(([label, list]) => (
+    <section id={label} class="block-section" style="scroll-margin-top:72px;">
+      <h2>{label}</h2>
+      <div class="item-grid">
+        {list.map(b => (
+          <a href={`${base}/vanilla/blocks/${b._sanitizedId}/`} class="grid-item-link">
+            <span class="grid-name">{b.name}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  ))}
+  {others.length > 0 && (
+    <section id="其他" class="block-section" style="scroll-margin-top:72px;">
+      <h2>其他</h2>
+      <div class="item-grid">
+        {others.map(b => (
+          <a href={`${base}/vanilla/blocks/${b._sanitizedId}/`} class="grid-item-link">
+            <span class="grid-name">{b.name}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</Layout>
+
+<style>
+  .block-section {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .block-section h2 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    border-bottom: none;
+  }
+  .item-grid a::before { display: none; }
+</style>

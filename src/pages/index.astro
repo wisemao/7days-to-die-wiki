@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import { loadData, ITEM_CATEGORY_LABELS, STATION_LABELS } from '../utils/data-loader';
 import { categoryIconUrl } from '../utils/item-icons';
-const { items, recipes, skills, zombies } = loadData();
+const { items, recipes, skills, zombies, blocks } = loadData();
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catCounts = {};
@@ -115,6 +115,11 @@ const seriesCount = seriesSet.size;
       {HERO_ICONS.zombies && <img class="card-icon" src={HERO_ICONS.zombies} alt="" loading="lazy" />}
       <span class="num">{zombies.length}</span>
       <span class="lbl">僵尸 · 图鉴 · 掉落 · 弱点</span>
+    </a>
+    <a href={`${base}/vanilla/blocks/`} class="card">
+      <img class="card-icon" src={`${base}/images/items/bladeTrap.png`} alt="" loading="lazy" />
+      <span class="num">{blocks.length}</span>
+      <span class="lbl">防御方块 · 陷阱 · 炮塔 · 电力</span>
     </a>
   </div>
 

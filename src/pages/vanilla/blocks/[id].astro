@@ -1,0 +1,54 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { loadData, sanitizeId } from '../../../utils/data-loader';
+import { itemIconUrl } from '../../../utils/item-icons';
+export function getStaticPaths() {
+  const { blocks } = loadData();
+  return blocks.map(b => ({ params: { id: b._sanitizedId }, props: { block: b } }));
+}
+const { block } = Astro.props;
+const { resolveItemName } = loadData();
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ammoIcon = block.ammo ? itemIconUrl({ id: block.ammo }, base) : null;
+---
+
+<Layout title={block.name} description={`${block.name} - 防御方块属性`}>
+  <nav class="breadcrumb">
+    <a href={base}>首页</a><span class="sep">/</span>
+    <a href={`${base}/vanilla/blocks/`}>防御方块</a><span class="sep">/</span>
+    <span>{block.name}</span>
+  </nav>
+  <h1>{block.name}</h1>
+  {block.description && <p class="subtitle">{block.description}</p>}
+
+  <table>
+    <caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{block.name} 基础属性</caption>
+    <tr><th scope="col">属性</th><th scope="col">值</th></tr>
+    {block.durability != null && <tr><td>耐久度</td><td>{block.durability}</td></tr>}
+    {block.damage != null && <tr><td>伤害</td><td>{block.damage}</td></tr>}
+    {block.power_usage != null && <tr><td>耗电量</td><td>{block.power_usage} W</td></tr>}
+    {block.trigger_range != null && <tr><td>触发范围</td><td>{block.trigger_range} 格</td></tr>}
+    {block.tier != null && <tr><td>经济价值</td><td>{block.tier}</td></tr>}
+    {block.ammo && (
+      <tr><td>弹药</td><td>
+        <a href={`${base}/vanilla/items/${sanitizeId(block.ammo)}/`} class="ammo-link">
+          {ammoIcon && <img class="ammo-icon" src={ammoIcon} alt="" loading="lazy" />}
+          {resolveItemName(block.ammo)}
+        </a>
+      </td></tr>
+    )}
+  </table>
+</Layout>
+
+<style>
+  .ammo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ammo-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+  }
+</style>

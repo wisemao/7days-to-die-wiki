@@ -24,7 +24,7 @@ blocks:
     name: 火焰喷射陷阱
     category: trap
     power_usage: 10
-    ammo: ammoDartIron
+    ammo: ammoGasCan
     tier: 220
     extends: dartTrap <- flamethrowerTrap
   - id: trapSpikesWoodDmg0
@@ -45,3 +45,75 @@ blocks:
     description: trapSpikesGroupDesc
     icon: trapSpikesScrapIronMaster
     extends: trapSpikesScrapIronMaster <- trapSpikesIronDmg0
+  - id: electricwirerelay
+    name: 电线继电器
+    category: trap
+    power_usage: 1
+    tier: 28
+    extends: electricwirerelay
+  - id: switch
+    name: 开关
+    category: trap
+    power_usage: 1
+    tier: 50
+    extends: switch
+  - id: pressureplate
+    name: 压力板
+    category: trap
+    power_usage: 1
+    tier: 124
+    extends: pressureplate
+  - id: pressureplateLong
+    name: 长压力板
+    category: trap
+    power_usage: 1
+    tier: 524
+    description: pressureplateDesc
+    extends: pressureplateLong
+  - id: tripwirepost
+    name: 绊线柱
+    category: trap
+    power_usage: 1
+    tier: 16
+    extends: tripwirepost
+  - id: motionsensor
+    name: 运动传感器
+    category: trap
+    power_usage: 5
+    tier: 135
+    extends: motionsensor
+  - id: electrictimerrelay
+    name: 定时继电器
+    category: trap
+    power_usage: 1
+    tier: 119
+    extends: electrictimerrelay
+  - id: autoTurret
+    name: 自动炮塔
+    category: trap
+    power_usage: 15
+    ammo: ammo9mmBulletBall+tags(ammo9mm)
+    tier: 3000
+    extends: autoTurret
+  - id: shotgunTurret
+    name: 霰弹枪炮塔
+    category: trap
+    power_usage: 15
+    ammo: ammoShotgunShell+tags(ammoShells)
+    tier: 2500
+    extends: autoTurret <- shotgunTurret
+  - id: m60Turret
+    name: M60 炮塔
+    category: trap
+    power_usage: 15
+    ammo: ammo762mmBulletBall+tags(ammo762mm)
+    tier: 2500
+    extends: autoTurret <- m60Turret
+  - id: trapSpikesWoodMaster
+    name: 木尖刺(基础)
+    category: trap
+    durability: 100
+    damage: 33
+    tier: 30
+    description: trapSpikesGroupDesc
+    extends: trapSpikesWoodMaster
