@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, ATTR_LABELS, SLUG_TO_ATTR_LABEL } from '../../../utils/data-loader';
+import { attrIconUrl } from '../../../utils/item-icons';
 const { skills } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -32,9 +33,23 @@ const catList = order.filter(s => cats[s]).map(s => cats[s]);
   <div class="card-grid">
     {catList.map(c => (
       <a href={`${base}/vanilla/skills/attr/${c.slug}/`} class="card">
+        {attrIconUrl(c.slug, base) && <img class="card-icon" src={attrIconUrl(c.slug, base)} alt="" loading="lazy" />}
         <span class="num">{c.count}</span>
         <span class="lbl">{c.label}</span>
       </a>
     ))}
   </div>
 </Layout>
+
+<style>
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+    border-radius: 8px;
+    background: var(--c-surface-2);
+    padding: 4px;
+  }
+</style>

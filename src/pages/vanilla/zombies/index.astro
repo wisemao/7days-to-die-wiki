@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, ZOMBIE_TYPE_LABELS } from '../../../utils/data-loader';
+import { zombieTypeIconUrl } from '../../../utils/item-icons';
 const { zombies } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
@@ -24,9 +25,23 @@ const catList = order.filter(s => cats[s]).map(s => cats[s]);
   <div class="card-grid">
     {catList.map(c => (
       <a href={`${base}/vanilla/zombies/type/${c.slug}/`} class="card">
+        {zombieTypeIconUrl(c.slug, base) && <img class="card-icon" src={zombieTypeIconUrl(c.slug, base)} alt="" loading="lazy" />}
         <span class="num">{c.count}</span>
         <span class="lbl">{c.label}</span>
       </a>
     ))}
   </div>
 </Layout>
+
+<style>
+  .card-icon {
+    width: 46px;
+    height: 46px;
+    object-fit: contain;
+    margin: 0 auto 8px;
+    display: block;
+    border-radius: 8px;
+    background: var(--c-surface-2);
+    padding: 4px;
+  }
+</style>

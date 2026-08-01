@@ -32,6 +32,12 @@ const HERO_ICONS = {
   zombies: `${base}/images/items/armorZombieMaskHelmet.png`,
 };
 
+// Hero showcase strip: signature items across categories
+const SHOWCASE = [
+  'meleeToolRepairT0StoneAxe', 'gunHandgunT1Pistol', 'foodCanBeef', 'medicalFirstAidKit',
+  'resourceForgedIron', 'meleeWpnBladeT1HuntingKnife', 'modGunScopeMedium', 'meleeWpnSledgeT1IronSledgehammer',
+].map(id => `${base}/images/items/${id}.png`);
+
 // Station counts for quick insight
 const stationCounts = {};
 for (const r of recipes) {
@@ -56,6 +62,9 @@ const seriesCount = seriesSet.size;
   <div class="hero">
     <h1 class="hero-title">七日杀 <span class="hero-highlight">Wiki</span></h1>
     <p class="hero-sub">7 Days to Die 中文资料库 · 快速查阅物品、配方、技能与僵尸数据</p>
+    <div class="hero-showcase">
+      {SHOWCASE.map(src => <img class="showcase-icon" src={src} alt="" loading="lazy" />)}
+    </div>
     <div class="hero-stats">
       <div class="hero-stat">
         <span class="hero-stat-num">{items.length}</span>
@@ -163,7 +172,28 @@ const seriesCount = seriesSet.size;
   .hero-sub {
     font-size: 15px;
     color: var(--c-text-3);
-    margin-bottom: 28px;
+    margin-bottom: 20px;
+  }
+  .hero-showcase {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .showcase-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    padding: 4px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .showcase-icon:hover {
+    transform: translateY(-3px) scale(1.08);
+    border-color: var(--c-blood);
   }
   .hero-stats {
     display: flex;

@@ -42,3 +42,33 @@ export function categoryIconUrl(category: string, base: string): string | null {
   if (!id) return null;
   return `${base}/images/items/${id}.png`;
 }
+
+/**
+ * Attribute (skill tree) representative icons — the signature weapon of each tree
+ */
+export const ATTR_ICONS: Record<string, string> = {
+  strength: 'meleeWpnSledgeT1IronSledgehammer',   // 力量: 大锤
+  fortitude: 'meleeWpnKnucklesT1IronKnuckles',   // 强壮: 拳套
+  perception: 'gunRifleT1HuntingRifle',          // 感知: 猎枪
+  agility: 'meleeWpnBladeT1HuntingKnife',        // 敏捷: 猎刀
+  intellect: 'gunBotT2JunkTurret',               // 智力: 机器人炮塔
+  general: 'bookArtOfMiningLuckyStrike',         // 通用: 技能书
+};
+
+/** Zombie type representative icons */
+export const ZOMBIE_TYPE_ICONS: Record<string, string> = {
+  humanoid: 'armorZombieMaskHelmet',   // 人形: 僵尸面具
+  animal: 'meleeHandAnimalWolf',       // 动物: 狼爪
+  special: 'meleeHandBossGrace',       // 特殊: 首领
+  other: 'armorZombieMaskHelmet',
+};
+
+export function attrIconUrl(slug: string, base: string): string | null {
+  const id = ATTR_ICONS[slug];
+  return id ? `${base}/images/items/${id}.png` : null;
+}
+
+export function zombieTypeIconUrl(slug: string, base: string): string | null {
+  const id = ZOMBIE_TYPE_ICONS[slug];
+  return id ? `${base}/images/items/${id}.png` : null;
+}
