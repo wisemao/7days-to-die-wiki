@@ -39,10 +39,19 @@ const SHOWCASE = [
 ].map(id => `${base}/images/items/${id}.png`);
 
 // Station counts for quick insight
+const STATION_ICONS = {
+  backpack: 'meleeToolRepairT0StoneAxe',
+  workbench: 'meleeToolRepairT1ClawHammer',
+  forge: 'forge',
+  campfire: 'foodGrilledMeat',
+  chemistry: 'drugPainkillers',
+  concrete: 'cementMixer',
+};
 const stationCounts = {};
 for (const r of recipes) {
   const slug = Object.entries(STATION_LABELS).find(([,v]) => v === r.station)?.[0] || 'backpack';
-  stationCounts[slug] = (stationCounts[slug] || 0) + 1;
+  if (!stationCounts[slug]) stationCounts[slug] = { slug, count: 0, icon: `${base}/images/items/${STATION_ICONS[slug]}.png` };
+  stationCounts[slug].count++;
 }
 
 // Book series count
@@ -123,9 +132,10 @@ const seriesCount = seriesSet.size;
   <!-- Recipe Stations -->
   <h2>工作站速览</h2>
   <div class="card-grid">
-    {Object.entries(stationCounts).map(([slug, count]) => (
+    {Object.entries(stationCounts).map(([slug, s]) => (
       <a href={`${base}/vanilla/recipes/station/${slug}/`} class="card">
-        <span class="num">{count}</span>
+        {s.icon && <img class="card-icon" src={s.icon} alt="" loading="lazy" />}
+        <span class="num">{s.count}</span>
         <span class="lbl">{STATION_LABELS[slug] || slug}</span>
       </a>
     ))}

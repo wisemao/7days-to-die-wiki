@@ -6,10 +6,10 @@ const { base } = Astro.props;
   <h3>导航</h3>
   <a href={base}><span class="emoji" aria-hidden="true">🏠</span> 首页</a>
   <h3>原版数据</h3>
-  <a href={`${base}/vanilla/items/`}><span class="emoji" aria-hidden="true">🛠️</span> 物品</a>
-  <a href={`${base}/vanilla/recipes/`}><span class="emoji" aria-hidden="true">📖</span> 配方</a>
-  <a href={`${base}/vanilla/skills/`}><span class="emoji" aria-hidden="true">⚡</span> 技能</a>
-  <a href={`${base}/vanilla/zombies/`}><span class="emoji" aria-hidden="true">🧟</span> 僵尸</a>
+  <a href={`${base}/vanilla/items/`}><img class="side-icon" src={`${base}/images/items/gunHandgunT1Pistol.png`} alt="" loading="lazy" /> 物品</a>
+  <a href={`${base}/vanilla/recipes/`}><img class="side-icon" src={`${base}/images/items/forge.png`} alt="" loading="lazy" /> 配方</a>
+  <a href={`${base}/vanilla/skills/`}><img class="side-icon" src={`${base}/images/items/bookArtOfMiningLuckyStrike.png`} alt="" loading="lazy" /> 技能</a>
+  <a href={`${base}/vanilla/zombies/`}><img class="side-icon" src={`${base}/images/items/armorZombieMaskHelmet.png`} alt="" loading="lazy" /> 僵尸</a>
 </aside>
 
 <style>
@@ -43,6 +43,12 @@ const { base } = Astro.props;
   }
   aside a:hover { background: var(--c-border-light); color: var(--c-blood); }
   aside a .emoji { font-size: 14px; flex-shrink: 0; }
+  aside a .side-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
 
   /* Mobile sidebar (toggled) */
   aside.show {
