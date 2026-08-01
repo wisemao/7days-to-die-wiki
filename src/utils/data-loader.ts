@@ -393,8 +393,17 @@ export function loadData(): WikiData {
   const zombieLoot = new Map<string, Zombie[]>();
   for (const z of zombies) {
     for (const l of z.loot || []) {
-      if (!zombieLoot.has(l.item_id)) zombieLoot.set(l.item_id, []);
-      zombieLoot.get(l.item_id)!.push(z);
+      // Resolved container contents (l.resolved) map concrete items to the zombie
+      if (l.resolved && Array.isArray(l.resolved)) {
+        for (const r of l.resolved) {
+          if (!r.item_id) continue;
+          if (!zombieLoot.has(r.item_id)) zombieLoot.set(r.item_id, []);
+          zombieLoot.get(r.item_id)!.push(z);
+        }
+      } else if (l.item_id) {
+        if (!zombieLoot.has(l.item_id)) zombieLoot.set(l.item_id, []);
+        zombieLoot.get(l.item_id)!.push(z);
+      }
     }
   }
 

@@ -194,6 +194,23 @@ function fmtVal(v) {
     </div>
   )}
 
+  {(() => {
+    const droppers = data.zombieLoot.get(item.id);
+    if (!droppers || droppers.length === 0) return null;
+    return (
+      <div>
+        <h2>掉落来源</h2>
+        <div class="item-grid" style="margin:8px 0 16px;">
+          {droppers.map(z => (
+            <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`} class="grid-item-link">
+              <span class="grid-name">🧟 {z.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    );
+  })()}
+
   {magInfo && (
     <div class="info-card">
       <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
