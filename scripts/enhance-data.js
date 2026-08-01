@@ -185,6 +185,31 @@ function enhance(configDir) {
     console.log(`  - 商人可购标记: ${enriched} 个物品 (共 ${traderSet.size} 个商人物品)`);
   }
 
+  // ─── 8. Skill book associations (progression.xml <book>) ───
+  // Each <book name="perkXxx"> skill corresponds to an item bookXxx (perk -> book prefix swap)
+  const progressionPath = join(configDir, 'progression.xml');
+  if (existsSync(progressionPath)) {
+    const progXml = readFileSync(progressionPath, 'utf-8');
+    const bookSkills = [...progXml.matchAll(/<book\s+name="([^"]+)"/g)].map(m => m[1]);
+    if (bookSkills.length > 0) {
+      const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
+      const itemIds = new Set((itemsDoc.items || []).map(i => i.id));
+      const skillsDoc = readYaml(join(DATA_DIR, 'skills.yaml'));
+      let enriched = 0;
+      for (const skill of skillsDoc.skills || []) {
+        if (!bookSkills.includes(skill.id)) continue;
+        if (skill.tied_books && skill.tied_books.length > 0) continue;
+        const bookId = 'book' + skill.id.slice(4); // perkFiremansAlmanacHeat -> bookFiremansAlmanacHeat
+        if (!itemIds.has(bookId)) continue;
+        const effect = skill.description || skill.levels?.[0]?.effect || '';
+        skill.tied_books = [{ book_id: bookId, effect }];
+        enriched++;
+      }
+      if (enriched > 0) writeYaml(join(DATA_DIR, 'skills.yaml'), skillsDoc);
+      console.log(`  - 技能书籍关联: ${enriched} 个技能 (共 ${bookSkills.length} 个书籍技能)`);
+    }
+  }
+
   console.log('✅ 数据增强完成');
 }
 

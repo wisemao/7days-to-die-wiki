@@ -1217,6 +1217,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 增加搜刮时获取额外水源的概率。
+    tied_books:
+      - book_id: bookFiremansAlmanacHeat
+        effect: 增加搜刮时获取额外水源的概率。
   - id: perkFiremansAlmanacAxes
     name: perkFiremansAlmanacAxes
     category: strength
@@ -1226,6 +1229,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作消防斧模组。
+    tied_books:
+      - book_id: bookFiremansAlmanacAxes
+        effect: 制作消防斧模组。
   - id: perkFiremansAlmanacSpeed
     name: perkFiremansAlmanacSpeed
     category: strength
@@ -1235,12 +1241,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 斧子的攻击速度加快5%
+    tied_books:
+      - book_id: bookFiremansAlmanacSpeed
+        effect: 斧子的攻击速度加快5%
   - id: perkFiremansAlmanacMolotov
     name: perkFiremansAlmanacMolotov
     category: strength
     max_level: 1
     levels: []
     description: 火攻武器燃烧时长增加10%。
+    tied_books:
+      - book_id: bookFiremansAlmanacMolotov
+        effect: 火攻武器燃烧时长增加10%。
   - id: perkFiremansAlmanacPrevention
     name: perkFiremansAlmanacPrevention
     category: strength
@@ -1250,6 +1262,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 被火引燃的几率降低25%。
+    tied_books:
+      - book_id: bookFiremansAlmanacPrevention
+        effect: 被火引燃的几率降低25%。
   - id: perkFiremansAlmanacHarvest
     name: perkFiremansAlmanacHarvest
     category: strength
@@ -1259,6 +1274,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对煤炭与木炭造成的伤害增加10%。
+    tied_books:
+      - book_id: bookFiremansAlmanacHarvest
+        effect: 对煤炭与木炭造成的伤害增加10%。
   - id: perkFiremansAlmanacEquipment
     name: perkFiremansAlmanacEquipment
     category: strength
@@ -1268,6 +1286,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 减少载具受到的碰撞伤害。
+    tied_books:
+      - book_id: bookFiremansAlmanacEquipment
+        effect: 减少载具受到的碰撞伤害。
   - id: perkFiremansAlmanacComplete
     name: perkFiremansAlmanacComplete
     category: strength
@@ -1286,6 +1307,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 夜间潜行伤害增加10%。
+    tied_books:
+      - book_id: bookNightStalkerStealthDamage
+        effect: 夜间潜行伤害增加10%。
   - id: perkNightStalkerSilentNight
     name: perkNightStalkerSilentNight
     category: strength
@@ -1295,6 +1319,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 增强夜间潜行效果5%。
+    tied_books:
+      - book_id: bookNightStalkerSilentNight
+        effect: 增强夜间潜行效果5%。
   - id: perkNightStalkerBlades
     name: perkNightStalkerBlades
     category: strength
@@ -1304,6 +1331,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 夜晚时刀剑造成的伤害增加10%。
+    tied_books:
+      - book_id: bookNightStalkerBlades
+        effect: 夜晚时刀剑造成的伤害增加10%。
   - id: perkNightStalkerThiefAdrenaline
     name: perkNightStalkerThiefAdrenaline
     category: strength
@@ -1313,6 +1343,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 夜间负重永远不会超限。
+    tied_books:
+      - book_id: bookNightStalkerThiefAdrenaline
+        effect: 夜间负重永远不会超限。
   - id: perkNightStalkerArchery
     name: perkNightStalkerArchery
     category: strength
@@ -1322,6 +1355,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 夜晚时弓箭造成的伤害增加10%。
+    tied_books:
+      - book_id: bookNightStalkerArchery
+        effect: 夜晚时弓箭造成的伤害增加10%。
   - id: perkNightStalkerTwilightThief
     name: perkNightStalkerTwilightThief
     category: strength
@@ -1331,6 +1367,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 夜间击杀经验值增加5%。
+    tied_books:
+      - book_id: bookNightStalkerTwilightThief
+        effect: 夜间击杀经验值增加5%。
   - id: perkNightStalkerSlumberParty
     name: perkNightStalkerSlumberParty
     category: strength
@@ -1340,6 +1379,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对夜间熟睡中的目标增加额外50%伤害。
+    tied_books:
+      - book_id: bookNightStalkerSlumberParty
+        effect: 对夜间熟睡中的目标增加额外50%伤害。
   - id: perkNightStalkerComplete
     name: perkNightStalkerComplete
     category: strength
@@ -1358,6 +1400,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多公爵币。
+    tied_books:
+      - book_id: bookLuckyLooterDukes
+        effect: 在搜刮时能找到更多公爵币。
   - id: perkLuckyLooterAmmunition
     name: perkLuckyLooterAmmunition
     category: strength
@@ -1367,6 +1412,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多弹药。
+    tied_books:
+      - book_id: bookLuckyLooterAmmunition
+        effect: 在搜刮时能找到更多弹药。
   - id: perkLuckyLooterBrass
     name: perkLuckyLooterBrass
     category: strength
@@ -1376,6 +1424,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多黄铜。
+    tied_books:
+      - book_id: bookLuckyLooterBrass
+        effect: 在搜刮时能找到更多黄铜。
   - id: perkLuckyLooterLead
     name: perkLuckyLooterLead
     category: strength
@@ -1385,6 +1436,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多铅。
+    tied_books:
+      - book_id: bookLuckyLooterLead
+        effect: 在搜刮时能找到更多铅。
   - id: perkLuckyLooterBooks
     name: perkLuckyLooterBooks
     category: strength
@@ -1394,6 +1448,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多垃圾。
+    tied_books:
+      - book_id: bookLuckyLooterBooks
+        effect: 在搜刮时能找到更多垃圾。
   - id: perkLuckyLooterFood
     name: perkLuckyLooterFood
     category: strength
@@ -1403,6 +1460,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多食物。
+    tied_books:
+      - book_id: bookLuckyLooterFood
+        effect: 在搜刮时能找到更多食物。
   - id: perkLuckyLooterMedical
     name: perkLuckyLooterMedical
     category: strength
@@ -1412,6 +1472,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在搜刮时能找到更多医疗补给。
+    tied_books:
+      - book_id: bookLuckyLooterMedical
+        effect: 在搜刮时能找到更多医疗补给。
   - id: perkLuckyLooterComplete
     name: perkLuckyLooterComplete
     category: strength
@@ -1430,12 +1493,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: .44 枪造成的伤害增加 10%。
+    tied_books:
+      - book_id: bookEnforcerDamage
+        effect: .44 枪造成的伤害增加 10%。
   - id: perkEnforcerApparel
     name: perkEnforcerApparel
     category: strength
     max_level: 1
     levels: []
     description: 穿着警官装束时受到的伤害减少 5%。
+    tied_books:
+      - book_id: bookEnforcerApparel
+        effect: 穿着警官装束时受到的伤害减少 5%。
   - id: perkEnforcerPunks
     name: perkEnforcerPunks
     category: strength
@@ -1445,6 +1514,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 弹仓内最后一发子弹造成双倍伤害。
+    tied_books:
+      - book_id: bookEnforcerPunks
+        effect: 弹仓内最后一发子弹造成双倍伤害。
   - id: perkEnforcerIntimidation
     name: perkEnforcerIntimidation
     category: strength
@@ -1454,6 +1526,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 手持.44 枪交易时价格会优惠 5%。
+    tied_books:
+      - book_id: bookEnforcerIntimidation
+        effect: 手持.44 枪交易时价格会优惠 5%。
   - id: perkEnforcerAPAmmo
     name: perkEnforcerAPAmmo
     category: strength
@@ -1463,6 +1538,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你能制作.44马格南穿甲弹。
+    tied_books:
+      - book_id: bookEnforcerAPAmmo
+        effect: 你能制作.44马格南穿甲弹。
   - id: perkEnforcerHPAmmo
     name: perkEnforcerHPAmmo
     category: strength
@@ -1472,12 +1550,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你能制作.44马格南空心弹。
+    tied_books:
+      - book_id: bookEnforcerHPAmmo
+        effect: 你能制作.44马格南空心弹。
   - id: perkEnforcerCriminalPursuit
     name: perkEnforcerCriminalPursuit
     category: strength
     max_level: 1
     levels: []
     description: 在战斗中使用.44 枪冲刺时消耗的耐力减少 20%。
+    tied_books:
+      - book_id: bookEnforcerCriminalPursuit
+        effect: 在战斗中使用.44 枪冲刺时消耗的耐力减少 20%。
   - id: perkEnforcerComplete
     name: 警官 - 完成
     category: strength
@@ -1496,24 +1580,36 @@ skills:
         effect: 等级 1
         cost: 0
     description: 棍棒造成的伤害增加10%。
+    tied_books:
+      - book_id: bookBatterUpBigHits
+        effect: 棍棒造成的伤害增加10%。
   - id: perkBatterUpStealingBases
     name: perkBatterUpStealingBases
     category: strength
     max_level: 1
     levels: []
     description: 在战斗中抽出棍棒冲刺时消耗的体力减少20%。
+    tied_books:
+      - book_id: bookBatterUpStealingBases
+        effect: 在战斗中抽出棍棒冲刺时消耗的体力减少20%。
   - id: perkBatterUpSlowPitch
     name: perkBatterUpSlowPitch
     category: strength
     max_level: 1
     levels: []
     description: 对腿部进行的强力攻击能减缓敌人。
+    tied_books:
+      - book_id: bookBatterUpSlowPitch
+        effect: 对腿部进行的强力攻击能减缓敌人。
   - id: perkBatterUpKnockdown
     name: perkBatterUpKnockdown
     category: strength
     max_level: 1
     levels: []
     description: 强力攻击会增加击倒的几率。
+    tied_books:
+      - book_id: bookBatterUpKnockdown
+        effect: 强力攻击会增加击倒的几率。
   - id: perkBatterUpMaintenance
     name: perkBatterUpMaintenance
     category: strength
@@ -1523,12 +1619,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 棒球棒与棍棒损坏速度减慢20%。
+    tied_books:
+      - book_id: bookBatterUpMaintenance
+        effect: 棒球棒与棍棒损坏速度减慢20%。
   - id: perkBatterUpFoulBalls
     name: perkBatterUpFoulBalls
     category: strength
     max_level: 1
     levels: []
     description: 致残敌人。
+    tied_books:
+      - book_id: bookBatterUpFoulBalls
+        effect: 致残敌人。
   - id: perkBatterUpMetalChain
     name: perkBatterUpMetalChain
     category: strength
@@ -1538,6 +1640,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 为棒球棒与棍棒制作铁链模组。
+    tied_books:
+      - book_id: bookBatterUpMetalChain
+        effect: 为棒球棒与棍棒制作铁链模组。
   - id: perkBatterUpComplete
     name: perkBatterUpComplete
     category: strength
@@ -1553,6 +1658,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对保险箱造成的伤害增加10%。
+    tied_books:
+      - book_id: bookGreatHeistSafes
+        effect: 对保险箱造成的伤害增加10%。
   - id: perkGreatHeistGems
     name: perkGreatHeistGems
     category: strength
@@ -1562,6 +1670,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 去寻找更多的珠宝和宝石吧。
+    tied_books:
+      - book_id: bookGreatHeistGems
+        effect: 去寻找更多的珠宝和宝石吧。
   - id: perkGreatHeistGoldRush
     name: perkGreatHeistGoldRush
     category: strength
@@ -1571,6 +1682,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 在保险箱和自动取款机中找到的公爵币和现金增加10%。
+    tied_books:
+      - book_id: bookGreatHeistGoldRush
+        effect: 在保险箱和自动取款机中找到的公爵币和现金增加10%。
   - id: perkGreatHeistClaimed
     name: perkGreatHeistClaimed
     category: strength
@@ -1580,18 +1694,27 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对土地征用权造成的伤害增加20%。
+    tied_books:
+      - book_id: bookGreatHeistClaimed
+        effect: 对土地征用权造成的伤害增加20%。
   - id: perkGreatHeistAdrenalineFall
     name: perkGreatHeistAdrenalineFall
     category: strength
     max_level: 1
     levels: []
     description: 从很高的高处跳下！
+    tied_books:
+      - book_id: bookGreatHeistAdrenalineFall
+        effect: 从很高的高处跳下！
   - id: perkGreatHeistSprintSneak
     name: perkGreatHeistSprintSneak
     category: strength
     max_level: 1
     levels: []
     description: 潜行冲刺时不消耗体力。
+    tied_books:
+      - book_id: bookGreatHeistSprintSneak
+        effect: 潜行冲刺时不消耗体力。
   - id: perkGreatHeistMotionDetection
     name: perkGreatHeistMotionDetection
     category: strength
@@ -1601,6 +1724,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 溜过动作监测装置的眼睛。
+    tied_books:
+      - book_id: bookGreatHeistMotionDetection
+        effect: 溜过动作监测装置的眼睛。
   - id: perkGreatHeistComplete
     name: 大劫掠 - 完成
     category: strength
@@ -1619,6 +1745,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 小幅提高从树上收集蜂蜜的几率。
+    tied_books:
+      - book_id: bookWasteTreasuresHoney
+        effect: 小幅提高从树上收集蜂蜜的几率。
   - id: perkWasteTreasuresCoffins
     name: perkWasteTreasuresCoffins
     category: strength
@@ -1628,6 +1757,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 搜寻棺材，找到骨头、珠宝和珍贵宝石吧。
+    tied_books:
+      - book_id: bookWasteTreasuresCoffins
+        effect: 搜寻棺材，找到骨头、珠宝和珍贵宝石吧。
   - id: perkWasteTreasuresAcid
     name: perkWasteTreasuresAcid
     category: strength
@@ -1637,6 +1769,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 提高从汽车和医疗设备获取酸的几率。
+    tied_books:
+      - book_id: bookWasteTreasuresAcid
+        effect: 提高从汽车和医疗设备获取酸的几率。
   - id: perkWasteTreasuresWater
     name: perkWasteTreasuresWater
     category: strength
@@ -1646,6 +1781,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 净化纯净的矿泉水，荒野中最美味的水。
+    tied_books:
+      - book_id: bookWasteTreasuresWater
+        effect: 净化纯净的矿泉水，荒野中最美味的水。
   - id: perkWasteTreasuresDoors
     name: perkWasteTreasuresDoors
     category: strength
@@ -1655,6 +1793,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 从大多数门上面收集黄铜。
+    tied_books:
+      - book_id: bookWasteTreasuresDoors
+        effect: 从大多数门上面收集黄铜。
   - id: perkWasteTreasuresCloth
     name: perkWasteTreasuresCloth
     category: strength
@@ -1664,6 +1805,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 学会把植物纤维织成布。
+    tied_books:
+      - book_id: bookWasteTreasuresCloth
+        effect: 学会把植物纤维织成布。
   - id: perkWasteTreasuresSinks
     name: perkWasteTreasuresSinks
     category: strength
@@ -1673,6 +1817,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 从水槽中收集更多的铅和黄铜。
+    tied_books:
+      - book_id: bookWasteTreasuresSinks
+        effect: 从水槽中收集更多的铅和黄铜。
   - id: perkWasteTreasuresComplete
     name: perkWasteTreasuresComplete
     category: strength
@@ -1691,6 +1838,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对熊造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalBears
+        effect: 对熊造成的伤害增加10%。
   - id: perkHuntingJournalWolves
     name: perkHuntingJournalWolves
     category: strength
@@ -1700,6 +1850,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对灰狼造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalWolves
+        effect: 对灰狼造成的伤害增加10%。
   - id: perkHuntingJournalCoyotes
     name: perkHuntingJournalCoyotes
     category: strength
@@ -1709,6 +1862,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对丛林狼造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalCoyotes
+        effect: 对丛林狼造成的伤害增加10%。
   - id: perkHuntingJournalMountainLions
     name: perkHuntingJournalMountainLions
     category: strength
@@ -1718,6 +1874,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对美洲狮造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalMountainLions
+        effect: 对美洲狮造成的伤害增加10%。
   - id: perkHuntingJournalDeer
     name: perkHuntingJournalDeer
     category: strength
@@ -1727,6 +1886,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对鹿造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalDeer
+        effect: 对鹿造成的伤害增加10%。
   - id: perkHuntingJournalVultures
     name: perkHuntingJournalVultures
     category: strength
@@ -1736,6 +1898,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对秃鹫造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalVultures
+        effect: 对秃鹫造成的伤害增加10%。
   - id: perkHuntingJournalSelfDefense
     name: perkHuntingJournalSelfDefense
     category: strength
@@ -1745,6 +1910,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对人形生物造成的伤害增加10%。
+    tied_books:
+      - book_id: bookHuntingJournalSelfDefense
+        effect: 对人形生物造成的伤害增加10%。
   - id: perkHuntingJournalComplete
     name: perkHuntingJournalComplete
     category: strength
@@ -1763,6 +1931,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 小幅增加从矿石中开采出稀有宝石的几率。
+    tied_books:
+      - book_id: bookArtOfMiningLuckyStrike
+        effect: 小幅增加从矿石中开采出稀有宝石的几率。
   - id: perkArtOfMiningDiamondTools
     name: perkArtOfMiningDiamondTools
     category: strength
@@ -1772,6 +1943,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你能为工具制作尖部带有钻石的刀刃模组，该模组能大幅提升耐久度。
+    tied_books:
+      - book_id: bookArtOfMiningDiamondTools
+        effect: 你能为工具制作尖部带有钻石的刀刃模组，该模组能大幅提升耐久度。
   - id: perkArtOfMiningCoffee
     name: perkArtOfMiningCoffee
     category: strength
@@ -1781,6 +1955,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 咖啡起效时矿石采集量增加10%。
+    tied_books:
+      - book_id: bookArtOfMiningCoffee
+        effect: 咖啡起效时矿石采集量增加10%。
   - id: perkArtOfMiningBlackStrap
     name: perkArtOfMiningBlackStrap
     category: strength
@@ -1790,6 +1967,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 能够制作黑带咖啡，一种非常浓重的咖啡。
+    tied_books:
+      - book_id: bookArtOfMiningBlackStrap
+        effect: 能够制作黑带咖啡，一种非常浓重的咖啡。
   - id: perkArtOfMiningPallets
     name: perkArtOfMiningPallets
     category: strength
@@ -1799,6 +1979,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你可以将矿石等基础资源堆叠起来。
+    tied_books:
+      - book_id: bookArtOfMiningPallets
+        effect: 你可以将矿石等基础资源堆叠起来。
   - id: perkArtOfMiningAvalanche
     name: perkArtOfMiningAvalanche
     category: strength
@@ -1808,6 +1991,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 垮塌的矿井造成的伤害减少50%。
+    tied_books:
+      - book_id: bookArtOfMiningAvalanche
+        effect: 垮塌的矿井造成的伤害减少50%。
   - id: perkArtOfMiningDamage
     name: perkArtOfMiningDamage
     category: strength
@@ -1817,6 +2003,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 采矿工具的物块伤害增加10%。
+    tied_books:
+      - book_id: bookArtOfMiningDamage
+        effect: 采矿工具的物块伤害增加10%。
   - id: perkArtOfMiningComplete
     name: perkArtOfMiningComplete
     category: strength
@@ -1835,6 +2024,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 可以多回收20%的箭。
+    tied_books:
+      - book_id: bookRangersArrowRecovery
+        effect: 可以多回收20%的箭。
   - id: perkRangersExplodingBolts
     name: perkRangersExplodingBolts
     category: strength
@@ -1844,12 +2036,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作爆炸箭和爆炸弩箭。
+    tied_books:
+      - book_id: bookRangersExplodingBolts
+        effect: 制作爆炸箭和爆炸弩箭。
   - id: perkRangersCripplingShot
     name: perkRangersCripplingShot
     category: strength
     max_level: 1
     levels: []
     description: 腿部射击会减缓你的对手。
+    tied_books:
+      - book_id: bookRangersCripplingShot
+        effect: 腿部射击会减缓你的对手。
   - id: perkRangersAPAmmo
     name: perkRangersAPAmmo
     category: strength
@@ -1859,6 +2057,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作穿甲钢箭。
+    tied_books:
+      - book_id: bookRangersAPAmmo
+        effect: 制作穿甲钢箭。
   - id: perkRangersFlamingArrows
     name: perkRangersFlamingArrows
     category: strength
@@ -1868,6 +2069,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作燃烧箭和燃烧驽箭。
+    tied_books:
+      - book_id: bookRangersFlamingArrows
+        effect: 制作燃烧箭和燃烧驽箭。
   - id: perkRangersForestGuide
     name: perkRangersForestGuide
     category: strength
@@ -1877,12 +2081,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 弓箭的损坏速度减慢20%。
+    tied_books:
+      - book_id: bookRangersForestGuide
+        effect: 弓箭的损坏速度减慢20%。
   - id: perkRangersKnockdown
     name: perkRangersKnockdown
     category: strength
     max_level: 1
     levels: []
     description: 潜行攻击的击倒几率增加20%。
+    tied_books:
+      - book_id: bookRangersKnockdown
+        effect: 潜行攻击的击倒几率增加20%。
   - id: perkRangersComplete
     name: 游侠箭术指南 - 完成
     category: strength
@@ -1901,12 +2111,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 9毫米子弹武器的射程增加20%。
+    tied_books:
+      - book_id: bookPistolPeteTakeAim
+        effect: 9毫米子弹武器的射程增加20%。
   - id: perkPistolPeteSwissKnees
     name: perkPistolPeteSwissKnees
     category: strength
     max_level: 1
     levels: []
     description: 每一次连续腿部射击都会增加致残几率。
+    tied_books:
+      - book_id: bookPistolPeteSwissKnees
+        effect: 每一次连续腿部射击都会增加致残几率。
   - id: perkPistolPeteSteadyHand
     name: perkPistolPeteSteadyHand
     category: strength
@@ -1916,6 +2132,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 使用9毫米子弹武器快速开火时精度更高。
+    tied_books:
+      - book_id: bookPistolPeteSteadyHand
+        effect: 使用9毫米子弹武器快速开火时精度更高。
   - id: perkPistolPeteMaintenance
     name: perkPistolPeteMaintenance
     category: strength
@@ -1925,6 +2144,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 手枪与冲锋枪损坏速度减慢20%。
+    tied_books:
+      - book_id: bookPistolPeteMaintenance
+        effect: 手枪与冲锋枪损坏速度减慢20%。
   - id: perkPistolPeteHPAmmo
     name: perkPistolPeteHPAmmo
     category: strength
@@ -1934,6 +2156,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你可以制作9毫米空心弹。
+    tied_books:
+      - book_id: bookPistolPeteHPAmmo
+        effect: 你可以制作9毫米空心弹。
   - id: perkPistolPeteAPAmmo
     name: perkPistolPeteAPAmmo
     category: strength
@@ -1943,6 +2168,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作9毫米空心弹。
+    tied_books:
+      - book_id: bookPistolPeteAPAmmo
+        effect: 制作9毫米空心弹。
   - id: perkPistolPeteDamage
     name: perkPistolPeteDamage
     category: strength
@@ -1952,6 +2180,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 9毫米子弹武器造成的伤害增加10%。
+    tied_books:
+      - book_id: bookPistolPeteDamage
+        effect: 9毫米子弹武器造成的伤害增加10%。
   - id: perkPistolPeteComplete
     name: 手枪皮特 - 完成
     category: strength
@@ -1970,6 +2201,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 霰弹枪造成的伤害增加10%。
+    tied_books:
+      - book_id: bookShotgunMessiahDamage
+        effect: 霰弹枪造成的伤害增加10%。
   - id: perkShotgunMessiahBreachingSlugs
     name: perkShotgunMessiahBreachingSlugs
     category: strength
@@ -1979,6 +2213,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作用于破坏安保的破坏弹药。
+    tied_books:
+      - book_id: bookShotgunMessiahBreachingSlugs
+        effect: 制作用于破坏安保的破坏弹药。
   - id: perkShotgunMessiahLimbShot
     name: perkShotgunMessiahLimbShot
     category: strength
@@ -1988,6 +2225,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 3米之内的目标会有更高的肢解几率。
+    tied_books:
+      - book_id: bookShotgunMessiahLimbShot
+        effect: 3米之内的目标会有更高的肢解几率。
   - id: perkShotgunMessiahSlugs
     name: perkShotgunMessiahSlugs
     category: strength
@@ -1997,6 +2237,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你可以制作霰弹枪子弹。
+    tied_books:
+      - book_id: bookShotgunMessiahSlugs
+        effect: 你可以制作霰弹枪子弹。
   - id: perkShotgunMessiahMaintenance
     name: perkShotgunMessiahMaintenance
     category: strength
@@ -2006,6 +2249,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 霰弹枪的损坏速度减慢20%。
+    tied_books:
+      - book_id: bookShotgunMessiahMaintenance
+        effect: 霰弹枪的损坏速度减慢20%。
   - id: perkShotgunMessiahMagazine
     name: perkShotgunMessiahMagazine
     category: strength
@@ -2015,6 +2261,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你可以制作霰弹枪管扩充模组。
+    tied_books:
+      - book_id: bookShotgunMessiahMagazine
+        effect: 你可以制作霰弹枪管扩充模组。
   - id: perkShotgunMessiahPartyStarter
     name: perkShotgunMessiahPartyStarter
     category: strength
@@ -2024,6 +2273,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对生命全满的目标造成的伤害增加20%。
+    tied_books:
+      - book_id: bookShotgunMessiahPartyStarter
+        effect: 对生命全满的目标造成的伤害增加20%。
   - id: perkShotgunMessiahComplete
     name: 霰弹枪救星 - 完成
     category: strength
@@ -2039,6 +2291,9 @@ skills:
     max_level: 1
     levels: []
     description: 击倒几率增加 10%。
+    tied_books:
+      - book_id: bookSledgeSagaKnockdown
+        effect: 击倒几率增加 10%。
   - id: perkSledgeSagaDegradation
     name: perkSledgeSagaDegradation
     category: strength
@@ -2048,18 +2303,27 @@ skills:
         effect: 等级 1
         cost: 0
     description: 大锤损坏速度降低 20%。
+    tied_books:
+      - book_id: bookSledgeSagaDegradation
+        effect: 大锤损坏速度降低 20%。
   - id: perkSledgeSagaCrippledMorale
     name: perkSledgeSagaCrippledMorale
     category: strength
     max_level: 1
     levels: []
     description: 强力攻击造成击杀会使附近敌人虚弱并减速 10 秒。
+    tied_books:
+      - book_id: bookSledgeSagaCrippledMorale
+        effect: 强力攻击造成击杀会使附近敌人虚弱并减速 10 秒。
   - id: perkSledgeSagaPulverizingFinishers
     name: perkSledgeSagaPulverizingFinishers
     category: strength
     max_level: 1
     levels: []
     description: 对生命值低于 30% 的敌人额外造成 25% 伤害。
+    tied_books:
+      - book_id: bookSledgeSagaPulverizingFinishers
+        effect: 对生命值低于 30% 的敌人额外造成 25% 伤害。
   - id: perkSledgeSagaSavageReaper
     name: perkSledgeSagaSavageReaper
     category: strength
@@ -2069,12 +2333,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 大锤爆头击杀获得双倍经验。
+    tied_books:
+      - book_id: bookSledgeSagaSavageReaper
+        effect: 大锤爆头击杀获得双倍经验。
   - id: perkSledgeSagaConcussiveStrike
     name: perkSledgeSagaConcussiveStrike
     category: strength
     max_level: 1
     levels: []
     description: 击晕几率增加 10%。
+    tied_books:
+      - book_id: bookSledgeSagaConcussiveStrike
+        effect: 击晕几率增加 10%。
   - id: perkSledgeSagaArmorCrusher
     name: perkSledgeSagaArmorCrusher
     category: strength
@@ -2084,6 +2354,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 大锤强力攻击无视 50% 护甲。
+    tied_books:
+      - book_id: bookSledgeSagaArmorCrusher
+        effect: 大锤强力攻击无视 50% 护甲。
   - id: perkSledgeSagaComplete
     name: perkSledgeSagaComplete
     category: strength
@@ -2096,6 +2369,9 @@ skills:
     max_level: 1
     levels: []
     description: 使用瞄准镜时伤害增加10%。
+    tied_books:
+      - book_id: bookSniperDamage
+        effect: 使用瞄准镜时伤害增加10%。
   - id: perkSniperCripplingShot
     name: perkSniperCripplingShot
     category: strength
@@ -2105,6 +2381,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 腿部射击可以削弱除最强敌人以外的所有敌人，并有机会将其肢解。
+    tied_books:
+      - book_id: bookSniperCripplingShot
+        effect: 腿部射击可以削弱除最强敌人以外的所有敌人，并有机会将其肢解。
   - id: perkSniperHeadShot
     name: perkSniperHeadShot
     category: strength
@@ -2114,6 +2393,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 击中头部有几率眩晕敌人，有很大几率肢解敌人。
+    tied_books:
+      - book_id: bookSniperHeadShot
+        effect: 击中头部有几率眩晕敌人，有很大几率肢解敌人。
   - id: perkSniperReload
     name: perkSniperReload
     category: strength
@@ -2123,12 +2405,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 步枪装填速度加快10%。
+    tied_books:
+      - book_id: bookSniperReload
+        effect: 步枪装填速度加快10%。
   - id: perkSniperControlledBreathing
     name: perkSniperControlledBreathing
     category: strength
     max_level: 1
     levels: []
     description: 缩放消耗的体力更少。
+    tied_books:
+      - book_id: bookSniperControlledBreathing
+        effect: 缩放消耗的体力更少。
   - id: perkSniperAPAmmo
     name: perkSniperAPAmmo
     category: strength
@@ -2138,6 +2426,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作7.62毫米穿甲弹。
+    tied_books:
+      - book_id: bookSniperAPAmmo
+        effect: 制作7.62毫米穿甲弹。
   - id: perkSniperHPAmmo
     name: perkSniperHPAmmo
     category: strength
@@ -2147,6 +2438,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作7.62毫米空心弹。
+    tied_books:
+      - book_id: bookSniperHPAmmo
+        effect: 制作7.62毫米空心弹。
   - id: perkSniperComplete
     name: 狙击手 - 完成
     category: strength
@@ -2165,6 +2459,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 自动武器的伤害增加10%。
+    tied_books:
+      - book_id: bookAutoWeaponsDamage
+        effect: 自动武器的伤害增加10%。
   - id: perkAutoWeaponsUncontrolledBurst
     name: perkAutoWeaponsUncontrolledBurst
     category: strength
@@ -2174,6 +2471,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 全自动模式下，每次命中都会增加1%伤害。
+    tied_books:
+      - book_id: bookAutoWeaponsUncontrolledBurst
+        effect: 全自动模式下，每次命中都会增加1%伤害。
   - id: perkAutoWeaponsMaintenance
     name: perkAutoWeaponsMaintenance
     category: strength
@@ -2183,6 +2483,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 自动武器损坏速度减慢20%。
+    tied_books:
+      - book_id: bookAutoWeaponsMaintenance
+        effect: 自动武器损坏速度减慢20%。
   - id: perkAutoWeaponsDrumMag
     name: perkAutoWeaponsDrumMag
     category: strength
@@ -2192,6 +2495,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你可以为自动武器制作弹鼓模组。
+    tied_books:
+      - book_id: bookAutoWeaponsDrumMag
+        effect: 你可以为自动武器制作弹鼓模组。
   - id: perkAutoWeaponsRecoil
     name: perkAutoWeaponsRecoil
     category: strength
@@ -2201,18 +2507,27 @@ skills:
         effect: 等级 1
         cost: 0
     description: 全自动开火时，每开一枪都会更加精准。
+    tied_books:
+      - book_id: bookAutoWeaponsRecoil
+        effect: 全自动开火时，每开一枪都会更加精准。
   - id: perkAutoWeaponsRagdoll
     name: perkAutoWeaponsRagdoll
     category: strength
     max_level: 1
     levels: []
     description: 全自动模式下，每次命中都能增加致残敌人的几率。
+    tied_books:
+      - book_id: bookAutoWeaponsRagdoll
+        effect: 全自动模式下，每次命中都能增加致残敌人的几率。
   - id: perkAutoWeaponsMachineGuns
     name: perkAutoWeaponsMachineGuns
     category: strength
     max_level: 1
     levels: []
     description: 腰射精确度大幅提高。
+    tied_books:
+      - book_id: bookAutoWeaponsMachineGuns
+        effect: 腰射精确度大幅提高。
   - id: perkAutoWeaponsComplete
     name: perkAutoWeaponsComplete
     category: strength
@@ -2228,6 +2543,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作潜行靴模组。
+    tied_books:
+      - book_id: bookUrbanCombatLanding
+        effect: 制作潜行靴模组。
   - id: perkUrbanCombatCigar
     name: perkUrbanCombatCigar
     category: strength
@@ -2237,6 +2555,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作雪茄，看起来像性感霸王龙一样酷。
+    tied_books:
+      - book_id: bookUrbanCombatCigar
+        effect: 制作雪茄，看起来像性感霸王龙一样酷。
   - id: perkUrbanCombatSneaking
     name: perkUrbanCombatSneaking
     category: strength
@@ -2246,12 +2567,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 踩在垃圾上潜行不会发出声音。
+    tied_books:
+      - book_id: bookUrbanCombatSneaking
+        effect: 踩在垃圾上潜行不会发出声音。
   - id: perkUrbanCombatJumping
     name: perkUrbanCombatJumping
     category: strength
     max_level: 1
     levels: []
     description: 潜行落地的声音更小，潜行跳跃的高度不会降低。
+    tied_books:
+      - book_id: bookUrbanCombatJumping
+        effect: 潜行落地的声音更小，潜行跳跃的高度不会降低。
   - id: perkUrbanCombatLandMines
     name: perkUrbanCombatLandMines
     category: strength
@@ -2261,12 +2588,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 地雷触发延迟增加 2 秒。
+    tied_books:
+      - book_id: bookUrbanCombatLandMines
+        effect: 地雷触发延迟增加 2 秒。
   - id: perkUrbanCombatAdrenalineRush
     name: perkUrbanCombatAdrenalineRush
     category: strength
     max_level: 1
     levels: []
     description: 战斗中，护甲无法使你减速。
+    tied_books:
+      - book_id: bookUrbanCombatAdrenalineRush
+        effect: 战斗中，护甲无法使你减速。
   - id: perkUrbanCombatRoomClearing
     name: perkUrbanCombatRoomClearing
     category: strength
@@ -2276,6 +2609,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 受到的伤害减少5%，在室内造成的伤害增加10%。
+    tied_books:
+      - book_id: bookUrbanCombatRoomClearing
+        effect: 受到的伤害减少5%，在室内造成的伤害增加10%。
   - id: perkUrbanCombatComplete
     name: perkUrbanCombatComplete
     category: strength
@@ -2291,6 +2627,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 机器人武器的伤害增加 10%。
+    tied_books:
+      - book_id: bookTechJunkie1Damage
+        effect: 机器人武器的伤害增加 10%。
   - id: perkTechJunkie2Maintenance
     name: perkTechJunkie2Maintenance
     category: strength
@@ -2300,6 +2639,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 机器人武器和电击棒损坏速度减慢 20%。
+    tied_books:
+      - book_id: bookTechJunkie2Maintenance
+        effect: 机器人武器和电击棒损坏速度减慢 20%。
   - id: perkTechJunkie3APAmmo
     name: perkTechJunkie3APAmmo
     category: strength
@@ -2309,6 +2651,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作机器人炮塔穿甲弹药。
+    tied_books:
+      - book_id: bookTechJunkie3APAmmo
+        effect: 制作机器人炮塔穿甲弹药。
   - id: perkTechJunkie4Shells
     name: perkTechJunkie4Shells
     category: strength
@@ -2318,6 +2663,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作机器人炮塔霰弹。
+    tied_books:
+      - book_id: bookTechJunkie4Shells
+        effect: 制作机器人炮塔霰弹。
   - id: perkTechJunkie5Repulsor
     name: perkTechJunkie5Repulsor
     category: strength
@@ -2327,12 +2675,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 制作眩晕冲击波模组。
+    tied_books:
+      - book_id: bookTechJunkie5Repulsor
+        effect: 制作眩晕冲击波模组。
   - id: perkTechJunkie6BatonCharge
     name: perkTechJunkie6BatonCharge
     category: strength
     max_level: 1
     levels: []
     description: 电击棒充电中。
+    tied_books:
+      - book_id: bookTechJunkie6BatonCharge
+        effect: 电击棒充电中。
   - id: perkTechJunkie7Hydraulics
     name: perkTechJunkie7Hydraulics
     category: strength
@@ -2342,6 +2696,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 提高机器人武器的射击速度。
+    tied_books:
+      - book_id: bookTechJunkie7Hydraulics
+        effect: 提高机器人武器的射击速度。
   - id: perkTechJunkie8Complete
     name: perkTechJunkie8Complete
     category: strength
@@ -2360,18 +2717,27 @@ skills:
         effect: 等级 1
         cost: 0
     description: 用拳头和指节套武器增加 10% 的伤害。
+    tied_books:
+      - book_id: bookBarBrawling1BasicMoves
+        effect: 用拳头和指节套武器增加 10% 的伤害。
   - id: perkBarBrawling2DropABomb
     name: perkBarBrawling2DropABomb
     category: strength
     max_level: 1
     levels: []
     description: 冲刺强力攻击可以击倒你的对手。
+    tied_books:
+      - book_id: bookBarBrawling2DropABomb
+        effect: 冲刺强力攻击可以击倒你的对手。
   - id: perkBarBrawling3KillerInstinct
     name: perkBarBrawling3KillerInstinct
     category: strength
     max_level: 1
     levels: []
     description: 每次击杀获得 5% 的伤害，最高 15%。
+    tied_books:
+      - book_id: bookBarBrawling3KillerInstinct
+        effect: 每次击杀获得 5% 的伤害，最高 15%。
   - id: perkBarBrawling4FinishingMoves
     name: perkBarBrawling4FinishingMoves
     category: strength
@@ -2381,24 +2747,36 @@ skills:
         effect: 等级 1
         cost: 0
     description: 对被击倒并击晕的对手造成额外伤害。
+    tied_books:
+      - book_id: bookBarBrawling4FinishingMoves
+        effect: 对被击倒并击晕的对手造成额外伤害。
   - id: perkBarBrawling5AdrenalineHealing
     name: perkBarBrawling5AdrenalineHealing
     category: strength
     max_level: 1
     levels: []
     description: 在战斗中每次出拳都会恢复生命值。
+    tied_books:
+      - book_id: bookBarBrawling5AdrenalineHealing
+        effect: 在战斗中每次出拳都会恢复生命值。
   - id: perkBarBrawling6RageMode
     name: perkBarBrawling6RageMode
     category: strength
     max_level: 1
     levels: []
     description: 被击中后，攻击和移动速度加快。
+    tied_books:
+      - book_id: bookBarBrawling6RageMode
+        effect: 被击中后，攻击和移动速度加快。
   - id: perkBarBrawling7BoozedUp
     name: perkBarBrawling7BoozedUp
     category: strength
     max_level: 1
     levels: []
     description: 喝啤酒不会再让你眼花。
+    tied_books:
+      - book_id: bookBarBrawling7BoozedUp
+        effect: 喝啤酒不会再让你眼花。
   - id: perkBarBrawling8Complete
     name: perkBarBrawling8Complete
     category: strength
@@ -2414,6 +2792,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 你造成的伤害增加 10%。
+    tied_books:
+      - book_id: bookSpearHunter1Damage
+        effect: 你造成的伤害增加 10%。
   - id: perkSpearHunter2Maintenance
     name: perkSpearHunter2Maintenance
     category: strength
@@ -2423,12 +2804,18 @@ skills:
         effect: 等级 1
         cost: 0
     description: 长矛的损坏速度减慢 20%。
+    tied_books:
+      - book_id: bookSpearHunter2Maintenance
+        effect: 长矛的损坏速度减慢 20%。
   - id: perkSpearHunter3Bleed
     name: perkSpearHunter3Bleed
     category: strength
     max_level: 1
     levels: []
     description: 长矛有25%几率造成流血伤害。
+    tied_books:
+      - book_id: bookSpearHunter3Bleed
+        effect: 长矛有25%几率造成流血伤害。
   - id: perkSpearHunter4KillMove
     name: perkSpearHunter4KillMove
     category: strength
@@ -2438,6 +2825,9 @@ skills:
         effect: 等级 1
         cost: 0
     description: 强力攻击对被击倒的目标造成更多伤害。
+    tied_books:
+      - book_id: bookSpearHunter4KillMove
+        effect: 强力攻击对被击倒的目标造成更多伤害。
   - id: perkSpearHunter5RapidStrike
     name: perkSpearHunter5RapidStrike
     category: strength
@@ -2447,18 +2837,27 @@ skills:
         effect: 等级 1
         cost: 0
     description: 攻击速度增加 10%。
+    tied_books:
+      - book_id: bookSpearHunter5RapidStrike
+        effect: 攻击速度增加 10%。
   - id: perkSpearHunter6PenetratingShaft
     name: perkSpearHunter6PenetratingShaft
     category: strength
     max_level: 1
     levels: []
     description: 穿透多个目标。
+    tied_books:
+      - book_id: bookSpearHunter6PenetratingShaft
+        effect: 穿透多个目标。
   - id: perkSpearHunter7QuickStrike
     name: perkSpearHunter7QuickStrike
     category: strength
     max_level: 1
     levels: []
     description: 连续快速命中造成的伤害更大。
+    tied_books:
+      - book_id: bookSpearHunter7QuickStrike
+        effect: 连续快速命中造成的伤害更大。
   - id: perkSpearHunter8Complete
     name: perkSpearHunter8Complete
     category: strength
