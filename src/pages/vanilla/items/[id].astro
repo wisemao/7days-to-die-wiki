@@ -76,6 +76,27 @@ const LABELS = {
   mobility: '机动性', water_loss_rate: '脱水率', craft_time: '制作时间',
   jump_strength: '跳跃力',
 };
+// Mod slot tags -> Chinese labels
+const MOD_SLOT_LABELS = {
+  barrelTipAttachment: '枪口附件', sideAttachment: '侧面附件', scope: '瞄具', trigger: '扳机',
+  accuracy: '精准', grips: '握把', stocks: '枪托', barrelAttachment: '枪管', magazine: '弹匣',
+  crippling: '致残', velocity: '初速', specialDamageAnimal: '动物特伤', specialDamage: '特伤',
+  damage: '伤害', durability: '耐久', damageBleed: '出血', stun: '眩晕', health: '生命',
+  shaft: '箭杆', fire: '燃烧', knockback: '击退', fuel: '燃料', thermal: '隔热',
+  ammo: '弹药', resistance: '抗性', temperature: '温度', movement: '移动',
+  carryweight1: '负重', carryweight2: '负重', carryweight3: '负重', carryweight4: '负重',
+  stealth: '潜行', falldamage: '坠落', waterPurifier: '净水', misc: '杂项',
+  nightVision: '夜视', dye: '染色', test: '测试', fuelsaver: '省油', light: '照明',
+  speed: '速度', seat: '座位', fueltank: '油箱', plow: '铲雪', armor: '护甲',
+  storage: '存储', cigar: '雪茄', boostPerception: '感知增益', boostStrength: '力量增益',
+  boostFortitude: '强壮增益', boostAgility: '敏捷增益', boostIntellect: '智力增益',
+  boostTreasure: '宝箱增益', droneArmor: '无人机护甲', droneStorage: '无人机存储',
+  droneMorale: '无人机士气', droneLamp: '无人机照明', droneMedic: '无人机医疗', droneWeapon: '无人机武器',
+};
+function fmtModSlots(raw) {
+  if (!raw) return null;
+  return raw.split(',').map(t => MOD_SLOT_LABELS[t.trim()] || t.trim()).join('、');
+}
 function fmtLabel(k) { return LABELS[k] || k; }
 function fmtVal(v) {
   if (typeof v === 'number' && v % 1 !== 0) return v.toFixed(2);
@@ -110,8 +131,17 @@ function fmtVal(v) {
         <span class="tag">堆叠: {item.stack_size}</span>
         {stars && <span class="tag" style="background:#fff3e0;border-color:#ff8f00;color:#e65100;">品质: {stars}</span>}
         {item.installable_tags && <span class="tag" style="background:#e8f5e9;border-color:#66bb6a;color:#2e7d32;">可安装: {item.installable_tags}</span>}
+        {fmtModSlots(item.modifier_tags) && <span class="tag" style="background:#f3e5f5;border-color:#ab47bc;color:#7b1fa2;">槽位: {fmtModSlots(item.modifier_tags)}</span>}
         {item.trader_available && <span class="tag" style="background:#e3f2fd;border-color:#42a5f5;color:#1565c0;">🏪 商人可购</span>}
       </div>
+      {item.unlocked_by && (
+        <p style="margin-top:10px;font-size:14px;">
+          🔓 <strong>解锁:</strong>{' '}
+          <a href={`${base}/vanilla/items/${sanitizeId(item.unlocked_by)}/`} class="unlock-link">
+            {resolveItemName(item.unlocked_by)}
+          </a>
+        </p>
+      )}
       {item.description && (
         <p style="margin-top:12px;line-height:1.8;">
           <strong>描述:</strong>{' '}
