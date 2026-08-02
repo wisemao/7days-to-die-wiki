@@ -35,6 +35,11 @@ const srcSet = new Set(srcFiles.map(f => basename(f, '.png')));
 const itemsDoc = load(readFileSync(itemsPath, 'utf-8'));
 const items = itemsDoc.items || [];
 
+// Also sync defensive block icons (blocks.yaml ids)
+const blocksPath = join(process.cwd(), 'data', 'vanilla', 'blocks.yaml');
+const blocksDoc = existsSync(blocksPath) ? load(readFileSync(blocksPath, 'utf-8')) : { blocks: [] };
+const blockItems = (blocksDoc.blocks || []).map(b => ({ id: b.id, icon: b.icon }));
+
 // Build candidate names per item: [id, icon, id-minus-suffix, camelCase prefix fallback]
 const candidates = [];
 for (const item of items) {
@@ -56,6 +61,13 @@ for (const item of items) {
     }
   }
   candidates.push({ id: item.id, ids: [...ids] });
+}
+
+// Block candidates: exact id (+ icon field) only — no suffix games
+for (const b of blockItems) {
+  const ids = new Set([b.id]);
+  if (b.icon) ids.add(b.icon);
+  candidates.push({ id: b.id, ids: [...ids] });
 }
 
 mkdirSync(destDir, { recursive: true });

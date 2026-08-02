@@ -1,17 +1,18 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData } from '../../../utils/data-loader';
+import { loadData, type Block } from '../../../utils/data-loader';
+import { itemIconUrl } from '../../../utils/item-icons';
 const { blocks } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Group defensive blocks by type
-const GROUPS = [
+const GROUPS: [string, RegExp][] = [
   ['炮塔', /Turret$/],
   ['陷阱', /Trap$|fencepost/],
   ['电力设备', /wire|switch|pressure|tripwire|motion|timer|relay/i],
   ['尖刺', /Spikes/],
 ];
-const grouped = GROUPS.map(([label, re]) => [label, blocks.filter(b => re.test(b.id))]).filter(([, l]) => l.length > 0);
+const grouped: [string, Block[]][] = GROUPS.map(([label, re]): [string, Block[]] => [label, blocks.filter(b => re.test(b.id))]).filter(([, l]) => l.length > 0);
 const groupedIds = new Set(grouped.flatMap(([, l]) => l.map(b => b.id)));
 const others = blocks.filter(b => !groupedIds.has(b.id));
 ---
@@ -42,11 +43,15 @@ const others = blocks.filter(b => !groupedIds.has(b.id));
     <section id={label} class="block-section" style="scroll-margin-top:72px;">
       <h2>{label}</h2>
       <div class="item-grid">
-        {list.map(b => (
-          <a href={`${base}/vanilla/blocks/${b._sanitizedId}/`} class="grid-item-link">
-            <span class="grid-name">{b.name}</span>
-          </a>
-        ))}
+        {list.map(b => {
+          const icon = itemIconUrl({ id: b.id, icon: b.icon }, base);
+          return (
+            <a href={`${base}/vanilla/blocks/${b._sanitizedId}/`} class="grid-item-link">
+              {icon && <img class="grid-icon" src={icon} alt="" loading="lazy" />}
+              <span class="grid-name">{b.name}</span>
+            </a>
+          );
+        })}
       </div>
     </section>
   ))}
