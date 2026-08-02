@@ -966,7 +966,7 @@ recipes:
       - item_id: oilBarrel
         count: 1
   - id: oilBarrel
-    name: oilBarrel
+    name: oil Barrel
     station: 背包合成
     craft_time: 5
     craft_count: 1
@@ -2086,7 +2086,7 @@ recipes:
       - item_id: resourceForgedSteel
         count: 10
   - id: autoTurret
-    name: autoTurret
+    name: 自动炮塔
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2102,7 +2102,7 @@ recipes:
       - item_id: resourceScrapPolymers
         count: 5
   - id: appliancesVariantHelper
-    name: appliancesVariantHelper
+    name: appliances Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2166,7 +2166,7 @@ recipes:
       - item_id: resourceScrapPolymers
         count: 6
   - id: bed02BlockVariantHelper
-    name: bed02BlockVariantHelper
+    name: 黑色特大号床
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2182,7 +2182,7 @@ recipes:
       - item_id: resourceMetalPipe
         count: 10
   - id: bedrollBlockVariantHelper
-    name: bedrollBlockVariantHelper
+    name: 棕色睡袋
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2190,7 +2190,7 @@ recipes:
       - item_id: resourceYuccaFibers
         count: 10
   - id: bladeTrap
-    name: bladeTrap
+    name: 刀片陷阱
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2252,7 +2252,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: shuttersWoodBlockVariantHelper
-    name: shuttersWoodBlockVariantHelper
+    name: shutters Wood Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2260,7 +2260,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: shuttersIronBlockVariantHelper
-    name: shuttersIronBlockVariantHelper
+    name: shutters Iron Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2268,7 +2268,7 @@ recipes:
       - item_id: resourceForgedIron
         count: 10
   - id: shuttersSteelBlockVariantHelper
-    name: shuttersSteelBlockVariantHelper
+    name: shutters Steel Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2298,7 +2298,7 @@ recipes:
       - item_id: resourceAnimalFat
         count: 1
   - id: candleTableLightPlayer
-    name: candleTableLightPlayer
+    name: candle Table Light Player
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2306,7 +2306,7 @@ recipes:
       - item_id: candle
         count: 1
   - id: ceilingLight01_player
-    name: ceilingLight01_player
+    name: ceiling Light01 player
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2318,7 +2318,7 @@ recipes:
       - item_id: resourceHeadlight
         count: 1
   - id: ceilingLight07_player
-    name: ceilingLight07_player
+    name: ceiling Light07 player
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2338,7 +2338,7 @@ recipes:
       - item_id: resourceWood
         count: 100
   - id: industrialLight01_player
-    name: industrialLight01_player
+    name: industrial Light01 player
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2348,7 +2348,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 4
   - id: industrialLight02_player
-    name: industrialLight02_player
+    name: industrial Light02 player
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2358,7 +2358,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 4
   - id: calendarVariantHelper
-    name: calendarVariantHelper
+    name: calendar Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2400,7 +2400,7 @@ recipes:
       - item_id: resourceAcid
         count: 5
   - id: cntCoolerVariantHelper
-    name: cntCoolerVariantHelper
+    name: cnt Cooler Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2432,7 +2432,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 3
   - id: cntGunSafeVariantHelper
-    name: cntGunSafeVariantHelper
+    name: 枪支保险柜
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2456,7 +2456,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 3
   - id: metalFurnitureBlockVariantHelper
-    name: metalFurnitureBlockVariantHelper
+    name: metal Furniture Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2464,7 +2464,7 @@ recipes:
       - item_id: resourceForgedIron
         count: 3
   - id: cntMailBox01VariantHelper
-    name: cntMailBox01VariantHelper
+    name: 邮箱
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2474,7 +2474,7 @@ recipes:
       - item_id: resourceWood
         count: 5
   - id: cntMailBox02VariantHelper
-    name: cntMailBox02VariantHelper
+    name: 邮箱
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2484,7 +2484,7 @@ recipes:
       - item_id: resourceWood
         count: 5
   - id: cntMailBox03VariantHelper
-    name: cntMailBox03VariantHelper
+    name: 邮箱
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2518,7 +2518,7 @@ recipes:
       - item_id: resourceForgedSteel
         count: 10
   - id: cntWoodFurnitureBlockVariantHelper
-    name: cntWoodFurnitureBlockVariantHelper
+    name: cnt Wood Furniture Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2528,7 +2528,7 @@ recipes:
       - item_id: resourceWood
         count: 5
   - id: cntWoodFurnitureBlockVariantHelper2
-    name: cntWoodFurnitureBlockVariantHelper2
+    name: cnt Wood Furniture Block Variant Helper2
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2538,7 +2538,7 @@ recipes:
       - item_id: resourceWood
         count: 5
   - id: curtainVariantHelper
-    name: curtainVariantHelper
+    name: curtain Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2548,7 +2548,7 @@ recipes:
       - item_id: resourceScrapIron
         count: 5
   - id: woodSignBlockVariantHelper
-    name: woodSignBlockVariantHelper
+    name: wood Sign Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2558,7 +2558,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: sinksToiletsBlockVariantHelper
-    name: sinksToiletsBlockVariantHelper
+    name: sinks Toilets Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2572,7 +2572,7 @@ recipes:
       - item_id: resourceWood
         count: 4
   - id: toiletsBlockVariantHelper
-    name: toiletsBlockVariantHelper
+    name: toilets Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -2586,7 +2586,7 @@ recipes:
       - item_id: resourceWood
         count: 4
   - id: dartTrap
-    name: dartTrap
+    name: 飞镖陷阱
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2976,7 +2976,7 @@ recipes:
       - item_id: resourceTestosteroneExtract
         count: 1
   - id: electricfencepost
-    name: electricfencepost
+    name: 电围栏柱
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2986,7 +2986,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 2
   - id: electrictimerrelay
-    name: electrictimerrelay
+    name: 定时继电器
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -2996,7 +2996,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 5
   - id: electricwirerelay
-    name: electricwirerelay
+    name: 电线继电器
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3022,7 +3022,7 @@ recipes:
       - item_id: resourceScrapPolymers
         count: 4
   - id: lanternDecorLightBlockVariantHelper
-    name: lanternDecorLightBlockVariantHelper
+    name: lantern Decor Light Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3038,7 +3038,7 @@ recipes:
       - item_id: resourceOil
         count: 5
   - id: lanternOldBlockVariantHelper
-    name: lanternOldBlockVariantHelper
+    name: lantern Old Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3052,7 +3052,7 @@ recipes:
       - item_id: resourceOil
         count: 5
   - id: farmPlotBlockVariantHelper
-    name: farmPlotBlockVariantHelper
+    name: farm Plot Block Variant Helper
     station: 背包合成
     craft_time: 20
     craft_count: 1
@@ -3066,7 +3066,7 @@ recipes:
       - item_id: resourceClayLump
         count: 100
   - id: flagThick44BlockVariantHelper
-    name: flagThick44BlockVariantHelper
+    name: flag Thick44 Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -3562,7 +3562,7 @@ recipes:
       - item_id: resourceMetalPipe
         count: 3
   - id: ironGarageDoorBlockVariantHelper
-    name: ironGarageDoorBlockVariantHelper
+    name: iron Garage Door Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3574,7 +3574,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 20
   - id: ironGarageDoor_PoweredBlockVariantHelper
-    name: ironGarageDoor_PoweredBlockVariantHelper
+    name: iron Garage Door Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3588,7 +3588,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: woodenGarageDoor3x3_PoweredBlockVariantHelper
-    name: woodenGarageDoor3x3_PoweredBlockVariantHelper
+    name: wooden Garage Door3x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3602,7 +3602,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: woodenGarageDoor4x3_PoweredBlockVariantHelper
-    name: woodenGarageDoor4x3_PoweredBlockVariantHelper
+    name: wooden Garage Door4x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3616,7 +3616,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: woodenGarageDoor5x3_PoweredBlockVariantHelper
-    name: woodenGarageDoor5x3_PoweredBlockVariantHelper
+    name: wooden Garage Door5x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3630,7 +3630,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: steelGarageDoor3x3_PoweredBlockVariantHelper
-    name: steelGarageDoor3x3_PoweredBlockVariantHelper
+    name: steel Garage Door3x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3644,7 +3644,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: steelGarageDoor4x3_PoweredBlockVariantHelper
-    name: steelGarageDoor4x3_PoweredBlockVariantHelper
+    name: steel Garage Door4x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3658,7 +3658,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: steelGarageDoor5x3_PoweredBlockVariantHelper
-    name: steelGarageDoor5x3_PoweredBlockVariantHelper
+    name: steel Garage Door5x3 Powered Block Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3672,7 +3672,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 20
   - id: rollUpDoor3x3VariantHelper
-    name: rollUpDoor3x3VariantHelper
+    name: roll Up Door3x3 Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3684,7 +3684,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: rollUpDoor5x4VariantHelper
-    name: rollUpDoor5x4VariantHelper
+    name: roll Up Door5x4 Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3696,7 +3696,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: rollUpDoor7x4VariantHelper
-    name: rollUpDoor7x4VariantHelper
+    name: roll Up Door7x4 Variant Helper
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3708,7 +3708,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: metalReinforcedWoodDrawBridge
-    name: metalReinforcedWoodDrawBridge
+    name: metal Reinforced Wood Draw Bridge
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3722,7 +3722,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 20
   - id: metalReinforcedWoodDrawBridgePowered
-    name: metalReinforcedWoodDrawBridgePowered
+    name: metal Reinforced Wood Draw Bridge Powered
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -3750,7 +3750,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 14
   - id: glassBulletproofBlockVariantHelper
-    name: glassBulletproofBlockVariantHelper
+    name: glass Bulletproof Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -3766,7 +3766,7 @@ recipes:
       - item_id: unit_clay
         count: 20
   - id: glassBulletproofBlockVariantHelper
-    name: glassBulletproofBlockVariantHelper
+    name: glass Bulletproof Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -3782,7 +3782,7 @@ recipes:
       - item_id: resourceClayLump
         count: 4
   - id: glassBlockVariantHelper
-    name: glassBlockVariantHelper
+    name: glass Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -3794,7 +3794,7 @@ recipes:
       - item_id: unit_clay
         count: 5
   - id: glassBlockVariantHelper
-    name: glassBlockVariantHelper
+    name: glass Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -3866,7 +3866,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: gunHandgunT3SMG5
-    name: SMG-5
+    name: gun Handgun T3 SMG5
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4284,7 +4284,7 @@ recipes:
       - item_id: resourceClayLump
         count: 4
   - id: ironDoorBlockVariantHelper
-    name: ironDoorBlockVariantHelper
+    name: iron Door Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -4292,7 +4292,7 @@ recipes:
       - item_id: resourceForgedIron
         count: 10
   - id: ironDoorDoubleBlockVariantHelper
-    name: ironDoorDoubleBlockVariantHelper
+    name: iron Door Double Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -4390,7 +4390,7 @@ recipes:
       - item_id: resourceWood
         count: 20
   - id: m60Turret
-    name: m60Turret
+    name: M60 炮塔
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -4982,7 +4982,7 @@ recipes:
       - item_id: resourceLegendaryParts
         count: 0
   - id: metalTrussingIBeamBlockVariantHelper
-    name: metalTrussingIBeamBlockVariantHelper
+    name: metal Trussing IBeam Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -4992,7 +4992,7 @@ recipes:
       - item_id: unit_clay
         count: 5
   - id: metalTrussingIBeamBlockVariantHelper
-    name: metalTrussingIBeamBlockVariantHelper
+    name: metal Trussing IBeam Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -6158,7 +6158,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 8
   - id: motionsensor
-    name: motionsensor
+    name: 运动传感器
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6172,7 +6172,7 @@ recipes:
       - item_id: resourceScopeLens
         count: 1
   - id: officeChair01VariantHelper
-    name: officeChair01VariantHelper
+    name: 办公椅 灰色
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6186,7 +6186,7 @@ recipes:
       - item_id: resourceCropCottonPlant
         count: 10
   - id: oldChair1VariantHelper
-    name: oldChair1VariantHelper
+    name: 旧椅子 灰色
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6198,7 +6198,7 @@ recipes:
       - item_id: resourceCloth
         count: 15
   - id: pictureVariantHelper
-    name: pictureVariantHelper
+    name: picture Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6336,7 +6336,7 @@ recipes:
       - item_id: resourceYuccaFibers
         count: 5
   - id: pressureplate
-    name: pressureplate
+    name: 压力板
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6348,7 +6348,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 2
   - id: pressureplateLong
-    name: pressureplateLong
+    name: 长压力板
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6824,7 +6824,7 @@ recipes:
       - item_id: resourceClayLump
         count: 6
   - id: ironHatchBlockVariantHelper
-    name: ironHatchBlockVariantHelper
+    name: iron Hatch Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6832,7 +6832,7 @@ recipes:
       - item_id: resourceForgedIron
         count: 10
   - id: sandbagBlockVariantHelper
-    name: sandbagBlockVariantHelper
+    name: sandbag Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6842,7 +6842,7 @@ recipes:
       - item_id: resourceCloth
         count: 15
   - id: sectionalLeatherCouchSofaBlockVariantHelper
-    name: sectionalLeatherCouchSofaBlockVariantHelper
+    name: sectional Leather Couch Sofa Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6854,7 +6854,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: sectionalPlaidCouchSofaBlockVariantHelper
-    name: sectionalPlaidCouchSofaBlockVariantHelper
+    name: sectional Plaid Couch Sofa Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6866,7 +6866,7 @@ recipes:
       - item_id: resourceWood
         count: 15
   - id: couchModernBlockVariantHelper
-    name: couchModernBlockVariantHelper
+    name: couch Modern Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6878,7 +6878,7 @@ recipes:
       - item_id: resourceWood
         count: 15
   - id: couchUglySingleBlockVariantHelper
-    name: couchUglySingleBlockVariantHelper
+    name: couch Ugly Single Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6890,7 +6890,7 @@ recipes:
       - item_id: resourceWood
         count: 15
   - id: couchUglySmallBlockVariantHelper
-    name: couchUglySmallBlockVariantHelper
+    name: couch Ugly Small Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6902,7 +6902,7 @@ recipes:
       - item_id: resourceWood
         count: 15
   - id: couchUglyLargeBlockVariantHelper
-    name: couchUglyLargeBlockVariantHelper
+    name: couch Ugly Large Block Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -6930,7 +6930,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: shotgunTurret
-    name: shotgunTurret
+    name: 霰弹枪炮塔
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6956,7 +6956,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 3
   - id: spotlightPlayer
-    name: spotlightPlayer
+    name: spotlight Player
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6970,7 +6970,7 @@ recipes:
       - item_id: resourceScrapIron
         count: 50
   - id: switch
-    name: switch
+    name: 开关
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -6996,7 +6996,7 @@ recipes:
       - item_id: resourceSpring
         count: 4
   - id: terrDestroyedStone
-    name: terrDestroyedStone
+    name: terr Destroyed Stone
     station: 背包合成
     craft_time: 2
     craft_count: 1
@@ -7004,7 +7004,7 @@ recipes:
       - item_id: resourceRockSmall
         count: 18
   - id: terrDirt
-    name: terrDirt
+    name: terr Dirt
     station: 背包合成
     craft_time: 3
     craft_count: 1
@@ -7012,7 +7012,7 @@ recipes:
       - item_id: resourceClayLump
         count: 16
   - id: terrTopSoil
-    name: terrTopSoil
+    name: terr Top Soil
     station: 背包合成
     craft_time: 3
     craft_count: 1
@@ -7020,7 +7020,7 @@ recipes:
       - item_id: resourceClayLump
         count: 16
   - id: terrGravel
-    name: terrGravel
+    name: terr Gravel
     station: 混凝土搅拌机
     craft_time: 1
     craft_count: 1
@@ -7030,7 +7030,7 @@ recipes:
       - item_id: resourceRockSmall
         count: 10
   - id: terrAsphalt
-    name: terrAsphalt
+    name: terr Asphalt
     station: 混凝土搅拌机
     craft_time: 1
     craft_count: 1
@@ -7042,7 +7042,7 @@ recipes:
       - item_id: resourceOilShale
         count: 5
   - id: terrGravel
-    name: terrGravel
+    name: terr Gravel
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7052,7 +7052,7 @@ recipes:
       - item_id: resourceRockSmall
         count: 11
   - id: terrStone
-    name: terrStone
+    name: terr Stone
     station: 混凝土搅拌机
     craft_time: 1
     craft_count: 1
@@ -7434,7 +7434,7 @@ recipes:
       - item_id: resourceWood
         count: 20
   - id: plantPottedVariantHelper
-    name: plantPottedVariantHelper
+    name: plant Potted Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7444,7 +7444,7 @@ recipes:
       - item_id: resourceClayLump
         count: 8
   - id: tripwirepost
-    name: tripwirepost
+    name: 绊线柱
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7454,7 +7454,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 1
   - id: tvBlockVariantHelper
-    name: tvBlockVariantHelper
+    name: 电视机
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7466,7 +7466,7 @@ recipes:
       - item_id: glassBlockVariantHelper
         count: 1
   - id: vaultDoor01
-    name: vaultDoor01
+    name: vault Door01
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7478,7 +7478,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: vaultHatch01
-    name: vaultHatch01
+    name: vault Hatch01
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7490,7 +7490,7 @@ recipes:
       - item_id: resourceMechanicalParts
         count: 10
   - id: vaultHatch01_Powered
-    name: vaultHatch01_Powered
+    name: vault Hatch01 Powered
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7504,7 +7504,7 @@ recipes:
       - item_id: resourceElectricParts
         count: 10
   - id: vaultDoor01_Powered
-    name: vaultDoor01_Powered
+    name: vault Door01 Powered
     station: 工作台
     craft_time: 1
     craft_count: 1
@@ -7830,7 +7830,7 @@ recipes:
       - item_id: resourceWood
         count: 100
   - id: metalFenceRailingTrellisSheetBlockVariantHelper
-    name: metalFenceRailingTrellisSheetBlockVariantHelper
+    name: metal Fence Railing Trellis Sheet Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -7840,7 +7840,7 @@ recipes:
       - item_id: unit_clay
         count: 5
   - id: metalFenceRailingTrellisSheetBlockVariantHelper
-    name: metalFenceRailingTrellisSheetBlockVariantHelper
+    name: metal Fence Railing Trellis Sheet Block Variant Helper
     station: 熔炉
     craft_time: 1
     craft_count: 1
@@ -7850,7 +7850,7 @@ recipes:
       - item_id: resourceClayLump
         count: 1
   - id: frameShapes:VariantHelper
-    name: frameShapes:VariantHelper
+    name: frame Shapes:Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7858,7 +7858,7 @@ recipes:
       - item_id: resourceWood
         count: 2
   - id: woodShapes:VariantHelper
-    name: woodShapes:VariantHelper
+    name: wood Shapes:Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7866,7 +7866,7 @@ recipes:
       - item_id: resourceWood
         count: 10
   - id: cobblestoneShapes:VariantHelper
-    name: cobblestoneShapes:VariantHelper
+    name: cobblestone Shapes:Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7874,7 +7874,7 @@ recipes:
       - item_id: resourceCobblestones
         count: 10
   - id: concreteShapes:VariantHelper
-    name: concreteShapes:VariantHelper
+    name: concrete Shapes:Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1
@@ -7882,7 +7882,7 @@ recipes:
       - item_id: resourceConcreteMix
         count: 10
   - id: steelShapes:VariantHelper
-    name: steelShapes:VariantHelper
+    name: steel Shapes:Variant Helper
     station: 背包合成
     craft_time: 1
     craft_count: 1

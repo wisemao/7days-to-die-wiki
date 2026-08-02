@@ -240,6 +240,26 @@ function enhance(configDir) {
     }
   }
 
+  // ─── 10. Recipe names (blocks/localization/readable fallback) ───
+  const recipesPath = join(DATA_DIR, 'recipes.yaml');
+  const recipesDoc = readYaml(recipesPath);
+  const blocksDoc = readYaml(join(DATA_DIR, 'blocks.yaml'));
+  const blockByName = new Map((blocksDoc.blocks || []).map(b => [b.id, b.name]));
+  let recipeNamed = 0;
+  for (const r of recipesDoc.recipes || []) {
+    if (r.name && /[\u4e00-\u9fff]/.test(r.name)) continue;
+    const blockName = blockByName.get(r.id);
+    if (blockName) { r.name = blockName; recipeNamed++; continue; }
+    const clean = r.id.replace(/(_player|BlockVariantHelper|VariantHelper)$/, '');
+    const loc = locMap.get(clean);
+    if (loc?.name && /[\u4e00-\u9fff]/.test(String(loc.name))) { r.name = loc.name; recipeNamed++; continue; }
+    // Readable fallback: camelCase split
+    const readable = r.id.replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ');
+    if (readable !== r.id) { r.name = readable; recipeNamed++; }
+  }
+  if (recipeNamed > 0) writeYaml(recipesPath, recipesDoc);
+  console.log(`  - 配方名补全: ${recipeNamed} 个`);
+
   console.log('✅ 数据增强完成');
 }
 const argIdx = process.argv.indexOf('--config-dir');
