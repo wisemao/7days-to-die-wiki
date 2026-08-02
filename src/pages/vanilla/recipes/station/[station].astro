@@ -1,6 +1,7 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
 import { loadData, STATION_LABELS } from '../../../../utils/data-loader';
+import { itemIconUrl } from '../../../../utils/item-icons';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function getStaticPaths() {
@@ -27,15 +28,35 @@ const stLabel = STATION_LABELS[stationSlug] || stationSlug;
   <h1>{stLabel}</h1>
   <p class="subtitle">共 {stRecipes.length} 个配方</p>
   <div class="entity-grid">
-    {stRecipes.map(r => (
-      <a href={`${base}/vanilla/recipes/${r._sanitizedId}/`} class="entity-item">
-        <span class="entity-name">{r.name || r.id}</span>
-        <span class="entity-meta">
-          {(r.recipe && r.recipe.length > 0) ? `${r.recipe.length} 种材料 · 耗时 ${r.craft_time ?? '-'} 秒` : '无法直接合成（搜刮获取）'}
-          {r.craft_count ? ` · 产出 ${r.craft_count} 个` : ''}
-        </span>
-      </a>
-    ))}
+    {stRecipes.map(r => {
+      const icon = itemIconUrl({ id: r.id }, base);
+      return (
+        <a href={`${base}/vanilla/recipes/${r._sanitizedId}/`} class="entity-item">
+          <span class="entity-head">
+            {icon && <img class="entity-icon" src={icon} alt="" loading="lazy" />}
+            <span class="entity-name">{r.name || r.id}</span>
+          </span>
+          <span class="entity-meta">
+            {(r.recipe && r.recipe.length > 0) ? `${r.recipe.length} 种材料 · 耗时 ${r.craft_time ?? '-'} 秒` : '无法直接合成（搜刮获取）'}
+            {r.craft_count ? ` · 产出 ${r.craft_count} 个` : ''}
+          </span>
+        </a>
+      );
+    })}
   </div>
+
+  <style>
+    .entity-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .entity-icon {
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+  </style>
 
 </Layout>
