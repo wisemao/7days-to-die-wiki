@@ -10,6 +10,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const DIFF_LABELS: Record<string, string> = { '1': '低', '2': '较低', '3': '中', '4': '较高', '5': '高' };
 const diffLabel = (d?: string) => (d ? DIFF_LABELS[d] || d : '-');
 const isUnderwater = biome.id === 'underwater';
+const BUFF_NAMES: Record<string, string> = {
+  twitch_storm: '活动风暴事件',
+  buffForest_Hazard: '森林危险',
+};
+const envEvent = biome.buff ? BUFF_NAMES[biome.buff] || biome.buff : '';
 ---
 
 <Layout title={biome.name} description={`${biome.name} - 生物群系资源与天气`}>
@@ -34,6 +39,7 @@ const isUnderwater = biome.id === 'underwater';
       <tr><td>天气类型</td><td>{biome.weather_count} 种</td></tr>
       {biome.temp_range && <tr><td>平均温度</td><td>{biome.temp_range} °F（约 {Math.round(((parseInt(biome.temp_range.split(',')[0]) + parseInt(biome.temp_range.split(',')[1] || biome.temp_range.split(',')[0])) / 2) - 32) * 5 / 9} °C）</td></tr>}
       <tr><td>降水概率</td><td>{biome.rain_prob}%</td></tr>
+      {envEvent && <tr><td>环境事件</td><td>{envEvent}</td></tr>}
     </table>
   )}
 

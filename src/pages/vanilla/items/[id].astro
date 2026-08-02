@@ -37,7 +37,9 @@ const stars = item.tier ? (() => {
 })() : null;
 // Official quality colors from qualityinfo.xml (0-6)
 const QUALITY_COLORS = ['#808080', '#9C8867', '#CF7F29', '#A2A41B', '#42C234', '#315DCE', '#A42ACC'];
+const QUALITY_NAMES = ['破碎', '垃圾', '普通', '罕见', '稀有', '史诗', '传说'];
 const qualityColor = stars ? QUALITY_COLORS[stars.q] : null;
+const qualityName = stars ? QUALITY_NAMES[stars.q] : null;
 
 // Check if item icon exists (try direct ID, then fallback to base name without suffixes)
 const iconBase = item.icon || item.id;
@@ -132,7 +134,7 @@ function fmtVal(v) {
       <div class="tags">
         <span class="tag">{categoryLabel}</span>
         <span class="tag">堆叠: {item.stack_size}</span>
-        {stars && <span class="tag" style={`background:${qualityColor}1a;border-color:${qualityColor};color:${qualityColor};`}>品质: <span style={`color:${qualityColor};`}>{stars.stars}</span></span>}
+        {stars && <span class="tag" style={`background:${qualityColor}1a;border-color:${qualityColor};color:${qualityColor};`}>品质: {qualityName} <span style={`color:${qualityColor};`}>{stars.stars}</span></span>}
         {item.installable_tags && <span class="tag" style="background:#e8f5e9;border-color:#66bb6a;color:#2e7d32;">可安装: {item.installable_tags}</span>}
         {fmtModSlots(item.modifier_tags) && <span class="tag" style="background:#f3e5f5;border-color:#ab47bc;color:#7b1fa2;">槽位: {fmtModSlots(item.modifier_tags)}</span>}
         {item.trader_available && <span class="tag" style="background:#e3f2fd;border-color:#42a5f5;color:#1565c0;">🏪 商人可购</span>}
