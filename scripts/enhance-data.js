@@ -195,19 +195,38 @@ function enhance(configDir) {
     if (bookSkills.length > 0) {
       const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
       const itemIds = new Set((itemsDoc.items || []).map(i => i.id));
+      const itemById = new Map((itemsDoc.items || []).map(i => [i.id, i]));
       const skillsDoc = readYaml(join(DATA_DIR, 'skills.yaml'));
-      let enriched = 0;
+      let linked = 0, named = 0;
       for (const skill of skillsDoc.skills || []) {
         if (!bookSkills.includes(skill.id)) continue;
-        if (skill.tied_books && skill.tied_books.length > 0) continue;
         const bookId = 'book' + skill.id.slice(4); // perkFiremansAlmanacHeat -> bookFiremansAlmanacHeat
-        if (!itemIds.has(bookId)) continue;
-        const effect = skill.description || skill.levels?.[0]?.effect || '';
-        skill.tied_books = [{ book_id: bookId, effect }];
-        enriched++;
+        if (!itemIds.has(bookId)) {
+          // Complete perk (series mastery): perkFiremansAlmanacComplete -> "消防员年鉴 精通"
+          if (/Complete$/.test(skill.id) && (!skill.name || !/[\u4e00-\u9fff]/.test(skill.name))) {
+            // perkTechJunkie8Complete -> TechJunkie8 -> TechJunkie (strip trailing digits)
+            const seriesCode = skill.id.slice(4).replace(/Complete$/, '').replace(/\d+$/, '');
+            const seriesBook = [...itemById.values()].find(i => i.id.startsWith('book' + seriesCode));
+            if (seriesBook?.name) {
+              const seriesName = seriesBook.name.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').trim();
+              if (seriesName) { skill.name = seriesName + ' 精通'; named++; }
+            }
+          }
+          continue;
+        }
+        if (!skill.tied_books || skill.tied_books.length === 0) {
+          const effect = skill.description || skill.levels?.[0]?.effect || '';
+          skill.tied_books = [{ book_id: bookId, effect }];
+          linked++;
+        }
+        // Skill name from the corresponding book item (perk skills have no localized name)
+        if (!skill.name || !/[\u4e00-\u9fff]/.test(skill.name)) {
+          const bookItem = itemById.get(bookId);
+          if (bookItem?.name) { skill.name = bookItem.name; named++; }
+        }
       }
-      if (enriched > 0) writeYaml(join(DATA_DIR, 'skills.yaml'), skillsDoc);
-      console.log(`  - 技能书籍关联: ${enriched} 个技能 (共 ${bookSkills.length} 个书籍技能)`);
+      if (linked > 0 || named > 0) writeYaml(join(DATA_DIR, 'skills.yaml'), skillsDoc);
+      console.log(`  - 技能书籍关联: ${linked} 个技能关联, ${named} 个技能补中文名 (共 ${bookSkills.length} 个书籍技能)`);
     }
   }
 

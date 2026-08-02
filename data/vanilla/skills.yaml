@@ -1209,7 +1209,7 @@ skills:
         cost: 5
     description: 专精于追踪宝物，也许能给你点额外的奖励。\n每一技能等级都会指引你找到更好的战利品。
   - id: perkFiremansAlmanacHeat
-    name: perkFiremansAlmanacHeat
+    name: 消防员年鉴 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1221,7 +1221,7 @@ skills:
       - book_id: bookFiremansAlmanacHeat
         effect: 增加搜刮时获取额外水源的概率。
   - id: perkFiremansAlmanacAxes
-    name: perkFiremansAlmanacAxes
+    name: 消防员年鉴 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1233,7 +1233,7 @@ skills:
       - book_id: bookFiremansAlmanacAxes
         effect: 制作消防斧模组。
   - id: perkFiremansAlmanacSpeed
-    name: perkFiremansAlmanacSpeed
+    name: 消防员年鉴 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1245,7 +1245,7 @@ skills:
       - book_id: bookFiremansAlmanacSpeed
         effect: 斧子的攻击速度加快5%
   - id: perkFiremansAlmanacMolotov
-    name: perkFiremansAlmanacMolotov
+    name: 消防员年鉴 第4卷
     category: strength
     max_level: 1
     levels: []
@@ -1254,7 +1254,7 @@ skills:
       - book_id: bookFiremansAlmanacMolotov
         effect: 火攻武器燃烧时长增加10%。
   - id: perkFiremansAlmanacPrevention
-    name: perkFiremansAlmanacPrevention
+    name: 消防员年鉴 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1266,7 +1266,7 @@ skills:
       - book_id: bookFiremansAlmanacPrevention
         effect: 被火引燃的几率降低25%。
   - id: perkFiremansAlmanacHarvest
-    name: perkFiremansAlmanacHarvest
+    name: 消防员年鉴 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1278,7 +1278,7 @@ skills:
       - book_id: bookFiremansAlmanacHarvest
         effect: 对煤炭与木炭造成的伤害增加10%。
   - id: perkFiremansAlmanacEquipment
-    name: perkFiremansAlmanacEquipment
+    name: 消防员年鉴 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1290,7 +1290,7 @@ skills:
       - book_id: bookFiremansAlmanacEquipment
         effect: 减少载具受到的碰撞伤害。
   - id: perkFiremansAlmanacComplete
-    name: perkFiremansAlmanacComplete
+    name: 消防员年鉴 精通
     category: strength
     max_level: 1
     levels:
@@ -1299,7 +1299,7 @@ skills:
         cost: 0
     description: 在焚毁的森林或荒野中可冲刺更久时间，并不受负重影响。电锯伤害增加 50%。
   - id: perkNightStalkerStealthDamage
-    name: perkNightStalkerStealthDamage
+    name: 夜行者 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1311,7 +1311,7 @@ skills:
       - book_id: bookNightStalkerStealthDamage
         effect: 夜间潜行伤害增加10%。
   - id: perkNightStalkerSilentNight
-    name: perkNightStalkerSilentNight
+    name: 夜行者 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1323,7 +1323,7 @@ skills:
       - book_id: bookNightStalkerSilentNight
         effect: 增强夜间潜行效果5%。
   - id: perkNightStalkerBlades
-    name: perkNightStalkerBlades
+    name: 夜行者 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1335,7 +1335,7 @@ skills:
       - book_id: bookNightStalkerBlades
         effect: 夜晚时刀剑造成的伤害增加10%。
   - id: perkNightStalkerThiefAdrenaline
-    name: perkNightStalkerThiefAdrenaline
+    name: 夜行者 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1347,7 +1347,7 @@ skills:
       - book_id: bookNightStalkerThiefAdrenaline
         effect: 夜间负重永远不会超限。
   - id: perkNightStalkerArchery
-    name: perkNightStalkerArchery
+    name: 夜行者 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1359,7 +1359,7 @@ skills:
       - book_id: bookNightStalkerArchery
         effect: 夜晚时弓箭造成的伤害增加10%。
   - id: perkNightStalkerTwilightThief
-    name: perkNightStalkerTwilightThief
+    name: 夜行者 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1371,7 +1371,7 @@ skills:
       - book_id: bookNightStalkerTwilightThief
         effect: 夜间击杀经验值增加5%。
   - id: perkNightStalkerSlumberParty
-    name: perkNightStalkerSlumberParty
+    name: 夜行者 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1383,7 +1383,7 @@ skills:
       - book_id: bookNightStalkerSlumberParty
         effect: 对夜间熟睡中的目标增加额外50%伤害。
   - id: perkNightStalkerComplete
-    name: perkNightStalkerComplete
+    name: 夜行者 精通
     category: strength
     max_level: 1
     levels:
@@ -1392,7 +1392,7 @@ skills:
         cost: 0
     description: 夜间使用匕首潜行攻击时造成200%额外伤害。
   - id: perkLuckyLooterDukes
-    name: perkLuckyLooterDukes
+    name: 幸运掠夺者 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1404,7 +1404,7 @@ skills:
       - book_id: bookLuckyLooterDukes
         effect: 在搜刮时能找到更多公爵币。
   - id: perkLuckyLooterAmmunition
-    name: perkLuckyLooterAmmunition
+    name: 幸运掠夺者 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1416,7 +1416,7 @@ skills:
       - book_id: bookLuckyLooterAmmunition
         effect: 在搜刮时能找到更多弹药。
   - id: perkLuckyLooterBrass
-    name: perkLuckyLooterBrass
+    name: 幸运掠夺者 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1428,7 +1428,7 @@ skills:
       - book_id: bookLuckyLooterBrass
         effect: 在搜刮时能找到更多黄铜。
   - id: perkLuckyLooterLead
-    name: perkLuckyLooterLead
+    name: 幸运掠夺者 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1440,7 +1440,7 @@ skills:
       - book_id: bookLuckyLooterLead
         effect: 在搜刮时能找到更多铅。
   - id: perkLuckyLooterBooks
-    name: perkLuckyLooterBooks
+    name: 幸运掠夺者 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1452,7 +1452,7 @@ skills:
       - book_id: bookLuckyLooterBooks
         effect: 在搜刮时能找到更多垃圾。
   - id: perkLuckyLooterFood
-    name: perkLuckyLooterFood
+    name: 幸运掠夺者 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1464,7 +1464,7 @@ skills:
       - book_id: bookLuckyLooterFood
         effect: 在搜刮时能找到更多食物。
   - id: perkLuckyLooterMedical
-    name: perkLuckyLooterMedical
+    name: 幸运掠夺者 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1476,7 +1476,7 @@ skills:
       - book_id: bookLuckyLooterMedical
         effect: 在搜刮时能找到更多医疗补给。
   - id: perkLuckyLooterComplete
-    name: perkLuckyLooterComplete
+    name: 幸运掠夺者 精通
     category: strength
     max_level: 1
     levels:
@@ -1485,7 +1485,7 @@ skills:
         cost: 0
     description: 敌人掉落战利品的几率更高。
   - id: perkEnforcerDamage
-    name: perkEnforcerDamage
+    name: 马格南警官 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1497,7 +1497,7 @@ skills:
       - book_id: bookEnforcerDamage
         effect: .44 枪造成的伤害增加 10%。
   - id: perkEnforcerApparel
-    name: perkEnforcerApparel
+    name: 马格南警官 第2卷
     category: strength
     max_level: 1
     levels: []
@@ -1506,7 +1506,7 @@ skills:
       - book_id: bookEnforcerApparel
         effect: 穿着警官装束时受到的伤害减少 5%。
   - id: perkEnforcerPunks
-    name: perkEnforcerPunks
+    name: 马格南警官 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1518,7 +1518,7 @@ skills:
       - book_id: bookEnforcerPunks
         effect: 弹仓内最后一发子弹造成双倍伤害。
   - id: perkEnforcerIntimidation
-    name: perkEnforcerIntimidation
+    name: 马格南警官 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1530,7 +1530,7 @@ skills:
       - book_id: bookEnforcerIntimidation
         effect: 手持.44 枪交易时价格会优惠 5%。
   - id: perkEnforcerAPAmmo
-    name: perkEnforcerAPAmmo
+    name: 马格南警官 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1542,7 +1542,7 @@ skills:
       - book_id: bookEnforcerAPAmmo
         effect: 你能制作.44马格南穿甲弹。
   - id: perkEnforcerHPAmmo
-    name: perkEnforcerHPAmmo
+    name: 马格南警官 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1554,7 +1554,7 @@ skills:
       - book_id: bookEnforcerHPAmmo
         effect: 你能制作.44马格南空心弹。
   - id: perkEnforcerCriminalPursuit
-    name: perkEnforcerCriminalPursuit
+    name: 马格南警官 第7卷
     category: strength
     max_level: 1
     levels: []
@@ -1572,7 +1572,7 @@ skills:
         cost: 0
     description: 所有.44 弹药都能穿透敌人。批量制作弹药。
   - id: perkBatterUpBigHits
-    name: perkBatterUpBigHits
+    name: 一击破坏 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1584,7 +1584,7 @@ skills:
       - book_id: bookBatterUpBigHits
         effect: 棍棒造成的伤害增加10%。
   - id: perkBatterUpStealingBases
-    name: perkBatterUpStealingBases
+    name: 一击破坏 第2卷
     category: strength
     max_level: 1
     levels: []
@@ -1593,7 +1593,7 @@ skills:
       - book_id: bookBatterUpStealingBases
         effect: 在战斗中抽出棍棒冲刺时消耗的体力减少20%。
   - id: perkBatterUpSlowPitch
-    name: perkBatterUpSlowPitch
+    name: 一击破坏 第3卷
     category: strength
     max_level: 1
     levels: []
@@ -1602,7 +1602,7 @@ skills:
       - book_id: bookBatterUpSlowPitch
         effect: 对腿部进行的强力攻击能减缓敌人。
   - id: perkBatterUpKnockdown
-    name: perkBatterUpKnockdown
+    name: 一击破坏 第4卷
     category: strength
     max_level: 1
     levels: []
@@ -1611,7 +1611,7 @@ skills:
       - book_id: bookBatterUpKnockdown
         effect: 强力攻击会增加击倒的几率。
   - id: perkBatterUpMaintenance
-    name: perkBatterUpMaintenance
+    name: 一击破坏 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1623,7 +1623,7 @@ skills:
       - book_id: bookBatterUpMaintenance
         effect: 棒球棒与棍棒损坏速度减慢20%。
   - id: perkBatterUpFoulBalls
-    name: perkBatterUpFoulBalls
+    name: 一击破坏 第6卷
     category: strength
     max_level: 1
     levels: []
@@ -1632,7 +1632,7 @@ skills:
       - book_id: bookBatterUpFoulBalls
         effect: 致残敌人。
   - id: perkBatterUpMetalChain
-    name: perkBatterUpMetalChain
+    name: 一击破坏第7卷
     category: strength
     max_level: 1
     levels:
@@ -1644,13 +1644,13 @@ skills:
       - book_id: bookBatterUpMetalChain
         effect: 为棒球棒与棍棒制作铁链模组。
   - id: perkBatterUpComplete
-    name: perkBatterUpComplete
+    name: 一击破坏 精通
     category: strength
     max_level: 1
     levels: []
     description: 用强力攻击杀死敌人时能填充你的体力槽。
   - id: perkGreatHeistSafes
-    name: perkGreatHeistSafes
+    name: 大劫掠 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1662,7 +1662,7 @@ skills:
       - book_id: bookGreatHeistSafes
         effect: 对保险箱造成的伤害增加10%。
   - id: perkGreatHeistGems
-    name: perkGreatHeistGems
+    name: 大劫掠 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1674,7 +1674,7 @@ skills:
       - book_id: bookGreatHeistGems
         effect: 去寻找更多的珠宝和宝石吧。
   - id: perkGreatHeistGoldRush
-    name: perkGreatHeistGoldRush
+    name: 大劫掠 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1686,7 +1686,7 @@ skills:
       - book_id: bookGreatHeistGoldRush
         effect: 在保险箱和自动取款机中找到的公爵币和现金增加10%。
   - id: perkGreatHeistClaimed
-    name: perkGreatHeistClaimed
+    name: 大劫掠 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1698,7 +1698,7 @@ skills:
       - book_id: bookGreatHeistClaimed
         effect: 对土地征用权造成的伤害增加20%。
   - id: perkGreatHeistAdrenalineFall
-    name: perkGreatHeistAdrenalineFall
+    name: 大劫掠 第5卷
     category: strength
     max_level: 1
     levels: []
@@ -1707,7 +1707,7 @@ skills:
       - book_id: bookGreatHeistAdrenalineFall
         effect: 从很高的高处跳下！
   - id: perkGreatHeistSprintSneak
-    name: perkGreatHeistSprintSneak
+    name: 大劫掠 第6卷
     category: strength
     max_level: 1
     levels: []
@@ -1716,7 +1716,7 @@ skills:
       - book_id: bookGreatHeistSprintSneak
         effect: 潜行冲刺时不消耗体力。
   - id: perkGreatHeistMotionDetection
-    name: perkGreatHeistMotionDetection
+    name: 大劫掠 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1737,7 +1737,7 @@ skills:
         cost: 0
     description: 搜刮时找到的撬锁工具增加20%，撬锁速度加快20%，撬锁工具损坏的几率降低10%。
   - id: perkWasteTreasuresHoney
-    name: perkWasteTreasuresHoney
+    name: 荒野宝藏 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1749,7 +1749,7 @@ skills:
       - book_id: bookWasteTreasuresHoney
         effect: 小幅提高从树上收集蜂蜜的几率。
   - id: perkWasteTreasuresCoffins
-    name: perkWasteTreasuresCoffins
+    name: 荒野宝藏 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1761,7 +1761,7 @@ skills:
       - book_id: bookWasteTreasuresCoffins
         effect: 搜寻棺材，找到骨头、珠宝和珍贵宝石吧。
   - id: perkWasteTreasuresAcid
-    name: perkWasteTreasuresAcid
+    name: 荒野宝藏 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1773,7 +1773,7 @@ skills:
       - book_id: bookWasteTreasuresAcid
         effect: 提高从汽车和医疗设备获取酸的几率。
   - id: perkWasteTreasuresWater
-    name: perkWasteTreasuresWater
+    name: 荒野宝藏 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1785,7 +1785,7 @@ skills:
       - book_id: bookWasteTreasuresWater
         effect: 净化纯净的矿泉水，荒野中最美味的水。
   - id: perkWasteTreasuresDoors
-    name: perkWasteTreasuresDoors
+    name: 荒野宝藏 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1797,7 +1797,7 @@ skills:
       - book_id: bookWasteTreasuresDoors
         effect: 从大多数门上面收集黄铜。
   - id: perkWasteTreasuresCloth
-    name: perkWasteTreasuresCloth
+    name: 荒野宝藏 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1809,7 +1809,7 @@ skills:
       - book_id: bookWasteTreasuresCloth
         effect: 学会把植物纤维织成布。
   - id: perkWasteTreasuresSinks
-    name: perkWasteTreasuresSinks
+    name: 荒野宝藏 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1821,7 +1821,7 @@ skills:
       - book_id: bookWasteTreasuresSinks
         effect: 从水槽中收集更多的铅和黄铜。
   - id: perkWasteTreasuresComplete
-    name: perkWasteTreasuresComplete
+    name: 荒野宝藏 精通
     category: strength
     max_level: 1
     levels:
@@ -1830,7 +1830,7 @@ skills:
         cost: 0
     description: 找到更多传奇零件。
   - id: perkHuntingJournalBears
-    name: perkHuntingJournalBears
+    name: 猎人日记 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1842,7 +1842,7 @@ skills:
       - book_id: bookHuntingJournalBears
         effect: 对熊造成的伤害增加10%。
   - id: perkHuntingJournalWolves
-    name: perkHuntingJournalWolves
+    name: 猎人日记 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1854,7 +1854,7 @@ skills:
       - book_id: bookHuntingJournalWolves
         effect: 对灰狼造成的伤害增加10%。
   - id: perkHuntingJournalCoyotes
-    name: perkHuntingJournalCoyotes
+    name: 猎人日记 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1866,7 +1866,7 @@ skills:
       - book_id: bookHuntingJournalCoyotes
         effect: 对丛林狼造成的伤害增加10%。
   - id: perkHuntingJournalMountainLions
-    name: perkHuntingJournalMountainLions
+    name: 猎人日记 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1878,7 +1878,7 @@ skills:
       - book_id: bookHuntingJournalMountainLions
         effect: 对美洲狮造成的伤害增加10%。
   - id: perkHuntingJournalDeer
-    name: perkHuntingJournalDeer
+    name: 猎人日记 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1890,7 +1890,7 @@ skills:
       - book_id: bookHuntingJournalDeer
         effect: 对鹿造成的伤害增加10%。
   - id: perkHuntingJournalVultures
-    name: perkHuntingJournalVultures
+    name: 猎人日记 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1902,7 +1902,7 @@ skills:
       - book_id: bookHuntingJournalVultures
         effect: 对秃鹫造成的伤害增加10%。
   - id: perkHuntingJournalSelfDefense
-    name: perkHuntingJournalSelfDefense
+    name: 猎人日记 第7卷
     category: strength
     max_level: 1
     levels:
@@ -1914,7 +1914,7 @@ skills:
       - book_id: bookHuntingJournalSelfDefense
         effect: 对人形生物造成的伤害增加10%。
   - id: perkHuntingJournalComplete
-    name: perkHuntingJournalComplete
+    name: 猎人日记 精通
     category: strength
     max_level: 1
     levels:
@@ -1923,7 +1923,7 @@ skills:
         cost: 0
     description: 解刨动物时获得更多骨头、肉类与皮革。
   - id: perkArtOfMiningLuckyStrike
-    name: perkArtOfMiningLuckyStrike
+    name: 采矿的艺术 第1卷
     category: strength
     max_level: 1
     levels:
@@ -1935,7 +1935,7 @@ skills:
       - book_id: bookArtOfMiningLuckyStrike
         effect: 小幅增加从矿石中开采出稀有宝石的几率。
   - id: perkArtOfMiningDiamondTools
-    name: perkArtOfMiningDiamondTools
+    name: 采矿的艺术 第2卷
     category: strength
     max_level: 1
     levels:
@@ -1947,7 +1947,7 @@ skills:
       - book_id: bookArtOfMiningDiamondTools
         effect: 你能为工具制作尖部带有钻石的刀刃模组，该模组能大幅提升耐久度。
   - id: perkArtOfMiningCoffee
-    name: perkArtOfMiningCoffee
+    name: 采矿的艺术 第3卷
     category: strength
     max_level: 1
     levels:
@@ -1959,7 +1959,7 @@ skills:
       - book_id: bookArtOfMiningCoffee
         effect: 咖啡起效时矿石采集量增加10%。
   - id: perkArtOfMiningBlackStrap
-    name: perkArtOfMiningBlackStrap
+    name: 采矿的艺术 第4卷
     category: strength
     max_level: 1
     levels:
@@ -1971,7 +1971,7 @@ skills:
       - book_id: bookArtOfMiningBlackStrap
         effect: 能够制作黑带咖啡，一种非常浓重的咖啡。
   - id: perkArtOfMiningPallets
-    name: perkArtOfMiningPallets
+    name: 采矿的艺术 第5卷
     category: strength
     max_level: 1
     levels:
@@ -1983,7 +1983,7 @@ skills:
       - book_id: bookArtOfMiningPallets
         effect: 你可以将矿石等基础资源堆叠起来。
   - id: perkArtOfMiningAvalanche
-    name: perkArtOfMiningAvalanche
+    name: 采矿的艺术 第6卷
     category: strength
     max_level: 1
     levels:
@@ -1995,7 +1995,7 @@ skills:
       - book_id: bookArtOfMiningAvalanche
         effect: 垮塌的矿井造成的伤害减少50%。
   - id: perkArtOfMiningDamage
-    name: perkArtOfMiningDamage
+    name: 采矿的艺术 第7卷
     category: strength
     max_level: 1
     levels:
@@ -2007,7 +2007,7 @@ skills:
       - book_id: bookArtOfMiningDamage
         effect: 采矿工具的物块伤害增加10%。
   - id: perkArtOfMiningComplete
-    name: perkArtOfMiningComplete
+    name: 采矿的艺术 精通
     category: strength
     max_level: 1
     levels:
@@ -2016,7 +2016,7 @@ skills:
         cost: 0
     description: 矿石采集量增加20%。
   - id: perkRangersArrowRecovery
-    name: perkRangersArrowRecovery
+    name: 游侠箭术指南 第1卷
     category: strength
     max_level: 1
     levels:
@@ -2028,7 +2028,7 @@ skills:
       - book_id: bookRangersArrowRecovery
         effect: 可以多回收20%的箭。
   - id: perkRangersExplodingBolts
-    name: perkRangersExplodingBolts
+    name: 游侠箭术指南 第2卷
     category: strength
     max_level: 1
     levels:
@@ -2040,7 +2040,7 @@ skills:
       - book_id: bookRangersExplodingBolts
         effect: 制作爆炸箭和爆炸弩箭。
   - id: perkRangersCripplingShot
-    name: perkRangersCripplingShot
+    name: 游侠箭术指南 第3卷
     category: strength
     max_level: 1
     levels: []
@@ -2049,7 +2049,7 @@ skills:
       - book_id: bookRangersCripplingShot
         effect: 腿部射击会减缓你的对手。
   - id: perkRangersAPAmmo
-    name: perkRangersAPAmmo
+    name: 游侠箭术指南 第4卷
     category: strength
     max_level: 1
     levels:
@@ -2061,7 +2061,7 @@ skills:
       - book_id: bookRangersAPAmmo
         effect: 制作穿甲钢箭。
   - id: perkRangersFlamingArrows
-    name: perkRangersFlamingArrows
+    name: 游侠箭术指南 第5卷
     category: strength
     max_level: 1
     levels:
@@ -2073,7 +2073,7 @@ skills:
       - book_id: bookRangersFlamingArrows
         effect: 制作燃烧箭和燃烧驽箭。
   - id: perkRangersForestGuide
-    name: perkRangersForestGuide
+    name: 游侠箭术指南 第6卷
     category: strength
     max_level: 1
     levels:
@@ -2085,7 +2085,7 @@ skills:
       - book_id: bookRangersForestGuide
         effect: 弓箭的损坏速度减慢20%。
   - id: perkRangersKnockdown
-    name: perkRangersKnockdown
+    name: 游侠箭术指南 第7卷
     category: strength
     max_level: 1
     levels: []
@@ -2103,7 +2103,7 @@ skills:
         cost: 0
     description: 大量制作箭与弩箭。
   - id: perkPistolPeteTakeAim
-    name: perkPistolPeteTakeAim
+    name: 手枪皮特 第1卷
     category: strength
     max_level: 1
     levels:
@@ -2115,7 +2115,7 @@ skills:
       - book_id: bookPistolPeteTakeAim
         effect: 9毫米子弹武器的射程增加20%。
   - id: perkPistolPeteSwissKnees
-    name: perkPistolPeteSwissKnees
+    name: 手枪皮特 第2卷
     category: strength
     max_level: 1
     levels: []
@@ -2124,7 +2124,7 @@ skills:
       - book_id: bookPistolPeteSwissKnees
         effect: 每一次连续腿部射击都会增加致残几率。
   - id: perkPistolPeteSteadyHand
-    name: perkPistolPeteSteadyHand
+    name: 手枪皮特 第3卷
     category: strength
     max_level: 1
     levels:
@@ -2136,7 +2136,7 @@ skills:
       - book_id: bookPistolPeteSteadyHand
         effect: 使用9毫米子弹武器快速开火时精度更高。
   - id: perkPistolPeteMaintenance
-    name: perkPistolPeteMaintenance
+    name: 手枪皮特 第4卷
     category: strength
     max_level: 1
     levels:
@@ -2148,7 +2148,7 @@ skills:
       - book_id: bookPistolPeteMaintenance
         effect: 手枪与冲锋枪损坏速度减慢20%。
   - id: perkPistolPeteHPAmmo
-    name: perkPistolPeteHPAmmo
+    name: 手枪皮特 第5卷
     category: strength
     max_level: 1
     levels:
@@ -2160,7 +2160,7 @@ skills:
       - book_id: bookPistolPeteHPAmmo
         effect: 你可以制作9毫米空心弹。
   - id: perkPistolPeteAPAmmo
-    name: perkPistolPeteAPAmmo
+    name: 手枪皮特 第6卷
     category: strength
     max_level: 1
     levels:
@@ -2172,7 +2172,7 @@ skills:
       - book_id: bookPistolPeteAPAmmo
         effect: 制作9毫米空心弹。
   - id: perkPistolPeteDamage
-    name: perkPistolPeteDamage
+    name: 手枪皮特 第7卷
     category: strength
     max_level: 1
     levels:
@@ -2193,7 +2193,7 @@ skills:
         cost: 0
     description: 近距离开火忽略护甲并造成流血效果。可批量制作 9 毫米弹药。
   - id: perkShotgunMessiahDamage
-    name: perkShotgunMessiahDamage
+    name: 霰弹枪救星 第1卷
     category: strength
     max_level: 1
     levels:
@@ -2205,7 +2205,7 @@ skills:
       - book_id: bookShotgunMessiahDamage
         effect: 霰弹枪造成的伤害增加10%。
   - id: perkShotgunMessiahBreachingSlugs
-    name: perkShotgunMessiahBreachingSlugs
+    name: 霰弹枪救星 第2卷
     category: strength
     max_level: 1
     levels:
@@ -2217,7 +2217,7 @@ skills:
       - book_id: bookShotgunMessiahBreachingSlugs
         effect: 制作用于破坏安保的破坏弹药。
   - id: perkShotgunMessiahLimbShot
-    name: perkShotgunMessiahLimbShot
+    name: 霰弹枪救星 第3卷
     category: strength
     max_level: 1
     levels:
@@ -2229,7 +2229,7 @@ skills:
       - book_id: bookShotgunMessiahLimbShot
         effect: 3米之内的目标会有更高的肢解几率。
   - id: perkShotgunMessiahSlugs
-    name: perkShotgunMessiahSlugs
+    name: 霰弹枪救星 第4卷
     category: strength
     max_level: 1
     levels:
@@ -2241,7 +2241,7 @@ skills:
       - book_id: bookShotgunMessiahSlugs
         effect: 你可以制作霰弹枪子弹。
   - id: perkShotgunMessiahMaintenance
-    name: perkShotgunMessiahMaintenance
+    name: 霰弹枪救星 第5卷
     category: strength
     max_level: 1
     levels:
@@ -2253,7 +2253,7 @@ skills:
       - book_id: bookShotgunMessiahMaintenance
         effect: 霰弹枪的损坏速度减慢20%。
   - id: perkShotgunMessiahMagazine
-    name: perkShotgunMessiahMagazine
+    name: 霰弹枪救星 第6卷
     category: strength
     max_level: 1
     levels:
@@ -2265,7 +2265,7 @@ skills:
       - book_id: bookShotgunMessiahMagazine
         effect: 你可以制作霰弹枪管扩充模组。
   - id: perkShotgunMessiahPartyStarter
-    name: perkShotgunMessiahPartyStarter
+    name: 霰弹枪救星 第7卷
     category: strength
     max_level: 1
     levels:
@@ -2286,7 +2286,7 @@ skills:
         cost: 0
     description: 你可以一击破坏大多数木头物块。批量制作所有霰弹枪弹药。
   - id: perkSledgeSagaKnockdown
-    name: perkSledgeSagaKnockdown
+    name: 《大锤传奇》卷 1
     category: strength
     max_level: 1
     levels: []
@@ -2295,7 +2295,7 @@ skills:
       - book_id: bookSledgeSagaKnockdown
         effect: 击倒几率增加 10%。
   - id: perkSledgeSagaDegradation
-    name: perkSledgeSagaDegradation
+    name: 《大锤传奇》卷 2
     category: strength
     max_level: 1
     levels:
@@ -2307,7 +2307,7 @@ skills:
       - book_id: bookSledgeSagaDegradation
         effect: 大锤损坏速度降低 20%。
   - id: perkSledgeSagaCrippledMorale
-    name: perkSledgeSagaCrippledMorale
+    name: 《大锤传奇》卷 3
     category: strength
     max_level: 1
     levels: []
@@ -2316,7 +2316,7 @@ skills:
       - book_id: bookSledgeSagaCrippledMorale
         effect: 强力攻击造成击杀会使附近敌人虚弱并减速 10 秒。
   - id: perkSledgeSagaPulverizingFinishers
-    name: perkSledgeSagaPulverizingFinishers
+    name: 《大锤传奇》卷 4
     category: strength
     max_level: 1
     levels: []
@@ -2325,7 +2325,7 @@ skills:
       - book_id: bookSledgeSagaPulverizingFinishers
         effect: 对生命值低于 30% 的敌人额外造成 25% 伤害。
   - id: perkSledgeSagaSavageReaper
-    name: perkSledgeSagaSavageReaper
+    name: 《大锤传奇》卷 5
     category: strength
     max_level: 1
     levels:
@@ -2337,7 +2337,7 @@ skills:
       - book_id: bookSledgeSagaSavageReaper
         effect: 大锤爆头击杀获得双倍经验。
   - id: perkSledgeSagaConcussiveStrike
-    name: perkSledgeSagaConcussiveStrike
+    name: 《大锤传奇》卷 6
     category: strength
     max_level: 1
     levels: []
@@ -2346,7 +2346,7 @@ skills:
       - book_id: bookSledgeSagaConcussiveStrike
         effect: 击晕几率增加 10%。
   - id: perkSledgeSagaArmorCrusher
-    name: perkSledgeSagaArmorCrusher
+    name: 《大锤传奇》卷 7
     category: strength
     max_level: 1
     levels:
@@ -2358,13 +2358,13 @@ skills:
       - book_id: bookSledgeSagaArmorCrusher
         effect: 大锤强力攻击无视 50% 护甲。
   - id: perkSledgeSagaComplete
-    name: perkSledgeSagaComplete
+    name: 《大锤传奇》卷 1 精通
     category: strength
     max_level: 1
     levels: []
     description: 每次强力攻击击杀恢复体力。
   - id: perkSniperDamage
-    name: perkSniperDamage
+    name: 狙击手 第1卷
     category: strength
     max_level: 1
     levels: []
@@ -2373,7 +2373,7 @@ skills:
       - book_id: bookSniperDamage
         effect: 使用瞄准镜时伤害增加10%。
   - id: perkSniperCripplingShot
-    name: perkSniperCripplingShot
+    name: 狙击手 第2卷
     category: strength
     max_level: 1
     levels:
@@ -2385,7 +2385,7 @@ skills:
       - book_id: bookSniperCripplingShot
         effect: 腿部射击可以削弱除最强敌人以外的所有敌人，并有机会将其肢解。
   - id: perkSniperHeadShot
-    name: perkSniperHeadShot
+    name: 狙击手 第3卷
     category: strength
     max_level: 1
     levels:
@@ -2397,7 +2397,7 @@ skills:
       - book_id: bookSniperHeadShot
         effect: 击中头部有几率眩晕敌人，有很大几率肢解敌人。
   - id: perkSniperReload
-    name: perkSniperReload
+    name: 狙击手 第4卷
     category: strength
     max_level: 1
     levels:
@@ -2409,7 +2409,7 @@ skills:
       - book_id: bookSniperReload
         effect: 步枪装填速度加快10%。
   - id: perkSniperControlledBreathing
-    name: perkSniperControlledBreathing
+    name: 狙击手 第5卷
     category: strength
     max_level: 1
     levels: []
@@ -2418,7 +2418,7 @@ skills:
       - book_id: bookSniperControlledBreathing
         effect: 缩放消耗的体力更少。
   - id: perkSniperAPAmmo
-    name: perkSniperAPAmmo
+    name: 狙击手 第6卷
     category: strength
     max_level: 1
     levels:
@@ -2430,7 +2430,7 @@ skills:
       - book_id: bookSniperAPAmmo
         effect: 制作7.62毫米穿甲弹。
   - id: perkSniperHPAmmo
-    name: perkSniperHPAmmo
+    name: 狙击手 第7卷
     category: strength
     max_level: 1
     levels:
@@ -2451,7 +2451,7 @@ skills:
         cost: 0
     description: 批量制作所有 7.62 毫米弹药。
   - id: perkAutoWeaponsDamage
-    name: perkAutoWeaponsDamage
+    name: 自动武器指导手册 第1卷
     category: strength
     max_level: 1
     levels:
@@ -2463,7 +2463,7 @@ skills:
       - book_id: bookAutoWeaponsDamage
         effect: 自动武器的伤害增加10%。
   - id: perkAutoWeaponsUncontrolledBurst
-    name: perkAutoWeaponsUncontrolledBurst
+    name: 自动武器指导手册 第2卷
     category: strength
     max_level: 1
     levels:
@@ -2475,7 +2475,7 @@ skills:
       - book_id: bookAutoWeaponsUncontrolledBurst
         effect: 全自动模式下，每次命中都会增加1%伤害。
   - id: perkAutoWeaponsMaintenance
-    name: perkAutoWeaponsMaintenance
+    name: 自动武器指导手册 第3卷
     category: strength
     max_level: 1
     levels:
@@ -2487,7 +2487,7 @@ skills:
       - book_id: bookAutoWeaponsMaintenance
         effect: 自动武器损坏速度减慢20%。
   - id: perkAutoWeaponsDrumMag
-    name: perkAutoWeaponsDrumMag
+    name: 自动武器指导手册 第4卷
     category: strength
     max_level: 1
     levels:
@@ -2499,7 +2499,7 @@ skills:
       - book_id: bookAutoWeaponsDrumMag
         effect: 你可以为自动武器制作弹鼓模组。
   - id: perkAutoWeaponsRecoil
-    name: perkAutoWeaponsRecoil
+    name: 自动武器指导手册 第5卷
     category: strength
     max_level: 1
     levels:
@@ -2511,7 +2511,7 @@ skills:
       - book_id: bookAutoWeaponsRecoil
         effect: 全自动开火时，每开一枪都会更加精准。
   - id: perkAutoWeaponsRagdoll
-    name: perkAutoWeaponsRagdoll
+    name: 自动武器指导手册 第6卷
     category: strength
     max_level: 1
     levels: []
@@ -2520,7 +2520,7 @@ skills:
       - book_id: bookAutoWeaponsRagdoll
         effect: 全自动模式下，每次命中都能增加致残敌人的几率。
   - id: perkAutoWeaponsMachineGuns
-    name: perkAutoWeaponsMachineGuns
+    name: 自动武器指导手册 第7卷
     category: strength
     max_level: 1
     levels: []
@@ -2529,13 +2529,13 @@ skills:
       - book_id: bookAutoWeaponsMachineGuns
         effect: 腰射精确度大幅提高。
   - id: perkAutoWeaponsComplete
-    name: perkAutoWeaponsComplete
+    name: 自动武器指导手册 精通
     category: strength
     max_level: 1
     levels: []
     description: 每个击杀都能让你在20秒内奔跑速度加快20%。
   - id: perkUrbanCombatLanding
-    name: perkUrbanCombatLanding
+    name: 城市作战 第1卷
     category: strength
     max_level: 1
     levels:
@@ -2547,7 +2547,7 @@ skills:
       - book_id: bookUrbanCombatLanding
         effect: 制作潜行靴模组。
   - id: perkUrbanCombatCigar
-    name: perkUrbanCombatCigar
+    name: 城市作战 第2卷
     category: strength
     max_level: 1
     levels:
@@ -2559,7 +2559,7 @@ skills:
       - book_id: bookUrbanCombatCigar
         effect: 制作雪茄，看起来像性感霸王龙一样酷。
   - id: perkUrbanCombatSneaking
-    name: perkUrbanCombatSneaking
+    name: 城市作战 第3卷
     category: strength
     max_level: 1
     levels:
@@ -2571,7 +2571,7 @@ skills:
       - book_id: bookUrbanCombatSneaking
         effect: 踩在垃圾上潜行不会发出声音。
   - id: perkUrbanCombatJumping
-    name: perkUrbanCombatJumping
+    name: 城市作战 第4卷
     category: strength
     max_level: 1
     levels: []
@@ -2580,7 +2580,7 @@ skills:
       - book_id: bookUrbanCombatJumping
         effect: 潜行落地的声音更小，潜行跳跃的高度不会降低。
   - id: perkUrbanCombatLandMines
-    name: perkUrbanCombatLandMines
+    name: 城市作战 第5卷
     category: strength
     max_level: 1
     levels:
@@ -2592,7 +2592,7 @@ skills:
       - book_id: bookUrbanCombatLandMines
         effect: 地雷触发延迟增加 2 秒。
   - id: perkUrbanCombatAdrenalineRush
-    name: perkUrbanCombatAdrenalineRush
+    name: 城市作战 第6卷
     category: strength
     max_level: 1
     levels: []
@@ -2601,7 +2601,7 @@ skills:
       - book_id: bookUrbanCombatAdrenalineRush
         effect: 战斗中，护甲无法使你减速。
   - id: perkUrbanCombatRoomClearing
-    name: perkUrbanCombatRoomClearing
+    name: 城市作战 第7卷
     category: strength
     max_level: 1
     levels:
@@ -2613,13 +2613,13 @@ skills:
       - book_id: bookUrbanCombatRoomClearing
         effect: 受到的伤害减少5%，在室内造成的伤害增加10%。
   - id: perkUrbanCombatComplete
-    name: perkUrbanCombatComplete
+    name: 城市作战 精通
     category: strength
     max_level: 1
     levels: []
     description: 消音器不再有伤害惩罚。
   - id: perkTechJunkie1Damage
-    name: perkTechJunkie1Damage
+    name: 科技迷 第 1 卷
     category: strength
     max_level: 1
     levels:
@@ -2631,7 +2631,7 @@ skills:
       - book_id: bookTechJunkie1Damage
         effect: 机器人武器的伤害增加 10%。
   - id: perkTechJunkie2Maintenance
-    name: perkTechJunkie2Maintenance
+    name: 科技迷 第 2 卷
     category: strength
     max_level: 1
     levels:
@@ -2643,7 +2643,7 @@ skills:
       - book_id: bookTechJunkie2Maintenance
         effect: 机器人武器和电击棒损坏速度减慢 20%。
   - id: perkTechJunkie3APAmmo
-    name: perkTechJunkie3APAmmo
+    name: 科技迷 第 3 卷
     category: strength
     max_level: 1
     levels:
@@ -2655,7 +2655,7 @@ skills:
       - book_id: bookTechJunkie3APAmmo
         effect: 制作机器人炮塔穿甲弹药。
   - id: perkTechJunkie4Shells
-    name: perkTechJunkie4Shells
+    name: 科技迷 第 4 卷
     category: strength
     max_level: 1
     levels:
@@ -2667,7 +2667,7 @@ skills:
       - book_id: bookTechJunkie4Shells
         effect: 制作机器人炮塔霰弹。
   - id: perkTechJunkie5Repulsor
-    name: perkTechJunkie5Repulsor
+    name: 科技迷 第 5 卷
     category: strength
     max_level: 1
     levels:
@@ -2679,7 +2679,7 @@ skills:
       - book_id: bookTechJunkie5Repulsor
         effect: 制作眩晕冲击波模组。
   - id: perkTechJunkie6BatonCharge
-    name: perkTechJunkie6BatonCharge
+    name: 科技迷 第 6 卷
     category: strength
     max_level: 1
     levels: []
@@ -2688,7 +2688,7 @@ skills:
       - book_id: bookTechJunkie6BatonCharge
         effect: 电击棒充电中。
   - id: perkTechJunkie7Hydraulics
-    name: perkTechJunkie7Hydraulics
+    name: 科技迷 第 7 卷
     category: strength
     max_level: 1
     levels:
@@ -2700,7 +2700,7 @@ skills:
       - book_id: bookTechJunkie7Hydraulics
         effect: 提高机器人武器的射击速度。
   - id: perkTechJunkie8Complete
-    name: perkTechJunkie8Complete
+    name: 科技迷 精通
     category: strength
     max_level: 1
     levels:
@@ -2709,7 +2709,7 @@ skills:
         cost: 0
     description: 批量制作机器人炮塔弹药。
   - id: perkBarBrawling1BasicMoves
-    name: perkBarBrawling1BasicMoves
+    name: 酒吧斗殴 第 1 卷
     category: strength
     max_level: 1
     levels:
@@ -2721,7 +2721,7 @@ skills:
       - book_id: bookBarBrawling1BasicMoves
         effect: 用拳头和指节套武器增加 10% 的伤害。
   - id: perkBarBrawling2DropABomb
-    name: perkBarBrawling2DropABomb
+    name: 酒吧斗殴 第 2 卷
     category: strength
     max_level: 1
     levels: []
@@ -2730,7 +2730,7 @@ skills:
       - book_id: bookBarBrawling2DropABomb
         effect: 冲刺强力攻击可以击倒你的对手。
   - id: perkBarBrawling3KillerInstinct
-    name: perkBarBrawling3KillerInstinct
+    name: 酒吧斗殴 第 3 卷
     category: strength
     max_level: 1
     levels: []
@@ -2739,7 +2739,7 @@ skills:
       - book_id: bookBarBrawling3KillerInstinct
         effect: 每次击杀获得 5% 的伤害，最高 15%。
   - id: perkBarBrawling4FinishingMoves
-    name: perkBarBrawling4FinishingMoves
+    name: 酒吧斗殴 第 4 卷
     category: strength
     max_level: 1
     levels:
@@ -2751,7 +2751,7 @@ skills:
       - book_id: bookBarBrawling4FinishingMoves
         effect: 对被击倒并击晕的对手造成额外伤害。
   - id: perkBarBrawling5AdrenalineHealing
-    name: perkBarBrawling5AdrenalineHealing
+    name: 酒吧斗殴 第 5 卷
     category: strength
     max_level: 1
     levels: []
@@ -2760,7 +2760,7 @@ skills:
       - book_id: bookBarBrawling5AdrenalineHealing
         effect: 在战斗中每次出拳都会恢复生命值。
   - id: perkBarBrawling6RageMode
-    name: perkBarBrawling6RageMode
+    name: 酒吧斗殴 第 6 卷
     category: strength
     max_level: 1
     levels: []
@@ -2769,7 +2769,7 @@ skills:
       - book_id: bookBarBrawling6RageMode
         effect: 被击中后，攻击和移动速度加快。
   - id: perkBarBrawling7BoozedUp
-    name: perkBarBrawling7BoozedUp
+    name: 酒吧斗殴 第 7 卷
     category: strength
     max_level: 1
     levels: []
@@ -2778,13 +2778,13 @@ skills:
       - book_id: bookBarBrawling7BoozedUp
         effect: 喝啤酒不会再让你眼花。
   - id: perkBarBrawling8Complete
-    name: perkBarBrawling8Complete
+    name: 酒吧斗殴 精通
     category: strength
     max_level: 1
     levels: []
     description: 第 7 个诅咒。拳头和指节套武器在第 7 次攻击时造成 300% 伤害。
   - id: perkSpearHunter1Damage
-    name: perkSpearHunter1Damage
+    name: 掷矛猎人 第 1 卷
     category: strength
     max_level: 1
     levels:
@@ -2796,7 +2796,7 @@ skills:
       - book_id: bookSpearHunter1Damage
         effect: 你造成的伤害增加 10%。
   - id: perkSpearHunter2Maintenance
-    name: perkSpearHunter2Maintenance
+    name: 掷矛猎人 第 2 卷
     category: strength
     max_level: 1
     levels:
@@ -2808,7 +2808,7 @@ skills:
       - book_id: bookSpearHunter2Maintenance
         effect: 长矛的损坏速度减慢 20%。
   - id: perkSpearHunter3Bleed
-    name: perkSpearHunter3Bleed
+    name: 掷矛猎人 第 3 卷
     category: strength
     max_level: 1
     levels: []
@@ -2817,7 +2817,7 @@ skills:
       - book_id: bookSpearHunter3Bleed
         effect: 长矛有25%几率造成流血伤害。
   - id: perkSpearHunter4KillMove
-    name: perkSpearHunter4KillMove
+    name: 掷矛猎人 第 4 卷
     category: strength
     max_level: 1
     levels:
@@ -2829,7 +2829,7 @@ skills:
       - book_id: bookSpearHunter4KillMove
         effect: 强力攻击对被击倒的目标造成更多伤害。
   - id: perkSpearHunter5RapidStrike
-    name: perkSpearHunter5RapidStrike
+    name: 掷矛猎人 第 5 卷
     category: strength
     max_level: 1
     levels:
@@ -2841,7 +2841,7 @@ skills:
       - book_id: bookSpearHunter5RapidStrike
         effect: 攻击速度增加 10%。
   - id: perkSpearHunter6PenetratingShaft
-    name: perkSpearHunter6PenetratingShaft
+    name: 掷矛猎人 第 6 卷
     category: strength
     max_level: 1
     levels: []
@@ -2850,7 +2850,7 @@ skills:
       - book_id: bookSpearHunter6PenetratingShaft
         effect: 穿透多个目标。
   - id: perkSpearHunter7QuickStrike
-    name: perkSpearHunter7QuickStrike
+    name: 掷矛猎人 第 7 卷
     category: strength
     max_level: 1
     levels: []
@@ -2859,7 +2859,7 @@ skills:
       - book_id: bookSpearHunter7QuickStrike
         effect: 连续快速命中造成的伤害更大。
   - id: perkSpearHunter8Complete
-    name: perkSpearHunter8Complete
+    name: 掷矛猎人 精通
     category: strength
     max_level: 1
     levels: []
