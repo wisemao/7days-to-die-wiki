@@ -280,6 +280,30 @@ function fmtVal(v) {
     </div>
   )}
 
+  {(() => {
+    const related = data.items
+      .filter(i => i.category === item.category && i.id !== item.id)
+      .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'zh'))
+      .slice(0, 12);
+    if (related.length === 0) return null;
+    return (
+      <div>
+        <h2>同类物品</h2>
+        <div class="item-grid" style="margin:8px 0 16px;">
+          {related.map(i => {
+            const icon = itemIconUrl(i, base);
+            return (
+              <a href={`${base}/vanilla/items/${i._sanitizedId}/`} class="grid-item-link">
+                {icon && <img class="grid-icon" src={icon} alt="" loading="lazy" />}
+                <span class="grid-name">{i.name}</span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    );
+  })()}
+
   <style>
     /* ─── Stats Grid ─── */
     .stats-grid {

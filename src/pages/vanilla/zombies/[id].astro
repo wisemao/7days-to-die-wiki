@@ -31,6 +31,18 @@ function fmtExp(e) {
   if (s.startsWith('^')) return '?';
   return s;
 }
+// Biome name map + links
+const BIOME_NAMES: Record<string, string> = {
+  pine_forest: '松树林', burnt_forest: '烧焦森林', desert: '沙漠', snow: '雪地',
+  wasteland: '荒原', underwater: '水下',
+};
+function biomeChips(raw?: string) {
+  if (!raw) return null;
+  return raw.split(',').map(b => b.trim()).filter(Boolean).map(b => ({
+    id: b,
+    name: BIOME_NAMES[b] || b,
+  }));
+}
 ---
 
 <Layout title={zombie.name} description={`${zombie.name} - ${catLabel}僵尸`}>
@@ -86,7 +98,22 @@ function fmtExp(e) {
 
   {hasSpawn && (<>
     <h2>刷新</h2>
-    <p>生物群系: {zombie.spawn.biomes || '-'} | 时间: {zombie.spawn.time || '-'} | 区域: {zombie.spawn.groups || '-'}</p>
+    {(() => {
+      const chips = biomeChips(zombie.spawn.biomes);
+      return (
+        <p>
+          生物群系:
+          {chips && chips.length > 0 ? (
+            <span class="biome-chips">
+              {chips.map(c => (
+                <a href={`${base}/vanilla/biomes/${c.id}/`} class="biome-chip">{c.name}</a>
+              ))}
+            </span>
+          ) : (zombie.spawn.biomes || '-')}
+          {' '}| 时间: {zombie.spawn.time || '-'} | 区域: {zombie.spawn.groups || '-'}
+        </p>
+      );
+    })()}
   </>)}
 </Layout>
 
@@ -96,6 +123,27 @@ function fmtExp(e) {
     align-items: center;
     gap: 16px;
     margin-bottom: 8px;
+  }
+  .biome-chips {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .biome-chip {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    transition: all 0.15s;
+    text-decoration: none !important;
+  }
+  .biome-chip:hover {
+    border-color: var(--c-blood);
+    color: var(--c-blood);
   }
   .zombie-type-icon {
     width: 56px;
