@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx --yes pagefind --site dist",
+    "build": "astro build && npx --yes pagefind --site dist --exclude-selectors \"nav,footer,.breadcrumb\"",
     "preview": "astro preview",
     "import": "node scripts/import/import-all.js",
     "typecheck": "tsc --noEmit",
