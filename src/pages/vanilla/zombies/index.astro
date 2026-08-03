@@ -20,11 +20,11 @@ const order = ['humanoid', 'special', 'other'];
 const catList = order.filter(s => cats[s]).map(s => cats[s]);
 ---
 
-<Layout title="丧尸列表" description={`${zombies.length} 个丧尸与动物`}>
+<Layout title="生物图鉴" description={`${zombies.length} 个丧尸与动物`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a><span class="sep">/</span><span>丧尸列表</span>
+    <a href={base}>首页</a><span class="sep">/</span><span>生物图鉴</span>
   </nav>
-  <h1>丧尸列表</h1>
+  <h1>生物图鉴</h1>
   <p class="subtitle">共 {undead.length} 个丧尸 · {animals.length} 种动物</p>
 
   <section class="section-block">

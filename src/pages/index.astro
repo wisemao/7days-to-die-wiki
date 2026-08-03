@@ -29,7 +29,7 @@ const HERO_ICONS = {
   items: categoryIconUrl('ranged_weapon', base),
   recipes: `${base}/images/items/forge.png`,
   skills: categoryIconUrl('book', base),
-  zombies: `${base}/images/items/armorZombieMaskHelmet.png`,
+  zombies: `${base}/images/items/meleeHandAnimalWolf.png`,
 };
 
 // Hero showcase strip: signature items across categories
@@ -66,11 +66,11 @@ for (const b of bookItems) {
 const seriesCount = seriesSet.size;
 ---
 
-<Layout title="七日杀 Wiki" description="7 Days to Die 中文维基 — 快速查询物品、配方、技能、丧尸信息">
+<Layout title="七日杀 Wiki" description="7 Days to Die 中文维基 — 快速查询物品、配方、技能、生物信息">
   <!-- Hero -->
   <div class="hero">
     <h1 class="hero-title">七日杀 <span class="hero-highlight">Wiki</span></h1>
-    <p class="hero-sub">7 Days to Die 中文资料库 · 快速查阅物品、配方、技能与丧尸数据</p>
+    <p class="hero-sub">7 Days to Die 中文资料库 · 快速查阅物品、配方、技能与生物数据</p>
     <div class="hero-showcase">
       {SHOWCASE.map(src => <img class="showcase-icon" src={src} alt="" loading="lazy" />)}
     </div>
@@ -89,7 +89,7 @@ const seriesCount = seriesSet.size;
       </div>
       <div class="hero-stat">
         <span class="hero-stat-num">{zombies.length}</span>
-        <span class="hero-stat-lbl">丧尸</span>
+        <span class="hero-stat-lbl">生物</span>
       </div>
     </div>
   </div>
@@ -114,7 +114,7 @@ const seriesCount = seriesSet.size;
     <a href={`${base}/vanilla/zombies/`} class="card">
       {HERO_ICONS.zombies && <img class="card-icon" src={HERO_ICONS.zombies} alt="" loading="lazy" />}
       <span class="num">{zombies.length}</span>
-      <span class="lbl">丧尸 · 图鉴 · 掉落 · 弱点</span>
+      <span class="lbl">生物 · 丧尸 · 动物 · 弱点</span>
     </a>
     <a href={`${base}/vanilla/blocks/`} class="card">
       <img class="card-icon" src={`${base}/images/items/bladeTrap.png`} alt="" loading="lazy" />
@@ -164,7 +164,7 @@ const seriesCount = seriesSet.size;
 
   <h2>关于本站</h2>
   <div class="quick-start">
-    <p>所有数据来自 7 Days to Die 游戏源文件自动生成：{items.length} 物品（含 104 模组）、{recipes.length} 配方、{skills.length} 技能（100% 中文）、{zombies.length} 丧尸、{blocks.length} 防御方块、{biomes.length} 生物群系，附 1589 个游戏图标。使用顶部搜索框快速查找（Ctrl+K），或通过分类浏览。</p>
+    <p>所有数据来自 7 Days to Die 游戏源文件自动生成：{items.length} 物品（含 104 模组）、{recipes.length} 配方、{skills.length} 技能（100% 中文）、{zombies.length} 生物（丧尸+动物）、{blocks.length} 防御方块、{biomes.length} 生物群系，附 1589 个游戏图标。使用顶部搜索框快速查找（Ctrl+K），或通过分类浏览。</p>
     <div class="quick-links">
       <span class="quick-badge" style="--badge-clr: var(--c-blood);">🎯 按分类浏览</span>
       <span class="quick-badge" style="--badge-clr: var(--c-amber);">🔍 全文搜索</span>

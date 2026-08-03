@@ -260,6 +260,122 @@ function enhance(configDir) {
   if (recipeNamed > 0) writeYaml(recipesPath, recipesDoc);
   console.log(`  - 配方名补全: ${recipeNamed} 个`);
 
+  // ─── 11. Living animals + classification fixes (entityclasses.xml) ───
+  // Parse animal* entities (living animals were skipped by import: name must contain "zombie")
+  // Also fix zombieSkateboarder* (skater zombies) wrongly classified as animals
+  const entitiesPath = join(configDir, 'entityclasses.xml');
+  if (existsSync(entitiesPath)) {
+    const entXml = readFileSync(entitiesPath, 'utf-8');
+    const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
+    const existing = new Set((zombiesDoc.zombies || []).map(z => z.id));
+    const livingAnimals = [];
+    const entityRegex = /<entity_class\s+name="(animal[^"]+)"[^>]*>([\s\S]*?)<\/entity_class>/g;
+    let m;
+    // Index all entities for extends resolution
+    const allEntities = {};
+    let em;
+    const allRegex = /<entity_class\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/entity_class>/g;
+    while ((em = allRegex.exec(entXml)) !== null) allEntities[em[1]] = em[2];
+    const resolveProps = (name, depth = 0) => {
+      if (depth > 6 || !allEntities[name]) return {};
+      const own = {};
+      for (const p of allEntities[name].matchAll(/<property\s+name="([^"]+)"\s+value="([^"]*)"/g)) own[p[1]] = p[2];
+      // HealthMax via passive_effect (base_set)
+      const hm = /<passive_effect\s+name="HealthMax"[^>]*value="([^"]+)"/.exec(allEntities[name]);
+      if (hm) own.HealthMax = hm[1];
+      const parent = resolveProps(own.Extends, depth + 1);
+      return { ...parent, ...own };
+    };
+    while ((m = entityRegex.exec(entXml)) !== null) {
+      const [, name, content] = m;
+      if (name.includes('Template')) continue;      // templates
+      if (name.toLowerCase().includes('zombie')) continue; // already parsed (undead variants)
+      const props = resolveProps(name);
+      const hp = parseInt(props.HealthMax || '0');
+      const exp = parseFloat(props.ExperienceGain || '0');
+      const walk = parseFloat(props.MoveSpeed || '0');
+      const run = parseFloat(props.MoveSpeedAggro || props.MoveSpeedRun || '0');
+      const animal = {
+        id: name,
+        name: (locMap.get(name) && locMap.get(name).name) || name,
+        category: 'animal',
+        tier: 1,
+        hp: hp || 100,
+        speed: { walk: walk || 1, run: run || 2 },
+        damage: { melee: 10 },
+        experience: exp || 100,
+      };
+      if (existing.has(name)) {
+        // Already present: only refresh stats (handled below), don't re-add
+        livingAnimals.push(null); // placeholder to keep count logic simple
+        continue;
+      }
+      livingAnimals.push(animal);
+    }
+    // Update existing living animals with real stats (idempotent: merge, don't overwrite names)
+    let updated = 0;
+    const freshMap = new Map(livingAnimals.filter(Boolean).map(a => [a.id, a]));
+    for (const z of zombiesDoc.zombies || []) {
+      if (!z.id.startsWith('animal') || z.id.includes('Zombie')) continue;
+      const fresh = freshMap.get(z.id);
+      if (!fresh) continue;
+      if (fresh.hp !== 100) z.hp = fresh.hp;
+      if (fresh.experience !== 100) z.experience = fresh.experience;
+      if (fresh.speed.walk !== 1) z.speed.walk = fresh.speed.walk;
+      if (fresh.speed.run !== 2) z.speed.run = fresh.speed.run;
+      updated++;
+    }
+    // Fix skateboarder zombies classification (humanoid, not animal)
+    let fixed = 0;
+    for (const z of zombiesDoc.zombies || []) {
+      if (z.id.startsWith('zombieSkateboarder') && z.category === 'animal') {
+        z.category = 'humanoid';
+        fixed++;
+      }
+    }
+    if (livingAnimals.filter(Boolean).length > 0 || fixed > 0) {
+      zombiesDoc.zombies.push(...livingAnimals.filter(Boolean));
+      writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+    }
+    console.log(`  - 活体动物解析: ${livingAnimals.filter(Boolean).length} 个新增, 动物属性更新: ${updated} 个, 暴徒分类修正: ${fixed} 个`);
+  }
+
+  // ─── 12. Zombie melee damage from hand_item (items.xml DamageEntity) ───
+  // Zombie damage is defined on their hand items: <property class="Action0"><property name="DamageEntity" .../>
+  if (existsSync(itemsPath)) {
+    const itemsXml = readFileSync(itemsPath, 'utf-8');
+    // Index all meleeHand items + resolve extends chain (meleeHandZombieCop extends meleeHandMaster)
+    const handItems = {};
+    const itemRegex = /<item\s+name="(meleeHand[^"]+)"[^>]*>([\s\S]*?)<\/item>/g;
+    let im;
+    while ((im = itemRegex.exec(itemsXml)) !== null) handItems[im[1]] = im[2];
+    const resolveHand = (name, depth = 0) => {
+      if (depth > 6 || !handItems[name]) return {};
+      const own = {};
+      const de = /<property\s+name="DamageEntity"\s+value="([^"]+)"/.exec(handItems[name]);
+      const db = /<property\s+name="DamageBlock"\s+value="([^"]+)"/.exec(handItems[name]);
+      if (de) own.melee = parseFloat(de[1]);
+      if (db) own.block = parseFloat(db[1]);
+      const ext = /<property\s+name="Extends"\s+value="([^"]+)"/.exec(handItems[name]);
+      const parent = resolveHand(ext ? ext[1] : '', depth + 1);
+      return { ...parent, ...own };
+    };
+    const handDamage = new Map();
+    for (const name of Object.keys(handItems)) handDamage.set(name, resolveHand(name));
+    const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
+    let dmgFilled = 0;
+    for (const z of zombiesDoc.zombies || []) {
+      const d = z.hand_item ? handDamage.get(z.hand_item) : null;
+      if (!d || d.melee == null) continue;
+      if (!z.damage) z.damage = {};
+      z.damage.melee = d.melee;
+      if (d.block != null && z.damage.block == null) z.damage.block = d.block;
+      dmgFilled++;
+    }
+    if (dmgFilled > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+    console.log(`  - 丧尸近战伤害: ${dmgFilled} 个补全 (从手持物品 DamageEntity)`);
+  }
+
   console.log('✅ 数据增强完成');
 }
 const argIdx = process.argv.indexOf('--config-dir');

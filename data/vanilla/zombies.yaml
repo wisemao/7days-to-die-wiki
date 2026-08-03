@@ -9,6 +9,7 @@ zombies:
       run: 1.25
     damage:
       melee: 10
+      block: 8
     experience: ^xpNormal01
     hand_item: meleeHandZombie01
     loot:
@@ -37,7 +38,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 8
+      block: 7
     experience: ^xpSlim01
     hand_item: meleeHandZombieShort
   - id: zombieTemplateSlimFemale
@@ -73,7 +75,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -99,7 +102,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -128,7 +132,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -170,7 +175,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -196,7 +202,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -225,7 +232,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -267,7 +275,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -293,7 +302,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -322,7 +332,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -375,7 +386,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -401,7 +413,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -430,7 +443,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -459,7 +473,8 @@ zombies:
       walk: 0.3
       run: 1.35
     damage:
-      melee: 10
+      melee: 8
+      block: 7
     experience: ^xpSlim01
     hand_item: meleeHandZombieShort
     spawn:
@@ -473,7 +488,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -499,7 +515,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -528,7 +545,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -570,7 +588,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -596,7 +615,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -625,7 +645,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -667,7 +688,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -693,7 +715,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -722,7 +745,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -764,7 +788,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 16
+      block: 22
     experience: ^xpSlimFeral01
     hand_item: meleeHandZombieShortFeral
     loot: []
@@ -790,7 +815,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -819,7 +845,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpSlimInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -848,7 +875,8 @@ zombies:
       walk: 0.3
       run: 1.35
     damage:
-      melee: 10
+      melee: 12
+      block: 8
     experience: ^xpSlim03
     hand_item: meleeHandZombieBurning
     spawn:
@@ -862,7 +890,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 24
+      block: 24
     experience: ^xpSlimFeral03
     hand_item: meleeHandZombieBurningFeral
     loot: []
@@ -888,7 +917,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged02
     hand_item: meleeHandZombieBurningCharged
     loot:
@@ -917,7 +947,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpSlimInfernal01
     hand_item: meleeHandZombieBurningInfernal
     loot:
@@ -946,7 +977,8 @@ zombies:
       walk: 0.4
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrong01
     hand_item: meleeHandZombieRancher
     loot:
@@ -964,7 +996,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieRancherFeral
     loot:
@@ -997,7 +1030,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieRancherCharged
     loot:
@@ -1013,7 +1047,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieRancherInfernal
     loot:
@@ -1084,7 +1119,8 @@ zombies:
       walk: 0.55
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrongFeral00
     hand_item: meleeHandZombieChuck
     spawn:
@@ -1098,7 +1134,8 @@ zombies:
       walk: 0.6
       run: 1.4
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral03
     hand_item: meleeHandZombieChuckFeral
     loot: []
@@ -1126,7 +1163,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpStrongCharged02
     hand_item: meleeHandZombieChuckCharged
     loot:
@@ -1157,7 +1195,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal03
     hand_item: meleeHandZombieChuckInfernal
     loot:
@@ -1256,7 +1295,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpSlimFeral02
     hand_item: meleeHandZombie02Feral
     loot: []
@@ -1282,7 +1322,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged02
     hand_item: meleeHandZombieCharged
     loot:
@@ -1311,7 +1352,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpSlimInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1353,7 +1395,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1379,7 +1422,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1408,7 +1452,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1438,6 +1483,7 @@ zombies:
       run: 1.2
     damage:
       melee: 10
+      block: 8
     experience: ^xpNormal01
     hand_item: meleeHandZombieHazMat
     spawn:
@@ -1451,7 +1497,8 @@ zombies:
       walk: 0.5
       run: 1.3
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieHazMatFeral
     loot: []
@@ -1466,7 +1513,8 @@ zombies:
       walk: 0.5
       run: 1.3
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalRadiated01
     hand_item: meleeHandZombieHazMatFeral
   - id: zombieMaleHazmatCharged
@@ -1478,7 +1526,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1507,7 +1556,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1549,7 +1599,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1562,7 +1613,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalRadiated01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1575,7 +1627,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1604,7 +1657,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1644,7 +1698,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1657,7 +1712,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalRadiated01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1670,7 +1726,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1699,7 +1756,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1741,7 +1799,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1767,7 +1826,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1796,7 +1856,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1853,7 +1914,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1877,7 +1939,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -1906,7 +1969,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -1948,7 +2012,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -1974,7 +2039,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2003,7 +2069,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2045,7 +2112,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
@@ -2071,7 +2139,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2100,7 +2169,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2130,6 +2200,7 @@ zombies:
       run: 2
     damage:
       melee: 10
+      block: 40
     experience: ^xpNormal02
     hand_item: meleeHandZombieWorker
     loot:
@@ -2160,7 +2231,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 120
     experience: ^xpNormalFeral02
     hand_item: meleeHandZombieWorkerFeral
     loot: []
@@ -2184,7 +2256,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged02
     hand_item: meleeHandZombieCharged
     loot:
@@ -2213,7 +2286,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal02
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2242,7 +2316,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 20
     experience: ^xpStrong03
     hand_item: meleeHandZombieStrong
     loot:
@@ -2273,7 +2348,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 60
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieStrongFeral
     loot: []
@@ -2316,7 +2392,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2345,7 +2422,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2374,7 +2452,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 20
     experience: ^xpStrong01
     hand_item: meleeHandZombieStrong
     loot:
@@ -2405,7 +2484,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 60
     experience: ^xpStrongFeral00
     hand_item: meleeHandZombieStrongFeral
     loot: []
@@ -2448,7 +2528,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2477,7 +2558,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2506,7 +2588,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrong01
     hand_item: meleeHandZombieCop
     loot:
@@ -2537,7 +2620,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
@@ -2580,7 +2664,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2609,7 +2694,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2638,7 +2724,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrong01
     hand_item: meleeHandZombieCop
     loot:
@@ -2669,7 +2756,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
@@ -2712,7 +2800,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2741,7 +2830,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2770,7 +2860,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrong01
     hand_item: meleeHandZombieCop
     loot:
@@ -2801,7 +2892,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral01
     hand_item: meleeHandZombieCopFeral
     loot: []
@@ -2844,7 +2936,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -2873,7 +2966,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -2902,7 +2996,8 @@ zombies:
       walk: 0.2
       run: 1.2
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrong02
     hand_item: meleeHandZombieCop
     loot:
@@ -2933,7 +3028,8 @@ zombies:
       walk: 0.45
       run: 1.3
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongFeral02
     hand_item: meleeHandZombieCopFeral
     loot: []
@@ -2948,7 +3044,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 40
+      block: 200
     experience: ^xpStrongRadiated02
     hand_item: meleeHandZombieCopRadiated
     loot:
@@ -3026,7 +3123,7 @@ zombies:
             count: 20,30
   - id: zombieSkateboarder
     name: 暴徒
-    category: animal
+    category: humanoid
     tier: 1
     hp: 100
     speed:
@@ -3056,20 +3153,21 @@ zombies:
       biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieSkateboarderFeral
     name: 凶残的暴徒
-    category: animal
+    category: humanoid
     tier: 1
     hp: ^healthNormalFeral
     speed:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral01
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieSkateboarderRadiated
     name: 被辐射的暴徒
-    category: animal
+    category: humanoid
     tier: 1
     hp: ^healthNormalRadiated
     speed:
@@ -3097,14 +3195,15 @@ zombies:
             count: 20,30
   - id: zombieSkateboarderCharged
     name: 带电暴徒
-    category: animal
+    category: humanoid
     tier: 1
     hp: ^healthNormalCharged
     speed:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpNormalCharged02
     hand_item: meleeHandZombieCharged
     loot:
@@ -3126,14 +3225,15 @@ zombies:
             count: 20,30
   - id: zombieSkateboarderInfernal
     name: 炼狱暴徒
-    category: animal
+    category: humanoid
     tier: 1
     hp: ^healthNormalInfernal
     speed:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -3163,6 +3263,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
+      block: 40
     experience: ^xpNormal03
     hand_item: meleeHandZombieWorker
     loot:
@@ -3193,7 +3294,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpNormalFeral03
     hand_item: meleeHandZombieFeral
     loot: []
@@ -3236,7 +3338,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged01
     hand_item: meleeHandZombieCharged
     loot:
@@ -3265,7 +3368,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpNormalInfernal03
     hand_item: meleeHandZombieInfernal
     loot:
@@ -3294,7 +3398,8 @@ zombies:
       walk: 0.6
       run: 1.45
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpStrongFeral03
     hand_item: meleeHandZombieFeral
     loot: []
@@ -3337,7 +3442,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpStrongCharged02
     hand_item: meleeHandZombieCharged
     loot:
@@ -3366,7 +3472,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongInfernal03
     hand_item: meleeHandZombieInfernal
     loot:
@@ -3406,7 +3513,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpSlimFeral02
     hand_item: meleeHandZombieFeral
     loot: []
@@ -3447,7 +3555,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 150
     experience: ^xpSlimCharged02
     hand_item: meleeHandZombieCharged
     loot:
@@ -3476,7 +3585,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 45
+      block: 250
     experience: ^xpStrongCharged01
     hand_item: meleeHandZombieInfernal
     loot:
@@ -3505,7 +3615,8 @@ zombies:
       walk: 0.4
       run: 1.3
     damage:
-      melee: 10
+      melee: 20
+      block: 100
     experience: ^xpStrongFeral00
     hand_item: meleeHandzombieMutated
     spawn:
@@ -3519,7 +3630,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 25
+      block: 140
     experience: ^xpStrongFeral03
     hand_item: meleeHandzombieMutatedFeral
     loot: []
@@ -3534,7 +3646,8 @@ zombies:
       walk: 0.5
       run: 1.35
     damage:
-      melee: 10
+      melee: 30
+      block: 180
     experience: ^xpStrongRadiated03
     hand_item: meleeHandzombieMutatedRadiated
     loot:
@@ -3565,7 +3678,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 200
     experience: ^xpStrongCharged03
     hand_item: meleeHandzombieMutatedCharged
     loot:
@@ -3596,7 +3710,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 50
+      block: 250
     experience: ^xpStrongInfernal04
     hand_item: meleeHandzombieMutatedInfernal
     loot:
@@ -3627,7 +3742,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 20
+      block: 500
     experience: ^xpStrongFeral03
     hand_item: meleeHandZombieDemolition
     loot:
@@ -3659,6 +3775,7 @@ zombies:
       run: 1
     damage:
       melee: 10
+      block: 8
     experience: ^xpNormal02
     hand_item: meleeHandZombie02
     spawn:
@@ -3672,7 +3789,8 @@ zombies:
       walk: 1.2
       run: 1.4
     damage:
-      melee: 10
+      melee: 20
+      block: 24
     experience: ^xpStrong00
     hand_item: meleeHandZombie02Feral
     loot: []
@@ -3687,7 +3805,8 @@ zombies:
       walk: 1
       run: 2
     damage:
-      melee: 10
+      melee: 60
+      block: 80
     experience: 2500
     hand_item: meleeHandAnimalZombieBear
     loot:
@@ -3718,7 +3837,8 @@ zombies:
       walk: 2.1
       run: 2.1
     damage:
-      melee: 10
+      melee: 8
+      block: 8
     experience: 100
     hand_item: meleeHandAnimalZombieVulture
     spawn:
@@ -3733,6 +3853,7 @@ zombies:
       run: 1.5
     damage:
       melee: 10
+      block: 32
     experience: 1200
     hand_item: meleeHandAnimalZombieVultureRadiated
   - id: animalZombieDog
@@ -3744,7 +3865,8 @@ zombies:
       walk: 1.2
       run: 1.3
     damage:
-      melee: 10
+      melee: 8
+      block: 14
     experience: 100
     hand_item: meleeHandAnimalZombieDog
     spawn:
@@ -3758,7 +3880,8 @@ zombies:
       walk: 1
       run: 1
     damage:
-      melee: 10
+      melee: 50
+      block: 150
     experience: 2000
     hand_item: meleeHandZombieBoar
     loot:
@@ -3778,3 +3901,214 @@ zombies:
             count: 20,30
           - item_id: ammo762mmBulletAP
             count: 20,30
+  - id: animalStag
+    name: 雄鹿
+    category: animal
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 245
+    spawn:
+      biomes: pine_forest, burnt_forest, snow, wasteland
+  - id: animalDoe
+    name: 母鹿
+    category: animal
+    tier: 1
+    hp: 50
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest
+  - id: animalRabbit
+    name: 兔子
+    category: animal
+    tier: 1
+    hp: 10
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 130
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
+  - id: animalChicken
+    name: 鸡
+    category: animal
+    tier: 1
+    hp: 10
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 130
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
+  - id: animalPig
+    name: 猪
+    category: animal
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 130
+  - id: animalBear
+    name: 熊
+    category: animal
+    tier: 1
+    hp: 2500
+    speed:
+      walk: 0.5
+      run: 1.9
+    damage:
+      melee: 10
+    experience: 2000
+    spawn:
+      biomes: snow
+  - id: animalBearSmall
+    name: 小熊
+    category: animal
+    tier: 1
+    hp: 800
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 1000
+    spawn:
+      biomes: snow
+  - id: animalWolf
+    name: 灰狼
+    category: animal
+    tier: 1
+    hp: 200
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
+  - id: animalDireWolf
+    name: 恐狼
+    category: animal
+    tier: 1
+    hp: 3000
+    speed:
+      walk: 1
+      run: 1
+    damage:
+      melee: 10
+    experience: 2000
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, snow, wasteland
+  - id: animalChickenHostile
+    name: 杀人鸡
+    category: animal
+    tier: 1
+    hp: 100
+    speed:
+      walk: 0.4
+      run: 1.65
+    damage:
+      melee: 10
+    experience: 130
+  - id: animalCoyote
+    name: 丛林狼
+    category: animal
+    tier: 1
+    hp: 100
+    speed:
+      walk: 1
+      run: 2
+    damage:
+      melee: 10
+    experience: 206
+    spawn:
+      biomes: burnt_forest, desert
+  - id: animalMountainLion
+    name: 美洲狮
+    category: animal
+    tier: 1
+    hp: 750
+    speed:
+      walk: 0.6
+      run: 2.1
+    damage:
+      melee: 10
+    experience: 100
+    spawn:
+      biomes: desert, snow
+  - id: animalInsectSwarm
+    name: 虫群
+    category: animal
+    tier: 1
+    hp: 10
+    speed:
+      walk: 1
+      run: 2.1
+    damage:
+      melee: 10
+    experience: 50
+  - id: animalBeeSwarm
+    name: 蜂群
+    category: animal
+    tier: 1
+    hp: 10
+    speed:
+      walk: 1
+      run: 2.1
+    damage:
+      melee: 10
+    experience: 50
+  - id: animalSnake
+    name: 蛇
+    category: animal
+    tier: 1
+    hp: 10
+    speed:
+      walk: 0.08
+      run: 0.2
+    damage:
+      melee: 10
+    experience: 130
+    spawn:
+      biomes: pine_forest, burnt_forest, desert, wasteland
+  - id: animalBoar
+    name: 野猪
+    category: animal
+    tier: 1
+    hp: 250
+    speed:
+      walk: 0.4
+      run: 1.3
+    damage:
+      melee: 10
+    experience: 100
+    spawn:
+      biomes: pine_forest, burnt_forest, desert
+  - id: animalBossGrace
+    name: 格雷斯
+    category: animal
+    tier: 1
+    hp: 3000
+    speed:
+      walk: 0.2
+      run: 0.7
+    damage:
+      melee: 10
+    experience: 2000
