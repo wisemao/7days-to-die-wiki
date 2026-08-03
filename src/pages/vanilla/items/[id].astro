@@ -129,9 +129,12 @@ const MOD_EFFECT_LABELS: Record<string, string> = {
 function fmtModEffect(e) {
   const label = MOD_EFFECT_LABELS[e.name] || e.name;
   const v = e.value;
-  const isPerc = e.op.startsWith('perc') || /\.\d+/.test(v) && parseFloat(v) < 1;
-  const val = isPerc ? `${(parseFloat(v) * 100).toFixed(0)}%` : v;
-  const sign = isPerc && parseFloat(v) > 0 ? '+' : '';
+  const num = parseFloat(v);
+  // Variable references (@$xxx) or non-numeric values: show as-is
+  if (Number.isNaN(num)) return `${label}（特殊效果）`;
+  const isPerc = e.op.startsWith('perc') || (Math.abs(num) < 1 && !Number.isInteger(num) && /\.\d+/.test(v));
+  const val = isPerc ? `${Math.round(num * 100)}%` : v;
+  const sign = isPerc && num > 0 ? '+' : '';
   return `${label} ${sign}${val}`;
 }
 function fmtLabel(k) { return LABELS[k] || k; }
