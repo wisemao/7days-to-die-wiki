@@ -171,6 +171,23 @@ export const ZOMBIE_TYPE_LABELS: Record<string, string> = {
   other: '其他',
 };
 
+// Zombie loot container display names (zPack* / EntityLootContainer*)
+const LOOT_CONTAINER_NAMES: Record<string, string> = {
+  zPackReg: '普通丧尸包',
+  zPackStrong: '强壮丧尸包',
+  zPackNurse: '护士包',
+  zPackLab: '实验室丧尸包',
+  zPackUtility: '工人丧尸包',
+  zPackThug: '暴徒包',
+  zPackSoldier: '士兵包',
+  zPackBoss: 'BOSS 包',
+  zPackPlague: '瘟疫包',
+  zPackFeral: '狂化丧尸包',
+  EntityLootContainerRegular: '普通战利品容器',
+  EntityLootContainerStrong: '强力战利品容器',
+  EntityLootContainerPlague: '瘟疫战利品容器',
+};
+
 function isItemVisible(item: Item): boolean {
   const id = item.id;
   const hasCjk = !!item.name && /[\u4e00-\u9fff]/.test(item.name);
@@ -410,6 +427,7 @@ export function loadData(): WikiData {
   function resolveItemName(id: string): string {
     const item = itemMap.get(id);
     if (item) return item.name;
+    if (LOOT_CONTAINER_NAMES[id]) return LOOT_CONTAINER_NAMES[id];
     return KNOWN_BLOCK_NAMES[id] || id;
   }
 

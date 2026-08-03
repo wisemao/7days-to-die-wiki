@@ -10,7 +10,7 @@ zombies:
     damage:
       melee: 10
       block: 8
-    experience: ^xpNormal01
+    experience: 500
     hand_item: meleeHandZombie01
     loot:
       - item_id: zPackReg
@@ -35,12 +35,12 @@ zombies:
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 8
       block: 7
-    experience: ^xpSlim01
+    experience: 400
     hand_item: meleeHandZombieShort
   - id: zombieTemplateSlimFemale
     name: zombieTemplateSlimFemale
@@ -52,7 +52,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
   - id: zombieArlene
     name: 阿琳
     category: humanoid
@@ -63,7 +63,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieArleneFeral
@@ -77,7 +77,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -88,23 +88,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieArleneCharged
     name: 带电阿琳
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -129,12 +129,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -163,7 +163,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMarleneFeral
@@ -177,7 +177,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -188,23 +188,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieMarleneCharged
     name: 带电马琳
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -229,12 +229,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -263,7 +263,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombiePartyGirlFeral
@@ -277,7 +277,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -288,23 +288,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombiePartyGirlCharged
     name: 带电派对女孩
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -329,12 +329,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -363,7 +363,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     loot:
       - item_id: zPackNurse
         count: 1
@@ -388,7 +388,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -399,23 +399,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieNurseCharged
     name: 带电护士
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -440,12 +440,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -475,7 +475,7 @@ zombies:
     damage:
       melee: 8
       block: 7
-    experience: ^xpSlim01
+    experience: 400
     hand_item: meleeHandZombieShort
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
@@ -490,7 +490,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -501,23 +501,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieJoeCharged
     name: 带电乔
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -542,12 +542,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -576,7 +576,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSteveFeral
@@ -590,7 +590,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -601,23 +601,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieSteveCharged
     name: 带电史蒂夫
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -642,12 +642,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -676,7 +676,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieTomClarkFeral
@@ -690,7 +690,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -701,23 +701,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieTomClarkCharged
     name: 带电汤姆·克拉克
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -742,12 +742,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -776,7 +776,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 400
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBusinessManFeral
@@ -790,7 +790,7 @@ zombies:
     damage:
       melee: 16
       block: 22
-    experience: ^xpSlimFeral01
+    experience: 800
     hand_item: meleeHandZombieShortFeral
     loot: []
     spawn:
@@ -801,23 +801,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated01
+    experience: 1100
   - id: zombieBusinessManCharged
     name: 带电商人
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -842,12 +842,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpSlimInfernal01
+    experience: 1700
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -877,7 +877,7 @@ zombies:
     damage:
       melee: 12
       block: 8
-    experience: ^xpSlim03
+    experience: 450
     hand_item: meleeHandZombieBurning
     spawn:
       biomes: burnt_forest, wasteland
@@ -892,7 +892,7 @@ zombies:
     damage:
       melee: 24
       block: 24
-    experience: ^xpSlimFeral03
+    experience: 875
     hand_item: meleeHandZombieBurningFeral
     loot: []
     spawn:
@@ -903,23 +903,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated03
+    experience: 1175
   - id: zombieBurntCharged
     name: 带电被灼烧者
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged02
+    experience: 1450
     hand_item: meleeHandZombieBurningCharged
     loot:
       - item_id: zPackStrong
@@ -944,12 +944,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpSlimInfernal01
+    experience: 1700
     hand_item: meleeHandZombieBurningInfernal
     loot:
       - item_id: zPackStrong
@@ -979,10 +979,13 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrong01
+    experience: 700
     hand_item: meleeHandZombieRancher
     loot:
-      - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
+      - item_id: EntityLootContainerRegular
+        count: 1
+        chance: '.05'
+      - item_id: EntityLootContainerPlague
         count: 1
         chance: '.05'
     spawn:
@@ -998,10 +1001,13 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral01
+    experience: 1025
     hand_item: meleeHandZombieRancherFeral
     loot:
-      - item_id: EntityLootContainerRegular,1,EntityLootContainerPlague,1
+      - item_id: EntityLootContainerRegular
+        count: 1
+        chance: '.05'
+      - item_id: EntityLootContainerPlague
         count: 1
         chance: '.05'
     spawn:
@@ -1012,13 +1018,16 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
-      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+      - item_id: EntityLootContainerStrong
+        count: 1
+        chance: 0%
+      - item_id: EntityLootContainerPlague
         count: 1
         chance: 0%
   - id: zombieRancherCharged
@@ -1027,15 +1036,18 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieRancherCharged
     loot:
-      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+      - item_id: EntityLootContainerStrong
+        count: 1
+        chance: '.1'
+      - item_id: EntityLootContainerPlague
         count: 1
         chance: '.1'
   - id: zombieRancherInfernal
@@ -1044,15 +1056,18 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieRancherInfernal
     loot:
-      - item_id: EntityLootContainerStrong,1,EntityLootContainerPlague,1
+      - item_id: EntityLootContainerStrong
+        count: 1
+        chance: '.1'
+      - item_id: EntityLootContainerPlague
         count: 1
         chance: '.1'
   - id: zombiePlagueSpitter
@@ -1061,55 +1076,55 @@ zombies:
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.4
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 700
   - id: zombiePlagueSpitterFeral
     name: 凶残兰凯尔
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: 1025
   - id: zombiePlagueSpitterRadiated
     name: 辐射兰凯尔
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: 1300
   - id: zombiePlagueSpitterCharged
     name: 带电兰凯尔
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: 1600
   - id: zombiePlagueSpitterInfernal
     name: 炼狱兰凯尔
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: 100
+    experience: 2200
   - id: zombieChuck
     name: 恰克
     category: humanoid
@@ -1121,7 +1136,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrongFeral00
+    experience: 1000
     hand_item: meleeHandZombieChuck
     spawn:
       biomes: snow
@@ -1136,7 +1151,7 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral03
+    experience: 1075
     hand_item: meleeHandZombieChuckFeral
     loot: []
     spawn:
@@ -1147,11 +1162,11 @@ zombies:
     tier: 1
     hp: 2000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: ^xpStrongRadiated03
+    experience: 1375
     spawn:
       biomes: snow
   - id: zombieChuckCharged
@@ -1160,12 +1175,12 @@ zombies:
     tier: 1
     hp: 2400
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 60
       block: 150
-    experience: ^xpStrongCharged02
+    experience: 1650
     hand_item: meleeHandZombieChuckCharged
     loot:
       - item_id: zPackStrong
@@ -1192,12 +1207,12 @@ zombies:
     tier: 1
     hp: 3000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal03
+    experience: 2600
     hand_item: meleeHandZombieChuckInfernal
     loot:
       - item_id: zPackStrong
@@ -1224,55 +1239,55 @@ zombies:
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.55
+      run: 1.35
     damage:
       melee: 10
-    experience: 100
+    experience: 1000
   - id: zombieFrostclawFeral
     name: 凶残恰克
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: 100
+    experience: 1075
   - id: zombieFrostclawRadiated
     name: 辐射恰克
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: 100
+    experience: 1375
   - id: zombieFrostclawCharged
     name: 带电恰克
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: 100
+    experience: 1650
   - id: zombieFrostclawInfernal
     name: 炼狱恰克
     category: humanoid
     tier: 1
     hp: 100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.4
     damage:
       melee: 10
-    experience: 100
+    experience: 2600
   - id: zombieSpider
     name: 蜘蛛
     category: humanoid
@@ -1283,7 +1298,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: ^xpSlim02
+    experience: 425
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieSpiderFeral
@@ -1297,7 +1312,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpSlimFeral02
+    experience: 850
     hand_item: meleeHandZombie02Feral
     loot: []
     spawn:
@@ -1308,23 +1323,23 @@ zombies:
     tier: 1
     hp: 800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpSlimRadiated02
+    experience: 1150
   - id: zombieSpiderCharged
     name: 带电蜘蛛
     category: humanoid
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged02
+    experience: 1450
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1349,12 +1364,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpSlimInfernal01
+    experience: 1700
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1379,11 +1394,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieBoeFeral
@@ -1397,7 +1412,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -1408,23 +1423,23 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
   - id: zombieBoeCharged
     name: 带电布尔
     category: humanoid
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1449,12 +1464,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1484,7 +1499,7 @@ zombies:
     damage:
       melee: 10
       block: 8
-    experience: ^xpNormal01
+    experience: 500
     hand_item: meleeHandZombieHazMat
     spawn:
       biomes: wasteland
@@ -1499,7 +1514,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieHazMatFeral
     loot: []
     spawn:
@@ -1515,7 +1530,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalRadiated01
+    experience: 1200
     hand_item: meleeHandZombieHazMatFeral
   - id: zombieMaleHazmatCharged
     name: 带电防护服丧尸
@@ -1523,12 +1538,12 @@ zombies:
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1553,12 +1568,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1583,11 +1598,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow
   - id: zombieJanitorFeral
@@ -1601,7 +1616,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieJanitorRadiated
@@ -1615,7 +1630,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalRadiated01
+    experience: 1200
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieJanitorCharged
@@ -1624,12 +1639,12 @@ zombies:
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1654,12 +1669,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1684,11 +1699,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
   - id: zombieInmateFeral
     name: 凶残的囚犯
     category: humanoid
@@ -1700,7 +1715,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieInmateRadiated
@@ -1714,7 +1729,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalRadiated01
+    experience: 1200
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieInmateCharged
@@ -1723,12 +1738,12 @@ zombies:
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1753,12 +1768,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1783,11 +1798,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieMoeFeral
@@ -1801,7 +1816,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -1812,23 +1827,23 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
   - id: zombieMoeCharged
     name: 带电莫伊
     category: humanoid
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1853,12 +1868,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1883,11 +1898,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     loot:
       - item_id: zPackLab
         count: 1
@@ -1916,7 +1931,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieLabRadiated
@@ -1925,23 +1940,23 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
   - id: zombieLabCharged
     name: 带电实验室工作人员
     category: humanoid
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -1966,12 +1981,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -1996,11 +2011,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieDarleneFeral
@@ -2014,7 +2029,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -2025,23 +2040,23 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
   - id: zombieDarleneCharged
     name: 带电达琳
     category: humanoid
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2066,12 +2081,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2096,11 +2111,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: 100
+    experience: 500
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
   - id: zombieYoFeral
@@ -2114,7 +2129,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -2125,23 +2140,23 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
   - id: zombieYoCharged
     name: 带电幽
     category: humanoid
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged01
+    experience: 1500
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2166,12 +2181,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2196,12 +2211,12 @@ zombies:
     tier: 1
     hp: 225
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
       block: 40
-    experience: ^xpNormal02
+    experience: 550
     hand_item: meleeHandZombieWorker
     loot:
       - item_id: zPackUtility
@@ -2233,7 +2248,7 @@ zombies:
     damage:
       melee: 20
       block: 120
-    experience: ^xpNormalFeral02
+    experience: 950
     hand_item: meleeHandZombieWorkerFeral
     loot: []
   - id: zombieUtilityWorkerRadiated
@@ -2242,23 +2257,23 @@ zombies:
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormalRadiated02
+    experience: 1250
   - id: zombieUtilityWorkerCharged
     name: 带电公用事业工人
     category: humanoid
     tier: 1
     hp: 1300
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged02
+    experience: 1550
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2283,12 +2298,12 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal02
+    experience: 1900
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2318,7 +2333,7 @@ zombies:
     damage:
       melee: 20
       block: 20
-    experience: ^xpStrong03
+    experience: 775
     hand_item: meleeHandZombieStrong
     loot:
       - item_id: zPackThug
@@ -2350,7 +2365,7 @@ zombies:
     damage:
       melee: 40
       block: 60
-    experience: ^xpStrongFeral01
+    experience: 1025
     hand_item: meleeHandZombieStrongFeral
     loot: []
     spawn:
@@ -2361,11 +2376,11 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
       - item_id: zPackStrong
         count: 1
@@ -2389,12 +2404,12 @@ zombies:
     tier: 1
     hp: 1800
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2419,12 +2434,12 @@ zombies:
     tier: 1
     hp: 2400
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2454,7 +2469,7 @@ zombies:
     damage:
       melee: 20
       block: 20
-    experience: ^xpStrong01
+    experience: 700
     hand_item: meleeHandZombieStrong
     loot:
       - item_id: zPackStrong
@@ -2486,7 +2501,7 @@ zombies:
     damage:
       melee: 40
       block: 60
-    experience: ^xpStrongFeral00
+    experience: 1000
     hand_item: meleeHandZombieStrongFeral
     loot: []
     spawn:
@@ -2497,11 +2512,11 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
       - item_id: zPackStrong
         count: 1
@@ -2525,12 +2540,12 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2555,12 +2570,12 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2590,7 +2605,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrong01
+    experience: 700
     hand_item: meleeHandZombieCop
     loot:
       - item_id: zPackStrong
@@ -2622,7 +2637,7 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral01
+    experience: 1025
     hand_item: meleeHandZombieCopFeral
     loot: []
     spawn:
@@ -2633,11 +2648,11 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
       - item_id: zPackStrong
         count: 1
@@ -2661,12 +2676,12 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2691,12 +2706,12 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2726,7 +2741,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrong01
+    experience: 700
     hand_item: meleeHandZombieCop
     loot:
       - item_id: zPackStrong
@@ -2758,7 +2773,7 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral01
+    experience: 1025
     hand_item: meleeHandZombieCopFeral
     loot: []
     spawn:
@@ -2769,11 +2784,11 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
       - item_id: zPackStrong
         count: 1
@@ -2797,12 +2812,12 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2827,12 +2842,12 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2862,7 +2877,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrong01
+    experience: 700
     hand_item: meleeHandZombieCop
     loot:
       - item_id: zPackStrong
@@ -2894,7 +2909,7 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral01
+    experience: 1025
     hand_item: meleeHandZombieCopFeral
     loot: []
     spawn:
@@ -2905,11 +2920,11 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongRadiated01
+    experience: 1300
     loot:
       - item_id: zPackStrong
         count: 1
@@ -2933,12 +2948,12 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -2963,12 +2978,12 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal01
+    experience: 2200
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -2998,7 +3013,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrong02
+    experience: 750
     hand_item: meleeHandZombieCop
     loot:
       - item_id: zPackStrong
@@ -3030,7 +3045,7 @@ zombies:
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongFeral02
+    experience: 1050
     hand_item: meleeHandZombieCopFeral
     loot: []
     spawn:
@@ -3041,12 +3056,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 40
       block: 200
-    experience: ^xpStrongRadiated02
+    experience: 1350
     hand_item: meleeHandZombieCopRadiated
     loot:
       - item_id: zPackStrong
@@ -3071,11 +3086,11 @@ zombies:
     tier: 1
     hp: 1900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpSlimCharged01
+    experience: 1400
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3099,11 +3114,11 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.45
+      run: 1.3
     damage:
       melee: 10
-    experience: ^xpStrongInfernal02
+    experience: 2400
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3131,7 +3146,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: ^xpNormal01
+    experience: 500
     loot:
       - item_id: zPackThug
         count: 1
@@ -3162,7 +3177,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral01
+    experience: 900
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieSkateboarderRadiated
@@ -3171,11 +3186,11 @@ zombies:
     tier: 1
     hp: 900
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpNormalRadiated01
+    experience: 1200
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3199,12 +3214,12 @@ zombies:
     tier: 1
     hp: 1100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpNormalCharged02
+    experience: 1550
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -3229,12 +3244,12 @@ zombies:
     tier: 1
     hp: 1700
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal01
+    experience: 1800
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -3264,7 +3279,7 @@ zombies:
     damage:
       melee: 10
       block: 40
-    experience: ^xpNormal03
+    experience: 575
     hand_item: meleeHandZombieWorker
     loot:
       - item_id: zPackSoldier
@@ -3296,7 +3311,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpNormalFeral03
+    experience: 975
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -3307,11 +3322,11 @@ zombies:
     tier: 1
     hp: 1400
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpNormalRadiated03
+    experience: 1275
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3335,12 +3350,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged01
+    experience: 1400
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -3365,12 +3380,12 @@ zombies:
     tier: 1
     hp: 2200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpNormalInfernal03
+    experience: 2000
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -3400,7 +3415,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpStrongFeral03
+    experience: 1075
     hand_item: meleeHandZombieFeral
     loot: []
     spawn:
@@ -3411,11 +3426,11 @@ zombies:
     tier: 1
     hp: 2200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 10
-    experience: ^xpStrongRadiated03
+    experience: 1375
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3439,12 +3454,12 @@ zombies:
     tier: 1
     hp: 2400
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 60
       block: 150
-    experience: ^xpStrongCharged02
+    experience: 1650
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -3469,12 +3484,12 @@ zombies:
     tier: 1
     hp: 3000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.6
+      run: 1.45
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongInfernal03
+    experience: 2600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -3499,11 +3514,11 @@ zombies:
     tier: 1
     hp: 200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.2
+      run: 1.25
     damage:
       melee: 10
-    experience: ^xpSlim04
+    experience: 475
   - id: zombieScreamerFeral
     name: 凶残的尖叫丧尸
     category: humanoid
@@ -3515,7 +3530,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpSlimFeral02
+    experience: 850
     hand_item: meleeHandZombieFeral
     loot: []
   - id: zombieScreamerRadiated
@@ -3528,7 +3543,7 @@ zombies:
       run: 1.35
     damage:
       melee: 10
-    experience: ^xpSlimRadiated02
+    experience: 1150
     loot:
       - item_id: zPackStrong
         count: 1
@@ -3552,12 +3567,12 @@ zombies:
     tier: 1
     hp: 1000
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 150
-    experience: ^xpSlimCharged02
+    experience: 1450
     hand_item: meleeHandZombieCharged
     loot:
       - item_id: zPackStrong
@@ -3582,12 +3597,12 @@ zombies:
     tier: 1
     hp: 1600
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 45
       block: 250
-    experience: ^xpStrongCharged01
+    experience: 1600
     hand_item: meleeHandZombieInfernal
     loot:
       - item_id: zPackStrong
@@ -3617,7 +3632,7 @@ zombies:
     damage:
       melee: 20
       block: 100
-    experience: ^xpStrongFeral00
+    experience: 1000
     hand_item: meleeHandzombieMutated
     spawn:
       biomes: wasteland
@@ -3632,7 +3647,7 @@ zombies:
     damage:
       melee: 25
       block: 140
-    experience: ^xpStrongFeral03
+    experience: 1075
     hand_item: meleeHandzombieMutatedFeral
     loot: []
     spawn:
@@ -3648,7 +3663,7 @@ zombies:
     damage:
       melee: 30
       block: 180
-    experience: ^xpStrongRadiated03
+    experience: 1375
     hand_item: meleeHandzombieMutatedRadiated
     loot:
       - item_id: zPackStrong
@@ -3675,12 +3690,12 @@ zombies:
     tier: 1
     hp: 2500
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 60
       block: 200
-    experience: ^xpStrongCharged03
+    experience: 1675
     hand_item: meleeHandzombieMutatedCharged
     loot:
       - item_id: zPackStrong
@@ -3707,12 +3722,12 @@ zombies:
     tier: 1
     hp: 3100
     speed:
-      walk: 1
-      run: 2
+      walk: 0.5
+      run: 1.35
     damage:
       melee: 50
       block: 250
-    experience: ^xpStrongInfernal04
+    experience: 2700
     hand_item: meleeHandzombieMutatedInfernal
     loot:
       - item_id: zPackStrong
@@ -3739,12 +3754,12 @@ zombies:
     tier: 1
     hp: 1200
     speed:
-      walk: 1
-      run: 2
+      walk: 0.3
+      run: 1.35
     damage:
       melee: 20
       block: 500
-    experience: ^xpStrongFeral03
+    experience: 1075
     hand_item: meleeHandZombieDemolition
     loot:
       - item_id: zPackBoss
@@ -3776,7 +3791,7 @@ zombies:
     damage:
       melee: 10
       block: 8
-    experience: ^xpNormal02
+    experience: 550
     hand_item: meleeHandZombie02
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
@@ -3791,7 +3806,7 @@ zombies:
     damage:
       melee: 20
       block: 24
-    experience: ^xpStrong00
+    experience: 600
     hand_item: meleeHandZombie02Feral
     loot: []
     spawn:
@@ -3802,7 +3817,7 @@ zombies:
     tier: 1
     hp: 4000
     speed:
-      walk: 1
+      walk: 1.9
       run: 2
     damage:
       melee: 60

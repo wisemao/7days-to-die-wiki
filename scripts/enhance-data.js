@@ -83,8 +83,26 @@ function enhance(configDir) {
     const { resolved } = parseLootXml(readFileSync(lootPath, 'utf-8'));
     const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
     let resolvedCount = 0;
+    let splitCount = 0;
     for (const z of zombiesDoc.zombies || []) {
       if (!z.loot) continue;
+      // Split combined container refs: "EntityLootContainerRegular,1,EntityLootContainerPlague,1"
+      const newLoot = [];
+      for (const l of z.loot) {
+        if (l.item_id && l.item_id.includes(',') && !resolved[l.item_id]) {
+          const parts = l.item_id.split(',');
+          for (let i = 0; i < parts.length; i += 2) {
+            const cid = parts[i].trim();
+            const cnt = parts[i + 1]?.trim();
+            if (!cid) continue;
+            newLoot.push({ item_id: cid, count: cnt ? parseInt(cnt, 10) : 1, chance: l.chance });
+            splitCount++;
+          }
+        } else {
+          newLoot.push(l);
+        }
+      }
+      if (splitCount > 0) z.loot = newLoot;
       for (const l of z.loot) {
         const container = resolved[l.item_id];
         if (container && container.length > 0) {
@@ -94,6 +112,10 @@ function enhance(configDir) {
           resolvedCount++;
         }
       }
+    }
+    if (splitCount > 0) {
+      writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+      console.log(`  - 组合容器拆分: ${splitCount} 处 (EntityLootContainer* 系列)`);
     }
     writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
     console.log(`  - 僵尸掉落容器解析: ${resolvedCount} 处`);
@@ -353,8 +375,9 @@ function enhance(configDir) {
   if (ammoFixed > 0) writeYaml(join(DATA_DIR, 'blocks.yaml'), blocksDoc2);
   console.log(`  - 炮塔弹药清理: ${ammoFixed} 个 +tags 后缀移除`);
 
-  // ─── 12. Zombie HP from entityclasses.xml replace_passive_effect (^ref → value) ───
-  // passive_effect HealthMax uses ^references (e.g. ^healthSlim) defined in ZOMBIE_HP_LIST
+  // ─── 12. Zombie HP/XP from entityclasses.xml replace tables (^ref → value) ───
+  // passive_effect HealthMax uses ^references (^healthSlim) defined in replace_passive_effect (ZOMBIE_HP_LIST);
+  // ExperienceGain uses ^xp* references defined in replace_properties (ZOMBIE_XP_LIST)
   if (existsSync(entityclassesPath)) {
     const ecXml = readFileSync(entityclassesPath, 'utf-8');
     const hpMap = {};
@@ -365,16 +388,113 @@ function enhance(configDir) {
       let pm;
       while ((pm = propRe.exec(bm[1])) !== null) hpMap[pm[1]] = parseFloat(pm[2]);
     }
+    const xpMap = {};
+    const propBlockRe = /<replace_properties>([\s\S]*?)<\/replace_properties>/g;
+    let pbm;
+    while ((pbm = propBlockRe.exec(ecXml)) !== null) {
+      const propRe = /<property\s+name="([^"]+)"\s+value="([^"]+)"/g;
+      let pm;
+      while ((pm = propRe.exec(pbm[1])) !== null) xpMap[pm[1]] = parseFloat(pm[2]);
+    }
     const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
     let hpFilled = 0;
+    let xpFilled = 0;
     for (const z of zombiesDoc.zombies || []) {
       if (typeof z.hp === 'string' && z.hp.startsWith('^')) {
         const v = hpMap[z.hp.slice(1)];
         if (v != null) { z.hp = v; hpFilled++; }
       }
+      if (typeof z.experience === 'string' && z.experience.startsWith('^')) {
+        const v = xpMap[z.experience.slice(1)];
+        if (v != null) { z.experience = v; xpFilled++; }
+      }
     }
-    if (hpFilled > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
-    console.log(`  - 丧尸血量解析: ${hpFilled} 个引用替换为数值 (replace_passive_effect)`);
+    if (hpFilled > 0 || xpFilled > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+    console.log(`  - 丧尸血量解析: ${hpFilled} 个引用替换为数值 (replace_passive_effect), 经验解析: ${xpFilled} 个 (replace_properties)`);
+  }
+
+  // ─── 12b. Zombie move speed from entityclasses.xml properties (extends chain) ───
+  // MoveSpeedAggro is "walk, run" comma format; MoveSpeed is walk-only
+  if (existsSync(entityclassesPath)) {
+    const ecXml = readFileSync(entityclassesPath, 'utf-8');
+    const entities = {};
+    const entRe = /<entity_class\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/entity_class>/g;
+    let em;
+    while ((em = entRe.exec(ecXml)) !== null) {
+      const [, name, body] = em;
+      const props = {};
+      const propRe = /<property\s+name="(MoveSpeed|MoveSpeedAggro|MoveSpeedRun)"\s+value="([^"]+)"/g;
+      let pm;
+      while ((pm = propRe.exec(body)) !== null) props[pm[1]] = pm[2];
+      // extends is a tag attribute (or rarely a property)
+      const tagExt = /<entity_class\s+name="[^"]+"\s+extends="([^"]+)"/.exec(em[0]);
+      const propExt = /<property\s+name="Extends"\s+value="([^"]+)"/.exec(body);
+      entities[name] = { props, extends: tagExt ? tagExt[1] : propExt ? propExt[1] : null };
+    }
+    const resolveSpeed = (name, depth = 0) => {
+      if (depth > 8 || !entities[name]) return {};
+      const own = entities[name].props;
+      const parent = resolveSpeed(entities[name].extends, depth + 1);
+      return { ...parent, ...own };
+    };
+    // XP references (^xpSlim01 etc.) come from replace_properties (ZOMBIE_XP_LIST)
+    const xpMap = {};
+    const propBlockRe = /<replace_properties>([\s\S]*?)<\/replace_properties>/g;
+    let pbm;
+    while ((pbm = propBlockRe.exec(ecXml)) !== null) {
+      const propRe = /<property\s+name="([^"]+)"\s+value="([^"]+)"/g;
+      let pm;
+      while ((pm = propRe.exec(pbm[1])) !== null) xpMap[pm[1]] = parseFloat(pm[2]);
+    }
+    // Collect ExperienceGain per entity (extends chain)
+    const xpEntities = {};
+    const entRe2 = /<entity_class\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/entity_class>/g;
+    let em2;
+    while ((em2 = entRe2.exec(ecXml)) !== null) {
+      const [, name, body] = em2;
+      const xp = /<property\s+name="ExperienceGain"\s+value="([^"]+)"/.exec(body);
+      const tagExt = /<entity_class\s+name="[^"]+"\s+extends="([^"]+)"/.exec(em2[0]);
+      xpEntities[name] = { xp: xp ? xp[1] : null, extends: tagExt ? tagExt[1] : null };
+    }
+    const resolveXp = (name, depth = 0) => {
+      if (depth > 8 || !xpEntities[name]) return null;
+      if (xpEntities[name].xp != null) return xpEntities[name].xp;
+      return resolveXp(xpEntities[name].extends, depth + 1);
+    };
+    const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
+    let speedFilled = 0;
+    let xpFilled = 0;
+    for (const z of zombiesDoc.zombies || []) {
+      if (z.category === 'animal' && !z.id.includes('Zombie')) continue; // living animals already parsed
+      const p = resolveSpeed(z.id);
+      if (!Object.keys(p).length) continue;
+      let walk, run;
+      if (p.MoveSpeedAggro) {
+        const [w, r] = p.MoveSpeedAggro.split(',').map(s => parseFloat(s.trim()));
+        if (!Number.isNaN(w)) walk = w;
+        if (!Number.isNaN(r)) run = r;
+      }
+      if (walk == null && p.MoveSpeed) walk = parseFloat(p.MoveSpeed);
+      if (run == null && p.MoveSpeedRun) run = parseFloat(p.MoveSpeedRun);
+      if (walk == null && run == null) continue;
+      const isDefault = !z.speed || (z.speed.walk === 1 && z.speed.run === 2);
+      if (isDefault) {
+        if (!z.speed) z.speed = {};
+        if (walk != null) z.speed.walk = walk;
+        if (run != null) z.speed.run = run;
+        speedFilled++;
+      }
+      // XP: replace placeholder (100) with real chain value
+      if (z.experience === 100 && z.category === 'humanoid') {
+        const raw = resolveXp(z.id);
+        if (raw != null) {
+          const val = raw.startsWith('^') ? xpMap[raw.slice(1)] : parseFloat(raw);
+          if (val != null && !Number.isNaN(val)) { z.experience = val; xpFilled++; }
+        }
+      }
+    }
+    if (speedFilled > 0 || xpFilled > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+    console.log(`  - 丧尸移速解析: ${speedFilled} 个补全 (extends链 MoveSpeed/MoveSpeedAggro), 经验补全: ${xpFilled} 个`);
   }
 
   // ─── 13. Zombie melee damage from hand_item (items.xml DamageEntity) ───

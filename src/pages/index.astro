@@ -1,8 +1,11 @@
 ﻿---
 import Layout from '../layouts/Layout.astro';
+import { readdirSync } from 'fs';
+import { join } from 'path';
 import { loadData, ITEM_CATEGORY_LABELS, STATION_LABELS } from '../utils/data-loader';
 import { categoryIconUrl } from '../utils/item-icons';
 const { items, recipes, skills, zombies, blocks, biomes } = loadData();
+const iconCount = readdirSync(join(process.cwd(), 'public/images/items')).filter(f => f.endsWith('.png')).length;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const catCounts = {};
@@ -164,7 +167,7 @@ const seriesCount = seriesSet.size;
 
   <h2>关于本站</h2>
   <div class="quick-start">
-    <p>所有数据来自 7 Days to Die 游戏源文件自动生成：{items.length} 物品（含 104 模组）、{recipes.length} 配方、{skills.length} 技能（100% 中文）、{zombies.length} 生物（丧尸+动物）、{blocks.length} 防御方块、{biomes.length} 生物群系，附 1589 个游戏图标。使用顶部搜索框快速查找（Ctrl+K），或通过分类浏览。</p>
+    <p>所有数据来自 7 Days to Die 游戏源文件自动生成：{items.length} 物品（含 {items.filter(i => i.category === 'mod').length} 模组）、{recipes.length} 配方、{skills.length} 技能（100% 中文）、{zombies.length} 生物（丧尸+动物）、{blocks.length} 防御方块、{biomes.length} 生物群系，附 {iconCount} 个游戏图标。使用顶部搜索框快速查找（Ctrl+K），或通过分类浏览。</p>
     <div class="quick-links">
       <span class="quick-badge" style="--badge-clr: var(--c-blood);">🎯 按分类浏览</span>
       <span class="quick-badge" style="--badge-clr: var(--c-amber);">🔍 全文搜索</span>
