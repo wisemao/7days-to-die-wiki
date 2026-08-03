@@ -102,6 +102,38 @@ function fmtModSlots(raw) {
   if (!raw) return null;
   return raw.split(',').map(t => MOD_SLOT_LABELS[t.trim()] || t.trim()).join('、');
 }
+// Mod passive_effect display: name -> Chinese label, op -> readable format
+const MOD_EFFECT_LABELS: Record<string, string> = {
+  EntityDamage: '伤害', BlockDamage: '方块伤害', MagazineSize: '弹匣容量', RoundsPerMinute: '射速',
+  ReloadSpeedMultiplier: '装填速度', WeaponHandling: '操控性', SpreadMultiplierHip: '腰射散布',
+  SpreadMultiplierAiming: '瞄准散布', SpreadMultiplierWalking: '移动散布', SpreadMultiplierCrouching: '蹲伏散布',
+  IncrementalSpreadMultiplier: '连射散布', SpreadDegreesVertical: '垂直散布角', SpreadDegreesHorizontal: '水平散布角',
+  KickDegreesVerticalMin: '垂直后坐力(最小)', KickDegreesVerticalMax: '垂直后坐力(最大)',
+  KickDegreesHorizontalMin: '水平后坐力(最小)', KickDegreesHorizontalMax: '水平后坐力(最大)',
+  MaxRange: '最大射程', DamageFalloffRange: '伤害衰减距离', ProjectileVelocity: '弹速',
+  BurstRoundCount: '连发数', DegradationMax: '最大耐久', DegradationPerUse: '每次使用损耗',
+  StaminaLoss: '体力消耗', StaminaChangeOT: '体力回复', HealthChangeOT: '生命回复',
+  PhysicalDamageResist: '物理抗性', ElementalDamageResist: '元素抗性', DamageModifier: '伤害修正',
+  HypothermalResist: '寒冷抗性', HyperthermalResist: '炎热抗性', Mobility: '机动性',
+  CarryCapacity: '负重', NoiseMultiplier: '噪音', BuffResistance: '负面效果抗性',
+  AttributeLevel: '属性等级', SkillLevel: '技能等级', PerkLevel: '专长等级',
+  BarteringBuying: '购买价', BarteringSelling: '出售价', LootStage: '战利品阶段',
+  PlayerExpGain: '经验获取', LightMultiplier: '光照倍率', LightIntensity: '亮度',
+  VehicleFuelUsePer: '油耗', VehicleEntityDamage: '载具伤害', VehicleBlockDamage: '载具方块伤害',
+  VehicleMotorTorquePer: '载具扭矩', VehicleVelocityMaxPer: '载具极速', VehicleFuelMaxPer: '载具油箱',
+  VehicleSeats: '载具座位', VehicleStrongSelfDamage: '载具自伤减免', JunkDroneModCooldown: '无人机模组冷却',
+  DismemberChance: '断肢几率', WalkSpeed: '行走速度', RunSpeed: '奔跑速度',
+  JumpStrength: '跳跃力', HealthMax: '最大生命', ProjectileStickChance: '投射物停留几率',
+  TreasureBlocksPerReduction: '宝藏方块减少', ExplosionDamage: '爆炸伤害', ReflectDamage: '反伤',
+};
+function fmtModEffect(e) {
+  const label = MOD_EFFECT_LABELS[e.name] || e.name;
+  const v = e.value;
+  const isPerc = e.op.startsWith('perc') || /\.\d+/.test(v) && parseFloat(v) < 1;
+  const val = isPerc ? `${(parseFloat(v) * 100).toFixed(0)}%` : v;
+  const sign = isPerc && parseFloat(v) > 0 ? '+' : '';
+  return `${label} ${sign}${val}`;
+}
 function fmtLabel(k) { return LABELS[k] || k; }
 function fmtVal(v) {
   if (typeof v === 'number' && v % 1 !== 0) return v.toFixed(2);
@@ -139,6 +171,16 @@ function fmtVal(v) {
         {fmtModSlots(item.modifier_tags) && <span class="tag" style="background:#f3e5f5;border-color:#ab47bc;color:#7b1fa2;">槽位: {fmtModSlots(item.modifier_tags)}</span>}
         {item.trader_available && <span class="tag" style="background:#e3f2fd;border-color:#42a5f5;color:#1565c0;">🏪 商人可购</span>}
       </div>
+      {item.effects?.length > 0 && (
+        <div style="margin-top:12px;">
+          <strong style="font-size:14px;">模组效果:</strong>
+          <ul style="margin:6px 0 0;padding-left:20px;font-size:14px;line-height:1.9;">
+            {item.effects.map(e => (
+              <li>{fmtModEffect(e)}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       {item.unlocked_by && (() => {
         const ub = item.unlocked_by;
         const isPerk = ub.startsWith('perk');

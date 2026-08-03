@@ -189,7 +189,23 @@ function enhance(configDir) {
       itemsDoc.items.push(...uniqueAdd);
       writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
     }
-    console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体`);
+    // Merge mod effects into existing mod items (idempotent: only add missing)
+    const modById = new Map(mods.map(m => [m.id, m]));
+    let effectMerged = 0;
+    for (const item of itemsDoc.items || []) {
+      if (item.category !== 'mod' || !item.id) continue;
+      const fresh = modById.get(item.id);
+      if (!fresh || !fresh.effects || fresh.effects.length === 0) continue;
+      const existingKeys = new Set((item.effects || []).map(e => e.name + '|' + e.op + '|' + e.value));
+      const toAdd = fresh.effects.filter(e => !existingKeys.has(e.name + '|' + e.op + '|' + e.value));
+      if (toAdd.length > 0) {
+        if (!item.effects) item.effects = [];
+        item.effects.push(...toAdd);
+        effectMerged++;
+      }
+    }
+    if (effectMerged > 0) writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体, ${effectMerged} 个补效果`);
   }
 
   // ─── 7. Trader availability (traders.xml) ───

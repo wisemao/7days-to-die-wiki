@@ -31,6 +31,18 @@ export function parseModsXml(xmlText, locMap = new Map()) {
       if (pn === 'Tags') mod.tags = pv;
       if (pn === 'Stacknumber') mod.stack_size = parseInt(pv) || 1;
     }
+
+    // Mod effects: passive_effect entries (name/operation/value), deduplicated
+    const effects = [];
+    const seenEffects = new Set();
+    for (const pe of content.matchAll(/<passive_effect\s+name="([^"]+)"\s+operation="([^"]+)"\s+value="([^"]+)"/g)) {
+      const key = pe[1] + '|' + pe[2] + '|' + pe[3];
+      if (seenEffects.has(key)) continue;
+      seenEffects.add(key);
+      effects.push({ name: pe[1], op: pe[2], value: pe[3] });
+    }
+    if (effects.length) mod.effects = effects;
+
     mods.push(mod);
   }
   return mods;
