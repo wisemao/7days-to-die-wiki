@@ -192,20 +192,32 @@ function enhance(configDir) {
     // Merge mod effects into existing mod items (idempotent: only add missing)
     const modById = new Map(mods.map(m => [m.id, m]));
     let effectMerged = 0;
+    let buffMerged = 0;
     for (const item of itemsDoc.items || []) {
       if (item.category !== 'mod' || !item.id) continue;
       const fresh = modById.get(item.id);
-      if (!fresh || !fresh.effects || fresh.effects.length === 0) continue;
-      const existingKeys = new Set((item.effects || []).map(e => e.name + '|' + e.op + '|' + e.value));
-      const toAdd = fresh.effects.filter(e => !existingKeys.has(e.name + '|' + e.op + '|' + e.value));
-      if (toAdd.length > 0) {
-        if (!item.effects) item.effects = [];
-        item.effects.push(...toAdd);
-        effectMerged++;
+      if (!fresh) continue;
+      if (fresh.effects && fresh.effects.length > 0) {
+        const existingKeys = new Set((item.effects || []).map(e => e.name + '|' + e.op + '|' + e.value));
+        const toAdd = fresh.effects.filter(e => !existingKeys.has(e.name + '|' + e.op + '|' + e.value));
+        if (toAdd.length > 0) {
+          if (!item.effects) item.effects = [];
+          item.effects.push(...toAdd);
+          effectMerged++;
+        }
+      }
+      if (fresh.buff_effects && fresh.buff_effects.length > 0) {
+        const existingKeys = new Set((item.buff_effects || []).map(b => b.action + '|' + b.buff));
+        const toAdd = fresh.buff_effects.filter(b => !existingKeys.has(b.action + '|' + b.buff));
+        if (toAdd.length > 0) {
+          if (!item.buff_effects) item.buff_effects = [];
+          item.buff_effects.push(...toAdd);
+          buffMerged++;
+        }
       }
     }
-    if (effectMerged > 0) writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
-    console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体, ${effectMerged} 个补效果`);
+    if (effectMerged > 0 || buffMerged > 0) writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    console.log(`  - 模组解析: ${mods.length} 个，新增 ${uniqueAdd.length} 个模组本体, ${effectMerged} 个补效果, ${buffMerged} 个补触发buff`);
   }
 
   // ─── 7. Trader availability (traders.xml) ───
@@ -389,12 +401,16 @@ function enhance(configDir) {
     while ((im2 = itemRe.exec(itemsXml)) !== null) {
       const [, name, body] = im2;
       const list = [];
-      for (const m2 of body.matchAll(/action="(RemoveBuff|AddBuff)"\s+buff="([^"]+)"/g)) {
+      for (const m2 of body.matchAll(/action="(RemoveBuff|AddBuff)"[^>]*?\s+buff="([^"]+)"/g)) {
         const buff = m2[2];
         // Skip internal trigger buffs and multi-buff comma lists (handled per buff)
         if (buff.includes(',') || buff.startsWith('trigger')) continue;
         const key = m2[1] + '|' + buff;
         if (!list.some(x => x.action + '|' + x.buff === key)) list.push({ action: m2[1] === 'RemoveBuff' ? 'remove' : 'add', buff });
+      }
+      // Respec potion (Grandpa's Forgetting Elixir): ResetProgression
+      if (/action="ResetProgression"/.test(body) && !list.some(x => x.action === 'reset')) {
+        list.push({ action: 'reset', buff: 'progression' });
       }
       if (list.length) buffEffects[name] = list;
     }

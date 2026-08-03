@@ -5123,6 +5123,9 @@ items:
     stack_size: 10
     tier: 2000
     trader_available: true
+    buff_effects:
+      - action: reset
+        buff: progression
   - id: bucketEmpty
     name: 水桶
     category: material
@@ -7779,6 +7782,8 @@ items:
     buff_effects:
       - action: add
         buff: buffDeathFoodDrinkAdjust
+      - action: reset
+        buff: progression
   - id: drinkJarFullRespecWithPointsAdmin
     name: drinkJarFullRespecWithPointsAdmin
     category: food
@@ -7790,6 +7795,8 @@ items:
     buff_effects:
       - action: add
         buff: buffDeathFoodDrinkAdjust
+      - action: reset
+        buff: progression
   - id: noteTestersDelightAdmin
     name: noteTestersDelightAdmin
     category: material
@@ -10297,6 +10304,9 @@ items:
       - name: DegradationMax
         op: base_set
         value: 10,60
+    buff_effects:
+      - action: add
+        buff: buffInjuryCrippled01
   - id: modGunBowPolymerString
     name: 聚合物弓弦模组
     category: mod
@@ -10349,6 +10359,19 @@ items:
       - name: DegradationMax
         op: base_set
         value: 10,60
+    buff_effects:
+      - action: add
+        buff: buffRadiatedRegenBlock15
+      - action: add
+        buff: buffRadiatedRegenBlock30
+      - action: add
+        buff: buffRadiatedRegenBlock45
+      - action: add
+        buff: buffRadiatedRegenBlock60
+      - action: add
+        buff: buffRadiatedRegenBlock75
+      - action: add
+        buff: buffRadiatedRegenBlock90
   - id: modMeleeTemperedBlade
     name: 钢化刀片模组
     category: mod
@@ -10370,6 +10393,9 @@ items:
     modifier_tags: damageBleed
     unlocked_by: modMeleeSerratedBladeSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInjuryBleeding
   - id: modMeleeWeightedHead
     name: 重头模组
     category: mod
@@ -10377,6 +10403,9 @@ items:
     modifier_tags: stun
     unlocked_by: modMeleeWeightedHeadSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInjuryStunned01
   - id: modMeleeStructuralBrace
     name: 结构支撑模组
     category: mod
@@ -10420,6 +10449,9 @@ items:
     modifier_tags: shaft
     unlocked_by: modMeleeClubBarbedWireSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInjuryBleeding
   - id: modMeleeClubMetalSpikes
     name: 金属长钉模组
     category: mod
@@ -10427,12 +10459,18 @@ items:
     modifier_tags: shaft
     unlocked_by: modMeleeClubMetalSpikesSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffArmorShredding
   - id: modMeleeClubMetalChain
     name: 金属链模组
     category: mod
     installable_tags: club
     modifier_tags: shaft
     unlocked_by: perkBatterUpMetalChain
+    buff_effects:
+      - action: add
+        buff: buffInjuryKnockdown01
   - id: modMeleeClubBurningShaft
     name: 燃烧杆模组
     category: mod
@@ -10448,6 +10486,9 @@ items:
       - name: HypothermalResist
         op: base_add
         value: '20'
+    buff_effects:
+      - action: add
+        buff: buffBurningElement
   - id: modMeleeFiremansAxeMod
     name: 消防斧模组
     category: mod
@@ -10523,6 +10564,9 @@ items:
     installable_tags: perkElectrocutioner
     modifier_tags: knockback
     unlocked_by: perkTechJunkie5Repulsor
+    buff_effects:
+      - action: add
+        buff: buffmodMeleeStunBatonRepulsor
   - id: modFuelTankSmall
     name: 电动工具小油箱模组
     category: mod
@@ -10591,6 +10635,9 @@ items:
     modifier_tags: ammo
     unlocked_by: modArmorBandolierSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffBandolierChest
   - id: modRadiationReady
     name: 辐射就绪模组
     category: mod
@@ -10757,6 +10804,9 @@ items:
     modifier_tags: falldamage
     unlocked_by: modArmorImpactBracingSchematic
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffImpactBracing
   - id: modArmorStealthBoots
     name: 潜行靴模组
     category: mod
@@ -10784,6 +10834,9 @@ items:
       - name: BuffResistance
         op: base_add
         value: '1'
+    buff_effects:
+      - action: add
+        buff: buffWaterPurifier
   - id: modArmorHelmetLight
     name: 头盔灯模组
     category: mod
@@ -11214,6 +11267,11 @@ items:
       - name: StaminaLoss
         op: perc_subtract
         value: '.75'
+    buff_effects:
+      - action: add
+        buff: buffJumpJetsActivated
+      - action: add
+        buff: buffJumpJetsAirborne
   - id: modArmorAdminToughGuyShirt
     name: 开发：悍将模组
     category: mod
@@ -11233,3 +11291,6 @@ items:
       - name: HealthMax
         op: base_subtract
         value: '@$PlayerLevelBonus'
+    buff_effects:
+      - action: add
+        buff: buffEntitySpawnHeal

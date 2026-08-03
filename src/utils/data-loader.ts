@@ -22,7 +22,7 @@ export interface Item {
   description?: string;
   stats?: Record<string, number | string>;
   effects?: { name: string; op: string; value: string }[];
-  buff_effects?: { action: 'remove' | 'add'; buff: string }[];
+  buff_effects?: { action: 'remove' | 'add' | 'reset'; buff: string }[];
   scrappable_into?: RecipeMaterial[];
   installable_tags?: string;
   modifier_tags?: string;

@@ -43,6 +43,17 @@ export function parseModsXml(xmlText, locMap = new Map()) {
     }
     if (effects.length) mod.effects = effects;
 
+    // Triggered buff effects (AddBuff on hit): mod grants a buff to the target
+    const buffs = [];
+    const seenBuffs = new Set();
+    for (const tb of content.matchAll(/action="AddBuff"[^>]*?\s+buff="([^"]+)"/g)) {
+      const buff = tb[1];
+      if (buff.includes(',') || seenBuffs.has(buff)) continue;
+      seenBuffs.add(buff);
+      buffs.push({ action: 'add', buff });
+    }
+    if (buffs.length) mod.buff_effects = buffs;
+
     mods.push(mod);
   }
   return mods;

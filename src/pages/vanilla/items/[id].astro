@@ -169,6 +169,7 @@ const BUFF_NAMES: Record<string, string> = {
   buffNerdBoots: '书呆子靴效果', buffRaiderBoots: '掠夺者靴效果',
 };
 function fmtBuffEffect(b) {
+  if (b.action === 'reset') return '重置技能点';
   const name = BUFF_NAMES[b.buff] || b.buff;
   return b.action === 'remove' ? name : `获得${name}`;
 }
@@ -213,6 +214,12 @@ function fmtBuffEffect(b) {
             ))}
           </ul>
         </div>
+      )}
+      {item.category === 'mod' && item.buff_effects?.length > 0 && (
+        <p style="margin-top:12px;font-size:14px;">
+          <strong>触发效果:</strong>{' '}
+          {item.buff_effects.map(b => `攻击时施加${BUFF_NAMES[b.buff] || b.buff}`).join('、')}
+        </p>
       )}
       {item.buff_effects?.length > 0 && (
         <p style="margin-top:12px;font-size:14px;">
