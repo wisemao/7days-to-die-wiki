@@ -9,7 +9,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const undead = zombies.filter(z => z.category !== 'animal');
 const animals = zombies.filter(z => z.category === 'animal');
 
-const cats = {};
+const cats: Record<string, { slug: string; label: string; count: number }> = {};
 for (const z of undead) {
   const label = ZOMBIE_TYPE_LABELS[z.category] || '其他';
   const slug = ZOMBIE_TYPE_LABELS[z.category] ? z.category : 'other';

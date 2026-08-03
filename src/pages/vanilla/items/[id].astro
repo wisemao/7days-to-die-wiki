@@ -139,14 +139,22 @@ function fmtVal(v) {
         {fmtModSlots(item.modifier_tags) && <span class="tag" style="background:#f3e5f5;border-color:#ab47bc;color:#7b1fa2;">槽位: {fmtModSlots(item.modifier_tags)}</span>}
         {item.trader_available && <span class="tag" style="background:#e3f2fd;border-color:#42a5f5;color:#1565c0;">🏪 商人可购</span>}
       </div>
-      {item.unlocked_by && (
-        <p style="margin-top:10px;font-size:14px;">
-          🔓 <strong>解锁:</strong>{' '}
-          <a href={`${base}/vanilla/items/${sanitizeId(item.unlocked_by)}/`} class="unlock-link">
-            {resolveItemName(item.unlocked_by)}
-          </a>
-        </p>
-      )}
+      {item.unlocked_by && (() => {
+        const ub = item.unlocked_by;
+        const isPerk = ub.startsWith('perk');
+        const target = isPerk
+          ? { url: `${base}/vanilla/skills/${sanitizeId(ub)}/`, name: resolveItemName(ub) }
+          : data.getItemLink(ub) ? { url: `${base}${data.getItemLink(ub)}`, name: resolveItemName(ub) } : null;
+        if (!target) return null;
+        return (
+          <p style="margin-top:10px;font-size:14px;">
+            🔓 <strong>解锁:</strong>{' '}
+            <a href={target.url} class="unlock-link">
+              {target.name}
+            </a>
+          </p>
+        );
+      })()}
       {item.description && (
         <p style="margin-top:12px;line-height:1.8;">
           <strong>描述:</strong>{' '}
@@ -272,7 +280,10 @@ function fmtVal(v) {
                   const displayName = /^[a-zA-Z0-9_]+$/.test(r.name)
                     ? r.name.replace(/BlockVariantHelper|_Powered|_player/g, '').replace(/([a-z])([A-Z])/g, '$1 $2')
                     : r.name;
-                  return (<a href={`${base}/vanilla/recipes/${sanitizeId(r.id)}/`}>{displayName}</a>);
+                  const hasRecipe = data.recipes.some(rc => rc.id === r.id);
+                  return hasRecipe
+                    ? <a href={`${base}/vanilla/recipes/${sanitizeId(r.id)}/`}>{displayName}</a>
+                    : <span style="opacity:.7;">{displayName}</span>;
                 })}
               </div>
             </div>

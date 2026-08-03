@@ -44,6 +44,7 @@ function enhance(configDir) {
   const spawningPath = join(configDir, 'spawning.xml');
   const entitygroupsPath = join(configDir, 'entitygroups.xml');
   const blocksPath = join(configDir, 'blocks.xml');
+  const entityclassesPath = join(configDir, 'entityclasses.xml');
 
   // Load localization for Chinese names
   let locMap = new Map();
@@ -340,7 +341,43 @@ function enhance(configDir) {
     console.log(`  - 活体动物解析: ${livingAnimals.filter(Boolean).length} 个新增, 动物属性更新: ${updated} 个, 暴徒分类修正: ${fixed} 个`);
   }
 
-  // ─── 12. Zombie melee damage from hand_item (items.xml DamageEntity) ───
+  // ─── 11b. Blocks ammo cleanup: strip +tags(...) suffix (ammo9mmBulletBall+tags(ammo9mm)) ───
+  const blocksDoc2 = readYaml(join(DATA_DIR, 'blocks.yaml'));
+  let ammoFixed = 0;
+  for (const b of blocksDoc2.blocks || []) {
+    if (typeof b.ammo === 'string' && b.ammo.includes('+tags(')) {
+      b.ammo = b.ammo.split('+tags(')[0];
+      ammoFixed++;
+    }
+  }
+  if (ammoFixed > 0) writeYaml(join(DATA_DIR, 'blocks.yaml'), blocksDoc2);
+  console.log(`  - 炮塔弹药清理: ${ammoFixed} 个 +tags 后缀移除`);
+
+  // ─── 12. Zombie HP from entityclasses.xml replace_passive_effect (^ref → value) ───
+  // passive_effect HealthMax uses ^references (e.g. ^healthSlim) defined in ZOMBIE_HP_LIST
+  if (existsSync(entityclassesPath)) {
+    const ecXml = readFileSync(entityclassesPath, 'utf-8');
+    const hpMap = {};
+    const blockRe = /<replace_passive_effect>([\s\S]*?)<\/replace_passive_effect>/g;
+    let bm;
+    while ((bm = blockRe.exec(ecXml)) !== null) {
+      const propRe = /<property\s+name="([^"]+)"\s+value="([^"]+)"/g;
+      let pm;
+      while ((pm = propRe.exec(bm[1])) !== null) hpMap[pm[1]] = parseFloat(pm[2]);
+    }
+    const zombiesDoc = readYaml(join(DATA_DIR, 'zombies.yaml'));
+    let hpFilled = 0;
+    for (const z of zombiesDoc.zombies || []) {
+      if (typeof z.hp === 'string' && z.hp.startsWith('^')) {
+        const v = hpMap[z.hp.slice(1)];
+        if (v != null) { z.hp = v; hpFilled++; }
+      }
+    }
+    if (hpFilled > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc);
+    console.log(`  - 丧尸血量解析: ${hpFilled} 个引用替换为数值 (replace_passive_effect)`);
+  }
+
+  // ─── 13. Zombie melee damage from hand_item (items.xml DamageEntity) ───
   // Zombie damage is defined on their hand items: <property class="Action0"><property name="DamageEntity" .../>
   if (existsSync(itemsPath)) {
     const itemsXml = readFileSync(itemsPath, 'utf-8');

@@ -3,7 +3,7 @@ zombies:
     name: zombieTemplateMale
     category: humanoid
     tier: 1
-    hp: ^healthSlim
+    hp: 125
     speed:
       walk: 0.2
       run: 1.25
@@ -46,7 +46,7 @@ zombies:
     name: zombieTemplateSlimFemale
     category: humanoid
     tier: 1
-    hp: ^healthSlim
+    hp: 125
     speed:
       walk: 0.3
       run: 1.35
@@ -57,7 +57,7 @@ zombies:
     name: 阿琳
     category: humanoid
     tier: 1
-    hp: ^healthSlim
+    hp: 125
     speed:
       walk: 0.3
       run: 1.35
@@ -70,7 +70,7 @@ zombies:
     name: 凶残的阿琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -86,7 +86,7 @@ zombies:
     name: 被辐射的阿琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -97,7 +97,7 @@ zombies:
     name: 带电阿琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -127,7 +127,7 @@ zombies:
     name: 炼狱阿琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -170,7 +170,7 @@ zombies:
     name: 凶残的马琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -186,7 +186,7 @@ zombies:
     name: 被辐射的马琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -197,7 +197,7 @@ zombies:
     name: 带电马琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -227,7 +227,7 @@ zombies:
     name: 炼狱马琳
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -270,7 +270,7 @@ zombies:
     name: 凶残派对女孩
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -286,7 +286,7 @@ zombies:
     name: 被辐射的派对女孩
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -297,7 +297,7 @@ zombies:
     name: 带电派对女孩
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -327,7 +327,7 @@ zombies:
     name: 炼狱派对女孩
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -381,7 +381,7 @@ zombies:
     name: 凶残的瘟疫感染护士
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -397,7 +397,7 @@ zombies:
     name: 被辐射的护士
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -408,7 +408,7 @@ zombies:
     name: 带电护士
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -438,7 +438,7 @@ zombies:
     name: 炼狱护士
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -483,7 +483,7 @@ zombies:
     name: 凶残的乔
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -499,7 +499,7 @@ zombies:
     name: 被辐射的乔
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -510,7 +510,7 @@ zombies:
     name: 带电乔
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -540,7 +540,7 @@ zombies:
     name: 炼狱乔
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -583,7 +583,7 @@ zombies:
     name: 凶残的史蒂夫
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -599,7 +599,7 @@ zombies:
     name: 被辐射的史蒂夫
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -610,7 +610,7 @@ zombies:
     name: 带电史蒂夫
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -640,7 +640,7 @@ zombies:
     name: 炼狱史蒂夫
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -683,7 +683,7 @@ zombies:
     name: 凶残的汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -699,7 +699,7 @@ zombies:
     name: 被辐射的汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -710,7 +710,7 @@ zombies:
     name: 带电汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -740,7 +740,7 @@ zombies:
     name: 炼狱汤姆·克拉克
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -783,7 +783,7 @@ zombies:
     name: 凶残的商人
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -799,7 +799,7 @@ zombies:
     name: 被辐射的商人
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -810,7 +810,7 @@ zombies:
     name: 带电商人
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -840,7 +840,7 @@ zombies:
     name: 炼狱商人
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -885,7 +885,7 @@ zombies:
     name: 凶残的被灼烧者
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -901,7 +901,7 @@ zombies:
     name: 被辐射的被灼烧者
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -912,7 +912,7 @@ zombies:
     name: 带电被灼烧者
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -942,7 +942,7 @@ zombies:
     name: 炼狱被灼烧者
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -972,7 +972,7 @@ zombies:
     name: 兰凯尔
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.4
       run: 1.35
@@ -991,7 +991,7 @@ zombies:
     name: 凶残兰凯尔
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.6
       run: 1.45
@@ -1010,7 +1010,7 @@ zombies:
     name: 辐射兰凯尔
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1025,7 +1025,7 @@ zombies:
     name: 带电兰凯尔
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -1042,7 +1042,7 @@ zombies:
     name: 炼狱兰凯尔
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -1114,7 +1114,7 @@ zombies:
     name: 恰克
     category: humanoid
     tier: 1
-    hp: ^healthTough
+    hp: 900
     speed:
       walk: 0.55
       run: 1.35
@@ -1129,7 +1129,7 @@ zombies:
     name: 凶残恰克
     category: humanoid
     tier: 1
-    hp: ^healthToughFeral
+    hp: 1200
     speed:
       walk: 0.6
       run: 1.4
@@ -1145,7 +1145,7 @@ zombies:
     name: 辐射恰克
     category: humanoid
     tier: 1
-    hp: ^healthToughRadiated
+    hp: 2000
     speed:
       walk: 1
       run: 2
@@ -1158,7 +1158,7 @@ zombies:
     name: 带电恰克
     category: humanoid
     tier: 1
-    hp: ^healthToughCharged
+    hp: 2400
     speed:
       walk: 1
       run: 2
@@ -1190,7 +1190,7 @@ zombies:
     name: 炼狱恰克
     category: humanoid
     tier: 1
-    hp: ^healthToughInfernal
+    hp: 3000
     speed:
       walk: 1
       run: 2
@@ -1277,7 +1277,7 @@ zombies:
     name: 蜘蛛
     category: humanoid
     tier: 1
-    hp: ^healthSlim
+    hp: 125
     speed:
       walk: 0.3
       run: 1.35
@@ -1290,7 +1290,7 @@ zombies:
     name: 凶残的蜘蛛
     category: humanoid
     tier: 1
-    hp: ^healthSlimFeral
+    hp: 500
     speed:
       walk: 0.6
       run: 1.45
@@ -1306,7 +1306,7 @@ zombies:
     name: 被辐射的蜘蛛
     category: humanoid
     tier: 1
-    hp: ^healthSlimRadiated
+    hp: 800
     speed:
       walk: 1
       run: 2
@@ -1317,7 +1317,7 @@ zombies:
     name: 带电蜘蛛
     category: humanoid
     tier: 1
-    hp: ^healthSlimCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -1347,7 +1347,7 @@ zombies:
     name: 炼狱蜘蛛
     category: humanoid
     tier: 1
-    hp: ^healthSlimInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -1377,7 +1377,7 @@ zombies:
     name: 布尔
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -1390,7 +1390,7 @@ zombies:
     name: 凶残的布尔
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -1406,7 +1406,7 @@ zombies:
     name: 被辐射的布尔
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -1417,7 +1417,7 @@ zombies:
     name: 带电布尔
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1447,7 +1447,7 @@ zombies:
     name: 炼狱布尔
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1492,7 +1492,7 @@ zombies:
     name: 凶残的穿着防化服的丧尸
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.3
@@ -1508,7 +1508,7 @@ zombies:
     name: 被辐射的穿着防化服的丧尸
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 0.5
       run: 1.3
@@ -1521,7 +1521,7 @@ zombies:
     name: 带电防护服丧尸
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1551,7 +1551,7 @@ zombies:
     name: 炼狱防护服丧尸
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1581,7 +1581,7 @@ zombies:
     name: 看门人
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -1594,7 +1594,7 @@ zombies:
     name: 凶残的看门人
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -1608,7 +1608,7 @@ zombies:
     name: 被辐射的看门人
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 0.6
       run: 1.45
@@ -1622,7 +1622,7 @@ zombies:
     name: 带电看门人
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1652,7 +1652,7 @@ zombies:
     name: 炼狱看门人
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1682,7 +1682,7 @@ zombies:
     name: 囚犯
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -1693,7 +1693,7 @@ zombies:
     name: 凶残的囚犯
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -1707,7 +1707,7 @@ zombies:
     name: 被辐射的囚犯
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 0.6
       run: 1.45
@@ -1721,7 +1721,7 @@ zombies:
     name: 带电囚犯
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1751,7 +1751,7 @@ zombies:
     name: 炼狱囚犯
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1781,7 +1781,7 @@ zombies:
     name: 莫伊
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -1794,7 +1794,7 @@ zombies:
     name: 凶残的莫伊
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -1810,7 +1810,7 @@ zombies:
     name: 被辐射的莫伊
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -1821,7 +1821,7 @@ zombies:
     name: 带电莫伊
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1851,7 +1851,7 @@ zombies:
     name: 炼狱莫伊
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1881,7 +1881,7 @@ zombies:
     name: 实验室工作人员
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -1909,7 +1909,7 @@ zombies:
     name: 凶残的实验室工作人员
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -1923,7 +1923,7 @@ zombies:
     name: 被辐射的实验室工作人员
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -1934,7 +1934,7 @@ zombies:
     name: 带电实验室工作人员
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -1964,7 +1964,7 @@ zombies:
     name: 炼狱实验室工作人员
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -1994,7 +1994,7 @@ zombies:
     name: 达琳
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -2007,7 +2007,7 @@ zombies:
     name: 凶残的达琳
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -2023,7 +2023,7 @@ zombies:
     name: 被辐射的达琳
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -2034,7 +2034,7 @@ zombies:
     name: 带电达琳
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -2064,7 +2064,7 @@ zombies:
     name: 炼狱达琳
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2094,7 +2094,7 @@ zombies:
     name: 幽
     category: humanoid
     tier: 1
-    hp: ^healthNormal
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -2107,7 +2107,7 @@ zombies:
     name: 凶残的幽
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.5
       run: 1.35
@@ -2123,7 +2123,7 @@ zombies:
     name: 被辐射的幽
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -2134,7 +2134,7 @@ zombies:
     name: 带电幽
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -2164,7 +2164,7 @@ zombies:
     name: 炼狱幽
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2194,7 +2194,7 @@ zombies:
     name: 公用事业工人
     category: humanoid
     tier: 1
-    hp: ^healthUtilityWorker
+    hp: 225
     speed:
       walk: 1
       run: 2
@@ -2226,7 +2226,7 @@ zombies:
     name: 凶残的公用事业工人
     category: humanoid
     tier: 1
-    hp: ^healthUtilityWorkerFeral
+    hp: 700
     speed:
       walk: 0.5
       run: 1.35
@@ -2240,7 +2240,7 @@ zombies:
     name: 被辐射的公用事业工人
     category: humanoid
     tier: 1
-    hp: ^healthUtilityWorkerRadiated
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -2251,7 +2251,7 @@ zombies:
     name: 带电公用事业工人
     category: humanoid
     tier: 1
-    hp: ^healthUtilityWorkerCharged
+    hp: 1300
     speed:
       walk: 1
       run: 2
@@ -2281,7 +2281,7 @@ zombies:
     name: 炼狱公共事业工人
     category: humanoid
     tier: 1
-    hp: ^healthUtilityWorkerInfernal
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -2311,7 +2311,7 @@ zombies:
     name: 摩托车手
     category: humanoid
     tier: 1
-    hp: ^healthSturdy
+    hp: 600
     speed:
       walk: 0.2
       run: 1.2
@@ -2343,7 +2343,7 @@ zombies:
     name: 凶残的摩托车手
     category: humanoid
     tier: 1
-    hp: ^healthSturdyFeral
+    hp: 900
     speed:
       walk: 0.45
       run: 1.3
@@ -2359,7 +2359,7 @@ zombies:
     name: 被辐射的摩托车手
     category: humanoid
     tier: 1
-    hp: ^healthSturdyRadiated
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -2387,7 +2387,7 @@ zombies:
     name: 带电摩托车手
     category: humanoid
     tier: 1
-    hp: ^healthSturdyCharged
+    hp: 1800
     speed:
       walk: 1
       run: 2
@@ -2417,7 +2417,7 @@ zombies:
     name: 炼狱摩托车手
     category: humanoid
     tier: 1
-    hp: ^healthSturdyInfernal
+    hp: 2400
     speed:
       walk: 1
       run: 2
@@ -2447,7 +2447,7 @@ zombies:
     name: 伐木工
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.2
       run: 1.2
@@ -2479,7 +2479,7 @@ zombies:
     name: 凶残伐木工
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.45
       run: 1.3
@@ -2495,7 +2495,7 @@ zombies:
     name: 被辐射的伐木工
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2523,7 +2523,7 @@ zombies:
     name: 带电伐木工
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -2553,7 +2553,7 @@ zombies:
     name: 炼狱伐木工
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -2583,7 +2583,7 @@ zombies:
     name: 大妈妈
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.2
       run: 1.2
@@ -2615,7 +2615,7 @@ zombies:
     name: 凶残大妈妈
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.45
       run: 1.3
@@ -2631,7 +2631,7 @@ zombies:
     name: 被辐射的大妈妈
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2659,7 +2659,7 @@ zombies:
     name: 带电大妈妈
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -2689,7 +2689,7 @@ zombies:
     name: 炼狱大妈妈
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -2719,7 +2719,7 @@ zombies:
     name: 游客
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.2
       run: 1.2
@@ -2751,7 +2751,7 @@ zombies:
     name: 凶残的游客
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.45
       run: 1.3
@@ -2767,7 +2767,7 @@ zombies:
     name: 被辐射的游客
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2795,7 +2795,7 @@ zombies:
     name: 带电游客
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -2825,7 +2825,7 @@ zombies:
     name: 炼狱游客
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -2855,7 +2855,7 @@ zombies:
     name: 保龄球丧尸
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.2
       run: 1.2
@@ -2887,7 +2887,7 @@ zombies:
     name: 凶残的保龄球丧尸
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.45
       run: 1.3
@@ -2903,7 +2903,7 @@ zombies:
     name: 被辐射的保龄球丧尸
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -2931,7 +2931,7 @@ zombies:
     name: 带电保龄球丧尸
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -2961,7 +2961,7 @@ zombies:
     name: 炼狱保龄球丧尸
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -2991,7 +2991,7 @@ zombies:
     name: 警察
     category: humanoid
     tier: 1
-    hp: ^healthStrong
+    hp: 450
     speed:
       walk: 0.2
       run: 1.2
@@ -3023,7 +3023,7 @@ zombies:
     name: 凶残的警察
     category: humanoid
     tier: 1
-    hp: ^healthStrongFeral
+    hp: 950
     speed:
       walk: 0.45
       run: 1.3
@@ -3039,7 +3039,7 @@ zombies:
     name: 被辐射的警察
     category: humanoid
     tier: 1
-    hp: ^healthStrongRadiated
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -3069,7 +3069,7 @@ zombies:
     name: 带电警察
     category: humanoid
     tier: 1
-    hp: ^healthStrongCharged
+    hp: 1900
     speed:
       walk: 1
       run: 2
@@ -3097,7 +3097,7 @@ zombies:
     name: 炼狱警察
     category: humanoid
     tier: 1
-    hp: ^healthStrongInfernal
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -3155,7 +3155,7 @@ zombies:
     name: 凶残的暴徒
     category: humanoid
     tier: 1
-    hp: ^healthNormalFeral
+    hp: 550
     speed:
       walk: 0.6
       run: 1.45
@@ -3169,7 +3169,7 @@ zombies:
     name: 被辐射的暴徒
     category: humanoid
     tier: 1
-    hp: ^healthNormalRadiated
+    hp: 900
     speed:
       walk: 1
       run: 2
@@ -3197,7 +3197,7 @@ zombies:
     name: 带电暴徒
     category: humanoid
     tier: 1
-    hp: ^healthNormalCharged
+    hp: 1100
     speed:
       walk: 1
       run: 2
@@ -3227,7 +3227,7 @@ zombies:
     name: 炼狱暴徒
     category: humanoid
     tier: 1
-    hp: ^healthNormalInfernal
+    hp: 1700
     speed:
       walk: 1
       run: 2
@@ -3257,7 +3257,7 @@ zombies:
     name: 士兵
     category: humanoid
     tier: 1
-    hp: ^healthFit
+    hp: 250
     speed:
       walk: 0.3
       run: 1.35
@@ -3289,7 +3289,7 @@ zombies:
     name: 凶残的士兵
     category: humanoid
     tier: 1
-    hp: ^healthFitFeral
+    hp: 800
     speed:
       walk: 0.6
       run: 1.45
@@ -3305,7 +3305,7 @@ zombies:
     name: 被辐射的士兵
     category: humanoid
     tier: 1
-    hp: ^healthFitRadiated
+    hp: 1400
     speed:
       walk: 1
       run: 2
@@ -3333,7 +3333,7 @@ zombies:
     name: 带电士兵
     category: humanoid
     tier: 1
-    hp: ^healthFitCharged
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -3363,7 +3363,7 @@ zombies:
     name: 炼狱士兵
     category: humanoid
     tier: 1
-    hp: ^healthFitInfernal
+    hp: 2200
     speed:
       walk: 1
       run: 2
@@ -3393,7 +3393,7 @@ zombies:
     name: 凶残的怀特
     category: humanoid
     tier: 1
-    hp: ^healthWightFeral
+    hp: 1200
     speed:
       walk: 0.6
       run: 1.45
@@ -3409,7 +3409,7 @@ zombies:
     name: 被辐射的恶灵
     category: humanoid
     tier: 1
-    hp: ^healthWightRadiated
+    hp: 2200
     speed:
       walk: 1
       run: 2
@@ -3437,7 +3437,7 @@ zombies:
     name: 带电恶灵
     category: humanoid
     tier: 1
-    hp: ^healthWightCharged
+    hp: 2400
     speed:
       walk: 1
       run: 2
@@ -3467,7 +3467,7 @@ zombies:
     name: 炼狱恶灵
     category: humanoid
     tier: 1
-    hp: ^healthWightInfernal
+    hp: 3000
     speed:
       walk: 1
       run: 2
@@ -3497,7 +3497,7 @@ zombies:
     name: 尖叫丧尸
     category: humanoid
     tier: 1
-    hp: ^healthScreamer
+    hp: 200
     speed:
       walk: 1
       run: 2
@@ -3508,7 +3508,7 @@ zombies:
     name: 凶残的尖叫丧尸
     category: humanoid
     tier: 1
-    hp: ^healthScreamerFeral
+    hp: 500
     speed:
       walk: 0.5
       run: 1.35
@@ -3522,7 +3522,7 @@ zombies:
     name: 被辐射的尖叫丧尸
     category: humanoid
     tier: 1
-    hp: ^healthScreamerRadiated
+    hp: 800
     speed:
       walk: 0.5
       run: 1.35
@@ -3550,7 +3550,7 @@ zombies:
     name: 带电尖叫丧尸
     category: humanoid
     tier: 1
-    hp: ^healthScreamerCharged
+    hp: 1000
     speed:
       walk: 1
       run: 2
@@ -3580,7 +3580,7 @@ zombies:
     name: 炼狱尖叫丧尸
     category: humanoid
     tier: 1
-    hp: ^healthScreamerInfernal
+    hp: 1600
     speed:
       walk: 1
       run: 2
@@ -3610,7 +3610,7 @@ zombies:
     name: 变异丧尸
     category: humanoid
     tier: 1
-    hp: ^healthBrute
+    hp: 950
     speed:
       walk: 0.4
       run: 1.3
@@ -3625,7 +3625,7 @@ zombies:
     name: 凶残的变异丧尸
     category: humanoid
     tier: 1
-    hp: ^healthBruteFeral
+    hp: 1200
     speed:
       walk: 0.5
       run: 1.35
@@ -3641,7 +3641,7 @@ zombies:
     name: 被辐射的变异丧尸
     category: humanoid
     tier: 1
-    hp: ^healthBruteRadiated
+    hp: 2100
     speed:
       walk: 0.5
       run: 1.35
@@ -3673,7 +3673,7 @@ zombies:
     name: 带电变异丧尸
     category: humanoid
     tier: 1
-    hp: ^healthBruteCharged
+    hp: 2500
     speed:
       walk: 1
       run: 2
@@ -3705,7 +3705,7 @@ zombies:
     name: 炼狱变异丧尸
     category: humanoid
     tier: 1
-    hp: ^healthBruteInfernal
+    hp: 3100
     speed:
       walk: 1
       run: 2
@@ -3737,7 +3737,7 @@ zombies:
     name: 爆破丧尸
     category: humanoid
     tier: 1
-    hp: ^healthDemo
+    hp: 1200
     speed:
       walk: 1
       run: 2
@@ -3769,7 +3769,7 @@ zombies:
     name: 爬行者
     category: humanoid
     tier: 1
-    hp: ^healthCrawler
+    hp: 200
     speed:
       walk: 0.7
       run: 1
@@ -3784,7 +3784,7 @@ zombies:
     name: 凶残的爬行者
     category: humanoid
     tier: 1
-    hp: ^healthCrawlerFeral
+    hp: 300
     speed:
       walk: 1.2
       run: 1.4

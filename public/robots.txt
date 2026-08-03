@@ -1,5 +1,5 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
-Disallow: /404/
+Disallow: /404.html
 
 Sitemap: https://wisemao.github.io/7days-to-die-wiki/sitemap-index.xml

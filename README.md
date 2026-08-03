@@ -15,10 +15,10 @@ npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 ```
 ├── data/                  # YAML 数据源
 │   ├── vanilla/           # 原版游戏数据
-│   │   ├── items.yaml     # 物品数据（含 104 模组）
+│   │   ├── items.yaml     # 物品数据（含 103 模组）
 │   │   ├── recipes.yaml   # 配方数据
 │   │   ├── skills.yaml    # 技能数据（211 个，含书籍关联）
-│   │   ├── zombies.yaml   # 僵尸数据（180 个）
+│   │   ├── zombies.yaml   # 生物数据（197 个：175 丧尸 + 22 动物）
 │   │   ├── blocks.yaml    # 防御方块（17 个陷阱/炮塔/电力设备）
 │   │   └── biomes.yaml    # 生物群系（6 个）
 │   └── crafting-skills.json # 技能杂志数据
@@ -26,7 +26,7 @@ npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 │   ├── robots.txt         # 爬虫规则
 │   ├── favicon.svg        # 站点图标
 │   ├── og-image.png       # 社交分享图（1200×630）
-│   └── images/items/      # 物品图标 PNG（1589 个，优化后 ~12MB）
+│   └── images/items/      # 物品图标 PNG（1606 个，优化后 ~12MB）
 ├── src/                   # Astro 源文件
 │   ├── components/
 │   │   ├── Nav.astro      # 顶栏导航（搜索弹窗 + 主题切换）
@@ -35,7 +35,7 @@ npm run build      # 构建静态站点（含 Pagefind 搜索索引）
 │   │   └── Footer.astro   # 页脚（含构建日期）
 │   ├── layouts/
 │   │   └── Layout.astro   # 全局布局（设计系统 + SEO/OG 元数据 + 主题）
-│   ├── pages/             # 页面路由（2031 页）
+│   ├── pages/             # 页面路由（2048 页）
 │   │   ├── index.astro    # 首页（Hero 图标带 + 6 大卡 + 分类/工作站）
 │   │   ├── 404.astro      # 404 页面
 │   │   └── vanilla/       # 原版数据页面
@@ -127,7 +127,7 @@ node scripts/import/import-all.js --game-path "F:/SteamLibrary/steamapps/common/
 | `vehicles.xml` | `items.yaml` | 载具速度/油耗 |
 | `item_modifiers.xml` | `items.yaml` | 武器/护甲/载具/无人机模组 |
 | `traders.xml` | `items.yaml` | 商人可购标记 |
-| `localization.txt/csv` | — | 中文名称本地化（14684 条） |
+| `localization.txt/csv` | — | 中文名称本地化（25575 条） |
 
 增强后运行 `npm run validate` 检查数据质量，再 `npm run build` 重新生成页面。
 
@@ -141,7 +141,7 @@ node scripts/import/import-all.js --game-path "F:/SteamLibrary/steamapps/common/
 
 ## 技术栈
 
-- [Astro](https://astro.build/) — 静态站点生成器（2031 页面，构建 ~10s）
+- [Astro](https://astro.build/) — 静态站点生成器（2048 页面，构建 ~10s）
 - [Pagefind](https://pagefind.app/) — 全文搜索（Component UI 弹窗，Ctrl+K 快捷，zh-cn 分词）
 - [TypeScript](https://www.typescriptlang.org/) — 数据层类型化
 - [js-yaml](https://github.com/nodeca/js-yaml) — YAML 解析

@@ -92,21 +92,21 @@ blocks:
     name: 自动炮塔
     category: trap
     power_usage: 15
-    ammo: ammo9mmBulletBall+tags(ammo9mm)
+    ammo: ammo9mmBulletBall
     tier: 3000
     extends: autoTurret
   - id: shotgunTurret
     name: 霰弹枪炮塔
     category: trap
     power_usage: 15
-    ammo: ammoShotgunShell+tags(ammoShells)
+    ammo: ammoShotgunShell
     tier: 2500
     extends: autoTurret <- shotgunTurret
   - id: m60Turret
     name: M60 炮塔
     category: trap
     power_usage: 15
-    ammo: ammo762mmBulletBall+tags(ammo762mm)
+    ammo: ammo762mmBulletBall
     tier: 2500
     extends: autoTurret <- m60Turret
   - id: trapSpikesWoodMaster

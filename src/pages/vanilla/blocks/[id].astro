@@ -7,8 +7,9 @@ export function getStaticPaths() {
   return blocks.map(b => ({ params: { id: b._sanitizedId }, props: { block: b } }));
 }
 const { block } = Astro.props;
-const { resolveItemName } = loadData();
+const { resolveItemName, getItemLink } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const ammoLink = block.ammo ? getItemLink(block.ammo) : null;
 const ammoIcon = block.ammo ? itemIconUrl({ id: block.ammo }, base) : null;
 const blockIcon = itemIconUrl({ id: block.id, icon: block.icon }, base);
 ---
@@ -37,10 +38,17 @@ const blockIcon = itemIconUrl({ id: block.id, icon: block.icon }, base);
     {block.tier != null && <tr><td>经济价值</td><td>{block.tier}</td></tr>}
     {block.ammo && (
       <tr><td>弹药</td><td>
-        <a href={`${base}/vanilla/items/${sanitizeId(block.ammo)}/`} class="ammo-link">
-          {ammoIcon && <img class="ammo-icon" src={ammoIcon} alt="" loading="lazy" />}
-          {resolveItemName(block.ammo)}
-        </a>
+        {ammoLink ? (
+          <a href={`${base}${ammoLink}`} class="ammo-link">
+            {ammoIcon && <img class="ammo-icon" src={ammoIcon} alt="" loading="lazy" />}
+            {resolveItemName(block.ammo)}
+          </a>
+        ) : (
+          <span class="ammo-link">
+            {ammoIcon && <img class="ammo-icon" src={ammoIcon} alt="" loading="lazy" />}
+            {resolveItemName(block.ammo)}
+          </span>
+        )}
       </td></tr>
     )}
   </table>

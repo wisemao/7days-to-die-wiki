@@ -7,35 +7,38 @@ export function getStaticPaths() {
   return recipes.map(r => ({ params: { id: r._sanitizedId }, props: { recipe: r, itemMap } }));
 }
 const { recipe, itemMap } = Astro.props;
-const { resolveItemName } = loadData();
+const { resolveItemName, getItemLink } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const resolveName = (id) => resolveItemName(id);
+const resolveName = (id: string) => resolveItemName(id);
 const hasRecipe = recipe.recipe && recipe.recipe.length > 0;
 const hasScrap = recipe.scrappable_into && recipe.scrappable_into.length > 0;
 const craftsItem = itemMap.get(recipe.id);
 const craftsIcon = itemIconUrl({ id: recipe.id, icon: craftsItem?.icon }, base);
+const matLink = (itemId: string) => getItemLink(itemId);
 ---
 
-<Layout title={recipe.name} description={`${recipe.name} - 合成配方`}>
+<Layout title={recipe.name || recipe.id} description={`${recipe.name || recipe.id} - 合成配方`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/recipes/`}>配方列表</a><span class="sep">/</span><span>{recipe.name}</span>
+    <a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/recipes/`}>配方列表</a><span class="sep">/</span><span>{recipe.name || recipe.id}</span>
   </nav>
-  <h1>{recipe.name}</h1>
+  <h1>{recipe.name || recipe.id}</h1>
   <p><strong>工作站:</strong> {recipe.station || '背包合成'} | <strong>耗时:</strong> {recipe.craft_time || 0}秒 | <strong>产出:</strong> {recipe.craft_count ?? 1}</p>
   {craftsItem && <p class="output-line"><strong>产出物品:</strong> <a href={`${base}/vanilla/items/${sanitizeId(recipe.id)}/`} class="output-link">{craftsIcon && <img class="mat-icon" src={craftsIcon} alt="" loading="lazy" />}{craftsItem.name}</a></p>}
 
   {hasRecipe && (<>
     <h2>配方材料</h2>
     <div class="recipe-mats">
-      {recipe.recipe.filter(m => m.count > 0).map(m => {
+      {recipe.recipe!.filter(m => m.count > 0).map(m => {
         const icon = itemIconUrl({ id: m.item_id }, base);
-        return (
-          <a href={`${base}/vanilla/items/${sanitizeId(m.item_id)}/`} class="mat-chip">
+        const link = matLink(m.item_id);
+        const chip = (
+          <>
             {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
             <span class="mat-name">{resolveName(m.item_id)}</span>
             <span class="mat-count">×{m.count}</span>
-          </a>
+          </>
         );
+        return link ? <a href={`${base}${link}`} class="mat-chip">{chip}</a> : <span class="mat-chip">{chip}</span>;
       })}
     </div>
   </>)}
@@ -44,15 +47,17 @@ const craftsIcon = itemIconUrl({ id: recipe.id, icon: craftsItem?.icon }, base);
   {hasScrap && (<>
     <h2>分解获得</h2>
     <div class="recipe-mats">
-      {recipe.scrappable_into.map(s => {
+      {recipe.scrappable_into!.map(s => {
         const icon = itemIconUrl({ id: s.item_id }, base);
-        return (
-          <a href={`${base}/vanilla/items/${sanitizeId(s.item_id)}/`} class="mat-chip">
+        const link = matLink(s.item_id);
+        const chip = (
+          <>
             {icon && <img class="mat-icon" src={icon} alt="" loading="lazy" />}
             <span class="mat-name">{resolveName(s.item_id)}</span>
             <span class="mat-count">×{s.count}</span>
-          </a>
+          </>
         );
+        return link ? <a href={`${base}${link}`} class="mat-chip">{chip}</a> : <span class="mat-chip">{chip}</span>;
       })}
     </div>
   </>)}
