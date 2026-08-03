@@ -3778,12 +3778,20 @@ items:
     tier: 10
     stats:
       health: 5
+    buff_effects:
+      - action: add
+        buff: buffInjuryAbrasionTreated
+      - action: add
+        buff: buffProcessConsumables
   - id: medicalBandage
     name: 绷带
     category: medical
     stack_size: 10
     tier: 5
     trader_available: true
+    buff_effects:
+      - action: remove
+        buff: buffInjuryBleeding
   - id: medicalFirstAidBandage
     name: 急救绷带
     category: medical
@@ -3792,6 +3800,13 @@ items:
     stats:
       health: 30
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInjuryAbrasionTreated
+      - action: add
+        buff: buffProcessConsumables
+      - action: remove
+        buff: buffInjuryBleeding
   - id: medicalFirstAidKit
     name: 急救包
     category: medical
@@ -3800,16 +3815,55 @@ items:
     stats:
       health: 180
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInjuryAbrasionTreated
+      - action: add
+        buff: buffProcessConsumables
+      - action: remove
+        buff: buffInjuryBleeding
+      - action: remove
+        buff: buffLaceration
   - id: medicalSplint
     name: 夹板
     category: medical
     stack_size: 5
     tier: 10
     trader_available: true
+    buff_effects:
+      - action: remove
+        buff: buffLegSprained
+      - action: add
+        buff: buffLegSplinted
+      - action: remove
+        buff: buffArmSprained
+      - action: add
+        buff: buffArmSplinted
   - id: medicalPlasterCast
     name: 石膏绷带
     category: medical
     stack_size: 1
+    buff_effects:
+      - action: remove
+        buff: buffLegSprained
+      - action: remove
+        buff: buffLegBroken
+      - action: add
+        buff: buffLegCast
+      - action: add
+        buff: buffLegCast
+      - action: remove
+        buff: buffLegCast
+      - action: remove
+        buff: buffArmSprained
+      - action: remove
+        buff: buffArmBroken
+      - action: add
+        buff: buffArmCast
+      - action: add
+        buff: buffArmCast
+      - action: remove
+        buff: buffArmCast
   - id: medicalBloodBag
     name: 血袋
     category: medical
@@ -3824,6 +3878,11 @@ items:
     stats:
       buff_duration: 12 分钟
     trader_available: true
+    buff_effects:
+      - action: remove
+        buff: buffFatiguedTrigger
+      - action: add
+        buff: buffDrugVitamins
   - id: drugPainkillers
     name: 止痛药
     category: medical
@@ -3832,6 +3891,11 @@ items:
     stats:
       buff_duration: 3 分钟
     trader_available: true
+    buff_effects:
+      - action: remove
+        buff: buffInjuryConcussion
+      - action: add
+        buff: buffDrugPainkillers
   - id: drugHerbalAntibiotics
     name: 草药抗生素
     category: medical
@@ -3839,6 +3903,9 @@ items:
     tier: 120
     stats:
       infection_cure: 10%
+    buff_effects:
+      - action: add
+        buff: buffInfectionAddCure
   - id: drugAntibiotics
     name: 抗生素
     category: medical
@@ -3847,6 +3914,9 @@ items:
     stats:
       infection_cure: 25%
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffInfectionAddCure
   - id: drugSteroids
     name: 类固醇
     category: consumable
@@ -3855,6 +3925,9 @@ items:
     stats:
       buff_duration: 12 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugSteroids
   - id: drugRecog
     name: 雷克格
     category: medical
@@ -3863,6 +3936,9 @@ items:
     stats:
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugRecog
   - id: drugFortBites
     name: 强健宝
     category: consumable
@@ -3870,6 +3946,9 @@ items:
     stats:
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugFortBites
   - id: foodBurntSmoothie
     name: 黑肺血清
     category: food
@@ -3879,6 +3958,15 @@ items:
     stats:
       health: 10
       buff_duration: 5 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffBurnt_Hazard_Over
+      - action: add
+        buff: buffBurntSmoothieRun
+      - action: add
+        buff: buffBurntSmoothieRun
   - id: foodOasisSmoothie
     name: 中暑补剂
     category: food
@@ -3890,6 +3978,17 @@ items:
       water: 30
       health: 10
       buff_duration: 5 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDesert_Hazard_Over
+      - action: add
+        buff: buffOasisSmoothieRun
+      - action: add
+        buff: buffOasisSmoothieRun
+      - action: add
+        buff: buffExtinguishFire
   - id: foodFrostbiteSmoothie
     name: 灼热炖肉
     category: food
@@ -3901,6 +4000,17 @@ items:
       water: 20
       health: 15
       buff_duration: 5 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffSnow_Hazard_Over
+      - action: add
+        buff: buffFrostbiteSmoothieRun
+      - action: add
+        buff: buffFrostbiteSmoothieRun
+      - action: add
+        buff: buffExtinguishFire
   - id: foodAtomicSmoothie
     name: 辐射净化剂
     category: food
@@ -3910,6 +4020,15 @@ items:
     stats:
       health: 10
       buff_duration: 5 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffWasteland_Hazard_Over
+      - action: add
+        buff: buffAtomicSmoothieRun
+      - action: add
+        buff: buffAtomicSmoothieRun
   - id: drugAtomJunkies
     name: 原子迷
     category: medical
@@ -3919,6 +4038,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugAtomJunkies
+      - action: add
+        buff: buffProcessConsumables
   - id: drugCovertCats
     name: 隐蔽的猫
     category: consumable
@@ -3927,6 +4051,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugCovertCats
+      - action: add
+        buff: buffProcessConsumables
   - id: drugEyeKandy
     name: 寻宝眼药水
     category: consumable
@@ -3935,6 +4064,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugEyeKandy
+      - action: add
+        buff: buffProcessConsumables
   - id: drugHackers
     name: 黑客
     category: consumable
@@ -3943,6 +4077,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugHackers
+      - action: add
+        buff: buffProcessConsumables
   - id: drugHealthBar
     name: 能量棒
     category: consumable
@@ -3951,6 +4090,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugHealthBar
+      - action: add
+        buff: buffProcessConsumables
   - id: drugJailBreakers
     name: 越狱者
     category: consumable
@@ -3959,6 +4103,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugJailBreakers
+      - action: add
+        buff: buffProcessConsumables
   - id: drugNerdTats
     name: 学霸刺青
     category: consumable
@@ -3967,6 +4116,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugNerdTats
+      - action: add
+        buff: buffProcessConsumables
   - id: drugOhShitzDrops
     name: 该死的坠落
     category: consumable
@@ -3975,6 +4129,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugOhShitzDrops
+      - action: add
+        buff: buffProcessConsumables
   - id: drugRockBusters
     name: 岩石克星
     category: consumable
@@ -3983,6 +4142,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugRockBusters
+      - action: add
+        buff: buffProcessConsumables
   - id: drugSkullCrushers
     name: 头骨粉碎者
     category: consumable
@@ -3991,6 +4155,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugSkullCrushers
+      - action: add
+        buff: buffProcessConsumables
   - id: drugSugarButts
     name: 烟蒂糖
     category: consumable
@@ -3999,6 +4168,11 @@ items:
       hunger: 5
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrugSugarButts
+      - action: add
+        buff: buffProcessConsumables
   - id: foodHoney
     name: 一罐蜂蜜
     category: food
@@ -4009,6 +4183,11 @@ items:
       health: 3
       infection_cure: 5%
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffInfectionAddCure
   - id: foodCanBeef
     name: 大份牛肉罐头
     category: food
@@ -4018,6 +4197,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanChicken
     name: 鸡肉罐头
     category: food
@@ -4026,6 +4208,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanLamb
     name: 羊肉罐头
     category: food
@@ -4034,6 +4219,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanCatfood
     name: 猫粮罐头
     category: food
@@ -4043,6 +4231,9 @@ items:
       hunger: 10
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanDogfood
     name: 狗粮罐头
     category: food
@@ -4052,6 +4243,9 @@ items:
       hunger: 10
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanChili
     name: 辣椒罐头
     category: food
@@ -4060,6 +4254,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanTuna
     name: 金枪鱼罐头
     category: food
@@ -4069,6 +4266,9 @@ items:
       hunger: 5
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanSham
     name: 山威罐头
     category: food
@@ -4077,6 +4277,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanPasta
     name: 通心粉罐头
     category: food
@@ -4085,6 +4288,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanSalmon
     name: 三文鱼罐头
     category: food
@@ -4093,6 +4299,9 @@ items:
       hunger: 15
       health: 7
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanMiso
     name: 味增罐头
     category: food
@@ -4103,6 +4312,9 @@ items:
       water: 10
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanPeas
     name: 豌豆罐头
     category: food
@@ -4113,6 +4325,9 @@ items:
       water: 5
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanPears
     name: 梨子罐头
     category: food
@@ -4123,6 +4338,9 @@ items:
       water: 5
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanSoup
     name: 鸡汤
     category: food
@@ -4133,6 +4351,9 @@ items:
       water: 10
       health: 5
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCanStock
     name: 浓汤罐头
     category: food
@@ -4143,6 +4364,9 @@ items:
       water: 10
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCornOnTheCob
     name: 烤玉米
     category: food
@@ -4152,6 +4376,9 @@ items:
       hunger: 10
       health: 5
       stamina: 10
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCornBread
     name: 玉米面包
     category: food
@@ -4162,6 +4389,9 @@ items:
       health: 5
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodShamSandwich
     name: 过期的山威三明治
     category: food
@@ -4170,6 +4400,11 @@ items:
     stats:
       hunger: 15
       stamina: -1
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDysenteryCatchFood
   - id: foodCharredMeat
     name: 烧焦的肉
     category: food
@@ -4180,6 +4415,9 @@ items:
       health: 5
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodGrilledMeat
     name: 烤肉
     category: food
@@ -4190,6 +4428,9 @@ items:
       health: 5
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodBoiledMeat
     name: 水煮肉
     category: food
@@ -4201,6 +4442,9 @@ items:
       health: 15
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodChickenWings
     name: 鸡翅
     category: food
@@ -4211,6 +4455,9 @@ items:
       health: 49
       stamina: 20
       buff_duration: 6 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodChickenNuggets
     name: 鸡块
     category: food
@@ -4231,6 +4478,9 @@ items:
       water: 20
       health: 37
       stamina: 20
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodRoadrunnerChickenJerky
     name: 走鹃鸡肉干
     category: food
@@ -4252,6 +4502,9 @@ items:
       health: 25
       stamina: 20
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodSteakAndPotato
     name: 牛排配土豆
     category: food
@@ -4262,6 +4515,9 @@ items:
       health: 25
       stamina: 20
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodHoneyGlazedSham
     name: 蜜汁山威
     category: food
@@ -4272,6 +4528,11 @@ items:
       health: 49
       stamina: 30
       infection_cure: 5%
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffInfectionAddCure
   - id: foodHoneyBrisket
     name: 蜜汁牛腩
     category: food
@@ -4282,6 +4543,11 @@ items:
       health: 70
       stamina: 40
       infection_cure: 5%
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffInfectionAddCure
   - id: foodShamChowder
     name: 山威杂烩
     category: food
@@ -4305,6 +4571,9 @@ items:
       health: 32
       stamina: 30
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodFishTacos
     name: 鱼肉塔可
     category: food
@@ -4315,6 +4584,9 @@ items:
       health: 40
       stamina: 30
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodChiliDog
     name: 辣狗
     category: food
@@ -4325,6 +4597,9 @@ items:
       health: 30
       stamina: 30
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodBakedPotato
     name: 烤土豆
     category: food
@@ -4335,6 +4610,9 @@ items:
       health: 5
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodBlueberryPie
     name: 蓝莓派
     category: food
@@ -4345,6 +4623,9 @@ items:
       health: 22
       stamina: 20
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodPumpkinPie
     name: 南瓜派
     category: food
@@ -4354,6 +4635,9 @@ items:
       hunger: 50
       health: 25
       stamina: 20
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodPumpkinCheesecake
     name: 南瓜芝士蛋糕
     category: food
@@ -4364,6 +4648,11 @@ items:
       health: 21
       stamina: 20
       buff_duration: 5 分钟
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffPumpkinCheesecake
   - id: foodPumpkinBread
     name: 南瓜面包
     category: food
@@ -4373,6 +4662,9 @@ items:
       hunger: 12
       health: 6
       stamina: 20
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodGumboStew
     name: 秋葵浓汤
     category: food
@@ -4383,6 +4675,9 @@ items:
       water: 20
       health: 56
       stamina: 40
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodShepardsPie
     name: 牧羊人派
     category: food
@@ -4392,6 +4687,9 @@ items:
       hunger: 104
       health: 52
       stamina: 40
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodSpaghetti
     name: 意大利面
     category: food
@@ -4401,6 +4699,9 @@ items:
       hunger: 122
       health: 61
       stamina: 40
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodTunaFishGravyToast
     name: 金枪鱼肉汁吐司
     category: food
@@ -4410,6 +4711,9 @@ items:
       hunger: 90
       health: 45
       stamina: 40
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodEggBoiled
     name: 水煮蛋
     category: food
@@ -4420,6 +4724,9 @@ items:
       health: 5
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodBaconAndEggs
     name: 培根鸡蛋
     category: food
@@ -4430,6 +4737,9 @@ items:
       health: 18
       stamina: 10
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodVegetableStew
     name: 炖杂蔬
     category: food
@@ -4441,6 +4751,9 @@ items:
       health: 15
       stamina: 20
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodRawMeat
     name: 生肉
     category: food
@@ -4450,6 +4763,11 @@ items:
       hunger: 2
       stamina: -1
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDysenteryCatchFood
   - id: foodRawMeatBundle
     name: 生肉捆
     category: food
@@ -4464,6 +4782,11 @@ items:
     stats:
       hunger: 1
       stamina: -1
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDysenteryCatchFood
   - id: foodEgg
     name: 鸡蛋
     category: food
@@ -4473,6 +4796,9 @@ items:
       hunger: 5
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCornMeal
     name: 粗玉米粉
     category: food
@@ -4482,6 +4808,9 @@ items:
       hunger: 2
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropBlueberries
     name: 蓝莓
     category: food
@@ -4490,6 +4819,9 @@ items:
     stats:
       hunger: 2
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropCorn
     name: 玉米穗
     category: food
@@ -4499,6 +4831,9 @@ items:
       hunger: 2
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropGraceCorn
     name: 超级玉米穗
     category: food
@@ -4508,6 +4843,9 @@ items:
     stats:
       hunger: 3
       health: 3
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropPotato
     name: 土豆
     category: food
@@ -4516,6 +4854,9 @@ items:
     stats:
       hunger: 2
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropMushrooms
     name: 蘑菇
     category: food
@@ -4525,6 +4866,9 @@ items:
       hunger: 2
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropMushroomsRadiated
     name: 辐射蘑菇
     category: food
@@ -4535,6 +4879,11 @@ items:
       hunger: 2
       health: 3
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffTrippy
   - id: foodCropYuccaFruit
     name: 丝兰果实
     category: food
@@ -4543,6 +4892,9 @@ items:
     stats:
       hunger: 2
       health: 3
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: foodCropPumpkin
     name: 南瓜
     category: food
@@ -4552,6 +4904,9 @@ items:
     stats:
       hunger: 3
       health: 3
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
   - id: drinkCanEmpty
     name: 空罐
     category: food
@@ -4569,6 +4924,13 @@ items:
     tier: 20
     stats:
       water: 10
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDysenteryCatchDrink
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarBoiledWater
     name: 水
     category: food
@@ -4577,6 +4939,11 @@ items:
     stats:
       water: 20
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarPureMineralWater
     name: 纯净矿泉水
     category: food
@@ -4586,6 +4953,11 @@ items:
       water: 60
       dysentery_cure: 20%
       buff_duration: 6 分钟
+    buff_effects:
+      - action: add
+        buff: buffDysenteryAddCure
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarYuccaJuice
     name: 丝兰汁
     category: food
@@ -4594,6 +4966,11 @@ items:
     stats:
       water: 34
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarGoldenRodTea
     name: 秋麒麟茶
     category: food
@@ -4603,6 +4980,13 @@ items:
       water: 24
       dysentery_cure: 20%
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffDysenteryAddCure
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarHoneyTea
     name: 蜂蜜茶
     category: food
@@ -4614,6 +4998,11 @@ items:
       health: 3
       infection_cure: 5%
       dysentery_cure: 20%
+    buff_effects:
+      - action: add
+        buff: buffProcessConsumables
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarRedTea
     name: 红茶
     category: food
@@ -4623,6 +5012,9 @@ items:
       water: 24
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkYuccaJuiceSmoothie
     name: 丝兰汁果昔
     category: food
@@ -4634,6 +5026,9 @@ items:
       health: 11
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkCanMegaCrush
     name: 碾压王
     category: food
@@ -4643,6 +5038,9 @@ items:
       water: 60
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarCoffee
     name: 咖啡
     category: food
@@ -4652,6 +5050,9 @@ items:
       water: 24
       buff_duration: 3 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarBlackStrapCoffee
     name: 黑带咖啡
     category: food
@@ -4661,6 +5062,9 @@ items:
       water: 24
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarBeer
     name: 啤酒
     category: food
@@ -4669,6 +5073,11 @@ items:
     stats:
       buff_duration: 1 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffBeer
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarGrandpasMoonshine
     name: 祖父的私酒
     category: food
@@ -4677,6 +5086,11 @@ items:
     stats:
       buff_duration: 1 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrunkGrandpasMoonshine
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarGrandpasAwesomeSauce
     name: 祖父的美味酱
     category: food
@@ -4685,6 +5099,11 @@ items:
     stats:
       buff_duration: 3 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrunkGrandpasAwesomeSauce
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarGrandpasLearningElixir
     name: 祖父的学习妙药
     category: food
@@ -4693,6 +5112,11 @@ items:
     stats:
       buff_duration: 6 分钟
     trader_available: true
+    buff_effects:
+      - action: add
+        buff: buffDrunkGrandpasLearningElixir
+      - action: add
+        buff: buffExtinguishFire
   - id: drinkJarGrandpasForgettingElixir
     name: 祖父的遗忘妙药
     category: food
@@ -7352,6 +7776,9 @@ items:
     stats:
       max_health: 100
       max_stamina: 100
+    buff_effects:
+      - action: add
+        buff: buffDeathFoodDrinkAdjust
   - id: drinkJarFullRespecWithPointsAdmin
     name: drinkJarFullRespecWithPointsAdmin
     category: food
@@ -7360,6 +7787,9 @@ items:
     stats:
       max_health: 100
       max_stamina: 100
+    buff_effects:
+      - action: add
+        buff: buffDeathFoodDrinkAdjust
   - id: noteTestersDelightAdmin
     name: noteTestersDelightAdmin
     category: material

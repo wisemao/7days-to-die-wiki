@@ -142,6 +142,36 @@ function fmtVal(v) {
   if (typeof v === 'number' && v % 1 !== 0) return v.toFixed(2);
   return v;
 }
+// Food/medical buff effects: RemoveBuff (heal) / AddBuff (grant) with Chinese names
+const BUFF_NAMES: Record<string, string> = {
+  buffInjuryBleeding: '止血', buffInternalBleeding: '止血(内出血)', buffLaceration: '治疗撕裂伤口',
+  buffLegSprained: '治疗脚踝扭伤', buffLegBroken: '治疗腿部骨折', buffArmSprained: '治疗手腕扭伤',
+  buffArmBroken: '治疗手臂骨折', buffInjuryStunned01: '治疗眩晕', buffInjuryConcussion: '治疗脑震荡',
+  buffInfectionAddCure: '治疗感染', buffDysenteryAddCure: '治疗痢疾', buffDysenteryCatchDrink: '治疗痢疾',
+  buffDysenteryCatchFood: '治疗痢疾', buffExtinguishFire: '灭火', buffWet: '浸湿',
+  buffFatiguedTrigger: '缓解疲劳', buffPainKiller: '止痛', buffDrugPainkillers: '止痛效果',
+  buffDrugVitamins: '维生素效果', buffDrugSteroids: '类固醇效果', buffDrugRecog: '锐智药效果',
+  buffDrugFortBites: '强力咀嚼片效果', buffDrugAtomJunkies: '原子能量效果', buffDrugCovertCats: '隐形药效果',
+  buffDrugEyeKandy: '视觉强化效果', buffDrugHackers: '黑客药效果', buffDrugHealthBar: '生命条效果',
+  buffDrugJailBreakers: '越狱药效果', buffDrugNerdTats: '书呆子药效果', buffDrugOhShitzDrops: '危险药效果',
+  buffDrugRockBusters: '破岩药效果', buffDrugSkullCrushers: '碎颅药效果', buffDrugSugarButts: '糖屁药效果',
+  buffBeer: '醉酒', buffDrunkGrandpasMoonshine: '祖父私酿效果', buffDrunkGrandpasAwesomeSauce: '祖父秘制酱效果',
+  buffDrunkGrandpasLearningElixir: '祖父学习药剂效果', buffTrippy: '迷幻效果',
+  buffProcessConsumables: '消化效果', buffChickenWings: '鸡翅效果', buffChickenNuggets: '鸡块效果',
+  buffRoadrunner: '走鹃效果', buffShamChowder: '罐头炖汤效果', buffPumpkinCheesecake: '南瓜芝士蛋糕效果',
+  buffRedTea: '红茶效果', buffYuccaJuiceSmoothie: '丝兰冰沙效果', buffMegaCrush: '超级汽水效果',
+  buffCoffee: '咖啡效果', buffBlackStrapCoffee: '黑咖啡效果', buffBurntSmoothieRun: '焦糊冰沙效果',
+  buffOasisSmoothieRun: '绿洲冰沙效果', buffFrostbiteSmoothieRun: '冻伤冰沙效果', buffAtomicSmoothieRun: '原子冰沙效果',
+  buffBurnt_Hazard_Over: '耐热效果', buffDesert_Hazard_Over: '耐热效果', buffSnow_Hazard_Over: '耐寒效果',
+  buffWasteland_Hazard_Over: '耐辐射效果', buffBandolierChest: '弹带效果', buffRingOfFire: '火环效果',
+  buffDontBreakMyLeg: '防断腿效果', buffRocketBootsAirborne: '火箭靴效果', buffDukeNote: '公爵钞票效果',
+  buffRogueBoots: '盗贼靴效果', buffMinerBoots: '矿工靴效果', buffNerdOutfit: '书呆子套装效果',
+  buffNerdBoots: '书呆子靴效果', buffRaiderBoots: '掠夺者靴效果',
+};
+function fmtBuffEffect(b) {
+  const name = BUFF_NAMES[b.buff] || b.buff;
+  return b.action === 'remove' ? name : `获得${name}`;
+}
 ---
 
 <Layout title={item.name} description={`${item.name} - ${categoryLabel}`}>
@@ -183,6 +213,12 @@ function fmtVal(v) {
             ))}
           </ul>
         </div>
+      )}
+      {item.buff_effects?.length > 0 && (
+        <p style="margin-top:12px;font-size:14px;">
+          <strong>效果:</strong>{' '}
+          {item.buff_effects.map(b => fmtBuffEffect(b)).join('、')}
+        </p>
       )}
       {item.unlocked_by && (() => {
         const ub = item.unlocked_by;

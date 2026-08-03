@@ -379,6 +379,43 @@ function enhance(configDir) {
     console.log(`  - 活体动物解析: ${livingAnimals.filter(Boolean).length} 个新增, 动物属性更新: ${updated} 个, 暴徒分类修正: ${fixed} 个`);
   }
 
+  // ─── 11c. Food/medical buff effects (RemoveBuff/AddBuff from items.xml) ───
+  // Consumables heal via RemoveBuff (stop bleeding/cure infection) or grant buffs via AddBuff
+  if (existsSync(itemsPath)) {
+    const itemsXml = readFileSync(itemsPath, 'utf-8');
+    const buffEffects = {};
+    const itemRe = /<item\s+name="([^"]+)"[^>]*>([\s\S]*?)<\/item>/g;
+    let im2;
+    while ((im2 = itemRe.exec(itemsXml)) !== null) {
+      const [, name, body] = im2;
+      const list = [];
+      for (const m2 of body.matchAll(/action="(RemoveBuff|AddBuff)"\s+buff="([^"]+)"/g)) {
+        const buff = m2[2];
+        // Skip internal trigger buffs and multi-buff comma lists (handled per buff)
+        if (buff.includes(',') || buff.startsWith('trigger')) continue;
+        const key = m2[1] + '|' + buff;
+        if (!list.some(x => x.action + '|' + x.buff === key)) list.push({ action: m2[1] === 'RemoveBuff' ? 'remove' : 'add', buff });
+      }
+      if (list.length) buffEffects[name] = list;
+    }
+    const itemsDoc = readYaml(join(DATA_DIR, 'items.yaml'));
+    let buffMerged = 0;
+    for (const item of itemsDoc.items || []) {
+      if (!['food', 'medical', 'consumable'].includes(item.category)) continue;
+      const fresh = buffEffects[item.id];
+      if (!fresh || fresh.length === 0) continue;
+      const existingKeys = new Set((item.buff_effects || []).map(b => b.action + '|' + b.buff));
+      const toAdd = fresh.filter(b => !existingKeys.has(b.action + '|' + b.buff));
+      if (toAdd.length > 0) {
+        if (!item.buff_effects) item.buff_effects = [];
+        item.buff_effects.push(...toAdd);
+        buffMerged++;
+      }
+    }
+    if (buffMerged > 0) writeYaml(join(DATA_DIR, 'items.yaml'), itemsDoc);
+    console.log(`  - 食物/医疗buff效果: ${buffMerged} 个物品补全 (RemoveBuff/AddBuff)`);
+  }
+
   // ─── 11b. Blocks ammo cleanup: strip +tags(...) suffix (ammo9mmBulletBall+tags(ammo9mm)) ───
   const blocksDoc2 = readYaml(join(DATA_DIR, 'blocks.yaml'));
   let ammoFixed = 0;
