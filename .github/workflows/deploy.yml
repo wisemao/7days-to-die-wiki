@@ -34,12 +34,6 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-      - name: Pagefind output diagnostics
-        run: |
-          echo "PAGEFIND_META=$(find dist/pagefind -maxdepth 1 -name '*.pf_meta' | wc -l)" > dist/pagefind-debug.txt
-          echo "PAGEFIND_INDEX=$(find dist/pagefind -name '*.pf_index' | wc -l)" >> dist/pagefind-debug.txt
-          echo "PAGEFIND_FRAGMENT=$(find dist/pagefind -name '*.pf_fragment' | wc -l)" >> dist/pagefind-debug.txt
-          find dist/pagefind -maxdepth 2 -type f | head -30 >> dist/pagefind-debug.txt
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
