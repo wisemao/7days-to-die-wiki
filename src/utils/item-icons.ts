@@ -57,10 +57,10 @@ export const ATTR_ICONS: Record<string, string> = {
 
 /** Zombie type representative icons */
 export const ZOMBIE_TYPE_ICONS: Record<string, string> = {
-  humanoid: 'meleeHandZombieCop',     // 丧尸: 警察丧尸攻击手
+  humanoid: 'sleeperIdle',            // 丧尸: 站立完整丧尸全身图
   animal: 'sleeperWolfAnimal',        // 动物: 真实狼形象
   special: 'meleeHandBossGrace',      // 特殊: 首领
-  other: 'meleeHandZombieCop',
+  other: 'sleeperIdle',
 };
 
 export function attrIconUrl(slug: string, base: string): string | null {
