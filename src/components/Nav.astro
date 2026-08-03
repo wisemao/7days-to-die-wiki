@@ -4,12 +4,15 @@ const { base } = Astro.props;
 
 <nav class="top">
   <button class="nav-toggle" id="navToggle" aria-label="切换菜单">☰</button>
-  <a href={base} class="brand">七日杀 Wiki</a>
+  <a href={base} class="brand">
+    <img class="brand-icon" src={`${base}/favicon.svg`} alt="" width="22" height="22" />
+    七日杀 Wiki
+  </a>
   <div class="nav-links">
     <a href={`${base}/vanilla/items/`}>物品</a>
     <a href={`${base}/vanilla/recipes/`}>配方</a>
     <a href={`${base}/vanilla/skills/`}>技能</a>
-    <a href={`${base}/vanilla/zombies/`}>僵尸</a>
+    <a href={`${base}/vanilla/zombies/`}>丧尸</a>
   </div>
   <pagefind-modal-trigger class="search-trigger"></pagefind-modal-trigger>
   <button class="theme-toggle" id="themeToggle" aria-label="切换深色模式">
@@ -53,14 +56,12 @@ const { base } = Astro.props;
     align-items: center;
     gap: 8px;
   }
-  .brand::before {
-    content: '';
-    display: inline-block;
+  .brand-icon {
     width: 22px;
     height: 22px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 4px;
+    border-radius: 5px;
     flex-shrink: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
   }
   .nav-toggle {
     display: none;
@@ -118,7 +119,7 @@ const { base } = Astro.props;
   @media (max-width: 599px) {
     .top { gap: 2px; padding: 0 10px; }
     .brand { font-size: 15px; }
-    .brand::before { width: 18px; height: 18px; }
+    .brand-icon { width: 18px; height: 18px; }
     .theme-toggle .label { display: none; }
     .search-trigger { min-width: 80px; max-width: 140px; }
   }

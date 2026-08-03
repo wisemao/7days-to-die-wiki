@@ -1,39 +1,77 @@
-﻿---
+---
 import Layout from '../../../layouts/Layout.astro';
 import { loadData, ZOMBIE_TYPE_LABELS } from '../../../utils/data-loader';
 import { zombieTypeIconUrl } from '../../../utils/item-icons';
 const { zombies } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
+// Split into two sections: 丧尸 (humanoid+special) vs 动物 (animal)
+const undead = zombies.filter(z => z.category !== 'animal');
+const animals = zombies.filter(z => z.category === 'animal');
+
 const cats = {};
-for (const z of zombies) {
+for (const z of undead) {
   const label = ZOMBIE_TYPE_LABELS[z.category] || '其他';
   const slug = ZOMBIE_TYPE_LABELS[z.category] ? z.category : 'other';
   if (!cats[slug]) cats[slug] = { slug, label, count: 0 };
   cats[slug].count++;
 }
-const order = ['humanoid', 'animal', 'special', 'other'];
+const order = ['humanoid', 'special', 'other'];
 const catList = order.filter(s => cats[s]).map(s => cats[s]);
 ---
 
-<Layout title="僵尸列表" description={`${zombies.length} 个僵尸`}>
+<Layout title="丧尸列表" description={`${zombies.length} 个丧尸与动物`}>
   <nav class="breadcrumb">
-    <a href={base}>首页</a><span class="sep">/</span><span>僵尸列表</span>
+    <a href={base}>首页</a><span class="sep">/</span><span>丧尸列表</span>
   </nav>
-  <h1>僵尸列表</h1>
-  <p class="subtitle">共 {zombies.length} 个僵尸 · 选择类型浏览</p>
-  <div class="card-grid">
-    {catList.map(c => (
-      <a href={`${base}/vanilla/zombies/type/${c.slug}/`} class="card">
-        {zombieTypeIconUrl(c.slug, base) && <img class="card-icon" src={zombieTypeIconUrl(c.slug, base)} alt="" loading="lazy" />}
-        <span class="num">{c.count}</span>
-        <span class="lbl">{c.label}</span>
+  <h1>丧尸列表</h1>
+  <p class="subtitle">共 {undead.length} 个丧尸 · {animals.length} 种动物</p>
+
+  <section class="section-block">
+    <h2 class="section-title">🧟 丧尸</h2>
+    <div class="card-grid">
+      {catList.map(c => (
+        <a href={`${base}/vanilla/zombies/type/${c.slug}/`} class="card">
+          {zombieTypeIconUrl(c.slug, base) && <img class="card-icon" src={zombieTypeIconUrl(c.slug, base)} alt="" loading="lazy" />}
+          <span class="num">{c.count}</span>
+          <span class="lbl">{c.label}</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section-block">
+    <h2 class="section-title">🐺 动物</h2>
+    <div class="card-grid">
+      <a href={`${base}/vanilla/zombies/type/animal/`} class="card">
+        {zombieTypeIconUrl('animal', base) && <img class="card-icon" src={zombieTypeIconUrl('animal', base)} alt="" loading="lazy" />}
+        <span class="num">{animals.length}</span>
+        <span class="lbl">全部动物</span>
       </a>
-    ))}
-  </div>
+    </div>
+    <div class="item-grid">
+      {animals.sort((a, b) => (a.name || '').localeCompare(b.name || '', 'zh')).map(z => (
+        <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`} class="grid-item-link">
+          <span class="grid-name">{z.name}</span>
+        </a>
+      ))}
+    </div>
+  </section>
 </Layout>
 
 <style>
+  .section-block {
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin: 12px 0;
+  }
+  .section-title {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+    border-bottom: none;
+  }
   .card-icon {
     width: 46px;
     height: 46px;
@@ -44,4 +82,5 @@ const catList = order.filter(s => cats[s]).map(s => cats[s]);
     background: var(--c-surface-2);
     padding: 4px;
   }
+  .item-grid a::before { display: none; }
 </style>
