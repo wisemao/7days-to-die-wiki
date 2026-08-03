@@ -22,7 +22,7 @@
 ```
 
 - **增强命令**：`node scripts/enhance-data.js --config-dir "F:/SteamLibrary/steamapps/common/7 Days to Die/Data/Config"`
-- 已解析：items(1526)/recipes(639)/skills(211)/zombies(197 唯一：175 丧尸 + 22 动物)/loot/spawning/blocks(17 图标)/biomes(6)/vehicles/item_modifiers/traders/Localization.csv(25575 条，非 .txt！)/Pagefind zh-cn 官方翻译
+- 已解析：items(1526)/recipes(639)/skills(211)/zombies(197 唯一：172 丧尸(可见) + 22 动物)/loot/spawning/blocks(17 图标)/biomes(6)/vehicles/item_modifiers/traders/Localization.csv(25575 条，非 .txt！)/Pagefind zh-cn 官方翻译
 - enhance-data.js 已有 12 个步骤（含活体动物解析、丧尸伤害从手持物品 DamageEntity 解析、暴徒分类修正等）
 
 ## 常用命令
@@ -39,7 +39,7 @@
 ## 术语约定（全站词）
 
 - 一级标题/导航：**生物**（图标 meleeHandAnimalWolf.png 狼爪）
-- 分区：**丧尸**（人形 humanoid，175 个）/ **动物**（22 个活体）
+- 分区：**丧尸**（人形 humanoid，172 个）/ **动物**（22 个活体）
 - 数据文件 zombies.yaml 中：`category: humanoid` 为丧尸，`category: animal` 为动物；zombieSkateboarder*（暴徒）是人形，不是动物
 - 用户曾用词"僵尸"已全部改为"丧尸"
 
@@ -47,7 +47,7 @@
 
 - `scripts/enhance-data.js`：增强主脚本（改数据先改这里，保持幂等）
 - `scripts/sync-icons.js`：图标同步（支持 blocks + compress 模式）
-- `data/vanilla/zombies.yaml`：丧尸+动物数据（197 唯一：175 丧尸 + 22 动物，含 damage.melee 等）
+- `data/vanilla/zombies.yaml`：丧尸+动物数据（197 唯一：172 丧尸(可见) + 22 动物，含 damage.melee 等）
 - `src/pages/vanilla/zombies/index.astro`：生物图鉴分区页
 - `src/pages/vanilla/zombies/[id].astro`：生物详情页
 - `src/components/Nav.astro`、`Sidebar.astro`：导航（"生物"标签）
@@ -58,4 +58,4 @@
 
 - 数据改动：`node -e` 读取 yaml 抽查关键条目 → `npm run typecheck` → `npm run build`
 - 部署后线上验证：fetch 关键页面断言关键内容（标题/数值/分类归属）
-- 已知量：2048 页面、物品可见 978、技能中文 100%、配方 0 无名、图标 1606、动物 22、丧尸 175
+- 已知量：2048 页面、物品可见 978、技能中文 100%、配方 0 无名、图标 1606、动物 22、丧尸 172(可见)

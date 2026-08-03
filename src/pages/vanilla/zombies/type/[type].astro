@@ -30,7 +30,7 @@ function fmtHp(hp) {
 <Layout title={typeLabel} description={`${typeLabel} - ${zombieList.length} 个生物`}>
   <nav class="breadcrumb"><a href={base}>首页</a><span class="sep">/</span><a href={`${base}/vanilla/zombies/`}>生物图鉴</a><span class="sep">/</span><span>{typeLabel}</span></nav>
   <h1>{typeLabel}</h1>
-  <p class="subtitle">共 {zombieList.length} 个丧尸</p>
+  <p class="subtitle">共 {zombieList.length} 个{typeSlug === 'animal' ? '动物' : '丧尸'}</p>
   <div class="entity-grid">
     {zombieList.map(z => (
       <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`} class="entity-item">
