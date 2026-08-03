@@ -16,7 +16,7 @@ const hasWeakness = zombie.weakness && zombie.weakness.length > 0;
 const hasSpawn = zombie.spawn;
 const hp = typeof zombie.hp === 'string' && zombie.hp.startsWith('^') ? '?' : zombie.hp;
 // Format chance strings like '.04' -> '4%', '0%' -> '0%'
-function fmtChance(c) {
+function fmtChance(c?: string | number) {
   if (c == null) return '-';
   const s = String(c).trim();
   if (s.endsWith('%')) return s;
@@ -24,7 +24,7 @@ function fmtChance(c) {
   if (Number.isNaN(n)) return s;
   return (n * 100) + '%';
 }
-function fmtExp(e) {
+function fmtExp(e?: string | number) {
   if (e == null) return '-';
   if (typeof e === 'number') return String(e);
   const s = String(e).trim();
@@ -70,16 +70,16 @@ function biomeChips(raw?: string) {
   {hasLoot && (<>
     <h2>掉落物</h2>
     <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{zombie.name} 掉落物品</caption><tr><th scope="col">物品</th><th scope="col">数量</th><th scope="col">概率</th></tr>
-      {zombie.loot.map(l => {
+      {zombie.loot!.map(l => {
         const link = getItemLink(l.item_id);
         const name = resolveItemName(l.item_id);
         const icon = itemIconUrl({ id: l.item_id }, base);
         return <tr><td>{link ? <a href={link} class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{name}</a> : <span class="loot-link">{icon && <img class="loot-icon" src={icon} alt="" loading="lazy" />}{name}</span>}{l.resolved && <span style="font-size:11px;color:var(--c-text-3);margin-left:6px;">(掉落容器)</span>}</td><td>{l.count}</td><td>{fmtChance(l.chance)}</td></tr>;
       })}
     </table>
-      {zombie.loot.some(l => l.resolved) && (
+      {zombie.loot!.some(l => l.resolved) && (
       <blockquote>掉落容器内容示例：{(() => {
-        const flat = zombie.loot.filter(l => l.resolved).flatMap(l => l.resolved);
+        const flat = zombie.loot!.filter(l => l.resolved).flatMap(l => l.resolved!);
         const links = flat.slice(0, 10).map(r => {
           const link = getItemLink(r.item_id);
           const n = resolveItemName(r.item_id);
@@ -93,13 +93,13 @@ function biomeChips(raw?: string) {
 
   {hasWeakness && (<>
     <h2>弱点</h2>
-    <ul>{zombie.weakness.map(w => Object.entries(w).map(([k, v]) => <li>{k} {v}x</li>))}</ul>
+    <ul>{zombie.weakness!.map(w => Object.entries(w).map(([k, v]) => <li>{k} {v}x</li>))}</ul>
   </>)}
 
   {hasSpawn && (<>
     <h2>刷新</h2>
     {(() => {
-      const chips = biomeChips(zombie.spawn.biomes);
+      const chips = biomeChips(zombie.spawn!.biomes);
       return (
         <p>
           生物群系:
@@ -109,8 +109,8 @@ function biomeChips(raw?: string) {
                 <a href={`${base}/vanilla/biomes/${c.id}/`} class="biome-chip">{c.name}</a>
               ))}
             </span>
-          ) : (zombie.spawn.biomes || '-')}
-          {' '}| 时间: {zombie.spawn.time || '-'} | 区域: {zombie.spawn.groups || '-'}
+          ) : (zombie.spawn!.biomes || '-')}
+          {' '}| 时间: {zombie.spawn!.time || '-'} | 区域: {zombie.spawn!.groups || '-'}
         </p>
       );
     })()}

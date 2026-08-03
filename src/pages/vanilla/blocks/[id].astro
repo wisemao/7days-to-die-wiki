@@ -1,6 +1,6 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData, sanitizeId } from '../../../utils/data-loader';
+import { loadData } from '../../../utils/data-loader';
 import { itemIconUrl } from '../../../utils/item-icons';
 export function getStaticPaths() {
   const { blocks } = loadData();

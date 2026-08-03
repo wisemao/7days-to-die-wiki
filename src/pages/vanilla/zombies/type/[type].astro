@@ -1,11 +1,11 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
-import { loadData, ZOMBIE_TYPE_LABELS, ZOMBIE_TYPE_MAP } from '../../../../utils/data-loader';
+import { loadData, ZOMBIE_TYPE_LABELS, ZOMBIE_TYPE_MAP, type Zombie } from '../../../../utils/data-loader';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function getStaticPaths() {
   const { zombies } = loadData();
-  const groups = {};
+  const groups: Record<string, Zombie[]> = {};
   for (const z of zombies) {
     const slug = ZOMBIE_TYPE_MAP[z.category] || 'other';
     if (!groups[slug]) groups[slug] = [];
@@ -18,7 +18,7 @@ export function getStaticPaths() {
 }
 const { zombieList, typeSlug } = Astro.props;
 const typeLabel = ZOMBIE_TYPE_LABELS[typeSlug] || typeSlug;
-function fmtHp(hp) {
+function fmtHp(hp?: string | number) {
   if (hp == null) return '-';
   if (typeof hp === 'number') return String(hp);
   const s = String(hp).trim();

@@ -5,16 +5,16 @@ import { attrIconUrl } from '../../../utils/item-icons';
 const { skills } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-function findAttrSlug(key) {
+function findAttrSlug(key: string) {
   for (const [slug, label] of Object.entries(SLUG_TO_ATTR_LABEL)) {
     if (label === (ATTR_LABELS[key] || key)) return slug;
   }
   return 'general';
 }
-function findAttrLabel(slug) {
+function findAttrLabel(slug: string) {
   return SLUG_TO_ATTR_LABEL[slug] || slug;
 }
-const cats = {};
+const cats: Record<string, { slug: string; label: string; count: number }> = {};
 for (const s of skills) {
   const slug = findAttrSlug(s.category);
   if (!cats[slug]) cats[slug] = { slug, label: findAttrLabel(slug), count: 0 };

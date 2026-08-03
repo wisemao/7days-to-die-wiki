@@ -6,11 +6,27 @@ import { join } from 'path';
 import { itemIconUrl } from '../../../utils/item-icons';
 
 // Load crafting skills for skill magazine items
-let craftingSkills = {};
+interface SkillMagazineRecipe {
+  id: string;
+  name: string;
+}
+interface SkillMagazineTier {
+  level: number;
+  recipes: SkillMagazineRecipe[];
+}
+interface SkillMagazineInfo {
+  name?: string;
+  desc?: string;
+  reqSkill?: string;
+  reqName?: string;
+  reqLevel?: number;
+  recipeTiers?: SkillMagazineTier[];
+}
+let craftingSkills: { magazines?: Record<string, SkillMagazineInfo> } = {};
 try {
   craftingSkills = JSON.parse(readFileSync('data/crafting-skills.json', 'utf-8'));
 } catch (e) {
-  console.warn('[items] Failed to load crafting-skills.json:', e.message);
+  console.warn('[items] Failed to load crafting-skills.json:', (e as Error).message);
 }
 
 export function getStaticPaths() {
@@ -58,7 +74,7 @@ if (!hasIcon) {
 const craftRecipes = (itemCraftRecipes.get(item.id) || []).filter(r => r.recipe && r.recipe.length > 0);
 const usedIn = (itemRecipes.get(item.id) || []);
 
-const LABELS = {
+const LABELS: Record<string, string> = {
   damage: '攻击力', durability: '耐久度', block_damage: '方块伤害',
   range: '射程', rounds_per_min: '射速', magazine_size: '弹匣容量',
   reload_speed: '换弹速度', mod_slots: '模组插槽', stamina_cost: '体力消耗',
@@ -82,7 +98,7 @@ const LABELS = {
   jump_strength: '跳跃力',
 };
 // Mod slot tags -> Chinese labels
-const MOD_SLOT_LABELS = {
+const MOD_SLOT_LABELS: Record<string, string> = {
   barrelTipAttachment: '枪口附件', sideAttachment: '侧面附件', scope: '瞄具', trigger: '扳机',
   accuracy: '精准', grips: '握把', stocks: '枪托', barrelAttachment: '枪管', magazine: '弹匣',
   crippling: '致残', velocity: '初速', specialDamageAnimal: '动物特伤', specialDamage: '特伤',
@@ -98,7 +114,7 @@ const MOD_SLOT_LABELS = {
   boostTreasure: '宝箱增益', droneArmor: '无人机护甲', droneStorage: '无人机存储',
   droneMorale: '无人机士气', droneLamp: '无人机照明', droneMedic: '无人机医疗', droneWeapon: '无人机武器',
 };
-function fmtModSlots(raw) {
+function fmtModSlots(raw: string | undefined) {
   if (!raw) return null;
   return raw.split(',').map(t => MOD_SLOT_LABELS[t.trim()] || t.trim()).join('、');
 }
@@ -126,7 +142,7 @@ const MOD_EFFECT_LABELS: Record<string, string> = {
   JumpStrength: '跳跃力', HealthMax: '最大生命', ProjectileStickChance: '投射物停留几率',
   TreasureBlocksPerReduction: '宝藏方块减少', ExplosionDamage: '爆炸伤害', ReflectDamage: '反伤',
 };
-function fmtModEffect(e) {
+function fmtModEffect(e: { name: string; op: string; value: string }) {
   const label = MOD_EFFECT_LABELS[e.name] || e.name;
   const v = e.value;
   const num = parseFloat(v);
@@ -137,8 +153,8 @@ function fmtModEffect(e) {
   const sign = isPerc && num > 0 ? '+' : '';
   return `${label} ${sign}${val}`;
 }
-function fmtLabel(k) { return LABELS[k] || k; }
-function fmtVal(v) {
+function fmtLabel(k: string) { return LABELS[k] || k; }
+function fmtVal(v: string | number) {
   if (typeof v === 'number' && v % 1 !== 0) return v.toFixed(2);
   return v;
 }
@@ -170,7 +186,7 @@ const BUFF_NAMES: Record<string, string> = {
   buffArmorShredding: '破甲', buffImpactBracing: '冲击缓冲', buffWaterPurifier: '净水',
   buffJumpJetsActivated: '喷气推进', buffJumpJetsAirborne: '喷气滞空', buffmodMeleeStunBatonRepulsor: '击退',
 };
-function fmtBuffEffect(b) {
+function fmtBuffEffect(b: { action: 'remove' | 'add' | 'reset'; buff: string }) {
   if (b.action === 'reset') return '重置技能点';
   const name = BUFF_NAMES[b.buff] || b.buff;
   return b.action === 'remove' ? name : `获得${name}`;
@@ -207,26 +223,26 @@ function fmtBuffEffect(b) {
         {fmtModSlots(item.modifier_tags) && <span class="tag" style="background:#f3e5f5;border-color:#ab47bc;color:#7b1fa2;">槽位: {fmtModSlots(item.modifier_tags)}</span>}
         {item.trader_available && <span class="tag" style="background:#e3f2fd;border-color:#42a5f5;color:#1565c0;">🏪 商人可购</span>}
       </div>
-      {item.effects?.length > 0 && (
+      {(item.effects?.length ?? 0) > 0 && (
         <div style="margin-top:12px;">
           <strong style="font-size:14px;">模组效果:</strong>
           <ul style="margin:6px 0 0;padding-left:20px;font-size:14px;line-height:1.9;">
-            {item.effects.map(e => (
+            {item.effects?.map(e => (
               <li>{fmtModEffect(e)}</li>
             ))}
           </ul>
         </div>
       )}
-      {item.category === 'mod' && item.buff_effects?.length > 0 && (
+      {item.category === 'mod' && (item.buff_effects?.length ?? 0) > 0 && (
         <p style="margin-top:12px;font-size:14px;">
           <strong>触发效果:</strong>{' '}
-          {item.buff_effects.map(b => `攻击时施加${BUFF_NAMES[b.buff] || b.buff}`).join('、')}
+          {item.buff_effects?.map(b => `攻击时施加${BUFF_NAMES[b.buff] || b.buff}`).join('、')}
         </p>
       )}
-      {item.buff_effects?.length > 0 && (
+      {(item.buff_effects?.length ?? 0) > 0 && (
         <p style="margin-top:12px;font-size:14px;">
           <strong>效果:</strong>{' '}
-          {item.buff_effects.map(b => fmtBuffEffect(b)).join('、')}
+          {item.buff_effects?.map(b => fmtBuffEffect(b)).join('、')}
         </p>
       )}
       {item.unlocked_by && (() => {
@@ -276,7 +292,7 @@ function fmtBuffEffect(b) {
         {' '}耗时 {cr.craft_time} 秒 · 产出 {cr.craft_count} 个
       </p>
       <div class="recipe-mats">
-        {cr.recipe.filter(m => m.count > 0).map(m => {
+        {(cr.recipe || []).filter(m => m.count > 0).map(m => {
           const exists = itemMap.has(m.item_id);
           const icon = itemIconUrl({ id: m.item_id }, base);
           const chip = (
@@ -296,11 +312,11 @@ function fmtBuffEffect(b) {
     </div>
   ))}
 
-  {item.scrappable_into?.length > 0 && (
+  {(item.scrappable_into?.length ?? 0) > 0 && (
     <div>
       <h2>分解获得</h2>
       <div class="recipe-mats">
-        {item.scrappable_into.map(s => {
+        {item.scrappable_into?.map(s => {
           const exists = itemMap.has(s.item_id);
           const icon = itemIconUrl({ id: s.item_id }, base);
           const chip = (
@@ -357,10 +373,10 @@ function fmtBuffEffect(b) {
           需要 <strong>{magInfo.reqName}</strong> 等级 {magInfo.reqLevel} 才能阅读
         </p>
       )}
-      {magInfo.recipeTiers?.length > 0 && (
+      {(magInfo.recipeTiers?.length ?? 0) > 0 && (
         <>
           <h3 style="font-size:14px;margin:16px 0 8px;">解锁配方（按技能等级）</h3>
-          {magInfo.recipeTiers.map(tier => (
+          {magInfo.recipeTiers?.map(tier => (
             <div style="margin-bottom:10px;">
               <p style="font-size:13px;font-weight:600;color:var(--c-blood);margin:0 0 4px;">
                 等级 {tier.level} 解锁

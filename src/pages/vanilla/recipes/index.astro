@@ -5,7 +5,7 @@ const { recipes } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 // Station representative icons (fallback to signature craft items)
-const STATION_ICONS = {
+const STATION_ICONS: Record<string, string> = {
   backpack: 'meleeToolRepairT0StoneAxe',
   workbench: 'meleeToolRepairT1ClawHammer',
   forge: 'forge',
@@ -14,17 +14,17 @@ const STATION_ICONS = {
   concrete: 'cementMixer',
 };
 
-function findSlug(raw) {
+function findSlug(raw?: string) {
   if (!raw) return 'backpack';
   for (const [slug, label] of Object.entries(STATION_LABELS)) {
     if (label === raw) return slug;
   }
   return 'backpack';
 }
-function findLabel(slug) {
+function findLabel(slug: string) {
   return STATION_LABELS[slug] || slug;
 }
-const stations = {};
+const stations: Record<string, { slug: string; label: string; count: number; icon: string | null }> = {};
 for (const r of recipes) {
   const slug = findSlug(r.station);
   if (!stations[slug]) stations[slug] = { slug, label: findLabel(slug), count: 0, icon: STATION_ICONS[slug] ? `${base}/images/items/${STATION_ICONS[slug]}.png` : null };

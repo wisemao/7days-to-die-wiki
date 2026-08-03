@@ -25,7 +25,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   {hasLevels && (<>
     <h2>等级效果</h2>
     <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{skill.name} 各等级效果与消耗</caption><tr><th scope="col">等级</th><th scope="col">效果</th><th scope="col">消耗技能点</th></tr>
-      {skill.levels.map(l => <tr><td>{l.level}</td><td>{l.effect}</td><td>{l.cost}</td></tr>)}
+      {skill.levels!.map(l => <tr><td>{l.level}</td><td>{l.effect}</td><td>{l.cost}</td></tr>)}
     </table>
   </>)}
   {!hasLevels && (
@@ -35,7 +35,7 @@ const hasBooks = skill.tied_books && skill.tied_books.length > 0;
   {hasBooks && (<>
     <h2>关联书籍</h2>
     <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{skill.name} 关联的技能书籍</caption><tr><th scope="col">书籍</th><th scope="col">效果</th></tr>
-      {skill.tied_books.map(b => {
+      {skill.tied_books!.map(b => {
         const icon = itemIconUrl({ id: b.book_id }, base);
         return <tr><td><a href={`${base}/vanilla/items/${sanitizeId(b.book_id)}/`} class="book-link">{icon && <img class="book-icon" src={icon} alt="" loading="lazy" />}{resolveItemName(b.book_id) || b.book_id}</a></td><td>{b.effect}</td></tr>;
       })}

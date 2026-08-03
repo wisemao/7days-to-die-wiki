@@ -8,20 +8,20 @@ const { items, recipes, skills, zombies, blocks, biomes } = loadData();
 const iconCount = readdirSync(join(process.cwd(), 'public/images/items')).filter(f => f.endsWith('.png')).length;
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const catCounts = {};
+const catCounts: Record<string, number> = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   catCounts[label] = (catCounts[label] || 0) + 1;
 }
 const catCards = Object.entries(catCounts).sort((a, b) => b[1] - a[1]);
-const labelToKey = {};
+const labelToKey: Record<string, string> = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   if (!labelToKey[label]) labelToKey[label] = item.category;
 }
 
 // Category representative icon per card
-const catIcons = {};
+const catIcons: Record<string, string | null> = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   if (!catIcons[label]) catIcons[label] = categoryIconUrl(item.category, base);
@@ -42,7 +42,7 @@ const SHOWCASE = [
 ].map(id => `${base}/images/items/${id}.png`);
 
 // Station counts for quick insight
-const STATION_ICONS = {
+const STATION_ICONS: Record<string, string> = {
   backpack: 'meleeToolRepairT0StoneAxe',
   workbench: 'meleeToolRepairT1ClawHammer',
   forge: 'forge',
@@ -50,7 +50,7 @@ const STATION_ICONS = {
   chemistry: 'drugPainkillers',
   concrete: 'cementMixer',
 };
-const stationCounts = {};
+const stationCounts: Record<string, { slug: string; count: number; icon: string }> = {};
 for (const r of recipes) {
   const slug = Object.entries(STATION_LABELS).find(([,v]) => v === r.station)?.[0] || 'backpack';
   if (!stationCounts[slug]) stationCounts[slug] = { slug, count: 0, icon: `${base}/images/items/${STATION_ICONS[slug]}.png` };
@@ -59,7 +59,7 @@ for (const r of recipes) {
 
 // Book series count
 const bookItems = items.filter(i => i.category === 'book');
-const extractSeries = (chn) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
+const extractSeries = (chn: string) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
 const seriesSet = new Set();
 for (const b of bookItems) {
   if (/^book/.test(b.id) || /^questReward/.test(b.id)) {

@@ -1,18 +1,28 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
 import ItemGridLink from '../../../../components/ItemGridLink.astro';
-import { loadData, ITEM_CATEGORY_LABELS } from '../../../../utils/data-loader';
+import { loadData, ITEM_CATEGORY_LABELS, type Item } from '../../../../utils/data-loader';
 import { itemIconUrl, categoryIconUrl } from '../../../../utils/item-icons';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
+interface Props {
+  catItems: Item[];
+  catKey: string;
+}
+
+interface ArmorSet {
+  name: string;
+  items: Item[];
+}
+
 // Astro note: module-level function declarations are NOT accessible in component scope.
 // Use const arrow functions for helpers needed in both frontmatter and template.
-const toSlug = (name) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
-const extractSeries = (chn) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
+const toSlug = (name: string) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
+const extractSeries = (chn: string) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
 
 export function getStaticPaths() {
   const { items } = loadData();
-  const cats = {};
+  const cats: Record<string, Item[]> = {};
   for (const item of items) {
     if (!cats[item.category]) cats[item.category] = [];
     cats[item.category].push(item);
@@ -27,7 +37,7 @@ const catLabel = ITEM_CATEGORY_LABELS[catKey] || catKey;
 
 // For book category: group schematics by type, skill books by series
 const schematicSub = catKey === 'book' ? (() => {
-  const sgs = { '武器': [], '护甲': [], '载具': [], '工具': [], '机器人': [], '其他': [] };
+  const sgs: Record<string, Item[]> = { '武器': [], '护甲': [], '载具': [], '工具': [], '机器人': [], '其他': [] };
   for (const i of catItems) {
     if (!/Schematic$/.test(i.id)) continue;
     const id = i.id;
@@ -43,7 +53,7 @@ const schematicSub = catKey === 'book' ? (() => {
 
 // For book category: group skill books by series
 const bookSeries = catKey === 'book' ? (() => {
-  const series = {};
+  const series: Record<string, Item[]> = {};
   for (const b of catItems) {
     if (!/^book/.test(b.id) && !/^questReward/.test(b.id)) continue;
     const sn = extractSeries(b.name || b.id);
@@ -59,11 +69,11 @@ const bookSeriesCount = bookSeries ? bookSeries.reduce((s, [,v]) => s + v.length
 // ─── Armor: group by set (armor<Set><Slot>) instead of body slot ───
 const armorGrouped = catKey === 'armor' ? (() => {
   const SLOT_ORDER = ['Helmet', 'Outfit', 'Gloves', 'Boots'];
-  const stripSlot = (n) => (n || '').replace(/(帽子|兜帽|头盔|装束|套装|装|手套|靴子|鞋子)$/, '');
+  const stripSlot = (n: string) => (n || '').replace(/(帽子|兜帽|头盔|装束|套装|装|手套|靴子|鞋子)$/, '');
   // Single-slot special headwear sets (masks, holiday hats, brand hats)
   const SPECIAL_CODES = /^(Monster|Vampire|Werewolf|Zombie|Inspector|NobleThief|PennyPincher|TheHatter|Santa|Elf|Reindeer|Snowman|Tree|PimpHat)/;
-  const sets = new Map();
-  const masks = [], baseClothing = [], misc = [];
+  const sets = new Map<string, ArmorSet>();
+  const masks: Item[] = [], baseClothing: Item[] = [], misc: Item[] = [];
   for (const item of catItems) {
     const m = item.id.match(/^armor([A-Z][a-zA-Z]*)(Helmet|Outfit|Gloves|Boots)$/);
     if (!m) {
@@ -74,13 +84,13 @@ const armorGrouped = catKey === 'armor' ? (() => {
     const [, code, slot] = m;
     if (SPECIAL_CODES.test(code)) { masks.push(item); continue; }
     if (!sets.has(code)) sets.set(code, { name: '', items: [] });
-    sets.get(code).items.push(item);
+    sets.get(code)!.items.push(item);
   }
   // Derive set name from the Outfit piece first (cleanest), fallback to Helmet
   for (const [, s] of sets) {
     s.items.sort((a, b) => {
-      const sa = a.id.match(/(Helmet|Outfit|Gloves|Boots)$/)[1];
-      const sb = b.id.match(/(Helmet|Outfit|Gloves|Boots)$/)[1];
+      const sa = a.id.match(/(Helmet|Outfit|Gloves|Boots)$/)![1];
+      const sb = b.id.match(/(Helmet|Outfit|Gloves|Boots)$/)![1];
       return SLOT_ORDER.indexOf(sa) - SLOT_ORDER.indexOf(sb);
     });
     const outfit = s.items.find(i => /Outfit$/.test(i.id));
@@ -89,7 +99,7 @@ const armorGrouped = catKey === 'armor' ? (() => {
     s.name = stripSlot(src.name);
   }
   // Split: full sets (>=3 pieces) vs brand uniforms (2 pieces: Helmet+Outfit)
-  const setGroups = [], brandGroups = [];
+  const setGroups: [string, ArmorSet][] = [], brandGroups: [string, ArmorSet][] = [];
   for (const [code, s] of [...sets.entries()].sort((a, b) => a[1].name.localeCompare(b[1].name, 'zh'))) {
     if (s.items.length >= 3) setGroups.push([code, s]);
     else brandGroups.push([code, s]);
@@ -103,7 +113,7 @@ const armorGrouped = catKey === 'armor' ? (() => {
 // melee_weapon/ranged_weapon: by weapon type; material: by resource type
 // food: by preparation; medical: by type
 const subGroups = catKey === 'melee_weapon' || catKey === 'ranged_weapon' || catKey === 'material' || catKey === 'food' || catKey === 'medical' || catKey === 'ammo' || catKey === 'vehicle' || catKey === 'tool' || catKey === 'quest_item' || catKey === 'mod' ? (() => {
-  const defs = {
+  const defs: Record<string, [string, RegExp | null][]> = {
     melee_weapon: [
       ['刀剑', /Blade|Knife|Machete/],
       ['棍棒', /Club|Baton/],
@@ -181,17 +191,17 @@ const subGroups = catKey === 'melee_weapon' || catKey === 'ranged_weapon' || cat
     ],
   };
   const def = defs[catKey];
-  const groups = def.map(([label]) => [label, []]);
+  const groups: [string, Item[]][] = def.map(([label]) => [label, []]);
   for (const item of catItems) {
     let placed = false;
     for (const [label, re] of def) {
       if (re && re.test(item.id)) {
-        groups.find(g => g[0] === label)[1].push(item);
+        groups.find(g => g[0] === label)![1].push(item);
         placed = true;
         break;
       }
     }
-    if (!placed) groups.find(g => g[0] === '其他')[1].push(item);
+    if (!placed) groups.find(g => g[0] === '其他')![1].push(item);
   }
   return groups.filter(([, v]) => v.length > 0);
 })() : null;

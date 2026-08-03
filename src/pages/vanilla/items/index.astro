@@ -5,7 +5,7 @@ import { categoryIconUrl } from '../../../utils/item-icons';
 const { items } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-const catCounts = {};
+const catCounts: Record<string, { key: string; label: string; count: number; icon: string | null }> = {};
 for (const item of items) {
   const label = ITEM_CATEGORY_LABELS[item.category] || item.category;
   if (!catCounts[item.category]) catCounts[item.category] = { key: item.category, label, count: 0, icon: categoryIconUrl(item.category, base) };

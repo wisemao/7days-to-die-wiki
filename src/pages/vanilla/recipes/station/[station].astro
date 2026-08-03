@@ -1,13 +1,13 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
-import { loadData, STATION_LABELS } from '../../../../utils/data-loader';
+import { loadData, STATION_LABELS, type Recipe } from '../../../../utils/data-loader';
 import { itemIconUrl } from '../../../../utils/item-icons';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function getStaticPaths() {
   const RAW = Object.fromEntries(Object.entries(STATION_LABELS).filter(([k]) => k !== 'backpack'));
   const { recipes } = loadData();
-  const groups = {};
+  const groups: Record<string, Recipe[]> = {};
   for (const r of recipes) {
     const raw = r.station || '';
     const slug = Object.entries(RAW).find(([,v]) => v === raw)?.[0] || 'backpack';

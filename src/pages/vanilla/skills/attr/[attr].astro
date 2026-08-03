@@ -1,11 +1,11 @@
 ﻿---
 import Layout from '../../../../layouts/Layout.astro';
-import { loadData, ATTR_SLUG_MAP, SLUG_TO_ATTR_LABEL } from '../../../../utils/data-loader';
+import { loadData, ATTR_SLUG_MAP, SLUG_TO_ATTR_LABEL, type Skill } from '../../../../utils/data-loader';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function getStaticPaths() {
   const { skills } = loadData();
-  const groups = {};
+  const groups: Record<string, Skill[]> = {};
   for (const s of skills) {
     const slug = Object.entries(ATTR_SLUG_MAP).find(([,v]) => v === s.category)?.[0] || 'general';
     if (!groups[slug]) groups[slug] = [];

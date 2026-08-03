@@ -1,19 +1,19 @@
 ﻿---
 import Layout from '../../../layouts/Layout.astro';
-import { loadData } from '../../../utils/data-loader';
+import { loadData, type Item } from '../../../utils/data-loader';
 import { resolveItemIconId } from '../../../utils/item-icons';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 export function getStaticPaths() {
   // All helpers must be inside getStaticPaths (Astro compiler restriction)
-  const extractSeries = (chn) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
-  const toSlug = (name) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
+  const extractSeries = (chn: string) => chn.replace(/[ 　]*第\s*\d+\s*[卷册][\s\S]*$/, '').replace(/[ 　]*卷\s*\d+[\s\S]*$/, '').trim();
+  const toSlug = (name: string) => name.replace(/\s+/g, '-').replace(/[^\w\u4e00-\u9fff-]/g, '');
 
   const { items, skills } = loadData();
   const books = items.filter(i => i.category === 'book');
   const skillMap = new Map(skills.map(s => [s.id, s]));
 
-  const series = {};
+  const series: Record<string, Item[]> = {};
   for (const b of books) {
     const sName = extractSeries(b.name || b.id);
     if (!series[sName]) series[sName] = [];
@@ -81,7 +81,7 @@ const { seriesName, volumes, volumeCount, completeName, completeDesc } = Astro.p
   <table>
     <caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{seriesName} 卷册列表</caption>
     <tr><th scope="col" class="col-num">#</th><th scope="col">名称</th><th scope="col">效果</th></tr>
-    {volumes.map((v, i) => (
+    {volumes.map((v: { name: string; itemPath: string; icon: string | null; effect: string }, i: number) => (
       <tr>
         <td class="col-num">{i + 1}</td>
         <td>
