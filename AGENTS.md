@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-7 Days to Die（僵尸毁灭工程）中文维基站。Astro 7.x 静态站，部署至 GitHub Pages（https://wisemao.github.io/7days-to-die-wiki/）。内容由本地游戏数据自动解析生成（2048 页面，纯静态，Pagefind 中文搜索）。
+7 Days to Die（七日杀）中文维基站。Astro 7.x 静态站，部署至 GitHub Pages（https://wisemao.github.io/7days-to-die-wiki/）。内容由本地游戏数据自动解析生成（2048 页面，纯静态，Pagefind 中文搜索）。
 
 ## ⚠️ 核心规则（必须遵守）
 
