@@ -86,12 +86,21 @@ const coverage = (withIcon.length / items.length * 100).toFixed(1);
 console.log(`图标覆盖率: ${withIcon.length}/${items.length} (${coverage}%)`);
 if (coverage < 30) warnings.push(`图标覆盖率过低: ${coverage}%`);
 
-// ─── Recipe checks ───
-const noMatRecipes = recipes.filter(r => !r.recipe || r.recipe.length === 0);
-if (noMatRecipes.length > 100) {
-  warnings.push(`配方无材料: ${noMatRecipes.length} 个 (超过 100 限制)`);
-} else if (noMatRecipes.length > 0) {
-  warnings.push(`配方无材料: ${noMatRecipes.slice(0, 10).map(r => r.id).join(', ')}${noMatRecipes.length > 10 ? ' 等' : ''}`);
+// ─── Recipe checks (merge same-id recipes first, mirroring data-loader) ───
+const mergedRecipes = new Map();
+for (const r of recipes) {
+  if (!mergedRecipes.has(r.id)) mergedRecipes.set(r.id, { ...r, recipe: [], scrappable_into: [] });
+  const m = mergedRecipes.get(r.id);
+  if (r.recipe?.length) m.recipe = r.recipe;
+  if (r.scrappable_into?.length) m.scrappable_into = r.scrappable_into;
+}
+const noMatRecipes = [...mergedRecipes.values()].filter(r => !r.recipe || r.recipe.length === 0);
+// Salvage-scrap recipes (salvage: true) intentionally have no materials - not a warning
+const realNoMat = noMatRecipes.filter(r => !r.salvage);
+if (realNoMat.length > 100) {
+  warnings.push(`配方无材料: ${realNoMat.length} 个 (超过 100 限制)`);
+} else if (realNoMat.length > 0) {
+  warnings.push(`配方无材料: ${realNoMat.slice(0, 10).map(r => r.id).join(', ')}${realNoMat.length > 10 ? ' 等' : ''}`);
 }
 
 // ─── Skill checks ───
