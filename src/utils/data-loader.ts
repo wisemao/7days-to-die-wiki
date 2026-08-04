@@ -35,6 +35,7 @@ export interface Item {
 export interface Recipe {
   id: string;
   name?: string;
+  salvage?: boolean;
   station?: string;
   craft_time?: number;
   craft_count?: number;

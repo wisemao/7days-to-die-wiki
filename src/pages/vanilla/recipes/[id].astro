@@ -42,7 +42,9 @@ const matLink = (itemId: string) => getItemLink(itemId);
       })}
     </div>
   </>)}
-  {!hasRecipe && !hasScrap && <blockquote>此物品无法直接合成，需要从游戏中获取</blockquote>}
+  {!hasRecipe && !hasScrap && (recipe.salvage
+    ? <blockquote>此物品通过拆解废料获得（使用工具拆解相应废品）</blockquote>
+    : <blockquote>此物品无法直接合成，需要从游戏中获取</blockquote>)}
 
   {hasScrap && (<>
     <h2>分解获得</h2>

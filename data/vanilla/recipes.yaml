@@ -5,102 +5,119 @@ recipes:
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceElectricParts
     name: 电子零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceMechanicalParts
     name: 机械零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceBrokenGlass
     name: 碎玻璃
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceCloth
     name: 碎布
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceLeather
     name: 皮革
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourcePaper
     name: 纸
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceRockSmall
     name: 小石子
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceScrapBrass
     name: 黄铜
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceScrapIron
     name: 铁
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceScrapLead
     name: 铅
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceWood
     name: 木头
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceYuccaFibers
     name: 植物纤维
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceClayLump
     name: 粘土
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourcePaint
     name: 油漆
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceBone
     name: 骨头
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: foodRawMeat
     name: 生肉
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceClayLump
     name: 粘土
     station: 熔炉
@@ -109,6 +126,7 @@ recipes:
     recipe:
       - item_id: unit_clay
         count: 5
+    salvage: true
   - id: resourceCrushedSand
     name: 碎石砂
     station: 熔炉
@@ -125,6 +143,7 @@ recipes:
     recipe:
       - item_id: unit_stone
         count: 5
+    salvage: true
   - id: resourceScrapBrass
     name: 黄铜
     station: 熔炉
@@ -133,6 +152,7 @@ recipes:
     recipe:
       - item_id: unit_brass
         count: 1
+    salvage: true
   - id: resourceScrapIron
     name: 铁
     station: 熔炉
@@ -141,6 +161,7 @@ recipes:
     recipe:
       - item_id: unit_iron
         count: 1
+    salvage: true
   - id: resourceScrapLead
     name: 铅
     station: 熔炉
@@ -149,102 +170,119 @@ recipes:
     recipe:
       - item_id: unit_lead
         count: 1
+    salvage: true
   - id: gunBowT1WoodenBowParts
     name: 弓/弩零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunHandgunT1PistolParts
     name: 手枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunShotgunT1DoubleBarrelParts
     name: 霰弹枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunRifleT1HuntingRifleParts
     name: 步枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunMGT1AK47Parts
     name: 机枪零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunExplosivesT3RocketLauncherParts
     name: 火箭发射器零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: gunBotRoboticsParts
     name: 机器人零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnBatonT2StunBatonParts
     name: 眩晕棒零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnKnucklesT3SteelKnucklesParts
     name: 钢质拳套零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeToolAxeT3ChainsawParts
     name: 电动工具零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnBladeT3MacheteParts
     name: 砍刀零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnSpearT3SteelSpearParts
     name: 钢矛零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnClubT3SteelClubParts
     name: 钢棍零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeWpnSledgeT3SteelSledgehammerParts
     name: 钢质大锤零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: meleeToolAllSteelParts
     name: 钢制工具零件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: armorParts
     name: 护甲部件
     station: 背包合成
     craft_time: 1
     craft_count: 1
     recipe: []
+    salvage: true
   - id: resourceRockSmallBundle
     name: 一堆小石子（6000）
     station: 背包合成
@@ -6493,6 +6531,7 @@ recipes:
     recipe:
       - item_id: resourceCropCottonPlant
         count: 1
+    salvage: true
   - id: resourceCloth
     name: 碎布
     station: 背包合成
@@ -6501,6 +6540,7 @@ recipes:
     recipe:
       - item_id: resourceYuccaFibers
         count: 20
+    salvage: true
   - id: resourceCobblestones
     name: 鹅卵石
     station: 背包合成
@@ -6707,6 +6747,7 @@ recipes:
         count: 1
       - item_id: drinkJarBoiledWater
         count: 1
+    salvage: true
   - id: resourcePaint
     name: 油漆
     station: 营火
@@ -6717,6 +6758,7 @@ recipes:
         count: 1
       - item_id: drinkJarBoiledWater
         count: 1
+    salvage: true
   - id: resourcePaper
     name: 纸
     station: 营火
@@ -6729,6 +6771,7 @@ recipes:
         count: 1
       - item_id: drinkJarBoiledWater
         count: 1
+    salvage: true
   - id: resourcePaper
     name: 纸
     station: 化学台
@@ -6741,6 +6784,7 @@ recipes:
         count: 1
       - item_id: drinkJarBoiledWater
         count: 1
+    salvage: true
   - id: resourceRepairKit
     name: 维修工具
     station: 背包合成

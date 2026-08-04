@@ -432,6 +432,25 @@ function enhance(configDir) {
     console.log(`  - 食物/医疗buff效果: ${buffMerged} 个物品补全 (RemoveBuff/AddBuff)`);
   }
 
+  // ─── 10b. Recipe salvage flag: tags="salvageScrap" recipes are obtained by salvaging ───
+  const recipesXmlPath = join(configDir, 'recipes.xml');
+  if (existsSync(recipesXmlPath)) {
+    const rx = readFileSync(recipesXmlPath, 'utf-8');
+    const salvageIds = new Set([...rx.matchAll(/<recipe name="([^"]+)"[^>]*tags="([^"]*salvageScrap[^"]*)"/g)].map(m => m[1]));
+    if (salvageIds.size > 0) {
+      const recipesDoc2 = readYaml(join(DATA_DIR, 'recipes.yaml'));
+      let salvageMarked = 0;
+      for (const r of recipesDoc2.recipes || []) {
+        if (salvageIds.has(r.id) && !r.salvage) {
+          r.salvage = true;
+          salvageMarked++;
+        }
+      }
+      if (salvageMarked > 0) writeYaml(join(DATA_DIR, 'recipes.yaml'), recipesDoc2);
+      console.log(`  - 拆解配方标记: ${salvageMarked} 个 (salvageScrap)`);
+    }
+  }
+
   // ─── 11b. Blocks ammo cleanup: strip +tags(...) suffix (ammo9mmBulletBall+tags(ammo9mm)) ───
   // ─── 11b2. Animal icons: real creature icons from sleeper*Animal series ───
   const ANIMAL_ICONS = {
