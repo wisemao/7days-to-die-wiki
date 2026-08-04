@@ -9,6 +9,13 @@ export function getStaticPaths() {
 const { zombie } = Astro.props;
 const { ZOMBIE_CATEGORY_LABELS, resolveItemName, getItemLink } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Same-series variants (Feral/Radiated/Charged/Infernal/Crawler share a base id)
+const VARIANT_RE = /(Feral|Radiated|Charged|Infernal|Crawler)$/;
+const zombieList = loadData().zombies;
+const baseId = zombie.id.replace(VARIANT_RE, '');
+const variants = (zombie.category === 'humanoid' ? zombieList : [])
+  .filter(z => z.category === 'humanoid' && z.id.replace(VARIANT_RE, '') === baseId && z.id !== zombie.id)
+  .sort((a, b) => (a.id || '').localeCompare(b.id || ''));
 const typeIcon = zombie.icon
   ? `${base}/images/items/${zombie.icon}.png`
   : zombieTypeIconUrl(zombie.category || 'other', base);
@@ -69,6 +76,21 @@ function biomeChips(raw?: string) {
     <tr><td>经验值</td><td>{fmtExp(zombie.experience)}</td></tr>
   </table>
 
+  {variants.length > 0 && (
+    <div>
+      <h2>同系列变体</h2>
+      <div class="variant-grid">
+        {variants.map(v => (
+          <a href={`${base}/vanilla/zombies/${v._sanitizedId}/`} class="variant-card">
+            <img class="variant-icon" src={v.icon ? `${base}/images/items/${v.icon}.png` : (zombieTypeIconUrl('humanoid', base) || '')} alt="" loading="lazy" />
+            <span class="variant-name">{v.name}</span>
+            <span class="variant-meta">{typeof v.hp === 'number' ? `HP ${v.hp}` : `等级 ${v.tier || '-'}`}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
   {hasLoot && (<>
     <h2>掉落物</h2>
     <table><caption style="caption-side:bottom;font-size:12px;color:var(--c-text-3);padding-top:4px;">{zombie.name} 掉落物品</caption><tr><th scope="col">物品</th><th scope="col">数量</th><th scope="col">概率</th></tr>
@@ -125,6 +147,44 @@ function biomeChips(raw?: string) {
     align-items: center;
     gap: 16px;
     margin-bottom: 8px;
+  }
+  .variant-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 8px 0 16px;
+  }
+  .variant-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 10px 14px;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius);
+    background: var(--c-surface);
+    text-decoration: none !important;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .variant-card:hover {
+    border-color: var(--c-blood);
+    transform: translateY(-2px);
+  }
+  .variant-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 6px;
+    background: var(--c-surface-2);
+    padding: 3px;
+  }
+  .variant-name {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .variant-meta {
+    font-size: 11px;
+    color: var(--c-text-3);
   }
   .biome-chips {
     display: inline-flex;
