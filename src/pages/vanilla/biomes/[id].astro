@@ -2,14 +2,18 @@
 import Layout from '../../../layouts/Layout.astro';
 import { loadData } from '../../../utils/data-loader';
 export function getStaticPaths() {
-  const { biomes } = loadData();
-  return biomes.map(b => ({ params: { id: b._sanitizedId }, props: { biome: b } }));
+  const { biomes, zombies } = loadData();
+  return biomes.map(b => ({ params: { id: b._sanitizedId }, props: { biome: b, zombies } }));
 }
-const { biome } = Astro.props;
+const { biome, zombies } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const DIFF_LABELS: Record<string, string> = { '1': '低', '2': '较低', '3': '中', '4': '较高', '5': '高' };
 const diffLabel = (d?: string) => (d ? DIFF_LABELS[d] || d : '-');
 const isUnderwater = biome.id === 'underwater';
+// Zombies spawning in this biome (reverse of zombie.spawn.biomes)
+const spawnZombies = zombies
+  .filter(z => z.spawn?.biomes?.split(',').map(b => b.trim()).includes(biome.id))
+  .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'zh'));
 const BUFF_NAMES: Record<string, string> = {
   twitch_storm: '活动风暴事件',
   buffForest_Hazard: '森林危险',
@@ -56,6 +60,21 @@ const envEvent = biome.buff ? BUFF_NAMES[biome.buff] || biome.buff : '';
     </>
   )}
 
+  {spawnZombies.length > 0 && (
+    <>
+      <h2>刷新丧尸</h2>
+      <div class="zombie-grid">
+        {spawnZombies.map(z => (
+          <a href={`${base}/vanilla/zombies/${z._sanitizedId}/`} class="zombie-chip">
+            {z.icon && <img class="zombie-chip-icon" src={`${base}/images/items/${z.icon}.png`} alt="" loading="lazy" />}
+            <span class="zombie-chip-name">{z.name}</span>
+            <span class="zombie-chip-hp">{typeof z.hp === 'number' ? `HP ${z.hp}` : ''}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
   {isUnderwater && (
     <blockquote>水下生物群系：地图边缘的深水区域，无法正常探索，主要作为地图边界。</blockquote>
   )}
@@ -78,5 +97,40 @@ const envEvent = biome.buff ? BUFF_NAMES[biome.buff] || biome.buff : '';
       border: 1px solid var(--c-border);
     }
     .mat-name { color: var(--c-text); }
+    .zombie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 16px;
+    }
+    .zombie-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      background: var(--c-surface);
+      border: 1px solid var(--c-border);
+      text-decoration: none !important;
+      transition: border-color 0.15s, transform 0.15s;
+    }
+    .zombie-chip:hover {
+      border-color: var(--c-blood);
+      background: var(--c-blood-light);
+      transform: translateY(-1px);
+    }
+    .zombie-chip-icon {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      border-radius: 4px;
+      flex-shrink: 0;
+    }
+    .zombie-chip-name { color: var(--c-text); }
+    .zombie-chip-hp {
+      font-size: 11px;
+      color: var(--c-text-3);
+    }
   </style>
 </Layout>
