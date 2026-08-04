@@ -59,7 +59,7 @@ export const ATTR_ICONS: Record<string, string> = {
 export const ZOMBIE_TYPE_ICONS: Record<string, string> = {
   humanoid: 'sleeperIdle',            // 丧尸: 站立完整丧尸全身图
   animal: 'sleeperWolfAnimal',        // 动物: 真实狼形象
-  special: 'meleeHandBossGrace',      // 特殊: 首领
+  special: 'sleeperIdle',             // 特殊: 站立丧尸(无special条目,备用于其他)
   other: 'sleeperIdle',
 };
 

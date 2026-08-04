@@ -3843,6 +3843,7 @@ zombies:
             count: 20,30
     spawn:
       biomes: wasteland
+    icon: sleeperBearAnimal
   - id: animalZombieVulture
     name: 丧尸秃鹫
     category: animal
@@ -3858,6 +3859,7 @@ zombies:
     hand_item: meleeHandAnimalZombieVulture
     spawn:
       biomes: burnt_forest, desert, wasteland
+    icon: sleeperVultureAnimal
   - id: animalZombieVultureRadiated
     name: 被辐射的秃鹫
     category: animal
@@ -3871,6 +3873,7 @@ zombies:
       block: 32
     experience: 1200
     hand_item: meleeHandAnimalZombieVultureRadiated
+    icon: sleeperVultureAnimal
   - id: animalZombieDog
     name: 丧尸犬
     category: animal
@@ -3886,6 +3889,7 @@ zombies:
     hand_item: meleeHandAnimalZombieDog
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
+    icon: sleeperZombieDogAnimal
   - id: animalZombieBoar
     name: 丧尸野猪
     category: animal
@@ -3916,6 +3920,7 @@ zombies:
             count: 20,30
           - item_id: ammo762mmBulletAP
             count: 20,30
+    icon: sleeperBoarAnimal
   - id: animalStag
     name: 雄鹿
     category: animal
@@ -3955,6 +3960,7 @@ zombies:
     experience: 130
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
+    icon: sleeperRabbitAnimal
   - id: animalChicken
     name: 鸡
     category: animal
@@ -3968,6 +3974,7 @@ zombies:
     experience: 130
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
+    icon: sleeperChickenAnimal
   - id: animalPig
     name: 猪
     category: animal
@@ -3992,6 +3999,7 @@ zombies:
     experience: 2000
     spawn:
       biomes: snow
+    icon: sleeperBearAnimal
   - id: animalBearSmall
     name: 小熊
     category: animal
@@ -4005,6 +4013,7 @@ zombies:
     experience: 1000
     spawn:
       biomes: snow
+    icon: sleeperBearAnimal
   - id: animalWolf
     name: 灰狼
     category: animal
@@ -4018,6 +4027,7 @@ zombies:
     experience: 100
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
+    icon: sleeperWolfAnimal
   - id: animalDireWolf
     name: 恐狼
     category: animal
@@ -4031,6 +4041,7 @@ zombies:
     experience: 2000
     spawn:
       biomes: pine_forest, burnt_forest, desert, snow, wasteland
+    icon: sleeperWolfAnimal
   - id: animalChickenHostile
     name: 杀人鸡
     category: animal
@@ -4042,6 +4053,7 @@ zombies:
     damage:
       melee: 10
     experience: 130
+    icon: sleeperChickenAnimal
   - id: animalCoyote
     name: 丛林狼
     category: animal
@@ -4055,6 +4067,7 @@ zombies:
     experience: 206
     spawn:
       biomes: burnt_forest, desert
+    icon: sleeperWolfAnimal
   - id: animalMountainLion
     name: 美洲狮
     category: animal
@@ -4103,6 +4116,7 @@ zombies:
     experience: 130
     spawn:
       biomes: pine_forest, burnt_forest, desert, wasteland
+    icon: sleeperSnakeAnimal
   - id: animalBoar
     name: 野猪
     category: animal
@@ -4116,6 +4130,7 @@ zombies:
     experience: 100
     spawn:
       biomes: pine_forest, burnt_forest, desert
+    icon: sleeperBoarAnimal
   - id: animalBossGrace
     name: 格雷斯
     category: animal

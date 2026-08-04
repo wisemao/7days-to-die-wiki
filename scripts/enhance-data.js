@@ -433,6 +433,36 @@ function enhance(configDir) {
   }
 
   // ─── 11b. Blocks ammo cleanup: strip +tags(...) suffix (ammo9mmBulletBall+tags(ammo9mm)) ───
+  // ─── 11b2. Animal icons: real creature icons from sleeper*Animal series ───
+  const ANIMAL_ICONS = {
+    animalBear: 'sleeperBearAnimal',
+    animalBearSmall: 'sleeperBearAnimal',
+    animalZombieBear: 'sleeperBearAnimal',
+    animalBoar: 'sleeperBoarAnimal',
+    animalZombieBoar: 'sleeperBoarAnimal',
+    animalChicken: 'sleeperChickenAnimal',
+    animalChickenHostile: 'sleeperChickenAnimal',
+    animalRabbit: 'sleeperRabbitAnimal',
+    animalSnake: 'sleeperSnakeAnimal',
+    animalCoyote: 'sleeperWolfAnimal',
+    animalWolf: 'sleeperWolfAnimal',
+    animalDireWolf: 'sleeperWolfAnimal',
+    animalZombieDog: 'sleeperZombieDogAnimal',
+    animalZombieVulture: 'sleeperVultureAnimal',
+    animalZombieVultureRadiated: 'sleeperVultureAnimal',
+  };
+  const zombiesDoc2 = readYaml(join(DATA_DIR, 'zombies.yaml'));
+  let iconMapped = 0;
+  for (const z of zombiesDoc2.zombies || []) {
+    if (z.category !== 'animal') continue;
+    const icon = ANIMAL_ICONS[z.id];
+    if (icon && z.icon !== icon) {
+      z.icon = icon;
+      iconMapped++;
+    }
+  }
+  if (iconMapped > 0) writeYaml(join(DATA_DIR, 'zombies.yaml'), zombiesDoc2);
+  console.log(`  - 动物图标映射: ${iconMapped} 个 (sleeper*Animal 真实动物图标)`);
   const blocksDoc2 = readYaml(join(DATA_DIR, 'blocks.yaml'));
   let ammoFixed = 0;
   for (const b of blocksDoc2.blocks || []) {

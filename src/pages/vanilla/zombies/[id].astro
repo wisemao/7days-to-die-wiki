@@ -9,7 +9,9 @@ export function getStaticPaths() {
 const { zombie } = Astro.props;
 const { ZOMBIE_CATEGORY_LABELS, resolveItemName, getItemLink } = loadData();
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const typeIcon = zombieTypeIconUrl(zombie.category || 'other', base);
+const typeIcon = zombie.icon
+  ? `${base}/images/items/${zombie.icon}.png`
+  : zombieTypeIconUrl(zombie.category || 'other', base);
 const catLabel = ZOMBIE_CATEGORY_LABELS[zombie.category] || zombie.category;
 const hasLoot = zombie.loot && zombie.loot.length > 0;
 const hasWeakness = zombie.weakness && zombie.weakness.length > 0;

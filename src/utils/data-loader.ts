@@ -83,6 +83,7 @@ export interface Zombie {
   name: string;
   category: string;
   tier?: number;
+  icon?: string;
   hp?: number | string;
   speed?: { walk?: number; run?: number };
   damage?: { melee?: number; bleeding_chance?: number; armor_penetration?: number };
